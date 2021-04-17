@@ -1,0 +1,11 @@
+{
+  "locales": ["en", "fr"],
+  "defaultLocale": "en",
+  "pages": {
+    "*": ["common"],
+    "/": ["home"],
+    "/setup": ["setup"],
+    "/404": ["errors"],
+    "/500": ["errors"]
+  }
+}

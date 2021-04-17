@@ -1,6 +1,4 @@
-# Welcome to my GitHub Account! 👋
-
-![Divlo](./images/capture.png)
+# Divlo
 
 ## Social Media
 

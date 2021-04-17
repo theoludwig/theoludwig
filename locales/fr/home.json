@@ -1,0 +1,63 @@
+{
+  "about": {
+    "IAm": "Je suis",
+    "description": "Développeur Full Stack Junior • Passionné de High-Tech",
+    "birthDate": "Date de naissance",
+    "nationality": "Nationalité",
+    "descriptionBottom": "J'apprends en ligne l'informatique et les langages de programmation pour m'améliorer dans ma passion. <br/> <br/> J'ai conçu ma charte graphique et mon site internet."
+  },
+  "interests": {
+    "title": "Mes intérêts",
+    "paragraphs": [
+      {
+        "title": "Développeur Full Stack Junior :",
+        "description": "La programmation informatique est ma principale passion, j'adore! <br/> Principalement du développement Web pour le moment, mais je programme aussi du Python et d'autres langages de programmation."
+      },
+      {
+        "title": "Passionné de High-Tech :",
+        "description": "Je me suis toujours demandé comment l'avenir serait. Chaque jour, je veux me réveiller et penser que l'avenir sera formidable et même meilleur que le passé. Les technolgies s'améliorent progressivement avec le temps, ce qui est très utile dans de nombreux domaines."
+      },
+      {
+        "title": "Enthousiaste de l'Open-Source :",
+        "description": "Pour moi, tout le monde devrait travailler, résoudre des problèmes, construire des choses et réfléchir ensemble. Longue vie à l'open-source, chaque fois que vous pouvez partagez votre travail, faites-le! <br/> Le site est open-source sur <a href='https://github.com/Divlo/divlo.fr' target='_blank' rel='noopener noreferrer'>github</a>."
+      }
+    ]
+  },
+  "skills": {
+    "title": "Mes compétences",
+    "languages": "Langages de programmation",
+    "softwareTools": "Logiciels et outils"
+  },
+  "portfolio": {
+    "title": "Mon Portfolio",
+    "items": [
+      {
+        "title": "function.divlo.fr",
+        "description": "Apprenez la programmation grâce à l'apprentissage par projet alias fonction.",
+        "link": "https://function.divlo.fr/",
+        "image": "/images/portfolio/functiondivlofr.png"
+      },
+      {
+        "title": "thream.divlo.fr",
+        "description": "Votre plateforme open source pour rester proche de vos amis et communautés, parler, discuter, collaborer, partager et vous amuser.",
+        "link": "https://thream.divlo.fr/",
+        "image": "/images/portfolio/threamdivlofr.png"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contactez-Moi",
+    "nameField": "Nom",
+    "subjectField": "Objet",
+    "sendEmail": "Envoyer l'email",
+    "result": {
+      "loading": "Chargement...",
+      "success": "Votre email a été envoyé!",
+      "requiredFields": "Vous devez remplir tous les champs...",
+      "invalidEmail": "Veuillez entrer une adresse mail valide...",
+      "serverError": "Le serveur n'a pas pu traiter votre requête..."
+    },
+    "error": "Erreur",
+    "success": "Succès"
+  }
+}

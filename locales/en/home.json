@@ -1,0 +1,63 @@
+{
+  "about": {
+    "IAm": "I am",
+    "description": "Developer Full Stack Junior • Passionate about High-Tech",
+    "birthDate": "Birth date",
+    "nationality": "Nationality",
+    "descriptionBottom": "I'm learning online programming languages to improve my skills in my passion. <0/> <0/> I designed my graphic chart and my website."
+  },
+  "interests": {
+    "title": "My Interests",
+    "paragraphs": [
+      {
+        "title": "Developer Full Stack Junior :",
+        "description": "Computer programming is my main passion, I love it! <br/> Mostly web development for the moment but I'm programming some Python and others programming language too."
+      },
+      {
+        "title": "Passionate about High-Tech :",
+        "description": "I always wondered how the future would be. Every day I want to wake up and think that the future will be great and even better than the past. Technologies improve gradually over time, which is very useful in many areas."
+      },
+      {
+        "title": "Open-Source enthusiast :",
+        "description": "For me, everyone should work, solve problems, build things and think together. Long live open source, whenever you can share your work, do it! <br/> The website is open-source on <a href='https://github.com/Divlo/divlo.fr' target='_blank' rel='noopener noreferrer'>github</a>."
+      }
+    ]
+  },
+  "skills": {
+    "title": "My skills",
+    "languages": "Programming languages",
+    "softwareTools": "Software and tools"
+  },
+  "portfolio": {
+    "title": "My Portfolio",
+    "items": [
+      {
+        "title": "function.divlo.fr",
+        "description": "Learn programming through project-based alias function.",
+        "link": "https://function.divlo.fr/",
+        "image": "/images/portfolio/functiondivlofr.png"
+      },
+      {
+        "title": "thream.divlo.fr",
+        "description": "Your open source platform to stay close with your friends and communities, talk, chat, collaborate, share and have fun.",
+        "link": "https://thream.divlo.fr/",
+        "image": "/images/portfolio/threamdivlofr.png"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact-Me",
+    "nameField": "Name",
+    "subjectField": "Subject",
+    "sendEmail": "Send email",
+    "result": {
+      "loading": "Loading...",
+      "success": "Your email has been sent!",
+      "requiredFields": "You must fill all the fields...",
+      "invalidEmail": "Please enter a valid email address...",
+      "serverError": "The server could not process your request..."
+    },
+    "error": "Error",
+    "success": "Success"
+  }
+}
