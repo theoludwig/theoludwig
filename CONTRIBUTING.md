@@ -44,3 +44,30 @@ Types define which kind of changes you made to the project.
 ### Scopes
 
 Scopes define what part of the code changed.
+
+## Getting Started
+
+### Installation
+
+```sh
+# Clone the repository
+git clone https://github.com/Divlo/Divlo.git
+
+# Go to the project root
+cd Divlo
+
+# Configure environment variables
+cp .env.example .env
+```
+
+### Development environment with [Docker](https://www.docker.com/)
+
+```sh
+# Setup and run all the services for you
+docker-compose up --build
+```
+
+### Services started
+
+- website : `http://localhost:3000`
+- [MailDev](https://maildev.github.io/maildev/) : `http://localhost:1080`
