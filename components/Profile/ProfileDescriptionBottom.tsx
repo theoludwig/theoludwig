@@ -1,14 +1,11 @@
-import useTranslation from 'next-translate/useTranslation'
 import Translation from 'next-translate/Trans'
 
 export const ProfileDescriptionBottom: React.FC = () => {
-  const { t } = useTranslation()
-
   return (
     <>
       <p className='profile-description-bottom'>
         <Translation
-          i18nKey={t('home:about.descriptionBottom')}
+          i18nKey='home:about.descriptionBottom'
           components={[<br key='break' />]}
         />
       </p>

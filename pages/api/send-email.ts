@@ -18,14 +18,14 @@ const emailTransporter = nodemailer.createTransport({
 })
 
 export default async (
-  req: NextApiRequest,
-  res: NextApiResponse
+  request: NextApiRequest,
+  response: NextApiResponse
 ): Promise<any> => {
-  if (req.method !== 'POST') {
-    return res.redirect('/404')
+  if (request.method !== 'POST') {
+    return response.redirect('/404')
   }
 
-  let { name, email, subject, message } = req.body as {
+  let { name, email, subject, message } = request.body as {
     name: string
     email: string
     subject: string
@@ -38,11 +38,11 @@ export default async (
     validator.isEmpty(subject) ||
     validator.isEmpty(message)
   ) {
-    return res.status(400).json({ type: 'requiredFields' })
+    return response.status(400).json({ type: 'requiredFields' })
   }
 
   if (!validator.isEmail(email)) {
-    return res.status(400).json({ type: 'invalidEmail' })
+    return response.status(400).json({ type: 'invalidEmail' })
   }
 
   email = validator.normalizeEmail(email) as string
@@ -62,8 +62,8 @@ export default async (
                 <b>Message:</b> ${message}
             `
     })
-    return res.status(201).json({ type: 'success' })
+    return response.status(201).json({ type: 'success' })
   } catch {
-    return res.status(500).json({ type: 'serverError' })
+    return response.status(500).json({ type: 'serverError' })
   }
 }

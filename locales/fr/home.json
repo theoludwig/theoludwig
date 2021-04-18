@@ -4,7 +4,7 @@
     "description": "Développeur Full Stack Junior • Passionné de High-Tech",
     "birthDate": "Date de naissance",
     "nationality": "Nationalité",
-    "descriptionBottom": "J'apprends en ligne l'informatique et les langages de programmation pour m'améliorer dans ma passion. <br/> <br/> J'ai conçu ma charte graphique et mon site internet."
+    "descriptionBottom": "J'apprends en ligne l'informatique et les langages de programmation pour m'améliorer dans ma passion. <0/> <0/> J'ai conçu ma charte graphique et mon site internet."
   },
   "interests": {
     "title": "Mes intérêts",
@@ -19,7 +19,7 @@
       },
       {
         "title": "Enthousiaste de l'Open-Source :",
-        "description": "Pour moi, tout le monde devrait travailler, résoudre des problèmes, construire des choses et réfléchir ensemble. Longue vie à l'open-source, chaque fois que vous pouvez partagez votre travail, faites-le! <br/> Le site est open-source sur <a href='https://github.com/Divlo/divlo.fr' target='_blank' rel='noopener noreferrer'>github</a>."
+        "description": "Pour moi, tout le monde devrait travailler, résoudre des problèmes, construire des choses et réfléchir ensemble. Longue vie à l'open-source, chaque fois que vous pouvez partagez votre travail, faites-le! <br/> Le site est open-source sur <a href='https://github.com/Divlo/Divlo' target='_blank' rel='noopener noreferrer'>github</a>."
       }
     ]
   },

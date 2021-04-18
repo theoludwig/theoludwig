@@ -1,65 +1,84 @@
-import { useState } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 
-import { HamburgerIcon } from './HamburgerIcon'
-import { BrandLogo } from './BrandLogo'
-import { Navigation } from './Navigation'
+import { Language } from './Language'
 
 export const Header: React.FC = () => {
-  const [isActive, setIsActive] = useState(false)
-
-  const handleToggleNavbar = (): void => {
-    setIsActive(!isActive)
-  }
-
   return (
     <>
-      <header className='Header'>
+      <header className='header'>
         <div className='container'>
-          <BrandLogo />
-          <HamburgerIcon
-            isActive={isActive}
-            handleToggleNavbar={handleToggleNavbar}
-          />
-          <Navigation isActive={isActive} />
+          <nav className='navbar navbar-fixed-top'>
+            <Link href='/'>
+              <a className='navbar__brand-link'>
+                <div className='navbar__brand'>
+                  <Image
+                    width={60}
+                    height={60}
+                    src='/images/divlo_icon_small.png'
+                    alt='Divlo'
+                  />
+                  <strong className='navbar__brand-title'>Divlo</strong>
+                </div>
+              </a>
+            </Link>
+            <div className='navbar__buttons'>
+              <Language />
+            </div>
+          </nav>
         </div>
       </header>
 
       <style jsx>
         {`
-          .Header {
+          .header {
+            background-color: var(--color-background);
+            border-bottom: var(--border-header-footer);
+            padding: 0.5rem 1rem;
             position: fixed;
             width: 100%;
             top: 0;
             left: 0;
             right: 0;
             z-index: 100;
-
+            height: var(--header-height);
+          }
+          .container {
+            max-width: 1280px;
+            width: 100%;
+            margin: auto;
+          }
+          .navbar {
             display: flex;
-            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .navbar-fixed-top {
+            position: sticky;
+            top: 0;
+            z-index: 200;
+          }
+          .navbar__brand-link {
+            color: var(--color-text-1);
+            text-decoration: none;
+            font-size: 16px;
+          }
+          .navbar__brand {
+            display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 0.5rem 1rem;
-
-            border-bottom: var(--border-header-footer);
-            background-color: var(--color-background);
           }
-          @media (min-width: 992px) {
-            .Header {
-              display: flex;
-              flex-basis: auto;
-              flex-flow: row nowrap;
-              justify-content: flex-start;
-            }
+          .navbar__brand-title {
+            font-weight: 600;
+            margin-left: 10px;
           }
-          .Header > .container {
+          .navbar__buttons {
             display: flex;
-            flex-wrap: wrap;
-            align-items: center;
             justify-content: space-between;
           }
-          @media (min-width: 992px) {
-            .Header > .container {
-              flex-wrap: nowrap;
+          @media (max-width: 320px) {
+            .navbar__brand-title {
+              display: none;
             }
           }
         `}

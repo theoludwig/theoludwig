@@ -77,7 +77,7 @@ export const Contact: React.FC = () => {
             required
           />
 
-          <div className='text-center'>
+          <div className='text-center' style={{ marginBottom: 20 }}>
             <Button type='submit'>{t('home:contact.sendEmail')}</Button>
           </div>
         </Form>
