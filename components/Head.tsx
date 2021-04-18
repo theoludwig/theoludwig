@@ -1,4 +1,4 @@
-import HeadTag from 'next/head'
+import NextHead from 'next/head'
 
 interface HeadProps {
   title?: string
@@ -7,7 +7,7 @@ interface HeadProps {
   url?: string
 }
 
-const Head: React.FC<HeadProps> = props => {
+export const Head: React.FC<HeadProps> = props => {
   const {
     title = 'Divlo',
     image = '/images/icons/icon-96x96.png',
@@ -16,7 +16,7 @@ const Head: React.FC<HeadProps> = props => {
   } = props
 
   return (
-    <HeadTag>
+    <NextHead>
       <title>{title}</title>
       <link rel='icon' type='image/png' href={image} />
 
@@ -52,8 +52,6 @@ const Head: React.FC<HeadProps> = props => {
       <meta name='apple-mobile-web-app-capable' content='yes' />
       <meta name='mobile-web-app-capable' content='yes' />
       <link rel='apple-touch-icon' href={image} />
-    </HeadTag>
+    </NextHead>
   )
 }
-
-export default Head

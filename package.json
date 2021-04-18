@@ -2,6 +2,46 @@
   "name": "divlo",
   "version": "0.0.0",
   "private": true,
+  "jest": {
+    "roots": [
+      "<rootDir>"
+    ],
+    "transform": {
+      "^.+\\.(js|jsx|ts|tsx)$": "babel-jest"
+    },
+    "moduleDirectories": [
+      "node_modules",
+      "./"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-dom/extend-expect",
+      "@testing-library/react"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{js,jsx,ts,tsx}",
+      "!**/*.d.ts",
+      "!**/.next/**",
+      "!**/node_modules/**",
+      "!**/next.config.js",
+      "!**/postcss.config.js",
+      "!**/workbox-*.js",
+      "!**/sw.js"
+    ],
+    "coverageDirectory": "./coverage",
+    "coverageReporters": [
+      "text",
+      "cobertura"
+    ]
+  },
   "ts-standard": {
     "ignore": [
       ".next",
@@ -13,7 +53,8 @@
     ],
     "envs": [
       "node",
-      "browser"
+      "browser",
+      "jest"
     ],
     "report": "stylish"
   },
@@ -28,6 +69,7 @@
     "lint:markdown": "markdownlint '**/*.md' --dot --ignore node_modules",
     "lint:typescript": "ts-standard",
     "lighthouse": "lhci autorun",
+    "test": "jest",
     "postinstall": "husky install"
   },
   "dependencies": {
@@ -38,9 +80,9 @@
     "@fortawesome/react-fontawesome": "0.1.14",
     "axios": "0.21.1",
     "classnames": "2.3.1",
-    "html-react-parser": "1.2.5",
+    "html-react-parser": "1.2.6",
     "next": "10.1.3",
-    "next-pwa": "5.2.12",
+    "next-pwa": "5.2.13",
     "next-translate": "1.0.6",
     "nodemailer": "6.5.0",
     "normalize.css": "8.0.1",
@@ -57,16 +99,22 @@
     "@fullhuman/postcss-purgecss": "4.0.3",
     "@lhci/cli": "0.7.1",
     "@styled-jsx/plugin-sass": "3.0.0",
+    "@testing-library/jest-dom": "5.11.10",
+    "@testing-library/react": "11.2.6",
+    "@types/jest": "26.0.22",
     "@types/node": "14.14.41",
     "@types/nodemailer": "6.4.1",
     "@types/nprogress": "0.2.0",
     "@types/react": "17.0.3",
     "@types/styled-jsx": "2.2.8",
     "@types/validator": "13.1.3",
+    "babel-jest": "26.6.3",
     "dockerfilelint": "1.8.0",
     "editorconfig-checker": "4.0.2",
     "husky": "6.0.0",
+    "jest": "26.6.3",
     "markdownlint-cli": "0.27.1",
+    "node-mocks-http": "1.10.1",
     "postcss": "8.2.10",
     "sass": "1.32.10",
     "ts-standard": "10.0.0",

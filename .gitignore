@@ -12,6 +12,9 @@ out
 build
 dist
 
+# testing
+coverage
+
 # PWA
 **/workbox-*.js
 **/sw.js
