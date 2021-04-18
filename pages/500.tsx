@@ -2,7 +2,7 @@ import { GetStaticProps } from 'next'
 import useTranslation from 'next-translate/useTranslation'
 
 import { ErrorPage } from 'components/ErrorPage'
-import Head from 'components/Head'
+import { Head } from 'components/Head'
 
 const Error500: React.FC = () => {
   const { t } = useTranslation()
