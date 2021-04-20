@@ -15,3 +15,13 @@ ports:
 
   - port: 1080
     onOpen: 'notify'
+
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
+    pullRequestsFromForks: true
+    addComment: true
+    addBadge: false
+    addLabel: 'prebuilt-in-gitpod'
