@@ -17,21 +17,19 @@ const emailTransporter = nodemailer.createTransport({
   }
 })
 
-export default async (
+const handler = async (
   request: NextApiRequest,
   response: NextApiResponse
 ): Promise<any> => {
   if (request.method !== 'POST') {
     return response.redirect('/404')
   }
-
-  let { name, email, subject, message } = request.body as {
+  const { name, email, subject, message } = request.body as {
     name: string
     email: string
     subject: string
     message: string
   }
-
   if (
     validator.isEmpty(name) ||
     validator.isEmpty(email) ||
@@ -40,26 +38,18 @@ export default async (
   ) {
     return response.status(400).json({ type: 'requiredFields' })
   }
-
   if (!validator.isEmail(email)) {
     return response.status(400).json({ type: 'invalidEmail' })
   }
-
-  email = validator.normalizeEmail(email) as string
-  message = validator.trim(message)
-  message = validator.escape(message)
-  subject = validator.trim(subject)
-  subject = validator.escape(subject)
-
   try {
     await emailTransporter.sendMail({
       from: '"Divlo" <contact@divlo.fr>',
       to: email,
-      subject: `Contact - ${subject}`,
+      subject: `Contact - ${validator.escape(subject)}`,
       html: `
-                <b>Name:</b> ${name} <br/>
-                <b>Email:</b> ${email} <br/>
-                <b>Message:</b> ${message}
+                <b>Name:</b> ${validator.escape(name)} <br/>
+                <b>Email:</b> ${validator.escape(email)} <br/>
+                <b>Message:</b> ${validator.escape(message)}
             `
     })
     return response.status(201).json({ type: 'success' })
@@ -67,3 +57,5 @@ export default async (
     return response.status(500).json({ type: 'serverError' })
   }
 }
+
+export default handler
