@@ -23,5 +23,5 @@ github:
     pullRequests: true
     pullRequestsFromForks: true
     addComment: true
-    addBadge: false
-    addLabel: 'prebuilt-in-gitpod'
+    addBadge: true
+    addLabel: true
