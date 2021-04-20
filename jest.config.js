@@ -18,7 +18,8 @@ module.exports = {
     '!**/next.config.js',
     '!**/postcss.config.js',
     '!**/workbox-*.js',
-    '!**/sw.js'
+    '!**/sw.js',
+    '!**/jest.config.js'
   ],
   coverageDirectory: './coverage',
   coverageReporters: ['text', 'cobertura']
