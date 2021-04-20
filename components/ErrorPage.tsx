@@ -16,7 +16,7 @@ export const ErrorPage: React.FC<ErrorPageProps> = props => {
         {t('errors:error')} <span className='important'>{statusCode}</span>
       </h1>
       <p className='text-center'>
-        {message} <Link href='/'>{t('returnToHomePage')}</Link>
+        {message} <Link href='/'>{t('errors:returnToHomePage')}</Link>
       </p>
 
       <style jsx global>{`
