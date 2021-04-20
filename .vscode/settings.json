@@ -1,0 +1,8 @@
+{
+  "standard.enable": true,
+  "standard.engine": "ts-standard",
+  "standard.treatErrorsAsWarnings": true,
+  "standard.usePackageJson": true,
+  "standard.autoFixOnSave": true,
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
