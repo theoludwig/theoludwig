@@ -2,12 +2,12 @@ image: 'gitpod/workspace-full'
 
 tasks:
   - name: 'docker-daemon'
-    before: 'cp .env.example .env && npm install --global npm@7 && npm install'
-    init: 'sudo docker-up'
+    init: 'cp .env.example .env && npm install --global npm@7 && npm ci'
+    command: 'sudo docker-up'
   - name: 'docker-container'
-    before: 'echo "Waiting for docker daemon to start" &&
+    init: 'echo "Waiting for docker daemon to start" &&
       until docker info &> /dev/null; do sleep 1; done;'
-    init: 'docker-compose up'
+    command: 'docker-compose up'
 
 ports:
   - port: 3000
