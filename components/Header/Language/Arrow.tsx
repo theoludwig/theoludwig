@@ -1,7 +1,17 @@
+import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 
 export const Arrow: React.FC = () => {
+  const [mounted, setMounted] = useState(false)
   const { theme } = useTheme()
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return null
+  }
 
   return (
     <svg
