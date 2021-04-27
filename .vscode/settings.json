@@ -1,8 +1,9 @@
 {
-  "standard.enable": true,
-  "standard.engine": "ts-standard",
-  "standard.treatErrorsAsWarnings": true,
-  "standard.usePackageJson": true,
-  "standard.autoFixOnSave": true,
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.configPath": ".prettierrc.json",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  }
 }

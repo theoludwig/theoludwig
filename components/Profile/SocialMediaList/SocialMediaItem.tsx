@@ -6,7 +6,7 @@ interface SocialMediaItemProps {
   socialMedia: 'Email' | 'GitHub' | 'Twitch' | 'Twitter' | 'YouTube'
 }
 
-export const SocialMediaItem: React.FC<SocialMediaItemProps> = props => {
+export const SocialMediaItem: React.FC<SocialMediaItemProps> = (props) => {
   const { link, socialMedia } = props
 
   return (

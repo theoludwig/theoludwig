@@ -5,7 +5,7 @@ export interface FormStateProps extends React.ComponentPropsWithRef<'p'> {
   children: string
 }
 
-export const FormState: React.FC<FormStateProps> = props => {
+export const FormState: React.FC<FormStateProps> = (props) => {
   const { state, children, ...rest } = props
   const { t } = useTranslation()
 
@@ -15,24 +15,28 @@ export const FormState: React.FC<FormStateProps> = props => {
         <p className={state} {...rest}>
           {['error', 'success'].includes(state) && (
             <b>
-              {state === 'error' ? t('home:contact.error') : t('home:contact.success')}:
+              {state === 'error'
+                ? t('home:contact.error')
+                : t('home:contact.success')}
+              :
             </b>
           )}{' '}
           {children}
         </p>
       </div>
 
-      <style jsx>{`
-        .form-result {
-          margin: 30px;
-        }
-        .success {
-          color: #90ee90;
-        }
-        .error {
-          color: #ff7f7f;
-        }
-      `}
+      <style jsx>
+        {`
+          .form-result {
+            margin: 30px;
+          }
+          .success {
+            color: #90ee90;
+          }
+          .error {
+            color: #ff7f7f;
+          }
+        `}
       </style>
     </>
   )

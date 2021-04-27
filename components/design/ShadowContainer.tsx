@@ -1,6 +1,6 @@
 type ShadowContainerProps = React.ComponentPropsWithRef<'div'>
 
-export const ShadowContainer: React.FC<ShadowContainerProps> = props => {
+export const ShadowContainer: React.FC<ShadowContainerProps> = (props) => {
   const { children, className, ...rest } = props
 
   return (

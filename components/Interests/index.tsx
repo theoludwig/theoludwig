@@ -6,9 +6,13 @@ import { InterestsList } from './InterestsList'
 export const Interests: React.FC = () => {
   const { t } = useTranslation()
 
-  const paragraphs: InterestParagraphProps[] = t('home:interests.paragraphs', {}, {
-    returnObjects: true
-  })
+  const paragraphs: InterestParagraphProps[] = t(
+    'home:interests.paragraphs',
+    {},
+    {
+      returnObjects: true
+    }
+  )
 
   return (
     <>

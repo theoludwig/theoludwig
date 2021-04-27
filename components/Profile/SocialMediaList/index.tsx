@@ -25,16 +25,17 @@ export const SocialMediaList: React.FC = () => {
         </ul>
       </div>
 
-      <style jsx>{`
-        .social-media-list {
-          margin: 0;
-          padding: 0;
-          list-style: none;
-          text-align: center;
-          padding: 15px 0;
-          margin-top: 10px;
-        }
-      `}
+      <style jsx>
+        {`
+          .social-media-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 10px;
+          }
+        `}
       </style>
     </>
   )

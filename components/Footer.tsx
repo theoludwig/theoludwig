@@ -7,7 +7,8 @@ export const Footer: React.FC = () => {
     <>
       <footer className='Footer text-center'>
         <p>
-          <span className='important'>Divlo</span> | {t('common:allRightsReserved')}
+          <span className='important'>Divlo</span> |{' '}
+          {t('common:allRightsReserved')}
         </p>
       </footer>
 

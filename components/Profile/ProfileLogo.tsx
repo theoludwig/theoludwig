@@ -14,12 +14,13 @@ export const ProfileLogo: React.FC = () => {
         </div>
       </div>
 
-      <style jsx>{`
-        .profile-logo {
-          margin-right: 10px;
-          margin-left: 10px;
-        }
-      `}
+      <style jsx>
+        {`
+          .profile-logo {
+            margin-right: 10px;
+            margin-left: 10px;
+          }
+        `}
       </style>
     </>
   )

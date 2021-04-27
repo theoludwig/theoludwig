@@ -6,7 +6,7 @@ export interface SkillProps {
   skill: keyof typeof skills
 }
 
-export const Skill: React.FC<SkillProps> = props => {
+export const Skill: React.FC<SkillProps> = (props) => {
   const { skill } = props
   const skillProperties = skills[skill]
 
@@ -29,15 +29,16 @@ export const Skill: React.FC<SkillProps> = props => {
         </div>
       </a>
 
-      <style jsx>{`
-        .skills-link {
-          max-width: 120px;
-          margin: 0px 10px 0 10px;
-        }
-        .skills-text {
-          margin-top: 5px;
-        }
-      `}
+      <style jsx>
+        {`
+          .skills-link {
+            max-width: 120px;
+            margin: 0px 10px 0 10px;
+          }
+          .skills-text {
+            margin-top: 5px;
+          }
+        `}
       </style>
     </>
   )

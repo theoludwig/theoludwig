@@ -8,10 +8,7 @@ export const ProfileList: React.FC = () => {
   return (
     <>
       <ul className='profile-list'>
-        <ProfileItem
-          title={t('home:about.birthDate')}
-          value='31/03/2003'
-        />
+        <ProfileItem title={t('home:about.birthDate')} value='31/03/2003' />
         <ProfileItem
           title={t('home:about.nationality')}
           value='Alsace, France'

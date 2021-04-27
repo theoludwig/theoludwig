@@ -4,7 +4,7 @@ interface ProfileItemProps {
   link?: string
 }
 
-export const ProfileItem: React.FC<ProfileItemProps> = props => {
+export const ProfileItem: React.FC<ProfileItemProps> = (props) => {
   const { title, value, link } = props
 
   return (

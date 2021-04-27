@@ -17,15 +17,11 @@ export const FormResult: React.FC<FormResultProps> = (props) => {
 
   if (state === 'loading' || state === 'success') {
     return (
-      <FormState state={state}>
-        {t(`home:contact.result.${state}`)}
-      </FormState>
+      <FormState state={state}>{t(`home:contact.result.${state}`)}</FormState>
     )
   }
 
   return (
-    <FormState state='error'>
-      {t(`home:contact.result.${state}`)}
-    </FormState>
+    <FormState state='error'>{t(`home:contact.result.${state}`)}</FormState>
   )
 }

@@ -7,7 +7,7 @@ interface HeadProps {
   url?: string
 }
 
-export const Head: React.FC<HeadProps> = props => {
+export const Head: React.FC<HeadProps> = (props) => {
   const {
     title = 'Divlo',
     image = '/images/icons/icon-96x96.png',

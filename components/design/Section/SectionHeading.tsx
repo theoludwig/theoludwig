@@ -3,8 +3,8 @@ import { forwardRef } from 'react'
 type SectionHeadingProps = React.ComponentPropsWithRef<'h2'>
 
 export const SectionHeading = forwardRef<
-HTMLHeadingElement,
-SectionHeadingProps
+  HTMLHeadingElement,
+  SectionHeadingProps
 >((props, ref) => {
   const { children, ...rest } = props
 

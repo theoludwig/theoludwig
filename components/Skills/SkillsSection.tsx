@@ -5,7 +5,7 @@ export interface SkillsSectionProps {
   children: React.ReactNode
 }
 
-export const SkillsSection: React.FC<SkillsSectionProps> = props => {
+export const SkillsSection: React.FC<SkillsSectionProps> = (props) => {
   const { title, children } = props
 
   return (
@@ -23,21 +23,22 @@ export const SkillsSection: React.FC<SkillsSectionProps> = props => {
         </div>
       </ShadowContainer>
 
-      <style jsx>{`
-        .skills-header {
-          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-          margin-bottom: 15px;
-        }
-        .skills-header > h3 {
-          margin-bottom: 15px;
-        }
-        .skills-body {
-          display: flex;
-          justify-content: space-around;
-          flex-flow: row wrap;
-          padding-top: 1.5rem;
-        }
-      `}
+      <style jsx>
+        {`
+          .skills-header {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 15px;
+          }
+          .skills-header > h3 {
+            margin-bottom: 15px;
+          }
+          .skills-body {
+            display: flex;
+            justify-content: space-around;
+            flex-flow: row wrap;
+            padding-top: 1.5rem;
+          }
+        `}
       </style>
     </>
   )

@@ -7,7 +7,7 @@ export interface PortfolioItemProps {
   image: string
 }
 
-export const PortfolioItem: React.FC<PortfolioItemProps> = props => {
+export const PortfolioItem: React.FC<PortfolioItemProps> = (props) => {
   const { title, description, link, image } = props
 
   return (
@@ -32,15 +32,15 @@ export const PortfolioItem: React.FC<PortfolioItemProps> = props => {
 
       <style jsx global>
         {`
-        .portfolio-figure img[alt='${title}'] {
-          max-height: 300px;
-          max-width: 300px;
-          transition: opacity 0.5s ease;
-        }
-        .portfolio-grid:hover img[alt='${title}'] {
-          opacity: 0.05;
-        }
-      `}
+          .portfolio-figure img[alt='${title}'] {
+            max-height: 300px;
+            max-width: 300px;
+            transition: opacity 0.5s ease;
+          }
+          .portfolio-grid:hover img[alt='${title}'] {
+            opacity: 0.05;
+          }
+        `}
       </style>
 
       <style jsx>

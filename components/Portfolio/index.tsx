@@ -5,9 +5,13 @@ import { PortfolioItem, PortfolioItemProps } from './PortfolioItem'
 export const Portfolio: React.FC = () => {
   const { t } = useTranslation('home')
 
-  const items: PortfolioItemProps[] = t('home:portfolio.items', {}, {
-    returnObjects: true
-  })
+  const items: PortfolioItemProps[] = t(
+    'home:portfolio.items',
+    {},
+    {
+      returnObjects: true
+    }
+  )
 
   return (
     <>

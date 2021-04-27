@@ -6,7 +6,7 @@ export interface ErrorPageProps {
   message: string
 }
 
-export const ErrorPage: React.FC<ErrorPageProps> = props => {
+export const ErrorPage: React.FC<ErrorPageProps> = (props) => {
   const { message, statusCode } = props
   const { t } = useTranslation()
 
@@ -19,19 +19,20 @@ export const ErrorPage: React.FC<ErrorPageProps> = props => {
         {message} <Link href='/'>{t('errors:returnToHomePage')}</Link>
       </p>
 
-      <style jsx global>{`
-        .content {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          min-width: 100vw;
-          min-height: 100%;
-        }
-        #__next {
-          padding-top: 0;
-        }
-      `}
+      <style jsx global>
+        {`
+          .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-width: 100vw;
+            min-height: 100%;
+          }
+          #__next {
+            padding-top: 0;
+          }
+        `}
       </style>
     </>
   )

@@ -30,7 +30,11 @@ const Home: React.FC = () => {
       </RevealFade>
 
       <RevealFade>
-        <Section id='skills' heading={t('home:skills.title')} withoutShadowContainer>
+        <Section
+          id='skills'
+          heading={t('home:skills.title')}
+          withoutShadowContainer
+        >
           <Skills />
         </Section>
       </RevealFade>
