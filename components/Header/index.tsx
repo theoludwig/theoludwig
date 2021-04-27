@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import { Language } from './Language'
+import { SwitchTheme } from './SwitchTheme'
 
 export const Header: React.FC = () => {
   return (
@@ -24,6 +25,7 @@ export const Header: React.FC = () => {
             </Link>
             <div className='navbar__buttons'>
               <Language />
+              <SwitchTheme />
             </div>
           </nav>
         </div>
