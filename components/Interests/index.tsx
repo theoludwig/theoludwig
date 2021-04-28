@@ -16,7 +16,7 @@ export const Interests: React.FC = () => {
 
   return (
     <>
-      <div className='col-24'>
+      <div className='max-w-full'>
         {paragraphs.map((paragraph, index) => {
           return <InterestParagraph key={index} {...paragraph} />
         })}

@@ -9,20 +9,12 @@ export const SectionHeading = forwardRef<
   const { children, ...rest } = props
 
   return (
-    <>
-      <h2 ref={ref} {...rest} className='Section__title'>
-        {children}
-      </h2>
-
-      <style jsx>
-        {`
-          .Section__title {
-            font-size: 34px;
-            margin-top: 10px;
-            text-align: center;
-          }
-        `}
-      </style>
-    </>
+    <h2
+      ref={ref}
+      {...rest}
+      className='text-4xl font-semibold text-center mt-1 mb-7'
+    >
+      {children}
+    </h2>
   )
 })

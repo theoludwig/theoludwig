@@ -9,37 +9,19 @@ export const SkillsSection: React.FC<SkillsSectionProps> = (props) => {
   const { title, children } = props
 
   return (
-    <>
-      <ShadowContainer>
-        <div className='container-fluid'>
-          <div className='row row-padding'>
-            <div className='col-24'>
-              <div className='skills-header'>
-                <h3 className='important'>{title}</h3>
-              </div>
-              <div className='skills-body'>{children}</div>
+    <ShadowContainer>
+      <div className='w-full px-4 mx-auto'>
+        <div className='flex flex-wrap px-4 py-6'>
+          <div className='flex-1'>
+            <div className='mb-8 border-b border-gray-600 dark:border-opacity-10 dark:border-white'>
+              <h3 className='text-yellow font-semibold text-xl my-3'>
+                {title}
+              </h3>
             </div>
+            <div className='flex justify-around flex-wrap'>{children}</div>
           </div>
         </div>
-      </ShadowContainer>
-
-      <style jsx>
-        {`
-          .skills-header {
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            margin-bottom: 15px;
-          }
-          .skills-header > h3 {
-            margin-bottom: 15px;
-          }
-          .skills-body {
-            display: flex;
-            justify-content: space-around;
-            flex-flow: row wrap;
-            padding-top: 1.5rem;
-          }
-        `}
-      </style>
-    </>
+      </div>
+    </ShadowContainer>
   )
 }
