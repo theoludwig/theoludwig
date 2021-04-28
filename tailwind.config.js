@@ -4,8 +4,14 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
-      headline: 'Montserrat, sans-serif',
-      paragraph: 'Roboto, sans-serif'
+      colors: {
+        black: '#181818',
+        yellow: '#ffd800'
+      },
+      fontFamily: {
+        headline: ['Montserrat', 'Arial', 'sans-serif'],
+        paragraph: ['Roboto', 'Arial', 'sans-serif']
+      }
     }
   },
   variants: {

@@ -25,7 +25,7 @@ export const Section = forwardRef<HTMLElement, SectionProps>((props, ref) => {
       <ShadowContainer style={{ marginTop: 50 }}>
         <section ref={ref} {...rest}>
           {heading != null && <SectionHeading>{heading}</SectionHeading>}
-          <div className='container-fluid'>{children}</div>
+          <div className='px-3 w-full'>{children}</div>
         </section>
       </ShadowContainer>
     )
