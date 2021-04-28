@@ -44,20 +44,5 @@
         "image": "/images/portfolio/threamdivlofr.png"
       }
     ]
-  },
-  "contact": {
-    "title": "Contact-Me",
-    "nameField": "Name",
-    "subjectField": "Subject",
-    "sendEmail": "Send email",
-    "result": {
-      "loading": "Loading...",
-      "success": "Your email has been sent!",
-      "requiredFields": "You must fill all the fields...",
-      "invalidEmail": "Please enter a valid email address...",
-      "serverError": "The server could not process your request..."
-    },
-    "error": "Error",
-    "success": "Success"
   }
 }

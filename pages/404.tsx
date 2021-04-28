@@ -10,7 +10,6 @@ const Error404: React.FC = () => {
   return (
     <>
       <Head title='Divlo - 404' />
-
       <ErrorPage statusCode={404} message={t('errors:notFound')} />
     </>
   )

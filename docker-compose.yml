@@ -10,9 +10,3 @@ services:
       PORT: ${PORT}
     volumes:
       - './:/app'
-
-  divlo.fr-maildev:
-    image: 'maildev/maildev:1.1.0'
-    ports:
-      - '1080:80'
-    container_name: 'divlo.fr-maildev'

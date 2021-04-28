@@ -44,20 +44,5 @@
         "image": "/images/portfolio/threamdivlofr.png"
       }
     ]
-  },
-  "contact": {
-    "title": "Contactez-Moi",
-    "nameField": "Nom",
-    "subjectField": "Objet",
-    "sendEmail": "Envoyer l'email",
-    "result": {
-      "loading": "Chargement...",
-      "success": "Votre email a été envoyé!",
-      "requiredFields": "Vous devez remplir tous les champs...",
-      "invalidEmail": "Veuillez entrer une adresse mail valide...",
-      "serverError": "Le serveur n'a pas pu traiter votre requête..."
-    },
-    "error": "Erreur",
-    "success": "Succès"
   }
 }
