@@ -4,26 +4,11 @@ export const Footer: React.FC = () => {
   const { t } = useTranslation()
 
   return (
-    <>
-      <footer className='Footer text-center'>
-        <p>
-          <span className='important'>Divlo</span> |{' '}
-          {t('common:allRightsReserved')}
-        </p>
-      </footer>
-
-      <style jsx>
-        {`
-          .Footer {
-            border-top: var(--border-header-footer);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 10px;
-          }
-        `}
-      </style>
-    </>
+    <footer className='bg-white flex justify-center py-6 text-lg border-t-2 border-gray-600 dark:border-gray-400 dark:bg-black'>
+      <p>
+        <span className='text-yellow'>Divlo</span> |{' '}
+        {t('common:allRightsReserved')}
+      </p>
+    </footer>
   )
 }
