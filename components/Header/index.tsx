@@ -7,7 +7,7 @@ import { SwitchTheme } from './SwitchTheme'
 export const Header: React.FC = () => {
   return (
     <>
-      <header className='bg-white sticky flex w-full justify-between px-6 py-2 border-b-2 border-gray-600 dark:border-gray-400 dark:bg-black'>
+      <header className='bg-white sticky top-0 z-50 flex w-full justify-between px-6 py-2 border-b-2 border-gray-600 dark:border-gray-400 dark:bg-black'>
         <Link href='/'>
           <a>
             <div className='flex items-center justify-center'>

@@ -12,25 +12,33 @@ export const ErrorPage: React.FC<ErrorPageProps> = (props) => {
 
   return (
     <>
-      <h1>
-        {t('errors:error')} <span className='important'>{statusCode}</span>
+      <h1 className='my-6 font-semibold text-4xl'>
+        {t('errors:error')} <span className='text-yellow'>{statusCode}</span>
       </h1>
-      <p className='text-center'>
-        {message} <Link href='/'>{t('errors:returnToHomePage')}</Link>
+      <p className='text-center text-lg'>
+        {message}{' '}
+        <Link href='/'>
+          <a className='text-yellow hover:underline'>
+            {t('errors:returnToHomePage')}
+          </a>
+        </Link>
       </p>
 
       <style jsx global>
         {`
-          .content {
+          main {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             min-width: 100vw;
-            min-height: 100%;
+            flex: 1;
           }
           #__next {
+            display: flex;
+            flex-direction: column;
             padding-top: 0;
+            height: 100vh;
           }
         `}
       </style>
