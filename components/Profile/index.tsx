@@ -5,7 +5,7 @@ import { ProfileLogo } from './ProfileLogo'
 
 export const Profile: React.FC = () => {
   return (
-    <div className='flex px-10 pt-14 pb-3'>
+    <div className='flex justify-center px-10 pt-14 pb-3'>
       <ProfileLogo />
       <div className='col-sm-24 col-md-14'>
         <ProfileInfo />
