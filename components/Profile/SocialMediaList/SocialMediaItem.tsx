@@ -1,4 +1,3 @@
-import { Tooltip } from 'components/design/Tooltip'
 import Image from 'next/image'
 
 interface SocialMediaItemProps {
@@ -19,14 +18,13 @@ export const SocialMediaItem: React.FC<SocialMediaItemProps> = (props) => {
           rel='noopener noreferrer'
           className='social-media-list__link'
         >
-          <Tooltip title={socialMedia}>
-            <Image
-              width={45}
-              height={45}
-              alt={socialMedia}
-              src={`/images/web/${socialMedia}.png`}
-            />
-          </Tooltip>
+          <Image
+            title={socialMedia}
+            width={45}
+            height={45}
+            alt={socialMedia}
+            src={`/images/web/${socialMedia}.png`}
+          />
         </a>
       </li>
 
