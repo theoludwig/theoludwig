@@ -14,14 +14,10 @@ export const Portfolio: React.FC = () => {
   )
 
   return (
-    <>
-      <div className='container-fluid'>
-        <div className='row justify-content-center'>
-          {items.map((item, index) => {
-            return <PortfolioItem key={index} {...item} />
-          })}
-        </div>
-      </div>
-    </>
+    <div className='flex flex-wrap justify-around px-3 w-full'>
+      {items.map((item, index) => {
+        return <PortfolioItem key={index} {...item} />
+      })}
+    </div>
   )
 }
