@@ -13,12 +13,13 @@ export const ErrorPage: React.FC<ErrorPageProps> = (props) => {
   return (
     <>
       <h1 className='my-6 font-semibold text-4xl'>
-        {t('errors:error')} <span className='text-yellow'>{statusCode}</span>
+        {t('errors:error')}{' '}
+        <span className='text-yellow dark:text-yellow-dark'>{statusCode}</span>
       </h1>
       <p className='text-center text-lg'>
         {message}{' '}
         <Link href='/'>
-          <a className='text-yellow hover:underline'>
+          <a className='text-yellow dark:text-yellow-dark hover:underline'>
             {t('errors:returnToHomePage')}
           </a>
         </Link>

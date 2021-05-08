@@ -19,7 +19,7 @@ class MyDocument extends Document {
     return (
       <Html className='overflow-x-hidden'>
         <Head />
-        <body className='bg-white dark:bg-black font-headline overflow-x-hidden'>
+        <body className='bg-white dark:bg-black text-black dark:text-white font-headline overflow-x-hidden'>
           <Main />
           <NextScript />
         </body>

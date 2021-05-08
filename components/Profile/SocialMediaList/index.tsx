@@ -1,42 +1,31 @@
 import { SocialMediaItem } from './SocialMediaItem'
+import { TwitterIcon } from './SocialMediaIcons/TwitterIcon'
+import { GitHubIcon } from './SocialMediaIcons/GitHubIcon'
+import { YouTubeIcon } from './SocialMediaIcons/YouTubeIcon'
+import { TwitchIcon } from './SocialMediaIcons/TwitchIcon'
+import { EmailIcon } from './SocialMediaIcons/EmailIcon'
 
 export const SocialMediaList: React.FC = () => {
   return (
-    <>
-      <div className='row justify-content-center'>
-        <ul className='social-media-list'>
-          <SocialMediaItem
-            socialMedia='Twitter'
-            link='https://twitter.com/Divlo_FR'
-          />
-          <SocialMediaItem
-            socialMedia='GitHub'
-            link='https://github.com/Divlo'
-          />
-          <SocialMediaItem
-            socialMedia='YouTube'
-            link='https://www.youtube.com/c/Divlo'
-          />
-          <SocialMediaItem
-            socialMedia='Twitch'
-            link='https://www.twitch.tv/divlo'
-          />
-          <SocialMediaItem socialMedia='Email' link='mailto:contact@divlo.fr' />
-        </ul>
-      </div>
-
-      <style jsx>
-        {`
-          .social-media-list {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            text-align: center;
-            padding: 15px 0;
-            margin-top: 10px;
-          }
-        `}
-      </style>
-    </>
+    <ul className='social-media-list m-0 p-0 list-none text-center mt-2 px-0 py-4'>
+      <SocialMediaItem link='https://twitter.com/Divlo_FR' ariaLabel='Twitter'>
+        <TwitterIcon />
+      </SocialMediaItem>
+      <SocialMediaItem link='https://github.com/Divlo' ariaLabel='GitHub'>
+        <GitHubIcon />
+      </SocialMediaItem>
+      <SocialMediaItem
+        link='https://www.youtube.com/c/Divlo'
+        ariaLabel='YouTube'
+      >
+        <YouTubeIcon />
+      </SocialMediaItem>
+      <SocialMediaItem link='https://www.twitch.tv/divlo' ariaLabel='Twitch'>
+        <TwitchIcon />
+      </SocialMediaItem>
+      <SocialMediaItem link='mailto:contact@divlo.fr' ariaLabel='Email'>
+        <EmailIcon />
+      </SocialMediaItem>
+    </ul>
   )
 }

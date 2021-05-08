@@ -10,10 +10,12 @@ export const ProfileItem: React.FC<ProfileItemProps> = (props) => {
   return (
     <>
       <li className='profile-list__item'>
-        <strong className='profile-list__item-title'>{title}</strong>
-        <span className='profile-list__item-info'>
+        <strong className='profile-list__item-title text-black dark:text-white'>
+          {title}
+        </strong>
+        <span className='profile-list__item-info text-gray dark:text-gray-dark'>
           {link != null ? (
-            <a className='profile-list__link' href={link}>
+            <a className='text-gray dark:text-gray-dark' href={link}>
               {value}
             </a>
           ) : (
@@ -39,7 +41,6 @@ export const ProfileItem: React.FC<ProfileItemProps> = (props) => {
             display: block;
             width: 120px;
             float: left;
-            color: #d4d4d5;
             font-size: 12px;
             font-weight: 700;
             line-height: 20px;
@@ -51,10 +52,6 @@ export const ProfileItem: React.FC<ProfileItemProps> = (props) => {
             font-size: 15px;
             font-weight: 400;
             line-height: 20px;
-            color: #84898e;
-          }
-          .profile-list__link {
-            color: #84898e;
           }
 
           @media (max-width: 576px) {

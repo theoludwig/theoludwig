@@ -13,7 +13,7 @@ export const Skill: React.FC<SkillProps> = (props) => {
   return (
     <a
       href={skillProperties.link}
-      className='mx-2 max-w-xl text-yellow hover:underline'
+      className='mx-2 max-w-xl text-yellow hover:underline dark:text-yellow-dark'
       target='_blank'
       rel='noopener noreferrer'
     >

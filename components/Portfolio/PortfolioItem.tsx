@@ -22,7 +22,7 @@ export const PortfolioItem: React.FC<PortfolioItemProps> = (props) => {
       >
         <div className='flex justify-center'>
           <Image
-            className='transition-opacity duration-500 group-hover:opacity-5'
+            className='transition-opacity duration-500 group-hover:opacity-20 dark:group-hover:opacity-5'
             width={300}
             height={300}
             src={image}
@@ -30,7 +30,9 @@ export const PortfolioItem: React.FC<PortfolioItemProps> = (props) => {
           />
         </div>
         <div className='opacity-0 transition-opacity duration-500 h-auto absolute text-center overflow-hidden bottom-0 group-hover:opacity-100'>
-          <h3 className='text-yellow text-xl font-semibold my-6'>{title}</h3>
+          <h3 className='text-yellow text-xl font-semibold my-6 dark:text-yellow-dark'>
+            {title}
+          </h3>
           <p className='my-6'>{description}</p>
         </div>
       </a>

@@ -12,7 +12,7 @@ export const InterestItem: React.FC<InterestItemProps> = (props) => {
   return (
     <li className='interest-item my-2 mx-2 w-8 h-8' title={title}>
       <FontAwesomeIcon
-        className='text-yellow cursor-pointer h-full w-full block'
+        className='text-yellow cursor-pointer h-full w-full block dark:text-yellow-dark'
         icon={fontAwesomeIcon}
       />
     </li>

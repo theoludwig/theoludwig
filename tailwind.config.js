@@ -6,7 +6,14 @@ module.exports = {
     extend: {
       colors: {
         black: '#181818',
-        yellow: '#ffd800'
+        gray: {
+          DEFAULT: '#333333',
+          dark: '#b2bac2'
+        },
+        yellow: {
+          DEFAULT: '#ff8000',
+          dark: '#ffd800'
+        }
       },
       fontFamily: {
         headline: ['Montserrat', 'Arial', 'sans-serif'],

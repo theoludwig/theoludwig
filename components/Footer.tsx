@@ -6,7 +6,7 @@ export const Footer: React.FC = () => {
   return (
     <footer className='bg-white flex justify-center py-6 text-lg border-t-2 border-gray-600 dark:border-gray-400 dark:bg-black'>
       <p>
-        <span className='text-yellow'>Divlo</span> |{' '}
+        <span className='text-yellow dark:text-yellow-dark'>Divlo</span> |{' '}
         {t('common:allRightsReserved')}
       </p>
     </footer>
