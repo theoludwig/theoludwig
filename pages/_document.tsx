@@ -17,9 +17,9 @@ class MyDocument extends Document {
 
   render(): JSX.Element {
     return (
-      <Html className='overflow-x-hidden'>
+      <Html>
         <Head />
-        <body className='bg-white dark:bg-black text-black dark:text-white font-headline overflow-x-hidden'>
+        <body className='bg-white dark:bg-black text-black dark:text-white font-headline'>
           <Main />
           <NextScript />
         </body>
