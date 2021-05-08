@@ -9,7 +9,3 @@ services:
       - '${PORT}:${PORT}'
     environment:
       PORT: ${PORT}
-    volumes:
-      - './:/usr/src/app'
-      - '/usr/src/app/node_modules'
-      - '/usr/src/app/.next'

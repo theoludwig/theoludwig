@@ -7,4 +7,5 @@ RUN npm install
 COPY --chown=node:node ./ ./
 
 USER node
-CMD ["npm", "run", "dev", "--", "--port", "${PORT}"]
+RUN npm run build
+CMD ["npm", "run", "start", "--", "--port", "${PORT}"]
