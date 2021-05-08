@@ -12,7 +12,7 @@ export const Head: React.FC<HeadProps> = (props) => {
     title = 'Divlo',
     image = '/images/icons/icon-96x96.png',
     description = "I'm Divlo, I'm 18 years old, I'm from France - Developer Full Stack Junior • Passionate about High-Tech",
-    url = 'https://divlo.divlo.fr/'
+    url = 'https://divlo.fr/'
   } = props
 
   return (
