@@ -16,7 +16,7 @@ export const Header: React.FC = () => {
               src='/images/divlo_icon_small.png'
               alt='Divlo'
             />
-            <strong className='ml-1 font-headline font-semibold hidden sm:block'>
+            <strong className='ml-1 font-headline font-semibold hidden xs:block'>
               Divlo
             </strong>
           </div>

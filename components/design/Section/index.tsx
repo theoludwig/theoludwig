@@ -22,12 +22,14 @@ export const Section = forwardRef<HTMLElement, SectionProps>((props, ref) => {
 
   if (isMain) {
     return (
-      <ShadowContainer style={{ marginTop: 50 }}>
-        <section ref={ref} {...rest}>
-          {heading != null && <SectionHeading>{heading}</SectionHeading>}
-          <div className='px-3 w-full'>{children}</div>
-        </section>
-      </ShadowContainer>
+      <div className='px-3 w-full'>
+        <ShadowContainer style={{ marginTop: 50 }}>
+          <section ref={ref} {...rest}>
+            {heading != null && <SectionHeading>{heading}</SectionHeading>}
+            <div className='px-3 w-full'>{children}</div>
+          </section>
+        </ShadowContainer>
+      </div>
     )
   }
 
@@ -52,9 +54,11 @@ export const Section = forwardRef<HTMLElement, SectionProps>((props, ref) => {
           {description}
         </p>
       )}
-      <ShadowContainer>
-        <div className='px-16 py-4 leading-8 w-full'>{children}</div>
-      </ShadowContainer>
+      <div className='px-3 w-full'>
+        <ShadowContainer>
+          <div className='px-16 py-4 leading-8 w-full'>{children}</div>
+        </ShadowContainer>
+      </div>
     </section>
   )
 })

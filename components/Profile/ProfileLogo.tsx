@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export const ProfileLogo: React.FC = () => {
   return (
-    <div className='px-2'>
+    <div className='px-2 py-6'>
       <Image
         width={370}
         height={370}

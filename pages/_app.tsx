@@ -31,7 +31,7 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
     <ThemeProvider attribute='class' defaultTheme='dark'>
       <Header />
-      <main className='flex flex-col container mx-auto'>
+      <main className='flex flex-col md:mx-auto md:max-w-4xl lg:max-w-7xl'>
         <Component {...pageProps} />
       </main>
       <Footer />
