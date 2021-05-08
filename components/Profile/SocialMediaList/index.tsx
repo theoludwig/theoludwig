@@ -7,7 +7,7 @@ import { EmailIcon } from './SocialMediaIcons/EmailIcon'
 
 export const SocialMediaList: React.FC = () => {
   return (
-    <ul className='social-media-list m-0 p-0 list-none text-center mt-2 px-0 py-4'>
+    <ul className='social-media-list m-0 mt-2 py-4 list-none text-center'>
       <SocialMediaItem link='https://twitter.com/Divlo_FR' ariaLabel='Twitter'>
         <TwitterIcon />
       </SocialMediaItem>

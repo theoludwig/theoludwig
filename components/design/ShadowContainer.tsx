@@ -9,7 +9,7 @@ export const ShadowContainer: React.FC<ShadowContainerProps> = (props) => {
     <>
       <div
         className={classNames(
-          'shadow-container flex flex-col h-full max-w-full break-words',
+          'shadow-container h-full max-w-full break-words',
           className
         )}
         {...rest}

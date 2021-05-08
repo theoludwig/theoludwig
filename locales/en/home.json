@@ -4,18 +4,18 @@
     "description": "Developer Full Stack Junior • Passionate about High-Tech",
     "birthDate": "Birth date",
     "nationality": "Nationality",
-    "descriptionBottom": "I'm learning online programming languages to improve my skills in my passion. <0/> <0/> I designed my graphic chart and my website."
+    "descriptionBottom": "I am self-taught in Computer Science by following online trainings. <0/> <0/> I put into practice everything I learn and make many projects."
   },
   "interests": {
     "title": "My Interests",
     "paragraphs": [
       {
         "title": "Developer Full Stack Junior :",
-        "description": "Computer programming is my main passion, I love it! <br/> Mostly web development for the moment but I'm programming some Python and others programming language too."
+        "description": "Computer programming is my main hobby, I love it! <br/> Mostly web development for the moment but I'm programming some Python and others programming language too."
       },
       {
         "title": "Passionate about High-Tech :",
-        "description": "I always wondered how the future would be. Every day I want to wake up and think that the future will be great and even better than the past. Technologies improve gradually over time, which is very useful in many areas."
+        "description": "I always wondered how the future would be. Every day I want to wake up and think that the future will be great and better than the past. Technologies improve gradually over time, which is very useful in many areas."
       },
       {
         "title": "Open-Source enthusiast :",

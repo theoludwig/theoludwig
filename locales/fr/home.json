@@ -4,18 +4,18 @@
     "description": "Développeur Full Stack Junior • Passionné de High-Tech",
     "birthDate": "Date de naissance",
     "nationality": "Nationalité",
-    "descriptionBottom": "J'apprends en ligne l'informatique et les langages de programmation pour m'améliorer dans ma passion. <0/> <0/> J'ai conçu ma charte graphique et mon site internet."
+    "descriptionBottom": "Je me forme en autodidacte dans l'informatique en suivant des formations en ligne. <0/> <0/> Je mets en pratique tout ce que j'apprends et réalise de nombreux projets."
   },
   "interests": {
     "title": "Mes intérêts",
     "paragraphs": [
       {
         "title": "Développeur Full Stack Junior :",
-        "description": "La programmation informatique est ma principale passion, j'adore! <br/> Principalement du développement Web pour le moment, mais je programme aussi du Python et d'autres langages de programmation."
+        "description": "La programmation informatique est mon loisir principal, j'adore! <br/> Principalement du développement Web pour le moment, mais je programme aussi du Python et d'autres langages de programmation."
       },
       {
         "title": "Passionné de High-Tech :",
-        "description": "Je me suis toujours demandé comment l'avenir serait. Chaque jour, je veux me réveiller et penser que l'avenir sera formidable et même meilleur que le passé. Les technolgies s'améliorent progressivement avec le temps, ce qui est très utile dans de nombreux domaines."
+        "description": "Je me suis toujours demandé comment l'avenir serait. Chaque jour, je veux me réveiller et penser que l'avenir sera formidable et meilleur que le passé. Les technolgies s'améliorent progressivement avec le temps, ce qui est très utile dans de nombreux domaines."
       },
       {
         "title": "Enthousiaste de l'Open-Source :",
