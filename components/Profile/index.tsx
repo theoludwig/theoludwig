@@ -5,29 +5,13 @@ import { ProfileLogo } from './ProfileLogo'
 
 export const Profile: React.FC = () => {
   return (
-    <>
-      <div className='row profile'>
-        <ProfileLogo />
-        <div className='col-sm-24 col-md-14'>
-          <ProfileInfo />
-          <ProfileList />
-          <ProfileDescriptionBottom />
-        </div>
+    <div className='flex flex-col justify-center items-center px-10 pt-2 pb-6 md:pt-10 xl:pt-0 md:flex-row'>
+      <ProfileLogo />
+      <div className='col-sm-24 col-md-14'>
+        <ProfileInfo />
+        <ProfileList />
+        <ProfileDescriptionBottom />
       </div>
-
-      <style jsx>
-        {`
-          .profile {
-            padding: 40px 50px 15px 50px;
-          }
-
-          @media (max-width: 576px) {
-            .profile {
-              padding: 40px 10px 0 10px;
-            }
-          }
-        `}
-      </style>
-    </>
+    </div>
   )
 }

@@ -6,13 +6,17 @@ import { InterestsList } from './InterestsList'
 export const Interests: React.FC = () => {
   const { t } = useTranslation()
 
-  const paragraphs: InterestParagraphProps[] = t('home:interests.paragraphs', {}, {
-    returnObjects: true
-  })
+  const paragraphs: InterestParagraphProps[] = t(
+    'home:interests.paragraphs',
+    {},
+    {
+      returnObjects: true
+    }
+  )
 
   return (
     <>
-      <div className='col-24'>
+      <div className='max-w-full'>
         {paragraphs.map((paragraph, index) => {
           return <InterestParagraph key={index} {...paragraph} />
         })}

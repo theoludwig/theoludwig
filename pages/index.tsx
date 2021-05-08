@@ -1,7 +1,6 @@
 import { GetStaticProps } from 'next'
 import useTranslation from 'next-translate/useTranslation'
 
-import { Contact } from 'components/Contact'
 import { RevealFade } from 'components/design/RevealFade'
 import { Section } from 'components/design/Section'
 import { Head } from 'components/Head'
@@ -30,7 +29,11 @@ const Home: React.FC = () => {
       </RevealFade>
 
       <RevealFade>
-        <Section id='skills' heading={t('home:skills.title')} withoutShadowContainer>
+        <Section
+          id='skills'
+          heading={t('home:skills.title')}
+          withoutShadowContainer
+        >
           <Skills />
         </Section>
       </RevealFade>
@@ -42,12 +45,6 @@ const Home: React.FC = () => {
           withoutShadowContainer
         >
           <Portfolio />
-        </Section>
-      </RevealFade>
-
-      <RevealFade>
-        <Section id='contact' heading={t('home:contact.title')}>
-          <Contact />
         </Section>
       </RevealFade>
     </>

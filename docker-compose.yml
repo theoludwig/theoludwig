@@ -1,18 +1,11 @@
 version: '3.0'
 services:
-  divlo.fr-website:
+  divlo.fr:
     container_name: ${COMPOSE_PROJECT_NAME}
+    image: 'divlo.fr'
     build:
       context: './'
     ports:
       - '${PORT}:${PORT}'
     environment:
       PORT: ${PORT}
-    volumes:
-      - './:/app'
-
-  divlo.fr-maildev:
-    image: 'maildev/maildev:1.1.0'
-    ports:
-      - '1080:80'
-    container_name: 'divlo.fr-maildev'

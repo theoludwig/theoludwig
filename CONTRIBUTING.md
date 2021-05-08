@@ -72,4 +72,3 @@ docker-compose up --build
 ### Services started
 
 - website : `http://localhost:3000`
-- [MailDev](https://maildev.github.io/maildev/) : `http://localhost:1080`

@@ -5,11 +5,14 @@ export const ProfileInfo: React.FC = () => {
 
   return (
     <>
-      <div className='profile-info'>
-        <h1 className='profile-title'>
-          {t('home:about.IAm')} <strong className='important'>Divlo</strong>
+      <div className='pb-2 mb-6 border-b-2 font-headline border-gray-600 dark:border-gray-400'>
+        <h1 className='text-4xl mb-2'>
+          {t('home:about.IAm')}{' '}
+          <strong className='font-semibold text-yellow dark:text-yellow-dark'>
+            Divlo
+          </strong>
         </h1>
-        <h2 className='profile-description'>{t('home:about.description')}</h2>
+        <h2 className='text-base mb-3'>{t('home:about.description')}</h2>
       </div>
 
       <style jsx>

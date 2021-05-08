@@ -17,6 +17,7 @@ module.exports = {
     '!**/node_modules/**',
     '!**/next.config.js',
     '!**/postcss.config.js',
+    '!**/tailwind.config.js',
     '!**/workbox-*.js',
     '!**/sw.js',
     '!**/jest.config.js'

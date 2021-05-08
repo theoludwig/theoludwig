@@ -10,7 +10,6 @@ const Error500: React.FC = () => {
   return (
     <>
       <Head title='Divlo - 500' />
-
       <ErrorPage statusCode={500} message={t('errors:serverError')} />
     </>
   )

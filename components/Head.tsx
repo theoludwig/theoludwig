@@ -7,12 +7,12 @@ interface HeadProps {
   url?: string
 }
 
-export const Head: React.FC<HeadProps> = props => {
+export const Head: React.FC<HeadProps> = (props) => {
   const {
     title = 'Divlo',
     image = '/images/icons/icon-96x96.png',
     description = "I'm Divlo, I'm 18 years old, I'm from France - Developer Full Stack Junior • Passionate about High-Tech",
-    url = 'https://divlo.divlo.fr/'
+    url = 'https://divlo.fr/'
   } = props
 
   return (
@@ -21,7 +21,7 @@ export const Head: React.FC<HeadProps> = props => {
       <link rel='icon' type='image/png' href={image} />
 
       {/* Meta Tag */}
-      <meta name='viewport' content='width=device-width, initial-scale=1' />
+      <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       <meta name='description' content={description} />
       <meta name='Language' content='fr, en' />
       <meta name='theme-color' content='#ffd800' />

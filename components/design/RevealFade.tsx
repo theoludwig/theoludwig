@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 
-export const RevealFade: React.FC = props => {
+export const RevealFade: React.FC = (props) => {
   const { children } = props
 
   const htmlElement = useRef<HTMLDivElement>(null)
@@ -8,7 +8,7 @@ export const RevealFade: React.FC = props => {
   useEffect(() => {
     const observer = new window.IntersectionObserver(
       (entries, observer) => {
-        entries.forEach(entry => {
+        entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('reveal-visible')
             observer.unobserve(entry.target)
@@ -30,19 +30,20 @@ export const RevealFade: React.FC = props => {
         {children}
       </div>
 
-      <style jsx>{`
-        .reveal {
-          opacity: 0;
-          visibility: hidden;
-          transform: translateY(-30px);
-        }
-        .reveal-visible {
-          opacity: 1;
-          visibility: visible;
-          transform: translateY(0);
-          transition: all 500ms ease-out 100ms;
-        }
-      `}
+      <style jsx>
+        {`
+          .reveal {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-30px);
+          }
+          .reveal-visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            transition: all 500ms ease-out 100ms;
+          }
+        `}
       </style>
     </>
   )
