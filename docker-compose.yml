@@ -1,7 +1,8 @@
 version: '3.0'
 services:
-  divlo.fr-website:
+  divlo.fr:
     container_name: ${COMPOSE_PROJECT_NAME}
+    image: 'divlo.fr'
     build:
       context: './'
     ports:
@@ -9,4 +10,6 @@ services:
     environment:
       PORT: ${PORT}
     volumes:
-      - './:/app'
+      - './:/usr/src/app'
+      - '/usr/src/app/node_modules'
+      - '/usr/src/app/.next'

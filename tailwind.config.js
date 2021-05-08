@@ -23,8 +23,7 @@ module.exports = {
         light: '0px 1px 10px rgba(0, 0, 0, 0.25)'
       },
       fontFamily: {
-        headline: ['Montserrat', 'Arial', 'sans-serif'],
-        paragraph: ['Roboto', 'Arial', 'sans-serif']
+        headline: ['Montserrat', 'Arial', 'sans-serif']
       }
     }
   },
