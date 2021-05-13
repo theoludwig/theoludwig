@@ -39,7 +39,7 @@
     "universal-cookie": "4.0.4"
   },
   "devDependencies": {
-    "@commitlint/cli": "12.1.1",
+    "@commitlint/cli": "12.1.4",
     "@commitlint/config-conventional": "12.1.4",
     "@lhci/cli": "0.7.2",
     "@testing-library/jest-dom": "5.12.0",
