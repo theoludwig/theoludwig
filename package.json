@@ -48,7 +48,7 @@
     "@types/node": "15.6.0",
     "@types/react": "17.0.6",
     "@types/styled-jsx": "2.2.8",
-    "@typescript-eslint/eslint-plugin": "4.24.0",
+    "@typescript-eslint/eslint-plugin": "4.25.0",
     "autoprefixer": "10.2.5",
     "babel-jest": "26.6.3",
     "dockerfilelint": "1.8.0",
