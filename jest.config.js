@@ -5,6 +5,7 @@ module.exports = {
   },
   moduleDirectories: ['node_modules', './'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+  testEnvironment: 'jsdom',
   setupFilesAfterEnv: [
     '@testing-library/jest-dom/extend-expect',
     '@testing-library/react'
