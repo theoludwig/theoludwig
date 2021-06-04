@@ -1,4 +1,4 @@
-FROM node:16.2.0
+FROM node:16.3.0
 
 WORKDIR /usr/src/app
 RUN chown --recursive node:node /usr/src/app
