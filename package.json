@@ -61,7 +61,7 @@
     "eslint-plugin-prettier": "3.4.0",
     "eslint-plugin-promise": "5.1.0",
     "husky": "6.0.0",
-    "jest": "27.0.3",
+    "jest": "27.0.4",
     "lint-staged": "11.0.0",
     "markdownlint-cli": "0.27.1",
     "postcss": "8.3.0",
