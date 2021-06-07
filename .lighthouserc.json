@@ -13,6 +13,7 @@
         "legacy-javascript": "off",
         "unused-javascript": "off",
         "uses-rel-preload": "off",
+        "csp-xss": "off",
         "canonical": "off",
         "unsized-images": "off",
         "uses-responsive-images": "off",
