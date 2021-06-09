@@ -15,7 +15,7 @@ export const InterestParagraph: React.FC<InterestParagraphProps> = (props) => {
           {title}
         </strong>
         <br />
-        <span className='paragraph-color'>{htmlParser(description)}</span>
+        <span>{htmlParser(description)}</span>
       </p>
     </>
   )

@@ -19,7 +19,7 @@
       },
       {
         "title": "Open-Source enthusiast :",
-        "description": "For me, everyone should work, solve problems, build things and think together. Long live open source, whenever you can share your work, do it! <br/> The website is open-source on <a href='https://github.com/Divlo/Divlo' target='_blank' rel='noopener noreferrer'>github</a>."
+        "description": "For me, everyone should work, solve problems, build things and think together. Long live open source, whenever you can share your work, do it! <br/> The website is open-source on <a class='text-yellow dark:text-yellow-dark hover:underline' href='https://github.com/Divlo/Divlo' target='_blank' rel='noopener noreferrer'>github</a>."
       }
     ]
   },

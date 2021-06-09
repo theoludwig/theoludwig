@@ -15,7 +15,10 @@ export const ProfileItem: React.FC<ProfileItemProps> = (props) => {
         </strong>
         <span className='profile-list__item-info text-gray dark:text-gray-dark'>
           {link != null ? (
-            <a className='text-gray dark:text-gray-dark' href={link}>
+            <a
+              className='text-gray dark:text-gray-dark hover:underline'
+              href={link}
+            >
               {value}
             </a>
           ) : (
