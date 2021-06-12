@@ -9,3 +9,4 @@ services:
       - '${PORT}:${PORT}'
     environment:
       PORT: ${PORT}
+    env_file: './.env'

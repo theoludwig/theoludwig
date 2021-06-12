@@ -1,5 +1,12 @@
 {
-  "recommendations": [
+  "name": "divlo",
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "workspace",
+  "workspaceFolder": "/workspace",
+  "settings": {
+    "remote.autoForwardPorts": false
+  },
+  "extensions": [
     "editorconfig.editorconfig",
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
@@ -10,5 +17,8 @@
     "coenraads.bracket-pair-colorizer",
     "davidanson.vscode-markdownlint",
     "ms-azuretools.vscode-docker"
-  ]
+  ],
+  "forwardPorts": [3000],
+  "postAttachCommand": ["npm", "clean-install"],
+  "remoteUser": "node"
 }

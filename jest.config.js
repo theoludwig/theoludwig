@@ -11,18 +11,6 @@ module.exports = {
     '@testing-library/react'
   ],
   collectCoverage: true,
-  collectCoverageFrom: [
-    '**/*.{js,jsx,ts,tsx}',
-    '!**/*.d.ts',
-    '!**/.next/**',
-    '!**/node_modules/**',
-    '!**/next.config.js',
-    '!**/postcss.config.js',
-    '!**/tailwind.config.js',
-    '!**/workbox-*.js',
-    '!**/sw.js',
-    '!**/jest.config.js'
-  ],
   coverageDirectory: './coverage',
   coverageReporters: ['text', 'cobertura']
 }
