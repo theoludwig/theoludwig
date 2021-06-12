@@ -2,13 +2,12 @@ name: 'Divlo'
 
 on:
   push:
-    branches: [master]
+    branches: [master, develop]
   pull_request:
-    branches: [master]
+    branches: [master, develop]
 
 jobs:
   analyze:
-    name: 'Analyze'
     runs-on: 'ubuntu-latest'
 
     strategy:
@@ -35,7 +34,7 @@ jobs:
       - name: 'Use Node.js'
         uses: 'actions/setup-node@v2.1.5'
         with:
-          node-version: '14.x'
+          node-version: '16.x'
 
       - name: 'Cache dependencies'
         uses: 'actions/cache@v2.1.6'
@@ -60,7 +59,7 @@ jobs:
       - name: 'Use Node.js'
         uses: 'actions/setup-node@v2.1.5'
         with:
-          node-version: '14.x'
+          node-version: '16.x'
 
       - name: 'Cache dependencies'
         uses: 'actions/cache@v2.1.6'
@@ -85,7 +84,7 @@ jobs:
       - name: 'Use Node.js'
         uses: 'actions/setup-node@v2.1.5'
         with:
-          node-version: '14.x'
+          node-version: '16.x'
 
       - name: 'Cache dependencies'
         uses: 'actions/cache@v2.1.6'
@@ -109,7 +108,7 @@ jobs:
       - name: 'Use Node.js'
         uses: 'actions/setup-node@v2.1.5'
         with:
-          node-version: '14.x'
+          node-version: '16.x'
 
       - name: 'Cache dependencies'
         uses: 'actions/cache@v2.1.6'

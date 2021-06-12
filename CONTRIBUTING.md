@@ -49,6 +49,11 @@ Scopes define what part of the code changed.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Divlo/Divlo)
 
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) >= 16
+- [npm](https://www.npmjs.com/) >= 7
+
 ### Installation
 
 ```sh
@@ -60,9 +65,18 @@ cd Divlo
 
 # Configure environment variables
 cp .env.example .env
+
+# Install
+npm install
 ```
 
-### Development environment with [Docker](https://www.docker.com/)
+### Local Development environment
+
+```sh
+npm run dev
+```
+
+### Production environment with [Docker](https://www.docker.com/)
 
 ```sh
 # Setup and run all the services for you
