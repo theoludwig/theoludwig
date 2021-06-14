@@ -51,7 +51,7 @@ Scopes define what part of the code changed.
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) >= 16
+- [Node.js](https://nodejs.org/) >= 14
 - [npm](https://www.npmjs.com/) >= 7
 
 ### Installation
@@ -73,6 +73,7 @@ npm install
 ### Local Development environment
 
 ```sh
+# Run website
 npm run dev
 ```
 
