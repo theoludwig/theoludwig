@@ -1,5 +1,3 @@
-import { forwardRef } from 'react'
-
 import { ShadowContainer } from '../ShadowContainer'
 import { SectionHeading } from './SectionHeading'
 
@@ -10,7 +8,7 @@ type SectionProps = React.ComponentPropsWithRef<'section'> & {
   withoutShadowContainer?: boolean
 }
 
-export const Section = forwardRef<HTMLElement, SectionProps>((props, ref) => {
+export const Section: React.FC<SectionProps> = (props) => {
   const {
     children,
     heading,
@@ -24,7 +22,7 @@ export const Section = forwardRef<HTMLElement, SectionProps>((props, ref) => {
     return (
       <div className='px-3 w-full'>
         <ShadowContainer style={{ marginTop: 50 }}>
-          <section ref={ref} {...rest}>
+          <section {...rest}>
             {heading != null && <SectionHeading>{heading}</SectionHeading>}
             <div className='px-3 w-full'>{children}</div>
           </section>
@@ -35,7 +33,7 @@ export const Section = forwardRef<HTMLElement, SectionProps>((props, ref) => {
 
   if (withoutShadowContainer) {
     return (
-      <section ref={ref} {...rest}>
+      <section {...rest}>
         {heading != null && <SectionHeading>{heading}</SectionHeading>}
         <div className='px-3 w-full'>{children}</div>
       </section>
@@ -43,7 +41,7 @@ export const Section = forwardRef<HTMLElement, SectionProps>((props, ref) => {
   }
 
   return (
-    <section ref={ref} {...rest}>
+    <section {...rest}>
       {heading != null && (
         <SectionHeading style={{ ...(description != null && { margin: 0 }) }}>
           {heading}
@@ -61,4 +59,4 @@ export const Section = forwardRef<HTMLElement, SectionProps>((props, ref) => {
       </div>
     </section>
   )
-})
+}

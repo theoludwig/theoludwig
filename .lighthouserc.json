@@ -10,16 +10,9 @@
     "assert": {
       "preset": "lighthouse:recommended",
       "assertions": {
-        "legacy-javascript": "off",
-        "unused-javascript": "off",
-        "uses-rel-preload": "off",
-        "csp-xss": "off",
-        "canonical": "off",
-        "unsized-images": "off",
-        "uses-responsive-images": "off",
-        "bypass": "warning",
-        "color-contrast": "warning",
-        "preload-lcp-image": "warning"
+        "csp-xss": "warning",
+        "non-composited-animations": "warning",
+        "uses-responsive-images": "warning"
       }
     },
     "upload": {

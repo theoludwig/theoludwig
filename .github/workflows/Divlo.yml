@@ -75,6 +75,8 @@ jobs:
 
       - name: 'Lighthouse'
         run: 'npm run lighthouse'
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
 
   test:
     runs-on: 'ubuntu-latest'
