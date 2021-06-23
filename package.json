@@ -52,7 +52,7 @@
     "@types/node": "15.12.4",
     "@types/react": "17.0.11",
     "@types/styled-jsx": "2.2.8",
-    "@typescript-eslint/eslint-plugin": "4.27.0",
+    "@typescript-eslint/eslint-plugin": "4.28.0",
     "autoprefixer": "10.2.6",
     "babel-jest": "27.0.5",
     "dockerfilelint": "1.8.0",
