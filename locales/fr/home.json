@@ -7,7 +7,7 @@
     "descriptionBottom": "Je me forme en autodidacte dans l'informatique en suivant des formations en ligne. <0/> <0/> Je mets en pratique tout ce que j'apprends et réalise de nombreux projets."
   },
   "interests": {
-    "title": "Mes intérêts",
+    "title": "Intérêts",
     "paragraphs": [
       {
         "title": "Développeur Full Stack Junior :",
@@ -24,12 +24,12 @@
     ]
   },
   "skills": {
-    "title": "Mes compétences",
+    "title": "Compétences",
     "languages": "Langages de programmation",
     "softwareTools": "Logiciels et outils"
   },
   "portfolio": {
-    "title": "Mon Portfolio",
+    "title": "Portfolio",
     "items": [
       {
         "title": "function.divlo.fr",

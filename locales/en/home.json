@@ -7,7 +7,7 @@
     "descriptionBottom": "I am self-taught in Computer Science by following online trainings. <0/> <0/> I put into practice everything I learn and make many projects."
   },
   "interests": {
-    "title": "My Interests",
+    "title": "Interests",
     "paragraphs": [
       {
         "title": "Developer Full Stack Junior :",
@@ -24,12 +24,12 @@
     ]
   },
   "skills": {
-    "title": "My skills",
+    "title": "Skills",
     "languages": "Programming languages",
     "softwareTools": "Software and tools"
   },
   "portfolio": {
-    "title": "My Portfolio",
+    "title": "Portfolio",
     "items": [
       {
         "title": "function.divlo.fr",
