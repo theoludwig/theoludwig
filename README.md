@@ -31,9 +31,9 @@ export interface Divlo {
     'Open-Source enthusiast'
   ]
   skills: {
-    languages: ['JavaScript', 'TypeScript', 'Python', 'Dart']
-    frontEnd: ['HTML', 'CSS', 'SASS', 'React.js (+ Next.js)', 'Flutter']
-    backEnd: ['Node.js', 'Strapi', 'MySQL']
+    languages: ['JavaScript', 'TypeScript', 'Python', 'C/C++']
+    frontEnd: ['HTML', 'CSS', 'Tailwind CSS', 'React.js (+ Next.js)']
+    backEnd: ['Node.js', 'Fastify', 'Prisma', 'PostgreSQL', 'MySQL']
     tools: ['Ubuntu', 'Hyper Terminal', 'VSCode', 'Git', 'Docker']
   }
 }

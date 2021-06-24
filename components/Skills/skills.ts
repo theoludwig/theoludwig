@@ -1,4 +1,13 @@
-export const skills = {
+export interface Skill {
+  link: string
+  image: string | { [key: string]: string }
+}
+
+export interface Skills {
+  [key: string]: Skill
+}
+
+export const skills: Skills = {
   JavaScript: {
     link: 'https://developer.mozilla.org/docs/Web/JavaScript',
     image: '/images/skills/JavaScript.png'
@@ -10,6 +19,10 @@ export const skills = {
   Python: {
     link: 'https://www.python.org/',
     image: '/images/skills/Python.png'
+  },
+  'C/C++': {
+    link: 'https://isocpp.org/',
+    image: '/images/skills/C-Cpp.png'
   },
   Dart: {
     link: 'https://dart.dev/',
@@ -27,6 +40,10 @@ export const skills = {
     link: 'https://developer.mozilla.org/docs/Web/CSS',
     image: '/images/skills/CSS.png'
   },
+  'Tailwind CSS': {
+    link: 'https://tailwindcss.com/',
+    image: '/images/skills/TailwindCSS.png'
+  },
   SASS: {
     link: 'https://sass-lang.com/',
     image: '/images/skills/SASS.svg'
@@ -38,6 +55,24 @@ export const skills = {
   'Node.js': {
     link: 'https://nodejs.org/',
     image: '/images/skills/NodeJS.png'
+  },
+  Fastify: {
+    link: 'https://www.fastify.io/',
+    image: {
+      light: '/images/skills/Fastify-light.png',
+      dark: '/images/skills/Fastify-dark.png'
+    }
+  },
+  Prisma: {
+    link: 'https://www.prisma.io/',
+    image: {
+      light: '/images/skills/Prisma-light.png',
+      dark: '/images/skills/Prisma-dark.png'
+    }
+  },
+  PostgreSQL: {
+    link: 'https://www.postgresql.org/',
+    image: '/images/skills/PostgreSQL.png'
   },
   MySQL: {
     link: 'https://www.mysql.com/',

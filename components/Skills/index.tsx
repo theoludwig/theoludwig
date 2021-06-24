@@ -1,6 +1,6 @@
 import useTranslation from 'next-translate/useTranslation'
 
-import { Skill } from './Skill'
+import { SkillComponent } from './Skill'
 import { SkillsSection } from './SkillsSection'
 
 export const Skills: React.FC = () => {
@@ -9,32 +9,33 @@ export const Skills: React.FC = () => {
   return (
     <>
       <SkillsSection title={t('home:skills.languages')}>
-        <Skill skill='JavaScript' />
-        <Skill skill='TypeScript' />
-        <Skill skill='Python' />
-        <Skill skill='Dart' />
+        <SkillComponent skill='JavaScript' />
+        <SkillComponent skill='TypeScript' />
+        <SkillComponent skill='Python' />
+        <SkillComponent skill='C/C++' />
       </SkillsSection>
 
       <SkillsSection title='Front-end'>
-        <Skill skill='HTML' />
-        <Skill skill='CSS' />
-        <Skill skill='SASS' />
-        <Skill skill='React.js (+ Next.js)' />
-        <Skill skill='Flutter' />
+        <SkillComponent skill='HTML' />
+        <SkillComponent skill='CSS' />
+        <SkillComponent skill='Tailwind CSS' />
+        <SkillComponent skill='React.js (+ Next.js)' />
       </SkillsSection>
 
       <SkillsSection title='Back-end'>
-        <Skill skill='Node.js' />
-        <Skill skill='Strapi' />
-        <Skill skill='MySQL' />
+        <SkillComponent skill='Node.js' />
+        <SkillComponent skill='Fastify' />
+        <SkillComponent skill='Prisma' />
+        <SkillComponent skill='PostgreSQL' />
+        <SkillComponent skill='MySQL' />
       </SkillsSection>
 
       <SkillsSection title={t('home:skills.softwareTools')}>
-        <Skill skill='Ubuntu' />
-        <Skill skill='Hyper' />
-        <Skill skill='Visual Studio Code' />
-        <Skill skill='Git' />
-        <Skill skill='Docker' />
+        <SkillComponent skill='Ubuntu' />
+        <SkillComponent skill='Hyper' />
+        <SkillComponent skill='Visual Studio Code' />
+        <SkillComponent skill='Git' />
+        <SkillComponent skill='Docker' />
       </SkillsSection>
     </>
   )

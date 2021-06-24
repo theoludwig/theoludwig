@@ -1,14 +1,24 @@
+import { useTheme } from 'next-themes'
 import Image from 'next/image'
+import { useMemo } from 'react'
 
 import { skills } from './skills'
 
-export interface SkillProps {
-  skill: keyof typeof skills
+export interface SkillComponentProps {
+  skill: string
 }
 
-export const Skill: React.FC<SkillProps> = (props) => {
+export const SkillComponent: React.FC<SkillComponentProps> = (props) => {
   const { skill } = props
   const skillProperties = skills[skill]
+  const { theme } = useTheme()
+
+  const image = useMemo(() => {
+    if (typeof skillProperties.image !== 'string') {
+      return skillProperties.image[theme ?? 'light']
+    }
+    return skillProperties.image
+  }, [skillProperties, theme])
 
   return (
     <a
@@ -18,7 +28,7 @@ export const Skill: React.FC<SkillProps> = (props) => {
       rel='noopener noreferrer'
     >
       <div className='text-center'>
-        <Image width={60} height={60} alt={skill} src={skillProperties.image} />
+        <Image width={60} height={60} alt={skill} src={image} />
         <p className='mt-1'>{skill}</p>
       </div>
     </a>
