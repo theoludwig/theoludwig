@@ -42,6 +42,12 @@
         "description": "Votre plateforme open source pour rester proche de vos amis et communautés, parler, discuter, collaborer, partager et vous amuser.",
         "link": "https://thream.divlo.fr/",
         "image": "/images/portfolio/threamdivlofr.png"
+      },
+      {
+        "title": "Leon",
+        "description": "Leon est votre assistant personnel open source.",
+        "link": "https://getleon.ai/",
+        "image": "/images/portfolio/leon.png"
       }
     ]
   }
