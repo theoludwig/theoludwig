@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Divlo/Divlo/actions?query=workflow%3A%22Divlo%22"><img src="https://github.com/Divlo/Divlo/actions/workflows/Divlo.yml/badge.svg?branch=master" alt="Divlo's CI" /></a>
+  <a href="https://github.com/Divlo/Divlo/actions/workflows/Divlo.yml"><img src="https://github.com/Divlo/Divlo/actions/workflows/Divlo.yml/badge.svg?branch=master" alt="Divlo's CI" /></a>
   <a href="https://github.com/Divlo"><img alt="GitHub" src="https://img.shields.io/badge/-GitHub-5A5A5A?style=flat&labelColor=5A5A5A&logo=github&logoColor=white"/></a>
   <a href="https://gitlab.com/Divlo"><img alt="GitLab" src="https://img.shields.io/badge/-GitLab-303030?style=flat&labelColor=303030&logo=gitlab&logoColor=white"/></a>
   <a href="https://www.npmjs.com/~divlo"><img alt="npm" src="https://img.shields.io/badge/-npm-c4302b?style=flat&labelColor=c4302b&logo=npm&logoColor=white"/></a>
@@ -32,7 +32,7 @@
     "Open-Source enthusiast"
   ],
   "skills": {
-    "languages": ["JavaScript", "TypeScript", "Python"],
+    "programmingLanguages": ["JavaScript", "TypeScript", "Python"],
     "frontEnd": ["HTML", "CSS", "Tailwind CSS", "React.js (+ Next.js)"],
     "backEnd": ["Node.js", "Fastify", "Prisma", "PostgreSQL", "MySQL"],
     "tools": ["Ubuntu", "Hyper Terminal", "VSCode", "Git", "Docker"]
@@ -46,5 +46,5 @@
 
 <p align=center>
   <img height=175 align="center" src="https://github-readme-stats.vercel.app/api?username=Divlo&show_icons=true&theme=dark" />
-  <img height=175 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Divlo&hide=html,css&langs_count=8&layout=compact&theme=dark" />
+  <img height=175 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Divlo&hide=html,css,javascript&langs_count=8&layout=compact&theme=dark" />
 </p>

@@ -9,6 +9,7 @@ import { Portfolio } from 'components/Portfolio'
 import { Profile } from 'components/Profile'
 import { SocialMediaList } from 'components/Profile/SocialMediaList'
 import { Skills } from 'components/Skills'
+import { OpenSource } from 'components/OpenSource'
 
 const Home: React.FC = () => {
   const { t } = useTranslation()
@@ -45,6 +46,12 @@ const Home: React.FC = () => {
           withoutShadowContainer
         >
           <Portfolio />
+        </Section>
+      </RevealFade>
+
+      <RevealFade>
+        <Section id='open-source' heading='Open source' withoutShadowContainer>
+          <OpenSource />
         </Section>
       </RevealFade>
     </>

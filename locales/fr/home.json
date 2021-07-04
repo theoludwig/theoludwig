@@ -50,5 +50,8 @@
         "image": "/images/portfolio/leon.png"
       }
     ]
+  },
+  "open-source": {
+    "description": "Liste des projets open source les plus célèbres auxquels j'ai contribué."
   }
 }

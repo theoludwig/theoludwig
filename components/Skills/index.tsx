@@ -12,7 +12,6 @@ export const Skills: React.FC = () => {
         <SkillComponent skill='JavaScript' />
         <SkillComponent skill='TypeScript' />
         <SkillComponent skill='Python' />
-        <SkillComponent skill='C/C++' />
       </SkillsSection>
 
       <SkillsSection title='Front-end'>
