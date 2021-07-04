@@ -20,21 +20,22 @@
 
 ## 📜 About
 
-```typescript
-export interface Divlo {
-  pronouns: 'He' | 'Him'
-  birthDate: '31/03/2003'
-  nationality: 'Alsace, France'
-  interests: [
-    'Developer Full Stack Junior',
-    'Passionate about High-Tech',
-    'Open-Source enthusiast'
-  ]
-  skills: {
-    languages: ['JavaScript', 'TypeScript', 'Python', 'C/C++']
-    frontEnd: ['HTML', 'CSS', 'Tailwind CSS', 'React.js (+ Next.js)']
-    backEnd: ['Node.js', 'Fastify', 'Prisma', 'PostgreSQL', 'MySQL']
-    tools: ['Ubuntu', 'Hyper Terminal', 'VSCode', 'Git', 'Docker']
+```json
+{
+  "name": "Divlo",
+  "pronouns": "He' | 'Him",
+  "birthDate": "31/03/2003",
+  "nationality": "Alsace, France",
+  "interests": [
+    "Developer Full Stack Junior",
+    "Passionate about High-Tech",
+    "Open-Source enthusiast"
+  ],
+  "skills": {
+    "languages": ["JavaScript", "TypeScript", "Python"],
+    "frontEnd": ["HTML", "CSS", "Tailwind CSS", "React.js (+ Next.js)"],
+    "backEnd": ["Node.js", "Fastify", "Prisma", "PostgreSQL", "MySQL"],
+    "tools": ["Ubuntu", "Hyper Terminal", "VSCode", "Git", "Docker"]
   }
 }
 ```
