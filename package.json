@@ -53,7 +53,7 @@
     "@types/react": "17.0.14",
     "@types/styled-jsx": "2.2.9",
     "@typescript-eslint/eslint-plugin": "4.28.2",
-    "autoprefixer": "10.2.6",
+    "autoprefixer": "10.3.0",
     "babel-jest": "27.0.6",
     "dockerfilelint": "1.8.0",
     "editorconfig-checker": "4.0.2",
