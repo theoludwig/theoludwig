@@ -6,3 +6,4 @@ package.json
 package-lock.json
 **/workbox-*.js
 **/sw.js
+.vercel
