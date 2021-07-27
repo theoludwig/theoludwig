@@ -26,9 +26,9 @@ export const OpenSource: React.FC = () => {
             href='https://github.com/nrwl/nx/commits?author=Divlo'
           />
           <Repository
-            name='facebook/jest'
-            description='Delightful JavaScript Testing.'
-            href='https://github.com/facebook/jest/commits?author=Divlo'
+            name='vercel/styled-jsx'
+            description='Full CSS support for JSX without compromises'
+            href='https://github.com/vercel/styled-jsx/commits?author=Divlo'
           />
         </div>
       </div>
