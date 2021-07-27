@@ -11,10 +11,7 @@ export const Footer: React.FC<FooterProps> = (props) => {
   const { version } = props
 
   const versionLink = useMemo(() => {
-    if (version !== '0.0.0-development') {
-      return `https://github.com/Divlo/Divlo/releases/tag/v${version}`
-    }
-    return 'https://github.com/Divlo/Divlo/tree/develop'
+    return `https://github.com/Divlo/Divlo/releases/tag/v${version}`
   }, [version])
 
   return (

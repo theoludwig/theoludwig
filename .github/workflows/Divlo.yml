@@ -95,6 +95,13 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
+      - name: 'Import GPG key'
+        uses: 'crazy-max/ghaction-import-gpg@v3.1.0'
+        with:
+          gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
+          git-user-signingkey: true
+          git-commit-gpgsign: true
+
       - name: 'Use Node.js'
         uses: 'actions/setup-node@v2.3.0'
         with:
