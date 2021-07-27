@@ -1,5 +1,6 @@
 import { GetStaticProps } from 'next'
 import useTranslation from 'next-translate/useTranslation'
+import readPackageJSON from 'read-pkg'
 
 import { RevealFade } from 'components/design/RevealFade'
 import { Section } from 'components/design/Section'
@@ -10,56 +11,68 @@ import { Profile } from 'components/Profile'
 import { SocialMediaList } from 'components/Profile/SocialMediaList'
 import { Skills } from 'components/Skills'
 import { OpenSource } from 'components/OpenSource'
+import { Header } from 'components/Header'
+import { Footer, FooterProps } from 'components/Footer'
 
-const Home: React.FC = () => {
+const Home: React.FC<FooterProps> = (props) => {
   const { t } = useTranslation()
+  const { version } = props
 
   return (
     <>
       <Head />
 
-      <Section isMain id='about'>
-        <Profile />
-        <SocialMediaList />
-      </Section>
-
-      <RevealFade>
-        <Section id='interests' heading={t('home:interests.title')}>
-          <Interests />
+      <Header />
+      <main className='flex flex-col md:mx-auto md:max-w-4xl lg:max-w-7xl'>
+        <Section isMain id='about'>
+          <Profile />
+          <SocialMediaList />
         </Section>
-      </RevealFade>
 
-      <RevealFade>
-        <Section
-          id='skills'
-          heading={t('home:skills.title')}
-          withoutShadowContainer
-        >
-          <Skills />
-        </Section>
-      </RevealFade>
+        <RevealFade>
+          <Section id='interests' heading={t('home:interests.title')}>
+            <Interests />
+          </Section>
+        </RevealFade>
 
-      <RevealFade>
-        <Section
-          id='portfolio'
-          heading={t('home:portfolio.title')}
-          withoutShadowContainer
-        >
-          <Portfolio />
-        </Section>
-      </RevealFade>
+        <RevealFade>
+          <Section
+            id='skills'
+            heading={t('home:skills.title')}
+            withoutShadowContainer
+          >
+            <Skills />
+          </Section>
+        </RevealFade>
 
-      <RevealFade>
-        <Section id='open-source' heading='Open source' withoutShadowContainer>
-          <OpenSource />
-        </Section>
-      </RevealFade>
+        <RevealFade>
+          <Section
+            id='portfolio'
+            heading={t('home:portfolio.title')}
+            withoutShadowContainer
+          >
+            <Portfolio />
+          </Section>
+        </RevealFade>
+
+        <RevealFade>
+          <Section
+            id='open-source'
+            heading='Open source'
+            withoutShadowContainer
+          >
+            <OpenSource />
+          </Section>
+        </RevealFade>
+      </main>
+      <Footer version={version} />
     </>
   )
 }
 
-export const getStaticProps: GetStaticProps = async () => {
-  return { props: {} }
+export const getStaticProps: GetStaticProps<FooterProps> = async () => {
+  const { version } = await readPackageJSON()
+  return { props: { version } }
 }
 
 export default Home
