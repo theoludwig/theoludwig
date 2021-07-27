@@ -15,9 +15,7 @@ export const Repository: React.FC<RepositoryProps> = (props) => {
       <a href={href} target='_blank' rel='noopener noreferrer'>
         <div className='flex'>
           <GitHubIcon className='h-6 mr-2' />
-          <span className='text-yellow dark:text-yellow-dark hover:underline'>
-            {name}
-          </span>
+          <span className='text-yellow dark:text-yellow-dark'>{name}</span>
         </div>
         <p className='my-4'>{description}</p>
       </a>
