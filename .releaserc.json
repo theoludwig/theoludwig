@@ -14,11 +14,7 @@
       }
     ],
     "@semantic-release/npm",
-    [
-      "@semantic-release/github",
-      {
-        "assets": [{ "path": "Divlo.tar.gz", "label": "Source code (tar.gz)" }]
-      }
-    ]
+    "@semantic-release/git",
+    "@semantic-release/github"
   ]
 }

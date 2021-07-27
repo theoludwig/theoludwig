@@ -101,9 +101,6 @@ jobs:
       - name: 'Install'
         run: 'npm install'
 
-      - name: 'Archive Source code'
-        run: 'tar --exclude="./node_modules" --exclude=".git" -cvf "./Divlo.tar.gz" "./" --warning=no-file-changed'
-
       - name: 'Release'
         run: 'npm run release'
         env:
