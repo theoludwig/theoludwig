@@ -8,7 +8,6 @@ import 'tailwindcss/tailwind.css'
 import '@fontsource/montserrat/400.css'
 import '@fontsource/montserrat/500.css'
 import '@fontsource/montserrat/600.css'
-import '@fontsource/montserrat/700.css'
 
 const universalCookie = new UniversalCookie()
 

@@ -5,7 +5,7 @@
     "next/core-web-vitals",
     "prettier"
   ],
-  "plugins": ["prettier"],
+  "plugins": ["unicorn", "prettier"],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
@@ -15,6 +15,17 @@
     "jest": true
   },
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "unicorn/prefer-node-protocol": "error",
+    "unicorn/prevent-abbreviations": [
+      "error",
+      {
+        "replacements": {
+          "props": {
+            "properties": false
+          }
+        }
+      }
+    ]
   }
 }
