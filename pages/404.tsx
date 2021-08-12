@@ -1,6 +1,5 @@
 import { GetStaticProps } from 'next'
 import useTranslation from 'next-translate/useTranslation'
-import readPackageJSON from 'read-pkg'
 
 import { ErrorPage } from 'components/ErrorPage'
 import { Head } from 'components/Head'
@@ -25,7 +24,8 @@ const Error404: React.FC<FooterProps> = (props) => {
 }
 
 export const getStaticProps: GetStaticProps<FooterProps> = async () => {
-  const { version } = await readPackageJSON()
+  const { readPackageAsync } = await import('read-pkg')
+  const { version } = await readPackageAsync()
   return { props: { version } }
 }
 

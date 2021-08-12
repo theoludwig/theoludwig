@@ -1,6 +1,5 @@
 import { GetStaticProps } from 'next'
 import useTranslation from 'next-translate/useTranslation'
-import readPackageJSON from 'read-pkg'
 
 import { RevealFade } from 'components/design/RevealFade'
 import { Section } from 'components/design/Section'
@@ -71,7 +70,8 @@ const Home: React.FC<FooterProps> = (props) => {
 }
 
 export const getStaticProps: GetStaticProps<FooterProps> = async () => {
-  const { version } = await readPackageJSON()
+  const { readPackageAsync } = await import('read-pkg')
+  const { version } = await readPackageAsync()
   return { props: { version } }
 }
 
