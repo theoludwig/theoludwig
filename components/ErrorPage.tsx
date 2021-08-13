@@ -14,7 +14,12 @@ export const ErrorPage: React.FC<ErrorPageProps> = (props) => {
     <>
       <h1 className='my-6 font-semibold text-4xl'>
         {t('errors:error')}{' '}
-        <span className='text-yellow dark:text-yellow-dark'>{statusCode}</span>
+        <span
+          className='text-yellow dark:text-yellow-dark'
+          data-cy='status-code'
+        >
+          {statusCode}
+        </span>
       </h1>
       <p className='text-center text-lg'>
         {message}{' '}

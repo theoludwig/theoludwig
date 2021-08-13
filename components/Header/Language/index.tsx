@@ -33,12 +33,19 @@ export const Language: React.FC = () => {
 
   return (
     <div className='flex flex-col justify-center items-center cursor-pointer'>
-      <div className='flex items-center mr-5' onClick={handleHiddenMenu}>
+      <div
+        data-cy='language-click'
+        className='flex items-center mr-5'
+        onClick={handleHiddenMenu}
+      >
         <LanguageFlag language={currentLanguage} />
         <Arrow />
       </div>
       {!hiddenMenu && (
-        <ul className='flex flex-col justify-center items-center absolute p-0 top-14 z-10 w-24 mt-3 mr-4 rounded-lg list-none shadow-light dark:shadow-dark bg-white dark:bg-black'>
+        <ul
+          data-cy='languages-list'
+          className='flex flex-col justify-center items-center absolute p-0 top-14 z-10 w-24 mt-3 mr-4 rounded-lg list-none shadow-light dark:shadow-dark bg-white dark:bg-black'
+        >
           {i18n.locales.map((language, index) => {
             if (language === currentLanguage) {
               return null
