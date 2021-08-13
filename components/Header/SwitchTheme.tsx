@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 
 export const SwitchTheme: React.FC = () => {
@@ -13,23 +13,29 @@ export const SwitchTheme: React.FC = () => {
     return null
   }
 
+  const handleClick = (): void => {
+    setTheme(theme === 'dark' ? 'light' : 'dark')
+  }
+
   return (
     <>
       <div
         className='toggle-button'
-        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+        data-cy='switch-theme-click'
+        onClick={handleClick}
       >
         <div className='toggle-theme-button'>
           <div className='toggle-track'>
-            <div className='toggle-track-check'>
+            <div data-cy='switch-theme-dark' className='toggle-track-check'>
               <span className='toggle_Dark'>🌜</span>
             </div>
-            <div className='toggle-track-x'>
+            <div data-cy='switch-theme-light' className='toggle-track-x'>
               <span className='toggle_Light'>🌞</span>
             </div>
           </div>
           <div className='toggle-thumb' />
           <input
+            data-cy='switch-theme-input'
             type='checkbox'
             aria-label='Dark mode toggle'
             className='toggle-screenreader-only'

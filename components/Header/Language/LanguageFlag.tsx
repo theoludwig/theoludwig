@@ -15,7 +15,9 @@ export const LanguageFlag: React.FC<LanguageFlagProps> = (props) => {
         src={`/images/languages/${language}.svg`}
         alt={language}
       />
-      <p className='mx-2 text-base'>{language.toUpperCase()}</p>
+      <p data-cy='language-flag-text' className='mx-2 text-base'>
+        {language.toUpperCase()}
+      </p>
     </>
   )
 }
