@@ -24,8 +24,8 @@ const Error404: React.FC<FooterProps> = (props) => {
 }
 
 export const getStaticProps: GetStaticProps<FooterProps> = async () => {
-  const { readPackageAsync } = await import('read-pkg')
-  const { version } = await readPackageAsync()
+  const { readPackage } = await import('read-pkg')
+  const { version } = await readPackage()
   return { props: { version } }
 }
 
