@@ -10,8 +10,7 @@
     "assert": {
       "preset": "lighthouse:recommended",
       "assertions": {
-        "csp-xss": "warning",
-        "uses-responsive-images": "warning"
+        "csp-xss": "warning"
       }
     },
     "upload": {
