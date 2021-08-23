@@ -31,7 +31,6 @@ export const Skills: React.FC = () => {
 
       <SkillsSection title={t('home:skills.softwareTools')}>
         <SkillComponent skill='Ubuntu' />
-        <SkillComponent skill='Hyper' />
         <SkillComponent skill='Visual Studio Code' />
         <SkillComponent skill='Git' />
         <SkillComponent skill='Docker' />

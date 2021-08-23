@@ -23,7 +23,7 @@
 ```json
 {
   "name": "Divlo",
-  "pronouns": "He' | 'Him",
+  "pronouns": "He/Him",
   "birthDate": "31/03/2003",
   "nationality": "Alsace, France",
   "interests": [
@@ -35,7 +35,7 @@
     "programmingLanguages": ["JavaScript", "TypeScript", "Python"],
     "frontEnd": ["HTML", "CSS", "Tailwind CSS", "React.js (+ Next.js)"],
     "backEnd": ["Node.js", "Fastify", "Prisma", "PostgreSQL", "MySQL"],
-    "tools": ["Ubuntu", "Hyper Terminal", "VSCode", "Git", "Docker"]
+    "tools": ["Ubuntu", "Visual Studio Code", "Git", "Docker"]
   }
 }
 ```
