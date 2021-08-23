@@ -11,7 +11,7 @@ export const InterestParagraph: React.FC<InterestParagraphProps> = (props) => {
   return (
     <>
       <p className='text-center my-6 text-gray dark:text-gray-dark'>
-        <strong className='text-yellow font-medium text-lg dark:text-yellow-dark'>
+        <strong className='text-yellow font-semibold text-lg dark:text-yellow-dark'>
           {title}
         </strong>
         <br />

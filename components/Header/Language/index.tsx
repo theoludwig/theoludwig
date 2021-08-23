@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import useTranslation from 'next-translate/useTranslation'
 import setLanguage from 'next-translate/setLanguage'
+import classNames from 'classnames'
 
 import { Arrow } from './Arrow'
 import { LanguageFlag } from './LanguageFlag'
@@ -41,27 +42,29 @@ export const Language: React.FC = () => {
         <LanguageFlag language={currentLanguage} />
         <Arrow />
       </div>
-      {!hiddenMenu && (
-        <ul
-          data-cy='languages-list'
-          className='flex flex-col justify-center items-center absolute p-0 top-14 z-10 w-24 mt-3 mr-4 rounded-lg list-none shadow-light dark:shadow-dark bg-white dark:bg-black'
-        >
-          {i18n.locales.map((language, index) => {
-            if (language === currentLanguage) {
-              return null
-            }
-            return (
-              <li
-                key={index}
-                className='flex items-center justify-center w-full h-12 hover:bg-[#4f545c] hover:bg-opacity-20 pl-2'
-                onClick={async () => await handleLanguage(language)}
-              >
-                <LanguageFlag language={language} />
-              </li>
-            )
-          })}
-        </ul>
-      )}
+
+      <ul
+        data-cy='languages-list'
+        className={classNames(
+          'flex flex-col justify-center items-center absolute p-0 top-14 z-10 w-24 mt-3 mr-4 rounded-lg list-none shadow-light dark:shadow-dark bg-white dark:bg-black',
+          { hidden: hiddenMenu }
+        )}
+      >
+        {i18n.locales.map((language, index) => {
+          if (language === currentLanguage) {
+            return null
+          }
+          return (
+            <li
+              key={index}
+              className='flex items-center justify-center w-full h-12 hover:bg-[#4f545c] hover:bg-opacity-20 pl-2'
+              onClick={async () => await handleLanguage(language)}
+            >
+              <LanguageFlag language={language} />
+            </li>
+          )
+        })}
+      </ul>
     </div>
   )
 }
