@@ -81,7 +81,7 @@
     "postcss": "8.3.6",
     "prettier": "2.3.2",
     "semantic-release": "17.4.7",
-    "start-server-and-test": "1.13.1",
+    "start-server-and-test": "1.14.0",
     "tailwindcss": "2.2.9",
     "typescript": "4.4.2",
     "vercel": "23.1.2"
