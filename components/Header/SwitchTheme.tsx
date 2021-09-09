@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 
 export const SwitchTheme: React.FC = () => {
@@ -20,25 +20,35 @@ export const SwitchTheme: React.FC = () => {
   return (
     <>
       <div
-        className='toggle-button'
+        className='flex items-center'
         data-cy='switch-theme-click'
         onClick={handleClick}
       >
-        <div className='toggle-theme-button'>
+        <div className='toggle-theme-button relative cursor-pointer bg-transparent inline-block'>
           <div className='toggle-track'>
-            <div data-cy='switch-theme-dark' className='toggle-track-check'>
-              <span className='toggle_Dark'>🌜</span>
+            <div
+              data-cy='switch-theme-dark'
+              className='toggle-track-check absolute'
+            >
+              <span className='toggle_Dark flex justify-center items-center relative'>
+                🌜
+              </span>
             </div>
-            <div data-cy='switch-theme-light' className='toggle-track-x'>
-              <span className='toggle_Light'>🌞</span>
+            <div
+              data-cy='switch-theme-light'
+              className='toggle-track-x absolute'
+            >
+              <span className='toggle_Light flex justify-center items-center relative'>
+                🌞
+              </span>
             </div>
           </div>
-          <div className='toggle-thumb' />
+          <div className='toggle-thumb absolute' />
           <input
             data-cy='switch-theme-input'
             type='checkbox'
             aria-label='Dark mode toggle'
-            className='toggle-screenreader-only'
+            className='toggle-screenreader-only absolute overflow-hidden'
             defaultChecked
           />
         </div>
@@ -46,16 +56,8 @@ export const SwitchTheme: React.FC = () => {
 
       <style jsx>
         {`
-          .toggle-button {
-            display: flex;
-            align-items: center;
-          }
           .toggle-theme-button {
             touch-action: pan-x;
-            display: inline-block;
-            position: relative;
-            cursor: pointer;
-            background-color: transparent;
             border: 0;
             padding: 0;
             user-select: none;
@@ -70,7 +72,6 @@ export const SwitchTheme: React.FC = () => {
             color: #fff;
           }
           .toggle-track-check {
-            position: absolute;
             width: 14px;
             height: 10px;
             top: 0;
@@ -83,7 +84,6 @@ export const SwitchTheme: React.FC = () => {
             transition: opacity 0.25s ease;
           }
           .toggle-track-x {
-            position: absolute;
             width: 10px;
             height: 10px;
             top: 0;
@@ -96,15 +96,10 @@ export const SwitchTheme: React.FC = () => {
           }
           .toggle_Dark,
           .toggle_Light {
-            align-items: center;
-            display: flex;
             height: 10px;
-            justify-content: center;
-            position: relative;
             width: 10px;
           }
           .toggle-thumb {
-            position: absolute;
             left: ${theme === 'dark' ? '27px' : '0px'};
             width: 22px;
             height: 22px;
@@ -121,9 +116,7 @@ export const SwitchTheme: React.FC = () => {
             clip: rect(0 0 0 0);
             height: 1px;
             margin: -1px;
-            overflow: hidden;
             padding: 0;
-            position: absolute;
             width: 1px;
           }
         `}
