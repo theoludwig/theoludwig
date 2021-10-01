@@ -16,7 +16,7 @@ jobs:
         language: ['javascript']
 
     steps:
-      - uses: 'actions/checkout@v2.3.4'
+      - uses: 'actions/checkout@v2.4.0'
 
       - name: 'Initialize CodeQL'
         uses: 'github/codeql-action/init@v1'
@@ -29,7 +29,7 @@ jobs:
   build:
     runs-on: 'ubuntu-latest'
     steps:
-      - uses: 'actions/checkout@v2.3.4'
+      - uses: 'actions/checkout@v2.4.0'
 
       - name: 'Use Node.js'
         uses: 'actions/setup-node@v2.4.1'
@@ -46,7 +46,7 @@ jobs:
   lint:
     runs-on: 'ubuntu-latest'
     steps:
-      - uses: 'actions/checkout@v2.3.4'
+      - uses: 'actions/checkout@v2.4.0'
 
       - name: 'Use Node.js'
         uses: 'actions/setup-node@v2.4.1'
@@ -63,10 +63,15 @@ jobs:
       - run: 'npm run lint:markdown'
       - run: 'npm run lint:typescript'
 
+      - name: 'dotenv-linter'
+        uses: 'dotenv-linter/action-dotenv-linter@v2'
+        with:
+          github_token: ${{ secrets.github_token }}
+
   test-unit:
     runs-on: 'ubuntu-latest'
     steps:
-      - uses: 'actions/checkout@v2.3.4'
+      - uses: 'actions/checkout@v2.4.0'
 
       - name: 'Use Node.js'
         uses: 'actions/setup-node@v2.4.1'
@@ -83,7 +88,7 @@ jobs:
   test-lighthouse:
     runs-on: 'ubuntu-latest'
     steps:
-      - uses: 'actions/checkout@v2.3.4'
+      - uses: 'actions/checkout@v2.4.0'
 
       - name: 'Use Node.js'
         uses: 'actions/setup-node@v2.4.1'
@@ -105,7 +110,7 @@ jobs:
   test-e2e:
     runs-on: 'ubuntu-latest'
     steps:
-      - uses: 'actions/checkout@v2.3.4'
+      - uses: 'actions/checkout@v2.4.0'
 
       - name: 'Use Node.js'
         uses: 'actions/setup-node@v2.4.1'
@@ -127,7 +132,7 @@ jobs:
     needs: [analyze, build, lint, test-unit, test-lighthouse, test-e2e]
     runs-on: 'ubuntu-latest'
     steps:
-      - uses: 'actions/checkout@v2.3.4'
+      - uses: 'actions/checkout@v2.4.0'
         with:
           fetch-depth: 0
           persist-credentials: false

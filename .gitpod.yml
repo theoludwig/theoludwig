@@ -1,8 +1,8 @@
 image: 'gitpod/workspace-full'
 
 tasks:
-  - before: 'cp .env.example .env && npm install --global npm@7'
-    init: 'npm clean-install'
+  - before: 'cp .env.example .env'
+    init: 'npm install'
     command: 'npm run dev'
 
 ports:
