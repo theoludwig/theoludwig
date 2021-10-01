@@ -98,6 +98,10 @@ export const skills: Skills = {
     link: 'https://ubuntu.com/',
     image: '/images/skills/Ubuntu.png'
   },
+  'GNU/Linux': {
+    link: 'https://www.gnu.org/',
+    image: '/images/skills/GNU-Linux.png'
+  },
   Docker: {
     link: 'https://www.docker.com/',
     image: '/images/skills/Docker.png'

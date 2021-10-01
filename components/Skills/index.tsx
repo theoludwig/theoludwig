@@ -30,6 +30,7 @@ export const Skills: React.FC = () => {
       </SkillsSection>
 
       <SkillsSection title={t('home:skills.softwareTools')}>
+        <SkillComponent skill='GNU/Linux' />
         <SkillComponent skill='Ubuntu' />
         <SkillComponent skill='Visual Studio Code' />
         <SkillComponent skill='Git' />
