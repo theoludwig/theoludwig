@@ -63,6 +63,11 @@ jobs:
       - run: 'npm run lint:markdown'
       - run: 'npm run lint:typescript'
 
+      - name: 'dotenv-linter'
+        uses: 'dotenv-linter/action-dotenv-linter@v2'
+        with:
+          github_token: ${{ secrets.github_token }}
+
   test-unit:
     runs-on: 'ubuntu-latest'
     steps:

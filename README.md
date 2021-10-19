@@ -32,17 +32,17 @@
     "Open-Source enthusiast"
   ],
   "skills": {
-    "programmingLanguages": ["JavaScript", "TypeScript", "Python"],
+    "programmingLanguages": ["JavaScript", "TypeScript", "Python", "C/C++"],
     "frontEnd": ["HTML", "CSS", "Tailwind CSS", "React.js (+ Next.js)"],
     "backEnd": ["Node.js", "Fastify", "Prisma", "PostgreSQL", "MySQL"],
-    "tools": ["Ubuntu", "Visual Studio Code", "Git", "Docker"]
+    "tools": ["GNU/Linux", "Ubuntu", "Visual Studio Code", "Git", "Docker"]
   }
 }
 ```
 
 <hr />
 
-## 📈 Stats
+## 📈 Statistics
 
 <p align=center>
   <img height=175 align="center" src="https://github-readme-stats.vercel.app/api?username=Divlo&show_icons=true&theme=dark" />
