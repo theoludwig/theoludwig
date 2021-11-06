@@ -7,7 +7,7 @@
 }
 
 .prose {
-  @apply text-gray dark:text-gray-dark;
+  @apply text-gray dark:text-gray-dark !max-w-4xl;
 }
 
 .prose a {
