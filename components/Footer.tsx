@@ -22,7 +22,7 @@ export const Footer: React.FC<FooterProps> = (props) => {
             Divlo
           </a>
         </Link>{' '}
-        | {t('common:allRightsReserved')}
+        | {t('common:all-rights-reserved')}
       </p>
       <p className='mt-1'>
         Version{' '}

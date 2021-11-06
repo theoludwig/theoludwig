@@ -1,6 +1,6 @@
 {
-  "returnToHomePage": "Revenir à la page d'accueil ?",
+  "return-to-home-page": "Revenir à la page d'accueil ?",
   "error": "Erreur",
-  "serverError": "Erreur Interne du Serveur !",
-  "notFound": "Cette page n'existe pas!"
+  "server-error": "Erreur Interne du Serveur !",
+  "not-found": "Cette page n'existe pas!"
 }
