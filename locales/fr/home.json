@@ -1,10 +1,10 @@
 {
   "about": {
-    "IAm": "Je suis",
+    "i-am": "Je suis",
     "description": "Développeur Full Stack Junior • Passionné de High-Tech",
-    "birthDate": "Date de naissance",
+    "birth-date": "Date de naissance",
     "nationality": "Nationalité",
-    "descriptionBottom": "Je me forme en autodidacte dans l'informatique en suivant des formations en ligne et je suis aussi un étudiant à l'université suivant la formation \"BUT Informatique\" (première année). <0/> <0/> Je mets en pratique tout ce que j'apprends et réalise de nombreux projets."
+    "description-bottom": "Je me forme en autodidacte dans l'informatique en suivant des formations en ligne et je suis aussi un étudiant à l'université suivant la formation \"BUT Informatique\" (première année). <0/> <0/> Je mets en pratique tout ce que j'apprends et réalise de nombreux projets."
   },
   "interests": {
     "title": "Intérêts",
@@ -26,7 +26,7 @@
   "skills": {
     "title": "Compétences",
     "languages": "Langages de programmation",
-    "softwareTools": "Logiciels et outils"
+    "software-tools": "Logiciels et outils"
   },
   "portfolio": {
     "title": "Portfolio",

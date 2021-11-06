@@ -16,7 +16,7 @@ const Error500: React.FC<FooterProps> = (props) => {
 
       <Header />
       <main className='flex flex-col md:mx-auto md:max-w-4xl lg:max-w-7xl'>
-        <ErrorPage statusCode={500} message={t('errors:serverError')} />
+        <ErrorPage statusCode={500} message={t('errors:server-error')} />
       </main>
       <Footer version={version} />
     </>

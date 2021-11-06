@@ -30,7 +30,7 @@ export const Skills: React.FC = () => {
         <SkillComponent skill='MySQL' />
       </SkillsSection>
 
-      <SkillsSection title={t('home:skills.softwareTools')}>
+      <SkillsSection title={t('home:skills.software-tools')}>
         <SkillComponent skill='GNU/Linux' />
         <SkillComponent skill='Ubuntu' />
         <SkillComponent skill='Visual Studio Code' />

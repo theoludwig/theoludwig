@@ -1,10 +1,10 @@
 {
   "about": {
-    "IAm": "I am",
+    "i-am": "I am",
     "description": "Developer Full Stack Junior • Passionate about High-Tech",
-    "birthDate": "Birth date",
+    "birth-date": "Birth date",
     "nationality": "Nationality",
-    "descriptionBottom": "I am self-taught in Computer Science by following online trainings and I am also a student at the university following the French training \"BUT Informatique\" (first year). <0/> <0/> I put into practice everything I learn and make many projects."
+    "description-bottom": "I am self-taught in Computer Science by following online trainings and I am also a student at the university following the French training \"BUT Informatique\" (first year). <0/> <0/> I put into practice everything I learn and make many projects."
   },
   "interests": {
     "title": "Interests",
@@ -26,7 +26,7 @@
   "skills": {
     "title": "Skills",
     "languages": "Programming languages",
-    "softwareTools": "Software and tools"
+    "software-tools": "Software and tools"
   },
   "portfolio": {
     "title": "Portfolio",

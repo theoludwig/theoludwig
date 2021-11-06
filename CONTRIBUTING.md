@@ -51,8 +51,8 @@ Scopes define what part of the code changed.
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) >= 14.0.0
-- [npm](https://www.npmjs.com/) >= 7.0.0
+- [Node.js](https://nodejs.org/) >= 16.0.0
+- [npm](https://www.npmjs.com/) >= 8.0.0
 
 ### Installation
 
