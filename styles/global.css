@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#__next {
+  @apply flex flex-col h-screen;
+}
+
+.prose {
+  @apply text-gray dark:text-gray-dark;
+}
+
+.prose a {
+  @apply text-yellow dark:text-yellow-dark;
+}
+
+.prose h2 {
+  @apply text-gray dark:text-gray-dark mt-1;
+}

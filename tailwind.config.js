@@ -24,11 +24,25 @@ module.exports = {
       },
       fontFamily: {
         headline: ['Montserrat', 'Arial', 'sans-serif']
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            fontFamily: ['Montserrat', 'Arial', 'sans-serif'],
+            a: {
+              textDecoration: 'none',
+              '&:hover': {
+                textDecoration: 'underline',
+                fontWeight: 400
+              }
+            }
+          }
+        }
       }
     }
   },
   variants: {
     extend: {}
   },
-  plugins: []
+  plugins: [require('@tailwindcss/typography')]
 }
