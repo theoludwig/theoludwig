@@ -25,3 +25,10 @@
 .prose code {
   color: hsl(286, 60%, 67%);
 }
+
+code[class*='language-'],
+pre[class*='language-'] {
+  white-space: pre-wrap !important;
+  word-break: break-word !important;
+  word-wrap: normal;
+}

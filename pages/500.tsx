@@ -14,7 +14,7 @@ const Error500: React.FC<FooterProps> = (props) => {
     <>
       <Head title='500 | Divlo' />
 
-      <Header />
+      <Header showLanguage />
       <main className='flex flex-col md:mx-auto md:max-w-4xl lg:max-w-7xl'>
         <ErrorPage statusCode={500} message={t('errors:server-error')} />
       </main>

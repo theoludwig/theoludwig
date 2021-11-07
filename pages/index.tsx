@@ -21,7 +21,7 @@ const Home: React.FC<FooterProps> = (props) => {
     <>
       <Head />
 
-      <Header />
+      <Header showLanguage />
       <main className='flex flex-col md:mx-auto md:max-w-4xl lg:max-w-7xl'>
         <Section isMain id='about'>
           <Profile />

@@ -24,7 +24,7 @@ const BlogPostPage: React.FC<BlogPostPageProps> = (props) => {
       />
 
       <Header />
-      <main className='flex flex-col flex-1 items-center'>
+      <main className='flex flex-col flex-wrap flex-1 items-center'>
         <div className='flex flex-col items-center my-10'>
           <h1 className='text-3xl font-semibold'>{frontmatter.title}</h1>
           <p className='mt-2'>
