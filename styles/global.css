@@ -14,6 +14,14 @@
   @apply text-yellow dark:text-yellow-dark;
 }
 
-.prose h2 {
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
   @apply text-gray dark:text-gray-dark mt-1;
+}
+
+.prose code {
+  color: hsl(286, 60%, 67%);
 }

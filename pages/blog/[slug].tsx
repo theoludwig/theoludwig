@@ -2,6 +2,7 @@ import { GetServerSideProps } from 'next'
 import { useMemo } from 'react'
 import { getMDXComponent } from 'mdx-bundler/client'
 import date from 'date-and-time'
+import 'prism-themes/themes/prism-one-dark.css'
 
 import { Head } from 'components/Head'
 import { Header } from 'components/Header'
@@ -31,7 +32,13 @@ const BlogPostPage: React.FC<BlogPostPageProps> = (props) => {
           </p>
         </div>
         <div className='prose mb-10 px-8'>
-          <Component />
+          <Component
+            components={{
+              a: (props) => (
+                <a target='_blank' rel='noopener noreferrer' {...props} />
+              )
+            }}
+          />
         </div>
       </main>
       <Footer version={version} />

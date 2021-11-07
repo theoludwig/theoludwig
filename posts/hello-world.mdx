@@ -13,14 +13,48 @@ This blog is here to document my journey of learning computer science and progra
 
 The idea is that I will share my knowledge with you (readers), and hopefully help you to learn too.
 
-Keep in mind that I will not translate the posts in French, all the posts will be written in English, as I'm not a native English speaker, I will probably make mistakes, feel free to open PRs on GitHub to correct them. 😊
+Keep in mind that I will not translate the posts in French, all the posts will be written in English, as I'm not a native English speaker, I will probably make mistakes, feel free to open pull requests on [GitHub](https://github.com/Divlo/Divlo) to correct them. 😊
 
 I don't plan to publish new posts regularly, but I will do so when I have something new to share.
 
-To stay informed of new blog post, feel free to follow me on Twitter: [@Divlo_FR](https://twitter.com/Divlo_FR).
+To stay informed of new blog post and to ask questions, feel free to follow me on Twitter: [@Divlo_FR](https://twitter.com/Divlo_FR).
 
 ## How this blog is made
 
-In this section, I will explain what technologies I used to make this blog, and how I used them so that you can build something similar for yourself if you would like to.
+In this section, I will explain what technologies I used to make this blog, and what are the technical choices I had to do.
 
-The code of this website is open source on GitHub, so you can see the code and contribute to it.
+The code of this website is open source on [GitHub](https://github.com/Divlo/Divlo), so you can see the code and contribute to it.
+
+I decided to keep things simple, here are the 2 main features missing on my blog:
+
+- Comments (you can interact with me on my Twitter account)
+- Views counter
+
+That not mean that theses features will never be implemented, but to avoid the need of a database now, I dropped out theses features.
+
+### Technologies
+
+- [Next.js](https://nextjs.org/)
+
+  It allows to have a server-side rendered website, that means that it is faster and easier to have a good SEO (Search Engine Optimization) than a SPA (Single Page Application).
+
+- [MDX](https://github.com/kentcdodds/mdx-bundler)
+
+  MDX is an extension of Markdown that allows you to use custom React components.
+
+  Here's what Markdown looks like:
+
+  ```md
+  A simple paragraph, with some **bold** text and some `inline code`.
+  ```
+
+  ```js
+  console.log('Hello, world!')
+  function name() {
+    return 'John Doe'
+  }
+  ```
+
+  When using Markdown in a web application, there's a "compile" step; the Markdown needs to be transformed into HTML, so that it can be understood by the browser. Those asterisks get turned into a `<strong>` tag, and each paragraph gets a `<p>` tag etc.
+
+- [Tailwind CSS](https://tailwindcss.com/)

@@ -3,6 +3,7 @@ import path from 'node:path'
 
 import { bundleMDXFile } from 'mdx-bundler'
 import remarkGfm from 'remark-gfm'
+import remarkPrism from 'remark-prism'
 
 const postsPath = path.join(process.cwd(), 'posts')
 
@@ -52,7 +53,11 @@ export class Post implements PostOptions {
       path.join(postsPath, `${slug}.mdx`),
       {
         xdmOptions(options) {
-          options.remarkPlugins = [...(options.remarkPlugins ?? []), remarkGfm]
+          options.remarkPlugins = [
+            ...(options.remarkPlugins ?? []),
+            remarkGfm,
+            remarkPrism as any
+          ]
           return options
         }
       }
@@ -84,7 +89,9 @@ export class Post implements PostOptions {
         }
       })
     )
-    const postsWithTimeSorted = postsWithTime.sort((a, b) => b.time - a.time)
+    const postsWithTimeSorted = postsWithTime
+      .filter((post) => post.frontmatter.isPublished)
+      .sort((a, b) => b.time - a.time)
     return postsWithTimeSorted
   }
 }

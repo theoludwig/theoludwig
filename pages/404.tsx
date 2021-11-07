@@ -12,7 +12,7 @@ const Error404: React.FC<FooterProps> = (props) => {
 
   return (
     <>
-      <Head title='Divlo - 404' />
+      <Head title='404 | Divlo' />
 
       <Header />
       <main className='flex flex-col md:mx-auto md:max-w-4xl lg:max-w-7xl'>
