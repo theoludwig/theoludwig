@@ -5,7 +5,7 @@ import { bundleMDXFile } from 'mdx-bundler'
 import remarkGfm from 'remark-gfm'
 import remarkPrism from 'remark-prism'
 
-const postsPath = path.join(process.cwd(), 'posts')
+export const postsPath = path.join(process.cwd(), 'posts')
 
 if (process.platform === 'win32') {
   process.env.ESBUILD_BINARY_PATH = path.join(

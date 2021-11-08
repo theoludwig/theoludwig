@@ -7,7 +7,7 @@ describe('Page /blog/[slug]', () => {
     cy.get('.prose a').should('have.attr', 'target', '_blank')
   })
 
-  it("should redirect to /404 if the post doesn't exist", () => {
+  it("should redirect to /404 if the blog post doesn't exist", () => {
     cy.visit('/blog/random-blog-post-not-found', { failOnStatusCode: false })
       .location('pathname')
       .should('eq', '/404')
