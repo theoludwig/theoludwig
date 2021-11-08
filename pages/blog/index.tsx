@@ -6,13 +6,13 @@ import { Head } from 'components/Head'
 import { Header } from 'components/Header'
 import { Footer, FooterProps } from 'components/Footer'
 import { ShadowContainer } from 'components/design/ShadowContainer'
-import { Post } from 'utils/blog'
+import type { PostMetadata } from 'utils/blog'
 
 const blogDescription =
   'The latest news about my journey of learning computer science.'
 
 interface BlogPageProps extends FooterProps {
-  posts: Post[]
+  posts: PostMetadata[]
 }
 
 const BlogPage: React.FC<BlogPageProps> = (props) => {
@@ -68,8 +68,9 @@ const BlogPage: React.FC<BlogPageProps> = (props) => {
 
 export const getStaticProps: GetStaticProps<BlogPageProps> = async () => {
   const { readPackage } = await import('read-pkg')
+  const { getPosts } = await import('utils/blog')
+  const posts = await getPosts()
   const { version } = await readPackage()
-  const posts = await Post.getMany()
   return { props: { version, posts } }
 }
 

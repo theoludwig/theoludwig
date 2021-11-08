@@ -1,28 +1,15 @@
 import fs from 'node:fs'
 import path from 'node:path'
 
-import { bundleMDXFile } from 'mdx-bundler'
+import type { MDXRemoteSerializeResult } from 'next-mdx-remote'
+import { serialize } from 'next-mdx-remote/serialize'
 import remarkGfm from 'remark-gfm'
 import remarkPrism from 'remark-prism'
+import matter from 'gray-matter'
 
 export const postsPath = path.join(process.cwd(), 'posts')
 
-if (process.platform === 'win32') {
-  process.env.ESBUILD_BINARY_PATH = path.join(
-    process.cwd(),
-    'node_modules',
-    'esbuild',
-    'esbuild.exe'
-  )
-} else {
-  process.env.ESBUILD_BINARY_PATH = path.join(
-    process.cwd(),
-    'node_modules',
-    'esbuild',
-    'bin',
-    'esbuild'
-  )
-}
+export type MDXSource = MDXRemoteSerializeResult<Record<string, unknown>>
 
 export interface FrontMatter {
   title: string
@@ -31,67 +18,53 @@ export interface FrontMatter {
   publishedOn: string
 }
 
-export interface PostOptions {
-  code: string
+export interface PostMetadata {
   frontmatter: FrontMatter
   slug: string
+  content: string
 }
 
-export class Post implements PostOptions {
-  public code: string
-  public frontmatter: FrontMatter
-  public slug: string
+export interface Post extends PostMetadata {
+  source: MDXSource
+}
 
-  constructor(options: PostOptions) {
-    this.code = options.code
-    this.frontmatter = options.frontmatter
-    this.slug = options.slug
-  }
-
-  static async build(slug: string): Promise<Post> {
-    const bundledMdx = await bundleMDXFile(
-      path.join(postsPath, `${slug}.mdx`),
-      {
-        xdmOptions(options) {
-          options.remarkPlugins = [
-            ...(options.remarkPlugins ?? []),
-            remarkGfm,
-            remarkPrism as any
-          ]
-          return options
-        }
-      }
-    )
-    const frontmatter = bundledMdx.frontmatter as FrontMatter
-    return {
-      code: bundledMdx.code,
-      frontmatter,
-      slug
-    }
-  }
-
-  static async getBySlug(slug?: string | string[]): Promise<Post | undefined> {
-    const posts = await Post.getMany()
-    const post = posts.find((post) => post.slug === slug)
-    return post
-  }
-
-  static async getMany(): Promise<Post[]> {
-    const posts = await fs.promises.readdir(postsPath)
-    const postsWithTime = await Promise.all(
-      posts.map(async (postFilename) => {
-        const [slug] = postFilename.split('.')
-        const post = await Post.build(slug)
-        const date = new Date(post.frontmatter.publishedOn)
-        return {
-          ...post,
-          time: date.getTime()
-        }
+export const getPosts = async (): Promise<PostMetadata[]> => {
+  const posts = await fs.promises.readdir(postsPath)
+  const postsWithTime = await Promise.all(
+    posts.map(async (postFilename) => {
+      const [slug] = postFilename.split('.')
+      const blogPostPath = path.join(postsPath, `${slug}.mdx`)
+      const blogPostContent = await fs.promises.readFile(blogPostPath, {
+        encoding: 'utf8'
       })
-    )
-    const postsWithTimeSorted = postsWithTime
-      .filter((post) => post.frontmatter.isPublished)
-      .sort((a, b) => b.time - a.time)
-    return postsWithTimeSorted
+      const { data, content } = matter(blogPostContent) as any
+      const date = new Date(data.publishedOn)
+      return {
+        slug,
+        content,
+        frontmatter: data,
+        time: date.getTime()
+      }
+    })
+  )
+  const postsWithTimeSorted = postsWithTime
+    .filter((post) => post.frontmatter.isPublished)
+    .sort((a, b) => b.time - a.time)
+  return postsWithTimeSorted
+}
+
+export const getPostBySlug = async (
+  slug?: string | string[]
+): Promise<Post | undefined> => {
+  const posts = await getPosts()
+  const post = posts.find((post) => post.slug === slug)
+  if (post == null) {
+    return undefined
   }
+  const source = await serialize(post.content, {
+    mdxOptions: {
+      remarkPlugins: [remarkGfm as any, remarkPrism]
+    }
+  })
+  return { ...post, source }
 }

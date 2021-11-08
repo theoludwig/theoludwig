@@ -1,40 +1,40 @@
 import { GetStaticProps, GetStaticPaths } from 'next'
-import { useMemo } from 'react'
-import { getMDXComponent } from 'mdx-bundler/client'
+import { MDXRemote } from 'next-mdx-remote'
 import date from 'date-and-time'
 import 'prism-themes/themes/prism-one-dark.css'
 
 import { Head } from 'components/Head'
 import { Header } from 'components/Header'
 import { Footer, FooterProps } from 'components/Footer'
-import { Post } from 'utils/blog'
+import type { Post } from 'utils/blog'
 
-interface BlogPostPageProps extends FooterProps, Post {}
+interface BlogPostPageProps extends FooterProps {
+  post: Post
+}
 
 const BlogPostPage: React.FC<BlogPostPageProps> = (props) => {
-  const { version, code, frontmatter } = props
-
-  const Component = useMemo(() => getMDXComponent(code), [code])
+  const { version, post } = props
 
   return (
     <>
       <Head
-        title={`${frontmatter.title} | Divlo`}
-        description={frontmatter.description}
+        title={`${post.frontmatter.title} | Divlo`}
+        description={post.frontmatter.description}
       />
 
       <Header />
       <main className='flex flex-col flex-wrap flex-1 items-center'>
         <div className='flex flex-col items-center my-10'>
-          <h1 className='text-3xl font-semibold'>{frontmatter.title}</h1>
+          <h1 className='text-3xl font-semibold'>{post.frontmatter.title}</h1>
           <p className='mt-2' data-cy='blog-post-date'>
-            {date.format(new Date(frontmatter.publishedOn), 'DD/MM/YYYY')}
+            {date.format(new Date(post.frontmatter.publishedOn), 'DD/MM/YYYY')}
           </p>
         </div>
         <div className='prose mb-10 px-8'>
-          <Component
+          <MDXRemote
+            {...post.source}
             components={{
-              a: (props) => (
+              a: (props: React.ComponentPropsWithoutRef<'a'>) => (
                 <a target='_blank' rel='noopener noreferrer' {...props} />
               )
             }}
@@ -50,7 +50,8 @@ export const getStaticProps: GetStaticProps<BlogPostPageProps> = async (
   context
 ) => {
   const slug = context?.params?.slug
-  const post = await Post.getBySlug(slug)
+  const { getPostBySlug } = await import('utils/blog')
+  const post = await getPostBySlug(slug)
   if (post == null || (post != null && !post.frontmatter.isPublished)) {
     return {
       redirect: {
@@ -61,11 +62,12 @@ export const getStaticProps: GetStaticProps<BlogPostPageProps> = async (
   }
   const { readPackage } = await import('read-pkg')
   const { version } = await readPackage()
-  return { props: { version, ...post } }
+  return { props: { version, post } }
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const posts = await Post.getMany()
+  const { getPosts } = await import('utils/blog')
+  const posts = await getPosts()
   return {
     paths: posts.map((post) => {
       return { params: { slug: post.slug } }
