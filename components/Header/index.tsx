@@ -31,7 +31,10 @@ export const Header: React.FC<HeaderProps> = (props) => {
       <div className='flex justify-between'>
         <div className='flex flex-col justify-center items-center px-6'>
           <Link href='/blog'>
-            <a className='text-yellow dark:text-yellow-dark hover:underline'>
+            <a
+              data-cy='header-blog-link'
+              className='text-yellow dark:text-yellow-dark hover:underline'
+            >
               Blog
             </a>
           </Link>

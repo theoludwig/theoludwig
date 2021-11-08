@@ -1,6 +1,13 @@
 describe('Common > Header', () => {
   beforeEach(() => cy.visit('/'))
 
+  it('should redirect to /blog on click of the blog link', () => {
+    cy.get('[data-cy=header-blog-link]')
+      .click()
+      .location('pathname')
+      .should('eq', '/blog')
+  })
+
   describe('Switch theme color (dark/light)', () => {
     it('should switch theme from `dark` (default) to `light`', () => {
       cy.get('[data-cy=switch-theme-dark]').should('be.visible')

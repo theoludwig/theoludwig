@@ -41,12 +41,12 @@ const BlogPage: React.FC<BlogPageProps> = (props) => {
                 <Link href={`/blog/${post.slug}`} key={index}>
                   <a data-cy='blog-post'>
                     <ShadowContainer className='p-6 cursor-pointer transition duration-200 ease-in-out hover:-translate-y-2'>
-                      <h3
+                      <h2
                         data-cy='blog-post-title'
                         className='text-xl font-semibold'
                       >
                         {post.frontmatter.title}
-                      </h3>
+                      </h2>
                       <p data-cy='blog-post-date' className='mt-2'>
                         {postPublishedOn}
                       </p>

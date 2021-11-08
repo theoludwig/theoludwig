@@ -1,4 +1,4 @@
-import { GetServerSideProps } from 'next'
+import { GetStaticProps, GetStaticPaths } from 'next'
 import { useMemo } from 'react'
 import { getMDXComponent } from 'mdx-bundler/client'
 import date from 'date-and-time'
@@ -46,7 +46,7 @@ const BlogPostPage: React.FC<BlogPostPageProps> = (props) => {
   )
 }
 
-export const getServerSideProps: GetServerSideProps<BlogPostPageProps> = async (
+export const getStaticProps: GetStaticProps<BlogPostPageProps> = async (
   context
 ) => {
   const slug = context?.params?.slug
@@ -62,6 +62,16 @@ export const getServerSideProps: GetServerSideProps<BlogPostPageProps> = async (
   const { readPackage } = await import('read-pkg')
   const { version } = await readPackage()
   return { props: { version, ...post } }
+}
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const posts = await Post.getMany()
+  return {
+    paths: posts.map((post) => {
+      return { params: { slug: post.slug } }
+    }),
+    fallback: false
+  }
 }
 
 export default BlogPostPage

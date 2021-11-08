@@ -9,7 +9,6 @@ describe('Page /blog/[slug]', () => {
 
   it("should redirect to /404 if the blog post doesn't exist", () => {
     cy.visit('/blog/random-blog-post-not-found', { failOnStatusCode: false })
-      .location('pathname')
-      .should('eq', '/404')
+    cy.get('[data-cy=status-code]').contains('404')
   })
 })
