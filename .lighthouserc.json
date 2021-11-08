@@ -4,13 +4,18 @@
       "startServerCommand": "npm run start",
       "startServerReadyPattern": "ready on",
       "startServerReadyTimeout": 20000,
-      "url": ["http://localhost:3000/"],
+      "url": [
+        "http://localhost:3000/",
+        "http://localhost:3000/blog",
+        "http://localhost:3000/blog/hello-world"
+      ],
       "numberOfRuns": 3
     },
     "assert": {
       "preset": "lighthouse:recommended",
       "assertions": {
-        "csp-xss": "warning"
+        "csp-xss": "warning",
+        "unused-javascript": "warning"
       }
     },
     "upload": {

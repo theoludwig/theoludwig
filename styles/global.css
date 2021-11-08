@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#__next {
+  @apply flex flex-col h-screen;
+}
+
+.prose {
+  @apply text-gray dark:text-gray-dark !max-w-4xl;
+}
+
+.prose a {
+  @apply text-yellow dark:text-yellow-dark;
+}
+
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  @apply text-gray dark:text-gray-dark mt-1;
+}
+
+.prose code {
+  color: hsl(286, 60%, 67%);
+}
+
+code[class*='language-'],
+pre[class*='language-'] {
+  white-space: pre-wrap !important;
+  word-break: break-word !important;
+  word-wrap: normal;
+}
