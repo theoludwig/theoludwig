@@ -22,6 +22,12 @@ export const Interests: React.FC = () => {
         })}
         <InterestsList />
       </div>
+
+      <style jsx global>{`
+        #__next {
+          display: block;
+        }
+      `}</style>
     </>
   )
 }
