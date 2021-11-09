@@ -10,7 +10,8 @@
   @apply text-gray dark:text-gray-dark !max-w-4xl;
 }
 
-.prose a {
+.prose a,
+.prose strong {
   @apply text-yellow dark:text-yellow-dark;
 }
 
