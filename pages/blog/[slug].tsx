@@ -34,9 +34,14 @@ const BlogPostPage: React.FC<BlogPostPageProps> = (props) => {
           <MDXRemote
             {...post.source}
             components={{
-              a: (props: React.ComponentPropsWithoutRef<'a'>) => (
-                <a target='_blank' rel='noopener noreferrer' {...props} />
-              )
+              a: (props: React.ComponentPropsWithoutRef<'a'>) => {
+                if (props.href?.startsWith('#') ?? false) {
+                  return <a {...props} />
+                }
+                return (
+                  <a target='_blank' rel='noopener noreferrer' {...props} />
+                )
+              }
             }}
           />
         </div>
