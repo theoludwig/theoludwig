@@ -25,7 +25,7 @@ It depends of many factors, and is somewhat relative to each one of us. The **pe
 
 ## Why is it so important ?
 
-Code that works is great, but it is not enough, even if the code will be read by the computer and understood by the machine, we should not forget that the code is **human written** and will be also **read by a human** not only a machine.
+Code like that works great, but it is not enough, even if the code will be read by the computer and understood by the machine, we should not forget that the code is **written by human** and will be also **read by human** not only a machine.
 
 For example the [Linux kernel](https://www.kernel.org/), is one of the biggest open source project with many contributors worldwide. Last data shows that it is about **20 millions** lines of code.
 
@@ -171,7 +171,7 @@ We have to keep it as simple as possible, not to implement features that are not
 import fs from 'node:fs'
 import path from 'node:path'
 
-const createFile = async (name: string, isTemporary: boolean = false) => {
+const createFile = async (name: string) => {
   if (isTemporary) {
     return await fs.promises.writeFile(path.join('temporary', name), '')
   }
