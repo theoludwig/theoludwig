@@ -10,8 +10,8 @@ export const InterestParagraph: React.FC<InterestParagraphProps> = (props) => {
 
   return (
     <>
-      <p className='text-center my-6 text-gray dark:text-gray-dark'>
-        <strong className='text-yellow font-semibold text-lg dark:text-yellow-dark'>
+      <p className='my-6 text-center text-gray dark:text-gray-dark'>
+        <strong className='text-lg font-semibold text-yellow dark:text-yellow-dark'>
           {title}
         </strong>
         <br />

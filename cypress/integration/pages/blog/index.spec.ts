@@ -3,7 +3,7 @@ describe('Page /blog', () => {
     cy.visit('/blog')
     cy.get('[data-cy=blog-posts] [data-cy=blog-post-title]')
       .last()
-      .should('have.text', 'Hello, world! 👋')
+      .should('have.text', '👋 Hello, world!')
     cy.get('[data-cy=blog-posts] [data-cy=blog-post-description]')
       .last()
       .should(
@@ -12,7 +12,7 @@ describe('Page /blog', () => {
       )
     cy.get('[data-cy=blog-posts] [data-cy=blog-post-date]')
       .last()
-      .should('have.text', '06/11/2021')
+      .should('have.text', '06/10/2021')
   })
 
   it('should redirect the user to the right blog post', () => {

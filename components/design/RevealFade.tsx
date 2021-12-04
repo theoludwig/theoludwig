@@ -10,7 +10,8 @@ export const RevealFade: React.FC = (props) => {
       (entries, observer) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('reveal-visible')
+            entry.target.className =
+              'opacity-100 visible translate-y-0 transition-all duration-700 ease-in-out'
             observer.unobserve(entry.target)
           }
         })
@@ -25,26 +26,8 @@ export const RevealFade: React.FC = (props) => {
   }, [])
 
   return (
-    <>
-      <div ref={htmlElement} className='reveal'>
-        {children}
-      </div>
-
-      <style jsx>
-        {`
-          .reveal {
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(-30px);
-          }
-          .reveal-visible {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-            transition: all 500ms ease-out 100ms;
-          }
-        `}
-      </style>
-    </>
+    <div ref={htmlElement} className='invisible -translate-y-7 opacity-0'>
+      {children}
+    </div>
   )
 }

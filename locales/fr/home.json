@@ -10,15 +10,15 @@
     "title": "Intérêts",
     "paragraphs": [
       {
-        "title": "Développeur Full Stack Junior :",
-        "description": "La programmation informatique est mon loisir principal, j'adore! <br/> Principalement du développement Web pour le moment, mais je programme aussi du Python et d'autres langages de programmation."
+        "title": "Développeur Full Stack Junior",
+        "description": "La programmation informatique est mon loisir principal, j'adore! <br/> Principalement du développement Web pour le moment, mais je programme aussi dans d'autres langages de programmation."
       },
       {
-        "title": "Passionné de High-Tech :",
+        "title": "Passionné de High-Tech",
         "description": "Je me suis toujours demandé comment l'avenir serait. Chaque jour, je veux me réveiller et penser que l'avenir sera formidable et meilleur que le passé. Les technolgies s'améliorent progressivement avec le temps, ce qui est très utile dans de nombreux domaines."
       },
       {
-        "title": "Enthousiaste de l'Open-Source :",
+        "title": "Enthousiaste de l'Open-Source",
         "description": "Pour moi, tout le monde devrait travailler, résoudre des problèmes, construire des choses et réfléchir ensemble. Longue vie à l'open-source, chaque fois que vous pouvez partagez votre travail, faites-le! <br/> Le site est open-source sur <a class='text-yellow dark:text-yellow-dark hover:underline' href='https://github.com/Divlo/Divlo' target='_blank' rel='noopener noreferrer'>github</a>."
       }
     ]
@@ -39,7 +39,7 @@
       },
       {
         "title": "thream.divlo.fr",
-        "description": "Votre plateforme open source pour rester proche de vos amis et communautés, parler, discuter, collaborer, partager et vous amuser.",
+        "description": "Votre plateforme open source pour rester proche de vos amis et communautés, parler, discuter, collaborer, partager et amusez-vous.",
         "link": "https://thream.divlo.fr/",
         "image": "/images/portfolio/threamdivlofr.png"
       },

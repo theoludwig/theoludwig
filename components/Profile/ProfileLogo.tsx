@@ -4,8 +4,8 @@ import DivloLogo from 'public/images/divlo_logo.png'
 
 export const ProfileLogo: React.FC = () => {
   return (
-    <div className='px-2 py-6 max-w-[370px] max-h-[370px]'>
-      <Image src={DivloLogo} alt='Divlo' priority />
+    <div className='max-h-[370px] max-w-[370px] px-2 py-6'>
+      <Image src={DivloLogo} alt='Divlo' />
     </div>
   )
 }

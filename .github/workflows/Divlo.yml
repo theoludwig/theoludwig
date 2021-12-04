@@ -32,7 +32,7 @@ jobs:
       - uses: 'actions/checkout@v2.4.0'
 
       - name: 'Use Node.js'
-        uses: 'actions/setup-node@v2.4.1'
+        uses: 'actions/setup-node@v2.5.1'
         with:
           node-version: '16.x'
           cache: 'npm'
@@ -49,7 +49,7 @@ jobs:
       - uses: 'actions/checkout@v2.4.0'
 
       - name: 'Use Node.js'
-        uses: 'actions/setup-node@v2.4.1'
+        uses: 'actions/setup-node@v2.5.1'
         with:
           node-version: '16.x'
           cache: 'npm'
@@ -57,16 +57,30 @@ jobs:
       - name: 'Install'
         run: 'npm install'
 
-      - run: 'npm run lint:commit -- --to "${{ github.sha }}"'
-      - run: 'npm run lint:docker'
-      - run: 'npm run lint:editorconfig'
-      - run: 'npm run lint:markdown'
-      - run: 'npm run lint:typescript'
+      - name: 'lint:commit'
+        run: 'npm run lint:commit -- --to "${{ github.sha }}"'
 
-      - name: 'dotenv-linter'
+      - name: 'lint:editorconfig'
+        run: 'npm run lint:editorconfig'
+
+      - name: 'lint:markdown'
+        run: 'npm run lint:markdown'
+
+      - name: 'lint:typescript'
+        run: 'npm run lint:typescript'
+
+      - name: 'lint:prettier'
+        run: 'npm run lint:prettier'
+
+      - name: 'lint:dotenv'
         uses: 'dotenv-linter/action-dotenv-linter@v2'
         with:
           github_token: ${{ secrets.github_token }}
+
+      - name: 'lint:docker'
+        uses: 'hadolint/hadolint-action@v1.6.0'
+        with:
+          dockerfile: './Dockerfile'
 
   test-unit:
     runs-on: 'ubuntu-latest'
@@ -74,7 +88,7 @@ jobs:
       - uses: 'actions/checkout@v2.4.0'
 
       - name: 'Use Node.js'
-        uses: 'actions/setup-node@v2.4.1'
+        uses: 'actions/setup-node@v2.5.1'
         with:
           node-version: '16.x'
           cache: 'npm'
@@ -91,7 +105,7 @@ jobs:
       - uses: 'actions/checkout@v2.4.0'
 
       - name: 'Use Node.js'
-        uses: 'actions/setup-node@v2.4.1'
+        uses: 'actions/setup-node@v2.5.1'
         with:
           node-version: '16.x'
           cache: 'npm'
@@ -101,6 +115,9 @@ jobs:
 
       - name: 'Build'
         run: 'npm run build'
+
+      - name: 'html-w3c-validator'
+        run: 'npm run test:html-w3c-validator'
 
       - name: 'Lighthouse'
         run: 'npm run test:lighthouse'
@@ -113,7 +130,7 @@ jobs:
       - uses: 'actions/checkout@v2.4.0'
 
       - name: 'Use Node.js'
-        uses: 'actions/setup-node@v2.4.1'
+        uses: 'actions/setup-node@v2.5.1'
         with:
           node-version: '16.x'
           cache: 'npm'
@@ -145,7 +162,7 @@ jobs:
           git_commit_gpgsign: true
 
       - name: 'Use Node.js'
-        uses: 'actions/setup-node@v2.4.1'
+        uses: 'actions/setup-node@v2.5.1'
         with:
           node-version: '16.x'
           cache: 'npm'

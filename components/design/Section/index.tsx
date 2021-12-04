@@ -20,11 +20,11 @@ export const Section: React.FC<SectionProps> = (props) => {
 
   if (isMain) {
     return (
-      <div className='px-3 w-full'>
+      <div className='w-full px-3'>
         <ShadowContainer style={{ marginTop: 50 }}>
           <section {...rest}>
             {heading != null && <SectionHeading>{heading}</SectionHeading>}
-            <div className='px-3 w-full'>{children}</div>
+            <div className='w-full px-3'>{children}</div>
           </section>
         </ShadowContainer>
       </div>
@@ -35,7 +35,7 @@ export const Section: React.FC<SectionProps> = (props) => {
     return (
       <section {...rest}>
         {heading != null && <SectionHeading>{heading}</SectionHeading>}
-        <div className='px-3 w-full'>{children}</div>
+        <div className='w-full px-3'>{children}</div>
       </section>
     )
   }
@@ -52,9 +52,9 @@ export const Section: React.FC<SectionProps> = (props) => {
           {description}
         </p>
       )}
-      <div className='px-3 w-full'>
+      <div className='w-full px-3'>
         <ShadowContainer>
-          <div className='px-16 py-4 leading-8 w-full'>{children}</div>
+          <div className='w-full px-16 py-4 leading-8'>{children}</div>
         </ShadowContainer>
       </div>
     </section>

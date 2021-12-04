@@ -1,18 +1,23 @@
-import { GetStaticProps } from 'next'
+import { GetStaticProps, NextPage } from 'next'
 import useTranslation from 'next-translate/useTranslation'
 
 import { ErrorPage } from 'components/ErrorPage'
 import { Head } from 'components/Head'
 import { Header } from 'components/Header'
 import { Footer, FooterProps } from 'components/Footer'
+import { getDefaultDescription } from 'utils/getDefaultDescription'
 
-const Error500: React.FC<FooterProps> = (props) => {
+interface Error500Props extends FooterProps {
+  description: string
+}
+
+const Error500: NextPage<Error500Props> = (props) => {
   const { t } = useTranslation()
-  const { version } = props
+  const { version, description } = props
 
   return (
     <>
-      <Head title='500 | Divlo' />
+      <Head title='500 | Divlo' description={description} />
 
       <Header showLanguage />
       <main className='flex flex-col md:mx-auto md:max-w-4xl lg:max-w-7xl'>
@@ -26,7 +31,8 @@ const Error500: React.FC<FooterProps> = (props) => {
 export const getStaticProps: GetStaticProps<FooterProps> = async () => {
   const { readPackage } = await import('read-pkg')
   const { version } = await readPackage()
-  return { props: { version } }
+  const description = getDefaultDescription()
+  return { props: { version, description } }
 }
 
 export default Error500

@@ -1,4 +1,4 @@
-import { GetStaticProps } from 'next'
+import { GetStaticProps, NextPage } from 'next'
 import useTranslation from 'next-translate/useTranslation'
 
 import { RevealFade } from 'components/design/RevealFade'
@@ -12,14 +12,19 @@ import { Skills } from 'components/Skills'
 import { OpenSource } from 'components/OpenSource'
 import { Header } from 'components/Header'
 import { Footer, FooterProps } from 'components/Footer'
+import { getDefaultDescription } from 'utils/getDefaultDescription'
 
-const Home: React.FC<FooterProps> = (props) => {
+interface HomeProps extends FooterProps {
+  description: string
+}
+
+const Home: NextPage<HomeProps> = (props) => {
   const { t } = useTranslation()
-  const { version } = props
+  const { version, description } = props
 
   return (
     <>
-      <Head />
+      <Head description={description} />
 
       <Header showLanguage />
       <main className='flex flex-col md:mx-auto md:max-w-4xl lg:max-w-7xl'>
@@ -72,7 +77,8 @@ const Home: React.FC<FooterProps> = (props) => {
 export const getStaticProps: GetStaticProps<FooterProps> = async () => {
   const { readPackage } = await import('read-pkg')
   const { version } = await readPackage()
-  return { props: { version } }
+  const description = getDefaultDescription()
+  return { props: { version, description } }
 }
 
 export default Home

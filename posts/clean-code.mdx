@@ -1,5 +1,5 @@
 ---
-title: 'Clean Code 🧼'
+title: '🧼 Clean Code'
 description: 'What is "Clean Code", what are "Design Patterns", and why is it so important today ? Tips and tricks to make your code more readable and maintainable in the long term.'
 isPublished: false
 publishedOn: '2021-11-06T22:06:33.818Z'
@@ -17,9 +17,9 @@ Even if you know what it is about, this blog post will probably still be useful 
 
 A clean code is a code that is **easy** to **read** and easy to **understand**.
 
-But I promise it is not a code that is easy to write, in fact it is really **hard** to **write Clean Code**.
+But I promise it is not a code that is easy to write, in fact it is really **hard to write Clean Code**.
 
-We could ask ourselves, what is **easy** to **read** and **easy** to **understand** ?
+We could ask ourselves, what is **easy** to **read** and easy to **understand** ?
 
 It depends of many factors, and is somewhat relative to each one of us. The **perfect** Clean code **doesn't exist**, but we can try to be **as perfect as possible**.
 
@@ -171,7 +171,7 @@ We have to keep it as simple as possible, not to implement features that are not
 import fs from 'node:fs'
 import path from 'node:path'
 
-const createFile = async (name: string) => {
+const createFile = async (name: string, isTemporary: boolean = false) => {
   if (isTemporary) {
     return await fs.promises.writeFile(path.join('temporary', name), '')
   }
@@ -187,7 +187,7 @@ const createFile = async (name: string) => {
 import fs from 'node:fs'
 import path from 'node:path'
 
-const createFile = async (name: string, isTemporary: boolean = false) => {
+const createFile = async (name: string) => {
   await fs.promises.writeFile(name, '')
 }
 
@@ -244,7 +244,7 @@ Here we are creating a new variable `isSubscriptionActive` that allows us to avo
 
 ## Conclusion
 
-We can't write the perfect clean code understandable by everyone but we can **write code that is as perfect as possible to ease maintaibility** of the code by others developers (and for yourself).
+We can't write the perfect clean code understandable by everyone but we can **write code that is as perfect as possible to ease maintaibility** for yourself and others developers.
 
 ## Sources
 

@@ -14,7 +14,7 @@ export const Portfolio: React.FC = () => {
   )
 
   return (
-    <div className='flex flex-wrap justify-center px-3 w-full'>
+    <div className='flex w-full flex-wrap justify-center px-3'>
       {items.map((item, index) => {
         return <PortfolioItem key={index} {...item} />
       })}

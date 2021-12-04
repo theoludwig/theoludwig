@@ -1,4 +1,4 @@
-import { GetStaticProps, GetStaticPaths } from 'next'
+import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemote } from 'next-mdx-remote'
 import date from 'date-and-time'
 import 'prism-themes/themes/prism-one-dark.css'
@@ -12,7 +12,7 @@ interface BlogPostPageProps extends FooterProps {
   post: Post
 }
 
-const BlogPostPage: React.FC<BlogPostPageProps> = (props) => {
+const BlogPostPage: NextPage<BlogPostPageProps> = (props) => {
   const { version, post } = props
 
   return (
@@ -23,8 +23,8 @@ const BlogPostPage: React.FC<BlogPostPageProps> = (props) => {
       />
 
       <Header />
-      <main className='flex flex-col flex-wrap flex-1 items-center'>
-        <div className='flex flex-col items-center my-10'>
+      <main className='flex flex-1 flex-col flex-wrap items-center'>
+        <div className='my-10 flex flex-col items-center'>
           <h1 className='text-3xl font-semibold'>{post.frontmatter.title}</h1>
           <p className='mt-2' data-cy='blog-post-date'>
             {date.format(new Date(post.frontmatter.publishedOn), 'DD/MM/YYYY')}

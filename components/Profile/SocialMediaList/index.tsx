@@ -9,7 +9,7 @@ import { NPMIcon } from './SocialMediaIcons/NPMIcon'
 
 export const SocialMediaList: React.FC = () => {
   return (
-    <ul className='social-media-list m-0 mt-2 py-4 list-none text-center'>
+    <ul className='social-media-list m-0 mt-2 list-none py-4 text-center'>
       <SocialMediaItem link='https://github.com/Divlo' ariaLabel='GitHub'>
         <GitHubIcon />
       </SocialMediaItem>
