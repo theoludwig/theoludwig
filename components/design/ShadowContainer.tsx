@@ -9,7 +9,7 @@ export const ShadowContainer: React.FC<ShadowContainerProps> = (props) => {
     <>
       <div
         className={classNames(
-          'shadow-container h-full max-w-full break-words',
+          'shadow-container mb-12 h-full max-w-full break-words',
           className
         )}
         {...rest}
@@ -23,7 +23,6 @@ export const ShadowContainer: React.FC<ShadowContainerProps> = (props) => {
             box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.25);
             border: 1px solid black;
             border-radius: 1rem;
-            margin-bottom: 50px;
           }
         `}
       </style>

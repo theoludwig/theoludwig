@@ -1,4 +1,4 @@
-import { GetStaticProps } from 'next'
+import { GetStaticProps, NextPage } from 'next'
 import useTranslation from 'next-translate/useTranslation'
 
 import { RevealFade } from 'components/design/RevealFade'
@@ -13,7 +13,7 @@ import { OpenSource } from 'components/OpenSource'
 import { Header } from 'components/Header'
 import { Footer, FooterProps } from 'components/Footer'
 
-const Home: React.FC<FooterProps> = (props) => {
+const Home: NextPage<FooterProps> = (props) => {
   const { t } = useTranslation()
   const { version } = props
 

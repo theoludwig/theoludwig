@@ -1,4 +1,4 @@
-import { GetStaticProps, GetStaticPaths } from 'next'
+import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemote } from 'next-mdx-remote'
 import date from 'date-and-time'
 import 'prism-themes/themes/prism-one-dark.css'
@@ -12,7 +12,7 @@ interface BlogPostPageProps extends FooterProps {
   post: Post
 }
 
-const BlogPostPage: React.FC<BlogPostPageProps> = (props) => {
+const BlogPostPage: NextPage<BlogPostPageProps> = (props) => {
   const { version, post } = props
 
   return (

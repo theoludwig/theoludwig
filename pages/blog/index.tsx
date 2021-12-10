@@ -1,4 +1,4 @@
-import { GetStaticProps } from 'next'
+import { GetStaticProps, NextPage } from 'next'
 import Link from 'next/link'
 import date from 'date-and-time'
 
@@ -15,7 +15,7 @@ interface BlogPageProps extends FooterProps {
   posts: PostMetadata[]
 }
 
-const BlogPage: React.FC<BlogPageProps> = (props) => {
+const BlogPage: NextPage<BlogPageProps> = (props) => {
   const { version, posts } = props
 
   return (
