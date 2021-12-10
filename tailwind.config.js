@@ -25,12 +25,12 @@ module.exports = {
         light: '0px 1px 10px rgba(0, 0, 0, 0.25)'
       },
       fontFamily: {
-        headline: ['Montserrat', 'Arial', 'sans-serif']
+        headline: "'Montserrat', 'Arial', 'sans-serif'"
       },
       typography: {
         DEFAULT: {
           css: {
-            fontFamily: ['Montserrat', 'Arial', 'sans-serif'],
+            fontFamily: "'Montserrat', 'Arial', 'sans-serif'",
             a: {
               textDecoration: 'none',
               '&:hover': {
