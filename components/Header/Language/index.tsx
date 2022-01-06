@@ -3,9 +3,10 @@ import useTranslation from 'next-translate/useTranslation'
 import setLanguage from 'next-translate/setLanguage'
 import classNames from 'classnames'
 
+import i18n from 'i18n.json'
+
 import { Arrow } from './Arrow'
 import { LanguageFlag } from './LanguageFlag'
-import i18n from 'i18n.json'
 
 export const Language: React.FC = () => {
   const { lang: currentLanguage } = useTranslation()
