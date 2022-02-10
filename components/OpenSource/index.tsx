@@ -6,12 +6,12 @@ export const OpenSource: React.FC = () => {
   const { t } = useTranslation()
 
   return (
-    <div className='max-w-full mt-0 flex flex-col items-center'>
+    <div className='mt-0 flex max-w-full flex-col items-center'>
       <p className='text-center'>{t('home:open-source.description')}</p>
-      <div className='grid grid-cols-1 md:w-10/12 md:grid-cols-2 gap-6 my-6'>
+      <div className='my-6 grid grid-cols-1 gap-6 md:w-10/12 md:grid-cols-2'>
         <Repository
           name='nodejs/node'
-          description='Node.js JavaScript runtime ✨️🐢🚀✨️'
+          description='Node.js JavaScript runtime 🐢🚀'
           href='https://github.com/nodejs/node/commits?author=Divlo'
         />
         <Repository
@@ -25,9 +25,9 @@ export const OpenSource: React.FC = () => {
           href='https://github.com/nrwl/nx/commits?author=Divlo'
         />
         <Repository
-          name='vercel/styled-jsx'
-          description='Full CSS support for JSX without compromises'
-          href='https://github.com/vercel/styled-jsx/commits?author=Divlo'
+          name='vercel/next.js'
+          description='The React Framework for Production'
+          href='https://github.com/vercel/next.js/commits?author=Divlo'
         />
       </div>
     </div>

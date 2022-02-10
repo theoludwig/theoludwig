@@ -13,7 +13,7 @@ export const PortfolioItem: React.FC<PortfolioItemProps> = (props) => {
   const { title, description, link, image } = props
 
   return (
-    <ShadowContainer className='cursor-pointer relative items-center sm:ml-10'>
+    <ShadowContainer className='relative cursor-pointer items-center sm:ml-10'>
       <a
         className='group inline-flex justify-center'
         target='_blank'
@@ -30,8 +30,8 @@ export const PortfolioItem: React.FC<PortfolioItemProps> = (props) => {
             alt={title}
           />
         </div>
-        <div className='opacity-0 transition-opacity duration-500 h-auto absolute text-center overflow-hidden bottom-0 group-hover:opacity-100'>
-          <h3 className='text-yellow text-xl font-semibold my-6 dark:text-yellow-dark'>
+        <div className='absolute bottom-0 h-auto overflow-hidden text-center opacity-0 transition-opacity duration-500 group-hover:opacity-100'>
+          <h3 className='my-6 text-xl font-semibold text-yellow dark:text-yellow-dark'>
             {title}
           </h3>
           <p className='my-6'>{description}</p>

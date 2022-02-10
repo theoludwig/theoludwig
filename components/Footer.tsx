@@ -15,10 +15,10 @@ export const Footer: React.FC<FooterProps> = (props) => {
   }, [version])
 
   return (
-    <footer className='bg-white flex flex-col items-center justify-center py-6 text-lg border-t-2 border-gray-600 dark:border-gray-400 dark:bg-black'>
+    <footer className='flex flex-col items-center justify-center border-t-2 border-gray-600 bg-white py-6 text-lg dark:border-gray-400 dark:bg-black'>
       <p>
         <Link href='/'>
-          <a className='hover:underline text-yellow dark:text-yellow-dark'>
+          <a className='text-yellow hover:underline dark:text-yellow-dark'>
             Divlo
           </a>
         </Link>{' '}
@@ -27,7 +27,7 @@ export const Footer: React.FC<FooterProps> = (props) => {
       <p className='mt-1'>
         Version{' '}
         <a
-          className='hover:underline text-yellow dark:text-yellow-dark'
+          className='text-yellow hover:underline dark:text-yellow-dark'
           href={versionLink}
           target='_blank'
           rel='noopener noreferrer'

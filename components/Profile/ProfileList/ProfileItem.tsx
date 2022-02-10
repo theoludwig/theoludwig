@@ -8,14 +8,14 @@ export const ProfileItem: React.FC<ProfileItemProps> = (props) => {
   const { title, value, link } = props
 
   return (
-    <li className='mb-3 after:clear-both after:table before:table'>
-      <strong className='uppercase text-xs float-left font-bold w-28 block text-black dark:text-white'>
+    <li className='mb-3 before:table after:clear-both after:table'>
+      <strong className='float-left block w-28 text-xs font-bold uppercase text-black dark:text-white'>
         {title}
       </strong>
-      <span className='profile-list__item-info block text-sm font-normal ml-0 mb-4 sm:mb-0 sm:ml-32 text-gray dark:text-gray-dark'>
+      <span className='profile-list__item-info ml-0 mb-4 block text-sm font-normal text-gray dark:text-gray-dark sm:mb-0 sm:ml-32'>
         {link != null ? (
           <a
-            className='text-gray dark:text-gray-dark hover:underline'
+            className='text-gray hover:underline dark:text-gray-dark'
             href={link}
           >
             {value}

@@ -26,7 +26,7 @@ export const RevealFade: React.FC = (props) => {
   }, [])
 
   return (
-    <div ref={htmlElement} className='opacity-0 invisible -translate-y-7'>
+    <div ref={htmlElement} className='invisible -translate-y-7 opacity-0'>
       {children}
     </div>
   )

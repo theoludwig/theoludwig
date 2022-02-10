@@ -1,9 +1,8 @@
 import NextHead from 'next/head'
-
 interface HeadProps {
   title?: string
   image?: string
-  description?: string
+  description: string
   url?: string
 }
 
@@ -11,7 +10,7 @@ export const Head: React.FC<HeadProps> = (props) => {
   const {
     title = 'Divlo',
     image = '/images/icons/icon-96x96.png',
-    description = "I'm Divlo, I'm 18 years old, I'm from France - Developer Full Stack Junior • Passionate about High-Tech",
+    description,
     url = 'https://divlo.fr/'
   } = props
 

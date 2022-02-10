@@ -8,7 +8,7 @@ export const Icon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
       xmlns='http://www.w3.org/2000/svg'
       viewBox='0 0 24 24'
       className={classNames(
-        'dark:text-white text-black w-8 h-8 fill-current',
+        'h-8 w-8 fill-current text-black dark:text-white',
         className
       )}
       {...rest}

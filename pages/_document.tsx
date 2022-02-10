@@ -4,7 +4,7 @@ const Document: React.FC = () => {
   return (
     <Html>
       <Head />
-      <body className='bg-white dark:bg-black text-black dark:text-white font-headline'>
+      <body className='bg-white font-headline text-black dark:bg-black dark:text-white'>
         <Main />
         <NextScript />
       </body>

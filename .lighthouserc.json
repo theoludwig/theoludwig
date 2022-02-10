@@ -9,13 +9,16 @@
         "http://localhost:3000/blog",
         "http://localhost:3000/blog/hello-world"
       ],
-      "numberOfRuns": 3
+      "numberOfRuns": 1
     },
     "assert": {
       "preset": "lighthouse:recommended",
       "assertions": {
         "csp-xss": "warning",
-        "unused-javascript": "warning"
+        "unused-javascript": "warning",
+        "image-size-responsive": "warning",
+        "unsized-images": "warning",
+        "color-contrast": "warning"
       }
     },
     "upload": {

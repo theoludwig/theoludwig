@@ -7,7 +7,7 @@ export const SocialMediaItem: React.FC<SocialMediaItemProps> = (props) => {
   const { link, ariaLabel, children } = props
 
   return (
-    <li className='inline-block mx-4 my-1'>
+    <li className='mx-4 my-1 inline-block'>
       <a
         href={link}
         aria-label={ariaLabel}

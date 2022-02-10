@@ -5,8 +5,8 @@ import { InterestItem } from './InterestItem'
 
 export const InterestsList: React.FC = () => {
   return (
-    <div className='flex justify-center my-4'>
-      <ul className='flex justify-around p-0 m-0 list-none w-96'>
+    <div className='my-4 flex justify-center'>
+      <ul className='m-0 flex w-96 list-none justify-around p-0'>
         <InterestItem
           title='Developer Full Stack Junior'
           fontAwesomeIcon={faCode}

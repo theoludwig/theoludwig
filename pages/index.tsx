@@ -12,14 +12,19 @@ import { Skills } from 'components/Skills'
 import { OpenSource } from 'components/OpenSource'
 import { Header } from 'components/Header'
 import { Footer, FooterProps } from 'components/Footer'
+import { getAge } from 'utils/getAge'
 
-const Home: NextPage<FooterProps> = (props) => {
+interface HomeProps extends FooterProps {
+  description: string
+}
+
+const Home: NextPage<HomeProps> = (props) => {
   const { t } = useTranslation()
-  const { version } = props
+  const { version, description } = props
 
   return (
     <>
-      <Head />
+      <Head description={description} />
 
       <Header showLanguage />
       <main className='flex flex-col md:mx-auto md:max-w-4xl lg:max-w-7xl'>
@@ -72,7 +77,10 @@ const Home: NextPage<FooterProps> = (props) => {
 export const getStaticProps: GetStaticProps<FooterProps> = async () => {
   const { readPackage } = await import('read-pkg')
   const { version } = await readPackage()
-  return { props: { version } }
+  const birthDate = new Date('2003-03-31')
+  const age = getAge(birthDate)
+  const description = `I'm Divlo, I'm ${age} years old, I'm from France - Developer Full Stack Junior • Passionate about High-Tech`
+  return { props: { version, description } }
 }
 
 export default Home

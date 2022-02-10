@@ -1,9 +1,0 @@
-.next
-.lighthouseci
-node_modules
-next-env.d.ts
-package.json
-package-lock.json
-**/workbox-*.js
-**/sw.js
-.vercel

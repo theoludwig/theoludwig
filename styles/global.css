@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 #__next {
-  @apply flex flex-col h-screen;
+  @apply flex h-screen flex-col;
 }
 
 .prose {
-  @apply text-gray dark:text-gray-dark !max-w-4xl;
+  @apply !max-w-4xl text-gray dark:text-gray-dark;
 }
 
 .prose a,
@@ -20,7 +20,7 @@
 .prose h4,
 .prose h5,
 .prose h6 {
-  @apply text-gray dark:text-gray-dark mt-1;
+  @apply mt-1 text-gray dark:text-gray-dark;
 }
 
 .prose code {

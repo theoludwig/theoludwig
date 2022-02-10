@@ -23,14 +23,14 @@ const BlogPage: NextPage<BlogPageProps> = (props) => {
       <Head title='Blog | Divlo' description={blogDescription} />
 
       <Header />
-      <main className='flex flex-col flex-wrap flex-1 items-center'>
-        <div className='flex flex-col items-center mt-10'>
+      <main className='flex flex-1 flex-col flex-wrap items-center'>
+        <div className='mt-10 flex flex-col items-center'>
           <h1 className='text-4xl font-semibold'>Blog</h1>
           <p className='mt-6' data-cy='blog-post-date'>
             {blogDescription}
           </p>
         </div>
-        <div className='w-full flex items-center justify-center p-8'>
+        <div className='flex w-full items-center justify-center p-8'>
           <div className='w-[1600px]' data-cy='blog-posts'>
             {posts.map((post, index) => {
               const postPublishedOn = date.format(
@@ -40,7 +40,7 @@ const BlogPage: NextPage<BlogPageProps> = (props) => {
               return (
                 <Link href={`/blog/${post.slug}`} key={index}>
                   <a data-cy='blog-post'>
-                    <ShadowContainer className='p-6 cursor-pointer transition duration-200 ease-in-out hover:-translate-y-2'>
+                    <ShadowContainer className='cursor-pointer p-6 transition duration-200 ease-in-out hover:-translate-y-2'>
                       <h2
                         data-cy='blog-post-title'
                         className='text-xl font-semibold'
