@@ -3,7 +3,7 @@ describe('Page /blog', () => {
     cy.visit('/blog')
     cy.get('[data-cy=blog-posts] [data-cy=blog-post-title]')
       .last()
-      .should('have.text', 'Hello, world! 👋')
+      .should('have.text', '👋 Hello, world!')
     cy.get('[data-cy=blog-posts] [data-cy=blog-post-description]')
       .last()
       .should(
