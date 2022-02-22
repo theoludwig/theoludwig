@@ -11,16 +11,16 @@ out
 # production
 build
 dist
+public/*.html
+# PWA
+public/workbox-*.js
+public/sw.js
 
 # testing
 coverage
 cypress/screenshots
 cypress/videos
 cypress/downloads
-
-# PWA
-**/workbox-*.js
-**/sw.js
 
 # envs
 .env

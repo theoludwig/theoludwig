@@ -23,12 +23,16 @@
   @apply mt-1 text-gray dark:text-gray-dark;
 }
 
-.prose code {
+.prose code:not(.hljs) {
   color: hsl(286, 60%, 67%);
 }
-
-code[class*='language-'],
-pre[class*='language-'] {
+.prose pre {
+  background-color: transparent !important;
+}
+.prose pre code {
+  border-radius: 10px;
+}
+.hljs {
   white-space: pre-wrap !important;
   word-break: break-word !important;
   word-wrap: normal;

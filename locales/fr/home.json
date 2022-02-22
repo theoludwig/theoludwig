@@ -2,9 +2,10 @@
   "about": {
     "i-am": "Je suis",
     "description": "Développeur Full Stack Junior • Passionné de High-Tech",
+    "full-name": "Prénom NOM",
     "birth-date": "Date de naissance",
     "nationality": "Nationalité",
-    "description-bottom": "Je me forme en autodidacte dans l'informatique en suivant des formations en ligne et je suis aussi un étudiant à l'université suivant la formation \"BUT Informatique\" (première année). <0/> <0/> Je mets en pratique tout ce que j'apprends et réalise de nombreux projets."
+    "description-bottom": "Je me forme en autodidacte dans l'informatique en suivant des formations en ligne et je suis aussi un étudiant à l'université suivant la formation \"BUT Informatique\" (première année)."
   },
   "interests": {
     "title": "Intérêts",

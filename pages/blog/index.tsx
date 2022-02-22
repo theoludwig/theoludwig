@@ -38,7 +38,7 @@ const BlogPage: NextPage<BlogPageProps> = (props) => {
                 'DD/MM/YYYY'
               )
               return (
-                <Link href={`/blog/${post.slug}`} key={index}>
+                <Link href={`/blog/${post.slug}`} key={index} locale='en'>
                   <a data-cy='blog-post'>
                     <ShadowContainer className='cursor-pointer p-6 transition duration-200 ease-in-out hover:-translate-y-2'>
                       <h2

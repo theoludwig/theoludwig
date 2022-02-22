@@ -6,5 +6,6 @@
     "jest --findRelatedTests"
   ],
   "*.{css,scss,sass,json,jsonc,yml,yaml}": ["prettier --write"],
-  "*.{md,mdx}": ["prettier --write", "markdownlint --dot --fix"]
+  "*.{md,mdx}": ["prettier --write", "markdownlint --dot --fix"],
+  "resume.json": ["resume validate"]
 }

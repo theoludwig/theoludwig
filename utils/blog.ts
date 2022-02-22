@@ -4,8 +4,8 @@ import path from 'node:path'
 import type { MDXRemoteSerializeResult } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
 import remarkGfm from 'remark-gfm'
-import remarkPrism from 'remark-prism'
 import rehypeSlug from 'rehype-slug'
+import rehypeHighlight from 'rehype-highlight'
 import matter from 'gray-matter'
 
 export const postsPath = path.join(process.cwd(), 'posts')
@@ -64,8 +64,8 @@ export const getPostBySlug = async (
   }
   const source = await serialize(post.content, {
     mdxOptions: {
-      remarkPlugins: [remarkGfm as any, remarkPrism],
-      rehypePlugins: [rehypeSlug as any]
+      remarkPlugins: [remarkGfm as any],
+      rehypePlugins: [rehypeSlug as any, rehypeHighlight]
     }
   })
   return { ...post, source }

@@ -72,6 +72,9 @@ jobs:
       - name: 'lint:prettier'
         run: 'npm run lint:prettier'
 
+      - name: 'resume:validate'
+        run: 'npm run resume:validate'
+
       - name: 'lint:dotenv'
         uses: 'dotenv-linter/action-dotenv-linter@v2'
         with:

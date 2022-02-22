@@ -47,7 +47,7 @@ export const Language: React.FC = () => {
       <ul
         data-cy='languages-list'
         className={classNames(
-          'absolute top-14 z-10 mt-3 mr-4 flex w-24 list-none flex-col items-center justify-center rounded-lg bg-white p-0 shadow-light dark:bg-black dark:shadow-dark',
+          'absolute top-14 z-10 mt-3 mr-4 flex w-24 list-none flex-col items-center justify-center rounded-lg bg-white p-0 shadow-lightFlag dark:bg-black dark:shadow-darkFlag',
           { hidden: hiddenMenu }
         )}
       >

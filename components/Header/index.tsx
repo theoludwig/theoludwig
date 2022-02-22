@@ -17,6 +17,7 @@ export const Header: React.FC<HeaderProps> = (props) => {
         <a>
           <div className='flex items-center justify-center'>
             <Image
+              quality={100}
               width={60}
               height={60}
               src='/images/divlo_icon_small.png'
