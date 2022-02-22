@@ -26,7 +26,7 @@ const BlogPage: NextPage<BlogPageProps> = (props) => {
       <main className='flex flex-1 flex-col flex-wrap items-center'>
         <div className='mt-10 flex flex-col items-center'>
           <h1 className='text-4xl font-semibold'>Blog</h1>
-          <p className='mt-6' data-cy='blog-post-date'>
+          <p className='mt-6 text-center' data-cy='blog-post-date'>
             {blogDescription}
           </p>
         </div>
@@ -39,7 +39,7 @@ const BlogPage: NextPage<BlogPageProps> = (props) => {
               )
               return (
                 <Link href={`/blog/${post.slug}`} key={index} locale='en'>
-                  <a data-cy='blog-post'>
+                  <a data-cy={post.slug}>
                     <ShadowContainer className='cursor-pointer p-6 transition duration-200 ease-in-out hover:-translate-y-2'>
                       <h2
                         data-cy='blog-post-title'

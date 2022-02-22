@@ -15,6 +15,7 @@
       "preset": "lighthouse:recommended",
       "assertions": {
         "csp-xss": "warning",
+        "non-composited-animations": "warning",
         "unused-javascript": "warning",
         "image-size-responsive": "warning",
         "unsized-images": "warning",

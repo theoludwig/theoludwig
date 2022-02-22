@@ -10,15 +10,11 @@ describe('Page /blog', () => {
         'have.text',
         'First post of the blog, introduction and explanation of how this blog is made.'
       )
-    cy.get('[data-cy=blog-posts] [data-cy=blog-post-date]')
-      .last()
-      .should('have.text', '06/10/2021')
   })
 
   it('should redirect the user to the right blog post', () => {
     cy.visit('/blog')
-    cy.get('[data-cy=blog-posts]')
-      .last()
+    cy.get('[data-cy=hello-world]')
       .click()
       .location('pathname')
       .should('eq', '/blog/hello-world')

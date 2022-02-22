@@ -1,7 +1,6 @@
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemote } from 'next-mdx-remote'
 import date from 'date-and-time'
-import 'highlight.js/styles/github-dark.css'
 
 import { Head } from 'components/Head'
 import { Header } from 'components/Header'

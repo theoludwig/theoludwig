@@ -23,17 +23,28 @@
   @apply mt-1 text-gray dark:text-gray-dark;
 }
 
-.prose code:not(.hljs) {
-  color: hsl(286, 60%, 67%);
+.prose code {
+  color: #ce9178;
 }
-.prose pre {
-  background-color: transparent !important;
+.prose :where(code):not(:where([class~='not-prose'] *))::before,
+.prose :where(code):not(:where([class~='not-prose'] *))::after {
+  content: '';
 }
-.prose pre code {
-  border-radius: 10px;
-}
-.hljs {
+.shiki {
   white-space: pre-wrap !important;
   word-break: break-word !important;
   word-wrap: normal;
+}
+code {
+  counter-reset: step;
+  counter-increment: step 0;
+}
+code .line::before {
+  content: counter(step);
+  counter-increment: step;
+  width: 1rem;
+  margin-right: 1.5rem;
+  display: inline-block;
+  text-align: right;
+  color: rgba(133, 133, 133, 0.8);
 }

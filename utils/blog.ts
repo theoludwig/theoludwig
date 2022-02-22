@@ -2,13 +2,17 @@ import fs from 'node:fs'
 import path from 'node:path'
 
 import type { MDXRemoteSerializeResult } from 'next-mdx-remote'
+import { nodeTypes } from '@mdx-js/mdx'
+import rehypeRaw from 'rehype-raw'
 import { serialize } from 'next-mdx-remote/serialize'
 import remarkGfm from 'remark-gfm'
 import rehypeSlug from 'rehype-slug'
-import rehypeHighlight from 'rehype-highlight'
 import matter from 'gray-matter'
+import { getHighlighter } from 'shiki'
 
-export const postsPath = path.join(process.cwd(), 'posts')
+import { remarkSyntaxHighlightingPlugin } from './remarkSyntaxHighlightingPlugin'
+
+export const POSTS_PATH = path.join(process.cwd(), 'posts')
 
 export type MDXSource = MDXRemoteSerializeResult<Record<string, unknown>>
 
@@ -30,11 +34,11 @@ export interface Post extends PostMetadata {
 }
 
 export const getPosts = async (): Promise<PostMetadata[]> => {
-  const posts = await fs.promises.readdir(postsPath)
+  const posts = await fs.promises.readdir(POSTS_PATH)
   const postsWithTime = await Promise.all(
     posts.map(async (postFilename) => {
       const [slug] = postFilename.split('.')
-      const blogPostPath = path.join(postsPath, `${slug}.mdx`)
+      const blogPostPath = path.join(POSTS_PATH, `${slug}.mdx`)
       const blogPostContent = await fs.promises.readFile(blogPostPath, {
         encoding: 'utf8'
       })
@@ -62,10 +66,19 @@ export const getPostBySlug = async (
   if (post == null) {
     return undefined
   }
+  const highlighter = await getHighlighter({
+    theme: 'dark-plus'
+  })
   const source = await serialize(post.content, {
     mdxOptions: {
-      remarkPlugins: [remarkGfm as any],
-      rehypePlugins: [rehypeSlug as any, rehypeHighlight]
+      remarkPlugins: [
+        remarkGfm as any,
+        [remarkSyntaxHighlightingPlugin, { highlighter }]
+      ],
+      rehypePlugins: [
+        rehypeSlug as any,
+        [rehypeRaw, { passThrough: nodeTypes }]
+      ]
     }
   })
   return { ...post, source }
