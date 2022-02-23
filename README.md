@@ -5,7 +5,6 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Divlo/Divlo/actions/workflows/Divlo.yml"><img src="https://github.com/Divlo/Divlo/actions/workflows/Divlo.yml/badge.svg?branch=master" alt="Divlo's CI" /></a>
   <a href="https://github.com/Divlo"><img alt="GitHub" src="https://img.shields.io/badge/-GitHub-5A5A5A?style=flat&labelColor=5A5A5A&logo=github&logoColor=white"/></a>
   <a href="https://gitlab.com/Divlo"><img alt="GitLab" src="https://img.shields.io/badge/-GitLab-303030?style=flat&labelColor=303030&logo=gitlab&logoColor=white"/></a>
   <a href="https://www.npmjs.com/~divlo"><img alt="npm" src="https://img.shields.io/badge/-npm-c4302b?style=flat&labelColor=c4302b&logo=npm&logoColor=white"/></a>

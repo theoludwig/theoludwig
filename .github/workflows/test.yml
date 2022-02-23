@@ -1,0 +1,70 @@
+name: 'Test'
+
+on:
+  push:
+    branches: [develop]
+  pull_request:
+    branches: [master, develop]
+
+jobs:
+  test-unit:
+    runs-on: 'ubuntu-latest'
+    steps:
+      - uses: 'actions/checkout@v2.4.0'
+
+      - name: 'Use Node.js'
+        uses: 'actions/setup-node@v2.5.1'
+        with:
+          node-version: '16.x'
+          cache: 'npm'
+
+      - name: 'Install'
+        run: 'npm install'
+
+      - name: 'Unit Test'
+        run: 'npm run test:unit'
+
+  test-lighthouse:
+    runs-on: 'ubuntu-latest'
+    steps:
+      - uses: 'actions/checkout@v2.4.0'
+
+      - name: 'Use Node.js'
+        uses: 'actions/setup-node@v2.5.1'
+        with:
+          node-version: '16.x'
+          cache: 'npm'
+
+      - name: 'Install'
+        run: 'npm install'
+
+      - name: 'Build'
+        run: 'npm run build'
+
+      - name: 'html-w3c-validator'
+        run: 'npm run test:html-w3c-validator'
+
+      - name: 'Lighthouse'
+        run: 'npm run test:lighthouse'
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+
+  test-e2e:
+    runs-on: 'ubuntu-latest'
+    steps:
+      - uses: 'actions/checkout@v2.4.0'
+
+      - name: 'Use Node.js'
+        uses: 'actions/setup-node@v2.5.1'
+        with:
+          node-version: '16.x'
+          cache: 'npm'
+
+      - name: 'Install'
+        run: 'npm install'
+
+      - name: 'Build'
+        run: 'npm run build'
+
+      - name: 'End To End (e2e) Test'
+        run: 'npm run test:e2e'
