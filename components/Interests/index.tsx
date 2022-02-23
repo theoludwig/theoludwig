@@ -15,19 +15,11 @@ export const Interests: React.FC = () => {
   )
 
   return (
-    <>
-      <div className='max-w-full'>
-        {paragraphs.map((paragraph, index) => {
-          return <InterestParagraph key={index} {...paragraph} />
-        })}
-        <InterestsList />
-      </div>
-
-      <style jsx global>{`
-        #__next {
-          display: block;
-        }
-      `}</style>
-    </>
+    <div className='max-w-full'>
+      {paragraphs.map((paragraph, index) => {
+        return <InterestParagraph key={index} {...paragraph} />
+      })}
+      <InterestsList />
+    </div>
   )
 }

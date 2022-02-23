@@ -8,6 +8,10 @@ describe('Common > Header', () => {
       .should('eq', '/blog')
   })
 
+  it('should always be visible (sticky header)', () => {
+    cy.scrollTo('bottom').get('header').should('be.visible')
+  })
+
   describe('Switch theme color (dark/light)', () => {
     it('should switch theme from `dark` (default) to `light`', () => {
       cy.get('[data-cy=switch-theme-dark]').should('be.visible')

@@ -14,7 +14,7 @@ export const ProfileDescriptionBottom: React.FC = () => {
             href='/curriculum-vitae.html'
             className='text-yellow hover:underline dark:text-yellow-dark'
           >
-            Mon Curriculum vitæ
+            Curriculum vitæ
           </a>
         </>
       )}

@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-#__next {
-  @apply flex h-screen flex-col;
-}
-
 .prose {
   @apply !max-w-4xl text-gray dark:text-gray-300;
 }
