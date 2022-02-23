@@ -39,7 +39,7 @@ export const Head: React.FC<HeadProps> = (props) => {
       <meta name='twitter:card' content='summary' />
       <meta name='twitter:description' content={description} />
       <meta name='twitter:title' content={title} />
-      <meta name='twitter:image:src' content={image} />
+      <meta name='twitter:image' content={image} />
 
       {/* Google Verification */}
       <meta
