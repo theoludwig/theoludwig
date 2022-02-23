@@ -1,6 +1,6 @@
 {
   "extends": ["conventions", "next/core-web-vitals", "prettier"],
-  "plugins": ["prettier"],
+  "plugins": ["prettier", "unicorn"],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
@@ -10,6 +10,7 @@
     "jest": true
   },
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "unicorn/prefer-node-protocol": "off"
   }
 }
