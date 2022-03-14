@@ -1,22 +1,22 @@
-const path = require('path')
-const fs = require('fs')
+import fs from 'fs'
+import { fileURLToPath } from 'url'
 
-const ejs = require('ejs')
-const date = require('date-and-time')
-const { Parcel } = require('@parcel/core')
+import ejs from 'ejs'
+import date from 'date-and-time'
+import { Parcel } from '@parcel/core'
 
-const render = async (resume) => {
-  const themeIndexPath = path.join(__dirname, 'theme', 'index.ejs')
-  const themeBuildPath = path.join(__dirname, 'theme', 'index.html')
-  const indexHTMLPath = path.join(__dirname, 'dist', 'index.html')
-  const html = await ejs.renderFile(themeIndexPath, {
+export const render = async (resume) => {
+  const themeIndexURL = new URL('./theme/index.ejs', import.meta.url)
+  const themeBuildURL = new URL('./theme/index.html', import.meta.url)
+  const indexHTMLURL = new URL('./dist/index.html', import.meta.url)
+  const themeBuildPath = fileURLToPath(themeBuildURL)
+  const html = await ejs.renderFile(fileURLToPath(themeIndexURL), {
     date,
     locals: {
       ...resume
     }
   })
-
-  await fs.promises.writeFile(themeBuildPath, html, { encoding: 'utf-8' })
+  await fs.promises.writeFile(themeBuildURL, html, { encoding: 'utf-8' })
   const bundler = new Parcel({
     entries: themeBuildPath,
     source: themeBuildPath,
@@ -24,9 +24,5 @@ const render = async (resume) => {
     defaultConfig: '@parcel/config-default'
   })
   await bundler.run()
-  return await fs.promises.readFile(indexHTMLPath, { encoding: 'utf-8' })
-}
-
-module.exports = {
-  render
+  return await fs.promises.readFile(indexHTMLURL, { encoding: 'utf-8' })
 }

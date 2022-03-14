@@ -2,9 +2,10 @@
   "name": "jsonresume-theme-custom",
   "private": true,
   "version": "1.0.0",
+  "type": "module",
   "scripts": {},
   "dependencies": {
-    "date-and-time": "2.1.2",
+    "date-and-time": "2.3.0",
     "ejs": "3.1.6",
     "modern-normalize": "1.1.0"
   },

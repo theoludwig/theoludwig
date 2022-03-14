@@ -10,7 +10,7 @@ interface HeadProps {
 export const Head: React.FC<HeadProps> = (props) => {
   const {
     title = 'Divlo',
-    image = '/images/icons/icon-96x96.png',
+    image = 'https://divlo.fr/images/icons/icon-96x96.png',
     description,
     url = 'https://divlo.fr/'
   } = props

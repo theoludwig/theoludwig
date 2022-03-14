@@ -3,5 +3,6 @@
     "http://localhost:3000/",
     "http://localhost:3000/blog",
     "http://localhost:3000/blog/hello-world"
-  ]
+  ],
+  "files": ["./public/curriculum-vitae.html"]
 }
