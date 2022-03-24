@@ -5,20 +5,16 @@ import { ErrorPage } from 'components/ErrorPage'
 import { Head } from 'components/Head'
 import { Header } from 'components/Header'
 import { Footer, FooterProps } from 'components/Footer'
-import { getDefaultDescription } from 'utils/getDefaultDescription'
-import { DIVLO_BIRTHDAY, getAge } from 'utils/getAge'
 
-interface Error500Props extends FooterProps {
-  description: string
-}
+interface Error500Props extends FooterProps {}
 
 const Error500: NextPage<Error500Props> = (props) => {
   const { t } = useTranslation()
-  const { version, description } = props
+  const { version } = props
 
   return (
     <>
-      <Head title='500 | Divlo' description={description} />
+      <Head title='500 | Divlo' />
 
       <Header showLanguage />
       <main className='flex flex-col md:mx-auto md:max-w-4xl lg:max-w-7xl'>
@@ -29,12 +25,10 @@ const Error500: NextPage<Error500Props> = (props) => {
   )
 }
 
-export const getStaticProps: GetStaticProps<FooterProps> = async () => {
+export const getStaticProps: GetStaticProps<Error500Props> = async () => {
   const { readPackage } = await import('read-pkg')
   const { version } = await readPackage()
-  const age = getAge(DIVLO_BIRTHDAY)
-  const description = getDefaultDescription(age)
-  return { props: { version, description } }
+  return { props: { version } }
 }
 
 export default Error500

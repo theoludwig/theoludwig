@@ -12,26 +12,21 @@ import { Skills } from 'components/Skills'
 import { OpenSource } from 'components/OpenSource'
 import { Header } from 'components/Header'
 import { Footer, FooterProps } from 'components/Footer'
-import { getDefaultDescription } from 'utils/getDefaultDescription'
-import { DIVLO_BIRTHDAY, getAge } from 'utils/getAge'
 
-interface HomeProps extends FooterProps {
-  description: string
-  age: number
-}
+interface HomeProps extends FooterProps {}
 
 const Home: NextPage<HomeProps> = (props) => {
   const { t } = useTranslation()
-  const { version, description, age } = props
+  const { version } = props
 
   return (
     <>
-      <Head description={description} />
+      <Head />
 
       <Header showLanguage />
       <main className='flex flex-col md:mx-auto md:max-w-4xl lg:max-w-7xl'>
         <Section isMain id='about'>
-          <Profile age={age} />
+          <Profile />
           <SocialMediaList />
         </Section>
 
@@ -79,9 +74,7 @@ const Home: NextPage<HomeProps> = (props) => {
 export const getStaticProps: GetStaticProps<HomeProps> = async () => {
   const { readPackage } = await import('read-pkg')
   const { version } = await readPackage()
-  const age = getAge(DIVLO_BIRTHDAY)
-  const description = getDefaultDescription(age)
-  return { props: { version, description, age } }
+  return { props: { version } }
 }
 
 export default Home

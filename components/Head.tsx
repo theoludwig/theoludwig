@@ -3,7 +3,7 @@ import NextHead from 'next/head'
 interface HeadProps {
   title?: string
   image?: string
-  description: string
+  description?: string
   url?: string
 }
 
@@ -11,7 +11,7 @@ export const Head: React.FC<HeadProps> = (props) => {
   const {
     title = 'Divlo',
     image = 'https://divlo.fr/images/icons/icon-96x96.png',
-    description,
+    description = 'Divlo - Developer Full Stack Junior • Passionate about High-Tech',
     url = 'https://divlo.fr/'
   } = props
 
