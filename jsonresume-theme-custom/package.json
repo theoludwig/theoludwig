@@ -10,10 +10,10 @@
     "modern-normalize": "1.1.0"
   },
   "devDependencies": {
-    "@parcel/config-default": "2.3.2",
-    "@parcel/core": "2.3.2",
-    "@parcel/optimizer-data-url": "^2.3.2",
-    "@parcel/transformer-inline-string": "^2.3.2",
-    "parcel": "2.3.2"
+    "@parcel/config-default": "2.4.0",
+    "@parcel/core": "2.4.0",
+    "@parcel/optimizer-data-url": "2.4.0",
+    "@parcel/transformer-inline-string": "2.4.0",
+    "parcel": "2.4.0"
   }
 }

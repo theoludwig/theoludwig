@@ -6,6 +6,7 @@ import { Head } from 'components/Head'
 import { Header } from 'components/Header'
 import { Footer, FooterProps } from 'components/Footer'
 import { getDefaultDescription } from 'utils/getDefaultDescription'
+import { DIVLO_BIRTHDAY, getAge } from 'utils/getAge'
 
 interface Error404Props extends FooterProps {
   description: string
@@ -31,7 +32,8 @@ const Error404: NextPage<Error404Props> = (props) => {
 export const getStaticProps: GetStaticProps<FooterProps> = async () => {
   const { readPackage } = await import('read-pkg')
   const { version } = await readPackage()
-  const description = getDefaultDescription()
+  const age = getAge(DIVLO_BIRTHDAY)
+  const description = getDefaultDescription(age)
   return { props: { version, description } }
 }
 
