@@ -12,6 +12,7 @@ out
 build
 dist
 public/*.html
+jsonresume-theme-custom/theme/index.html
 # PWA
 public/workbox-*.js
 public/sw.js
