@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 
-export const RevealFade: React.FC = (props) => {
+export const RevealFade: React.FC<React.PropsWithChildren<{}>> = (props) => {
   const { children } = props
 
   const htmlElement = useRef<HTMLDivElement>(null)

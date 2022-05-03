@@ -15,7 +15,6 @@
   "education": [
     {
       "startDate": "2022",
-      "endDate": "2024",
       "studyType": "Diplôme du Bachelor Universitaire de Technologie (BUT) Informatique",
       "institution": "IUT Robert Schuman à Illkirch-Graffenstaden",
       "score": "En cours"
@@ -41,8 +40,8 @@
       "website": "https://www.nuitdelinfo.com/",
       "name": "La Nuit de l'info 2021",
       "position": "Participation avec l'équipe <a href=\"https://www.nuitdelinfo.com/inscription/equipes/46\">Who are We</a>",
-      "startDate": "2021-07-07",
-      "endDate": "2021-07-30"
+      "startDate": "2021-12-02",
+      "endDate": "2021-12-03"
     },
     {
       "summary": "Agent administratif en vue de faire face au sucroît temporaire d'activités liés à la numérisation des plans des postes sources <br /> actuellement sous format papier calque suite à la libération des locaux des archives.",

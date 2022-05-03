@@ -167,7 +167,8 @@
                           </p>
                           <p class="text-muted clear-margin">
                             <small>
-                              <%= degree.startDate %> - <%= degree.endDate %>
+                              <%= degree.startDate %> <%= degree.endDate != null
+                              ? " - " + degree.endDate : "" %>
                             </small>
                           </p>
                         </div>

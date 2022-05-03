@@ -81,7 +81,7 @@ npm run dev
 
 ```sh
 # Setup and run all the services for you
-docker-compose up --build
+docker compose up --build
 ```
 
 ### Services started

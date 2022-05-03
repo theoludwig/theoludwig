@@ -3,7 +3,9 @@ interface SocialMediaItemProps {
   ariaLabel: string
 }
 
-export const SocialMediaItem: React.FC<SocialMediaItemProps> = (props) => {
+export const SocialMediaItem: React.FC<
+  React.PropsWithChildren<SocialMediaItemProps>
+> = (props) => {
   const { link, ariaLabel, children } = props
 
   return (

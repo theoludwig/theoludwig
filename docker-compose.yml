@@ -1,4 +1,3 @@
-version: '3.0'
 services:
   divlo.fr:
     container_name: ${COMPOSE_PROJECT_NAME}
