@@ -5,15 +5,15 @@
   "type": "module",
   "scripts": {},
   "dependencies": {
-    "date-and-time": "2.3.1",
-    "ejs": "3.1.7",
+    "date-and-time": "2.4.0",
+    "ejs": "3.1.8",
     "modern-normalize": "1.1.0"
   },
   "devDependencies": {
-    "@parcel/config-default": "2.5.0",
-    "@parcel/core": "2.5.0",
-    "@parcel/optimizer-data-url": "2.5.0",
-    "@parcel/transformer-inline-string": "2.5.0",
-    "parcel": "2.5.0"
+    "@parcel/config-default": "2.6.2",
+    "@parcel/core": "2.6.2",
+    "@parcel/optimizer-data-url": "2.6.2",
+    "@parcel/transformer-inline-string": "2.6.2",
+    "parcel": "2.6.2"
   }
 }

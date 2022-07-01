@@ -1,5 +1,5 @@
-import fs from 'fs'
-import { fileURLToPath } from 'url'
+import fs from 'node:fs'
+import { fileURLToPath } from 'node:url'
 
 import ejs from 'ejs'
 import date from 'date-and-time'
