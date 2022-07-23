@@ -1,0 +1,16 @@
+cypress.config.ts
+node_modules
+.vscode
+.git
+build
+.next
+coverage
+node_modules
+tmp
+temp
+.DS_Store
+.lighthouseci
+.vercel
+public/workbox-*.js
+public/sw.js
+cypress

@@ -16,3 +16,6 @@ const dataResumeIndexHTML = await render(dataResumeJSON)
 await fs.promises.writeFile(publicResumeURL, dataResumeIndexHTML, {
   encoding: 'utf-8'
 })
+
+console.log('Resume generated successfully!')
+console.log(`See it at ${publicResumeURL}`)
