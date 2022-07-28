@@ -5,3 +5,5 @@ describe('Page /500', () => {
     cy.get('[data-cy=status-code]').contains('500')
   })
 })
+
+export {}

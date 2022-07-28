@@ -5,3 +5,5 @@ describe('Page /404', () => {
     cy.get('[data-cy=status-code]').contains('404')
   })
 })
+
+export {}

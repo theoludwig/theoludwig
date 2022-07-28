@@ -20,3 +20,5 @@ describe('Page /blog', () => {
       .should('eq', '/blog/hello-world')
   })
 })
+
+export {}

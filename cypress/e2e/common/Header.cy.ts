@@ -56,3 +56,5 @@ describe('Common > Header', () => {
     })
   })
 })
+
+export {}

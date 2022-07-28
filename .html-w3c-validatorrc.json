@@ -4,5 +4,5 @@
     "http://localhost:3000/blog",
     "http://localhost:3000/blog/hello-world"
   ],
-  "files": ["./public/curriculum-vitae.html"]
+  "files": ["./public/curriculum-vitae/index.html"]
 }

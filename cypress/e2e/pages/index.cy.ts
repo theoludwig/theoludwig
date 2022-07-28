@@ -17,3 +17,5 @@ describe('Page /', () => {
     }
   })
 })
+
+export {}

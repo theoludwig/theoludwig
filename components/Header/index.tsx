@@ -4,13 +4,7 @@ import Image from 'next/image'
 import { Language } from './Language'
 import { SwitchTheme } from './SwitchTheme'
 
-export interface HeaderProps {
-  showLanguage?: boolean
-}
-
-export const Header: React.FC<HeaderProps> = (props) => {
-  const { showLanguage = false } = props
-
+export const Header: React.FC = () => {
   return (
     <header className='sticky top-0 z-50 flex w-full justify-between border-b-2 border-gray-600 bg-white px-6 py-2 dark:border-gray-400 dark:bg-black'>
       <Link href='/'>
@@ -40,7 +34,7 @@ export const Header: React.FC<HeaderProps> = (props) => {
             </a>
           </Link>
         </div>
-        {showLanguage && <Language />}
+        <Language />
         <SwitchTheme />
       </div>
     </header>

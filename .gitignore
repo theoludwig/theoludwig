@@ -11,8 +11,7 @@ out
 # production
 build
 dist
-public/*.html
-jsonresume-theme-custom/theme/index.html
+public/curriculum-vitae
 # PWA
 public/workbox-*.js
 public/sw.js

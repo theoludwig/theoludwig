@@ -27,6 +27,7 @@ export const Footer: React.FC<FooterProps> = (props) => {
       <p className='mt-1'>
         Version{' '}
         <a
+          data-cy='version-link'
           className='text-yellow hover:underline dark:text-yellow-dark'
           href={versionLink}
           target='_blank'

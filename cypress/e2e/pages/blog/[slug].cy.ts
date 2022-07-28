@@ -11,3 +11,5 @@ describe('Page /blog/[slug]', () => {
     cy.get('[data-cy=status-code]').contains('404')
   })
 })
+
+export {}
