@@ -16,7 +16,7 @@ const Error404: NextPage<Error404Props> = (props) => {
     <>
       <Head title='404 | Divlo' />
 
-      <Header />
+      <Header showLanguage />
       <main className='flex flex-col md:mx-auto md:max-w-4xl lg:max-w-7xl'>
         <ErrorPage statusCode={404} message={t('errors:not-found')} />
       </main>

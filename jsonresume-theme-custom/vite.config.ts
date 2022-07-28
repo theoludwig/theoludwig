@@ -4,7 +4,7 @@ import { defineConfig } from 'vite'
 import { createHtmlPlugin } from 'vite-plugin-html'
 import date from 'date-and-time'
 
-const jsonResumeURL = new URL('./resume.json', import.meta.url)
+const jsonResumeURL = new URL('../resume.json', import.meta.url)
 const dataResumeStringJSON = await fs.promises.readFile(jsonResumeURL, {
   encoding: 'utf-8'
 })
