@@ -1,21 +1,19 @@
+import { fileURLToPath } from 'node:url'
 import fs from 'node:fs'
 
-import { render } from '../index.js'
+import { build } from 'vite'
 
-const jsonResumeURL = new URL('../../resume.json', import.meta.url)
-const publicResumeURL = new URL(
-  '../../public/curriculum-vitae.html',
+const jsonResumeThemeCustom = new URL('../', import.meta.url)
+const jsonResumeThemeCustomDist = new URL('./dist', jsonResumeThemeCustom)
+const publicResumeOutputURL = new URL(
+  '../../public/curriculum-vitae',
   import.meta.url
 )
 
-const dataResumeStringJSON = await fs.promises.readFile(jsonResumeURL, {
-  encoding: 'utf-8'
-})
-const dataResumeJSON = JSON.parse(dataResumeStringJSON)
-const dataResumeIndexHTML = await render(dataResumeJSON)
-await fs.promises.writeFile(publicResumeURL, dataResumeIndexHTML, {
-  encoding: 'utf-8'
+await build({
+  root: fileURLToPath(jsonResumeThemeCustom)
 })
 
-console.log('Resume generated successfully!')
-console.log(`See it at ${publicResumeURL}`)
+await fs.promises.cp(jsonResumeThemeCustomDist, publicResumeOutputURL, {
+  recursive: true
+})

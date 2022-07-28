@@ -1,0 +1,118 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "meta": {
+    "theme": "custom"
+  },
+  "basics": {
+    "name": "Théo LUDWIG",
+    "label": "Développeur Full Stack Junior • Passionné de High-Tech",
+    "image": "https://divlo.fr/images/logo_orange.png",
+    "email": "contact@divlo.fr",
+    "location": {},
+    "url": "https://divlo.fr",
+    "summary": "Je me forme en autodidacte dans l'informatique en suivant des formations en ligne et je suis aussi un étudiant à l'université suivant la formation \"BUT Informatique\" (première année). <br/> Je mets en pratique tout ce que j'apprends et réalise de nombreux projets."
+  },
+  "education": [
+    {
+      "startDate": "2022",
+      "studyType": "Diplôme du Bachelor Universitaire de Technologie (BUT) Informatique",
+      "institution": "IUT Robert Schuman à Illkirch-Graffenstaden",
+      "score": "En cours"
+    },
+    {
+      "startDate": "2019",
+      "endDate": "2021",
+      "studyType": "Diplôme du Baccalauréat Général (Mathématiques et Numériques Sciences Informatiques)",
+      "institution": "Lycée Heinrich Nessel à Haguenau",
+      "score": "Mention Assez Bien"
+    },
+    {
+      "startDate": "2014",
+      "endDate": "2018",
+      "studyType": "Diplôme national du brevet",
+      "institution": "Collège Gustave Doré à Hochfelden",
+      "score": "Mention Bien"
+    }
+  ],
+  "work": [
+    {
+      "summary": "Développement site web en React.js et Strapi afin de répondre <a href=\"https://www.nuitdelinfo.com/nuitinfo/_media/infos:la_nuit_de_l_info_2021_-_sujet.pdf\">au sujet de la Nuit de l'Info 2021</a>.<br /> TOP 1 France: Défi de l'entreprise <a href=\"https://www.nuitdelinfo.com/inscription/defis/300\">ToolPad</a>.",
+      "website": "https://www.nuitdelinfo.com/",
+      "name": "La Nuit de l'info 2021",
+      "position": "Participation avec l'équipe <a href=\"https://www.nuitdelinfo.com/inscription/equipes/46\">Who are We</a>",
+      "startDate": "2021-12-02",
+      "endDate": "2021-12-03"
+    },
+    {
+      "summary": "Agent administratif en vue de faire face au sucroît temporaire d'activités liés à la numérisation des plans des postes sources <br /> actuellement sous format papier calque suite à la libération des locaux des archives.",
+      "website": "https://www.es.fr/",
+      "name": "ÉS (Électricité de Strasbourg)",
+      "location": "5 Rue André Marie Ampère, 67450 Mundolsheim",
+      "position": "Emploi d'été en qualité d'agent administratif",
+      "startDate": "2021-07-07",
+      "endDate": "2021-07-30"
+    },
+    {
+      "summary": "Hackathon développement d'une landing page et web scraping.",
+      "website": "https://www.wildcodeschool.fr/",
+      "name": "Wild Code School",
+      "location": "32 Rue du Bass. d'Austerlitz, 67100 Strasbourg",
+      "position": "Stage initiation métier développeur web",
+      "startDate": "2019-06-24",
+      "endDate": "2019-06-28"
+    },
+    {
+      "summary": "Développement d'un site web pour trouver un restaurant à la pause repas.",
+      "website": "https://www.itpartners.fr/",
+      "name": "Tribe | IT Partners",
+      "location": "16 Rue du Parc, 67205 Oberhausbergen",
+      "position": "Stage initiation métier développeur web",
+      "startDate": "2019-06-17",
+      "endDate": "2019-06-21"
+    },
+    {
+      "summary": "Apprentissage du métier \"Chargé de communication\" et des logiciels de graphisme tels que \"Adobe Photoshop\".",
+      "website": "https://www.es.fr/",
+      "name": "ÉS (Électricité de Strasbourg)",
+      "location": "26 Bd du Président-Wilson, 67000 Strasbourg",
+      "position": "Stage de découverte (3ème)",
+      "startDate": "2018-02-19",
+      "endDate": "2018-02-23"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Développeur Full Stack Junior"
+    },
+    {
+      "name": "Passionné de High-Tech"
+    },
+    {
+      "name": "Enthousiaste de l'Open-Source"
+    }
+  ],
+  "skills": [
+    {
+      "keywords": ["JavaScript", "TypeScript", "Python", "C/C++"],
+      "name": "Langages de programmation"
+    },
+    {
+      "keywords": ["HTML", "CSS", "Tailwind CSS", "React.js (+ Next.js)"],
+      "name": "Front-end"
+    },
+    {
+      "keywords": ["Node.js", "Fastify", "PostgreSQL", "MySQL"],
+      "name": "Back-end"
+    },
+    {
+      "keywords": [
+        "GNU/Linux",
+        "Ubuntu",
+        "Visual Studio Code",
+        "git",
+        "Docker"
+      ],
+      "name": "Logiciels et outils"
+    }
+  ]
+}

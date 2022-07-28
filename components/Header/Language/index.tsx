@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState, useRef } from 'react'
 import useTranslation from 'next-translate/useTranslation'
 import setLanguage from 'next-translate/setLanguage'
-import classNames from 'classnames'
+import classNames from 'clsx'
 
 import i18n from 'i18n.json'
 
