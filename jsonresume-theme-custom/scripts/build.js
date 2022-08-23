@@ -11,7 +11,8 @@ const publicResumeOutputURL = new URL(
 )
 
 await build({
-  root: fileURLToPath(jsonResumeThemeCustom)
+  root: fileURLToPath(jsonResumeThemeCustom),
+  base: '/curriculum-vitae/'
 })
 
 await fs.promises.cp(jsonResumeThemeCustomDist, publicResumeOutputURL, {
