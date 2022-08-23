@@ -1,6 +1,8 @@
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemote } from 'next-mdx-remote'
 import date from 'date-and-time'
+import Giscus from '@giscus/react'
+import { useTheme } from 'next-themes'
 
 import { Head } from 'components/Head'
 import { Header } from 'components/Header'
@@ -13,6 +15,8 @@ interface BlogPostPageProps extends FooterProps {
 
 const BlogPostPage: NextPage<BlogPostPageProps> = (props) => {
   const { version, post } = props
+
+  const { theme = 'dark' } = useTheme()
 
   return (
     <>
@@ -42,6 +46,20 @@ const BlogPostPage: NextPage<BlogPostPageProps> = (props) => {
                 )
               }
             }}
+          />
+          <Giscus
+            id='comments'
+            repo='Divlo/Divlo'
+            repoId='MDEwOlJlcG9zaXRvcnkzNTg5NDg1NDQ='
+            category='General'
+            categoryId='DIC_kwDOFWUewM4CQ_WK'
+            mapping='pathname'
+            reactionsEnabled='1'
+            emitMetadata='0'
+            inputPosition='top'
+            theme={theme}
+            lang='en'
+            loading='lazy'
           />
         </div>
       </main>
