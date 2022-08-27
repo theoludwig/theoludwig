@@ -37,6 +37,14 @@ const BlogPostPage: NextPage<BlogPostPageProps> = (props) => {
           <MDXRemote
             {...post.source}
             components={{
+              img: (properties) => {
+                const { src, alt, ...props } = properties
+                let source = src
+                if (src?.startsWith('../public/') ?? false) {
+                  source = src?.replace('../public/', '/')
+                }
+                return <img src={source} alt={alt} {...props} />
+              },
               a: (props: React.ComponentPropsWithoutRef<'a'>) => {
                 if (props.href?.startsWith('#') ?? false) {
                   return <a {...props} />

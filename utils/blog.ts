@@ -37,8 +37,8 @@ export const getPosts = async (): Promise<PostMetadata[]> => {
   const posts = await fs.promises.readdir(POSTS_PATH)
   const postsWithTime = await Promise.all(
     posts.map(async (postFilename) => {
-      const [slug] = postFilename.split('.')
-      const blogPostPath = path.join(POSTS_PATH, `${slug}.mdx`)
+      const [slug, extension] = postFilename.split('.')
+      const blogPostPath = path.join(POSTS_PATH, `${slug}.${extension}`)
       const blogPostContent = await fs.promises.readFile(blogPostPath, {
         encoding: 'utf8'
       })

@@ -7,13 +7,13 @@ publishedOn: '2022-02-23T08:00:18.758Z'
 
 Hello! 👋
 
-Have you already heard of "**Clean Code**" or "**Design Patterns**" ?
+Have you already heard of "**Clean Code**" or "**Design Patterns**"?
 
 Even if you know what it is about, this blog post will probably still be useful to you, I will share some tips and tricks to make your code more readable and maintainable in the long term.
 
 **Note:** Sources used to write this blog post are available at the [end of this post](#sources).
 
-## Definition : Clean Code
+## Definition: Clean Code
 
 A clean code is a code that is **easy** to **read** and easy to **understand**.
 
@@ -23,7 +23,7 @@ We could ask ourselves, what is **easy** to **read** and easy to **understand** 
 
 It depends of many factors, and is somewhat relative to each one of us. The **perfect** Clean code **doesn't exist**, but we can try to be **as perfect as possible**.
 
-## Why is it so important ?
+## Why is it so important?
 
 Code like that works great, but it is not enough, even if the code will be read by the computer and understood by the machine, we should not forget that the code is **written by human** and will be also **read by human** not only a machine.
 

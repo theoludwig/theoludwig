@@ -21,7 +21,7 @@ The source code is available on [GitHub](https://github.com/Thream).
 
 The idea is that a user can create an account to authenticate with an email address, and a password, or directly use an account from another platform (currently supported: Google, GitHub, Discord). Once the user is authenticated, he/she can create and join "guilds", in other words communities, in order to discuss with other people in several channels to group discussions talking about the same subject.
 
-![The Thream app on a community page](/images/posts/thream-v1-0-0/thream-ui.png)
+![The Thream app on a community page](../public/images/posts/thream-v1-0-0/thream-ui.png)
 
 [**Thream**](https://www.thream.divlo.fr/) is a website that works on any recent browser, accessible on [thream.divlo.fr](https://www.thream.divlo.fr/).
 
@@ -33,7 +33,7 @@ The main goal is to put into **practice knowledge in web development** and compu
 
 The development of the project begins under the name of **SocialProject**, on August 20, 2020, with colors close to the image of Divlo.
 
-![SocialProject](/images/posts/thream-v1-0-0/social-project.jpg)
+![SocialProject](../public/images/posts/thream-v1-0-0/social-project.jpg)
 
 When I started the project, I had little knowledge of database design, real-time management or the architecture of such a large <abbr title="Information Technology">IT</abbr> project, so this will be accompanied by many technical problems, to which we will need to find appropriate solutions.
 
@@ -56,7 +56,7 @@ Since the project is mainly developed during free time (mainly on weekends), the
 <p className='flex flex-col items-center justify-center'>
   <img
     alt='HTTP Communication Schema'
-    src='/images/posts/thream-v1-0-0/http-communication.png'
+    src='../public/images/posts/thream-v1-0-0/http-communication.png'
   />
 </p>
 

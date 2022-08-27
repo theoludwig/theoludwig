@@ -10,6 +10,7 @@
   },
   "rules": {
     "prettier/prettier": "error",
-    "unicorn/prefer-node-protocol": "error"
+    "unicorn/prefer-node-protocol": "error",
+    "@next/next/no-img-element": "off"
   }
 }
