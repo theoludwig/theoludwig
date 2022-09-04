@@ -1,6 +1,7 @@
 import useTranslation from 'next-translate/useTranslation'
 
-import { InterestParagraph, InterestParagraphProps } from './InterestParagraph'
+import type { InterestParagraphProps } from './InterestParagraph'
+import { InterestParagraph } from './InterestParagraph'
 import { InterestsList } from './InterestsList'
 
 export const Interests: React.FC = () => {

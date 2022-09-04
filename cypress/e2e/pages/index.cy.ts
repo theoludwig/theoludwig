@@ -1,5 +1,7 @@
 describe('Page /', () => {
-  beforeEach(() => cy.visit('/'))
+  beforeEach(() => {
+    return cy.visit('/')
+  })
 
   it('should reveals the sections while scrolling except the about section', () => {
     const sectionsReveals = [

@@ -1,6 +1,7 @@
 import useTranslation from 'next-translate/useTranslation'
 
-import { PortfolioItem, PortfolioItemProps } from './PortfolioItem'
+import type { PortfolioItemProps } from './PortfolioItem'
+import { PortfolioItem } from './PortfolioItem'
 
 export const Portfolio: React.FC = () => {
   const { t } = useTranslation('home')

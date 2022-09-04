@@ -53,8 +53,12 @@ export const getPosts = async (): Promise<PostMetadata[]> => {
     })
   )
   const postsWithTimeSorted = postsWithTime
-    .filter((post) => post.frontmatter.isPublished)
-    .sort((a, b) => b.time - a.time)
+    .filter((post) => {
+      return post.frontmatter.isPublished
+    })
+    .sort((a, b) => {
+      return b.time - a.time
+    })
   return postsWithTimeSorted
 }
 
@@ -62,7 +66,9 @@ export const getPostBySlug = async (
   slug?: string | string[]
 ): Promise<Post | undefined> => {
   const posts = await getPosts()
-  const post = posts.find((post) => post.slug === slug)
+  const post = posts.find((post) => {
+    return post.slug === slug
+  })
   if (post == null) {
     return undefined
   }

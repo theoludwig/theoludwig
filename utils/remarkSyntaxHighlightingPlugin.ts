@@ -1,7 +1,7 @@
-import { Plugin, Transformer } from 'unified'
-import { Literal } from 'unist'
+import type { Plugin, Transformer } from 'unified'
+import type { Literal } from 'unist'
 import { visit } from 'unist-util-visit'
-import { Highlighter } from 'shiki'
+import type { Highlighter } from 'shiki'
 
 export interface RemarkSyntaxHighlightingPluginOptions {
   highlighter: Highlighter

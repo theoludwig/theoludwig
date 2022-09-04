@@ -1,5 +1,7 @@
 describe('Common > Header', () => {
-  beforeEach(() => cy.visit('/'))
+  beforeEach(() => {
+    return cy.visit('/')
+  })
 
   it('should redirect to /blog on click of the blog link', () => {
     cy.get('[data-cy=header-blog-link]')

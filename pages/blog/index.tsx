@@ -1,10 +1,11 @@
-import { GetStaticProps, NextPage } from 'next'
+import type { GetStaticProps, NextPage } from 'next'
 import Link from 'next/link'
 import date from 'date-and-time'
 
 import { Head } from 'components/Head'
 import { Header } from 'components/Header'
-import { Footer, FooterProps } from 'components/Footer'
+import type { FooterProps } from 'components/Footer'
+import { Footer } from 'components/Footer'
 import { ShadowContainer } from 'components/design/ShadowContainer'
 import type { PostMetadata } from 'utils/blog'
 

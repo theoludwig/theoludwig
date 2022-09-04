@@ -1,4 +1,4 @@
-import { GetStaticProps, NextPage } from 'next'
+import type { GetStaticProps, NextPage } from 'next'
 import useTranslation from 'next-translate/useTranslation'
 
 import { RevealFade } from 'components/design/RevealFade'
@@ -11,7 +11,8 @@ import { SocialMediaList } from 'components/Profile/SocialMediaList'
 import { Skills } from 'components/Skills'
 import { OpenSource } from 'components/OpenSource'
 import { Header } from 'components/Header'
-import { Footer, FooterProps } from 'components/Footer'
+import type { FooterProps } from 'components/Footer'
+import { Footer } from 'components/Footer'
 
 interface HomeProps extends FooterProps {}
 

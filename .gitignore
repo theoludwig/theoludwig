@@ -49,3 +49,7 @@ npm-debug.log*
 .DS_Store
 .lighthouseci
 .vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
