@@ -7,6 +7,7 @@ const nextTranslate = require('next-translate')
 /** @type {import("next").NextConfig} */
 module.exports = nextTranslate(
   nextPWA({
-    reactStrictMode: true
+    reactStrictMode: true,
+    output: 'standalone'
   })
 )
