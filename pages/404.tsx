@@ -3,9 +3,7 @@ import useTranslation from 'next-translate/useTranslation'
 
 import { ErrorPage } from 'components/ErrorPage'
 import { Head } from 'components/Head'
-import { Header } from 'components/Header'
 import type { FooterProps } from 'components/Footer'
-import { Footer } from 'components/Footer'
 
 interface Error404Props extends FooterProps {}
 
@@ -16,12 +14,11 @@ const Error404: NextPage<Error404Props> = (props) => {
   return (
     <>
       <Head title='404 | Divlo' />
-
-      <Header showLanguage />
-      <main className='flex flex-col md:mx-auto md:max-w-4xl lg:max-w-7xl'>
-        <ErrorPage statusCode={404} message={t('errors:not-found')} />
-      </main>
-      <Footer version={version} />
+      <ErrorPage
+        statusCode={404}
+        message={t('errors:not-found')}
+        version={version}
+      />
     </>
   )
 }

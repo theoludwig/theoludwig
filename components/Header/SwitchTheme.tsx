@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import classNames from 'clsx'
 import { useTheme } from 'next-themes'
 
 export const SwitchTheme: React.FC = () => {
@@ -18,109 +19,60 @@ export const SwitchTheme: React.FC = () => {
   }
 
   return (
-    <>
-      <div
-        className='flex items-center'
-        data-cy='switch-theme-click'
-        onClick={handleClick}
-      >
-        <div className='toggle-theme-button relative inline-block cursor-pointer bg-transparent'>
-          <div className='toggle-track'>
-            <div
-              data-cy='switch-theme-dark'
-              className='toggle-track-check absolute'
-            >
-              <span className='toggle_Dark relative flex items-center justify-center'>
-                🌜
-              </span>
-            </div>
-            <div
-              data-cy='switch-theme-light'
-              className='toggle-track-x absolute'
-            >
-              <span className='toggle_Light relative flex items-center justify-center'>
-                🌞
-              </span>
-            </div>
+    <div
+      className='flex items-center'
+      data-cy='switch-theme-click'
+      onClick={handleClick}
+    >
+      <div className='relative inline-block cursor-pointer touch-pan-x select-none border-0 bg-transparent p-0'>
+        <div className='h-[24px] w-[50px] rounded-[30px] bg-[#4d4d4d] p-0 text-white transition-all duration-200 ease-in-out'>
+          <div
+            data-cy='switch-theme-dark'
+            className={classNames(
+              'absolute top-0 bottom-0 left-[8px] mt-auto mb-auto h-[10px] w-[14px] leading-[0] transition-opacity duration-[250ms] ease-in-out',
+              {
+                'opacity-100': theme === 'dark',
+                'opacity-0': theme === 'light'
+              }
+            )}
+          >
+            <span className='relative flex h-[10px] w-[10px] items-center justify-center'>
+              🌜
+            </span>
           </div>
-          <div className='toggle-thumb absolute' />
-          <input
-            data-cy='switch-theme-input'
-            type='checkbox'
-            aria-label='Dark mode toggle'
-            className='toggle-screenreader-only absolute overflow-hidden'
-            defaultChecked
-          />
+          <div
+            data-cy='switch-theme-light'
+            className={classNames(
+              'absolute right-[10px] top-0 bottom-0 mt-auto mb-auto h-[10px] w-[10px] leading-[0]',
+              {
+                'opacity-100': theme === 'light',
+                'opacity-0': theme === 'dark'
+              }
+            )}
+          >
+            <span className='relative flex h-[10px] w-[10px] items-center justify-center'>
+              🌞
+            </span>
+          </div>
         </div>
+        <div
+          className={classNames(
+            'absolute top-[1px] box-border h-[22px] w-[22px] rounded-[50%] bg-[#fafafa] text-white transition-all duration-[250ms] ease-in-out',
+            {
+              'left-[27px]': theme === 'dark',
+              'left-0': theme === 'light'
+            }
+          )}
+          style={{ border: '1px solid #4d4d4d' }}
+        />
+        <input
+          data-cy='switch-theme-input'
+          type='checkbox'
+          aria-label='Dark mode toggle'
+          className='absolute m-[-1px] h-[1px] w-[1px] overflow-hidden border-0 p-0'
+          defaultChecked
+        />
       </div>
-
-      <style jsx>
-        {`
-          .toggle-theme-button {
-            touch-action: pan-x;
-            border: 0;
-            padding: 0;
-            user-select: none;
-          }
-          .toggle-track {
-            width: 50px;
-            height: 24px;
-            padding: 0;
-            border-radius: 30px;
-            background-color: #4d4d4d;
-            transition: all 0.2s ease;
-            color: #fff;
-          }
-          .toggle-track-check {
-            width: 14px;
-            height: 10px;
-            top: 0;
-            bottom: 0;
-            margin-top: auto;
-            margin-bottom: auto;
-            line-height: 0;
-            left: 8px;
-            opacity: ${theme === 'dark' ? 1 : 0};
-            transition: opacity 0.25s ease;
-          }
-          .toggle-track-x {
-            width: 10px;
-            height: 10px;
-            top: 0;
-            bottom: 0;
-            margin-top: auto;
-            margin-bottom: auto;
-            line-height: 0;
-            right: 10px;
-            opacity: ${theme === 'dark' ? 0 : 1};
-          }
-          .toggle_Dark,
-          .toggle_Light {
-            height: 10px;
-            width: 10px;
-          }
-          .toggle-thumb {
-            left: ${theme === 'dark' ? '27px' : '0px'};
-            width: 22px;
-            height: 22px;
-            border: 1px solid #4d4d4d;
-            border-radius: 50%;
-            background-color: #fafafa;
-            box-sizing: border-box;
-            transition: all 0.25s ease;
-            top: 1px;
-            color: #fff;
-          }
-          .toggle-screenreader-only {
-            border: 0;
-            clip: rect(0 0 0 0);
-            height: 1px;
-            margin: -1px;
-            padding: 0;
-            width: 1px;
-          }
-        `}
-      </style>
-    </>
+    </div>
   )
 }
