@@ -31,9 +31,15 @@
     "Open-Source enthusiast"
   ],
   "skills": {
-    "programmingLanguages": ["JavaScript", "TypeScript", "Python", "C/C++"],
+    "programmingLanguages": [
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "C/C++",
+      "PHP"
+    ],
     "frontEnd": ["HTML", "CSS", "Tailwind CSS", "React.js (+ Next.js)"],
-    "backEnd": ["Node.js", "Fastify", "Prisma", "PostgreSQL", "MySQL"],
+    "backEnd": ["Laravel", "Node.js", "Fastify", "Prisma", "PostgreSQL"],
     "tools": ["GNU/Linux", "Ubuntu", "Visual Studio Code", "Git", "Docker"]
   }
 }

@@ -2,10 +2,11 @@ import { useTheme } from 'next-themes'
 import Image from 'next/image'
 import { useMemo } from 'react'
 
+import type { SkillName } from './skills'
 import { skills } from './skills'
 
 export interface SkillComponentProps {
-  skill: string
+  skill: SkillName
 }
 
 export const SkillComponent: React.FC<SkillComponentProps> = (props) => {
@@ -14,10 +15,13 @@ export const SkillComponent: React.FC<SkillComponentProps> = (props) => {
   const { theme } = useTheme()
 
   const image = useMemo(() => {
-    if (typeof skillProperties.image !== 'string') {
-      return skillProperties.image[theme ?? 'light']
+    if (typeof skillProperties.image === 'string') {
+      return skillProperties.image
     }
-    return skillProperties.image
+    if (theme === 'light') {
+      return skillProperties.image.light
+    }
+    return skillProperties.image.dark
   }, [skillProperties, theme])
 
   return (

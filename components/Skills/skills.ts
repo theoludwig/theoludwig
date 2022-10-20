@@ -3,11 +3,7 @@ export interface Skill {
   image: string | { [key: string]: string }
 }
 
-export interface Skills {
-  [key: string]: Skill
-}
-
-export const skills: Skills = {
+export const skills = {
   JavaScript: {
     link: 'https://developer.mozilla.org/docs/Web/JavaScript',
     image: '/images/skills/JavaScript.png'
@@ -23,6 +19,14 @@ export const skills: Skills = {
   'C/C++': {
     link: 'https://isocpp.org/',
     image: '/images/skills/C-Cpp.png'
+  },
+  PHP: {
+    link: 'https://www.php.net/',
+    image: '/images/skills/PHP.png'
+  },
+  Laravel: {
+    link: 'https://laravel.com/',
+    image: '/images/skills/Laravel.png'
   },
   Dart: {
     link: 'https://dart.dev/',
@@ -107,3 +111,5 @@ export const skills: Skills = {
     image: '/images/skills/Docker.png'
   }
 } as const
+
+export type SkillName = keyof typeof skills

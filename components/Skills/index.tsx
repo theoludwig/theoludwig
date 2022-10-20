@@ -13,6 +13,7 @@ export const Skills: React.FC = () => {
         <SkillComponent skill='TypeScript' />
         <SkillComponent skill='Python' />
         <SkillComponent skill='C/C++' />
+        <SkillComponent skill='PHP' />
       </SkillsSection>
 
       <SkillsSection title='Front-end'>
@@ -23,11 +24,11 @@ export const Skills: React.FC = () => {
       </SkillsSection>
 
       <SkillsSection title='Back-end'>
+        <SkillComponent skill='Laravel' />
         <SkillComponent skill='Node.js' />
         <SkillComponent skill='Fastify' />
         <SkillComponent skill='Prisma' />
         <SkillComponent skill='PostgreSQL' />
-        <SkillComponent skill='MySQL' />
       </SkillsSection>
 
       <SkillsSection title={t('home:skills.software-tools')}>

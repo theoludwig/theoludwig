@@ -93,7 +93,7 @@
   ],
   "skills": [
     {
-      "keywords": ["JavaScript", "TypeScript", "Python", "C/C++"],
+      "keywords": ["JavaScript", "TypeScript", "Python", "C/C++", "PHP"],
       "name": "Langages de programmation"
     },
     {
@@ -101,7 +101,7 @@
       "name": "Front-end"
     },
     {
-      "keywords": ["Node.js", "Fastify", "PostgreSQL", "MySQL"],
+      "keywords": ["Laravel", "Node.js", "Fastify", "PostgreSQL"],
       "name": "Back-end"
     },
     {
