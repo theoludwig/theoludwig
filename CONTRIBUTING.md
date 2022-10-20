@@ -86,4 +86,4 @@ docker compose up --build
 
 ### Services started
 
-- website : `http://localhost:3000`
+- website : `http://127.0.0.1:3000`
