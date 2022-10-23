@@ -2,20 +2,22 @@
 title: '🗓️ Git version control: Ultimate Guide'
 description: 'What is `git`, what are the most used commands, best practices, and tips and tricks. The Ultimate guide to master `git` in your daily workflow.'
 isPublished: true
-publishedOn: '2022-09-04T14:33:07.465Z'
+publishedOn: '2022-10-27T14:33:07.465Z'
 ---
 
 Hello! 👋
 
 Welcome to the Ultimate Guide to master `git` in your daily workflow, we will see what are the most used commands, what are the best practices, and tips and tricks.
 
+This guide is a summary of the most important things to know when working with `git`, and in general, will link to the official documentation of `git` or other resources for more details (you can use it as a `git` cheatsheet).
+
 **Note:** Sources used to write this blog post are available at the [end of this post](#sources).
 
 ## Introduction
 
-**Git** is a free and open source distributed **version control system** for keeping track of changes across a set of files.
+**Git** is a free and open-source distributed **version control system** for keeping track of changes across a set of files.
 
-Git was originally authored by [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds) in 2005 for development of the [Linux kernel](https://kernel.org/).
+Git was originally authored by [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds) in 2005 for the development of the [Linux kernel](https://kernel.org/).
 
 Git allows:
 
@@ -42,7 +44,7 @@ These configurations are stored in the `.gitconfig` file in your home directory 
   email = email@example.com
 ```
 
-You can find more information and useful `git` configurations in the official documentation: [git-scm.com/docs/git-config](https://git-scm.com/docs/git-config).
+You can find more information and useful `git` configurations in the [official documentation](https://git-scm.com/docs/git-config).
 
 ## How `git` works?
 
@@ -55,7 +57,18 @@ Each node is called commit and contains:
 - an instantaneous view (snapshot) of the state of the repository at a specific moment
 - metadata: message, author, creation date, etc.
 
+Commits are **snapshots** (not diffs on each file) of the project at specific moments in time.
+
+There are several areas where the files in your project will live in Git:
+
+- **Working directory**: the files that you see in your computer's file system.
+- **Staging area**: the files that will go into your next commit (files added with `git add <filename>` command).
+- **Local repository**: the `.git` directory, which contains all of your project's commits, branches, etc. (files added with `git commit -m "message"` command).
+- **Remote repository**: the `.git` directory in a remote server (files added with `git push` command).
+
 ## Commands cheatsheet
+
+You can find the official documentation of `git` commands at [git-scm.com/docs](https://git-scm.com/docs).
 
 ```sh
 # Initialize a new git repository
@@ -74,20 +87,25 @@ git add <file>
 git commit -m "chore: initial commit"
 
 # Add remote repository
-git remote add origin <url>
+git remote add <remote> <url>
+# The main <remote> is often called `origin`
 
 # Add forked repository
-git remote add upstream <url>
+git remote add <remote> <url>
+# The forked <remote> is often called `upstream`
+
+# List all the remotes
+git remote
 
 # Sync forked repository
-git fetch upstream
-git merge upstream/<branch>
+git fetch <remote>
+git merge <remote>/<branch>
 
 # Push changes to remote repository
-git push
+git push <remote>
 
 # Pull changes from remote repository
-git pull
+git pull <remote>
 
 # Show the status of the working tree
 git status
@@ -105,8 +123,8 @@ git checkout <branch>
 git merge <branch>
 
 # Delete a branch
-git branch -d <branch>
-git push origin --delete <branch>
+git branch --delete <branch>
+git push <remote> --delete <branch>
 
 # Fetch branches from remote repository and prune
 git fetch --prune
@@ -116,7 +134,7 @@ git revert <commit>
 
 # Change several past commits (interactive rebase)
 # HEAD points to the current consulted commit.
-git rebase -i HEAD~<number-of-commits>
+git rebase --interactive HEAD~<number-of-commits>
 
 # Reset the current branch, delete all commits since <branch> (without removing the changes)
 git reset --soft <branch>
@@ -149,39 +167,68 @@ This is useful when you want to keep an empty directory in your repository but y
 
 ## Git remote repositories (GitHub/GitLab)
 
-Explain what are the differences, how it works, + basic vocabulary...
+Once you are ready to share your code over the internet, you will need to create a remote repository on a service like [GitHub](https://github.com) or [GitLab](https://gitlab.com).
+
+There are many other services, you can also self-host your own Git server.
 
 ### SSH vs HTTPS authentication
 
-Explain the differences + quickly setup a SSH key...
+Once you have created a remote repository, you will need to authenticate to push and pull changes.
+
+There are two main ways to authenticate:
+
+- **SSH**: you will need to generate an SSH key pair and add the public key to your remote repository.
+- **HTTPS**: you will need to provide your username and password each time you push or pull changes.
+
+SSH authentication is the recommended way to authenticate to a remote repository.
+
+You can find more information about SSH authentication in the [official documentation](https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key).
 
 ### Sign `git` commits with `gpg`
 
-Explain, how and why to sign `git` commits...
+As we have seen in the [Get started with `git` and `.gitconfig` config file](#get-started-with-git-and-gitconfig-config-file) section, we can configure `git` with a name and email address with a value of our choice.
 
-### Continous Integration/Continuous Delivery
+That means that **anyone can create a commit with any name and email address and claim to be whoever they want** when they create a commit.
 
-GitHub Actions, Vercel, why is it so important...
+To avoid this, you can sign your commits with a <abbr title="GNU Privacy Guard">[GPG](https://gnupg.org/)</abbr> key.
+
+You can find more information about signing commits in the [official documentation](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work).
+
+### Continous Integration/Continuous Delivery (CI/CD)
+
+Once you have your code in a remote repository, everyone (with access) can potentially start contributing to the project. This is great, but it also means that you need to have a way to ensure that your code is working as expected for each change in the project.
+
+You could do it manually, depending on the size and the complexity of the project, but it could be a tedious task.
+
+Instead, you can use a **Continuous Integration** (CI) service to automate the process of testing your code, running linting, unit tests, e2e tests, etc.
+
+There are many CI services, but the most popular ones are [GitHub Actions](https://github.com/features/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/), [CircleCI](https://circleci.com/), [Travis CI](https://travis-ci.org/), and many others...
+
+Then, once your code is ready, tested and working as expected, you can use a **Continuous Delivery** (CD) service to automate the process of **deploying your code**.
+
+CI/CD services are usually integrated with remote repositories, so you can configure them to run automatically when you push changes to the remote repository.
 
 ## Best practices and `git` workflows
 
-### Commit messages and semver
+Commit messages are very important, they are a way to easily know what has changed in the project.
 
-### GitFlow
+There are many conventions for commit messages, but the most popular one is the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification.
 
-...
+Then, we can use the commit messages to automatically determine a [semantic version](https://semver.org/) for the next release of the project.
 
-### GitHub Flow
+When multiple developers are working on the same project, it is important to organize the work in a way that everyone can work on different features without conflicts (changes in the same files).
 
-...
+There are many ways to organize the work, but the most popular ones are:
 
-### Trunk-based
+- [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/)
+- [GitHub Flow](https://guides.github.com/introduction/flow/)
+- [Trunk-based development](https://trunkbaseddevelopment.com/)
 
-...
+They are called **Git workflows**, or **Git branching strategies**.
 
 ## Conclusion
 
-`git` is the tool that every programmer should know to do collaborative work and keeping track of changes across a set of files.
+`git` is the tool that every programmer should know to do collaborative work (not only, `git` is also very powerful even when working alone) and keep track of changes across a set of files.
 
 ## Sources
 
@@ -189,5 +236,4 @@ GitHub Actions, Vercel, why is it so important...
 - [Git Explained in 100 Seconds](https://www.youtube.com/watch?v=hwP7WQkmECE)
 - [Understand Git in 7 minutes](https://www.jesuisundev.com/en/understand-git-in-7-minutes/)
 - [How (and why) to sign Git commits | With Blue Ink](https://withblue.ink/2020/05/17/how-and-why-to-sign-git-commits.html?utm_source=tiktok&utm_campaign=codetok-sign)
-- [Creator of Gitflow blog post](https://nvie.com/posts/a-successful-git-branching-model/)
 - [What Are the Best Git Branching Strategies](https://www.flagship.io/git-branching-strategies/)
