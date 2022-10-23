@@ -1,7 +1,7 @@
 <h1 align="center"><a href="https://divlo.fr/">Divlo</a></h1>
 
 <p align="center">
-  <strong>Developer Full Stack Junior • Passionate about High-Tech</strong>
+  <strong>Developer Full Stack • Passionate about High-Tech</strong>
 </p>
 
 <p align="center">
@@ -26,7 +26,7 @@
   "birthDate": "31/03/2003",
   "nationality": "Alsace, France",
   "interests": [
-    "Developer Full Stack Junior",
+    "Developer Full Stack",
     "Passionate about High-Tech",
     "Open-Source enthusiast"
   ],

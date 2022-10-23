@@ -7,10 +7,7 @@ export const InterestsList: React.FC = () => {
   return (
     <div className='my-4 flex justify-center'>
       <ul className='m-0 flex w-96 list-none justify-around p-0'>
-        <InterestItem
-          title='Developer Full Stack Junior'
-          fontAwesomeIcon={faCode}
-        />
+        <InterestItem title='Developer Full Stack' fontAwesomeIcon={faCode} />
         <InterestItem
           title='Passionate about High-Tech'
           fontAwesomeIcon={faMicrochip}

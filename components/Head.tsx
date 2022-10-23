@@ -11,7 +11,7 @@ export const Head: React.FC<HeadProps> = (props) => {
   const {
     title = 'Divlo',
     image = 'https://divlo.fr/images/icons/icon-96x96.png',
-    description = 'Divlo - Developer Full Stack Junior • Passionate about High-Tech',
+    description = 'Divlo - Developer Full Stack • Passionate about High-Tech',
     url = 'https://divlo.fr/'
   } = props
 

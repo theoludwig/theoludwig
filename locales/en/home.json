@@ -1,7 +1,7 @@
 {
   "about": {
     "i-am": "I am",
-    "description": "Developer Full Stack Junior • Passionate about High-Tech",
+    "description": "Developer Full Stack • Passionate about High-Tech",
     "full-name": "Full name",
     "birth-date": "Birth date",
     "years-old": "years old",
@@ -12,7 +12,7 @@
     "title": "Interests",
     "paragraphs": [
       {
-        "title": "Developer Full Stack Junior",
+        "title": "Developer Full Stack",
         "description": "Computer programming is my main hobby, I love it! <br/> Mostly web development for the moment but I'm programming in others programming language too."
       },
       {

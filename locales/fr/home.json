@@ -1,7 +1,7 @@
 {
   "about": {
     "i-am": "Je suis",
-    "description": "Développeur Full Stack Junior • Passionné de High-Tech",
+    "description": "Développeur Full Stack • Passionné de High-Tech",
     "full-name": "Prénom NOM",
     "birth-date": "Date de naissance",
     "years-old": "ans",
@@ -12,7 +12,7 @@
     "title": "Intérêts",
     "paragraphs": [
       {
-        "title": "Développeur Full Stack Junior",
+        "title": "Développeur Full Stack",
         "description": "La programmation informatique est mon loisir principal, j'adore! <br/> Principalement du développement Web pour le moment, mais je programme aussi dans d'autres langages de programmation."
       },
       {
