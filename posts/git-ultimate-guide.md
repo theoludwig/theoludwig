@@ -9,7 +9,7 @@ Hello! 👋
 
 Welcome to the Ultimate Guide to master `git` in your daily workflow, we will see what are the most used commands, what are the best practices, and tips and tricks.
 
-This guide is a summary of the most important things to know when working with `git`, and in general, will link to the official documentation of `git` or other resources for more details (you can use it as a `git` cheatsheet).
+This guide is a summary of the most important things to know when working with `git`, and in general, will link to the official documentation of `git` or other resources for more details, it is on purpose to not go in depth in each topic, it allows to summarize `git` and vocabulary about it (you can use it as a `git` cheatsheet).
 
 **Note:** Sources used to write this blog post are available at the [end of this post](#sources).
 

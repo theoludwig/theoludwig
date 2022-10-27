@@ -30,10 +30,11 @@ export const ErrorPage: React.FC<ErrorPageProps> = (props) => {
           </h1>
           <p className='text-center text-lg'>
             {message}{' '}
-            <Link href='/'>
-              <a className='text-yellow hover:underline dark:text-yellow-dark'>
-                {t('errors:return-to-home-page')}
-              </a>
+            <Link
+              href='/'
+              className='text-yellow hover:underline dark:text-yellow-dark'
+            >
+              {t('errors:return-to-home-page')}
             </Link>
           </p>
         </main>

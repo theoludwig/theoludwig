@@ -39,23 +39,26 @@ const BlogPage: NextPage<BlogPageProps> = (props) => {
                 'DD/MM/YYYY'
               )
               return (
-                <Link href={`/blog/${post.slug}`} key={index} locale='en'>
-                  <a data-cy={post.slug}>
-                    <ShadowContainer className='cursor-pointer p-6 transition duration-200 ease-in-out hover:-translate-y-2'>
-                      <h2
-                        data-cy='blog-post-title'
-                        className='text-xl font-semibold'
-                      >
-                        {post.frontmatter.title}
-                      </h2>
-                      <p data-cy='blog-post-date' className='mt-2'>
-                        {postPublishedOn}
-                      </p>
-                      <p data-cy='blog-post-description' className='mt-3'>
-                        {post.frontmatter.description}
-                      </p>
-                    </ShadowContainer>
-                  </a>
+                <Link
+                  href={`/blog/${post.slug}`}
+                  key={index}
+                  locale='en'
+                  data-cy={post.slug}
+                >
+                  <ShadowContainer className='cursor-pointer p-6 transition duration-200 ease-in-out hover:-translate-y-2'>
+                    <h2
+                      data-cy='blog-post-title'
+                      className='text-xl font-semibold'
+                    >
+                      {post.frontmatter.title}
+                    </h2>
+                    <p data-cy='blog-post-date' className='mt-2'>
+                      {postPublishedOn}
+                    </p>
+                    <p data-cy='blog-post-description' className='mt-3'>
+                      {post.frontmatter.description}
+                    </p>
+                  </ShadowContainer>
                 </Link>
               )
             })}

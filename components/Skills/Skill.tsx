@@ -32,7 +32,14 @@ export const SkillComponent: React.FC<SkillComponentProps> = (props) => {
       rel='noopener noreferrer'
     >
       <div className='text-center'>
-        <Image quality={100} width={60} height={60} alt={skill} src={image} />
+        <Image
+          className='inline h-auto w-auto'
+          quality={100}
+          width={60}
+          height={60}
+          alt={skill}
+          src={image}
+        />
         <p className='mt-1'>{skill}</p>
       </div>
     </a>
