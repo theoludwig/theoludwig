@@ -53,12 +53,9 @@ Since the project is mainly developed during free time (mainly on weekends), the
 
 - The **client** part, called **frontend**, what **the user sees on the screen**, such as forms, buttons and all the **graphic elements** with which the user can interact from a browser.
 
-<p className='flex flex-col items-center justify-center'>
-  <img
-    alt='HTTP Communication Schema'
-    src='../public/images/posts/thream-v1-0-0/http-communication.png'
-  />
-</p>
+<span className='flex flex-col items-center justify-center'>
+  ![HTTP Communication Schema](../public/images/posts/thream-v1-0-0/http-communication.png)
+</span>
 
 This design allows the separation between the client and the server, as long as they both structure their communication according to the <abbr title="Representational state transfer">REST</abbr> architectural guidelines, using the <abbr title="Hypertext Transfer Protocol">HTTP</abbr> protocol, they will be able to communicate with each other, which makes it possible to work independently on the backend and on the frontend using different technologies and skills, really useful in teamwork.
 
