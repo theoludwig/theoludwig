@@ -209,7 +209,6 @@ h5 {
   font-size: 75%;
   font-weight: 600;
   line-height: 1;
-  color: #fff;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
@@ -217,8 +216,6 @@ h5 {
 }
 .label-keyword {
   display: inline-block;
-  background: #7eb0db;
-  color: white;
   font-size: 0.9em;
   padding: 5px;
   border: 1px solid #357ebd;
@@ -226,4 +223,8 @@ h5 {
 }
 .label-keyword p {
   margin: 0;
+}
+.section-separated {
+  display: flex;
+  align-items: space-evenly;
 }

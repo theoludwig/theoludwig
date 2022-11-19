@@ -1,7 +1,7 @@
 <h1 align="center"><a href="https://divlo.fr/">Divlo</a></h1>
 
 <p align="center">
-  <strong>Developer Full Stack • Passionate about High-Tech</strong>
+  <strong>Developer Full Stack • Open-Source enthusiast</strong>
 </p>
 
 <p align="center">
@@ -27,8 +27,8 @@
   "nationality": "Alsace, France",
   "interests": [
     "Developer Full Stack",
-    "Passionate about High-Tech",
-    "Open-Source enthusiast"
+    "Open-Source enthusiast",
+    "Passionate about High-Tech"
   ],
   "skills": {
     "programmingLanguages": [

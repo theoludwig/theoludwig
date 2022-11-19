@@ -1,12 +1,12 @@
 {
   "about": {
     "i-am": "Je suis",
-    "description": "Développeur Full Stack • Passionné de High-Tech",
+    "description": "Développeur Full Stack • Enthousiaste de l'Open-Source",
     "full-name": "Prénom NOM",
     "birth-date": "Date de naissance",
     "years-old": "ans",
     "nationality": "Nationalité",
-    "description-bottom": "Je me forme en autodidacte dans l'informatique en suivant des formations en ligne et je suis aussi un étudiant à l'université suivant la formation \"BUT Informatique\" (deuxième année)."
+    "description-bottom": "Je suis étudiant à l'université suivant la formation \"BUT Informatique\" et me forme en autodidacte dans l'informatique en suivant des formations en ligne."
   },
   "interests": {
     "title": "Intérêts",
@@ -16,12 +16,12 @@
         "description": "La programmation informatique est mon loisir principal, j'adore! <br/> Principalement du développement Web pour le moment, mais je programme aussi dans d'autres langages de programmation."
       },
       {
-        "title": "Passionné de High-Tech",
-        "description": "Je me suis toujours demandé comment l'avenir serait. Chaque jour, je veux me réveiller et penser que l'avenir sera formidable et meilleur que le passé. Les technolgies s'améliorent progressivement avec le temps, ce qui est très utile dans de nombreux domaines."
+        "title": "Enthousiaste de l'Open-Source",
+        "description": "Pour moi, tout le monde devrait travailler, résoudre des problèmes, construire des choses et réfléchir ensemble. <br/> Le site est open-source sur <a class='text-yellow dark:text-yellow-dark hover:underline' href='https://github.com/Divlo/Divlo' target='_blank' rel='noopener noreferrer'>GitHub</a>."
       },
       {
-        "title": "Enthousiaste de l'Open-Source",
-        "description": "Pour moi, tout le monde devrait travailler, résoudre des problèmes, construire des choses et réfléchir ensemble. Longue vie à l'open-source, chaque fois que vous pouvez partagez votre travail, faites-le! <br/> Le site est open-source sur <a class='text-yellow dark:text-yellow-dark hover:underline' href='https://github.com/Divlo/Divlo' target='_blank' rel='noopener noreferrer'>github</a>."
+        "title": "Passionné de High-Tech",
+        "description": "Je me suis toujours demandé comment l'avenir serait. Chaque jour, je veux me réveiller et penser que l'avenir sera formidable et meilleur que le passé. Les technolgies s'améliorent progressivement avec le temps, ce qui est très utile dans de nombreux domaines."
       }
     ]
   },

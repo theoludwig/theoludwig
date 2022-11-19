@@ -35,18 +35,11 @@ In this section, I will explain what technologies I used to make this blog, and 
 
 The code of this website is open source on [GitHub](https://github.com/Divlo/Divlo), so you can see the code and contribute to it.
 
-I decided to keep things simple, here are the 2 main features missing on my blog:
-
-- Comments (you can interact with me on my Twitter account)
-- Views counter
-
-That not mean that these features will never be implemented, but to avoid the need of a database now, I dropped out these features.
-
 ### Technologies
 
 - [Next.js](https://nextjs.org/)
 
-  It allows to have a server-side rendered website, that means that it is faster and easier to have a good SEO (Search Engine Optimization) than a SPA (Single Page Application).
+  It allows to have a server-side rendered website, that means that it is faster and easier to have a good <abbr title="Search Engine Optimization">SEO</abbr> than a <abbr title="Single Page Application">SPA</abbr>.
 
 - [MDX](https://mdxjs.com/)
 

@@ -1,15 +1,15 @@
-FROM node:18.11.0 AS dependencies
+FROM node:18.12.1 AS dependencies
 WORKDIR /usr/src/app
 COPY ./package*.json ./
 RUN npm install
 
-FROM node:18.11.0 AS builder
+FROM node:18.12.1 AS builder
 WORKDIR /usr/src/app
 COPY ./ ./
 COPY --from=dependencies /usr/src/app/node_modules ./node_modules
 RUN npm run build
 
-FROM node:18.11.0 AS runner
+FROM node:18.12.1 AS runner
 WORKDIR /usr/src/app
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1

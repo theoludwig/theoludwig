@@ -42,7 +42,11 @@ const BlogPostPage: NextPage<BlogPostPageProps> = (props) => {
                 const { src, alt, ...props } = properties
                 let source = src
                 source = src?.replace('../public/', '/')
-                return <img src={source} alt={alt} {...props} />
+                return (
+                  <span className='flex flex-col items-center justify-center'>
+                    <img src={source} alt={alt} {...props} />
+                  </span>
+                )
               },
               a: (props) => {
                 if (props.href?.startsWith('#') ?? false) {

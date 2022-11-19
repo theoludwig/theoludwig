@@ -5,19 +5,19 @@
   },
   "basics": {
     "name": "Théo LUDWIG",
-    "label": "Développeur Full Stack • Passionné de High-Tech",
+    "label": "Développeur Full Stack • Enthousiaste de l'Open-Source",
     "image": "https://divlo.fr/images/logo_orange.png",
     "email": "contact@divlo.fr",
     "location": {},
     "url": "https://divlo.fr",
-    "summary": "Je me forme en autodidacte dans l'informatique en suivant des formations en ligne et je suis aussi un étudiant à l'université suivant la formation \"BUT Informatique\" (deuxième année). <br/> Je mets en pratique tout ce que j'apprends et réalise de nombreux projets."
+    "summary": "Je suis étudiant à l'université suivant la formation \"BUT Informatique\" et me forme en autodidacte dans l'informatique en suivant des formations en ligne. <br/> Je mets en pratique tout ce que j'apprends et réalise de nombreux projets (disponible sur divlo.fr)."
   },
   "education": [
     {
       "startDate": "2022",
       "studyType": "Diplôme du Bachelor Universitaire de Technologie (BUT) Informatique",
       "institution": "IUT Robert Schuman à Illkirch-Graffenstaden",
-      "score": "En cours"
+      "score": "2ème année"
     },
     {
       "startDate": "2019",
@@ -36,15 +36,15 @@
   ],
   "work": [
     {
-      "summary": "Développement site web en React.js et Strapi afin de répondre <a href=\"https://www.nuitdelinfo.com/nuitinfo/_media/infos:la_nuit_de_l_info_2021_-_sujet.pdf\">au sujet de la Nuit de l'Info 2021</a>.<br /> TOP 1 France: Défi de l'entreprise <a href=\"https://www.nuitdelinfo.com/inscription/defis/300\">ToolPad</a>.",
+      "summary": "Développement site web en React.js et Strapi afin de répondre <a href=\"https://www.nuitdelinfo.com/nuitinfo/_media/infos:la_nuit_de_l_info_2021_-_sujet.pdf\">au sujet de la Nuit de l'Info 2021</a>.<br /> Classé n°1 en France sur le Défi de l'entreprise <a href=\"https://www.nuitdelinfo.com/inscription/defis/300\">ToolPad</a>.",
       "website": "https://www.nuitdelinfo.com/",
       "name": "La Nuit de l'info 2021",
-      "position": "Participation avec l'équipe <a href=\"https://www.nuitdelinfo.com/inscription/equipes/46\">Who are We</a>",
+      "position": "Participation en équipe de 5 personnes",
       "startDate": "2021-12-02",
       "endDate": "2021-12-03"
     },
     {
-      "summary": "Agent administratif en vue de faire face au sucroît temporaire d'activités liés à la numérisation des plans des postes sources <br /> actuellement sous format papier calque suite à la libération des locaux des archives.",
+      "summary": "Agent administratif - Numérisation et archivage des plans électriques initialement sous format papier calque.",
       "website": "https://www.es.fr/",
       "name": "ÉS (Électricité de Strasbourg)",
       "location": "5 Rue André Marie Ampère, 67450 Mundolsheim",
@@ -85,10 +85,10 @@
       "name": "Développeur Full Stack"
     },
     {
-      "name": "Passionné de High-Tech"
+      "name": "Enthousiaste de l'Open-Source"
     },
     {
-      "name": "Enthousiaste de l'Open-Source"
+      "name": "Passionné de High-Tech"
     }
   ],
   "skills": [
