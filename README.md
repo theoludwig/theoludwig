@@ -25,21 +25,11 @@
   "pronouns": "He/Him",
   "birthDate": "31/03/2003",
   "nationality": "Alsace, France",
-  "interests": [
-    "Developer Full Stack",
-    "Open-Source enthusiast",
-    "Passionate about High-Tech"
-  ],
+  "interests": ["Open-Source enthusiast", "Passionate about High-Tech"],
   "skills": {
-    "programmingLanguages": [
-      "JavaScript",
-      "TypeScript",
-      "Python",
-      "C/C++",
-      "PHP"
-    ],
-    "frontEnd": ["HTML", "CSS", "Tailwind CSS", "React.js (+ Next.js)"],
-    "backEnd": ["Laravel", "Node.js", "Fastify", "Prisma", "PostgreSQL"],
+    "programmingLanguages": ["JavaScript/TypeScript", "Python", "C/C++", "PHP"],
+    "frontEnd": ["HTML", "CSS", "Tailwind CSS", "React.js/Next.js"],
+    "backEnd": ["Laravel", "Node.js", "Fastify", "PostgreSQL"],
     "tools": ["GNU/Linux", "Ubuntu", "Visual Studio Code", "Git", "Docker"]
   }
 }

@@ -3,10 +3,10 @@ import fs from 'node:fs'
 
 import { build } from 'vite'
 
-const jsonResumeThemeCustom = new URL('../', import.meta.url)
+const jsonResumeThemeCustom = new URL('./', import.meta.url)
 const jsonResumeThemeCustomDist = new URL('./dist', jsonResumeThemeCustom)
 const publicResumeOutputURL = new URL(
-  '../../public/curriculum-vitae',
+  '../public/curriculum-vitae',
   import.meta.url
 )
 

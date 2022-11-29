@@ -27,7 +27,6 @@ export const Skills: React.FC = () => {
         <SkillComponent skill='Laravel' />
         <SkillComponent skill='Node.js' />
         <SkillComponent skill='Fastify' />
-        <SkillComponent skill='Prisma' />
         <SkillComponent skill='PostgreSQL' />
       </SkillsSection>
 

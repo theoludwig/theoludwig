@@ -6,6 +6,7 @@
     <title><%= locals.basics.name %></title>
     <link rel="icon" type="image/png" href="<%= locals.basics.image %>" />
     <link rel="stylesheet" href="./styles/global.css" />
+    <script defer type="module" src="./scripts/main.js"></script>
   </head>
   <body>
     <div class="container-fluid">
@@ -26,12 +27,15 @@
                   <strong><%= locals.basics.name %></strong>
                 </h3>
                 <h5 class="text-muted"><%= locals.basics.label %></h5>
+                <h5 class="text-muted">
+                  <%= locals.basics.age %> (<span id="year-old"></span> ans)
+                </h5>
+                <h5 class="text-muted">
+                  <%= locals.basics.location.address %>
+                </h5>
               </div>
             </div>
             <div class="contact-details clearfix">
-              <div class="detail">
-                <span class="info"><%= locals.basics.phone %></span>
-              </div>
               <div class="detail">
                 <span class="info">
                   <a
@@ -71,40 +75,44 @@
               <hr />
 
               <section class="section-separated">
-                <div class="detail" id="work-experience">
+                <div class="detail" id="education">
                   <div class="icon">
-                    <img src="./images/building-columns.svg" alt="work" />
+                    <img src="./images/graduation-cap.svg" alt="graduation" />
                   </div>
                   <div class="info">
-                    <h4 class="title text-uppercase">Expériences</h4>
-                    <ul class="list-unstyled clear-margin">
-                      <% locals.work.forEach((experience) => { %>
-                      <li class="card card-nested clearfix">
-                        <div class="content">
-                          <p class="clear-margin relative">
-                            <a href="<%= experience.website %>">
-                              <strong><%= experience.name %></strong>
-                            </a>
-                          </p>
-                          <p class="clear-margin relative">
-                            <strong><%- experience.position %></strong>
-                          </p>
-                          <p class="text-muted">
-                            <small>
-                              <span class="space-right">
-                                <%= date.format(new Date(experience.startDate),
-                                'DD/MM/YYYY') %> - <%= date.format(new
-                                Date(experience.endDate), 'DD/MM/YYYY') %>
-                              </span>
-                            </small>
-                          </p>
-                          <div class="experience-description">
-                            <p><%- experience.summary %></p>
+                    <h4 class="title text-uppercase">Formations</h4>
+                    <div class="content">
+                      <ul class="list-unstyled clear-margin">
+                        <% locals.education.forEach((degree) => { %>
+                        <li class="card card-nested">
+                          <div class="content">
+                            <p class="clear-margin relative">
+                              <strong><%= degree.studyType %></strong>
+                            </p>
+                            <p class="clear-margin relative">
+                              <strong><%= degree.score %></strong>
+                            </p>
+                            <p class="text-muted clear-margin">
+                              <%= degree.institution %>
+                            </p>
+                            <p class="text-muted clear-margin">
+                              <small>
+                                <%= degree.startDate %> <%= degree.endDate !=
+                                null ? " - " + degree.endDate : "" %>
+                              </small>
+                            </p>
+                            <% if (degree.courses != null) { %>
+                            <ul class="education-courses">
+                              <% degree.courses.forEach((course) => { %>
+                              <li><%= course %></li>
+                              <% }) %>
+                            </ul>
+                            <% } %>
                           </div>
-                        </div>
-                      </li>
-                      <% }) %>
-                    </ul>
+                        </li>
+                        <% }) %>
+                      </ul>
+                    </div>
                   </div>
                 </div>
 
@@ -137,37 +145,43 @@
               <hr />
 
               <section class="section-separated">
-                <div class="detail" id="education">
+                <div class="detail" id="work-experience">
                   <div class="icon">
-                    <img src="./images/graduation-cap.svg" alt="graduation" />
+                    <img src="./images/building-columns.svg" alt="work" />
                   </div>
                   <div class="info">
-                    <h4 class="title text-uppercase">Éducation</h4>
-                    <div class="content">
-                      <ul class="list-unstyled clear-margin">
-                        <% locals.education.forEach((degree) => { %>
-                        <li class="card card-nested">
-                          <div class="content">
-                            <p class="clear-margin relative">
-                              <strong><%= degree.studyType %></strong>
-                            </p>
-                            <p class="clear-margin relative">
-                              <strong><%= degree.score %></strong>
-                            </p>
-                            <p class="text-muted clear-margin">
-                              <%= degree.institution %>
-                            </p>
-                            <p class="text-muted clear-margin">
-                              <small>
-                                <%= degree.startDate %> <%= degree.endDate !=
-                                null ? " - " + degree.endDate : "" %>
-                              </small>
-                            </p>
+                    <h4 class="title text-uppercase">Expériences</h4>
+                    <ul class="list-unstyled clear-margin">
+                      <% locals.work.filter((experience) =>
+                      experience.description == null).forEach((experience) => {
+                      %>
+                      <li class="card card-nested clearfix">
+                        <div class="content">
+                          <p class="clear-margin relative">
+                            <a href="<%= experience.website %>">
+                              <strong><%= experience.name %></strong>
+                            </a>
+                          </p>
+                          <p class="clear-margin relative">
+                            <strong><%- experience.position %></strong>
+                          </p>
+                          <p class="text-muted">
+                            <small>
+                              <span class="space-right">
+                                <%= date.format(new Date(experience.startDate),
+                                'DD/MM/YYYY') %> - <%= date.format(new
+                                Date(experience.endDate), 'DD/MM/YYYY') %> (<%=
+                                experience.duration %>)
+                              </span>
+                            </small>
+                          </p>
+                          <div class="experience-description">
+                            <p><%- experience.summary %></p>
                           </div>
-                        </li>
-                        <% }) %>
-                      </ul>
-                    </div>
+                        </div>
+                      </li>
+                      <% }) %>
+                    </ul>
                   </div>
                 </div>
 
@@ -182,6 +196,38 @@
                         <% locals.interests.forEach((interest) => { %>
                         <li class="card card-nested">
                           <p><strong><%= interest.name %></strong></p>
+                        </li>
+                        <% }) %>
+                      </ul>
+
+                      <ul class="list-unstyled clear-margin">
+                        <% locals.work.filter((experience) =>
+                        experience.description != null).forEach((experience) =>
+                        { %>
+                        <li class="card card-nested clearfix">
+                          <div class="content">
+                            <p class="clear-margin relative">
+                              <a href="<%= experience.website %>">
+                                <strong><%= experience.name %></strong>
+                              </a>
+                            </p>
+                            <p class="clear-margin relative">
+                              <strong><%- experience.position %></strong>
+                            </p>
+                            <p class="text-muted">
+                              <small>
+                                <span class="space-right">
+                                  <%= date.format(new
+                                  Date(experience.startDate), 'DD/MM/YYYY') %> -
+                                  <%= date.format(new Date(experience.endDate),
+                                  'DD/MM/YYYY') %> (<%= experience.duration %>)
+                                </span>
+                              </small>
+                            </p>
+                            <div class="experience-description">
+                              <p><%- experience.summary %></p>
+                            </div>
+                          </div>
                         </li>
                         <% }) %>
                       </ul>

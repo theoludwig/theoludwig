@@ -5,19 +5,43 @@
   },
   "basics": {
     "name": "Théo LUDWIG",
-    "label": "Développeur Full Stack • Enthousiaste de l'Open-Source",
+    "label": "Développeur Full Stack • Étudiant",
     "image": "https://divlo.fr/images/logo_orange.png",
     "email": "contact@divlo.fr",
-    "location": {},
+    "age": "31/03/2003",
+    "location": {
+      "address": "Alsace, France"
+    },
     "url": "https://divlo.fr",
-    "summary": "Je suis étudiant à l'université suivant la formation \"BUT Informatique\" et me forme en autodidacte dans l'informatique en suivant des formations en ligne. <br/> Je mets en pratique tout ce que j'apprends et réalise de nombreux projets (disponible sur divlo.fr)."
+    "summary": "Je suis étudiant à l'université suivant la formation \"BUT Informatique\" et me forme en autodidacte dans l'informatique en suivant des formations en ligne. <br/> Je mets en pratique tout ce que j'apprends et réalise de nombreux projets (disponible sur <a href=\"https://divlo.fr\">divlo.fr</a>)."
   },
   "education": [
     {
       "startDate": "2022",
+      "endDate": "2023",
       "studyType": "Diplôme du Bachelor Universitaire de Technologie (BUT) Informatique",
       "institution": "IUT Robert Schuman à Illkirch-Graffenstaden",
-      "score": "2ème année"
+      "score": "2ème année",
+      "courses": [
+        "Développement Web avec le framework Laravel en PHP",
+        "Patrons et Principes de conceptions (Code maintenable et réutilisable)",
+        "Programmation systèmes en C (Multi-Thread, Serveur/Client UDP/TCP)",
+        "Sécurisation des accès à la base de données et PL/SQL",
+        "Projet développement d'une application web en React.js en équipe de 3 personnes pendant 3 mois"
+      ]
+    },
+    {
+      "startDate": "2021",
+      "endDate": "2022",
+      "studyType": "Diplôme du Bachelor Universitaire de Technologie (BUT) Informatique",
+      "institution": "IUT Robert Schuman à Illkirch-Graffenstaden",
+      "score": "1ère année",
+      "courses": [
+        "Développement Orientée Objet en Java",
+        "Programmation systèmes en C (Allocation mémoire, Pointeurs, Structures)",
+        "Développement d'application Windows Forms (.NET Framework) en C#",
+        "Base de données relationnelles et langage SQL"
+      ]
     },
     {
       "startDate": "2019",
@@ -25,23 +49,25 @@
       "studyType": "Diplôme du Baccalauréat Général (Mathématiques et Numériques Sciences Informatiques)",
       "institution": "Lycée Heinrich Nessel à Haguenau",
       "score": "Mention Assez Bien"
-    },
-    {
-      "startDate": "2014",
-      "endDate": "2018",
-      "studyType": "Diplôme national du brevet",
-      "institution": "Collège Gustave Doré à Hochfelden",
-      "score": "Mention Bien"
     }
+    // {
+    //   "startDate": "2014",
+    //   "endDate": "2018",
+    //   "studyType": "Diplôme national du brevet",
+    //   "institution": "Collège Gustave Doré à Hochfelden",
+    //   "score": "Mention Bien"
+    // }
   ],
   "work": [
     {
-      "summary": "Développement site web en React.js et Strapi afin de répondre <a href=\"https://www.nuitdelinfo.com/nuitinfo/_media/infos:la_nuit_de_l_info_2021_-_sujet.pdf\">au sujet de la Nuit de l'Info 2021</a>.<br /> Classé n°1 en France sur le Défi de l'entreprise <a href=\"https://www.nuitdelinfo.com/inscription/defis/300\">ToolPad</a>.",
+      "description": "interests",
+      "summary": "Développement site web en React.js et Strapi.<br /> Classé n°1 en France sur le Défi de l'entreprise <a href=\"https://www.toolpad.fr/\">ToolPad</a>.",
       "website": "https://www.nuitdelinfo.com/",
       "name": "La Nuit de l'info 2021",
       "position": "Participation en équipe de 5 personnes",
       "startDate": "2021-12-02",
-      "endDate": "2021-12-03"
+      "endDate": "2021-12-03",
+      "duration": "1 semaine"
     },
     {
       "summary": "Agent administratif - Numérisation et archivage des plans électriques initialement sous format papier calque.",
@@ -50,16 +76,19 @@
       "location": "5 Rue André Marie Ampère, 67450 Mundolsheim",
       "position": "Emploi d'été en qualité d'agent administratif",
       "startDate": "2021-07-07",
-      "endDate": "2021-07-30"
+      "endDate": "2021-07-30",
+      "duration": "1 mois"
     },
     {
+      "description": "interests",
       "summary": "Hackathon développement d'une landing page et web scraping.",
       "website": "https://www.wildcodeschool.fr/",
       "name": "Wild Code School",
       "location": "32 Rue du Bass. d'Austerlitz, 67100 Strasbourg",
-      "position": "Stage initiation métier développeur web",
+      "position": "Initiation métier développeur web",
       "startDate": "2019-06-24",
-      "endDate": "2019-06-28"
+      "endDate": "2019-06-28",
+      "duration": "1 semaine"
     },
     {
       "summary": "Développement d'un site web pour trouver un restaurant à la pause repas.",
@@ -68,7 +97,8 @@
       "location": "16 Rue du Parc, 67205 Oberhausbergen",
       "position": "Stage initiation métier développeur web",
       "startDate": "2019-06-17",
-      "endDate": "2019-06-21"
+      "endDate": "2019-06-21",
+      "duration": "1 semaine"
     },
     {
       "summary": "Apprentissage du métier \"Chargé de communication\" et des logiciels de graphisme tels que \"Adobe Photoshop\".",
@@ -77,13 +107,11 @@
       "location": "26 Bd du Président-Wilson, 67000 Strasbourg",
       "position": "Stage de découverte (3ème)",
       "startDate": "2018-02-19",
-      "endDate": "2018-02-23"
+      "endDate": "2018-02-23",
+      "duration": "1 semaine"
     }
   ],
   "interests": [
-    {
-      "name": "Développeur Full Stack"
-    },
     {
       "name": "Enthousiaste de l'Open-Source"
     },
@@ -93,11 +121,11 @@
   ],
   "skills": [
     {
-      "keywords": ["JavaScript", "TypeScript", "Python", "C/C++", "PHP"],
+      "keywords": ["JavaScript/TypeScript", "Python", "C/C++", "PHP"],
       "name": "Langages de programmation"
     },
     {
-      "keywords": ["HTML", "CSS", "Tailwind CSS", "React.js (+ Next.js)"],
+      "keywords": ["HTML", "CSS", "Tailwind CSS", "React.js/Next.js"],
       "name": "Front-end"
     },
     {
@@ -109,10 +137,14 @@
         "GNU/Linux",
         "Ubuntu",
         "Visual Studio Code",
-        "git",
+        "Git",
         "Docker"
       ],
       "name": "Logiciels et outils"
+    },
+    {
+      "keywords": ["Permis B", "Anglais"],
+      "name": "Autres"
     }
   ]
 }
