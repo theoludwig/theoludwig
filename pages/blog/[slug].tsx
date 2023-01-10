@@ -82,7 +82,7 @@ const BlogPostPage: NextPage<BlogPostPageProps> = (props) => {
 export const getStaticProps: GetStaticProps<BlogPostPageProps> = async (
   context
 ) => {
-  const slug = context?.params?.slug
+  const slug = context?.params?.['slug']
   const { getPostBySlug } = await import('utils/blog')
   const post = await getPostBySlug(slug)
   if (post == null || (post != null && !post.frontmatter.isPublished)) {

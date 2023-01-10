@@ -38,6 +38,9 @@ export const getPosts = async (): Promise<PostMetadata[]> => {
   const postsWithTime = await Promise.all(
     posts.map(async (postFilename) => {
       const [slug, extension] = postFilename.split('.')
+      if (slug == null || extension == null) {
+        throw new Error('Invalid postFilename.')
+      }
       const blogPostPath = path.join(POSTS_PATH, `${slug}.${extension}`)
       const blogPostContent = await fs.promises.readFile(blogPostPath, {
         encoding: 'utf8'
