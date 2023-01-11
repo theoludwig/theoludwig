@@ -3,12 +3,6 @@ WORKDIR /usr/src/application
 COPY ./package*.json ./
 RUN npm install
 
-FROM node:18.13.0 AS runner-dependencies
-WORKDIR /usr/src/application
-ENV NODE_ENV=production
-COPY ./package*.json ./
-RUN npm install --omit=dev --ignore-scripts
-
 FROM node:18.13.0 AS builder
 WORKDIR /usr/src/application
 COPY --from=builder-dependencies /usr/src/application/node_modules ./node_modules
