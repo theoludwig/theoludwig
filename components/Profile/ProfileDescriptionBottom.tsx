@@ -4,7 +4,7 @@ export const ProfileDescriptionBottom: React.FC = () => {
   const { t, lang } = useTranslation()
 
   return (
-    <p className='mt-8 mb-8 text-base font-normal text-gray dark:text-gray-dark'>
+    <p className='mb-8 mt-8 text-base font-normal text-gray dark:text-gray-dark'>
       {t('home:about.description-bottom')}
       {lang === 'fr' && (
         <>

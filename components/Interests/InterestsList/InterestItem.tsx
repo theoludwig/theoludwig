@@ -10,7 +10,7 @@ export const InterestItem: React.FC<InterestItemProps> = (props) => {
   const { fontAwesomeIcon, title } = props
 
   return (
-    <li className='interest-item my-2 mx-2 h-8 w-8' title={title}>
+    <li className='interest-item mx-2 my-2 h-8 w-8' title={title}>
       <FontAwesomeIcon
         className='block h-full w-full text-yellow dark:text-yellow-dark'
         icon={fontAwesomeIcon}
