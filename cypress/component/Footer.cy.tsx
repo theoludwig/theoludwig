@@ -1,4 +1,4 @@
-import { Footer } from 'components/Footer'
+import { Footer } from '@/components/Footer'
 
 describe('<Footer />', () => {
   it('should render with appropriate link tag version', () => {
