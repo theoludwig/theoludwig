@@ -1,4 +1,11 @@
 {
+  "config": {
+    "default": true,
+    "relative-links": true,
+    "extends": "markdownlint/style/prettier",
+    "MD024": false,
+    "MD033": false
+  },
   "globs": ["**/*.{md,mdx}"],
   "ignores": ["**/node_modules"],
   "customRules": ["markdownlint-rule-relative-links"]
