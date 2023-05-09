@@ -23,7 +23,6 @@
     "lint:staged": "lint-staged",
     "test:unit": "cypress run --component",
     "test:html-w3c-validator": "start-server-and-test \"start\" \"http://127.0.0.1:3000\" \"html-w3c-validator\"",
-    "test:lighthouse": "lhci autorun",
     "test:e2e": "start-server-and-test \"start\" \"http://127.0.0.1:3000\" \"cypress run\"",
     "test:dev": "start-server-and-test \"dev\" \"http://127.0.0.1:3000\" \"cypress open\"",
     "resume:build": "node ./jsonresume-theme-custom/build.js",
@@ -62,7 +61,6 @@
   "devDependencies": {
     "@commitlint/cli": "17.6.3",
     "@commitlint/config-conventional": "17.6.3",
-    "@lhci/cli": "0.12.0",
     "@saithodev/semantic-release-backmerge": "3.1.0",
     "@semantic-release/git": "10.0.1",
     "@tailwindcss/typography": "0.5.9",
