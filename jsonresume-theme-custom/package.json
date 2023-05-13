@@ -13,7 +13,7 @@
     "modern-normalize": "1.1.0"
   },
   "devDependencies": {
-    "@types/node": "20.1.1",
+    "@types/node": "20.1.4",
     "date-and-time": "3.0.0",
     "vite": "4.3.5",
     "vite-plugin-html": "3.2.0"

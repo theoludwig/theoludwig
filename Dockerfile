@@ -1,7 +1,7 @@
 FROM node:18.16.0 AS builder-dependencies
 WORKDIR /usr/src/application
 COPY ./package*.json ./
-RUN npm install
+RUN npm clean-install
 
 FROM node:18.16.0 AS builder
 WORKDIR /usr/src/application

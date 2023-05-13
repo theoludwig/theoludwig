@@ -1,11 +1,11 @@
 services:
-  divlo.fr:
+  divlo:
     container_name: ${COMPOSE_PROJECT_NAME}
-    image: 'divlo.fr'
+    image: 'divlo'
     build:
       context: './'
     ports:
       - '${PORT-3000}:${PORT-3000}'
     environment:
       PORT: ${PORT-3000}
-    env_file: './.env'
+    env_file: '.env'

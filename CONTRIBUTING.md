@@ -2,6 +2,10 @@
 
 Thanks a lot for your interest in contributing to **divlo.fr**! 🎉
 
+## Code of Conduct
+
+**divlo.fr** adopted the [Contributor Covenant](https://www.contributor-covenant.org/) as its Code of Conduct, and we expect project participants to adhere to it. Please read [the full text](./CODE_OF_CONDUCT.md) so that you can understand what actions will and will not be tolerated.
+
 ## Types of contributions
 
 - Reporting a bug.
@@ -21,7 +25,7 @@ If you're adding new features to **divlo.fr**, please include tests.
 
 ## Commits
 
-The commit message guidelines respect [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/@commitlint/config-conventional) and [Semantic Versioning](https://semver.org/) for releases.
+The commit message guidelines adheres to [Conventional Commits](https://www.conventionalcommits.org/) and [Semantic Versioning](https://semver.org/) for releases.
 
 ## Getting Started
 
