@@ -7,6 +7,8 @@ import rehypeRaw from 'rehype-raw'
 import { serialize } from 'next-mdx-remote/serialize'
 import remarkGfm from 'remark-gfm'
 import rehypeSlug from 'rehype-slug'
+import remarkMath from 'remark-math'
+import rehypeKatex from 'rehype-katex'
 import matter from 'gray-matter'
 import { getHighlighter } from 'shiki'
 
@@ -45,7 +47,10 @@ export const getPosts = async (): Promise<PostMetadata[]> => {
       const blogPostContent = await fs.promises.readFile(blogPostPath, {
         encoding: 'utf8'
       })
-      const { data, content } = matter(blogPostContent) as any
+      const { data, content } = matter(blogPostContent) as unknown as {
+        data: FrontMatter
+        content: string
+      }
       const date = new Date(data.publishedOn)
       return {
         slug,
@@ -81,12 +86,14 @@ export const getPostBySlug = async (
   const source = await serialize(post.content, {
     mdxOptions: {
       remarkPlugins: [
-        remarkGfm as any,
-        [remarkSyntaxHighlightingPlugin, { highlighter }]
+        remarkGfm,
+        [remarkSyntaxHighlightingPlugin, { highlighter }],
+        remarkMath
       ],
       rehypePlugins: [
-        rehypeSlug as any,
-        [rehypeRaw, { passThrough: nodeTypes }]
+        rehypeSlug,
+        [rehypeRaw, { passThrough: nodeTypes }],
+        rehypeKatex
       ]
     }
   })

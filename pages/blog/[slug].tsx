@@ -4,6 +4,8 @@ import date from 'date-and-time'
 import Giscus from '@giscus/react'
 import { useTheme } from 'next-themes'
 
+import 'katex/dist/katex.min.css'
+
 import { Head } from 'components/Head'
 import { Header } from 'components/Header'
 import type { FooterProps } from 'components/Footer'

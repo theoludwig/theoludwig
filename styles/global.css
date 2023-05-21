@@ -28,7 +28,7 @@
 }
 .shiki {
   white-space: pre-wrap !important;
-  word-break: break-word !important;
+  word-break: normal !important;
   word-wrap: normal;
 }
 code {

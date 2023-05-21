@@ -31,7 +31,7 @@ For example the [Linux kernel](https://www.kernel.org/), is one of the biggest o
 
 With a project of this magnitude, we can't let everyone do what they want and however they want, **we must set rules and conventions** to get everyone to agree, this allows to add features faster and will reduce possible bugs as **developers** will not struggle as much to understand the code.
 
-## Definition : Design Patterns
+## Definition: Design Patterns
 
 These **rules** and **conventions** are so called **Design Patterns**.
 
@@ -77,8 +77,8 @@ setTimeout(restart, 86400000)
 ##### Example (good way)
 
 ```typescript
-const MILLISECONDS_IN_A_DAY = 24 * 60 * 60 * 1000
-setTimeout(restart, MILLISECONDS_IN_A_DAY)
+const MILLISECONDS_IN_ONE_DAY = 24 * 60 * 60 * 1000
+setTimeout(restart, MILLISECONDS_IN_ONE_DAY)
 ```
 
 ---
@@ -131,7 +131,9 @@ const printCar = (car: Car): void => {
 
 ---
 
-#### Boolean names (Prefix: is, has, can)
+#### Boolean names
+
+The name of a boolean variable should be a question, and the answer should be true or false. We can use prefixes like `is`, `has`, `can` to make it more explicit and we should avoid negation.
 
 ##### Example (bad way)
 
@@ -171,7 +173,10 @@ We have to keep it as simple as possible, not to implement features that are not
 import fs from 'node:fs'
 import path from 'node:path'
 
-const createFile = async (name: string, isTemporary: boolean = false) => {
+const createFile = async (
+  name: string,
+  isTemporary: boolean = false
+): Promise<void> => {
   if (isTemporary) {
     return await fs.promises.writeFile(path.join('temporary', name), '')
   }
@@ -187,11 +192,11 @@ const createFile = async (name: string, isTemporary: boolean = false) => {
 import fs from 'node:fs'
 import path from 'node:path'
 
-const createFile = async (name: string) => {
+const createFile = async (name: string): Promise<void> => {
   await fs.promises.writeFile(name, '')
 }
 
-const createTemporaryFile = async (name: string) => {
+const createTemporaryFile = async (name: string): Promise<void> => {
   await createFile(path.join('temporary', name))
 }
 ```
@@ -210,7 +215,7 @@ The End To End (e2e) and Unit tests should document what is the behavior intende
 
 ### Avoid comments
 
-One of the most important rule of "Clean Code" : If you need to add **comments**, it's because your code is **not clean**.
+One of the most important rule of "Clean Code": If you need to add **comments**, it's because your code is **not clean**.
 
 I know that might be counter intuitive at first, as most developers will advice you to add comments to your code, to document what it does.
 
