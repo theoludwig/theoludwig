@@ -6,7 +6,7 @@ export const ProfileDescriptionBottom: React.FC = () => {
   return (
     <p className='mb-8 mt-8 text-base font-normal text-gray dark:text-gray-dark'>
       {t('home:about.description-bottom')}
-      {lang === 'fr' && (
+      {lang === 'fr' ? (
         <>
           <br />
           <br />
@@ -17,7 +17,7 @@ export const ProfileDescriptionBottom: React.FC = () => {
             Curriculum vitæ
           </a>
         </>
-      )}
+      ) : null}
     </p>
   )
 }

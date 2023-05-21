@@ -21,6 +21,7 @@ export const Header: React.FC<HeaderProps> = (props) => {
             height={60}
             src='/images/divlo_icon_small.png'
             alt='Divlo'
+            priority
           />
           <strong className='ml-1 hidden font-headline font-semibold text-yellow dark:text-yellow-dark xs:block'>
             Divlo
@@ -37,7 +38,7 @@ export const Header: React.FC<HeaderProps> = (props) => {
             Blog
           </Link>
         </div>
-        {showLanguage && <Language />}
+        {showLanguage ? <Language /> : null}
         <SwitchTheme />
       </div>
     </header>

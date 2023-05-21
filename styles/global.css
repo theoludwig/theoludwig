@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.break-wrap-words {
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
 .prose {
-  @apply !max-w-4xl text-gray dark:text-gray-300;
+  @apply !max-w-5xl text-gray dark:text-gray-300;
 }
 
 .prose a,
@@ -28,8 +33,6 @@
 }
 .shiki {
   white-space: pre-wrap !important;
-  word-break: normal !important;
-  word-wrap: normal;
 }
 code {
   counter-reset: step;
@@ -43,4 +46,12 @@ code .line::before {
   display: inline-block;
   text-align: right;
   color: rgba(133, 133, 133, 0.8);
+  word-wrap: normal;
+  word-break: normal;
+}
+
+.katex .base {
+  display: inline !important;
+  white-space: normal !important;
+  width: 100% !important;
 }

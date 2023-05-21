@@ -4,12 +4,7 @@
   "parserOptions": {
     "project": "./tsconfig.json"
   },
-  "env": {
-    "node": true,
-    "browser": true
-  },
   "rules": {
-    "prettier/prettier": "error",
-    "@next/next/no-img-element": "off"
+    "prettier/prettier": "error"
   }
 }

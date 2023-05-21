@@ -1,4 +1,5 @@
 import type { GetStaticProps, GetStaticPaths, NextPage } from 'next'
+import Image from 'next/image'
 import { MDXRemote } from 'next-mdx-remote'
 import date from 'date-and-time'
 import Giscus from '@giscus/react'
@@ -29,51 +30,58 @@ const BlogPostPage: NextPage<BlogPostPageProps> = (props) => {
       />
 
       <Header />
-      <main className='flex flex-1 flex-col flex-wrap items-center'>
-        <div className='my-10 flex flex-col items-center'>
+      <main className='break-wrap-words flex flex-1 flex-col flex-wrap items-center'>
+        <div className='my-10 flex flex-col items-center text-center'>
           <h1 className='text-3xl font-semibold'>{post.frontmatter.title}</h1>
           <p className='mt-2' data-cy='blog-post-date'>
             {date.format(new Date(post.frontmatter.publishedOn), 'DD/MM/YYYY')}
           </p>
         </div>
-        <div className='prose mb-10 px-8'>
-          <MDXRemote
-            {...post.source}
-            components={{
-              img: (properties) => {
-                const { src, alt, ...props } = properties
-                let source = src
-                source = src?.replace('../public/', '/')
-                return (
-                  <span className='flex flex-col items-center justify-center'>
-                    <img src={source} alt={alt} {...props} />
-                  </span>
-                )
-              },
-              a: (props) => {
-                if (props.href?.startsWith('#') ?? false) {
-                  return <a {...props} />
+        <div className='prose mb-10'>
+          <div className='px-8'>
+            <MDXRemote
+              {...post.source}
+              components={{
+                img: (properties) => {
+                  const { src = '', alt = 'Blog Image' } = properties
+                  const source = src.replace('../public/', '/')
+                  return (
+                    <span className='flex flex-col items-center justify-center'>
+                      <Image
+                        src={source}
+                        alt={alt}
+                        width={1000}
+                        height={1000}
+                        className='h-auto w-auto'
+                      />
+                    </span>
+                  )
+                },
+                a: (props) => {
+                  if (props.href?.startsWith('#') ?? false) {
+                    return <a {...props} />
+                  }
+                  return (
+                    <a target='_blank' rel='noopener noreferrer' {...props} />
+                  )
                 }
-                return (
-                  <a target='_blank' rel='noopener noreferrer' {...props} />
-                )
-              }
-            }}
-          />
-          <Giscus
-            id='comments'
-            repo='Divlo/Divlo'
-            repoId='MDEwOlJlcG9zaXRvcnkzNTg5NDg1NDQ='
-            category='General'
-            categoryId='DIC_kwDOFWUewM4CQ_WK'
-            mapping='pathname'
-            reactionsEnabled='1'
-            emitMetadata='0'
-            inputPosition='top'
-            theme={theme}
-            lang='en'
-            loading='lazy'
-          />
+              }}
+            />
+            <Giscus
+              id='comments'
+              repo='Divlo/Divlo'
+              repoId='MDEwOlJlcG9zaXRvcnkzNTg5NDg1NDQ='
+              category='General'
+              categoryId='DIC_kwDOFWUewM4CQ_WK'
+              mapping='pathname'
+              reactionsEnabled='1'
+              emitMetadata='0'
+              inputPosition='top'
+              theme={theme}
+              lang='en'
+              loading='lazy'
+            />
+          </div>
         </div>
       </main>
       <Footer version={version} />
