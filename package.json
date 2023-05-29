@@ -12,7 +12,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "start": "node .next/standalone/server.js",
+    "start": "next start",
     "build": "npm run resume:build && next build",
     "lint:commit": "commitlint",
     "lint:editorconfig": "editorconfig-checker",
