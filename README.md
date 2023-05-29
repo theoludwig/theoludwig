@@ -23,13 +23,13 @@
 {
   "name": "Théo LUDWIG (Divlo)",
   "pronouns": "He/Him",
-  "birthdate": "31/03/2003",
+  "birthDate": "31/03/2003",
   "nationality": "Alsace, France",
   "interests": ["Open-Source enthusiast", "Passionate about High-Tech"],
   "skills": {
     "programmingLanguages": ["JavaScript/TypeScript", "Python", "C/C++", "PHP"],
-    "frontEnd": ["HTML", "CSS", "Tailwind CSS", "React.js/Next.js"],
-    "backEnd": ["Laravel", "Node.js", "Fastify", "PostgreSQL"],
+    "frontend": ["HTML", "CSS", "Tailwind CSS", "React.js/Next.js"],
+    "backend": ["Laravel", "Node.js", "Fastify", "PostgreSQL"],
     "tools": ["GNU/Linux", "Ubuntu", "Visual Studio Code", "Git", "Docker"]
   }
 }

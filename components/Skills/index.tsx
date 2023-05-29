@@ -16,14 +16,14 @@ export const Skills: React.FC = () => {
         <SkillComponent skill='PHP' />
       </SkillsSection>
 
-      <SkillsSection title='Front-end'>
+      <SkillsSection title='Frontend'>
         <SkillComponent skill='HTML' />
         <SkillComponent skill='CSS' />
         <SkillComponent skill='Tailwind CSS' />
         <SkillComponent skill='React.js (+ Next.js)' />
       </SkillsSection>
 
-      <SkillsSection title='Back-end'>
+      <SkillsSection title='Backend'>
         <SkillComponent skill='Laravel' />
         <SkillComponent skill='Node.js' />
         <SkillComponent skill='Fastify' />
