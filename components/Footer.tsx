@@ -21,7 +21,7 @@ export const Footer: React.FC<FooterProps> = (props) => {
           href='/'
           className='text-yellow hover:underline dark:text-yellow-dark'
         >
-          Divlo
+          Théo LUDWIG (Divlo)
         </Link>{' '}
         | {t('common:all-rights-reserved')}
       </p>

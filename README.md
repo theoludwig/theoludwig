@@ -1,4 +1,4 @@
-<h1 align="center"><a href="https://divlo.fr/">Divlo</a></h1>
+<h1 align="center"><a href="https://divlo.fr/">Théo LUDWIG (Divlo)</a></h1>
 
 <p align="center">
   <strong>Developer Full Stack • Open-Source enthusiast</strong>
@@ -21,9 +21,9 @@
 
 ```json
 {
-  "name": "Divlo",
+  "name": "Théo LUDWIG (Divlo)",
   "pronouns": "He/Him",
-  "birthDate": "31/03/2003",
+  "birthdate": "31/03/2003",
   "nationality": "Alsace, France",
   "interests": ["Open-Source enthusiast", "Passionate about High-Tech"],
   "skills": {

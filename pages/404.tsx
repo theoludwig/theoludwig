@@ -13,7 +13,7 @@ const Error404: NextPage<Error404Props> = (props) => {
 
   return (
     <>
-      <Head title='404 | Divlo' />
+      <Head title='404 | Théo LUDWIG (Divlo)' />
       <ErrorPage
         statusCode={404}
         message={t('errors:not-found')}

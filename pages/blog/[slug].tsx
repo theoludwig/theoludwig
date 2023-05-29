@@ -25,7 +25,7 @@ const BlogPostPage: NextPage<BlogPostPageProps> = (props) => {
   return (
     <>
       <Head
-        title={`${post.frontmatter.title} | Divlo`}
+        title={`${post.frontmatter.title} | Théo LUDWIG (Divlo)`}
         description={post.frontmatter.description}
       />
 

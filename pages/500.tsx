@@ -13,7 +13,7 @@ const Error500: NextPage<Error500Props> = (props) => {
 
   return (
     <>
-      <Head title='500 | Divlo' />
+      <Head title='500 | Théo LUDWIG (Divlo)' />
       <ErrorPage
         statusCode={500}
         message={t('errors:server-error')}

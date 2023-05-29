@@ -1,8 +1,8 @@
 {
   "about": {
-    "i-am": "I am",
     "description": "Developer Full Stack • Open-Source enthusiast",
-    "full-name": "Full name",
+    "pronouns": "Pronouns",
+    "pronouns-value": "He/Him",
     "birth-date": "Birth date",
     "years-old": "years old",
     "nationality": "Nationality",

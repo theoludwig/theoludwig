@@ -24,7 +24,7 @@ export const Header: React.FC<HeaderProps> = (props) => {
             priority
           />
           <strong className='ml-1 hidden font-headline font-semibold text-yellow dark:text-yellow-dark xs:block'>
-            Divlo
+            Théo LUDWIG (Divlo)
           </strong>
         </div>
       </Link>

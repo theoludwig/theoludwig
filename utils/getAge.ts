@@ -1,11 +1,11 @@
-export const DIVLO_BIRTHDAY_DAY = '31' as const
-export const DIVLO_BIRTHDAY_MONTH = '03' as const
-export const DIVLO_BIRTHDAY_YEAR = '2003' as const
-export const DIVLO_BIRTHDAY_DATE =
-  `${DIVLO_BIRTHDAY_DAY}/${DIVLO_BIRTHDAY_MONTH}/${DIVLO_BIRTHDAY_YEAR}` as const
-export const DIVLO_BIRTHDAY_DATE_ISO_8061 =
-  `${DIVLO_BIRTHDAY_YEAR}-${DIVLO_BIRTHDAY_MONTH}-${DIVLO_BIRTHDAY_DAY}` as const
-export const DIVLO_BIRTHDAY = new Date(DIVLO_BIRTHDAY_DATE_ISO_8061)
+export const DIVLO_BIRTH_DATE_DAY = '31' as const
+export const DIVLO_BIRTH_DATE_MONTH = '03' as const
+export const DIVLO_BIRTH_DATE_YEAR = '2003' as const
+export const DIVLO_BIRTH_DATE_STRING =
+  `${DIVLO_BIRTH_DATE_DAY}/${DIVLO_BIRTH_DATE_MONTH}/${DIVLO_BIRTH_DATE_YEAR}` as const
+export const DIVLO_BIRTH_DATE_ISO_8601 =
+  `${DIVLO_BIRTH_DATE_YEAR}-${DIVLO_BIRTH_DATE_MONTH}-${DIVLO_BIRTH_DATE_DAY}` as const
+export const DIVLO_BIRTH_DATE = new Date(DIVLO_BIRTH_DATE_ISO_8601)
 
 /**
  * Calculates the age of a person based on their birth date
