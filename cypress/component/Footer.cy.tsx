@@ -4,7 +4,7 @@ describe('<Footer />', () => {
   it('should render with appropriate link tag version', () => {
     const version = '1.0.0'
     cy.mount(<Footer version={version} />)
-    cy.contains('Divlo')
+    cy.contains('Théo LUDWIG')
       .get('[data-cy=version-link]')
       .should('have.text', version)
       .should(

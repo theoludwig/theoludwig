@@ -9,10 +9,10 @@ interface HeadProps {
 
 export const Head: React.FC<HeadProps> = (props) => {
   const {
-    title = 'Théo LUDWIG (Divlo)',
-    image = 'https://divlo.fr/images/icon-96x96.png',
-    description = 'Théo LUDWIG (Divlo) - Developer Full Stack • Passionate about High-Tech',
-    url = 'https://divlo.fr/'
+    title = 'Théo LUDWIG',
+    image = 'https://theoludwig.fr/images/icon-96x96.png',
+    description = 'Théo LUDWIG - Developer Full Stack • Passionate about High-Tech',
+    url = 'https://theoludwig.fr/'
   } = props
 
   return (

@@ -38,7 +38,7 @@ describe('Common > Header', () => {
 
   describe('Switch Language', () => {
     it('should switch language from EN (default) to FR', () => {
-      cy.get('h1').contains('Divlo')
+      cy.get('h1').contains('Théo LUDWIG')
       cy.get('[data-cy=language-flag-text]').contains('EN')
       cy.get('[data-cy=languages-list]').should('not.be.visible')
       cy.get('[data-cy=language-click]').click()
@@ -46,7 +46,7 @@ describe('Common > Header', () => {
       cy.get('[data-cy=languages-list] > li:first-child').contains('FR').click()
       cy.get('[data-cy=languages-list]').should('not.be.visible')
       cy.get('[data-cy=language-flag-text]').contains('FR')
-      cy.get('h1').contains('Divlo')
+      cy.get('h1').contains('Théo LUDWIG')
     })
 
     it('should close the language list menu when clicking outside', () => {

@@ -31,7 +31,7 @@ export const SocialMediaList: React.FC = () => {
       <SocialMediaItem link='https://www.twitch.tv/divlo' ariaLabel='Twitch'>
         <TwitchIcon />
       </SocialMediaItem>
-      <SocialMediaItem link='mailto:contact@divlo.fr' ariaLabel='Email'>
+      <SocialMediaItem link='mailto:contact@theoludwig.fr' ariaLabel='Email'>
         <EmailIcon />
       </SocialMediaItem>
     </ul>

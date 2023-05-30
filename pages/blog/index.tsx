@@ -21,7 +21,7 @@ const BlogPage: NextPage<BlogPageProps> = (props) => {
 
   return (
     <>
-      <Head title='Blog | Divlo' description={blogDescription} />
+      <Head title='Blog | Théo LUDWIG' description={blogDescription} />
 
       <Header />
       <main className='flex flex-1 flex-col flex-wrap items-center'>

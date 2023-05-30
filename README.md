@@ -1,4 +1,4 @@
-<h1 align="center"><a href="https://divlo.fr/">Théo LUDWIG (Divlo)</a></h1>
+<h1 align="center"><a href="https://theoludwig.fr/">Théo LUDWIG</a></h1>
 
 <p align="center">
   <strong>Developer Full Stack • Open-Source enthusiast</strong>
@@ -11,8 +11,8 @@
   <a href="https://twitter.com/Divlo_FR"><img alt="Twitter" src="https://img.shields.io/badge/-Twitter-1ca0f1?style=flat&labelColor=1ca0f1&logo=twitter&logoColor=white"/></a>
   <a href="https://www.youtube.com/channel/UCfEKQzI3c8vmZOrsTOi5spA"><img alt="YouTube" src="https://img.shields.io/badge/-YouTube-c4302b?style=flat&labelColor=c4302b&logo=youtube&logoColor=white"/></a>
   <a href="https://www.twitch.tv/divlo"><img alt="Twitch" src="https://img.shields.io/badge/-Twitch-9147FF?style=flat&labelColor=9147FF&logo=twitch&logoColor=white"/></a>
-  <a href="https://www.divlo.fr"><img alt="Website" src="https://img.shields.io/badge/-Website-181818?style=flat&labelColor=181818&logo=Google-Chrome&logoColor=white"/></a>
-  <a href="mailto:contact@divlo.fr"><img alt="Email" src="https://img.shields.io/badge/-contact@divlo.fr-2F7EBE?style=flat&labelColor=2F7EBE&logo=minutemailer&logoColor=white"/></a>
+  <a href="https://theoludwig.fr/"><img alt="Website" src="https://img.shields.io/badge/-Website-181818?style=flat&labelColor=181818&logo=Google-Chrome&logoColor=white"/></a>
+  <a href="mailto:contact@theoludwig.fr"><img alt="Email" src="https://img.shields.io/badge/-contact@theoludwig.fr-2F7EBE?style=flat&labelColor=2F7EBE&logo=minutemailer&logoColor=white"/></a>
 </p>
 
 <hr />
@@ -21,7 +21,7 @@
 
 ```json
 {
-  "name": "Théo LUDWIG (Divlo)",
+  "name": "Théo LUDWIG",
   "pronouns": "He/Him",
   "birthDate": "31/03/2003",
   "nationality": "Alsace, France",

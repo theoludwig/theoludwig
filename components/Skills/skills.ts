@@ -88,15 +88,11 @@ export const skills = {
   },
   'Visual Studio Code': {
     link: 'https://code.visualstudio.com/',
-    image: '/images/skills/Visual_Studio_Code.png'
+    image: '/images/skills/VisualStudioCode.png'
   },
   Git: {
     link: 'https://git-scm.com/',
     image: '/images/skills/Git.png'
-  },
-  Hyper: {
-    link: 'https://hyper.is/',
-    image: '/images/skills/Hyper.svg'
   },
   Ubuntu: {
     link: 'https://ubuntu.com/',

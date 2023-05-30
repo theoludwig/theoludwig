@@ -20,11 +20,11 @@ export const Header: React.FC<HeaderProps> = (props) => {
             width={60}
             height={60}
             src='/images/divlo_icon_small.png'
-            alt='Divlo'
+            alt='Théo LUDWIG'
             priority
           />
           <strong className='ml-1 hidden font-headline font-semibold text-yellow dark:text-yellow-dark xs:block'>
-            Théo LUDWIG (Divlo)
+            Théo LUDWIG
           </strong>
         </div>
       </Link>

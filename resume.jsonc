@@ -6,14 +6,14 @@
   "basics": {
     "name": "Théo LUDWIG",
     "label": "Développeur Full Stack • Étudiant",
-    "image": "https://divlo.fr/images/logo_orange.png",
-    "email": "contact@divlo.fr",
+    "image": "https://theoludwig.fr/images/logo_orange.png",
+    "email": "contact@theoludwig.fr",
     "age": "31/03/2003",
     "location": {
       "address": "Alsace, France"
     },
-    "url": "https://divlo.fr",
-    "summary": "Je suis étudiant à l'université suivant la formation \"BUT Informatique\" et me forme en autodidacte dans l'informatique en suivant des formations en ligne. <br/> Je mets en pratique tout ce que j'apprends et réalise de nombreux projets (disponible sur <a href=\"https://divlo.fr\">divlo.fr</a>)."
+    "url": "https://theoludwig.fr",
+    "summary": "Je suis étudiant à l'université suivant la formation \"BUT Informatique\" et me forme en autodidacte dans l'informatique en suivant des formations en ligne. <br/> Je mets en pratique tout ce que j'apprends et réalise de nombreux projets (disponible sur <a href=\"https://theoludwig.fr\">theoludwig.fr</a>)."
   },
   "education": [
     {

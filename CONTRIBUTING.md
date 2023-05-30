@@ -1,10 +1,10 @@
 # 💡 Contributing
 
-Thanks a lot for your interest in contributing to **divlo.fr**! 🎉
+Thanks a lot for your interest in contributing to **theoludwig.fr**! 🎉
 
 ## Code of Conduct
 
-**divlo.fr** adopted the [Contributor Covenant](https://www.contributor-covenant.org/) as its Code of Conduct, and we expect project participants to adhere to it. Please read [the full text](./CODE_OF_CONDUCT.md) so that you can understand what actions will and will not be tolerated.
+**theoludwig.fr** adopted the [Contributor Covenant](https://www.contributor-covenant.org/) as its Code of Conduct, and we expect project participants to adhere to it. Please read [the full text](./CODE_OF_CONDUCT.md) so that you can understand what actions will and will not be tolerated.
 
 ## Types of contributions
 
@@ -21,7 +21,7 @@ Thanks a lot for your interest in contributing to **divlo.fr**! 🎉
 
 - Make sure your **code passes the tests**.
 
-If you're adding new features to **divlo.fr**, please include tests.
+If you're adding new features to **theoludwig.fr**, please include tests.
 
 ## Commits
 
@@ -68,4 +68,4 @@ docker compose up --build
 
 ### Services started
 
-- website: `http://127.0.0.1:3000`
+- `website`: <http://127.0.0.1:3000>

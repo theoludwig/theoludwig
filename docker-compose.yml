@@ -1,7 +1,7 @@
 services:
-  divlo:
+  theoludwig:
     container_name: ${COMPOSE_PROJECT_NAME}
-    image: 'divlo'
+    image: 'theoludwig'
     build:
       context: './'
     ports:

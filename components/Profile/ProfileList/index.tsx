@@ -1,7 +1,7 @@
 import useTranslation from 'next-translate/useTranslation'
 import { useMemo } from 'react'
 
-import { DIVLO_BIRTH_DATE, DIVLO_BIRTH_DATE_STRING, getAge } from 'utils/getAge'
+import { BIRTH_DATE, BIRTH_DATE_STRING, getAge } from 'utils/getAge'
 
 import { ProfileItem } from './ProfileItem'
 
@@ -9,7 +9,7 @@ export const ProfileList: React.FC = () => {
   const { t } = useTranslation('home')
 
   const age = useMemo(() => {
-    return getAge(DIVLO_BIRTH_DATE)
+    return getAge(BIRTH_DATE)
   }, [])
 
   return (
@@ -20,15 +20,13 @@ export const ProfileList: React.FC = () => {
       />
       <ProfileItem
         title={t('home:about.birth-date')}
-        value={`${DIVLO_BIRTH_DATE_STRING} (${age} ${t(
-          'home:about.years-old'
-        )})`}
+        value={`${BIRTH_DATE_STRING} (${age} ${t('home:about.years-old')})`}
       />
       <ProfileItem title={t('home:about.nationality')} value='Alsace, France' />
       <ProfileItem
         title='Email'
-        value='contact@divlo.fr'
-        link='mailto:contact@divlo.fr'
+        value='contact@theoludwig.fr'
+        link='mailto:contact@theoludwig.fr'
       />
     </ul>
   )
