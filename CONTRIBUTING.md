@@ -15,7 +15,7 @@ Thanks a lot for your interest in contributing to **theoludwig.fr**! 🎉
 
 ## Pull Requests
 
-- **Please first discuss** the change you wish to make via [issue](https://github.com/Divlo/Divlo/issues) before making a change. It might avoid a waste of your time.
+- **Please first discuss** the change you wish to make via [issue](https://github.com/theoludwig/theoludwig/issues) before making a change. It might avoid a waste of your time.
 
 - Ensure your code respect linting.
 
@@ -29,7 +29,7 @@ The commit message guidelines adheres to [Conventional Commits](https://www.conv
 
 ## Getting Started
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Divlo/Divlo)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/theoludwig/theoludwig)
 
 ### Prerequisites
 
@@ -40,10 +40,10 @@ The commit message guidelines adheres to [Conventional Commits](https://www.conv
 
 ```sh
 # Clone the repository
-git clone https://github.com/Divlo/Divlo.git
+git clone https://github.com/theoludwig/theoludwig.git
 
 # Go to the project root
-cd Divlo
+cd theoludwig
 
 # Configure environment variables
 cp .env.example .env

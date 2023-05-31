@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import Logo from 'public/images/divlo_logo.png'
+import Logo from 'public/images/logo.png'
 
 export const ProfileLogo: React.FC = () => {
   return (

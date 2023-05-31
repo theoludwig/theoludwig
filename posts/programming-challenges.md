@@ -333,11 +333,11 @@ def maximum_subarray_sum_linear(array: list[int]) -> int:
 
 Problems solving is a very complicated and large topic, and also a very important skill to have as a software developer.
 
-To improve our problems solving skills, we can regularly practice with [programming challenges](https://github.com/Divlo/programming-challenges).
+To improve our problems solving skills, we can regularly practice with [programming challenges](https://github.com/theoludwig/programming-challenges).
 
 ## Sources
 
 - [Wikipedia - Competitive programming](https://en.wikipedia.org/wiki/Competitive_programming)
 - [Frontend Masters - The Last Algorithms Course You'll Need](https://frontendmasters.com/courses/algorithms/)
 - [Big-O Cheat Sheet](https://www.bigocheatsheet.com/)
-- [programming challenges](https://github.com/Divlo/programming-challenges)
+- [programming challenges](https://github.com/theoludwig/programming-challenges)

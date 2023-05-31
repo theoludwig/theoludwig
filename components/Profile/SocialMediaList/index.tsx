@@ -10,25 +10,31 @@ import { NPMIcon } from './SocialMediaIcons/NPMIcon'
 export const SocialMediaList: React.FC = () => {
   return (
     <ul className='social-media-list m-0 mt-2 list-none py-4 text-center'>
-      <SocialMediaItem link='https://github.com/Divlo' ariaLabel='GitHub'>
+      <SocialMediaItem link='https://github.com/theoludwig' ariaLabel='GitHub'>
         <GitHubIcon />
       </SocialMediaItem>
-      <SocialMediaItem link='https://gitlab.com/Divlo' ariaLabel='GitLab'>
+      <SocialMediaItem link='https://gitlab.com/theoludwig' ariaLabel='GitLab'>
         <GitLabIcon />
       </SocialMediaItem>
-      <SocialMediaItem link='https://www.npmjs.com/~divlo' ariaLabel='NPM'>
+      <SocialMediaItem link='https://www.npmjs.com/~theoludwig' ariaLabel='NPM'>
         <NPMIcon />
       </SocialMediaItem>
-      <SocialMediaItem link='https://twitter.com/Divlo_FR' ariaLabel='Twitter'>
+      <SocialMediaItem
+        link='https://twitter.com/theoludwig_'
+        ariaLabel='Twitter'
+      >
         <TwitterIcon />
       </SocialMediaItem>
       <SocialMediaItem
-        link='https://www.youtube.com/c/Divlo'
+        link='https://www.youtube.com/@theo_ludwig'
         ariaLabel='YouTube'
       >
         <YouTubeIcon />
       </SocialMediaItem>
-      <SocialMediaItem link='https://www.twitch.tv/divlo' ariaLabel='Twitch'>
+      <SocialMediaItem
+        link='https://www.twitch.tv/theoludwig'
+        ariaLabel='Twitch'
+      >
         <TwitchIcon />
       </SocialMediaItem>
       <SocialMediaItem link='mailto:contact@theoludwig.fr' ariaLabel='Email'>

@@ -13,11 +13,11 @@ This blog is here to document my journey of learning computer science, explainin
 
 The idea is that I will share my knowledge with you (readers), and hopefully help you to learn too.
 
-Keep in mind that I will not translate the posts in French, all the posts will be written in English, as I'm not a native English speaker, I will probably make mistakes, feel free to open pull requests on [GitHub](https://github.com/Divlo/Divlo) to correct them. 😊
+Keep in mind that I will not translate the posts in French, all the posts will be written in English, as I'm not a native English speaker, I will probably make mistakes, feel free to open pull requests on [GitHub](https://github.com/theoludwig/theoludwig) to correct them. 😊
 
 I plan to publish new posts when I have something new to share. There's no schedule, so stay tuned!
 
-To stay informed of new blog post and to ask questions, feel free to follow me on Twitter: [@Divlo_FR](https://twitter.com/Divlo_FR).
+To stay informed of new blog post and to ask questions, feel free to follow me on Twitter: [@theoludwig\_](https://twitter.com/theoludwig_).
 
 ## Project based learning
 
@@ -33,7 +33,7 @@ I learn something new, because it solved a "real life" problem I had encountered
 
 In this section, I will explain what technologies I used to make this blog, and what are the technical choices I had to do.
 
-The code of this website is open source on [GitHub](https://github.com/Divlo/Divlo), so you can see the code and contribute to it.
+The code of this website is open source on [GitHub](https://github.com/theoludwig/theoludwig), so you can see the code and contribute to it.
 
 ### Technologies
 

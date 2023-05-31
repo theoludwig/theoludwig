@@ -10,7 +10,7 @@ describe('<Footer />', () => {
       .should(
         'have.attr',
         'href',
-        `https://github.com/Divlo/Divlo/releases/tag/v${version}`
+        `https://github.com/theoludwig/theoludwig/releases/tag/v${version}`
       )
   })
 })

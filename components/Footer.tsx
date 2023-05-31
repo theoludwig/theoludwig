@@ -11,7 +11,7 @@ export const Footer: React.FC<FooterProps> = (props) => {
   const { version } = props
 
   const versionLink = useMemo(() => {
-    return `https://github.com/Divlo/Divlo/releases/tag/v${version}`
+    return `https://github.com/theoludwig/theoludwig/releases/tag/v${version}`
   }, [version])
 
   return (

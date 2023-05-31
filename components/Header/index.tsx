@@ -19,7 +19,7 @@ export const Header: React.FC<HeaderProps> = (props) => {
             quality={100}
             width={60}
             height={60}
-            src='/images/divlo_icon_small.png'
+            src='/images/icon_small.png'
             alt='Théo LUDWIG'
             priority
           />

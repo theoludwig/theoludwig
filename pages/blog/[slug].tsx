@@ -69,7 +69,7 @@ const BlogPostPage: NextPage<BlogPostPageProps> = (props) => {
             />
             <Giscus
               id='comments'
-              repo='Divlo/Divlo'
+              repo='theoludwig/theoludwig'
               repoId='MDEwOlJlcG9zaXRvcnkzNTg5NDg1NDQ='
               category='General'
               categoryId='DIC_kwDOFWUewM4CQ_WK'
