@@ -40,7 +40,7 @@ The commit message guidelines adheres to [Conventional Commits](https://www.conv
 
 ```sh
 # Clone the repository
-git clone https://github.com/theoludwig/theoludwig.git
+git clone git@github.com:theoludwig/theoludwig.git
 
 # Go to the project root
 cd theoludwig

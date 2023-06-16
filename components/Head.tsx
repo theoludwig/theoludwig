@@ -40,12 +40,6 @@ export const Head: React.FC<HeadProps> = (props) => {
       <meta name='twitter:description' content={description} />
       <meta name='twitter:title' content={title} />
       <meta name='twitter:image' content={image} />
-
-      {/* Google Verification */}
-      <meta
-        name='google-site-verification'
-        content='j9CQEbSuYydXytr6gdkTfam_xX_pU97NSpVH3Bq-6f4'
-      />
     </NextHead>
   )
 }
