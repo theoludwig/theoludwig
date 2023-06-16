@@ -1,6 +1,9 @@
 import type { GetStaticProps, GetStaticPaths, NextPage } from 'next'
+import Link from 'next/link'
 import Image from 'next/image'
 import { MDXRemote } from 'next-mdx-remote'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLink } from '@fortawesome/free-solid-svg-icons'
 import date from 'date-and-time'
 import Giscus from '@giscus/react'
 import { useTheme } from 'next-themes'
@@ -15,6 +18,26 @@ import type { Post } from 'utils/blog'
 
 interface BlogPostPageProps extends FooterProps {
   post: Post
+}
+
+const Heading = (
+  props: React.DetailedHTMLProps<
+    React.HTMLAttributes<HTMLHeadingElement>,
+    HTMLHeadingElement
+  >
+): JSX.Element => {
+  const { children, id = '' } = props
+  return (
+    <h2 {...props} className='group'>
+      <Link
+        href={`#${id}`}
+        className='invisible !text-black group-hover:visible dark:!text-white'
+      >
+        <FontAwesomeIcon className='mr-2 inline h-4 w-4' icon={faLink} />
+      </Link>
+      {children}
+    </h2>
+  )
 }
 
 const BlogPostPage: NextPage<BlogPostPageProps> = (props) => {
@@ -42,6 +65,12 @@ const BlogPostPage: NextPage<BlogPostPageProps> = (props) => {
             <MDXRemote
               {...post.source}
               components={{
+                h1: Heading,
+                h2: Heading,
+                h3: Heading,
+                h4: Heading,
+                h5: Heading,
+                h6: Heading,
                 img: (properties) => {
                   const { src = '', alt = 'Blog Image' } = properties
                   const source = src.replace('../public/', '/')

@@ -8,7 +8,19 @@
 }
 
 .prose {
-  @apply !max-w-5xl text-justify text-gray dark:text-gray-300;
+  @apply !max-w-5xl scroll-smooth text-gray dark:text-gray-300;
+}
+
+.prose p {
+  @apply text-justify;
+}
+
+.prose [id]::before {
+  content: '';
+  display: block;
+  height: 90px;
+  margin-top: -90px;
+  visibility: hidden;
 }
 
 .prose a,
