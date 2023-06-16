@@ -21,7 +21,7 @@ Git was originally authored by [Linus Torvalds](https://en.wikipedia.org/wiki/Li
 
 Git allows:
 
-- to be able to work with several people on the same codebase.
+- to work with several people on the same codebase.
 - track changes to know who did what and when.
 - revert changes.
 
@@ -122,6 +122,13 @@ git checkout <branch>
 # Merge a branch into the current branch
 git merge <branch>
 
+# Combine multiple commits of a branch into one for a merge
+git merge --squash <branch>
+
+# Change several past commits (interactive rebase)
+# HEAD points to the current consulted commit.
+git rebase --interactive HEAD~<number-of-commits>
+
 # Delete a branch
 git branch --delete <branch>
 git push <remote> --delete <branch>
@@ -132,14 +139,11 @@ git fetch --prune
 # Revert a commit
 git revert <commit>
 
-# Change several past commits (interactive rebase)
-# HEAD points to the current consulted commit.
-git rebase --interactive HEAD~<number-of-commits>
-
 # Reset the current branch, delete all commits since <branch> (without removing the changes)
 git reset --soft <branch>
 
 # Apply the changes introduced by some existing commits
+# (by first being on the branch where you want to apply the commit)
 git cherry-pick <commit>
 ```
 
