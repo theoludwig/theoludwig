@@ -8,7 +8,7 @@
 }
 
 .prose {
-  @apply !max-w-5xl text-gray dark:text-gray-300;
+  @apply !max-w-5xl text-justify text-gray dark:text-gray-300;
 }
 
 .prose a,
