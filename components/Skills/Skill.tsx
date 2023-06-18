@@ -33,10 +33,10 @@ export const SkillComponent: React.FC<SkillComponentProps> = (props) => {
     >
       <div className='text-center'>
         <Image
-          className='inline h-auto w-auto'
+          className='inline h-16 w-16'
           quality={100}
-          width={60}
-          height={60}
+          width={64}
+          height={64}
           alt={skill}
           src={image}
         />

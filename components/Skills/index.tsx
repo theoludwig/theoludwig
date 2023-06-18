@@ -9,7 +9,6 @@ export const Skills: React.FC = () => {
   return (
     <>
       <SkillsSection title={t('home:skills.languages')}>
-        <SkillComponent skill='JavaScript' />
         <SkillComponent skill='TypeScript' />
         <SkillComponent skill='Python' />
         <SkillComponent skill='C/C++' />
@@ -32,7 +31,7 @@ export const Skills: React.FC = () => {
 
       <SkillsSection title={t('home:skills.software-tools')}>
         <SkillComponent skill='GNU/Linux' />
-        <SkillComponent skill='Ubuntu' />
+        <SkillComponent skill='Arch Linux' />
         <SkillComponent skill='Visual Studio Code' />
         <SkillComponent skill='Git' />
         <SkillComponent skill='Docker' />

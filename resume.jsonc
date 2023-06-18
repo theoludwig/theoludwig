@@ -136,16 +136,16 @@
     },
     {
       "keywords": ["HTML", "CSS", "Tailwind CSS", "React.js/Next.js"],
-      "name": "Front-end"
+      "name": "Frontend"
     },
     {
       "keywords": ["Laravel", "Node.js", "Fastify", "PostgreSQL"],
-      "name": "Back-end"
+      "name": "Backend"
     },
     {
       "keywords": [
         "GNU/Linux",
-        "Ubuntu",
+        "Arch Linux",
         "Visual Studio Code",
         "Git",
         "Docker"
