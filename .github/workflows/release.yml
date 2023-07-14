@@ -35,10 +35,3 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIT_COMMITTER_NAME: ${{ secrets.GIT_NAME }}
           GIT_COMMITTER_EMAIL: ${{ secrets.GIT_EMAIL }}
-
-      - name: 'Deploy to Vercel'
-        run: 'npm run deploy -- --token="${VERCEL_TOKEN}" --prod'
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}

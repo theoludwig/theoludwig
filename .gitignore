@@ -48,7 +48,6 @@ npm-debug.log*
 # misc
 .DS_Store
 .lighthouseci
-.vercel
 
 # typescript
 *.tsbuildinfo
