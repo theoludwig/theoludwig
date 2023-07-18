@@ -8,13 +8,13 @@ export const RevealFade: React.FC<React.PropsWithChildren> = (props) => {
   useEffect(() => {
     const observer = new window.IntersectionObserver(
       (entries, observer) => {
-        entries.forEach((entry) => {
+        for (const entry of entries) {
           if (entry.isIntersecting) {
             entry.target.className =
               'opacity-100 visible translate-y-0 transition-all duration-700 ease-in-out'
             observer.unobserve(entry.target)
           }
-        })
+        }
       },
       {
         root: null,

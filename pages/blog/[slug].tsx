@@ -87,7 +87,8 @@ const BlogPostPage: NextPage<BlogPostPageProps> = (props) => {
                   )
                 },
                 a: (props) => {
-                  if (props.href?.startsWith('#') ?? false) {
+                  const { href = '' } = props
+                  if (href.startsWith('#')) {
                     return <a {...props} />
                   }
                   return (

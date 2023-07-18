@@ -2,6 +2,7 @@ services:
   theoludwig:
     container_name: ${COMPOSE_PROJECT_NAME}
     image: 'theoludwig'
+    restart: 'unless-stopped'
     build:
       context: './'
     ports:
