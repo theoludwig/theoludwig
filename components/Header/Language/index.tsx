@@ -37,7 +37,7 @@ export const Language: React.FC = () => {
   }, [])
 
   const handleLanguage = async (language: string): Promise<void> => {
-    await setLanguage(language)
+    await setLanguage(language, false)
   }
 
   return (
