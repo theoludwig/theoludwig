@@ -7,13 +7,13 @@ publishedOn: '2022-04-11T10:24:55.206Z'
 
 Hello! 👋
 
-After months of hard work, [Thream v1.0.0](https://thream.divlo.fr/) has been released! 🎉
+After months of hard work, [Thream v1.0.0](https://thream.theoludwig.fr/) has been released! 🎉
 
-[**Thream**](https://thream.divlo.fr/) is your open-source platform to stay close with your friends and communities, talk, chat, collaborate, share and have fun.
+[**Thream**](https://thream.theoludwig.fr/) is your open-source platform to stay close with your friends and communities, talk, chat, collaborate, share and have fun.
 
 ## Presentation
 
-[**Thream**](https://thream.divlo.fr/) is a social network to stay close with your friends and communities to talk, chat, collaborate and share.
+[**Thream**](https://thream.theoludwig.fr/) is a social network to stay close with your friends and communities to talk, chat, collaborate and share.
 
 The project is largely inspired by [Discord](https://discord.com), a proprietary instant messaging service, but differentiates itself by its **non-profit open source philosophy** and will integrate special features.
 
@@ -23,7 +23,7 @@ The idea is that a user can create an account to authenticate with an email addr
 
 ![The Thream app on a community page](../public/images/posts/thream-v1-0-0/thream-ui.png)
 
-[**Thream**](https://thream.divlo.fr/) is a website that works on any recent browser, accessible on [thream.divlo.fr](https://thream.divlo.fr/).
+[**Thream**](https://thream.theoludwig.fr/) is a website that works on any recent browser, accessible on [thream.theoludwig.fr](https://thream.theoludwig.fr/).
 
 ## History
 
@@ -31,7 +31,7 @@ The idea for the project has existed since May 13, 2020, symbolized by a [public
 
 The main goal is to put into **practice knowledge in web development** and computer science in general on a concrete project that can **easily evolve over time** where you can add many features.
 
-The development of the project begins under the name of **SocialProject**, on August 20, 2020, with colors close to the image of Divlo.
+The development of the project begins under the name of **SocialProject**, on August 20, 2020.
 
 ![SocialProject](../public/images/posts/thream-v1-0-0/social-project.jpg)
 
@@ -116,4 +116,4 @@ The other interest of the project is that it is completely **open-source**, and 
 
 Feel free to give feebacks and suggestions to improve the project, and to report any bug you find.
 
-**Thream** is available: [**thream.divlo.fr**](https://thream.divlo.fr/).
+**Thream** is available: [**thream.theoludwig.fr**](https://thream.theoludwig.fr/).

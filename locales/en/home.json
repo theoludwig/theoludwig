@@ -34,22 +34,22 @@
     "title": "Portfolio",
     "items": [
       {
-        "title": "function.divlo.fr",
-        "description": "Learn programming through project-based alias function.",
-        "link": "https://function.divlo.fr/",
-        "image": "/images/portfolio/functiondivlofr.png"
+        "title": "Carolo",
+        "description": "Strategy board game similar to chess which allows grandiose moves (only available in French).",
+        "link": "https://carolo.theoludwig.fr/",
+        "image": "/images/portfolio/Carolo.png"
       },
       {
-        "title": "thream.divlo.fr",
+        "title": "Thream",
         "description": "Your open source platform to stay close with your friends and communities, talk, chat, collaborate, share and have fun.",
-        "link": "https://thream.divlo.fr/",
-        "image": "/images/portfolio/threamdivlofr.png"
+        "link": "https://thream.theoludwig.fr/",
+        "image": "/images/portfolio/Thream.png"
       },
       {
         "title": "Leon",
         "description": "Leon is your open-source personal assistant.",
         "link": "https://getleon.ai/",
-        "image": "/images/portfolio/leon.png"
+        "image": "/images/portfolio/Leon.png"
       }
     ]
   },

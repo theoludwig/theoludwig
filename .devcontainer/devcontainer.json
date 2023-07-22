@@ -6,20 +6,19 @@
   "customizations": {
     "vscode": {
       "settings": {
-        "remote.autoForwardPorts": false
-      },
-      "extensions": [
-        "editorconfig.editorconfig",
-        "esbenp.prettier-vscode",
-        "dbaeumer.vscode-eslint",
-        "bradlc.vscode-tailwindcss",
-        "mikestead.dotenv",
-        "davidanson.vscode-markdownlint",
-        "ms-azuretools.vscode-docker"
-      ]
-    }
+        "remote.autoForwardPorts": false,
+        "remote.localPortHost": "allInterfaces"
+      }
+    },
+    "extensions": [
+      "editorconfig.editorconfig",
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint",
+      "davidanson.vscode-markdownlint",
+      "bradlc.vscode-tailwindcss",
+      "mikestead.dotenv",
+      "ms-azuretools.vscode-docker"
+    ]
   },
-  "forwardPorts": [3000],
-  "postAttachCommand": ["npm", "install"],
   "remoteUser": "node"
 }

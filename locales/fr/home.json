@@ -34,22 +34,22 @@
     "title": "Portfolio",
     "items": [
       {
-        "title": "function.divlo.fr",
-        "description": "Apprenez la programmation grâce à l'apprentissage par projet alias fonction.",
-        "link": "https://function.divlo.fr/",
-        "image": "/images/portfolio/functiondivlofr.png"
+        "title": "Carolo",
+        "description": "Jeu de plateau stratégique similaire aux échecs qui permet des coups grandioses, reposant sur des enchaînements remarquables.",
+        "link": "https://carolo.theoludwig.fr/",
+        "image": "/images/portfolio/Carolo.png"
       },
       {
-        "title": "thream.divlo.fr",
+        "title": "Thream",
         "description": "Votre plateforme open source pour rester proche de vos amis et communautés, parler, discuter, collaborer, partager et amusez-vous.",
-        "link": "https://thream.divlo.fr/",
-        "image": "/images/portfolio/threamdivlofr.png"
+        "link": "https://thream.theoludwig.fr/",
+        "image": "/images/portfolio/Thream.png"
       },
       {
         "title": "Leon",
         "description": "Leon est votre assistant personnel open source.",
         "link": "https://getleon.ai/",
-        "image": "/images/portfolio/leon.png"
+        "image": "/images/portfolio/Leon.png"
       }
     ]
   },
