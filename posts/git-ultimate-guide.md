@@ -122,6 +122,11 @@ git checkout <branch>
 # Merge a branch into the current branch
 git merge <branch>
 
+# Note: Merge creates a "Merge commit" when the base branch and the branch to merge have diverged (they have different commits).
+
+# To avoid creating a "Merge commit", we can use rebase instead of merge.
+git rebase --interactive <branch-to-rebase-on>
+
 # Combine multiple commits of a branch into one for a merge
 git merge --squash <branch>
 
@@ -145,6 +150,13 @@ git reset --soft <branch>
 # Apply the changes introduced by some existing commits
 # (by first being on the branch where you want to apply the commit)
 git cherry-pick <commit>
+
+# To list all commits that differ between two branches
+git log <branch1>..<branch2> # commits in branch2 that are not in branch1 (branch2 ahead of branch1, branch2 behind branch1)
+git log <branch2>..<branch1> # commits in branch1 that are not in branch2 (branch1 ahead of branch2, branch1 behind branch2)
+
+# Summary of commit authors across all branches, excluding merge commits.
+git shortlog --summary --numbered --all --no-merges
 ```
 
 ## `.gitignore` file
@@ -194,7 +206,7 @@ As we have seen in the [Get started with `git` and `.gitconfig` config file](#ge
 
 That means that **anyone can create a commit with any name and email address and claim to be whoever they want** when they create a commit.
 
-To avoid this, you can sign your commits with a <abbr title="GNU Privacy Guard">[GPG](https://gnupg.org/)</abbr> key.
+To avoid this, you can sign your commits with a [GNU Privacy Guard](https://gnupg.org/) (<abbr>gpg</abbr>) key.
 
 You can find more information about signing commits in the [official documentation](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work).
 
