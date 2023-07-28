@@ -12,9 +12,6 @@ out
 build
 dist
 public/curriculum-vitae
-# PWA
-public/workbox-*.js
-public/sw.js
 
 # testing
 coverage

@@ -1,5 +1,5 @@
 {
-  "name": "jsonresume-theme-custom",
+  "name": "curriculum-vitae",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -13,9 +13,9 @@
     "modern-normalize": "2.0.0"
   },
   "devDependencies": {
-    "@types/node": "20.4.4",
+    "@types/node": "20.4.5",
     "date-and-time": "3.0.2",
-    "vite": "4.4.6",
+    "vite": "4.4.7",
     "vite-plugin-html": "3.2.0"
   }
 }
