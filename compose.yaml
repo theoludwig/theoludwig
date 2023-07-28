@@ -5,8 +5,7 @@ services:
     restart: 'unless-stopped'
     build:
       context: './'
-    ports:
-      - '${PORT-3000}:${PORT-3000}'
+    network_mode: 'host'
     environment:
       PORT: ${PORT-3000}
     env_file: '.env'
