@@ -6,7 +6,6 @@ RUN npm clean-install
 FROM node:20.5.0 AS builder
 WORKDIR /usr/src/application
 COPY --from=builder-dependencies /usr/src/application/node_modules ./node_modules
-COPY --from=builder-dependencies /usr/src/application/curriculum-vitae/node_modules ./curriculum-vitae/node_modules
 COPY ./ ./
 RUN npm run build
 
