@@ -9,7 +9,7 @@ COPY --from=builder-dependencies /usr/src/application/node_modules ./node_module
 COPY ./ ./
 RUN npm run build
 
-FROM gcr.io/distroless/nodejs18-debian11:latest AS runner
+FROM gcr.io/distroless/nodejs20-debian11:latest AS runner
 WORKDIR /usr/src/application
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
