@@ -1,5 +1,5 @@
-import { ShadowContainer } from '../ShadowContainer'
-import { SectionHeading } from './SectionHeading'
+import { ShadowContainer } from '@/components/design/ShadowContainer'
+import { SectionHeading } from '@/components/design/Section/SectionHeading'
 
 type SectionProps = React.ComponentPropsWithRef<'section'> & {
   heading?: string

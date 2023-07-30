@@ -1,5 +1,5 @@
-import { ShadowContainer } from 'components/design/ShadowContainer'
-import { GitHubIcon } from 'components/Profile/SocialMediaList/SocialMediaIcons/GitHubIcon'
+import { ShadowContainer } from '@/components/design/ShadowContainer'
+import { GitHubIcon } from '@/components/Profile/SocialMediaList/SocialMediaIcons/GitHubIcon'
 
 export interface RepositoryProps {
   name: string

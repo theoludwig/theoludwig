@@ -1,4 +1,4 @@
-import { ShadowContainer } from 'components/design/ShadowContainer'
+import { ShadowContainer } from '@/components/design/ShadowContainer'
 
 export interface SkillsSectionProps {
   title: string

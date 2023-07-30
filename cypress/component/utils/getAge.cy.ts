@@ -1,4 +1,4 @@
-import { getAge } from '../../../utils/getAge'
+import { getAge } from '@/utils/getAge'
 
 describe('utils/getAge', () => {
   it('should calculate the right age of a person', () => {

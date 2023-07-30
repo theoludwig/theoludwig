@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { ShadowContainer } from 'components/design/ShadowContainer'
+import { ShadowContainer } from '@/components/design/ShadowContainer'
 
 export interface PortfolioItemProps {
   title: string

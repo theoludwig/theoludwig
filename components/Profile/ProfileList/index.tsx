@@ -1,7 +1,9 @@
+'use client'
+
 import useTranslation from 'next-translate/useTranslation'
 import { useMemo } from 'react'
 
-import { BIRTH_DATE, BIRTH_DATE_STRING, getAge } from 'utils/getAge'
+import { BIRTH_DATE, BIRTH_DATE_STRING, getAge } from '@/utils/getAge'
 
 import { ProfileItem } from './ProfileItem'
 

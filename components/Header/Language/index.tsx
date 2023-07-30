@@ -1,3 +1,5 @@
+'use client'
+
 import { useCallback, useEffect, useState, useRef } from 'react'
 import useTranslation from 'next-translate/useTranslation'
 import setLanguage from 'next-translate/setLanguage'
@@ -61,7 +63,7 @@ export const Language: React.FC = () => {
       >
         {i18n.locales.map((language, index) => {
           if (language === currentLanguage) {
-            return null
+            return <></>
           }
           return (
             <li

@@ -16,7 +16,7 @@ export const SocialMediaList: React.FC = () => {
       <SocialMediaItem link='https://gitlab.com/theoludwig' ariaLabel='GitLab'>
         <GitLabIcon />
       </SocialMediaItem>
-      <SocialMediaItem link='https://www.npmjs.com/~theoludwig' ariaLabel='NPM'>
+      <SocialMediaItem link='https://www.npmjs.com/~theoludwig' ariaLabel='npm'>
         <NPMIcon />
       </SocialMediaItem>
       <SocialMediaItem
