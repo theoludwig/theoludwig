@@ -1,15 +1,21 @@
+import { cookies } from 'next/headers'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import { Language } from './Language'
+import { getI18n } from '@/i18n/i18n.server'
+
+import { Locales } from './Locales'
 import { SwitchTheme } from './SwitchTheme'
 
 export interface HeaderProps {
-  showLanguage?: boolean
+  showLocale?: boolean
 }
 
 export const Header: React.FC<HeaderProps> = (props) => {
-  const { showLanguage = false } = props
+  const { showLocale = false } = props
+
+  const cookiesStore = cookies()
+  const i18n = getI18n()
 
   return (
     <header className='sticky top-0 z-50 flex w-full justify-between border-b-2 border-gray-600 bg-white px-6 py-2 dark:border-gray-400 dark:bg-black'>
@@ -38,7 +44,12 @@ export const Header: React.FC<HeaderProps> = (props) => {
             Blog
           </Link>
         </div>
-        {showLanguage ? <Language /> : null}
+        {showLocale ? (
+          <Locales
+            currentLocale={i18n.locale}
+            cookiesStore={cookiesStore.toString()}
+          />
+        ) : null}
         <SwitchTheme />
       </div>
     </header>

@@ -1,9 +1,10 @@
-const nextTranslate = require('next-translate-plugin')
-
-/** @type {import("next").NextConfig} */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  output: 'standalone'
+  output: 'standalone',
+  experimental: {
+    serverActions: true
+  }
 }
 
-module.exports = nextTranslate(nextConfig)
+module.exports = nextConfig

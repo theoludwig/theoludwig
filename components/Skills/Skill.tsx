@@ -1,6 +1,8 @@
+'use client'
+
+import { useState, useEffect, useMemo } from 'react'
 import { useTheme } from 'next-themes'
 import Image from 'next/image'
-import { useMemo } from 'react'
 
 import type { SkillName } from './skills'
 import { skills } from './skills'
@@ -11,18 +13,31 @@ export interface SkillComponentProps {
 
 export const SkillComponent: React.FC<SkillComponentProps> = (props) => {
   const { skill } = props
+
   const skillProperties = skills[skill]
+  const [mounted, setMounted] = useState(false)
   const { theme } = useTheme()
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   const image = useMemo(() => {
     if (typeof skillProperties.image === 'string') {
       return skillProperties.image
     }
+    if (!mounted) {
+      return skillProperties.image.dark
+    }
     if (theme === 'light') {
       return skillProperties.image.light
     }
     return skillProperties.image.dark
-  }, [skillProperties, theme])
+  }, [skillProperties, theme, mounted])
+
+  if (!mounted) {
+    return null
+  }
 
   return (
     <a

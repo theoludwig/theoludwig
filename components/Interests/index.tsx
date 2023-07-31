@@ -1,19 +1,18 @@
-import useTranslation from 'next-translate/useTranslation'
+import { getI18n } from '@/i18n/i18n.server'
 
 import type { InterestParagraphProps } from './InterestParagraph'
 import { InterestParagraph } from './InterestParagraph'
 import { InterestsList } from './InterestsList'
 
 export const Interests: React.FC = () => {
-  const { t } = useTranslation()
+  const i18n = getI18n()
 
-  const paragraphs: InterestParagraphProps[] = t(
-    'home:interests.paragraphs',
-    {},
-    {
-      returnObjects: true
-    }
+  let paragraphs = i18n.translate<InterestParagraphProps[]>(
+    'home.interests.paragraphs'
   )
+  if (!Array.isArray(paragraphs)) {
+    paragraphs = []
+  }
 
   return (
     <div className='max-w-full'>

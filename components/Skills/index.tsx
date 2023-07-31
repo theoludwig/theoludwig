@@ -1,14 +1,14 @@
-import useTranslation from 'next-translate/useTranslation'
+import { getI18n } from '@/i18n/i18n.server'
 
 import { SkillComponent } from './Skill'
 import { SkillsSection } from './SkillsSection'
 
 export const Skills: React.FC = () => {
-  const { t } = useTranslation()
+  const i18n = getI18n()
 
   return (
     <>
-      <SkillsSection title={t('home:skills.languages')}>
+      <SkillsSection title={i18n.translate('home.skills.languages')}>
         <SkillComponent skill='TypeScript' />
         <SkillComponent skill='Python' />
         <SkillComponent skill='C/C++' />
@@ -29,7 +29,7 @@ export const Skills: React.FC = () => {
         <SkillComponent skill='PostgreSQL' />
       </SkillsSection>
 
-      <SkillsSection title={t('home:skills.software-tools')}>
+      <SkillsSection title={i18n.translate('home.skills.software-tools')}>
         <SkillComponent skill='GNU/Linux' />
         <SkillComponent skill='Arch Linux' />
         <SkillComponent skill='Visual Studio Code' />

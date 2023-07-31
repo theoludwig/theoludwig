@@ -1,13 +1,15 @@
-import useTranslation from 'next-translate/useTranslation'
+import { getI18n } from '@/i18n/i18n.server'
 
 import { Repository } from './Repository'
 
 export const OpenSource: React.FC = () => {
-  const { t } = useTranslation()
+  const i18n = getI18n()
 
   return (
     <div className='mt-0 flex max-w-full flex-col items-center'>
-      <p className='text-center'>{t('home:open-source.description')}</p>
+      <p className='text-center'>
+        {i18n.translate('home.open-source.description')}
+      </p>
       <div className='my-6 grid grid-cols-1 gap-6 md:w-10/12 md:grid-cols-2'>
         <Repository
           name='nodejs/node'

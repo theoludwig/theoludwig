@@ -1,14 +1,21 @@
 'use client'
 
-import useTranslation from 'next-translate/useTranslation'
 import { useMemo } from 'react'
 
+import type { CookiesStore } from '@/i18n/i18n.client'
+import { useI18n } from '@/i18n/i18n.client'
 import { BIRTH_DATE, BIRTH_DATE_STRING, getAge } from '@/utils/getAge'
 
 import { ProfileItem } from './ProfileItem'
 
-export const ProfileList: React.FC = () => {
-  const { t } = useTranslation('home')
+export interface ProfileListProps {
+  cookiesStore: CookiesStore
+}
+
+export const ProfileList = (props: ProfileListProps): JSX.Element => {
+  const { cookiesStore } = props
+
+  const i18n = useI18n(cookiesStore)
 
   const age = useMemo(() => {
     return getAge(BIRTH_DATE)
@@ -17,14 +24,19 @@ export const ProfileList: React.FC = () => {
   return (
     <ul className='m-0 list-none p-0'>
       <ProfileItem
-        title={t('home:about.pronouns')}
-        value={t('home:about.pronouns-value')}
+        title={i18n.translate('home.about.pronouns')}
+        value={i18n.translate('home.about.pronouns-value')}
       />
       <ProfileItem
-        title={t('home:about.birth-date')}
-        value={`${BIRTH_DATE_STRING} (${age} ${t('home:about.years-old')})`}
+        title={i18n.translate('home.about.birth-date')}
+        value={`${BIRTH_DATE_STRING} (${age} ${i18n.translate(
+          'home.about.years-old'
+        )})`}
       />
-      <ProfileItem title={t('home:about.nationality')} value='Alsace, France' />
+      <ProfileItem
+        title={i18n.translate('home.about.nationality')}
+        value='Alsace, France'
+      />
       <ProfileItem
         title='Email'
         value='contact@theoludwig.fr'

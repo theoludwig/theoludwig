@@ -71,7 +71,7 @@ export const SwitchTheme: React.FC = () => {
           data-cy='switch-theme-input'
           type='checkbox'
           aria-label='Dark mode toggle'
-          className='absolute m-[-1px] h-[1px] w-[1px] overflow-hidden border-0 p-0'
+          className='absolute m-[-1px] h-[1px] w-[1px] overflow-hidden border-0 p-0 hidden'
           defaultChecked
         />
       </div>

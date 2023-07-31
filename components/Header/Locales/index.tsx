@@ -1,17 +1,22 @@
 'use client'
 
 import { useCallback, useEffect, useState, useRef } from 'react'
-import useTranslation from 'next-translate/useTranslation'
-import setLanguage from 'next-translate/setLanguage'
 import classNames from 'clsx'
 
-import i18n from 'i18n.json'
+import { AVAILABLE_LOCALES } from '@/utils/constants'
+import type { CookiesStore } from '@/i18n/i18n.client'
 
 import { Arrow } from './Arrow'
-import { LanguageFlag } from './LanguageFlag'
+import { LocaleFlag } from './LocaleFlag'
 
-export const Language: React.FC = () => {
-  const { lang: currentLanguage } = useTranslation()
+export interface LocalesProps {
+  currentLocale: string
+  cookiesStore: CookiesStore
+}
+
+export const Locales = (props: LocalesProps): JSX.Element => {
+  const { currentLocale, cookiesStore } = props
+
   const [hiddenMenu, setHiddenMenu] = useState(true)
   const languageClickRef = useRef<HTMLDivElement | null>(null)
 
@@ -38,42 +43,48 @@ export const Language: React.FC = () => {
     }
   }, [])
 
-  const handleLanguage = async (language: string): Promise<void> => {
-    await setLanguage(language, false)
+  const handleLocale = async (locale: string): Promise<void> => {
+    const { setLocale } = await import('@/i18n/i18n.server')
+    setLocale(locale)
   }
 
   return (
     <div className='flex cursor-pointer flex-col items-center justify-center'>
       <div
         ref={languageClickRef}
-        data-cy='language-click'
+        data-cy='locale-click'
         className='mr-5 flex items-center'
         onClick={handleHiddenMenu}
       >
-        <LanguageFlag language={currentLanguage} />
+        <LocaleFlag
+          locale={currentLocale}
+          cookiesStore={cookiesStore?.toString()}
+        />
         <Arrow />
       </div>
 
       <ul
-        data-cy='languages-list'
+        data-cy='locales-list'
         className={classNames(
-          'absolute top-14 z-10 mr-4 mt-3 flex w-24 list-none flex-col items-center justify-center rounded-lg bg-white p-0 shadow-lightFlag dark:bg-black dark:shadow-darkFlag',
+          'absolute top-14 z-10 mr-4 mt-3 flex w-32 list-none flex-col items-center justify-center rounded-lg bg-white p-0 shadow-lightFlag dark:bg-black dark:shadow-darkFlag',
           { hidden: hiddenMenu }
         )}
       >
-        {i18n.locales.map((language, index) => {
-          if (language === currentLanguage) {
-            return <></>
-          }
+        {AVAILABLE_LOCALES.filter((locale) => {
+          return locale !== currentLocale
+        }).map((locale) => {
           return (
             <li
-              key={index}
-              className='flex h-12 w-full items-center justify-center pl-2 hover:bg-[#4f545c] hover:bg-opacity-20'
+              key={locale}
+              className='flex h-12 w-full items-center justify-center hover:bg-[#4f545c] hover:bg-opacity-20'
               onClick={async () => {
-                return await handleLanguage(language)
+                return await handleLocale(locale)
               }}
             >
-              <LanguageFlag language={language} />
+              <LocaleFlag
+                locale={locale}
+                cookiesStore={cookiesStore?.toString()}
+              />
             </li>
           )
         })}

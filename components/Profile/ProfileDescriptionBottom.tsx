@@ -1,12 +1,12 @@
-import useTranslation from 'next-translate/useTranslation'
+import { getI18n } from '@/i18n/i18n.server'
 
 export const ProfileDescriptionBottom: React.FC = () => {
-  const { t, lang } = useTranslation()
+  const i18n = getI18n()
 
   return (
     <p className='mb-8 mt-8 text-base font-normal text-gray dark:text-gray-dark'>
-      {t('home:about.description-bottom')}
-      {lang === 'fr' ? (
+      {i18n.translate('home.about.description-bottom')}
+      {i18n.locale === 'fr-FR' ? (
         <>
           <br />
           <br />

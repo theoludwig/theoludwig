@@ -37,24 +37,24 @@ describe('Common > Header', () => {
   })
 
   describe('Switch Language', () => {
-    it('should switch language from EN (default) to FR', () => {
+    it('should switch locale from EN (default) to FR', () => {
       cy.get('h1').contains('Théo LUDWIG')
-      cy.get('[data-cy=language-flag-text]').contains('EN')
-      cy.get('[data-cy=languages-list]').should('not.be.visible')
-      cy.get('[data-cy=language-click]').click()
-      cy.get('[data-cy=languages-list]').should('be.visible')
-      cy.get('[data-cy=languages-list] > li:first-child').contains('FR').click()
-      cy.get('[data-cy=languages-list]').should('not.be.visible')
-      cy.get('[data-cy=language-flag-text]').contains('FR')
+      cy.get('[data-cy=locale-flag-text]').contains('EN')
+      cy.get('[data-cy=locales-list]').should('not.be.visible')
+      cy.get('[data-cy=locale-click]').click()
+      cy.get('[data-cy=locales-list]').should('be.visible')
+      cy.get('[data-cy=locales-list] > li:first-child').contains('FR').click()
+      cy.get('[data-cy=locales-list]').should('not.be.visible')
+      cy.get('[data-cy=locale-flag-text]').contains('FR')
       cy.get('h1').contains('Théo LUDWIG')
     })
 
-    it('should close the language list menu when clicking outside', () => {
-      cy.get('[data-cy=languages-list]').should('not.be.visible')
-      cy.get('[data-cy=language-click]').click()
-      cy.get('[data-cy=languages-list]').should('be.visible')
+    it('should close the locale list menu when clicking outside', () => {
+      cy.get('[data-cy=locales-list]').should('not.be.visible')
+      cy.get('[data-cy=locale-click]').click()
+      cy.get('[data-cy=locales-list]').should('be.visible')
       cy.get('h1').click()
-      cy.get('[data-cy=languages-list]').should('not.be.visible')
+      cy.get('[data-cy=locales-list]').should('not.be.visible')
     })
   })
 })

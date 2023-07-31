@@ -6,7 +6,7 @@ import { createHtmlPlugin } from 'vite-plugin-html'
 import date from 'date-and-time'
 
 const jsonCurriculumVitaeURL = new URL(
-  '../curriculum-vitae.jsonc',
+  './curriculum-vitae.jsonc',
   import.meta.url
 )
 const dataCurriculumVitaeStringJSON = await fs.promises.readFile(
