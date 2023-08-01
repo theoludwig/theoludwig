@@ -1,13 +1,14 @@
 import type { Metadata } from 'next'
+import classNames from 'clsx'
 
 import '@fontsource/montserrat/400.css'
 import '@fontsource/montserrat/600.css'
 import './globals.css'
 
-import { Providers } from '@/components/Providers'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { getI18n } from '@/i18n/i18n.server'
+import { getTheme } from '@/theme/theme.server'
 
 const title = 'Théo LUDWIG'
 const description =
@@ -54,15 +55,23 @@ const RootLayout = (props: RootLayoutProps): JSX.Element => {
   const { children } = props
 
   const i18n = getI18n()
+  const theme = getTheme()
 
   return (
-    <html suppressHydrationWarning lang={i18n.locale}>
+    <html
+      lang={i18n.locale}
+      className={classNames({
+        dark: theme === 'dark',
+        light: theme === 'light'
+      })}
+      style={{
+        colorScheme: theme
+      }}
+    >
       <body className='bg-white font-headline text-black dark:bg-black dark:text-white'>
-        <Providers>
-          <Header showLocale />
-          {children}
-          <Footer />
-        </Providers>
+        <Header showLocale />
+        {children}
+        <Footer />
       </body>
     </html>
   )

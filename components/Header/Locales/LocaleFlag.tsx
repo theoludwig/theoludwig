@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import type { CookiesStore } from '@/i18n/i18n.client'
+import type { CookiesStore } from '@/utils/constants'
 import { useI18n } from '@/i18n/i18n.client'
 
 export interface LocaleFlagProps {

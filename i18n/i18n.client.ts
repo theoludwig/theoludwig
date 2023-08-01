@@ -1,9 +1,9 @@
 import UniversalCookie from 'universal-cookie'
 import type { I18n } from 'i18n-js'
 
-import { i18n } from './i18n'
+import type { CookiesStore } from '@/utils/constants'
 
-export type CookiesStore = string | object | null | undefined
+import { i18n } from './i18n'
 
 export const useI18n = (cookiesStore: CookiesStore): I18n => {
   const universalCookie = new UniversalCookie(cookiesStore)

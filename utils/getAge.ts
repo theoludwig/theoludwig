@@ -8,9 +8,8 @@ export const BIRTH_DATE_ISO_8601 =
 export const BIRTH_DATE = new Date(BIRTH_DATE_ISO_8601)
 
 /**
- * Calculates the age of a person based on their birth date
+ * Calculates the age of a person based on their birth date.
  * @param birthDate
- * @returns
  */
 export const getAge = (birthDate: Date): number => {
   const today = new Date()

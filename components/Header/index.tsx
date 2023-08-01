@@ -50,7 +50,7 @@ export const Header: React.FC<HeaderProps> = (props) => {
             cookiesStore={cookiesStore.toString()}
           />
         ) : null}
-        <SwitchTheme />
+        <SwitchTheme cookiesStore={cookiesStore.toString()} />
       </div>
     </header>
   )

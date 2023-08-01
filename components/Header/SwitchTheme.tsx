@@ -1,23 +1,22 @@
 'use client'
 
-import { useEffect, useState } from 'react'
 import classNames from 'clsx'
-import { useTheme } from 'next-themes'
 
-export const SwitchTheme: React.FC = () => {
-  const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
+import { useTheme } from '@/theme/theme.client'
+import type { CookiesStore } from '@/utils/constants'
 
-  useEffect(() => {
-    setMounted(true)
-  }, [])
+export interface SwitchThemeProps {
+  cookiesStore: CookiesStore
+}
 
-  if (!mounted) {
-    return null
-  }
+export const SwitchTheme = (props: SwitchThemeProps): JSX.Element => {
+  const { cookiesStore } = props
+  const theme = useTheme(cookiesStore)
 
-  const handleClick = (): void => {
-    setTheme(theme === 'dark' ? 'light' : 'dark')
+  const handleClick = async (): Promise<void> => {
+    const { setTheme } = await import('@/theme/theme.server')
+    const newTheme = theme === 'dark' ? 'light' : 'dark'
+    setTheme(newTheme)
   }
 
   return (

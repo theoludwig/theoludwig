@@ -2,9 +2,9 @@
 
 import { useMemo } from 'react'
 
-import type { CookiesStore } from '@/i18n/i18n.client'
 import { useI18n } from '@/i18n/i18n.client'
 import { BIRTH_DATE, BIRTH_DATE_STRING, getAge } from '@/utils/getAge'
+import type { CookiesStore } from '@/utils/constants'
 
 import { ProfileItem } from './ProfileItem'
 

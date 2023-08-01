@@ -3,8 +3,8 @@
 import { useCallback, useEffect, useState, useRef } from 'react'
 import classNames from 'clsx'
 
-import { AVAILABLE_LOCALES } from '@/utils/constants'
-import type { CookiesStore } from '@/i18n/i18n.client'
+import type { Locale as LocaleType, CookiesStore } from '@/utils/constants'
+import { LOCALES } from '@/utils/constants'
 
 import { Arrow } from './Arrow'
 import { LocaleFlag } from './LocaleFlag'
@@ -43,7 +43,7 @@ export const Locales = (props: LocalesProps): JSX.Element => {
     }
   }, [])
 
-  const handleLocale = async (locale: string): Promise<void> => {
+  const handleLocale = async (locale: LocaleType): Promise<void> => {
     const { setLocale } = await import('@/i18n/i18n.server')
     setLocale(locale)
   }
@@ -70,7 +70,7 @@ export const Locales = (props: LocalesProps): JSX.Element => {
           { hidden: hiddenMenu }
         )}
       >
-        {AVAILABLE_LOCALES.filter((locale) => {
+        {LOCALES.filter((locale) => {
           return locale !== currentLocale
         }).map((locale) => {
           return (

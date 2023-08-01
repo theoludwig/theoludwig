@@ -49,7 +49,7 @@ cd theoludwig
 cp .env.example .env
 
 # Install
-npm install
+npm clean-install
 ```
 
 ### Local Development environment

@@ -3,11 +3,12 @@
 import { cookies } from 'next/headers'
 import type { I18n } from 'i18n-js'
 
+import type { Locale } from '@/utils/constants'
 import { COOKIE_MAX_AGE } from '@/utils/constants'
 
 import { i18n } from './i18n'
 
-export const setLocale = (locale: string): void => {
+export const setLocale = (locale: Locale): void => {
   cookies().set('locale', locale, {
     path: '/',
     maxAge: COOKIE_MAX_AGE

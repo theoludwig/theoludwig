@@ -3,38 +3,39 @@ import type { NextRequest } from 'next/server'
 import { match } from '@formatjs/intl-localematcher'
 import Negotiator from 'negotiator'
 
-import type { AvailableLocale } from '@/utils/constants'
+import type { Locale, Theme } from '@/utils/constants'
 import {
   COOKIE_MAX_AGE,
   DEFAULT_LOCALE,
-  AVAILABLE_LOCALES
+  DEFAULT_THEME,
+  LOCALES,
+  THEMES
 } from '@/utils/constants'
 
 export const middleware = (request: NextRequest): NextResponse => {
   const response = NextResponse.next()
 
   let locale = request.cookies.get('locale')?.value
-  if (
-    locale == null ||
-    !AVAILABLE_LOCALES.includes(locale as AvailableLocale)
-  ) {
+  if (locale == null || !LOCALES.includes(locale as Locale)) {
     const headers = {
       'accept-language':
         request.headers.get('accept-language') ?? DEFAULT_LOCALE
     }
     const languages = new Negotiator({ headers }).languages()
-    locale = match(languages, AVAILABLE_LOCALES.slice(), DEFAULT_LOCALE)
+    locale = match(languages, LOCALES.slice(), DEFAULT_LOCALE)
     response.cookies.set('locale', locale, {
       path: '/',
       maxAge: COOKIE_MAX_AGE
     })
   }
 
-  const theme = request.cookies.get('theme')?.value ?? 'dark'
-  response.cookies.set('theme', theme, {
-    path: '/',
-    expires: COOKIE_MAX_AGE
-  })
+  const theme = request.cookies.get('theme')?.value
+  if (theme == null || !THEMES.includes(theme as Theme)) {
+    response.cookies.set('theme', DEFAULT_THEME, {
+      path: '/',
+      maxAge: COOKIE_MAX_AGE
+    })
+  }
 
   return response
 }
