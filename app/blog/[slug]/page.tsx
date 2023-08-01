@@ -17,9 +17,9 @@ import { getHighlighter } from 'shiki'
 
 import 'katex/dist/katex.min.css'
 
-import { remarkSyntaxHighlightingPlugin } from '@/utils/remarkSyntaxHighlightingPlugin'
-import { getPostBySlug } from '@/utils/blog'
-import { BlogPostComments } from '@/components/BlogPostComments'
+import { remarkSyntaxHighlightingPlugin } from '@/blog/remarkSyntaxHighlightingPlugin'
+import { getBlogPostBySlug } from '@/blog/blog'
+import { BlogPostComments } from '@/blog/BlogPostComments'
 import { getTheme } from '@/theme/theme.server'
 
 const Heading = (
@@ -51,12 +51,12 @@ interface BlogPostPageProps {
 export const generateMetadata = async (
   props: BlogPostPageProps
 ): Promise<Metadata> => {
-  const post = await getPostBySlug(props.params.slug)
-  if (post == null || !post.frontmatter.isPublished) {
+  const blogPost = await getBlogPostBySlug(props.params.slug)
+  if (blogPost == null || !blogPost.frontmatter.isPublished) {
     return notFound()
   }
-  const title = `${post.frontmatter.title} | Théo LUDWIG`
-  const description = post.frontmatter.description
+  const title = `${blogPost.frontmatter.title} | Théo LUDWIG`
+  const description = blogPost.frontmatter.description
   return {
     title,
     description,
@@ -74,8 +74,8 @@ export const generateMetadata = async (
 const BlogPostPage = async (props: BlogPostPageProps): Promise<JSX.Element> => {
   const { params } = props
 
-  const post = await getPostBySlug(params.slug)
-  if (post == null || !post.frontmatter.isPublished) {
+  const blogPost = await getBlogPostBySlug(params.slug)
+  if (blogPost == null || !blogPost.frontmatter.isPublished) {
     return notFound()
   }
 
@@ -89,15 +89,18 @@ const BlogPostPage = async (props: BlogPostPageProps): Promise<JSX.Element> => {
   return (
     <main className='break-wrap-words flex flex-1 flex-col flex-wrap items-center'>
       <div className='my-10 flex flex-col items-center text-center'>
-        <h1 className='text-3xl font-semibold'>{post.frontmatter.title}</h1>
+        <h1 className='text-3xl font-semibold'>{blogPost.frontmatter.title}</h1>
         <p className='mt-2' data-cy='blog-post-date'>
-          {date.format(new Date(post.frontmatter.publishedOn), 'DD/MM/YYYY')}
+          {date.format(
+            new Date(blogPost.frontmatter.publishedOn),
+            'DD/MM/YYYY'
+          )}
         </p>
       </div>
       <div className='prose mb-10'>
         <div className='px-8'>
           <MDXRemote
-            source={post.content}
+            source={blogPost.content}
             options={{
               mdxOptions: {
                 remarkPlugins: [
@@ -121,7 +124,7 @@ const BlogPostPage = async (props: BlogPostPageProps): Promise<JSX.Element> => {
               h6: Heading,
               img: (properties) => {
                 const { src = '', alt = 'Blog Image' } = properties
-                const source = src.replace('../public/', '/')
+                const source = src.replace('../../public/', '/')
                 return (
                   <span className='flex flex-col items-center justify-center'>
                     <Image

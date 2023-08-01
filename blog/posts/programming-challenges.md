@@ -216,7 +216,7 @@ $$
 
 #### Complexity Classes (from fastest to slowest)
 
-![Big O Notation](../public/images/posts/programming-challenges/big-o-chart-notations.webp)
+![Big O Notation](../../public/images/posts/programming-challenges/big-o-chart-notations.webp)
 
 Here is a list of classes of functions that are commonly encountered when analyzing the running time of an algorithm.
 

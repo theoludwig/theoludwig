@@ -4,7 +4,7 @@ import path from 'node:path'
 import { cache } from 'react'
 import matter from 'gray-matter'
 
-export const POSTS_PATH = path.join(process.cwd(), 'posts')
+export const POSTS_PATH = path.join(process.cwd(), 'blog', 'posts')
 
 export interface FrontMatter {
   title: string
@@ -19,7 +19,7 @@ export interface Post {
   content: string
 }
 
-export const getPosts = cache(async (): Promise<Post[]> => {
+export const getBlogPosts = cache(async (): Promise<Post[]> => {
   const posts = await fs.promises.readdir(POSTS_PATH)
   const postsWithTime = await Promise.all(
     posts.map(async (postFilename) => {
@@ -54,9 +54,9 @@ export const getPosts = cache(async (): Promise<Post[]> => {
   return postsWithTimeSorted
 })
 
-export const getPostBySlug = cache(
+export const getBlogPostBySlug = cache(
   async (slug: string): Promise<Post | undefined> => {
-    const posts = await getPosts()
+    const posts = await getBlogPosts()
     const post = posts.find((post) => {
       return post.slug === slug
     })

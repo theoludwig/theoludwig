@@ -1,7 +1,7 @@
 import { Suspense } from 'react'
 import type { Metadata } from 'next'
 
-import { BlogPosts } from '@/components/BlogPosts'
+import { BlogPosts } from '@/blog/BlogPosts'
 import { Loader } from '@/components/Loader/Loader'
 
 const title = 'Blog | Théo LUDWIG'

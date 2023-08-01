@@ -21,7 +21,7 @@ The source code is available on [GitHub](https://github.com/Thream).
 
 The idea is that a user can create an account to authenticate with an email address, and a password, or directly use an account from another platform (currently supported: Google, GitHub, Discord). Once the user is authenticated, he/she can create and join "guilds", in other words communities, in order to discuss with other people in several channels to group discussions talking about the same subject.
 
-![The Thream app on a community page](../public/images/posts/thream-v1-0-0/thream-ui.png)
+![The Thream app on a community page](../../public/images/posts/thream-v1-0-0/thream-ui.png)
 
 [**Thream**](https://thream.theoludwig.fr/) is a website that works on any recent browser, accessible on [thream.theoludwig.fr](https://thream.theoludwig.fr/).
 
@@ -33,7 +33,7 @@ The main goal is to put into **practice knowledge in web development** and compu
 
 The development of the project begins under the name of **SocialProject**, on August 20, 2020.
 
-![SocialProject](../public/images/posts/thream-v1-0-0/social-project.jpg)
+![SocialProject](../../public/images/posts/thream-v1-0-0/social-project.jpg)
 
 When I started the project, I had little knowledge of database design, real-time management or the architecture of such a large <abbr title="Information Technology">IT</abbr> project, so this will be accompanied by many technical problems, to which we will need to find appropriate solutions.
 
@@ -53,7 +53,7 @@ Since the project is mainly developed during free time (mainly on weekends), the
 
 - The **client** part, called **frontend**, what **the user sees on the screen**, such as forms, buttons and all the **graphic elements** with which the user can interact from a browser.
 
-![HTTP Communication Schema](../public/images/posts/thream-v1-0-0/http-communication.png)
+![HTTP Communication Schema](../../public/images/posts/thream-v1-0-0/http-communication.png)
 
 This design allows the separation between the client and the server, as long as they both structure their communication according to the <abbr title="Representational state transfer">REST</abbr> architectural guidelines, using the <abbr title="Hypertext Transfer Protocol">HTTP</abbr> protocol, they will be able to communicate with each other, which makes it possible to work independently on the backend and on the frontend using different technologies and skills, really useful in teamwork.
 

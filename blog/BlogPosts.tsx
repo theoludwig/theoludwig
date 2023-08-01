@@ -2,10 +2,10 @@ import Link from 'next/link'
 import date from 'date-and-time'
 
 import { ShadowContainer } from '@/components/design/ShadowContainer'
-import { getPosts } from '@/utils/blog'
+import { getBlogPosts } from '@/blog/blog'
 
 export const BlogPosts = async (): Promise<JSX.Element> => {
-  const posts = await getPosts()
+  const posts = await getBlogPosts()
 
   return (
     <div className='flex w-full items-center justify-center p-8'>
