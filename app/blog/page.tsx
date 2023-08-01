@@ -2,7 +2,7 @@ import { Suspense } from 'react'
 import type { Metadata } from 'next'
 
 import { BlogPosts } from '@/blog/BlogPosts'
-import { Loader } from '@/components/Loader/Loader'
+import { Loader } from '@/components/design/Loader'
 
 const title = 'Blog | Théo LUDWIG'
 const description =
