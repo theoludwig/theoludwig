@@ -2,7 +2,7 @@ import classNames from 'clsx'
 
 type ShadowContainerProps = React.ComponentPropsWithRef<'div'>
 
-export const ShadowContainer: React.FC<ShadowContainerProps> = (props) => {
+export const ShadowContainer = (props: ShadowContainerProps): JSX.Element => {
   const { children, className, ...rest } = props
 
   return (

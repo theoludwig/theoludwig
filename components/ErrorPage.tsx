@@ -7,7 +7,7 @@ export interface ErrorPageProps {
   message: string
 }
 
-export const ErrorPage: React.FC<ErrorPageProps> = (props) => {
+export const ErrorPage = (props: ErrorPageProps): JSX.Element => {
   const { message, statusCode } = props
   const i18n = getI18n()
 

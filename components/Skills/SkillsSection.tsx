@@ -5,7 +5,7 @@ export interface SkillsSectionProps {
   children: React.ReactNode
 }
 
-export const SkillsSection: React.FC<SkillsSectionProps> = (props) => {
+export const SkillsSection = (props: SkillsSectionProps): JSX.Element => {
   const { title, children } = props
 
   return (

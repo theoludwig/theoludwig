@@ -6,7 +6,7 @@ interface InterestItemProps {
   fontAwesomeIcon: IconDefinition
 }
 
-export const InterestItem: React.FC<InterestItemProps> = (props) => {
+export const InterestItem = (props: InterestItemProps): JSX.Element => {
   const { fontAwesomeIcon, title } = props
 
   return (

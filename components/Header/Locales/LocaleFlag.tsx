@@ -8,7 +8,7 @@ export interface LocaleFlagProps {
   cookiesStore: CookiesStore
 }
 
-export const LocaleFlag: React.FC<LocaleFlagProps> = (props) => {
+export const LocaleFlag = (props: LocaleFlagProps): JSX.Element => {
   const { locale, cookiesStore } = props
 
   const i18n = useI18n(cookiesStore)

@@ -1,11 +1,9 @@
-interface SocialMediaItemProps {
+interface SocialMediaItemProps extends React.PropsWithChildren {
   link: string
   ariaLabel: string
 }
 
-export const SocialMediaItem: React.FC<
-  React.PropsWithChildren<SocialMediaItemProps>
-> = (props) => {
+export const SocialMediaItem = (props: SocialMediaItemProps): JSX.Element => {
   const { link, ariaLabel, children } = props
 
   return (

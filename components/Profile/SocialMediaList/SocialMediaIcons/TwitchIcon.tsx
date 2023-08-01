@@ -1,6 +1,8 @@
 import { Icon } from './Icon'
 
-export const TwitchIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
+export const TwitchIcon = (
+  props: React.SVGProps<SVGSVGElement>
+): JSX.Element => {
   return (
     <Icon {...props}>
       <title>Twitch</title>

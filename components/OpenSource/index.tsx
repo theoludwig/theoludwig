@@ -2,7 +2,7 @@ import { getI18n } from '@/i18n/i18n.server'
 
 import { Repository } from './Repository'
 
-export const OpenSource: React.FC = () => {
+export const OpenSource = (): JSX.Element => {
   const i18n = getI18n()
 
   return (

@@ -1,6 +1,6 @@
 import { Icon } from './Icon'
 
-export const NPMIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
+export const NPMIcon = (props: React.SVGProps<SVGSVGElement>): JSX.Element => {
   return (
     <Icon {...props}>
       <title>npm</title>

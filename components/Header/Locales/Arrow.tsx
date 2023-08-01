@@ -1,4 +1,4 @@
-export const Arrow: React.FC = () => {
+export const Arrow = (): JSX.Element => {
   return (
     <svg
       width='12'

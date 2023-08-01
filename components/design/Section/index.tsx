@@ -8,7 +8,7 @@ type SectionProps = React.ComponentPropsWithRef<'section'> & {
   withoutShadowContainer?: boolean
 }
 
-export const Section: React.FC<SectionProps> = (props) => {
+export const Section = (props: SectionProps): JSX.Element => {
   const {
     children,
     heading,

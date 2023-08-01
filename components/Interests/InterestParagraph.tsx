@@ -5,7 +5,9 @@ export interface InterestParagraphProps {
   description: string
 }
 
-export const InterestParagraph: React.FC<InterestParagraphProps> = (props) => {
+export const InterestParagraph = (
+  props: InterestParagraphProps
+): JSX.Element => {
   const { title, description } = props
 
   return (

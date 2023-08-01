@@ -2,7 +2,9 @@
 
 import { useEffect, useRef } from 'react'
 
-export const RevealFade: React.FC<React.PropsWithChildren> = (props) => {
+export type RevealFadeProps = React.PropsWithChildren
+
+export const RevealFade = (props: RevealFadeProps): JSX.Element => {
   const { children } = props
 
   const htmlElement = useRef<HTMLDivElement>(null)

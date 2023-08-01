@@ -7,7 +7,7 @@ export interface RepositoryProps {
   href: string
 }
 
-export const Repository: React.FC<RepositoryProps> = (props) => {
+export const Repository = (props: RepositoryProps): JSX.Element => {
   const { name, description, href } = props
 
   return (

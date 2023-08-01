@@ -6,7 +6,7 @@ export interface LoaderProps {
   className?: string
 }
 
-export const Loader: React.FC<LoaderProps> = (props) => {
+export const Loader = (props: LoaderProps): JSX.Element => {
   const { width = 50, height = 50, className } = props
 
   return (

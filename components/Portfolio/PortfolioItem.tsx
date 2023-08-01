@@ -9,7 +9,7 @@ export interface PortfolioItemProps {
   image: string
 }
 
-export const PortfolioItem: React.FC<PortfolioItemProps> = (props) => {
+export const PortfolioItem = (props: PortfolioItemProps): JSX.Element => {
   const { title, description, link, image } = props
 
   return (

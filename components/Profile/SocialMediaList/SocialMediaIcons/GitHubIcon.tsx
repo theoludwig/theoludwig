@@ -1,6 +1,8 @@
 import { Icon } from './Icon'
 
-export const GitHubIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
+export const GitHubIcon = (
+  props: React.SVGProps<SVGSVGElement>
+): JSX.Element => {
   return (
     <Icon {...props}>
       <title>GitHub</title>

@@ -1,6 +1,6 @@
 import classNames from 'clsx'
 
-export const Icon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
+export const Icon = (props: React.SVGProps<SVGSVGElement>): JSX.Element => {
   const { children, className, ...rest } = props
 
   return (

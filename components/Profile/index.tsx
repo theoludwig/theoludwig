@@ -5,7 +5,7 @@ import { ProfileInformation } from './ProfileInfo'
 import { ProfileList } from './ProfileList'
 import { ProfileLogo } from './ProfileLogo'
 
-export const Profile: React.FC = () => {
+export const Profile = (): JSX.Element => {
   const cookiesStore = cookies()
 
   return (

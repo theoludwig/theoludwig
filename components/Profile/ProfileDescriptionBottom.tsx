@@ -1,6 +1,6 @@
 import { getI18n } from '@/i18n/i18n.server'
 
-export const ProfileDescriptionBottom: React.FC = () => {
+export const ProfileDescriptionBottom = (): JSX.Element => {
   const i18n = getI18n()
 
   return (

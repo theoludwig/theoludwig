@@ -3,7 +3,7 @@ import { getI18n } from '@/i18n/i18n.server'
 import { SkillComponent } from './Skill'
 import { SkillsSection } from './SkillsSection'
 
-export const Skills: React.FC = () => {
+export const Skills = (): JSX.Element => {
   const i18n = getI18n()
 
   return (

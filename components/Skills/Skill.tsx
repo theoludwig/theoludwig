@@ -9,7 +9,7 @@ export interface SkillComponentProps {
   skill: SkillName
 }
 
-export const SkillComponent: React.FC<SkillComponentProps> = (props) => {
+export const SkillComponent = (props: SkillComponentProps): JSX.Element => {
   const { skill } = props
 
   const skillProperties = skills[skill]

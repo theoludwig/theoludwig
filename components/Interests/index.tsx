@@ -4,7 +4,7 @@ import type { InterestParagraphProps } from './InterestParagraph'
 import { InterestParagraph } from './InterestParagraph'
 import { InterestsList } from './InterestsList'
 
-export const Interests: React.FC = () => {
+export const Interests = (): JSX.Element => {
   const i18n = getI18n()
 
   let paragraphs = i18n.translate<InterestParagraphProps[]>(

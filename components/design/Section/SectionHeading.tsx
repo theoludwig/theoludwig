@@ -1,6 +1,6 @@
 type SectionHeadingProps = React.ComponentPropsWithRef<'h2'>
 
-export const SectionHeading: React.FC<SectionHeadingProps> = (props) => {
+export const SectionHeading = (props: SectionHeadingProps): JSX.Element => {
   const { children, ...rest } = props
 
   return (

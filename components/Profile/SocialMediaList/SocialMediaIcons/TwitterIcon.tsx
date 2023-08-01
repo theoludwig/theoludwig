@@ -1,6 +1,8 @@
 import { Icon } from './Icon'
 
-export const TwitterIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
+export const TwitterIcon = (
+  props: React.SVGProps<SVGSVGElement>
+): JSX.Element => {
   return (
     <Icon {...props}>
       <title>Twitter</title>

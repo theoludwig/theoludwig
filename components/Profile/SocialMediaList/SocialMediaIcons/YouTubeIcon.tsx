@@ -1,6 +1,8 @@
 import { Icon } from './Icon'
 
-export const YouTubeIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
+export const YouTubeIcon = (
+  props: React.SVGProps<SVGSVGElement>
+): JSX.Element => {
   return (
     <Icon {...props}>
       <title>YouTube</title>
