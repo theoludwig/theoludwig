@@ -13,9 +13,10 @@ FROM gcr.io/distroless/nodejs20-debian11:latest AS runner
 WORKDIR /usr/src/application
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
+COPY --from=builder-dependencies /usr/src/application/node_modules ./node_modules
 COPY --from=builder /usr/src/application/.next/standalone ./
 COPY --from=builder /usr/src/application/.next/static ./.next/static
 COPY --from=builder /usr/src/application/public ./public
-COPY --from=builder /usr/src/application/locales ./locales
+COPY --from=builder /usr/src/application/i18n/translations ./i18n/translations
 COPY --from=builder /usr/src/application/next.config.js ./next.config.js
 CMD ["./server.js"]
