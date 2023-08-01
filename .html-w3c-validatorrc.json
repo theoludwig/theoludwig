@@ -1,8 +1,4 @@
 {
-  "urls": [
-    "http://127.0.0.1:3000/",
-    "http://127.0.0.1:3000/blog",
-    "http://127.0.0.1:3000/blog/hello-world"
-  ],
+  "urls": ["http://127.0.0.1:3000/", "http://127.0.0.1:3000/blog"],
   "files": ["./public/curriculum-vitae/index.html"]
 }

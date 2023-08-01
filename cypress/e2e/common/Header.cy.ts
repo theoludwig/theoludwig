@@ -37,15 +37,17 @@ describe('Common > Header', () => {
   })
 
   describe('Switch Language', () => {
-    it('should switch locale from EN (default) to FR', () => {
+    it('should switch locale from English (default) to French', () => {
       cy.get('h1').contains('Théo LUDWIG')
-      cy.get('[data-cy=locale-flag-text]').contains('EN')
+      cy.get('[data-cy=locale-flag-text]').contains('English')
       cy.get('[data-cy=locales-list]').should('not.be.visible')
       cy.get('[data-cy=locale-click]').click()
       cy.get('[data-cy=locales-list]').should('be.visible')
-      cy.get('[data-cy=locales-list] > li:first-child').contains('FR').click()
+      cy.get('[data-cy=locales-list] > li:first-child')
+        .contains('French')
+        .click()
       cy.get('[data-cy=locales-list]').should('not.be.visible')
-      cy.get('[data-cy=locale-flag-text]').contains('FR')
+      cy.get('[data-cy=locale-flag-text]').contains('French')
       cy.get('h1').contains('Théo LUDWIG')
     })
 
