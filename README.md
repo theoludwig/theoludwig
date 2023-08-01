@@ -25,7 +25,7 @@
   "pronouns": "He/Him",
   "birthDate": "31/03/2003",
   "nationality": "Alsace, France",
-  "interests": ["Open-Source enthusiast", "Passionate about High-Tech"],
+  "interests": ["Developer Full Stack", "Open-Source enthusiast"],
   "skills": {
     "programmingLanguages": ["JavaScript/TypeScript", "Python", "C/C++", "PHP"],
     "frontend": ["HTML", "CSS", "Tailwind CSS", "React.js/Next.js"],
