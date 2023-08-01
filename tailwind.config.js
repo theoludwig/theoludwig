@@ -19,8 +19,8 @@ const tailwindConfig = {
         }
       },
       boxShadow: {
-        dark: '0px 0px 6px 6px rgba(0, 0, 0, 0.25)',
-        light: '0px 0px 6px 6px rgba(0, 0, 0, 0.10)',
+        dark: '0px 0px 4px 4px rgba(0, 0, 0, 0.25)',
+        light: '0px 0px 4px 4px rgba(0, 0, 0, 0.10)',
         darkFlag: '0px 1px 10px hsla(0, 0%, 100%, 0.2)',
         lightFlag: '0px 1px 10px rgba(0, 0, 0, 0.25)'
       },

@@ -7,13 +7,7 @@ import { getI18n } from '@/i18n/i18n.server'
 import { Locales } from './Locales'
 import { SwitchTheme } from './SwitchTheme'
 
-export interface HeaderProps {
-  showLocale?: boolean
-}
-
-export const Header: React.FC<HeaderProps> = (props) => {
-  const { showLocale = false } = props
-
+export const Header = (): JSX.Element => {
   const cookiesStore = cookies()
   const i18n = getI18n()
 
@@ -44,12 +38,10 @@ export const Header: React.FC<HeaderProps> = (props) => {
             Blog
           </Link>
         </div>
-        {showLocale ? (
-          <Locales
-            currentLocale={i18n.locale}
-            cookiesStore={cookiesStore.toString()}
-          />
-        ) : null}
+        <Locales
+          currentLocale={i18n.locale}
+          cookiesStore={cookiesStore.toString()}
+        />
         <SwitchTheme cookiesStore={cookiesStore.toString()} />
       </div>
     </header>

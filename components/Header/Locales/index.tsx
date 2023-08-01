@@ -1,5 +1,6 @@
 'use client'
 
+import { usePathname } from 'next/navigation'
 import { useCallback, useEffect, useState, useRef } from 'react'
 import classNames from 'clsx'
 
@@ -16,6 +17,7 @@ export interface LocalesProps {
 
 export const Locales = (props: LocalesProps): JSX.Element => {
   const { currentLocale, cookiesStore } = props
+  const pathname = usePathname()
 
   const [hiddenMenu, setHiddenMenu] = useState(true)
   const languageClickRef = useRef<HTMLDivElement | null>(null)
@@ -46,6 +48,10 @@ export const Locales = (props: LocalesProps): JSX.Element => {
   const handleLocale = async (locale: LocaleType): Promise<void> => {
     const { setLocale } = await import('@/i18n/i18n.server')
     setLocale(locale)
+  }
+
+  if (pathname.startsWith('/blog')) {
+    return <></>
   }
 
   return (

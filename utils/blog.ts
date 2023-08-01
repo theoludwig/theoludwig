@@ -1,22 +1,10 @@
 import fs from 'node:fs'
 import path from 'node:path'
 
-import type { MDXRemoteSerializeResult } from 'next-mdx-remote'
-import { nodeTypes } from '@mdx-js/mdx'
-import rehypeRaw from 'rehype-raw'
-import { serialize } from 'next-mdx-remote/serialize'
-import remarkGfm from 'remark-gfm'
-import rehypeSlug from 'rehype-slug'
-import remarkMath from 'remark-math'
-import rehypeKatex from 'rehype-katex'
+import { cache } from 'react'
 import matter from 'gray-matter'
-import { getHighlighter } from 'shiki'
-
-import { remarkSyntaxHighlightingPlugin } from './remarkSyntaxHighlightingPlugin'
 
 export const POSTS_PATH = path.join(process.cwd(), 'posts')
-
-export type MDXSource = MDXRemoteSerializeResult<Record<string, unknown>>
 
 export interface FrontMatter {
   title: string
@@ -25,17 +13,13 @@ export interface FrontMatter {
   publishedOn: string
 }
 
-export interface PostMetadata {
+export interface Post {
   frontmatter: FrontMatter
   slug: string
   content: string
 }
 
-export interface Post extends PostMetadata {
-  source: MDXSource
-}
-
-export const getPosts = async (): Promise<PostMetadata[]> => {
+export const getPosts = cache(async (): Promise<Post[]> => {
   const posts = await fs.promises.readdir(POSTS_PATH)
   const postsWithTime = await Promise.all(
     posts.map(async (postFilename) => {
@@ -68,34 +52,14 @@ export const getPosts = async (): Promise<PostMetadata[]> => {
       return b.time - a.time
     })
   return postsWithTimeSorted
-}
+})
 
-export const getPostBySlug = async (
-  slug?: string | string[]
-): Promise<Post | undefined> => {
-  const posts = await getPosts()
-  const post = posts.find((post) => {
-    return post.slug === slug
-  })
-  if (post == null) {
-    return undefined
+export const getPostBySlug = cache(
+  async (slug: string): Promise<Post | undefined> => {
+    const posts = await getPosts()
+    const post = posts.find((post) => {
+      return post.slug === slug
+    })
+    return post
   }
-  const highlighter = await getHighlighter({
-    theme: 'dark-plus'
-  })
-  const source = await serialize(post.content, {
-    mdxOptions: {
-      remarkPlugins: [
-        remarkGfm,
-        [remarkSyntaxHighlightingPlugin, { highlighter }],
-        remarkMath
-      ],
-      rehypePlugins: [
-        rehypeSlug,
-        [rehypeRaw, { passThrough: nodeTypes }],
-        rehypeKatex
-      ]
-    }
-  })
-  return { ...post, source }
-}
+)

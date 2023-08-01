@@ -68,8 +68,8 @@ const RootLayout = (props: RootLayoutProps): JSX.Element => {
         colorScheme: theme
       }}
     >
-      <body className='bg-white font-headline text-black dark:bg-black dark:text-white'>
-        <Header showLocale />
+      <body className='bg-white font-headline text-black dark:bg-black dark:text-white flex flex-col min-h-screen'>
+        <Header />
         {children}
         <Footer />
       </body>
