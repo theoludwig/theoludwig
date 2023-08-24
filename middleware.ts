@@ -17,12 +17,16 @@ export const middleware = (request: NextRequest): NextResponse => {
 
   let locale = request.cookies.get('locale')?.value
   if (locale == null || !LOCALES.includes(locale as Locale)) {
-    const headers = {
-      'accept-language':
-        request.headers.get('accept-language') ?? DEFAULT_LOCALE
+    try {
+      const headers = {
+        'accept-language':
+          request.headers.get('accept-language') ?? DEFAULT_LOCALE
+      }
+      const languages = new Negotiator({ headers }).languages()
+      locale = match(languages, LOCALES.slice(), DEFAULT_LOCALE)
+    } catch {
+      locale = DEFAULT_LOCALE
     }
-    const languages = new Negotiator({ headers }).languages()
-    locale = match(languages, LOCALES.slice(), DEFAULT_LOCALE)
     response.cookies.set('locale', locale, {
       path: '/',
       maxAge: COOKIE_MAX_AGE
