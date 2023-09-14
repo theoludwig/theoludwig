@@ -3,6 +3,7 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
+    "moduleResolution": "Node",
     "lib": ["dom", "dom.iterable", "ESNext"],
     "allowJs": true,
     "baseUrl": ".",
@@ -11,7 +12,6 @@
     },
     "types": ["cypress"],
     "noEmit": true,
-    "moduleResolution": "node",
     "resolveJsonModule": true,
     "jsx": "preserve",
     "incremental": true,
