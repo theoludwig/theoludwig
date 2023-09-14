@@ -14,6 +14,19 @@
   },
   "education": [
     {
+      "startDate": "2023",
+      "endDate": "2024",
+      "studyType": "Bachelor Universitaire de Technologie (BUT) Informatique",
+      "institution": "IUT Robert Schuman à Illkirch-Graffenstaden",
+      "score": "3ème année",
+      "courses": [
+        "Développement Web en Node.js et React.js",
+        "Intégration/Déploiement Continue et Docker",
+        "Projet développement LLM (Large Language Model) et NLP (Natural Language Processing)",
+        "Base de données NoSQL (MongoDB)"
+      ]
+    },
+    {
       "startDate": "2022",
       "endDate": "2023",
       "studyType": "Bachelor Universitaire de Technologie (BUT) Informatique",
@@ -21,10 +34,10 @@
       "score": "2ème année",
       "courses": [
         "Développement Web avec le framework Laravel en PHP",
+        "Qualité de développement et Tests unitaires, d'intégration, fonctionnels/systèmes, d'acceptation etc.",
         "Patrons et Principes de conceptions (Code maintenable et réutilisable) en UML",
         "Programmation systèmes en C (Multi-Thread, Serveur/Client UDP/TCP)",
-        "Sécurisation des accès à la base de données et PL/SQL",
-        "Projet développement d'une application web en React.js en équipe de 3 personnes pendant 3 mois"
+        "Sécurisation des accès à la base de données et PL/SQL"
       ]
     },
     {
