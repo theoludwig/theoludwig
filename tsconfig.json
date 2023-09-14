@@ -11,7 +11,7 @@
     },
     "types": ["cypress"],
     "noEmit": true,
-    "moduleResolution": "Bundler",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "jsx": "preserve",
     "incremental": true,
