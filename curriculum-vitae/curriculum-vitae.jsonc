@@ -70,28 +70,38 @@
   ],
   "work": [
     {
+      "summary": "Développement de WebSurg, une université virtuelle consacrée à la formation médico-chirurgicale, en React.js/Next.js et API Platform avec Symfony.",
+      "website": "https://ircad.fr/",
+      "name": "IRCAD",
+      "location": "1 Place de l'Hôpital, 67000 Strasbourg",
+      "position": "Alternant Développeur Web Full Stack",
+      "startDate": "2023-08-28",
+      "endDate": "2024-09-02",
+      "duration": "1 an"
+    },
+    {
       "summary": "Développement d'un outil GED (Gestion Électronique de Documents) en React.js, Laravel et GraphQL.",
       "website": "https://numerize.com/",
       "name": "Numerize",
       "location": "4 Rue Sophie Germain, 67720 Hœrdt",
-      "position": "Stagiaire Développeur Web",
+      "position": "Stagiaire Développeur Web Full Stack",
       "startDate": "2023-04-11",
       "endDate": "2023-07-26",
       "duration": "4 mois"
     },
-    {
-      "summary": "Agent administratif - Numérisation et archivage des plans électriques initialement sous format papier calque.",
-      "website": "https://www.es.fr/",
-      "name": "ÉS (Électricité de Strasbourg)",
-      "location": "5 Rue André Marie Ampère, 67450 Mundolsheim",
-      "position": "Emploi d'été en qualité d'agent administratif",
-      "startDate": "2021-07-07",
-      "endDate": "2021-07-30",
-      "duration": "1 mois"
-    },
+    // {
+    //   "summary": "Agent administratif - Numérisation et archivage des plans électriques initialement sous format papier calque.",
+    //   "website": "https://www.es.fr/",
+    //   "name": "ÉS (Électricité de Strasbourg)",
+    //   "location": "5 Rue André Marie Ampère, 67450 Mundolsheim",
+    //   "position": "Emploi d'été en qualité d'agent administratif",
+    //   "startDate": "2021-07-07",
+    //   "endDate": "2021-07-30",
+    //   "duration": "1 mois"
+    // },
     {
       "summary": "Développement d'un site web pour trouver un restaurant à la pause repas.",
-      "website": "https://www.itpartners.fr/",
+      "website": "https://itpartners.fr/",
       "name": "Tribe | IT Partners",
       "location": "16 Rue du Parc, 67205 Oberhausbergen",
       "position": "Stage initiation métier développeur web",
@@ -101,8 +111,8 @@
     },
     {
       "description": "interests",
-      "summary": "Développement site web en React.js et Strapi.<br /> Classé n°1 en France sur le Défi de l'entreprise <a href=\"https://www.toolpad.fr/\">ToolPad</a>.",
-      "website": "https://www.nuitdelinfo.com/",
+      "summary": "Développement site web en React.js et Strapi.<br /> Classé n°1 en France sur le Défi de l'entreprise <a href=\"https://toolpad.fr/\">ToolPad</a>.",
+      "website": "https://nuitdelinfo.com/",
       "name": "La Nuit de l'info 2021",
       "position": "Participation en équipe de 5 personnes",
       "startDate": "2021-12-02",
@@ -112,7 +122,7 @@
     {
       "description": "interests",
       "summary": "Hackathon développement d'une landing page et web scraping.",
-      "website": "https://www.wildcodeschool.fr/",
+      "website": "https://wildcodeschool.fr/",
       "name": "Wild Code School",
       "location": "32 Rue du Bass. d'Austerlitz, 67100 Strasbourg",
       "position": "Initiation métier Développeur web",
@@ -122,7 +132,7 @@
     }
     // {
     //   "summary": "Apprentissage du métier \"Chargé de communication\" et des logiciels de graphisme tels que \"Adobe Photoshop\".",
-    //   "website": "https://www.es.fr/",
+    //   "website": "https://es.fr/",
     //   "name": "ÉS (Électricité de Strasbourg)",
     //   "location": "26 Bd du Président-Wilson, 67000 Strasbourg",
     //   "position": "Stage de découverte (3ème)",
