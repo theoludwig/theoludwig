@@ -27,6 +27,9 @@ jobs:
       - name: 'lint:editorconfig'
         run: 'npm run lint:editorconfig'
 
+      - name: 'lint:typescript'
+        run: 'npm run lint:typescript'
+
       - name: 'lint:markdown'
         run: 'npm run lint:markdown'
 
