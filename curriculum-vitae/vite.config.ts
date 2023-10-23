@@ -1,19 +1,19 @@
-import fs from 'node:fs'
+import fs from "node:fs"
 
-import { defineConfig } from 'vite'
-import { parse as JSONCParser } from 'jsonc-parser'
-import { createHtmlPlugin } from 'vite-plugin-html'
-import date from 'date-and-time'
+import { defineConfig } from "vite"
+import { parse as JSONCParser } from "jsonc-parser"
+import { createHtmlPlugin } from "vite-plugin-html"
+import date from "date-and-time"
 
 const jsonCurriculumVitaeURL = new URL(
-  './curriculum-vitae.jsonc',
-  import.meta.url
+  "./curriculum-vitae.jsonc",
+  import.meta.url,
 )
 const dataCurriculumVitaeStringJSON = await fs.promises.readFile(
   jsonCurriculumVitaeURL,
   {
-    encoding: 'utf-8'
-  }
+    encoding: "utf-8",
+  },
 )
 const curriculumVitae = JSONCParser(dataCurriculumVitaeStringJSON)
 
@@ -22,7 +22,7 @@ const curriculumVitae = JSONCParser(dataCurriculumVitaeStringJSON)
  */
 export default defineConfig({
   build: {
-    assetsDir: './'
+    assetsDir: "./",
   },
   plugins: [
     createHtmlPlugin({
@@ -30,13 +30,13 @@ export default defineConfig({
         data: {
           date,
           locals: {
-            ...curriculumVitae
-          }
-        }
-      }
-    })
+            ...curriculumVitae,
+          },
+        },
+      },
+    }),
   ],
   css: {
-    postcss: {}
-  }
+    postcss: {},
+  },
 })

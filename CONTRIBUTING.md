@@ -34,7 +34,7 @@ The commit message guidelines adheres to [Conventional Commits](https://www.conv
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) >= 20.0.0
-- [npm](https://www.npmjs.com/) >= 9.0.0
+- [npm](https://www.npmjs.com/) >= 10.0.0
 
 ### Installation
 

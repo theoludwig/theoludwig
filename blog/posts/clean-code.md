@@ -1,8 +1,8 @@
 ---
-title: '🧼 Clean Code'
+title: "🧼 Clean Code"
 description: 'What is "Clean Code", what are "Design Patterns", and why is it so important today? Tips and tricks to make your code more readable and maintainable in the long term.'
 isPublished: true
-publishedOn: '2022-02-23T08:00:18.758Z'
+publishedOn: "2022-02-23T08:00:18.758Z"
 ---
 
 Hello! 👋
@@ -110,7 +110,7 @@ const transaction = charge(user, subscription)
 ```typescript
 interface Car {
   carModel: string
-  carColor: 'red' | 'blue' | 'yellow'
+  carColor: "red" | "blue" | "yellow"
 }
 const printCar = (car: Car): void => {
   console.log(`${car.carModel} (${car.carColor})`)
@@ -122,7 +122,7 @@ const printCar = (car: Car): void => {
 ```typescript
 interface Car {
   model: string
-  color: 'red' | 'blue' | 'yellow'
+  color: "red" | "blue" | "yellow"
 }
 const printCar = (car: Car): void => {
   console.log(`${car.model} (${car.color})`)
@@ -170,17 +170,17 @@ We have to keep it as simple as possible, not to implement features that are not
 ### Example (bad way)
 
 ```typescript
-import fs from 'node:fs'
-import path from 'node:path'
+import fs from "node:fs"
+import path from "node:path"
 
 const createFile = async (
   name: string,
-  isTemporary: boolean = false
+  isTemporary: boolean = false,
 ): Promise<void> => {
   if (isTemporary) {
-    return await fs.promises.writeFile(path.join('temporary', name), '')
+    return await fs.promises.writeFile(path.join("temporary", name), "")
   }
-  return await fs.promises.writeFile(name, '')
+  return await fs.promises.writeFile(name, "")
 }
 ```
 
@@ -189,15 +189,15 @@ const createFile = async (
 ### Example (good way)
 
 ```typescript
-import fs from 'node:fs'
-import path from 'node:path'
+import fs from "node:fs"
+import path from "node:path"
 
 const createFile = async (name: string): Promise<void> => {
-  await fs.promises.writeFile(name, '')
+  await fs.promises.writeFile(name, "")
 }
 
 const createTemporaryFile = async (name: string): Promise<void> => {
-  await createFile(path.join('temporary', name))
+  await createFile(path.join("temporary", name))
 }
 ```
 

@@ -5,111 +5,111 @@ export interface Skill {
 
 export const skills = {
   JavaScript: {
-    link: 'https://developer.mozilla.org/docs/Web/JavaScript',
-    image: '/images/skills/JavaScript.png'
+    link: "https://developer.mozilla.org/docs/Web/JavaScript",
+    image: "/images/skills/JavaScript.png",
   },
   TypeScript: {
-    link: 'https://www.typescriptlang.org/',
-    image: '/images/skills/TypeScript.png'
+    link: "https://www.typescriptlang.org/",
+    image: "/images/skills/TypeScript.png",
   },
   Python: {
-    link: 'https://www.python.org/',
-    image: '/images/skills/Python.png'
+    link: "https://www.python.org/",
+    image: "/images/skills/Python.png",
   },
-  'C/C++': {
-    link: 'https://isocpp.org/',
-    image: '/images/skills/C-Cpp.png'
+  "C/C++": {
+    link: "https://isocpp.org/",
+    image: "/images/skills/C-Cpp.png",
   },
   PHP: {
-    link: 'https://www.php.net/',
-    image: '/images/skills/PHP.png'
+    link: "https://www.php.net/",
+    image: "/images/skills/PHP.png",
   },
   Laravel: {
-    link: 'https://laravel.com/',
-    image: '/images/skills/Laravel.png'
+    link: "https://laravel.com/",
+    image: "/images/skills/Laravel.png",
   },
   Dart: {
-    link: 'https://dart.dev/',
-    image: '/images/skills/Dart.png'
+    link: "https://dart.dev/",
+    image: "/images/skills/Dart.png",
   },
   Flutter: {
-    link: 'https://flutter.dev/',
-    image: '/images/skills/Flutter.webp'
+    link: "https://flutter.dev/",
+    image: "/images/skills/Flutter.webp",
   },
   HTML: {
-    link: 'https://developer.mozilla.org/docs/Web/HTML',
-    image: '/images/skills/HTML.png'
+    link: "https://developer.mozilla.org/docs/Web/HTML",
+    image: "/images/skills/HTML.png",
   },
   CSS: {
-    link: 'https://developer.mozilla.org/docs/Web/CSS',
-    image: '/images/skills/CSS.png'
+    link: "https://developer.mozilla.org/docs/Web/CSS",
+    image: "/images/skills/CSS.png",
   },
-  'Tailwind CSS': {
-    link: 'https://tailwindcss.com/',
-    image: '/images/skills/TailwindCSS.png'
+  "Tailwind CSS": {
+    link: "https://tailwindcss.com/",
+    image: "/images/skills/TailwindCSS.png",
   },
   SASS: {
-    link: 'https://sass-lang.com/',
-    image: '/images/skills/SASS.svg'
+    link: "https://sass-lang.com/",
+    image: "/images/skills/SASS.svg",
   },
-  'React.js (+ Next.js)': {
-    link: 'https://reactjs.org/',
-    image: '/images/skills/ReactJS.png'
+  "React.js (+ Next.js)": {
+    link: "https://reactjs.org/",
+    image: "/images/skills/ReactJS.png",
   },
-  'Node.js': {
-    link: 'https://nodejs.org/',
-    image: '/images/skills/NodeJS.png'
+  "Node.js": {
+    link: "https://nodejs.org/",
+    image: "/images/skills/NodeJS.png",
   },
   Fastify: {
-    link: 'https://www.fastify.io/',
+    link: "https://www.fastify.io/",
     image: {
-      light: '/images/skills/Fastify-light.png',
-      dark: '/images/skills/Fastify-dark.png'
-    }
+      light: "/images/skills/Fastify-light.png",
+      dark: "/images/skills/Fastify-dark.png",
+    },
   },
   Prisma: {
-    link: 'https://www.prisma.io/',
+    link: "https://www.prisma.io/",
     image: {
-      light: '/images/skills/Prisma-light.png',
-      dark: '/images/skills/Prisma-dark.png'
-    }
+      light: "/images/skills/Prisma-light.png",
+      dark: "/images/skills/Prisma-dark.png",
+    },
   },
   PostgreSQL: {
-    link: 'https://www.postgresql.org/',
-    image: '/images/skills/PostgreSQL.png'
+    link: "https://www.postgresql.org/",
+    image: "/images/skills/PostgreSQL.png",
   },
   MySQL: {
-    link: 'https://www.mysql.com/',
-    image: '/images/skills/MySQL.png'
+    link: "https://www.mysql.com/",
+    image: "/images/skills/MySQL.png",
   },
   Strapi: {
-    link: 'https://strapi.io/',
-    image: '/images/skills/Strapi.png'
+    link: "https://strapi.io/",
+    image: "/images/skills/Strapi.png",
   },
-  'Visual Studio Code': {
-    link: 'https://code.visualstudio.com/',
-    image: '/images/skills/VisualStudioCode.png'
+  "Visual Studio Code": {
+    link: "https://code.visualstudio.com/",
+    image: "/images/skills/VisualStudioCode.png",
   },
   Git: {
-    link: 'https://git-scm.com/',
-    image: '/images/skills/Git.png'
+    link: "https://git-scm.com/",
+    image: "/images/skills/Git.png",
   },
   Ubuntu: {
-    link: 'https://ubuntu.com/',
-    image: '/images/skills/Ubuntu.png'
+    link: "https://ubuntu.com/",
+    image: "/images/skills/Ubuntu.png",
   },
-  'Arch Linux': {
-    link: 'https://archlinux.org/',
-    image: '/images/skills/ArchLinux.png'
+  "Arch Linux": {
+    link: "https://archlinux.org/",
+    image: "/images/skills/ArchLinux.png",
   },
-  'GNU/Linux': {
-    link: 'https://www.gnu.org/',
-    image: '/images/skills/GNU-Linux.png'
+  "GNU/Linux": {
+    link: "https://www.gnu.org/",
+    image: "/images/skills/GNU-Linux.png",
   },
   Docker: {
-    link: 'https://www.docker.com/',
-    image: '/images/skills/Docker.png'
-  }
+    link: "https://www.docker.com/",
+    image: "/images/skills/Docker.png",
+  },
 } as const
 
 export type SkillName = keyof typeof skills

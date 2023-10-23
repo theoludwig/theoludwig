@@ -1,8 +1,8 @@
 ---
-title: '🟢 Thream v1.0.0'
-description: 'Your open source platform to stay close with your friends and communities, talk, chat, collaborate, share and have fun.'
+title: "🟢 Thream v1.0.0"
+description: "Your open source platform to stay close with your friends and communities, talk, chat, collaborate, share and have fun."
 isPublished: true
-publishedOn: '2022-04-11T10:24:55.206Z'
+publishedOn: "2022-04-11T10:24:55.206Z"
 ---
 
 Hello! 👋

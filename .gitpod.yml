@@ -1,13 +1,13 @@
-image: 'gitpod/workspace-full'
+image: "gitpod/workspace-full"
 
 tasks:
-  - before: 'cp .env.example .env'
-    init: 'npm clean-install'
-    command: 'npm run dev'
+  - before: "cp .env.example .env"
+    init: "npm clean-install"
+    command: "npm run dev"
 
 ports:
   - port: 3000
-    onOpen: 'open-preview'
+    onOpen: "open-preview"
 
 github:
   prebuilds:

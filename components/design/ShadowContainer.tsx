@@ -1,6 +1,6 @@
-import classNames from 'clsx'
+import classNames from "clsx"
 
-type ShadowContainerProps = React.ComponentPropsWithRef<'div'>
+type ShadowContainerProps = React.ComponentPropsWithRef<"div">
 
 export const ShadowContainer = (props: ShadowContainerProps): JSX.Element => {
   const { children, className, ...rest } = props
@@ -8,8 +8,8 @@ export const ShadowContainer = (props: ShadowContainerProps): JSX.Element => {
   return (
     <div
       className={classNames(
-        'mb-12 h-full max-w-full break-words rounded-2xl border border-solid border-[#000] shadow-light dark:shadow-dark ',
-        className
+        "mb-12 h-full max-w-full break-words rounded-2xl border border-solid border-[#000] shadow-light dark:shadow-dark ",
+        className,
       )}
       {...rest}
     >

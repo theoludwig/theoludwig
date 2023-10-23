@@ -1,8 +1,8 @@
 ---
-title: '🗓️ Git version control: Ultimate Guide'
-description: 'What is `git`, what are the most used commands, best practices, and tips and tricks. The Ultimate guide to master `git` in your daily workflow.'
+title: "🗓️ Git version control: Ultimate Guide"
+description: "What is `git`, what are the most used commands, best practices, and tips and tricks. The Ultimate guide to master `git` in your daily workflow."
 isPublished: true
-publishedOn: '2022-10-27T14:33:07.465Z'
+publishedOn: "2022-10-27T14:33:07.465Z"
 ---
 
 Hello! 👋

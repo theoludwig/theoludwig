@@ -1,10 +1,10 @@
-import type { Metadata } from 'next'
-import { notFound } from 'next/navigation'
+import type { Metadata } from "next"
+import { notFound } from "next/navigation"
 
-import 'katex/dist/katex.min.css'
+import "katex/dist/katex.min.css"
 
-import { getBlogPostBySlug } from '@/blog/blog'
-import { BlogPost } from '@/blog/BlogPost'
+import { getBlogPostBySlug } from "@/blog/blog"
+import { BlogPost } from "@/blog/BlogPost"
 
 interface BlogPostPageProps {
   params: {
@@ -13,7 +13,7 @@ interface BlogPostPageProps {
 }
 
 export const generateMetadata = async (
-  props: BlogPostPageProps
+  props: BlogPostPageProps,
 ): Promise<Metadata> => {
   const blogPost = await getBlogPostBySlug(props.params.slug)
   if (blogPost == null) {
@@ -26,12 +26,12 @@ export const generateMetadata = async (
     description,
     openGraph: {
       title,
-      description
+      description,
     },
     twitter: {
       title,
-      description
-    }
+      description,
+    },
   }
 }
 

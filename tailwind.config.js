@@ -1,53 +1,53 @@
 /** @type {import('tailwindcss').Config} */
 const tailwindConfig = {
   content: [
-    './app/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
-    './blog/**/*.{js,ts,jsx,tsx}'
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./blog/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: 'class',
+  darkMode: "class",
   theme: {
     extend: {
       screens: {
-        xs: '380px'
+        xs: "380px",
       },
       colors: {
-        black: '#181818',
+        black: "#181818",
         gray: {
-          DEFAULT: '#333333',
-          dark: '#b2bac2'
+          DEFAULT: "#333333",
+          dark: "#b2bac2",
         },
         yellow: {
-          DEFAULT: '#ff6000',
-          dark: '#ffd800'
-        }
+          DEFAULT: "#ff6000",
+          dark: "#ffd800",
+        },
       },
       boxShadow: {
-        dark: '0px 0px 4px 4px rgba(0, 0, 0, 0.25)',
-        light: '0px 0px 4px 4px rgba(0, 0, 0, 0.10)',
-        darkFlag: '0px 1px 10px hsla(0, 0%, 100%, 0.2)',
-        lightFlag: '0px 1px 10px rgba(0, 0, 0, 0.25)'
+        dark: "0px 0px 4px 4px rgba(0, 0, 0, 0.25)",
+        light: "0px 0px 4px 4px rgba(0, 0, 0, 0.10)",
+        darkFlag: "0px 1px 10px hsla(0, 0%, 100%, 0.2)",
+        lightFlag: "0px 1px 10px rgba(0, 0, 0, 0.25)",
       },
       fontFamily: {
-        headline: "'Montserrat', 'Arial', 'sans-serif'"
+        headline: "'Montserrat', 'Arial', 'sans-serif'",
       },
       typography: {
         DEFAULT: {
           css: {
             fontFamily: "'Montserrat', 'Arial', 'sans-serif'",
             a: {
-              textDecoration: 'none',
-              '&:hover': {
-                textDecoration: 'underline',
-                fontWeight: 400
-              }
-            }
-          }
-        }
-      }
-    }
+              textDecoration: "none",
+              "&:hover": {
+                textDecoration: "underline",
+                fontWeight: 400,
+              },
+            },
+          },
+        },
+      },
+    },
   },
-  plugins: [require('@tailwindcss/typography')]
+  plugins: [require("@tailwindcss/typography")],
 }
 
 module.exports = tailwindConfig

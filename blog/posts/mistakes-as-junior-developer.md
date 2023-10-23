@@ -1,8 +1,8 @@
 ---
-title: '❌ Mistakes I made as a junior developer'
-description: 'Here are mistakes I made when I started, to prevent you from making the same mistakes.'
+title: "❌ Mistakes I made as a junior developer"
+description: "Here are mistakes I made when I started, to prevent you from making the same mistakes."
 isPublished: true
-publishedOn: '2022-03-14T07:42:52.989Z'
+publishedOn: "2022-03-14T07:42:52.989Z"
 ---
 
 Hello! 👋

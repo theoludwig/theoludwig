@@ -1,7 +1,7 @@
-import { ShadowContainer } from '@/components/design/ShadowContainer'
-import { SectionHeading } from '@/components/design/Section/SectionHeading'
+import { ShadowContainer } from "@/components/design/ShadowContainer"
+import { SectionHeading } from "@/components/design/Section/SectionHeading"
 
-type SectionProps = React.ComponentPropsWithRef<'section'> & {
+type SectionProps = React.ComponentPropsWithRef<"section"> & {
   heading?: string
   description?: string
   isMain?: boolean
@@ -20,13 +20,13 @@ export const Section = (props: SectionProps): JSX.Element => {
 
   if (isMain) {
     return (
-      <div className='w-full px-3'>
+      <div className="w-full px-3">
         <ShadowContainer style={{ marginTop: 50 }}>
           <section {...rest}>
             {heading != null ? (
               <SectionHeading>{heading}</SectionHeading>
             ) : null}
-            <div className='w-full px-3'>{children}</div>
+            <div className="w-full px-3">{children}</div>
           </section>
         </ShadowContainer>
       </div>
@@ -37,7 +37,7 @@ export const Section = (props: SectionProps): JSX.Element => {
     return (
       <section {...rest}>
         {heading != null ? <SectionHeading>{heading}</SectionHeading> : null}
-        <div className='w-full px-3'>{children}</div>
+        <div className="w-full px-3">{children}</div>
       </section>
     )
   }
@@ -52,13 +52,13 @@ export const Section = (props: SectionProps): JSX.Element => {
         </SectionHeading>
       ) : null}
       {description != null ? (
-        <p style={{ marginTop: 7 }} className='text-center'>
+        <p style={{ marginTop: 7 }} className="text-center">
           {description}
         </p>
       ) : null}
-      <div className='w-full px-3'>
+      <div className="w-full px-3">
         <ShadowContainer>
-          <div className='w-full px-16 py-4 leading-8'>{children}</div>
+          <div className="w-full px-16 py-4 leading-8">{children}</div>
         </ShadowContainer>
       </div>
     </section>

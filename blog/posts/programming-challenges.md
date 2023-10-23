@@ -1,8 +1,8 @@
 ---
-title: '🧠 Programming Challenges'
-description: 'What are Programming Challenges and Competitive Programming and an introduction to Time/Space Complexity with Big O Notation.'
+title: "🧠 Programming Challenges"
+description: "What are Programming Challenges and Competitive Programming and an introduction to Time/Space Complexity with Big O Notation."
 isPublished: true
-publishedOn: '2023-05-21T10:20:18.837Z'
+publishedOn: "2023-05-21T10:20:18.837Z"
 ---
 
 Hello! 👋

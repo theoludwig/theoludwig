@@ -1,7 +1,7 @@
-@import 'modern-normalize/modern-normalize.css';
+@import "modern-normalize/modern-normalize.css";
 
 body {
-  font-family: 'Montserrat', 'Arial', 'sans-serif';
+  font-family: "Montserrat", "Arial", "sans-serif";
   background: #f0f0f0;
   color: #333;
   line-height: 1.42857143;

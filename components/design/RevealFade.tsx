@@ -1,6 +1,6 @@
-'use client'
+"use client"
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef } from "react"
 
 export type RevealFadeProps = React.PropsWithChildren
 
@@ -15,22 +15,22 @@ export const RevealFade = (props: RevealFadeProps): JSX.Element => {
         for (const entry of entries) {
           if (entry.isIntersecting) {
             entry.target.className =
-              'opacity-100 visible translate-y-0 transition-all duration-700 ease-in-out'
+              "opacity-100 visible translate-y-0 transition-all duration-700 ease-in-out"
             observer.unobserve(entry.target)
           }
         }
       },
       {
         root: null,
-        rootMargin: '0px',
-        threshold: 0.28
-      }
+        rootMargin: "0px",
+        threshold: 0.28,
+      },
     )
     observer.observe(htmlElement.current as HTMLDivElement)
   }, [])
 
   return (
-    <div ref={htmlElement} className='invisible -translate-y-7 opacity-0'>
+    <div ref={htmlElement} className="invisible -translate-y-7 opacity-0">
       {children}
     </div>
   )

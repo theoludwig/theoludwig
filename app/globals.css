@@ -16,7 +16,7 @@
 }
 
 .prose [id]::before {
-  content: '';
+  content: "";
   display: block;
   height: 90px;
   margin-top: -90px;
@@ -39,9 +39,9 @@
 .prose code {
   color: #ce9178;
 }
-.prose :where(code):not(:where([class~='not-prose'] *))::before,
-.prose :where(code):not(:where([class~='not-prose'] *))::after {
-  content: '';
+.prose :where(code):not(:where([class~="not-prose"] *))::before,
+.prose :where(code):not(:where([class~="not-prose"] *))::after {
+  content: "";
 }
 .shiki {
   white-space: pre-wrap !important;

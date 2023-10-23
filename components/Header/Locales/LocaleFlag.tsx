@@ -1,7 +1,7 @@
-import Image from 'next/image'
+import Image from "next/image"
 
-import type { CookiesStore } from '@/utils/constants'
-import { useI18n } from '@/i18n/i18n.client'
+import type { CookiesStore } from "@/utils/constants"
+import { useI18n } from "@/i18n/i18n.client"
 
 export interface LocaleFlagProps {
   locale: string
@@ -22,7 +22,7 @@ export const LocaleFlag = (props: LocaleFlagProps): JSX.Element => {
         src={`/images/locales/${locale}.svg`}
         alt={locale}
       />
-      <p data-cy='locale-flag-text' className='mx-2 text-base'>
+      <p data-cy="locale-flag-text" className="mx-2 text-base">
         {i18n.translate(`common.${locale}`)}
       </p>
     </>

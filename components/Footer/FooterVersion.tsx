@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useMemo } from "react"
 
 interface FooterVersionProps {
   version: string
@@ -12,14 +12,14 @@ export const FooterVersion = (props: FooterVersionProps): JSX.Element => {
   }, [version])
 
   return (
-    <p className='mt-1'>
-      Version{' '}
+    <p className="mt-1">
+      Version{" "}
       <a
-        data-cy='version-link'
-        className='text-yellow hover:underline dark:text-yellow-dark'
+        data-cy="version-link"
+        className="text-yellow hover:underline dark:text-yellow-dark"
         href={versionLink}
-        target='_blank'
-        rel='noopener noreferrer'
+        target="_blank"
+        rel="noopener noreferrer"
       >
         {version}
       </a>

@@ -1,37 +1,37 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { cookies } from 'next/headers'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLink } from '@fortawesome/free-solid-svg-icons'
-import { MDXRemote } from 'next-mdx-remote/rsc'
-import { nodeTypes } from '@mdx-js/mdx'
-import rehypeRaw from 'rehype-raw'
-import remarkGfm from 'remark-gfm'
-import rehypeSlug from 'rehype-slug'
-import remarkMath from 'remark-math'
-import rehypeKatex from 'rehype-katex'
-import { getHighlighter } from 'shiki'
+import Image from "next/image"
+import Link from "next/link"
+import { cookies } from "next/headers"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faLink } from "@fortawesome/free-solid-svg-icons"
+import { MDXRemote } from "next-mdx-remote/rsc"
+import { nodeTypes } from "@mdx-js/mdx"
+import rehypeRaw from "rehype-raw"
+import remarkGfm from "remark-gfm"
+import rehypeSlug from "rehype-slug"
+import remarkMath from "remark-math"
+import rehypeKatex from "rehype-katex"
+import { getHighlighter } from "shiki"
 
-import 'katex/dist/katex.min.css'
+import "katex/dist/katex.min.css"
 
-import { getTheme } from '@/theme/theme.server'
-import { remarkSyntaxHighlightingPlugin } from '@/blog/remarkSyntaxHighlightingPlugin'
-import { BlogPostComments } from '@/blog/BlogPostComments'
+import { getTheme } from "@/theme/theme.server"
+import { remarkSyntaxHighlightingPlugin } from "@/blog/remarkSyntaxHighlightingPlugin"
+import { BlogPostComments } from "@/blog/BlogPostComments"
 
 const Heading = (
   props: React.DetailedHTMLProps<
     React.HTMLAttributes<HTMLHeadingElement>,
     HTMLHeadingElement
-  >
+  >,
 ): JSX.Element => {
-  const { children, id = '' } = props
+  const { children, id = "" } = props
   return (
-    <h2 {...props} className='group'>
+    <h2 {...props} className="group">
       <Link
         href={`#${id}`}
-        className='invisible !text-black group-hover:visible dark:!text-white'
+        className="invisible !text-black group-hover:visible dark:!text-white"
       >
-        <FontAwesomeIcon className='mr-2 inline h-4 w-4' icon={faLink} />
+        <FontAwesomeIcon className="mr-2 inline h-4 w-4" icon={faLink} />
       </Link>
       {children}
     </h2>
@@ -43,7 +43,7 @@ export interface BlogPostContentProps {
 }
 
 export const BlogPostContent = async (
-  props: BlogPostContentProps
+  props: BlogPostContentProps,
 ): Promise<JSX.Element> => {
   const { content } = props
 
@@ -51,12 +51,12 @@ export const BlogPostContent = async (
   const theme = getTheme()
 
   const highlighter = await getHighlighter({
-    theme: `${theme}-plus`
+    theme: `${theme}-plus`,
   })
 
   return (
-    <div className='prose mb-10'>
-      <div className='px-8'>
+    <div className="prose mb-10">
+      <div className="px-8">
         <MDXRemote
           source={content}
           options={{
@@ -64,14 +64,14 @@ export const BlogPostContent = async (
               remarkPlugins: [
                 remarkGfm,
                 [remarkSyntaxHighlightingPlugin, { highlighter }],
-                remarkMath
+                remarkMath,
               ],
               rehypePlugins: [
                 rehypeSlug,
                 [rehypeRaw, { passThrough: nodeTypes }],
-                rehypeKatex
-              ]
-            }
+                rehypeKatex,
+              ],
+            },
           }}
           components={{
             h1: Heading,
@@ -81,27 +81,27 @@ export const BlogPostContent = async (
             h5: Heading,
             h6: Heading,
             img: (properties) => {
-              const { src = '', alt = 'Blog Image' } = properties
-              const source = src.replace('../../public/', '/')
+              const { src = "", alt = "Blog Image" } = properties
+              const source = src.replace("../../public/", "/")
               return (
-                <span className='flex flex-col items-center justify-center'>
+                <span className="flex flex-col items-center justify-center">
                   <Image
                     src={source}
                     alt={alt}
                     width={1000}
                     height={1000}
-                    className='h-auto w-auto'
+                    className="h-auto w-auto"
                   />
                 </span>
               )
             },
             a: (props) => {
-              const { href = '' } = props
-              if (href.startsWith('#')) {
+              const { href = "" } = props
+              if (href.startsWith("#")) {
                 return <a {...props} />
               }
-              return <a target='_blank' rel='noopener noreferrer' {...props} />
-            }
+              return <a target="_blank" rel="noopener noreferrer" {...props} />
+            },
           }}
         />
         <BlogPostComments cookiesStore={cookiesStore.toString()} />

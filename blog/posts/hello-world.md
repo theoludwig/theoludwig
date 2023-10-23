@@ -1,8 +1,8 @@
 ---
-title: '👋 Hello, world!'
-description: 'First post of the blog, introduction and explanation of how this blog is made.'
+title: "👋 Hello, world!"
+description: "First post of the blog, introduction and explanation of how this blog is made."
 isPublished: true
-publishedOn: '2022-02-20T08:00:18.758Z'
+publishedOn: "2022-02-20T08:00:18.758Z"
 ---
 
 Hello, world! 👋

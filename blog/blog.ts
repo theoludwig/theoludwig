@@ -1,10 +1,10 @@
-import fs from 'node:fs'
-import path from 'node:path'
+import fs from "node:fs"
+import path from "node:path"
 
-import { cache } from 'react'
-import matter from 'gray-matter'
+import { cache } from "react"
+import matter from "gray-matter"
 
-export const BLOG_POSTS_PATH = path.join(process.cwd(), 'blog', 'posts')
+export const BLOG_POSTS_PATH = path.join(process.cwd(), "blog", "posts")
 
 export interface FrontMatter {
   title: string
@@ -23,13 +23,13 @@ export const getBlogPosts = cache(async (): Promise<BlogPost[]> => {
   const blogPosts = await fs.promises.readdir(BLOG_POSTS_PATH)
   const blogPostsWithTime = await Promise.all(
     blogPosts.map(async (blogPostFilename) => {
-      const [slug, extension] = blogPostFilename.split('.')
+      const [slug, extension] = blogPostFilename.split(".")
       if (slug == null || extension == null) {
-        throw new Error('Invalid blog post filename.')
+        throw new Error("Invalid blog post filename.")
       }
       const blogPostPath = path.join(BLOG_POSTS_PATH, `${slug}.${extension}`)
       const blogPostContent = await fs.promises.readFile(blogPostPath, {
-        encoding: 'utf8'
+        encoding: "utf8",
       })
       const { data, content } = matter(blogPostContent) as unknown as {
         data: FrontMatter
@@ -40,9 +40,9 @@ export const getBlogPosts = cache(async (): Promise<BlogPost[]> => {
         slug,
         content,
         frontmatter: data,
-        time: date.getTime()
+        time: date.getTime(),
       }
-    })
+    }),
   )
   const blogPostsSortedByPublicationDate = blogPostsWithTime
     .filter((post) => {
@@ -61,5 +61,5 @@ export const getBlogPostBySlug = cache(
       return blogPost.slug === slug && blogPost.frontmatter.isPublished
     })
     return blogPost
-  }
+  },
 )
