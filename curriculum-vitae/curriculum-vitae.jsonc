@@ -22,8 +22,9 @@
       "courses": [
         "Développement Web en Node.js et React.js",
         "Intégration/Déploiement Continue et Docker",
-        "Projet développement LLM (Large Language Model) et NLP (Natural Language Processing)",
-        "Base de données NoSQL (MongoDB)"
+        "Complexité Algorithmique Théorique et Pratique en C++",
+        // "Projet développement LLM (Large Language Model) et NLP (Natural Language Processing)",
+        "Base de données NoSQL (Redis, MongoDB, Cassandra)"
       ]
     },
     {
@@ -34,7 +35,7 @@
       "score": "2ème année",
       "courses": [
         "Développement Web avec le framework Laravel en PHP",
-        "Qualité de développement et Tests unitaires, d'intégration, fonctionnels/systèmes, d'acceptation etc.",
+        "Qualité de développement et Tests automatisés",
         "Patrons et Principes de conceptions (Code maintenable et réutilisable) en UML",
         "Programmation systèmes en C (Multi-Thread, Serveur/Client UDP/TCP)",
         "Sécurisation des accès à la base de données et PL/SQL"
