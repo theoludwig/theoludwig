@@ -40,12 +40,6 @@
         "image": "/images/portfolio/Carolo.png"
       },
       {
-        "title": "Thream",
-        "description": "Votre plateforme open source pour rester proche de vos amis et communautés, parler, discuter, collaborer, partager et amusez-vous.",
-        "link": "https://thream.theoludwig.fr/",
-        "image": "/images/portfolio/Thream.png"
-      },
-      {
         "title": "Leon",
         "description": "Leon est votre assistant personnel open source.",
         "link": "https://getleon.ai/",
