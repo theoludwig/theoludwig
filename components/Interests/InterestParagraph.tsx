@@ -1,8 +1,17 @@
 import htmlParser from "html-react-parser"
+import { faCode, faMicrochip } from "@fortawesome/free-solid-svg-icons"
+import { faGit } from "@fortawesome/free-brands-svg-icons"
+
+export const InterestsIcons = {
+  code: faCode,
+  "open-source": faGit,
+  "high-tech": faMicrochip,
+} as const
 
 export interface InterestParagraphProps {
   title: string
   description: string
+  id: keyof typeof InterestsIcons
 }
 
 export const InterestParagraph = (

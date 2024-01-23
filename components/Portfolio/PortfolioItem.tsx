@@ -35,7 +35,7 @@ export const PortfolioItem = (props: PortfolioItemProps): JSX.Element => {
           <h3 className="my-6 text-xl font-semibold text-yellow dark:text-yellow-dark">
             {title}
           </h3>
-          <p className="my-6">{description}</p>
+          <p className="my-6 mx-2">{description}</p>
         </div>
       </a>
     </ShadowContainer>

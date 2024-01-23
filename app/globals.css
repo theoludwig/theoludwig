@@ -7,6 +7,10 @@
   word-break: break-word;
 }
 
+.text-base {
+  line-height: 1.75rem;
+}
+
 .prose {
   @apply !max-w-5xl scroll-smooth text-gray dark:text-gray-300;
 }
@@ -26,6 +30,11 @@
 .prose a,
 .prose strong {
   @apply text-yellow dark:text-yellow-dark;
+}
+
+strong,
+b {
+  @apply font-bold;
 }
 
 .prose h2,

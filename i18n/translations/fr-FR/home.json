@@ -6,22 +6,20 @@
     "birth-date": "Date de naissance",
     "years-old": "ans",
     "nationality": "Nationalité",
-    "description-bottom": "Je suis étudiant à l'université suivant la formation \"BUT Informatique\" et me forme en autodidacte dans l'informatique en suivant des formations en ligne."
+    "description-bottom": "Je me demande constamment comment <strong>améliorer notre présent, afin de rendre notre futur meilleur</strong>, particulièrement grâce aux progrès de l'<strong>informatique</strong>."
   },
   "interests": {
     "title": "Intérêts",
     "paragraphs": [
       {
         "title": "Développeur Full Stack",
-        "description": "La programmation informatique est mon loisir principal, j'adore! <br/> Principalement du développement Web pour le moment, mais je programme aussi dans d'autres langages de programmation."
+        "description": "Ma priorité réside dans la création d'expériences utilisateurs (<abbr title=\"User Experience\">UX</abbr>) intuitives, <strong>répondant aux besoins des utilisateurs de la manière la plus efficace que possible</strong>. <br/> Principalement axé sur l'élaboration de <strong>solutions en Développement Web</strong>. <br/>Je suis également intéressé par le développement d'applications mobiles parmis d'autres domaines de l'informatique.",
+        "id": "code"
       },
       {
         "title": "Enthousiaste de l'Open-Source",
-        "description": "Pour moi, tout le monde devrait travailler, résoudre des problèmes, construire des choses et réfléchir ensemble. <br/> Le site est open-source sur <a class='text-yellow dark:text-yellow-dark hover:underline' href='https://github.com/theoludwig/theoludwig' target='_blank' rel='noopener noreferrer'>GitHub</a>."
-      },
-      {
-        "title": "Passionné de High-Tech",
-        "description": "Je me suis toujours demandé comment l'avenir serait. Chaque jour, je veux me réveiller et penser que l'avenir sera formidable et meilleur que le passé. Les technolgies s'améliorent progressivement avec le temps, ce qui est très utile dans de nombreux domaines."
+        "description": "J'apprécie le <strong>partage des connaissances et la collaboration</strong> pour résoudre des défis collectivement. <br /> Le code source du site est accessible sur <a class='text-yellow dark:text-yellow-dark hover:underline' href='https://github.com/theoludwig/theoludwig' target='_blank' rel='noopener noreferrer'>GitHub</a>.",
+        "id": "open-source"
       }
     ]
   },

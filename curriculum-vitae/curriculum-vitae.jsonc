@@ -7,10 +7,10 @@
     "email": "contact@theoludwig.fr",
     "age": "31/03/2003",
     "location": {
-      "address": "Alsace, France"
+      "address": "Alsace, France",
     },
     "url": "https://theoludwig.fr",
-    "summary": "Je suis étudiant à l'université suivant la formation \"BUT Informatique\" et me forme en autodidacte dans l'informatique en suivant des formations en ligne. <br/> Je mets en pratique tout ce que j'apprends et réalise de nombreux projets (disponible sur <a href=\"https://theoludwig.fr\">theoludwig.fr</a>)."
+    "summary": "Je me demande constamment comment améliorer notre présent, afin de rendre notre futur meilleur, particulièrement grâce aux progrès de l'informatique. <br /> Ma priorité réside dans la création d'expériences utilisateurs (UX) intuitives, répondant aux besoins des utilisateurs de la manière la plus efficace que possible.",
   },
   "education": [
     {
@@ -24,8 +24,8 @@
         "Intégration/Déploiement Continue et Docker",
         "Complexité Algorithmique Théorique et Pratique en C++",
         // "Projet développement LLM (Large Language Model) et NLP (Natural Language Processing)",
-        "Base de données NoSQL (Redis, MongoDB, Cassandra)"
-      ]
+        "Base de données NoSQL (Redis, MongoDB, Cassandra)",
+      ],
     },
     {
       "startDate": "2022",
@@ -38,8 +38,8 @@
         "Qualité de développement et Tests automatisés",
         "Patrons et Principes de conceptions (Code maintenable et réutilisable) en UML",
         "Programmation systèmes en C (Multi-Thread, Serveur/Client UDP/TCP)",
-        "Sécurisation des accès à la base de données et PL/SQL"
-      ]
+        "Sécurisation des accès à la base de données et PL/SQL",
+      ],
     },
     {
       "startDate": "2021",
@@ -51,16 +51,16 @@
         "Développement Orientée Objet en Java",
         "Programmation systèmes en C (Allocation mémoire, Pointeurs, Structures)",
         "Développement d'application Windows Forms (.NET Framework) en C#",
-        "Base de données relationnelles et langage SQL"
-      ]
+        "Base de données relationnelles et langage SQL",
+      ],
     },
     {
       "startDate": "2019",
       "endDate": "2021",
       "studyType": "Baccalauréat Général (Mathématiques et Numériques Sciences Informatiques)",
       "institution": "Lycée Heinrich Nessel à Haguenau",
-      "score": "Mention Assez Bien"
-    }
+      "score": "Mention Assez Bien",
+    },
     // {
     //   "startDate": "2014",
     //   "endDate": "2018",
@@ -78,7 +78,7 @@
       "position": "Alternant Développeur Web Full Stack",
       "startDate": "2023-08-28",
       "endDate": "2024-09-02",
-      "duration": "1 an"
+      "duration": "1 an",
     },
     {
       "summary": "Développement d'un outil GED (Gestion Électronique de Documents) en React.js, Laravel et GraphQL.",
@@ -88,7 +88,7 @@
       "position": "Stagiaire Développeur Web Full Stack",
       "startDate": "2023-04-11",
       "endDate": "2023-07-26",
-      "duration": "4 mois"
+      "duration": "4 mois",
     },
     // {
     //   "summary": "Agent administratif - Numérisation et archivage des plans électriques initialement sous format papier calque.",
@@ -108,7 +108,7 @@
       "position": "Stage initiation métier développeur web",
       "startDate": "2019-06-17",
       "endDate": "2019-06-21",
-      "duration": "1 semaine"
+      "duration": "1 semaine",
     },
     {
       "description": "interests",
@@ -118,7 +118,7 @@
       "position": "Participation en équipe de 5 personnes",
       "startDate": "2021-12-02",
       "endDate": "2021-12-03",
-      "duration": "1 semaine"
+      "duration": "1 semaine",
     },
     {
       "description": "interests",
@@ -129,8 +129,8 @@
       "position": "Initiation métier Développeur web",
       "startDate": "2019-06-24",
       "endDate": "2019-06-28",
-      "duration": "1 semaine"
-    }
+      "duration": "1 semaine",
+    },
     // {
     //   "summary": "Apprentissage du métier \"Chargé de communication\" et des logiciels de graphisme tels que \"Adobe Photoshop\".",
     //   "website": "https://es.fr/",
@@ -144,24 +144,24 @@
   ],
   "interests": [
     {
-      "name": "Enthousiaste de l'Open-Source"
+      "name": "Enthousiaste de l'Open-Source",
     },
     {
-      "name": "Passionné de High-Tech"
-    }
+      "name": "Passionné de High-Tech",
+    },
   ],
   "skills": [
     {
       "keywords": ["JavaScript/TypeScript", "Python", "C/C++", "PHP"],
-      "name": "Langages de programmation"
+      "name": "Langages de programmation",
     },
     {
       "keywords": ["HTML", "CSS", "Tailwind CSS", "React.js/Next.js"],
-      "name": "Frontend"
+      "name": "Frontend",
     },
     {
       "keywords": ["Laravel", "Node.js", "Fastify", "PostgreSQL"],
-      "name": "Backend"
+      "name": "Backend",
     },
     {
       "keywords": [
@@ -169,13 +169,13 @@
         "Arch Linux",
         "Visual Studio Code",
         "Git",
-        "Docker"
+        "Docker",
       ],
-      "name": "Logiciels et outils"
+      "name": "Logiciels et outils",
     },
     {
       "keywords": ["Permis B", "Anglais"],
-      "name": "Autres"
-    }
-  ]
+      "name": "Autres",
+    },
+  ],
 }

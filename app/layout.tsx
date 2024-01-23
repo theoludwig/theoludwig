@@ -12,7 +12,7 @@ import { getTheme } from "@/theme/theme.server"
 
 const title = "Théo LUDWIG"
 const description =
-  "Théo LUDWIG - Developer Full Stack • Open-Source enthusiast"
+  "Théo LUDWIG - Developer Full Stack • Open-Source Enthusiast"
 const image = "/images/icon-96x96.png"
 const url = new URL("https://theoludwig.fr")
 const locale = "fr-FR, en-US"
