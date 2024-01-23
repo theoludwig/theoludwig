@@ -41,13 +41,13 @@ Find the right balance, between abstraction and simple implementation, start sim
 
 When you start a new project, you should focus on the core of the project, not on the details, to release as soon as possible, a working usable version of your project also called a [**Minimum Viable Product** (MVP)](https://en.wikipedia.org/wiki/Minimum_viable_product), it is better than a half-functioning, over-engineered project.
 
-I made this mistake while developing [Thream](https://thream.theoludwig.fr), your **open source** platform to stay close with your friends and communities, **talk**, chat, **collaborate**, share and **have fun**.
+I made this mistake while developing [Thream](../posts/thream-v1-0-0.md), your **open source** platform to stay close with your friends and communities, **talk**, chat, **collaborate**, share and **have fun**.
 
 Basically, I thought it was cool, to do a "big" v1.0.0 release with a lot of features, but in fact, it was not, because I could not even show what I was developing (to the end-users, not technical people) as I was making multiple features at the same time and also mainly focused on the **REST API** side and not at all the **website (frontend)**.
 
 What I recommend you to do is to start with a **v1.0.0** release as soon as possible with the minimum required features needed for your project idea, and then gradually add new features and release new versions.
 
-In my example for [Thream](https://thream.theoludwig.fr), I could release a v1.0.0 without these features:
+In my example for [Thream](../posts/thream-v1-0-0.md), I could release a v1.0.0 without these features:
 
 - English/French translation (could be only English)
 - Light/Dark theme (could be only Dark)
@@ -55,7 +55,7 @@ In my example for [Thream](https://thream.theoludwig.fr), I could release a v1.0
 - User public profile
 - Channels (maybe could be only one channel per guild to start with)
 
-And probably more, what was really required with [Thream](https://thream.theoludwig.fr), is that users could authenticate, create a community of friends, and then they could communicate with each other with messages in real-time, really that was enough.
+And probably more, what was really required with [Thream](../posts/thream-v1-0-0.md), is that users could authenticate, create a community of friends, and then they could communicate with each other with messages in real-time, really that was enough.
 
 And then with this basis, I could release, v1.1.0, v1.2.0 etc. with more features, and release new versions more often to show the progress of the project, it is also more motivating to have users testing our project and to **get feedback sooner**.
 

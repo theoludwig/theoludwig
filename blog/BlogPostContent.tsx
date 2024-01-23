@@ -96,9 +96,19 @@ export const BlogPostContent = async (
               )
             },
             a: (props) => {
-              const { href = "" } = props
+              const { href = "", ...rest } = props
               if (href.startsWith("#")) {
                 return <a {...props} />
+              }
+              if (href.startsWith("../posts/")) {
+                return (
+                  <a
+                    href={href
+                      .replace("../posts/", "/blog/")
+                      .replace(".md", "")}
+                    {...rest}
+                  />
+                )
               }
               return <a target="_blank" rel="noopener noreferrer" {...props} />
             },

@@ -5,15 +5,25 @@ isPublished: true
 publishedOn: "2022-04-11T10:24:55.206Z"
 ---
 
+⚠️ **Thream** is **not maintained anymore**, and is no longer accessible on ~~[thream.theoludwig.fr](https://thream.theoludwig.fr)`~~.
+
+While the project taught me a lot, it had too much ambitions for new features, with nearly no users, and no contributors.
+
+You can still use the code as you wish and fork it to maintain it yourself, as the code is completely open source on [GitHub](https://github.com/Thream).
+
+This blog post is still available to explain the project, and how it was implemented.
+
+---
+
 Hello! 👋
 
-After months of hard work, [Thream v1.0.0](https://thream.theoludwig.fr/) has been released! 🎉
+After months of hard work, [Thream v1.0.0](https://github.com/Thream) has been released! 🎉
 
-[**Thream**](https://thream.theoludwig.fr/) is your open-source platform to stay close with your friends and communities, talk, chat, collaborate, share and have fun.
+[**Thream**](https://github.com/Thream) is your open-source platform to stay close with your friends and communities, talk, chat, collaborate, share and have fun.
 
 ## Presentation
 
-[**Thream**](https://thream.theoludwig.fr/) is a social network to stay close with your friends and communities to talk, chat, collaborate and share.
+[**Thream**](https://github.com/Thream) is a social network to stay close with your friends and communities to talk, chat, collaborate and share.
 
 The project is largely inspired by [Discord](https://discord.com), a proprietary instant messaging service, but differentiates itself by its **non-profit open source philosophy** and will integrate special features.
 
@@ -23,7 +33,7 @@ The idea is that a user can create an account to authenticate with an email addr
 
 ![The Thream app on a community page](../../public/images/posts/thream-v1-0-0/thream-ui.png)
 
-[**Thream**](https://thream.theoludwig.fr/) is a website that works on any recent browser, accessible on [thream.theoludwig.fr](https://thream.theoludwig.fr/).
+[**Thream**](https://github.com/Thream) is a website that works on any recent browser.
 
 ## History
 
@@ -115,5 +125,3 @@ The other interest of the project is that it is completely **open-source**, and 
 **Thream** is **non-profit** and therefore has no financial goal, deadline or specific feature target, which makes the design of the project a hobby and a way to learn new concepts.
 
 Feel free to give feebacks and suggestions to improve the project, and to report any bug you find.
-
-**Thream** is available: [**thream.theoludwig.fr**](https://thream.theoludwig.fr/).
