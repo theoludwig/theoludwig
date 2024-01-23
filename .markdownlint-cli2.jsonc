@@ -1,12 +1,12 @@
 {
   "config": {
+    "extends": "markdownlint/style/prettier",
     "default": true,
     "relative-links": true,
-    "extends": "markdownlint/style/prettier",
-    "MD024": false,
-    "MD033": false
+    "no-duplicate-heading": false,
+    "no-inline-html": false,
   },
   "globs": ["**/*.{md,mdx}"],
   "ignores": ["**/node_modules"],
-  "customRules": ["markdownlint-rule-relative-links"]
+  "customRules": ["markdownlint-rule-relative-links"],
 }

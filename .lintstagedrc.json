@@ -1,4 +1,4 @@
 {
   "**/*": ["prettier --write --ignore-unknown", "editorconfig-checker"],
-  "*.{md,mdx}": ["markdownlint-cli2 --fix"]
+  "**/*.{md,mdx}": ["markdownlint-cli2 --fix --no-globs"]
 }

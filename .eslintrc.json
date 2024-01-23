@@ -5,7 +5,16 @@
     "project": "./tsconfig.json"
   },
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "react/self-closing-comp": [
+      "error",
+      {
+        "component": true,
+        "html": true
+      }
+    ],
+    "react/void-dom-elements-no-children": "error",
+    "react/jsx-boolean-value": "error"
   },
   "overrides": [
     {

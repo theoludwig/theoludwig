@@ -9,13 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "jsonc-parser": "3.2.0",
+    "jsonc-parser": "3.2.1",
     "modern-normalize": "2.0.0"
   },
   "devDependencies": {
-    "@types/node": "20.10.5",
-    "date-and-time": "3.0.3",
-    "vite": "5.0.10",
-    "vite-plugin-html": "3.2.1"
+    "@types/node": "20.11.5",
+    "date-and-time": "3.1.1",
+    "vite": "5.0.12",
+    "vite-plugin-html": "3.2.2"
   }
 }

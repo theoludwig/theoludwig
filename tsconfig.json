@@ -3,14 +3,14 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
-    "moduleResolution": "Node",
-    "lib": ["dom", "dom.iterable", "ESNext"],
+    "moduleResolution": "Bundler",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
     },
-    "types": ["cypress"],
+    "types": ["@total-typescript/ts-reset", "cypress"],
     "noEmit": true,
     "resolveJsonModule": true,
     "jsx": "preserve",
@@ -20,10 +20,10 @@
     "isolatedModules": true,
     "plugins": [
       {
-        "name": "next"
-      }
-    ]
+        "name": "next",
+      },
+    ],
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", ".next"],
 }
