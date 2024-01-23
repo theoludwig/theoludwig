@@ -22,9 +22,9 @@ export const OpenSource = (): JSX.Element => {
           href="https://github.com/standard/standard/commits?author=theoludwig"
         />
         <Repository
-          name="nrwl/nx"
-          description="Smart, Fast and Extensible Build System"
-          href="https://github.com/nrwl/nx/commits?author=theoludwig"
+          name="DefinitelyTyped/DefinitelyTyped"
+          description="High quality TypeScript type definitions."
+          href="https://github.com/DefinitelyTyped/DefinitelyTyped/commits?author=theoludwig"
         />
         <Repository
           name="vercel/next.js"
