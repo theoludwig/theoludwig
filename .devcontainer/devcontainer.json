@@ -7,8 +7,8 @@
     "vscode": {
       "settings": {
         "remote.autoForwardPorts": false,
-        "remote.localPortHost": "allInterfaces"
-      }
+        "remote.localPortHost": "allInterfaces",
+      },
     },
     "extensions": [
       "editorconfig.editorconfig",
@@ -17,8 +17,8 @@
       "davidanson.vscode-markdownlint",
       "bradlc.vscode-tailwindcss",
       "mikestead.dotenv",
-      "ms-azuretools.vscode-docker"
-    ]
+      "ms-azuretools.vscode-docker",
+    ],
   },
-  "remoteUser": "node"
+  "remoteUser": "node",
 }
