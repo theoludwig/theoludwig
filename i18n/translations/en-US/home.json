@@ -6,14 +6,14 @@
     "birth-date": "Birth date",
     "years-old": "years old",
     "nationality": "Nationality",
-    "description-bottom": "I wonder constantly how to <strong>improve our present, to make our future better</strong>, particularly in the advancements in <strong>computer science</strong>."
+    "description-bottom": "I constantly wonder how to <strong>improve our present, to make our future better</strong>, particularly thanks to the advancements in <strong>computer science</strong>."
   },
   "interests": {
     "title": "Interests",
     "paragraphs": [
       {
         "title": "Developer Full Stack",
-        "description": "My priority is to craft intuitive user experiences (<abbr title=\"User Experience\">UX</abbr>), that meet the needs of the users <strong>in the most efficient way possible</strong>. <br/> Mainly focused on the development of <strong>Web Development solutions</strong>. <br/> I am also interested in mobile application development among other areas within the field of computer science.",
+        "description": "My priority is to craft <strong>intuitive user experiences (<abbr title=\"User Experience\">UX</abbr>)</strong>, that meet the needs of the users <strong>in the most efficient way possible</strong>. <br/> Mainly focused on the development of <strong>Web solutions</strong>. <br/> I am also interested in mobile and desktop application development, among other areas within the field of computer science.",
         "id": "code"
       },
       {
