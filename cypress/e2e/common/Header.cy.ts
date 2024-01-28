@@ -53,7 +53,7 @@ describe("Common > Header", () => {
       cy.get("[data-cy=locales-list]").should("not.be.visible")
       cy.get("[data-cy=locale-click]").click()
       cy.get("[data-cy=locales-list]").should("be.visible")
-      cy.get("h1").click()
+      cy.get("main h1").click()
       cy.get("[data-cy=locales-list]").should("not.be.visible")
     })
   })

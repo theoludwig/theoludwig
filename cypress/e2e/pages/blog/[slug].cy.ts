@@ -2,7 +2,7 @@ describe("Page /blog/[slug]", () => {
   it("should displays the first blog post (`hello-world`)", () => {
     cy.visit("/blog/hello-world")
     cy.get("[data-cy=locale-flag-text]").should("not.exist")
-    cy.get("h1").should("have.text", "👋 Hello, world!")
+    cy.get("main h1").should("have.text", "👋 Hello, world!")
     cy.get(".prose a:visible").should("have.attr", "target", "_blank")
   })
 
