@@ -15,16 +15,16 @@ const tailwindConfig = {
         black: "#181818",
         gray: {
           DEFAULT: "#333333",
-          dark: "#b2bac2",
+          dark: "#b7c0c9",
         },
         yellow: {
-          DEFAULT: "#ff6000",
-          dark: "#ffd800",
+          DEFAULT: "#006cff",
+          dark: "#00aeff",
         },
       },
       boxShadow: {
-        dark: "0px 0px 4px 4px rgba(0, 0, 0, 0.25)",
-        light: "0px 0px 4px 4px rgba(0, 0, 0, 0.10)",
+        dark: "0px 0px 2px 2px rgba(0, 0, 0, 0.25)",
+        light: "0px 0px 2px 2px rgba(0, 0, 0, 0.10)",
         darkFlag: "0px 1px 10px hsla(0, 0%, 100%, 0.2)",
         lightFlag: "0px 1px 10px rgba(0, 0, 0, 0.25)",
       },

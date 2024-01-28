@@ -21,7 +21,9 @@ export const BlogPost = async (props: BlogPostProps): Promise<JSX.Element> => {
   return (
     <main className="break-wrap-words flex flex-1 flex-col flex-wrap items-center justify-center">
       <div className="my-10 flex flex-col items-center text-center">
-        <h1 className="text-3xl font-semibold">{blogPost.frontmatter.title}</h1>
+        <h1 className="text-3xl font-semibold text-yellow dark:text-yellow-dark">
+          {blogPost.frontmatter.title}
+        </h1>
         <p className="mt-2" data-cy="blog-post-date">
           {date.format(
             new Date(blogPost.frontmatter.publishedOn),

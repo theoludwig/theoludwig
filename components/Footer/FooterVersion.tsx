@@ -16,7 +16,7 @@ export const FooterVersion = (props: FooterVersionProps): JSX.Element => {
       Version{" "}
       <a
         data-cy="version-link"
-        className="text-yellow hover:underline dark:text-yellow-dark"
+        className="text-yellow hover:underline dark:text-yellow-dark font-semibold"
         href={versionLink}
         target="_blank"
         rel="noopener noreferrer"

@@ -2,6 +2,7 @@ import { cookies } from "next/headers"
 import Link from "next/link"
 import Image from "next/image"
 
+import Logo from "@/public/images/logo.png"
 import { getI18n } from "@/i18n/i18n.server"
 
 import { Locales } from "./Locales"
@@ -17,13 +18,12 @@ export const Header = (): JSX.Element => {
         <div className="flex items-center justify-center">
           <Image
             quality={100}
-            width={60}
-            height={60}
-            src="/images/icon_small.png"
+            className="w-16 h-16"
+            src={Logo}
             alt="Théo LUDWIG"
             priority
           />
-          <strong className="ml-1 hidden font-headline font-semibold text-yellow dark:text-yellow-dark xs:block">
+          <strong className="ml-1 hidden font-headline font-semibold text-yellow dark:text-yellow-dark xs:block sm:text-xl">
             Théo LUDWIG
           </strong>
         </div>
@@ -33,7 +33,7 @@ export const Header = (): JSX.Element => {
           <Link
             href="/blog"
             data-cy="header-blog-link"
-            className="text-yellow hover:underline dark:text-yellow-dark"
+            className="font-semibold text-yellow hover:underline dark:text-yellow-dark"
           >
             Blog
           </Link>

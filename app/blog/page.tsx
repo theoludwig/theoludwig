@@ -25,7 +25,9 @@ const BlogPage = async (): Promise<JSX.Element> => {
   return (
     <main className="flex flex-1 flex-col flex-wrap items-center">
       <div className="mt-10 flex flex-col items-center">
-        <h1 className="text-4xl font-semibold">Blog</h1>
+        <h1 className="text-4xl font-semibold text-yellow dark:text-yellow-dark">
+          Blog
+        </h1>
         <p className="mt-6 text-center" data-cy="blog-post-date">
           {description}
         </p>

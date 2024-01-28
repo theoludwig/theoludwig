@@ -42,7 +42,7 @@ export const SkillComponent = (props: SkillComponentProps): JSX.Element => {
           alt={skill}
           src={getImage()}
         />
-        <p className="mt-1">{skill}</p>
+        <p className="mt-1 font-semibold">{skill}</p>
       </div>
     </a>
   )

@@ -18,7 +18,7 @@
       },
       {
         "title": "Enthousiaste de l'Open-Source",
-        "description": "J'apprécie le <strong>partage des connaissances et la collaboration</strong> pour résoudre des défis collectivement. <br /> Le code source du site est accessible sur <a class='text-yellow dark:text-yellow-dark hover:underline' href='https://github.com/theoludwig/theoludwig' target='_blank' rel='noopener noreferrer'>GitHub</a>.",
+        "description": "J'apprécie le <strong>partage des connaissances et la collaboration</strong> pour résoudre des défis collectivement. <br /> Le code source du site est accessible sur <a class='text-yellow dark:text-yellow-dark hover:underline font-semibold' href='https://github.com/theoludwig/theoludwig' target='_blank' rel='noopener noreferrer'>GitHub</a>.",
         "id": "open-source"
       }
     ]

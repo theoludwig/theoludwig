@@ -12,7 +12,7 @@ export const ProfileDescriptionBottom = (): JSX.Element => {
       <br />
       <a
         href="/curriculum-vitae/index.html"
-        className="text-yellow hover:underline dark:text-yellow-dark"
+        className="text-yellow hover:underline dark:text-yellow-dark font-semibold"
       >
         Curriculum vitæ ({i18n.translate("common.fr-FR")})
       </a>

@@ -32,10 +32,10 @@ export const PortfolioItem = (props: PortfolioItemProps): JSX.Element => {
           />
         </div>
         <div className="absolute bottom-0 h-auto overflow-hidden text-center opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-          <h3 className="my-6 text-xl font-semibold text-yellow dark:text-yellow-dark">
+          <h3 className="my-6 text-2xl font-semibold text-yellow dark:text-yellow-dark">
             {title}
           </h3>
-          <p className="my-6 mx-2">{description}</p>
+          <p className="my-6 mx-4 font-semibold">{description}</p>
         </div>
       </a>
     </ShadowContainer>
