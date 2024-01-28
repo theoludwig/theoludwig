@@ -8,9 +8,6 @@ const tailwindConfig = {
   darkMode: "class",
   theme: {
     extend: {
-      screens: {
-        xs: "380px",
-      },
       colors: {
         black: "#181818",
         gray: {
