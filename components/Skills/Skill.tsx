@@ -35,7 +35,7 @@ export const SkillComponent = (props: SkillComponentProps): JSX.Element => {
     >
       <div className="text-center">
         <Image
-          className="inline h-16 w-16"
+          className="inline size-16"
           quality={100}
           width={64}
           height={64}

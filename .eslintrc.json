@@ -1,8 +1,22 @@
 {
-  "extends": ["conventions", "next/core-web-vitals", "prettier"],
+  "root": true,
+  "extends": [
+    "conventions",
+    "next/core-web-vitals",
+    "plugin:tailwindcss/recommended",
+    "prettier"
+  ],
   "plugins": ["prettier"],
   "parserOptions": {
     "project": "./tsconfig.json"
+  },
+  "settings": {
+    "tailwindcss": {
+      "callees": ["classNames"]
+    },
+    "react": {
+      "version": "detect"
+    }
   },
   "rules": {
     "prettier/prettier": "error",

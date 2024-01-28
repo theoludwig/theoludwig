@@ -29,7 +29,7 @@
 
 .prose a,
 .prose strong {
-  @apply text-yellow dark:text-yellow-dark font-semibold;
+  @apply font-semibold text-yellow dark:text-yellow-dark;
 }
 
 strong,

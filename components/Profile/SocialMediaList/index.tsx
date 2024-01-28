@@ -9,7 +9,7 @@ import { NPMIcon } from "./SocialMediaIcons/NPMIcon"
 
 export const SocialMediaList = (): JSX.Element => {
   return (
-    <ul className="social-media-list m-0 mt-2 list-none py-4 text-center">
+    <ul className="m-0 mt-2 list-none py-4 text-center">
       <SocialMediaItem link="https://github.com/theoludwig" ariaLabel="GitHub">
         <GitHubIcon />
       </SocialMediaItem>

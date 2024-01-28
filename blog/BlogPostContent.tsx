@@ -31,7 +31,7 @@ const Heading = (
         href={`#${id}`}
         className="invisible !text-black group-hover:visible dark:!text-white"
       >
-        <FontAwesomeIcon className="mr-2 inline h-4 w-4" icon={faLink} />
+        <FontAwesomeIcon className="mr-2 inline size-4" icon={faLink} />
       </Link>
       {children}
     </h2>
@@ -90,7 +90,7 @@ export const BlogPostContent = async (
                     alt={alt}
                     width={1000}
                     height={1000}
-                    className="h-auto w-auto"
+                    className="size-auto"
                   />
                 </span>
               )

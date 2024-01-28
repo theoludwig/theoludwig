@@ -13,7 +13,7 @@ export const SkillsSection = (props: SkillsSectionProps): JSX.Element => {
       <div className="mx-auto w-full px-4">
         <div className="flex flex-wrap px-4 py-6">
           <div className="flex-1">
-            <div className="mb-8 border-b border-gray-600 dark:border-white dark:border-opacity-10">
+            <div className="mb-8 border-b border-gray-600 dark:border-white/10">
               <h3 className="my-3 text-xl font-semibold text-yellow dark:text-yellow-dark">
                 {title}
               </h3>

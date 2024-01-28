@@ -18,7 +18,7 @@ export const Header = (): JSX.Element => {
         <div className="flex items-center justify-center">
           <Image
             quality={100}
-            className="w-16 h-16"
+            className="size-16"
             src={Logo}
             alt="Théo LUDWIG"
             priority

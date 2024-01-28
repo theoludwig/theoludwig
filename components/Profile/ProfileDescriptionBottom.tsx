@@ -6,13 +6,13 @@ export const ProfileDescriptionBottom = (): JSX.Element => {
   const i18n = getI18n()
 
   return (
-    <div className="my-6 text-gray dark:text-gray-dark text-center max-w-md text-base">
+    <div className="my-6 max-w-md text-center text-base text-gray dark:text-gray-dark">
       <p>{htmlParser(i18n.translate("home.about.description-bottom"))}</p>
 
       <br />
       <a
         href="/curriculum-vitae/index.html"
-        className="text-yellow hover:underline dark:text-yellow-dark font-semibold"
+        className="font-semibold text-yellow hover:underline dark:text-yellow-dark"
       >
         Curriculum vitæ ({i18n.translate("common.fr-FR")})
       </a>

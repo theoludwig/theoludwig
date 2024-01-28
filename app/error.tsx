@@ -14,7 +14,7 @@ const ErrorHandling = (props: ErrorHandlingProps): JSX.Element => {
   }, [error])
 
   return (
-    <main className="flex flex-col flex-1 items-center justify-center">
+    <main className="flex flex-1 flex-col items-center justify-center">
       <h1 className="my-6 text-4xl font-semibold">
         Error{" "}
         <span

@@ -24,7 +24,7 @@ export const PortfolioItem = (props: PortfolioItemProps): JSX.Element => {
         <div className="flex justify-center">
           <Image
             quality={100}
-            className="h-auto w-auto transition-opacity duration-500 group-hover:opacity-20 dark:group-hover:opacity-5"
+            className="size-auto transition-opacity duration-500 group-hover:opacity-20 dark:group-hover:opacity-5"
             width={300}
             height={300}
             src={image}
@@ -35,7 +35,7 @@ export const PortfolioItem = (props: PortfolioItemProps): JSX.Element => {
           <h3 className="my-6 text-2xl font-semibold text-yellow dark:text-yellow-dark">
             {title}
           </h3>
-          <p className="my-6 mx-4 font-semibold">{description}</p>
+          <p className="mx-4 my-6 font-semibold">{description}</p>
         </div>
       </a>
     </ShadowContainer>

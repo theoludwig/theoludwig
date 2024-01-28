@@ -82,7 +82,7 @@ export const Locales = (props: LocalesProps): JSX.Element => {
           return (
             <li
               key={locale}
-              className="flex h-12 w-full items-center justify-center hover:bg-[#4f545c] hover:bg-opacity-20"
+              className="flex h-12 w-full items-center justify-center hover:bg-[#4f545c]/20"
               onClick={async () => {
                 return await handleLocale(locale)
               }}
