@@ -6,7 +6,7 @@
     "no-duplicate-heading": false,
     "no-inline-html": false,
   },
-  "globs": ["**/*.{md,mdx}"],
+  "globs": ["**/*.md"],
   "ignores": ["**/node_modules"],
   "customRules": ["markdownlint-rule-relative-links"],
 }

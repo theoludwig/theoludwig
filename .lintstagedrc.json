@@ -1,4 +1,7 @@
 {
-  "**/*": ["prettier --write --ignore-unknown", "editorconfig-checker"],
-  "**/*.{md,mdx}": ["markdownlint-cli2 --fix --no-globs"]
+  "**/*": ["editorconfig-checker", "prettier --write --ignore-unknown"],
+  "**/*.md": ["markdownlint-cli2 --fix --no-globs"],
+  "**/*.{js,jsx,ts,tsx}": [
+    "eslint --fix --max-warnings 0 --report-unused-disable-directives"
+  ]
 }
