@@ -1,9 +1,9 @@
-FROM node:20.11.0 AS builder-dependencies
+FROM node:20.11.1 AS builder-dependencies
 WORKDIR /usr/src/application
 COPY ./package*.json ./
 RUN npm clean-install
 
-FROM node:20.11.0 AS builder
+FROM node:20.11.1 AS builder
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV IS_STANDALONE=true
 WORKDIR /usr/src/application
@@ -11,7 +11,7 @@ COPY --from=builder-dependencies /usr/src/application/node_modules ./node_module
 COPY ./ ./
 RUN npm run build
 
-FROM node:20.11.0-slim AS runner
+FROM node:20.11.1-slim AS runner
 ENV NODE_ENV=production
 ENV HOSTNAME=0.0.0.0
 ENV NEXT_TELEMETRY_DISABLED=1
