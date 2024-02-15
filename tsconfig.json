@@ -8,7 +8,7 @@
     "allowJs": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"],
+      "@/*": ["./*"]
     },
     "types": ["@total-typescript/ts-reset", "cypress"],
     "noEmit": true,
@@ -20,10 +20,10 @@
     "isolatedModules": true,
     "plugins": [
       {
-        "name": "next",
-      },
-    ],
+        "name": "next"
+      }
+    ]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules", ".next"],
+  "exclude": ["node_modules", ".next"]
 }
