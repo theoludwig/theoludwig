@@ -84,7 +84,10 @@ git add .
 git add <file>
 
 # Commit changes
-git commit -m "chore: initial commit"
+git commit -m "Commit message"
+
+# Commit changes in the past
+git commit --date "10 day ago" -m "Commit message"
 
 # Add remote repository
 git remote add <remote> <url>
