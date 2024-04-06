@@ -23,7 +23,7 @@ export const Header = (): JSX.Element => {
             alt="Théo LUDWIG"
             priority
           />
-          <strong className="ml-1 hidden font-headline font-semibold text-yellow dark:text-yellow-dark sm:block sm:text-xl">
+          <strong className="ml-1 hidden font-headline font-semibold text-primary dark:text-primary-dark sm:block sm:text-xl">
             Théo LUDWIG
           </strong>
         </h1>
@@ -33,7 +33,7 @@ export const Header = (): JSX.Element => {
           <Link
             href="/blog"
             data-cy="header-blog-link"
-            className="font-semibold text-yellow hover:underline dark:text-yellow-dark"
+            className="font-semibold text-primary hover:underline dark:text-primary-dark"
           >
             Blog
           </Link>

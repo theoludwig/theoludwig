@@ -18,7 +18,7 @@
       },
       {
         "title": "Open-Source Enthusiast",
-        "description": "I value the <strong>sharing of knowledge and collaboration</strong> to collectively resolve problems. <br /> The source code of the website is available on <a class='text-yellow dark:text-yellow-dark hover:underline font-semibold' href='https://github.com/theoludwig/theoludwig' target='_blank' rel='noopener noreferrer'>GitHub</a>.",
+        "description": "I value the <strong>sharing of knowledge and collaboration</strong> to collectively resolve problems. <br /> The source code of the website is available on <a class='text-primary dark:text-primary-dark hover:underline font-semibold' href='https://github.com/theoludwig/theoludwig' target='_blank' rel='noopener noreferrer'>GitHub</a>.",
         "id": "open-source"
       }
     ]

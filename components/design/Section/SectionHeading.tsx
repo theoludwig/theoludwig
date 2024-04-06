@@ -6,7 +6,7 @@ export const SectionHeading = (props: SectionHeadingProps): JSX.Element => {
   return (
     <h2
       {...rest}
-      className="mb-3 mt-1 text-center text-4xl font-semibold text-yellow dark:text-yellow-dark"
+      className="mb-3 mt-1 text-center text-4xl font-semibold text-primary dark:text-primary-dark"
     >
       {children}
     </h2>

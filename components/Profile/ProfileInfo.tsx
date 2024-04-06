@@ -5,7 +5,7 @@ export const ProfileInformation = (): JSX.Element => {
 
   return (
     <div className="mb-6 border-b-2 border-gray-600 pb-2 font-headline dark:border-gray-400">
-      <h1 className="mb-2 text-4xl font-semibold text-yellow dark:text-yellow-dark">
+      <h1 className="mb-2 text-4xl font-semibold text-primary dark:text-primary-dark">
         Théo LUDWIG
       </h1>
       <h2 className="mb-3 text-base">

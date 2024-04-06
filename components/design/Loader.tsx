@@ -16,7 +16,7 @@ export const Loader = (props: LoaderProps): JSX.Element => {
         height,
       }}
       className={classNames(
-        "inline-block animate-spin rounded-full border-[3px] border-current border-t-transparent text-yellow dark:text-yellow-dark",
+        "inline-block animate-spin rounded-full border-[3px] border-current border-t-transparent text-primary dark:text-primary-dark",
         className,
       )}
       role="status"

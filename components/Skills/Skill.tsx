@@ -29,7 +29,7 @@ export const SkillComponent = (props: SkillComponentProps): JSX.Element => {
   return (
     <a
       href={skillProperties.link}
-      className="mx-2 max-w-xl text-yellow hover:underline dark:text-yellow-dark"
+      className="mx-2 max-w-xl text-primary hover:underline dark:text-primary-dark"
       target="_blank"
       rel="noopener noreferrer"
     >

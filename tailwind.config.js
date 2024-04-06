@@ -14,7 +14,7 @@ const tailwindConfig = {
           DEFAULT: "#333333",
           dark: "#b7c0c9",
         },
-        yellow: {
+        primary: {
           DEFAULT: "#006cff",
           dark: "#00aeff",
         },

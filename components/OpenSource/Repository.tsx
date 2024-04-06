@@ -15,7 +15,7 @@ export const Repository = (props: RepositoryProps): JSX.Element => {
       <a href={href} target="_blank" rel="noopener noreferrer">
         <div className="flex">
           <GitHubIcon className="mr-2 h-6" />
-          <span className="font-semibold text-yellow dark:text-yellow-dark">
+          <span className="font-semibold text-primary dark:text-primary-dark">
             {name}
           </span>
         </div>

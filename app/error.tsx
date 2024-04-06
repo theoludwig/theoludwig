@@ -18,7 +18,7 @@ const ErrorHandling = (props: ErrorHandlingProps): JSX.Element => {
       <h1 className="my-6 text-4xl font-semibold">
         Error{" "}
         <span
-          className="text-yellow dark:text-yellow-dark"
+          className="text-primary dark:text-primary-dark"
           data-cy="status-code"
         >
           500

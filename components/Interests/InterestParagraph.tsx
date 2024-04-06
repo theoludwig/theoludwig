@@ -22,7 +22,7 @@ export const InterestParagraph = (
   return (
     <>
       <p className="my-6 text-center text-gray dark:text-gray-dark">
-        <strong className="text-lg font-semibold text-yellow dark:text-yellow-dark">
+        <strong className="text-lg font-semibold text-primary dark:text-primary-dark">
           {title}
         </strong>
         <br />

@@ -9,7 +9,7 @@ export const FooterText = (): JSX.Element => {
     <p>
       <Link
         href="/"
-        className="font-semibold text-yellow hover:underline dark:text-yellow-dark"
+        className="font-semibold text-primary hover:underline dark:text-primary-dark"
       >
         Théo LUDWIG
       </Link>{" "}

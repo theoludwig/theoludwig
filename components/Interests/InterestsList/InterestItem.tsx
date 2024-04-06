@@ -12,7 +12,7 @@ export const InterestItem = (props: InterestItemProps): JSX.Element => {
   return (
     <li className="m-2 size-8" title={title}>
       <FontAwesomeIcon
-        className="block size-full text-yellow dark:text-yellow-dark"
+        className="block size-full text-primary dark:text-primary-dark"
         icon={fontAwesomeIcon}
       />
     </li>

@@ -10,7 +10,7 @@ const NotFound = (): JSX.Element => {
       <h1 className="my-6 text-4xl font-semibold">
         {i18n.translate("errors.error")}{" "}
         <span
-          className="text-yellow dark:text-yellow-dark"
+          className="text-primary dark:text-primary-dark"
           data-cy="status-code"
         >
           404
@@ -20,7 +20,7 @@ const NotFound = (): JSX.Element => {
         {i18n.translate("errors.not-found")}{" "}
         <Link
           href="/"
-          className="text-yellow hover:underline dark:text-yellow-dark"
+          className="text-primary hover:underline dark:text-primary-dark"
         >
           {i18n.translate("errors.return-to-home-page")}
         </Link>
