@@ -19,13 +19,13 @@ A clean code is a code that is **easy** to **read** and easy to **understand**.
 
 But I promise it is not a code that is easy to write, in fact it is really **hard to write Clean Code**.
 
-We could ask ourselves, what is **easy** to **read** and easy to **understand** ?
+We could ask ourselves, what is **easy** to **read** and easy to **understand**?
 
 It depends of many factors, and is somewhat relative to each one of us. The **perfect** Clean code **doesn't exist**, but we can try to be **as perfect as possible**.
 
 ## Why is it so important?
 
-Code like that works great, but it is not enough, even if the code will be read by the computer and understood by the machine, we should not forget that the code is **written by human** and will be also **read by human** not only a machine.
+Code that works is great, but not enough, even if the code will be read and understood by the computer, we should not forget that the code is **written by human** and will be also **read by human** not only a machine.
 
 For example the [Linux kernel](https://www.kernel.org/), is one of the biggest open source project with many contributors worldwide. Last data shows that it is about **20 millions** lines of code.
 

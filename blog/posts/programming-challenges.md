@@ -15,7 +15,7 @@ We don't want to "reinvent the wheel" and rewrite everything from scratch for ea
 
 However, it is important to draw a line between what dependencies are worth the cost and which are not.
 
-Most likely adding a [JavaScript npm package `is-odd`](https://www.npmjs.com/package/is-odd) to check if a number is odd or even for example, is not worth it. Writing it ourselves is easier and allows a better maintenance in the long term.
+Most likely adding a [JavaScript npm package `is-odd`](https://www.npmjs.com/package/is-odd) to check if a number is odd or even for example, is not worth it. Writing it ourselves allows a better maintenance in the long term.
 
 Learning **how to solve problems** and how to write efficient code is very important and also a very broad and complicated topic, so this blog post will only be an **introduction to the subject**, and will not go in depth.
 
@@ -240,7 +240,7 @@ Here is a list of classes of functions that are commonly encountered when analyz
 
 ### Estimating efficiency
 
-By checking the time complexity of an algorithm, it is possible to check before implementing the algorithm,that it is efficient enough for the problem.
+By checking the time complexity of an algorithm, it is possible to check before implementing the algorithm, that it is efficient enough for the problem.
 
 Example: assume that the time limit for a problem is 1 second and the input size is $n = 10^5$. If the time complexity is $O(n^2)$, the algorithm will perform about $(10^5)^2 = 10^{10}$ operations.
 
@@ -286,7 +286,7 @@ Contiguous subarray is any sub series of elements in a given array that are cont
 
 **Explanation:** The subarray with the largest sum is `[2, 4, -3, 5, 2]` which has a sum of `10`.
 
-### Worst solution: Brute force
+### Worst solution: Brute force ($O(n^3)$)
 
 ```python
 def maximum_subarray_sum_cubic(array: list[int]) -> int:
@@ -309,7 +309,7 @@ def maximum_subarray_sum_cubic(array: list[int]) -> int:
     return best_sum
 ```
 
-### Better solution: Linear time
+### Better solution: Linear time ($O(n)$)
 
 ```python
 def maximum_subarray_sum_linear(array: list[int]) -> int:
