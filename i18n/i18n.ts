@@ -25,6 +25,6 @@ const translations = {
 
 export const i18n = new I18n(translations, {
   defaultLocale: DEFAULT_LOCALE,
-  availableLocales: LOCALES.slice(),
+  availableLocales: [...LOCALES],
   enableFallback: true,
 })
