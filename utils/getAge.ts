@@ -1,6 +1,6 @@
-export const BIRTH_DATE_DAY = "31" as const
-export const BIRTH_DATE_MONTH = "03" as const
-export const BIRTH_DATE_YEAR = "2003" as const
+export const BIRTH_DATE_DAY = "31"
+export const BIRTH_DATE_MONTH = "03"
+export const BIRTH_DATE_YEAR = "2003"
 export const BIRTH_DATE_STRING =
   `${BIRTH_DATE_DAY}/${BIRTH_DATE_MONTH}/${BIRTH_DATE_YEAR}` as const
 export const BIRTH_DATE_ISO_8601 =
