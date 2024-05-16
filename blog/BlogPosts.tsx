@@ -9,37 +9,34 @@ export const BlogPosts = async (): Promise<JSX.Element> => {
 
   return (
     <div className="flex w-full items-center justify-center p-8">
-      <div className="w-[1600px]" data-cy="blog-posts">
-        {posts.map((post, index) => {
+      <ul className="w-[1600px]" data-cy="blog-posts">
+        {posts.map((post) => {
           const postPublishedOn = date.format(
             new Date(post.frontmatter.publishedOn),
             "DD/MM/YYYY",
           )
           return (
-            <Link
-              href={`/blog/${post.slug}`}
-              key={index}
-              locale="en"
-              data-cy={post.slug}
-            >
-              <ShadowContainer className="cursor-pointer p-6 transition-all duration-300 ease-in-out hover:scale-[1.02]">
-                <h2
-                  data-cy="blog-post-title"
-                  className="text-xl font-semibold text-primary dark:text-primary-dark"
-                >
-                  {post.frontmatter.title}
-                </h2>
-                <p data-cy="blog-post-date" className="mt-2">
-                  {postPublishedOn}
-                </p>
-                <p data-cy="blog-post-description" className="mt-3">
-                  {post.frontmatter.description}
-                </p>
-              </ShadowContainer>
-            </Link>
+            <li key={post.slug}>
+              <Link href={`/blog/${post.slug}`} locale="en" data-cy={post.slug}>
+                <ShadowContainer className="cursor-pointer p-6 transition-all duration-300 ease-in-out hover:scale-[1.02]">
+                  <h2
+                    data-cy="blog-post-title"
+                    className="text-xl font-semibold text-primary dark:text-primary-dark"
+                  >
+                    {post.frontmatter.title}
+                  </h2>
+                  <p data-cy="blog-post-date" className="mt-2">
+                    {postPublishedOn}
+                  </p>
+                  <p data-cy="blog-post-description" className="mt-3">
+                    {post.frontmatter.description}
+                  </p>
+                </ShadowContainer>
+              </Link>
+            </li>
           )
         })}
-      </div>
+      </ul>
     </div>
   )
 }

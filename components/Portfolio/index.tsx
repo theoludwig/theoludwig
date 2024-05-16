@@ -12,10 +12,10 @@ export const Portfolio = (): JSX.Element => {
   }
 
   return (
-    <div className="flex w-full flex-wrap justify-center px-3">
-      {items.map((item, index) => {
-        return <PortfolioItem key={index} {...item} />
+    <ul className="flex w-full flex-wrap justify-center px-3">
+      {items.map((item) => {
+        return <PortfolioItem key={item.title} {...item} />
       })}
-    </div>
+    </ul>
   )
 }

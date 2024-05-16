@@ -10,7 +10,7 @@ export const OpenSource = (): JSX.Element => {
       <p className="text-center">
         {i18n.translate("home.open-source.description")}
       </p>
-      <div className="my-6 grid grid-cols-1 gap-6 md:w-10/12 md:grid-cols-2">
+      <ul className="my-6 grid grid-cols-1 gap-6 md:w-10/12 md:grid-cols-2">
         <Repository
           name="nodejs/node"
           description="Node.js JavaScript runtime ✨🐢🚀✨"
@@ -31,7 +31,7 @@ export const OpenSource = (): JSX.Element => {
           description="The React Framework"
           href="https://github.com/vercel/next.js/commits?author=theoludwig"
         />
-      </div>
+      </ul>
     </div>
   )
 }

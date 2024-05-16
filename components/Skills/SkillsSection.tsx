@@ -18,7 +18,7 @@ export const SkillsSection = (props: SkillsSectionProps): JSX.Element => {
                 {title}
               </h3>
             </div>
-            <div className="flex flex-wrap justify-around">{children}</div>
+            <ul className="flex flex-wrap justify-around">{children}</ul>
           </div>
         </div>
       </div>

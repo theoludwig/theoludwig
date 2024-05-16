@@ -11,16 +11,18 @@ export const Repository = (props: RepositoryProps): JSX.Element => {
   const { name, description, href } = props
 
   return (
-    <ShadowContainer className="relative !mb-4 max-h-32 cursor-pointer p-6 transition-all duration-300 ease-in-out hover:scale-[1.03]">
+    <li>
       <a href={href} target="_blank" rel="noopener noreferrer">
-        <div className="flex">
-          <GitHubIcon className="mr-2 h-6" />
-          <span className="font-semibold text-primary dark:text-primary-dark">
-            {name}
-          </span>
-        </div>
-        <p className="my-4">{description}</p>
+        <ShadowContainer className="relative !mb-4 max-h-32 cursor-pointer p-6 transition-all duration-300 ease-in-out hover:scale-[1.03]">
+          <h3 className="flex">
+            <GitHubIcon className="mr-2 h-6" />
+            <span className="font-semibold text-primary dark:text-primary-dark">
+              {name}
+            </span>
+          </h3>
+          <p className="my-4">{description}</p>
+        </ShadowContainer>
       </a>
-    </ShadowContainer>
+    </li>
   )
 }

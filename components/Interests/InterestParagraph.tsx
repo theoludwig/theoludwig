@@ -20,14 +20,11 @@ export const InterestParagraph = (
   const { title, description } = props
 
   return (
-    <>
-      <p className="my-6 text-center text-gray dark:text-gray-dark">
-        <strong className="text-lg font-semibold text-primary dark:text-primary-dark">
-          {title}
-        </strong>
-        <br />
-        <span>{htmlParser(description)}</span>
-      </p>
-    </>
+    <div className="my-6 text-center text-gray dark:text-gray-dark">
+      <h3 className="text-lg font-semibold text-primary dark:text-primary-dark">
+        {title}
+      </h3>
+      <p className="my-2">{htmlParser(description)}</p>
+    </div>
   )
 }

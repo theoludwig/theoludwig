@@ -27,13 +27,13 @@ export const SkillComponent = (props: SkillComponentProps): JSX.Element => {
   }
 
   return (
-    <a
-      href={skillProperties.link}
-      className="mx-2 max-w-xl text-primary hover:underline dark:text-primary-dark"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <div className="text-center">
+    <li>
+      <a
+        href={skillProperties.link}
+        className="mx-2 flex max-w-xl flex-col items-center justify-center text-center text-primary hover:underline dark:text-primary-dark"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Image
           className="inline size-16"
           quality={100}
@@ -43,7 +43,7 @@ export const SkillComponent = (props: SkillComponentProps): JSX.Element => {
           src={getImage()}
         />
         <p className="mt-1 font-semibold">{skill}</p>
-      </div>
-    </a>
+      </a>
+    </li>
   )
 }

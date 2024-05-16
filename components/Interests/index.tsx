@@ -16,8 +16,8 @@ export const Interests = (): JSX.Element => {
 
   return (
     <div className="max-w-full">
-      {paragraphs.map((paragraph, index) => {
-        return <InterestParagraph key={index} {...paragraph} />
+      {paragraphs.map((paragraph) => {
+        return <InterestParagraph key={paragraph.id} {...paragraph} />
       })}
       <InterestsList />
     </div>

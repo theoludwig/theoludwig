@@ -17,7 +17,7 @@ export const Header = (): JSX.Element => {
       <h1>
         <Link
           href="/"
-          className="flex items-center justify-center transition-all duration-300 ease-in-out hover:scale-105"
+          className="flex items-center justify-center transition-all duration-300 ease-in-out hover:scale-[1.03]"
         >
           <Image
             quality={100}

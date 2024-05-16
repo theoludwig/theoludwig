@@ -57,8 +57,8 @@ export const Section = (props: SectionProps): JSX.Element => {
         </p>
       ) : null}
       <div className="w-full px-3">
-        <ShadowContainer>
-          <div className="w-full px-16 py-4 leading-8">{children}</div>
+        <ShadowContainer className="w-full px-2 py-4 leading-8 sm:px-16">
+          {children}
         </ShadowContainer>
       </div>
     </section>
