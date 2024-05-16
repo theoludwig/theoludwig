@@ -57,10 +57,13 @@ const RootLayout = (props: RootLayoutProps): JSX.Element => {
   return (
     <html
       lang={i18n.locale}
-      className={classNames({
-        dark: theme === "dark",
-        light: theme === "light",
-      })}
+      className={classNames(
+        {
+          dark: theme === "dark",
+          light: theme === "light",
+        },
+        "scroll-smooth",
+      )}
       style={{
         colorScheme: theme,
       }}
