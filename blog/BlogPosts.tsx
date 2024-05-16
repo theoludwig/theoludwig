@@ -22,7 +22,7 @@ export const BlogPosts = async (): Promise<JSX.Element> => {
               locale="en"
               data-cy={post.slug}
             >
-              <ShadowContainer className="cursor-pointer p-6 transition duration-200 ease-in-out hover:-translate-y-2">
+              <ShadowContainer className="cursor-pointer p-6 transition-all duration-300 ease-in-out hover:scale-[1.02]">
                 <h2
                   data-cy="blog-post-title"
                   className="text-xl font-semibold text-primary dark:text-primary-dark"

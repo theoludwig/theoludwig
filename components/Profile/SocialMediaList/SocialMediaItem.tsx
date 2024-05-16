@@ -13,7 +13,7 @@ export const SocialMediaItem = (props: SocialMediaItemProps): JSX.Element => {
         aria-label={ariaLabel}
         target="_blank"
         rel="noopener noreferrer"
-        className="relative inline-block bg-transparent"
+        className="relative inline-block bg-transparent transition-all duration-300 ease-in-out hover:scale-110"
       >
         {children}
       </a>

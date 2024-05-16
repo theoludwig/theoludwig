@@ -14,8 +14,11 @@ export const Header = (): JSX.Element => {
 
   return (
     <header className="sticky top-0 z-50 flex w-full justify-between border-b-2 border-gray-600 bg-white px-6 py-2 dark:border-gray-400 dark:bg-black">
-      <Link href="/">
-        <h1 className="flex items-center justify-center">
+      <h1>
+        <Link
+          href="/"
+          className="flex items-center justify-center transition-all duration-300 ease-in-out hover:scale-105"
+        >
           <Image
             quality={100}
             className="size-16"
@@ -26,8 +29,8 @@ export const Header = (): JSX.Element => {
           <strong className="ml-1 hidden font-headline font-semibold text-primary dark:text-primary-dark sm:block sm:text-xl">
             Théo LUDWIG
           </strong>
-        </h1>
-      </Link>
+        </Link>
+      </h1>
       <div className="flex justify-between">
         <div className="flex flex-col items-center justify-center px-6">
           <Link

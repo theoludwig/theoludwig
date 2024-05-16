@@ -11,7 +11,7 @@ export const Repository = (props: RepositoryProps): JSX.Element => {
   const { name, description, href } = props
 
   return (
-    <ShadowContainer className="relative !mb-4 max-h-32 cursor-pointer p-6 transition-transform duration-200 ease-in-out hover:-translate-y-2">
+    <ShadowContainer className="relative !mb-4 max-h-32 cursor-pointer p-6 transition-all duration-300 ease-in-out hover:scale-[1.03]">
       <a href={href} target="_blank" rel="noopener noreferrer">
         <div className="flex">
           <GitHubIcon className="mr-2 h-6" />
