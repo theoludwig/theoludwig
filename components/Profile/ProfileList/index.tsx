@@ -30,14 +30,17 @@ export const ProfileList = (props: ProfileListProps): JSX.Element => {
         title={i18n.translate("home.about.pronouns")}
         value={i18n.translate("home.about.pronouns-value")}
       />
-      {isMounted ? (
-        <ProfileItem
-          title={i18n.translate("home.about.birth-date")}
-          value={`${BIRTH_DATE_STRING} (${age} ${i18n.translate(
-            "home.about.years-old",
-          )})`}
-        />
-      ) : null}
+      <ProfileItem
+        title={i18n.translate("home.about.birth-date")}
+        value={
+          isMounted
+            ? `${BIRTH_DATE_STRING} (${age} ${i18n.translate(
+                "home.about.years-old",
+              )})`
+            : BIRTH_DATE_STRING
+        }
+      />
+
       <ProfileItem
         title={i18n.translate("home.about.nationality")}
         value="Alsace, France"
