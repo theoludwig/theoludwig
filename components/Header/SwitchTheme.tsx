@@ -58,7 +58,7 @@ export const SwitchTheme = (props: SwitchThemeProps): JSX.Element => {
         </div>
         <div
           className={classNames(
-            "absolute top-[1px] box-border size-[22px] rounded-[50%] bg-[#fafafa] text-white transition-all duration-[250ms] ease-in-out",
+            "absolute top-px box-border size-[22px] rounded-[50%] bg-[#fafafa] text-white transition-all duration-[250ms] ease-in-out",
             {
               "left-[27px]": theme === "dark",
               "left-0": theme === "light",
@@ -70,7 +70,7 @@ export const SwitchTheme = (props: SwitchThemeProps): JSX.Element => {
           data-cy="switch-theme-input"
           type="checkbox"
           aria-label="Dark mode toggle"
-          className="absolute m-[-1px] hidden size-[1px] overflow-hidden border-0 p-0"
+          className="absolute -m-px hidden size-px overflow-hidden border-0 p-0"
           defaultChecked
         />
       </div>
