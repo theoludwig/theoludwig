@@ -3,13 +3,9 @@
   "extends": [
     "conventions",
     "next/core-web-vitals",
-    "plugin:tailwindcss/recommended",
-    "prettier"
+    "plugin:tailwindcss/recommended"
   ],
-  "plugins": ["prettier"],
-  "parserOptions": {
-    "project": "./tsconfig.json"
-  },
+  "plugins": ["import", "promise", "unicorn"],
   "settings": {
     "tailwindcss": {
       "callees": ["classNames"]
@@ -19,7 +15,6 @@
     }
   },
   "rules": {
-    "prettier/prettier": "error",
     "react/self-closing-comp": [
       "error",
       {
@@ -33,7 +28,11 @@
   "overrides": [
     {
       "files": ["*.ts", "*.tsx"],
-      "parser": "@typescript-eslint/parser"
+      "parser": "@typescript-eslint/parser",
+      "plugins": ["@typescript-eslint"],
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      }
     }
   ]
 }
