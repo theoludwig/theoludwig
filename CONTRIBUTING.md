@@ -29,8 +29,6 @@ The commit message guidelines adheres to [Conventional Commits](https://www.conv
 
 ## Getting Started
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/theoludwig/theoludwig)
-
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) >= 20.0.0
@@ -66,6 +64,6 @@ npm run dev
 docker compose up --build
 ```
 
-### Services started
+### Service started
 
-- `website`: <http://127.0.0.1:3000>
+`website`: <http://127.0.0.1:3000>
