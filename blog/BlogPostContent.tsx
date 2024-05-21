@@ -26,14 +26,14 @@ const Heading = (
 ): JSX.Element => {
   const { children, id = "" } = props
   return (
-    <h2 {...props} className="group">
-      <Link
-        href={`#${id}`}
-        className="invisible !text-black group-hover:visible dark:!text-white"
-      >
-        <FontAwesomeIcon className="mr-2 inline size-4" icon={faLink} />
+    <h2 {...props}>
+      <Link href={`#${id}`} className="group relative hover:no-underline">
+        <FontAwesomeIcon
+          className="absolute bottom-2 left-[-26px] mr-2 hidden size-4 !text-black group-hover:inline dark:!text-white"
+          icon={faLink}
+        />
+        {children}
       </Link>
-      {children}
     </h2>
   )
 }
