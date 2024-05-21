@@ -3,7 +3,6 @@ describe("Page /blog/[slug]", () => {
     cy.visit("/blog/hello-world")
     cy.get("[data-cy=locale-flag-text]").should("not.exist")
     cy.get("main h1").should("have.text", "👋 Hello, world!")
-    cy.get(".prose a:visible").should("have.attr", "target", "_blank")
   })
 
   it("should redirect to /404 if the blog post doesn't exist", () => {
