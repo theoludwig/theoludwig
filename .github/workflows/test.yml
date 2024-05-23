@@ -10,7 +10,7 @@ jobs:
   test-unit:
     runs-on: "ubuntu-latest"
     steps:
-      - uses: "actions/checkout@v4.1.1"
+      - uses: "actions/checkout@v4.1.6"
 
       - name: "Setup Node.js"
         uses: "actions/setup-node@v4.0.2"
@@ -27,7 +27,7 @@ jobs:
   test-e2e:
     runs-on: "ubuntu-latest"
     steps:
-      - uses: "actions/checkout@v4.1.1"
+      - uses: "actions/checkout@v4.1.6"
 
       - name: "Setup Node.js"
         uses: "actions/setup-node@v4.0.2"
