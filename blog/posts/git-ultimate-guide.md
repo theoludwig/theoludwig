@@ -154,6 +154,17 @@ git reset --soft <branch>
 # (by first being on the branch where you want to apply the commit)
 git cherry-pick <commit>
 
+# To avoid creating duplicated commits with cherry-pick, we can use rebase after cherry-pick.
+# <target-branch> being the commit where you want to apply the commit to cherry-pick.
+# <from-branch> being the branch where the commit to cherry-pick is.
+git rebase <target-branch> <from-branch>
+
+# If, by mistake, you have started a branch from the wrong base branch, you can rebase the branch on the correct base branch.
+# For example, if you have started a branch `feature-2` from `feature` instead of `develop`, you can rebase the branch on `develop`.
+git rebase --onto <new-base-branch> <old-base-branch> <branch>
+# For example:
+git rebase --onto develop feature feature-2
+
 # To list all commits that differ between two branches
 git log <branch1>..<branch2> # commits in branch2 that are not in branch1 (branch2 ahead of branch1, branch2 behind branch1)
 git log <branch2>..<branch1> # commits in branch1 that are not in branch2 (branch1 ahead of branch2, branch1 behind branch2)
@@ -244,6 +255,32 @@ There are many ways to organize the work, but the most popular ones are:
 - [Trunk-based development](https://trunkbaseddevelopment.com/)
 
 They are called **Git workflows**, or **Git branching strategies**.
+
+## Tips and tricks
+
+### `diff-commits` alias
+
+The `git diff` command allows you to compare the changes between two commits, branches, etc.
+
+Sometimes, you want to compare what commits have been made between two branches, without looking at the changes in the files, to do so, we can create an `alias` in `.gitconfig`:
+
+```sh
+[alias]
+  diff-commits = !sh -c 'echo -n "Commits in $2 not in $1 \\(" && printf "%d" $(git cherry -v $1 $2 | wc -l) && echo "\\)" && git cherry -v $1 $2 && echo "" && echo -n "Commits in $1 not in $2 \\(" && printf "%d" $(git cherry -v $2 $1 | wc -l) && echo "\\)" && git cherry -v $2 $1' -
+```
+
+With this alias, we can compare the commits between `main` and `develop` branches for example:
+
+```sh
+$ git diff-commits main develop
+
+Commits in develop not in main (2)
++ 9b80e0724df8454b43bc3935a1bffb67615572d7 feat: new feature
++ 50721f8ecb60ff023bdccc1873ec1e20ee0b21a0 feat: new feature 2
+
+Commits in main not in develop (1)
+- f7bb9d2af7763e0a311099e880e8bf7d6b51bf4d fix: urgent hotfix
+```
 
 ## Conclusion
 
