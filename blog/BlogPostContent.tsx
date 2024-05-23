@@ -1,22 +1,22 @@
+import { faLink } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { nodeTypes } from "@mdx-js/mdx"
+import rehypeShikiFromHighlighter from "@shikijs/rehype/core"
+import { MDXRemote } from "next-mdx-remote/rsc"
+import { cookies } from "next/headers"
 import Image from "next/image"
 import Link from "next/link"
-import { cookies } from "next/headers"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faLink } from "@fortawesome/free-solid-svg-icons"
-import { MDXRemote } from "next-mdx-remote/rsc"
-import { nodeTypes } from "@mdx-js/mdx"
-import rehypeRaw from "rehype-raw"
-import remarkGfm from "remark-gfm"
-import rehypeSlug from "rehype-slug"
-import remarkMath from "remark-math"
 import rehypeKatex from "rehype-katex"
-import { getHighlighter } from "shiki"
+import rehypeRaw from "rehype-raw"
+import rehypeSlug from "rehype-slug"
+import remarkGfm from "remark-gfm"
+import remarkMath from "remark-math"
+import { getHighlighterCore } from "shiki/core"
 
 import "katex/dist/katex.min.css"
 
-import { getTheme } from "@/theme/theme.server"
-import { remarkSyntaxHighlightingPlugin } from "@/blog/remarkSyntaxHighlightingPlugin"
 import { BlogPostComments } from "@/blog/BlogPostComments"
+import { getTheme } from "@/theme/theme.server"
 
 const Heading = (
   props: React.DetailedHTMLProps<
@@ -50,8 +50,19 @@ export const BlogPostContent = async (
   const cookiesStore = cookies()
   const theme = getTheme()
 
-  const highlighter = await getHighlighter({
-    theme: `${theme}-plus`,
+  const highlighter = await getHighlighterCore({
+    themes: [
+      import("shiki/themes/light-plus.mjs"),
+      import("shiki/themes/dark-plus.mjs"),
+    ],
+    langs: [
+      import("shiki/langs/markdown.mjs"),
+      import("shiki/langs/shell.mjs"),
+      import("shiki/langs/javascript.mjs"),
+      import("shiki/langs/typescript.mjs"),
+      import("shiki/langs/python.mjs"),
+    ],
+    loadWasm: import("shiki/wasm"),
   })
 
   return (
@@ -61,15 +72,18 @@ export const BlogPostContent = async (
           source={content}
           options={{
             mdxOptions: {
-              remarkPlugins: [
-                remarkGfm,
-                [remarkSyntaxHighlightingPlugin, { highlighter }],
-                remarkMath,
-              ],
+              remarkPlugins: [remarkGfm, remarkMath],
               rehypePlugins: [
                 rehypeSlug,
                 [rehypeRaw, { passThrough: nodeTypes }],
                 rehypeKatex,
+                [
+                  rehypeShikiFromHighlighter,
+                  highlighter,
+                  {
+                    theme: `${theme}-plus`,
+                  },
+                ],
               ],
             },
           }}

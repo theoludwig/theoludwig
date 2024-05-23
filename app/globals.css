@@ -62,13 +62,15 @@ code {
 code .line::before {
   content: counter(step);
   counter-increment: step;
-  width: 1rem;
-  margin-right: 1.5rem;
-  display: inline-block;
+  margin-right: 1rem;
   text-align: right;
   color: rgba(133, 133, 133, 0.8);
   word-wrap: normal;
   word-break: normal;
+}
+
+code .line:last-child {
+  display: none;
 }
 
 .katex .base {
