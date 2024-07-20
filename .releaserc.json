@@ -1,5 +1,5 @@
 {
-  "branches": ["master"],
+  "branches": ["main"],
   "plugins": [
     [
       "@semantic-release/commit-analyzer",
@@ -30,7 +30,7 @@
     [
       "@saithodev/semantic-release-backmerge",
       {
-        "branches": [{ "from": "master", "to": "develop" }],
+        "branches": [{ "from": "main", "to": "develop" }],
         "backmergeStrategy": "merge"
       }
     ]
