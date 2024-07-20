@@ -22,7 +22,7 @@ export const LocaleFlag = (props: LocaleFlagProps): JSX.Element => {
         src={`/images/locales/${locale}.svg`}
         alt={locale}
       />
-      <p data-cy="locale-flag-text" className="mx-2 text-base">
+      <p data-cy="locale-flag-text" className="mx-2 text-base font-semibold">
         {i18n.translate(`common.${locale}`)}
       </p>
     </>
