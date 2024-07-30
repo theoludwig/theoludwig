@@ -1,0 +1,31 @@
+import { Meta, Title, ColorPalette, ColorItem } from "@storybook/blocks"
+import tailwindConfig from "@repo/config-tailwind"
+
+<Meta title="Design System/Colors" />
+
+<Title>Colors</Title>
+
+<ColorPalette>
+  {Object.entries(tailwindConfig.theme.colors).map(
+    ([colorName, colorValue]) => {
+      const colors = {}
+
+      if (typeof colorValue === "string") {
+        colors[colorName] = colorValue
+      } else {
+        colors.light = colorValue.DEFAULT
+        colors.dark = colorValue.dark
+      }
+
+      return (
+        <ColorItem
+          key={colorName}
+          title={colorName}
+          colors={colors}
+        />
+      )
+    }
+
+)}
+
+</ColorPalette>

@@ -1,0 +1,31 @@
+{
+  "name": "@repo/config-tailwind",
+  "version": "3.3.2",
+  "private": true,
+  "type": "module",
+  "main": "./tailwind.config.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./tailwind.config.js",
+      "require": "./tailwind.config.js",
+      "default": "./tailwind.config.js"
+    },
+    "./classNames": "./classNames.ts",
+    "./styles.css": "./styles.css"
+  },
+  "dependencies": {
+    "@fontsource/montserrat": "catalog:",
+    "clsx": "catalog:",
+    "tailwind-merge": "catalog:"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/config-typescript": "workspace:*",
+    "@tailwindcss/typography": "catalog:",
+    "eslint": "catalog:",
+    "postcss": "catalog:",
+    "tailwindcss": "catalog:"
+  }
+}

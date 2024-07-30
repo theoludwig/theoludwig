@@ -1,12 +1,13 @@
 services:
   theoludwig:
-    container_name: ${COMPOSE_PROJECT_NAME}
+    container_name: "theoludwig"
     image: "theoludwig"
     restart: "unless-stopped"
     build:
       context: "./"
+      dockerfile: "./apps/website/Dockerfile"
     ports:
-      - "${PORT-3000}:${PORT-3000}"
+      - "${WEBSITE_PORT-3000}:${WEBSITE_PORT-3000}"
     environment:
-      PORT: ${PORT-3000}
-    env_file: ".env"
+      PORT: ${WEBSITE_PORT-3000}
+    env_file: "./apps/website/.env"

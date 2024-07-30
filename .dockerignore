@@ -1,7 +1,10 @@
+**/.git
 **/.turbo
 **/.next
 **/out
+**/dist
 **/build
+**/storybook-static
 **/coverage
 **/node_modules
 
@@ -11,10 +14,24 @@
 .env.development
 secrets
 
+# IDEs and editors
+.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.vscode
+
 # misc
 .DS_Store
 *.pem
 Dockerfile
+README.md
+
+# vercel
+.vercel
 
 # typescript
 *.tsbuildinfo

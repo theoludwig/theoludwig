@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Théo LUDWIG",
+    "description": "Développeur Full Stack • Enthousiaste de l'Open-Source"
+  },
+  "locales": {
+    "en-US": "Anglais",
+    "fr-FR": "Français"
+  },
+  "footer": {
+    "all-rights-reserved": "Tous droits réservés"
+  },
+  "errors": {
+    "error": "Erreur",
+    "page-doesnt-exist": "Cette page n'existe pas !",
+    "not-found": "Introuvable",
+    "server-error": "Erreur interne du serveur !",
+    "return-to-home-page": "Retour à la page d'accueil ?",
+    "try-again": "Réessayer ?"
+  },
+  "home": {
+    "about": {
+      "pronouns": {
+        "label": "Pronoms",
+        "value": "Il/Lui"
+      },
+      "birth-date": {
+        "label": "Date de naissance",
+        "value": "{birthDate} ({age} ans)"
+      },
+      "nationality": {
+        "label": "Nationalité",
+        "value": "Alsace, France"
+      },
+      "email": {
+        "label": "Email",
+        "value": "{email}"
+      },
+      "description": "Je me demande constamment comment <strong>améliorer notre présent, afin de rendre notre futur meilleur</strong>, particulièrement grâce aux progrès de <strong>l'informatique</strong>."
+    },
+    "interests": {
+      "title": "Intérêts",
+      "code": {
+        "title": "Développeur Full Stack",
+        "description": "Ma priorité réside dans la création <strong>d'expériences utilisateurs (<abbr-ux>UX</abbr-ux>) intuitives</strong>, répondant aux besoins des utilisateurs de la <strong>manière la plus efficace que possible</strong>. <br></br> Principalement axé sur l'élaboration de <strong>solutions en Développement Web</strong>. <br></br> Je suis également intéressé par le développement d'applications mobiles parmis d'autres domaines de l'informatique."
+      },
+      "open-source": {
+        "title": "Enthousiaste de l'Open-Source",
+        "description": "J'apprécie le <strong>partage des connaissances et la collaboration</strong> pour résoudre des défis collectivement. <br></br> Le code source du site est accessible sur <github-link>GitHub</github-link>."
+      }
+    },
+    "skills": {
+      "title": "Compétences",
+      "programming-languages": "Langages de programmation",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "software-tools": "Logiciels et outils"
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "carolo": {
+        "title": "Carolo",
+        "description": "Jeu de plateau stratégique similaire aux échecs qui permet des coups grandioses, reposant sur des enchaînements remarquables."
+      },
+      "leon": {
+        "title": "Leon",
+        "description": "Leon est votre assistant personnel open source."
+      }
+    },
+    "open-source": {
+      "title": "Open-Source",
+      "description": "Projets open source les plus célèbres auxquels j'ai contribué."
+    }
+  }
+}

@@ -1,0 +1,162 @@
+@import "@fontsource/montserrat/400.css";
+@import "@fontsource/montserrat/500.css";
+@import "@fontsource/montserrat/600.css";
+@import "@fontsource/montserrat/700.css";
+@import "@fontsource/montserrat/800.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  b,
+  strong {
+    @apply font-semibold;
+  }
+
+  i,
+  em {
+    @apply italic;
+  }
+
+  u {
+    @apply underline;
+  }
+
+  s {
+    @apply line-through;
+  }
+
+  abbr[title] {
+    @apply underline decoration-dotted underline-offset-2;
+  }
+
+  q,
+  blockquote {
+    @apply italic tracking-wider;
+  }
+  blockquote {
+    @apply border-gray border-l-4 pl-3 italic;
+  }
+
+  kbd {
+    @apply bg-gray rounded-md px-2 dark:text-black;
+  }
+
+  mark {
+    @apply bg-yellow rounded-md px-2;
+  }
+
+  ol {
+    @apply list-inside list-decimal;
+  }
+
+  ul {
+    @apply list-inside list-disc;
+  }
+
+  dfn {
+    @apply font-semibold italic;
+    cursor: help;
+  }
+}
+
+body {
+  @apply bg-background dark:bg-background-dark font-sans text-black dark:text-white;
+}
+
+@keyframes ripple {
+  to {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+
+.break-wrap-words {
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.text-base {
+  @apply leading-8;
+}
+
+.prose {
+  @apply dark:text-gray !max-w-5xl scroll-smooth text-black;
+}
+
+.prose p {
+  @apply text-justify;
+}
+
+.prose ul,
+.prose ol {
+  @apply list-outside;
+}
+
+.prose [id]::before {
+  content: "";
+  display: block;
+  height: 90px;
+  margin-top: -90px;
+  visibility: hidden;
+}
+
+.prose a {
+  @apply text-primary dark:text-primary-dark !font-semibold;
+}
+
+.prose strong {
+  @apply dark:text-gray text-black;
+}
+
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  @apply mt-1;
+}
+
+.prose code {
+  color: #ce9178;
+}
+.prose :where(code):not(:where([class~="not-prose"] *))::before,
+.prose :where(code):not(:where([class~="not-prose"] *))::after {
+  content: "";
+}
+.shiki {
+  white-space: pre-wrap !important;
+}
+html.dark .shiki,
+html.dark .shiki span {
+  color: var(--shiki-dark) !important;
+  background-color: var(--shiki-dark-bg) !important;
+  font-style: var(--shiki-dark-font-style) !important;
+  font-weight: var(--shiki-dark-font-weight) !important;
+  text-decoration: var(--shiki-dark-text-decoration) !important;
+}
+
+code {
+  counter-reset: step;
+  counter-increment: step 0;
+}
+code .line::before {
+  content: counter(step);
+  counter-increment: step;
+  margin-right: 1rem;
+  text-align: right;
+  color: rgba(133, 133, 133, 0.8);
+  word-wrap: normal;
+  word-break: normal;
+}
+
+code .line:last-child {
+  display: none;
+}
+
+.katex .base {
+  display: inline !important;
+  white-space: normal !important;
+  width: 100% !important;
+}

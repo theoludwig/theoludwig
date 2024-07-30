@@ -1,0 +1,14 @@
+{
+  "root": true,
+  "extends": ["@repo/eslint-config/nextjs/.eslintrc.json"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "plugins": ["@typescript-eslint"],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "project": true
+      }
+    }
+  ]
+}

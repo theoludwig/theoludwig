@@ -1,0 +1,17 @@
+{
+  "extends": "@repo/config-typescript/tsconfig.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "types": [
+      "@total-typescript/ts-reset",
+      "@vitest/browser/providers/playwright"
+    ],
+    "jsx": "preserve",
+
+    "noEmit": true
+  }
+}

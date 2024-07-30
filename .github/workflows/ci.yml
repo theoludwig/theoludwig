@@ -1,0 +1,43 @@
+name: "CI"
+
+on:
+  push:
+    branches: [develop]
+  pull_request:
+    branches: [develop, staging, main]
+
+jobs:
+  ci:
+    timeout-minutes: 30
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: "actions/checkout@v4.1.7"
+
+      - uses: "pnpm/action-setup@v4.0.0"
+
+      - name: "Setup Node.js"
+        uses: "actions/setup-node@v4.0.3"
+        with:
+          node-version: "22.x"
+          cache: "pnpm"
+
+      - name: "Install dependencies"
+        run: "pnpm install --frozen-lockfile"
+
+      - name: "Install Playwright"
+        run: "pnpm exec playwright install --with-deps"
+
+      - run: "node --run lint:editorconfig"
+      - run: "node --run lint:markdown"
+      - run: "node --run lint:prettier"
+      - run: "node --run lint:eslint"
+      - run: "node --run lint:typescript"
+      - run: "node --run test"
+      - run: "node --run build"
+
+  commitlint:
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: "actions/checkout@v4.1.7"
+
+      - uses: "wagoid/commitlint-github-action@v6.0.1"

@@ -1,5 +1,6 @@
 {
   "recommendations": [
+    "Vercel.turbo-vsc",
     "editorconfig.editorconfig",
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",

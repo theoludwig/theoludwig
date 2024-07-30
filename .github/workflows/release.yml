@@ -2,13 +2,19 @@ name: "Release"
 
 on:
   push:
-    branches: [main]
+    branches: [main, staging]
 
 jobs:
   release:
+    timeout-minutes: 30
     runs-on: "ubuntu-latest"
+    permissions:
+      contents: "write"
+      issues: "write"
+      pull-requests: "write"
+      id-token: "write"
     steps:
-      - uses: "actions/checkout@v4.1.6"
+      - uses: "actions/checkout@v4.1.7"
         with:
           fetch-depth: 0
           persist-credentials: false
@@ -20,17 +26,19 @@ jobs:
           git_user_signingkey: true
           git_commit_gpgsign: true
 
+      - uses: "pnpm/action-setup@v4.0.0"
+
       - name: "Setup Node.js"
-        uses: "actions/setup-node@v4.0.2"
+        uses: "actions/setup-node@v4.0.3"
         with:
-          node-version: "20.x"
-          cache: "npm"
+          node-version: "22.x"
+          cache: "pnpm"
 
       - name: "Install dependencies"
-        run: "npm clean-install"
+        run: "pnpm install --frozen-lockfile"
 
       - name: "Release"
-        run: "npm run release"
+        run: "node --run release"
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIT_COMMITTER_NAME: ${{ secrets.GIT_NAME }}

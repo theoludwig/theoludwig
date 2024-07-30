@@ -1,0 +1,28 @@
+{
+  "name": "@repo/utils",
+  "version": "3.3.2",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./constants": "./src/constants.ts",
+    "./dates": "./src/dates.ts",
+    "./strings": "./src/strings.ts"
+  },
+  "scripts": {
+    "lint:eslint": "eslint src --max-warnings 0 --report-unused-disable-directives",
+    "lint:typescript": "tsc --noEmit",
+    "test": "vitest run",
+    "test:ui": "vitest --ui --no-open"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/config-typescript": "workspace:*",
+    "@types/node": "catalog:",
+    "@total-typescript/ts-reset": "catalog:",
+    "@vitest/coverage-istanbul": "catalog:",
+    "@vitest/ui": "catalog:",
+    "eslint": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

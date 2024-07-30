@@ -1,4 +1,13 @@
 {
   "semi": false,
-  "plugins": ["prettier-plugin-tailwindcss"]
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "tailwindFunctions": ["classNames", "cva"],
+  "overrides": [
+    {
+      "files": "pnpm-lock.yaml",
+      "options": {
+        "rangeEnd": 0
+      }
+    }
+  ]
 }

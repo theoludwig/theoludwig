@@ -1,0 +1,57 @@
+{
+  "extends": [
+    "conventions",
+    "next/core-web-vitals",
+    "plugin:tailwindcss/recommended",
+    "plugin:storybook/recommended"
+  ],
+  "ignorePatterns": [
+    "next.config.js",
+    "tailwind.config.js",
+    "postcss.config.js",
+    "vitest.config.ts"
+  ],
+  "settings": {
+    "tailwindcss": {
+      "callees": ["classNames", "cva"]
+    },
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "tailwindcss/classnames-order": "off",
+    "tailwindcss/no-custom-classname": "off",
+    "@next/next/no-html-link-for-pages": "off",
+    "react/self-closing-comp": [
+      "error",
+      {
+        "component": true,
+        "html": true
+      }
+    ],
+    "react/void-dom-elements-no-children": "error",
+    "react/jsx-boolean-value": "error",
+    "no-restricted-imports": [
+      "error",
+      {
+        "paths": [
+          {
+            "name": "next/link",
+            "message": "Please import from `@repo/i18n/navigation` instead."
+          },
+          {
+            "name": "next/navigation",
+            "importNames": [
+              "redirect",
+              "permanentRedirect",
+              "useRouter",
+              "usePathname"
+            ],
+            "message": "Please import from `@repo/i18n/navigation` instead."
+          }
+        ]
+      }
+    ]
+  }
+}

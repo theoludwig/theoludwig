@@ -1,0 +1,35 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
+  "tasks": {
+    "build": {
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "env": ["IS_STANDALONE"],
+      "dependsOn": ["^build"],
+      "outputs": [
+        "build/**",
+        "storybook-static/**",
+        ".next/**",
+        "!.next/cache/**"
+      ]
+    },
+    "test": {
+      "dependsOn": ["^test"],
+      "outputs": ["coverage/**"]
+    },
+    "lint:eslint": {
+      "dependsOn": ["^lint:eslint"]
+    },
+    "lint:typescript": {
+      "dependsOn": ["^lint:typescript"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "start": {
+      "dependsOn": ["build"],
+      "persistent": true
+    }
+  }
+}

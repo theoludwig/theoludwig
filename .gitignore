@@ -1,33 +1,39 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
 node_modules
 .npm
-
-# next.js
-.next
-out
-
-# production
-build
-dist
-public/curriculum-vitae
+package-lock.json
+.pnpm-store
+.pnp
+.pnp.js
+.yarn/install-state.gz
 
 # testing
 coverage
-cypress/screenshots
-cypress/videos
-cypress/downloads
 
-# envs
-.env
-.env.production
+# production
+.next/
+out/
+dist/
+build/
+# apps/website/public/curriculum-vitae/
+
+# misc
+.DS_Store
+*.pem
+.turbo
+bin/
 
 # debug
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Storybook
+*storybook.log
+storybook-static
 
 # IDEs and editors
-/.idea
+.idea
 .project
 .classpath
 .c9/
@@ -35,17 +41,14 @@ npm-debug.log*
 .settings/
 *.sublime-workspace
 
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+# local env files
+.env
+.env.production
+.env*.local
 
-# misc
-.DS_Store
-.lighthouseci
+# vercel
+.vercel
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
+# next-env.d.ts

@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Théo LUDWIG",
+    "description": "Developer Full Stack • Open-Source Enthusiast"
+  },
+  "locales": {
+    "en-US": "English",
+    "fr-FR": "French"
+  },
+  "footer": {
+    "all-rights-reserved": "All rights reserved"
+  },
+  "errors": {
+    "error": "Error",
+    "page-doesnt-exist": "This page doesn't exist!",
+    "not-found": "Not Found",
+    "server-error": "Internal Server Error!",
+    "return-to-home-page": "Return to the home page?",
+    "try-again": "Try again?"
+  },
+  "home": {
+    "about": {
+      "pronouns": {
+        "label": "Pronouns",
+        "value": "He/Him"
+      },
+      "birth-date": {
+        "label": "Birth date",
+        "value": "{birthDate} ({age} years old)"
+      },
+      "nationality": {
+        "label": "Nationality",
+        "value": "Alsace, France"
+      },
+      "email": {
+        "label": "Email",
+        "value": "{email}"
+      },
+      "description": "I constantly wonder how to <strong>improve our present, to make our future better</strong>, particularly thanks to the advancements in <strong>computer science</strong>."
+    },
+    "interests": {
+      "title": "Interests",
+      "code": {
+        "title": "Developer Full Stack",
+        "description": "My priority is to craft <strong>intuitive user experiences (<abbr-ux>UX</abbr-ux>)</strong>, that meet the needs of the users <strong>in the most efficient way possible</strong>. <br></br> Mainly focused on the development of <strong>Web solutions</strong>. <br></br> I am also interested in mobile and desktop application development, among other areas within the field of computer science."
+      },
+      "open-source": {
+        "title": "Open-Source Enthusiast",
+        "description": "I value the <strong>sharing of knowledge and collaboration</strong> to collectively resolve problems. <br></br> The source code of the website is available on <github-link>GitHub</github-link>."
+      }
+    },
+    "skills": {
+      "title": "Skills",
+      "programming-languages": "Programming languages",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "software-tools": "Software and tools"
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "carolo": {
+        "title": "Carolo",
+        "description": "Strategy board game similar to chess which allows grandiose moves (only available in French)."
+      },
+      "leon": {
+        "title": "Leon",
+        "description": "Leon is your open-source personal assistant."
+      }
+    },
+    "open-source": {
+      "title": "Open-Source",
+      "description": "Most famous open source projects I contributed to."
+    }
+  }
+}

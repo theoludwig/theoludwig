@@ -1,0 +1,22 @@
+{
+  "name": "@repo/eslint-config",
+  "version": "3.3.2",
+  "private": true,
+  "main": ".eslintrc.json",
+  "files": [
+    ".eslintrc.json",
+    "nextjs/.eslintrc.json"
+  ],
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "catalog:",
+    "@typescript-eslint/parser": "catalog:",
+    "eslint": "catalog:",
+    "eslint-config-conventions": "catalog:",
+    "eslint-plugin-promise": "catalog:",
+    "eslint-plugin-unicorn": "catalog:",
+    "eslint-config-next": "catalog:",
+    "eslint-plugin-storybook": "catalog:",
+    "eslint-plugin-tailwindcss": "catalog:",
+    "typescript": "catalog:"
+  }
+}

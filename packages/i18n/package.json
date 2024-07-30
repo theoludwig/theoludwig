@@ -1,0 +1,33 @@
+{
+  "name": "@repo/i18n",
+  "version": "3.3.2",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./translations/*.json": "./src/translations/*.json",
+    "./config": "./src/config.tsx",
+    "./i18n": "./src/i18n.ts",
+    "./messages.d.ts": "./src/messages.d.ts",
+    "./navigation": "./src/navigation.ts"
+  },
+  "scripts": {
+    "lint:eslint": "eslint src --max-warnings 0 --report-unused-disable-directives",
+    "lint:typescript": "tsc --noEmit"
+  },
+  "dependencies": {
+    "deepmerge": "catalog:",
+    "next": "catalog:",
+    "next-intl": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/config-typescript": "workspace:*",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "@total-typescript/ts-reset": "catalog:",
+    "eslint": "catalog:",
+    "typescript": "catalog:"
+  }
+}

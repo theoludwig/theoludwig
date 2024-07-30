@@ -31,8 +31,8 @@ The commit message guidelines adheres to [Conventional Commits](https://www.conv
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) >= 20.0.0
-- [npm](https://www.npmjs.com/) >= 10.0.0
+- [Node.js](https://nodejs.org/) >= 22.0.0
+- [pnpm](https://pnpm.io/) >= 9.5.0
 
 ### Installation
 
@@ -40,21 +40,35 @@ The commit message guidelines adheres to [Conventional Commits](https://www.conv
 # Clone the repository
 git clone git@github.com:theoludwig/theoludwig.git
 
-# Go to the project root
-cd theoludwig
-
 # Configure environment variables
 cp .env.example .env
+cp apps/website/.env.example apps/website/.env
 
-# Install
-npm clean-install
+# Install dependencies
+pnpm install --frozen-lockfile
+
+# Install Playwright browser binaries and their dependencies (tests)
+pnpm exec playwright install --with-deps
 ```
 
-### Local Development environment
+### Development
 
 ```sh
-# Run website
-npm run dev
+# Start the development server
+node --run dev
+
+# Lint
+node --run lint:editorconfig
+node --run lint:markdown
+node --run lint:prettier
+node --run lint:eslint
+node --run lint:typescript
+
+# Tests
+node --run test
+
+# Build
+node --run build
 ```
 
 ### Production environment with [Docker](https://www.docker.com/)
@@ -64,6 +78,6 @@ npm run dev
 docker compose up --build
 ```
 
-### Service started
+#### Services started
 
-`website`: <http://127.0.0.1:3000>
+`theoludwig`: <http://127.0.0.1:3000>

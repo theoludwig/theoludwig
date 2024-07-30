@@ -1,0 +1,54 @@
+{
+  "name": "@repo/blog",
+  "version": "3.3.2",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/blog.ts",
+    "./BlogPosts": "./src/BlogPosts.tsx",
+    "./BlogPostUI": "./src/BlogPostUI.tsx"
+  },
+  "scripts": {
+    "lint:eslint": "eslint src --max-warnings 0 --report-unused-disable-directives",
+    "lint:typescript": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@repo/config-tailwind": "workspace:*",
+    "@repo/utils": "workspace:*",
+    "@repo/i18n": "workspace:*",
+    "@repo/ui": "workspace:*",
+    "@repo/react-hooks": "workspace:*",
+    "@giscus/react": "catalog:",
+    "@shikijs/rehype": "catalog:",
+    "@mdx-js/mdx": "catalog:",
+    "gray-matter": "catalog:",
+    "katex": "catalog:",
+    "rehype-katex": "catalog:",
+    "rehype-raw": "catalog:",
+    "rehype-slug": "catalog:",
+    "remark-gfm": "catalog:",
+    "remark-math": "catalog:",
+    "shiki": "catalog:",
+    "next": "catalog:",
+    "next-mdx-remote": "catalog:",
+    "next-intl": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "react-icons": "catalog:"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/config-typescript": "workspace:*",
+    "@types/node": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "@total-typescript/ts-reset": "catalog:",
+    "@storybook/blocks": "catalog:",
+    "@storybook/react": "catalog:",
+    "@storybook/test": "catalog:",
+    "eslint": "catalog:",
+    "postcss": "catalog:",
+    "tailwindcss": "catalog:",
+    "typescript": "catalog:"
+  }
+}

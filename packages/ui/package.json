@@ -1,0 +1,55 @@
+{
+  "name": "@repo/ui",
+  "version": "3.3.2",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./About": "./src/About/About.tsx",
+    "./design/Button": "./src/design/Button/Button.tsx",
+    "./design/Link": "./src/design/Link/Link.tsx",
+    "./design/Section": "./src/design/Section/Section.tsx",
+    "./design/Spinner": "./src/design/Spinner/Spinner.tsx",
+    "./design/Typography": "./src/design/Typography/Typography.tsx",
+    "./Errors/ErrorNotFound": "./src/Errors/ErrorNotFound/ErrorNotFound.tsx",
+    "./Errors/ErrorServer": "./src/Errors/ErrorServer/ErrorServer.tsx",
+    "./Footer": "./src/Footer/Footer.tsx",
+    "./Header": "./src/Header/Header.tsx",
+    "./Interests": "./src/Interests/Interests.tsx",
+    "./Header/SwitchTheme": "./src/Header/SwitchTheme.tsx",
+    "./MainLayout": "./src/MainLayout/MainLayout.tsx",
+    "./OpenSource": "./src/OpenSource/OpenSource.tsx",
+    "./Portfolio": "./src/Portfolio/Portfolio.tsx",
+    "./Skills": "./src/Skills/Skills.tsx"
+  },
+  "scripts": {
+    "lint:eslint": "eslint src --max-warnings 0 --report-unused-disable-directives",
+    "lint:typescript": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@repo/config-tailwind": "workspace:*",
+    "@repo/utils": "workspace:*",
+    "@repo/i18n": "workspace:*",
+    "@repo/react-hooks": "workspace:*",
+    "cva": "catalog:",
+    "next": "catalog:",
+    "next-intl": "catalog:",
+    "next-themes": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "react-icons": "catalog:"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/config-typescript": "workspace:*",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "@total-typescript/ts-reset": "catalog:",
+    "@storybook/blocks": "catalog:",
+    "@storybook/react": "catalog:",
+    "@storybook/test": "catalog:",
+    "eslint": "catalog:",
+    "postcss": "catalog:",
+    "tailwindcss": "catalog:",
+    "typescript": "catalog:"
+  }
+}

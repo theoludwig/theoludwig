@@ -1,0 +1,35 @@
+{
+  "name": "@repo/react-hooks",
+  "version": "3.3.2",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./useBoolean": "./src/useBoolean.ts",
+    "./useIsMounted": "./src/useIsMounted.ts"
+  },
+  "scripts": {
+    "lint:eslint": "eslint src --max-warnings 0 --report-unused-disable-directives",
+    "lint:typescript": "tsc --noEmit",
+    "test": "vitest run --browser.headless",
+    "test:ui": "vitest --ui --no-open"
+  },
+  "dependencies": {
+    "react": "catalog:",
+    "react-dom": "catalog:"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/config-typescript": "workspace:*",
+    "@testing-library/react": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "@total-typescript/ts-reset": "catalog:",
+    "@vitest/browser": "catalog:",
+    "@vitest/coverage-istanbul": "catalog:",
+    "@vitest/ui": "catalog:",
+    "eslint": "catalog:",
+    "playwright": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

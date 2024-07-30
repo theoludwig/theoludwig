@@ -1,0 +1,40 @@
+{
+  "name": "@repo/website",
+  "version": "3.3.2",
+  "private": true,
+  "type": "module",
+  "imports": {
+    "#*": "./*"
+  },
+  "scripts": {
+    "dev": "next dev --port 3000 --turbo",
+    "build": "next build",
+    "start": "next start --port 3000",
+    "lint:eslint": "eslint . --max-warnings 0 --report-unused-disable-directives",
+    "lint:typescript": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@repo/blog": "workspace:*",
+    "@repo/config-tailwind": "workspace:*",
+    "@repo/utils": "workspace:*",
+    "@repo/i18n": "workspace:*",
+    "@repo/ui": "workspace:*",
+    "next": "catalog:",
+    "next-intl": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "sharp": "catalog:"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/config-typescript": "workspace:*",
+    "@types/node": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "@total-typescript/ts-reset": "catalog:",
+    "eslint": "catalog:",
+    "postcss": "catalog:",
+    "tailwindcss": "catalog:",
+    "typescript": "catalog:"
+  }
+}

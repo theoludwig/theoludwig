@@ -1,0 +1,25 @@
+{
+  "extends": "@repo/config-typescript/tsconfig.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "types": ["@total-typescript/ts-reset", "@repo/i18n/messages.d.ts"],
+    "incremental": true,
+    "noEmit": true,
+    "allowJs": true,
+    "jsx": "preserve",
+    "paths": {
+      "#*": ["./*"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules", ".next"]
+}

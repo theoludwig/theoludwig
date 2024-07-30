@@ -1,0 +1,10 @@
+{
+  "extends": "@repo/config-typescript/tsconfig.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+
+    "noEmit": true
+  }
+}
