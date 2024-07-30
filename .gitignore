@@ -15,7 +15,7 @@ coverage
 out/
 dist/
 build/
-# apps/website/public/curriculum-vitae/
+apps/website/public/curriculum-vitae/
 
 # misc
 .DS_Store
