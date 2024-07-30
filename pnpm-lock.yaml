@@ -230,6 +230,9 @@ importers:
       markdownlint-rule-relative-links:
         specifier: 3.0.0
         version: 3.0.0
+      playwright:
+        specifier: 'catalog:'
+        version: 1.45.3
       prettier:
         specifier: 3.3.3
         version: 3.3.3
