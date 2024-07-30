@@ -1,6 +1,6 @@
 {
   "name": "@repo/eslint-config",
-  "version": "3.3.2",
+  "version": "4.0.0-staging.1",
   "private": true,
   "main": ".eslintrc.json",
   "files": [
