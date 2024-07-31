@@ -23,14 +23,14 @@ export const CurriculumVitaeProfile: React.FC<
           />
         </div>
         <div className="name-and-profession text-center">
-          <h3>
+          <h1 className="h3">
             <strong>{t("meta.title")}</strong>
-          </h3>
-          <h5 className="text-muted">{t("curriculum-vitae.description")}</h5>
-          <h5 className="text-muted">
+          </h1>
+          <h2 className="text-muted h5">{t("curriculum-vitae.description")}</h2>
+          <h2 className="text-muted h5">
             <BirthDate />
-          </h5>
-          <h5 className="text-muted">{t("home.about.nationality.value")}</h5>
+          </h2>
+          <h2 className="text-muted h5">{t("home.about.nationality.value")}</h2>
         </div>
       </div>
       <div className="flex justify-center">
