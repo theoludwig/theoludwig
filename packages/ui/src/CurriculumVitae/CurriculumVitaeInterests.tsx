@@ -9,13 +9,28 @@ export const CurriculumVitaeInterests: React.FC<
 > = () => {
   const t = useTranslations()
 
+  const interests = [
+    t("curriculum-vitae.interests.open-source"),
+    t("curriculum-vitae.interests.high-tech"),
+  ]
+
   return (
     <CurriculumVitaeSection
       id="interests"
       title={t("home.interests.title")}
       icon={<FaHeart size={24} />}
     >
-      <p>Test</p>
+      <ul className="list-unstyled m-0">
+        {interests.map((interest) => {
+          return (
+            <li key={interest} className="card card-nested">
+              <p>
+                <strong>{interest}</strong>
+              </p>
+            </li>
+          )
+        })}
+      </ul>
     </CurriculumVitaeSection>
   )
 }

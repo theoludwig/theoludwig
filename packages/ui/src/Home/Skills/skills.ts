@@ -3,7 +3,7 @@ export interface Skill {
   image: string | { [key: string]: string }
 }
 
-export const skills = {
+export const SKILLS = {
   JavaScript: {
     link: "https://developer.mozilla.org/docs/Web/JavaScript",
     image: "/images/skills/JavaScript.webp",
@@ -112,4 +112,27 @@ export const skills = {
   },
 } as const
 
-export type SkillName = keyof typeof skills
+export type SkillName = keyof typeof SKILLS
+
+export const SKILL_CATEGORIES = [
+  "programming-languages",
+  "frontend",
+  "backend",
+  "software-tools",
+] as const
+export type SkillCategory = (typeof SKILL_CATEGORIES)[number]
+
+export const SKILL_NAMES_BY_CATEGORY = {
+  "programming-languages": ["TypeScript", "Python", "C/C++", "PHP"],
+  frontend: ["HTML", "CSS", "Tailwind CSS", "React.js (+ Next.js)"],
+  backend: ["Laravel", "Node.js", "Fastify", "PostgreSQL"],
+  "software-tools": [
+    "GNU/Linux",
+    "Arch Linux",
+    "Visual Studio Code",
+    "Git",
+    "Docker",
+  ],
+} as const satisfies {
+  [key in SkillCategory]: SkillName[]
+}

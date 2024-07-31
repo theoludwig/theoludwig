@@ -9,9 +9,9 @@ export interface CurriculumVitaeProps {}
 
 export const CurriculumVitae: React.FC<CurriculumVitaeProps> = () => {
   return (
-    <main className="curriculum-vitae container-fluid">
-      <div className="row main clearfix">
-        <section className="col-md-3 card-wrapper profile-card-wrapper affix">
+    <main className="curriculum-vitae mx-auto px-4 text-sm">
+      <div className="-mx-4 p-2">
+        <section className="col-md-3 card-wrapper relative">
           <CurriculumVitaeProfile />
 
           <div className="card background-card">
@@ -20,14 +20,14 @@ export const CurriculumVitae: React.FC<CurriculumVitaeProps> = () => {
 
               <hr />
 
-              <section className="section-separated">
+              <section className="flex">
                 <CurriculumVitaeEducation />
                 <CurriculumVitaeSkills />
               </section>
 
               <hr />
 
-              <section className="section-separated">
+              <section className="flex">
                 <CurriculumVitaeWork />
                 <CurriculumVitaeInterests />
               </section>

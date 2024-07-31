@@ -161,17 +161,10 @@ code .line:last-child {
   width: 100% !important;
 }
 
-.container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
 .curriculum-vitae {
   background: #f0f0f0;
   color: #333;
-  line-height: 1.42857143;
-  font-size: 14px;
+  font-family: Arial, sans-serif;
 
   hr {
     margin-top: 15px;
@@ -181,9 +174,6 @@ code .line:last-child {
   }
   p {
     margin: 0;
-  }
-  strong {
-    font-weight: 600;
   }
   a {
     color: #337ab7;
@@ -231,7 +221,6 @@ code .line:last-child {
   h5,
   h6 {
     font-family: inherit;
-    font-weight: 500;
     line-height: 1.1;
     color: inherit;
   }
@@ -247,50 +236,21 @@ code .line:last-child {
   h5 {
     font-size: 14px;
   }
-  .row {
-    margin-right: -15px;
-    margin-left: -15px;
-  }
-  .clear-margin {
-    margin: 0;
-  }
-  .relative {
-    position: relative;
-  }
-  .center-block {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-  }
   .text-muted {
     color: #777;
-  }
-  .text-uppercase {
-    text-transform: uppercase;
   }
   .list-unstyled {
     padding-left: 0;
     list-style: none;
   }
 
-  .main {
-    padding: 5px;
-  }
-  .title {
-    font-weight: 600;
-  }
-
-  .profile-card-wrapper {
-    position: relative;
+  ul {
+    padding-inline-start: 20px;
   }
 
   .card-wrapper {
     float: none !important;
     padding: 5px;
-  }
-
-  .profile-card-wrapper .profile-card {
-    padding: 10px;
   }
 
   .card {
@@ -308,20 +268,8 @@ code .line:last-child {
     vertical-align: middle;
     border: 0;
   }
-  .contact-details {
-    display: flex;
-    justify-content: center;
-  }
-  .contact-details .detail {
-    position: relative;
-    min-height: 1px;
-    padding: 10px;
-  }
   .social-links {
     line-height: 2.5;
-  }
-  .experience-description {
-    margin-top: 10px;
   }
 
   .background-details .detail {
@@ -350,14 +298,8 @@ code .line:last-child {
     min-height: 0;
   }
 
-  .card-skills {
-    position: relative;
-  }
   .labels {
     line-height: 2;
-  }
-  .space-top {
-    margin-top: 10px;
   }
   .label {
     display: inline;
@@ -379,8 +321,5 @@ code .line:last-child {
   }
   .label-keyword p {
     margin: 0;
-  }
-  .section-separated {
-    display: flex;
   }
 }

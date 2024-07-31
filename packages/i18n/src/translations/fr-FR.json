@@ -7,9 +7,6 @@
     "en-US": "Anglais",
     "fr-FR": "Français"
   },
-  "common": {
-    "others": "Autres"
-  },
   "footer": {
     "all-rights-reserved": "Tous droits réservés"
   },
@@ -58,6 +55,7 @@
       "frontend": "Frontend",
       "backend": "Backend",
       "software-tools": "Logiciels et outils",
+      "others": "Autres",
       "driving-license": "Permis B"
     },
     "portfolio": {
@@ -83,7 +81,7 @@
       "description": "Je me demande constamment comment améliorer notre présent, afin de rendre notre futur meilleur, particulièrement grâce aux progrès de l'informatique. <br></br> Ma priorité réside dans la création d'expériences utilisateurs (UX) intuitives, répondant aux besoins des utilisateurs de la manière la plus efficace que possible."
     },
     "education": {
-      "title": "Formations",
+      "title": "Études",
       "iut": {
         "study-type": "Bachelor Universitaire de Technologie (BUT) Informatique",
         "institution": "IUT Robert Schuman à Illkirch-Graffenstaden",
@@ -133,47 +131,16 @@
       }
     },
     "work": {
-      "title": "Expériences",
+      "title": "Expériences professionnelles",
       "ircad": {
         "summary": "Développement de WebSurg, une université virtuelle consacrée à la formation médico-chirurgicale, en React.js/Next.js et API Platform avec Symfony.",
-        "website": "https://ircad.fr/",
-        "name": "IRCAD",
-        "location": "1 Place de l'Hôpital, 67000 Strasbourg",
-        "position": "Alternant Développeur Web Full Stack",
-        "startDate": "2023-08-28",
-        "endDate": "2024-09-02",
+        "position": "Apprenti Développeur Web Full Stack",
         "duration": "1 an"
       },
       "numerize": {
         "summary": "Développement d'un outil GED (Gestion Électronique de Documents) en React.js, Laravel et GraphQL.",
-        "website": "https://numerize.com/",
-        "name": "Numerize",
-        "location": "4 Rue Sophie Germain, 67720 Hœrdt",
         "position": "Stagiaire Développeur Web Full Stack",
-        "startDate": "2023-04-11",
-        "endDate": "2023-07-26",
         "duration": "4 mois"
-      }
-    },
-    "interests-work": {
-      "nuit-info-2021": {
-        "summary": "Développement site web en React.js et Strapi. <br></br> Classé n°1 en France sur le Défi de l'entreprise <toolpad-link>ToolPad</toolpad-link>.",
-        "website": "https://nuitdelinfo.com/",
-        "name": "La Nuit de l'info 2021",
-        "position": "Participation en équipe de 5 personnes",
-        "startDate": "2021-12-02",
-        "endDate": "2021-12-03",
-        "duration": "1 semaine"
-      },
-      "wild-code-school": {
-        "summary": "Hackathon développement d'une landing page et web scraping.",
-        "website": "https://wildcodeschool.fr/",
-        "name": "Wild Code School",
-        "location": "32 Rue du Bassin d'Austerlitz, 67100 Strasbourg",
-        "position": "Initiation métier Développeur web",
-        "startDate": "2019-06-24",
-        "endDate": "2019-06-28",
-        "duration": "1 semaine"
       }
     },
     "interests": {

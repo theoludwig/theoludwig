@@ -7,9 +7,6 @@
     "en-US": "English",
     "fr-FR": "French"
   },
-  "common": {
-    "others": "Others"
-  },
   "footer": {
     "all-rights-reserved": "All rights reserved"
   },
@@ -58,7 +55,8 @@
       "frontend": "Frontend",
       "backend": "Backend",
       "software-tools": "Software and tools",
-      "driving-license": "Permis B"
+      "others": "Others",
+      "driving-license": "Driving license"
     },
     "portfolio": {
       "title": "Portfolio",
@@ -77,54 +75,54 @@
     }
   },
   "curriculum-vitae": {
-    "description": "Développeur Full Stack • Étudiant",
+    "description": "Developer Full Stack • Student",
     "about": {
-      "title": "À propos",
-      "description": "Je me demande constamment comment améliorer notre présent, afin de rendre notre futur meilleur, particulièrement grâce aux progrès de l'informatique. <br></br> Ma priorité réside dans la création d'expériences utilisateurs (UX) intuitives, répondant aux besoins des utilisateurs de la manière la plus efficace que possible."
+      "title": "About",
+      "description": "I constantly wonder how to improve our present, to make our future better, particularly thanks to the advancements in computer science. <br></br> My priority is to craft intuitive user experiences (UX), that meet the needs of the users in the most efficient way possible."
     },
     "education": {
-      "title": "Formations",
+      "title": "Studies",
       "iut": {
-        "study-type": "Bachelor Universitaire de Technologie (BUT) Informatique",
-        "institution": "IUT Robert Schuman à Illkirch-Graffenstaden",
+        "study-type": "University Bachelor of Technology (BUT) Computer Science",
+        "institution": "IUT Robert Schuman in Illkirch-Graffenstaden",
         "years": {
           "2023-2024": {
             "title": "2023 - 2024",
-            "description": "3ème année",
+            "description": "3rd year",
             "courses": {
-              "web": "Développement Web en Node.js et React.js",
-              "ci-cd": "Intégration/Déploiement Continue et Docker",
-              "complexity-algorithms": "Complexité Algorithmique Théorique et Pratique en C++",
-              "no-sql": "Base de données NoSQL (Redis, MongoDB, Cassandra)"
+              "web": "Web development in Node.js and React.js",
+              "ci-cd": "Continuous Integration/Deployment (CI/CD) and Docker",
+              "complexity-algorithms": "Theoretical and Practical Algorithmic Complexity in C++",
+              "no-sql": "NoSQL database (Redis, MongoDB, Cassandra)"
             }
           },
           "2022-2023": {
             "title": "2022 - 2023",
-            "description": "2ème année",
+            "description": "2nd year",
             "courses": {
-              "web": "Développement Web avec le framework Laravel en PHP",
-              "tests": "Qualité de développement et Tests automatisés",
-              "clean-code": "Patrons et Principes de conceptions (Code maintenable et réutilisable) en UML",
-              "systems-c": "Programmation systèmes en C (Multi-Thread, Serveur/Client UDP/TCP)",
-              "sql-security": "Sécurisation des accès à la base de données et PL/SQL"
+              "web": "Web development with the Laravel framework in PHP",
+              "tests": "Development Quality and Automated Testing",
+              "clean-code": "Design Patterns and Principles (Maintainable and Reusable Code) in UML",
+              "systems-c": "Systems programming in C (Multi-Thread, Server/Client UDP/TCP)",
+              "sql-security": "Securing database access and PL/SQL"
             }
           },
           "2021-2022": {
             "title": "2021 - 2022",
-            "description": "1ère année",
+            "description": "1st year",
             "courses": {
-              "java": "Développement Orientée Objet en Java",
-              "systems-c": "Programmation systèmes en C (Allocation mémoire, Pointeurs, Structures)",
-              "windows-forms": "Développement d'application Windows Forms (.NET Framework) en C#",
-              "sql": "Base de données relationnelles et langage SQL"
+              "java": "Object Oriented Development in Java",
+              "systems-c": "Systems programming in C (Memory allocation, Pointers, Structures)",
+              "windows-forms": "Windows Forms (.NET Framework) Application Development in C#",
+              "sql": "Relational database and SQL language"
             }
           }
         }
       },
       "lycee": {
-        "study-type": "Baccalauréat Général (Mathématiques et Numériques Sciences Informatiques)",
-        "institution": "Lycée Heinrich Nessel à Haguenau",
-        "score": "Mention Assez Bien",
+        "study-type": "General Baccalaureate (Mathematics and Computer Science)",
+        "institution": "Heinrich Nessel High School in Haguenau",
+        "score": "Mention Quite Good",
         "years": {
           "2019-2021": {
             "title": "2019 - 2021"
@@ -133,52 +131,21 @@
       }
     },
     "work": {
-      "title": "Expériences",
+      "title": "Work experiences",
       "ircad": {
-        "summary": "Développement de WebSurg, une université virtuelle consacrée à la formation médico-chirurgicale, en React.js/Next.js et API Platform avec Symfony.",
-        "website": "https://ircad.fr/",
-        "name": "IRCAD",
-        "location": "1 Place de l'Hôpital, 67000 Strasbourg",
-        "position": "Alternant Développeur Web Full Stack",
-        "startDate": "2023-08-28",
-        "endDate": "2024-09-02",
-        "duration": "1 an"
+        "summary": "Development of WebSurg, a virtual university dedicated to medical-surgical training, in React.js/Next.js and API Platform with Symfony.",
+        "position": "Full Stack Web Developer Apprentice",
+        "duration": "1 year"
       },
       "numerize": {
-        "summary": "Développement d'un outil GED (Gestion Électronique de Documents) en React.js, Laravel et GraphQL.",
-        "website": "https://numerize.com/",
-        "name": "Numerize",
-        "location": "4 Rue Sophie Germain, 67720 Hœrdt",
-        "position": "Stagiaire Développeur Web Full Stack",
-        "startDate": "2023-04-11",
-        "endDate": "2023-07-26",
-        "duration": "4 mois"
-      }
-    },
-    "interests-work": {
-      "nuit-info-2021": {
-        "summary": "Développement site web en React.js et Strapi.<br></br> Classé n°1 en France sur le Défi de l'entreprise <toolpad-link>ToolPad</toolpad-link>.",
-        "website": "https://nuitdelinfo.com/",
-        "name": "La Nuit de l'info 2021",
-        "position": "Participation en équipe de 5 personnes",
-        "startDate": "2021-12-02",
-        "endDate": "2021-12-03",
-        "duration": "1 semaine"
-      },
-      "wild-code-school": {
-        "summary": "Hackathon développement d'une landing page et web scraping.",
-        "website": "https://wildcodeschool.fr/",
-        "name": "Wild Code School",
-        "location": "32 Rue du Bassin d'Austerlitz, 67100 Strasbourg",
-        "position": "Initiation métier Développeur web",
-        "startDate": "2019-06-24",
-        "endDate": "2019-06-28",
-        "duration": "1 semaine"
+        "summary": "Development of an DMS (Document Management System) tool in React.js, Laravel and GraphQL.",
+        "position": "Full Stack Web Developer Intern",
+        "duration": "4 months"
       }
     },
     "interests": {
-      "open-source": "Enthousiaste de l'Open-Source",
-      "high-tech": "Passionné de High-Tech"
+      "open-source": "Open-Source Enthusiast",
+      "high-tech": "Passionate about High-Tech"
     }
   }
 }

@@ -14,7 +14,7 @@ export const CurriculumVitaeSection: React.FC<CurriculumVitaeSectionProps> = (
       <div className="icon">{icon}</div>
 
       <div className="info">
-        <h4 className="title text-uppercase">{title}</h4>
+        <h4 className="font-semibold uppercase">{title}</h4>
 
         <div className="content">{children}</div>
       </div>

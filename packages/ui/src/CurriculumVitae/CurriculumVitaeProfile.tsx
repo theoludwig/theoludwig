@@ -11,11 +11,11 @@ export const CurriculumVitaeProfile: React.FC<
   const t = useTranslations()
 
   return (
-    <div className="card profile-card">
+    <div className="card p-2">
       <div className="profile-pic-container">
         <div className="profile-pic">
           <Image
-            className="media-object img-circle center-block"
+            className="mx-auto block"
             alt={t("meta.title")}
             src="/images/logo_background.webp"
             width={800}
@@ -33,8 +33,8 @@ export const CurriculumVitaeProfile: React.FC<
           <h5 className="text-muted">{t("home.about.nationality.value")}</h5>
         </div>
       </div>
-      <div className="contact-details clearfix">
-        <div className="detail">
+      <div className="flex justify-center">
+        <div className="relative px-3">
           <span className="info">
             <a className="link-disguise" href="mailto:contact@theoludwig.fr">
               contact@theoludwig.fr

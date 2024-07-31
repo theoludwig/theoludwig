@@ -5,7 +5,7 @@ import { useMemo } from "react"
 import { Link } from "../../Design/Link/Link"
 import { useTheme } from "../../Layout/Header/SwitchTheme"
 import type { SkillName } from "./skills"
-import { skills } from "./skills"
+import { SKILLS } from "./skills"
 
 export interface SkillItemProps {
   skillName: SkillName
@@ -14,7 +14,7 @@ export interface SkillItemProps {
 export const SkillItem: React.FC<SkillItemProps> = (props) => {
   const { skillName } = props
 
-  const skill = skills[skillName]
+  const skill = SKILLS[skillName]
 
   const { theme } = useTheme()
 

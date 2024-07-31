@@ -12,7 +12,8 @@
   },
   "scripts": {
     "lint:eslint": "eslint src --max-warnings 0 --report-unused-disable-directives",
-    "lint:typescript": "tsc --noEmit"
+    "lint:typescript": "tsc --noEmit",
+    "test": "vitest run"
   },
   "dependencies": {
     "deepmerge": "catalog:",
@@ -28,6 +29,7 @@
     "@types/react-dom": "catalog:",
     "@total-typescript/ts-reset": "catalog:",
     "eslint": "catalog:",
-    "typescript": "catalog:"
+    "typescript": "catalog:",
+    "vitest": "catalog:"
   }
 }
