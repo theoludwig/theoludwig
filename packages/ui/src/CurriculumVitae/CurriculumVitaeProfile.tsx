@@ -2,6 +2,7 @@ import { Link } from "@repo/i18n/navigation"
 import { useTranslations } from "next-intl"
 import Image from "next/image"
 import { BirthDate } from "../Home/About/AboutList/BirthDate"
+import { Locales } from "../Layout/Header/Locales/Locales"
 
 export interface CurriculumVitaeProfileProps {}
 
@@ -12,6 +13,9 @@ export const CurriculumVitaeProfile: React.FC<
 
   return (
     <div className="card p-2">
+      <div className="mx-2 flex print:hidden">
+        <Locales />
+      </div>
       <div className="profile-pic-container">
         <div className="profile-pic">
           <Image

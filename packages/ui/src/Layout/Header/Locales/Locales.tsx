@@ -59,7 +59,7 @@ export const Locales: React.FC<LocalesProps> = () => {
 
       <ul
         className={classNames(
-          "shadow-lightFlag dark:shadow-darkFlag bg-background dark:bg-background-dark absolute top-14 z-10 mt-4 flex w-32 list-none flex-col items-center justify-center rounded-lg p-0",
+          "shadow-lightFlag dark:shadow-darkFlag bg-background dark:bg-background-dark absolute top-14 z-10 mt-2 flex w-32 list-none flex-col items-center justify-center rounded-lg p-0",
           { hidden: !isVisibleMenu },
         )}
       >

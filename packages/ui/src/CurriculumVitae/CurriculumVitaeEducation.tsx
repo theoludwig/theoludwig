@@ -88,7 +88,11 @@ export const CurriculumVitaeEducation: React.FC<
                 </p>
 
                 {education.courses.length > 0 ? (
-                  <ul className="educational-courses">
+                  <ul
+                    style={{
+                      paddingInlineStart: 20,
+                    }}
+                  >
                     {education.courses.map((course) => {
                       return <li key={course}>{course}</li>
                     })}
