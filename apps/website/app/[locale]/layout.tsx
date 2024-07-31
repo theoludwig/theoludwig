@@ -1,10 +1,6 @@
 import "@repo/config-tailwind/styles.css"
 import type { Locale, LocaleProps } from "@repo/i18n/config"
 import { LOCALES } from "@repo/i18n/config"
-import { Footer } from "@repo/ui/Layout/Footer"
-import { Header } from "@repo/ui/Layout/Header"
-import { ThemeProvider } from "@repo/ui/Layout/Header/SwitchTheme"
-import { VERSION } from "@repo/utils/constants"
 import type { Metadata } from "next"
 import { NextIntlClientProvider } from "next-intl"
 import {
@@ -59,11 +55,7 @@ export const generateStaticParams = (): Array<{ locale: Locale }> => {
   })
 }
 
-interface LocaleLayoutProps extends React.PropsWithChildren {
-  params: {
-    locale: Locale
-  }
-}
+interface LocaleLayoutProps extends React.PropsWithChildren, LocaleProps {}
 
 const LocaleLayout: React.FC<LocaleLayoutProps> = async (props) => {
   const { children, params } = props
@@ -76,13 +68,9 @@ const LocaleLayout: React.FC<LocaleLayoutProps> = async (props) => {
   return (
     <html lang={params.locale} suppressHydrationWarning>
       <body>
-        <ThemeProvider>
-          <NextIntlClientProvider messages={messages}>
-            <Header />
-            {children}
-            <Footer version={VERSION} />
-          </NextIntlClientProvider>
-        </ThemeProvider>
+        <NextIntlClientProvider messages={messages}>
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   )

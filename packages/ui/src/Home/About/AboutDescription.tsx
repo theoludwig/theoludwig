@@ -13,8 +13,8 @@ export const AboutDescription: React.FC<AboutDescriptionProps> = () => {
         {t.rich("home.about.description")}
       </Typography>
 
-      <Button href="/curriculum-vitae/index.html" variant="outline">
-        Curriculum vitæ ({t("locales.fr-FR")})
+      <Button href="/curriculum-vitae" variant="outline">
+        Curriculum vitæ
       </Button>
     </div>
   )

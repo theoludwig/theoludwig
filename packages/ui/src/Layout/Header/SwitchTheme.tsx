@@ -11,16 +11,19 @@ export const THEMES = ["light", "dark"] as const
 export type Theme = (typeof THEMES)[number]
 export const THEME_DEFAULT = "dark" as Theme
 
-export interface ThemeProviderProps extends React.PropsWithChildren {}
+export interface ThemeProviderProps extends React.PropsWithChildren {
+  forcedTheme?: Theme
+}
 
 export const ThemeProvider: React.FC<ThemeProviderProps> = (props) => {
-  const { children } = props
+  const { children, forcedTheme } = props
 
   return (
     <NextThemeProvider
       attribute="class"
       defaultTheme={THEME_DEFAULT}
       enableSystem={false}
+      forcedTheme={forcedTheme}
     >
       {children}
     </NextThemeProvider>
