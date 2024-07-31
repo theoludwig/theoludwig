@@ -1,6 +1,6 @@
 export interface AboutItemProps {
   label: string
-  value: string
+  value: React.ReactNode
   link?: string
 }
 

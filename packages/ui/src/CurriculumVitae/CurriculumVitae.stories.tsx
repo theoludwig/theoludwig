@@ -1,0 +1,16 @@
+import type { Meta, StoryObj } from "@storybook/react"
+
+import { CurriculumVitae as CurriculumVitaeComponent } from "./CurriculumVitae"
+
+const meta = {
+  title: "Curriculum Vitae/CurriculumVitae",
+  component: CurriculumVitaeComponent,
+} satisfies Meta<typeof CurriculumVitaeComponent>
+
+export default meta
+
+type Story = StoryObj<typeof meta>
+
+export const CurriculumVitae: Story = {
+  args: {},
+}

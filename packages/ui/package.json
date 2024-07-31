@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "exports": {
+    "./CurriculumVitae": "./src/CurriculumVitae/CurriculumVitae.tsx",
     "./Design/Button": "./src/Design/Button/Button.tsx",
     "./Design/Link": "./src/Design/Link/Link.tsx",
     "./Design/Spinner": "./src/Design/Spinner/Spinner.tsx",

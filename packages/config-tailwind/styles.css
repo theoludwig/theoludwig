@@ -160,3 +160,227 @@ code .line:last-child {
   white-space: normal !important;
   width: 100% !important;
 }
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.curriculum-vitae {
+  background: #f0f0f0;
+  color: #333;
+  line-height: 1.42857143;
+  font-size: 14px;
+
+  hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 0;
+    border-top: 1px solid #eee;
+  }
+  p {
+    margin: 0;
+  }
+  strong {
+    font-weight: 600;
+  }
+  a {
+    color: #337ab7;
+    text-decoration: none;
+  }
+  a:focus,
+  a:hover {
+    color: #23527c;
+    text-decoration: underline;
+  }
+  .link-disguise {
+    color: inherit;
+  }
+  .link-disguise:hover {
+    color: inherit;
+  }
+  .h1,
+  .h2,
+  .h3,
+  h1,
+  h2,
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .h4,
+  .h5,
+  .h6,
+  h4,
+  h5,
+  h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+  }
+  .h3,
+  h3 {
+    font-size: 24px;
+  }
+  .h4,
+  h4 {
+    font-size: 18px;
+  }
+  .h5,
+  h5 {
+    font-size: 14px;
+  }
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .clear-margin {
+    margin: 0;
+  }
+  .relative {
+    position: relative;
+  }
+  .center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .text-muted {
+    color: #777;
+  }
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+  .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .main {
+    padding: 5px;
+  }
+  .title {
+    font-weight: 600;
+  }
+
+  .profile-card-wrapper {
+    position: relative;
+  }
+
+  .card-wrapper {
+    float: none !important;
+    padding: 5px;
+  }
+
+  .profile-card-wrapper .profile-card {
+    padding: 10px;
+  }
+
+  .card {
+    background: white;
+    border-radius: 3px;
+    padding: 10px 0;
+  }
+  .profile-pic {
+    padding: 10px 0;
+  }
+  .profile-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 0;
+  }
+  .contact-details {
+    display: flex;
+    justify-content: center;
+  }
+  .contact-details .detail {
+    position: relative;
+    min-height: 1px;
+    padding: 10px;
+  }
+  .social-links {
+    line-height: 2.5;
+  }
+  .experience-description {
+    margin-top: 10px;
+  }
+
+  .background-details .detail {
+    display: table;
+  }
+  .background-details .detail .icon,
+  .background-details .detail .info {
+    display: table-cell;
+  }
+  .background-details .detail .icon {
+    color: #707070;
+  }
+  .background-details .detail .icon {
+    min-width: 45px;
+    max-width: 45px;
+    text-align: center;
+  }
+  .icon img {
+    width: 20px;
+    height: 20px;
+  }
+  .background-details .detail .mobile-title {
+    display: none;
+  }
+  .card-nested {
+    min-height: 0;
+  }
+
+  .card-skills {
+    position: relative;
+  }
+  .labels {
+    line-height: 2;
+  }
+  .space-top {
+    margin-top: 10px;
+  }
+  .label {
+    display: inline;
+    padding: 0.2em 0.6em 0.3em;
+    font-size: 75%;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25em;
+  }
+  .label-keyword {
+    display: inline-block;
+    font-size: 0.9em;
+    padding: 5px;
+    border: 1px solid #357ebd;
+    margin-right: 5px;
+  }
+  .label-keyword p {
+    margin: 0;
+  }
+  .section-separated {
+    display: flex;
+  }
+}

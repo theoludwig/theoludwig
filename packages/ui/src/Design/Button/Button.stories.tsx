@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react"
 import { expect, fn, userEvent, within } from "@storybook/test"
-import { FaCheck } from "react-icons/fa6"
+import { FaCheck } from "react-icons/fa"
 
 import type { ButtonLinkProps } from "./Button"
 import { Button } from "./Button"

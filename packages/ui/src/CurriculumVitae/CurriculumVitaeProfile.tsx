@@ -1,0 +1,55 @@
+import { Link } from "@repo/i18n/navigation"
+import { useTranslations } from "next-intl"
+import Image from "next/image"
+import { BirthDate } from "../Home/About/AboutList/BirthDate"
+
+export interface CurriculumVitaeProfileProps {}
+
+export const CurriculumVitaeProfile: React.FC<
+  CurriculumVitaeProfileProps
+> = () => {
+  const t = useTranslations()
+
+  return (
+    <div className="card profile-card">
+      <div className="profile-pic-container">
+        <div className="profile-pic">
+          <Image
+            className="media-object img-circle center-block"
+            alt={t("meta.title")}
+            src="/images/logo_background.webp"
+            width={800}
+            height={800}
+          />
+        </div>
+        <div className="name-and-profession text-center">
+          <h3>
+            <strong>{t("meta.title")}</strong>
+          </h3>
+          <h5 className="text-muted">{t("curriculum-vitae.description")}</h5>
+          <h5 className="text-muted">
+            <BirthDate />
+          </h5>
+          <h5 className="text-muted">{t("home.about.nationality.value")}</h5>
+        </div>
+      </div>
+      <div className="contact-details clearfix">
+        <div className="detail">
+          <span className="info">
+            <a className="link-disguise" href="mailto:contact@theoludwig.fr">
+              contact@theoludwig.fr
+            </a>
+          </span>
+        </div>
+        <div className="detail">
+          <span className="info">
+            <Link className="link-disguise" href="/">
+              https://theoludwig.fr/
+            </Link>
+          </span>
+        </div>
+      </div>
+      <hr />
+    </div>
+  )
+}
