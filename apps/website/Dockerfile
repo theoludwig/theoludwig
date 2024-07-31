@@ -5,7 +5,7 @@ RUN corepack enable
 WORKDIR /usr/src/app
 
 FROM node-pnpm AS builder
-RUN pnpm install --global turbo@2.0.9
+RUN pnpm install --global turbo@2.0.10
 COPY ./ ./
 RUN turbo prune @repo/website --docker
 

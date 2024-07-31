@@ -1,5 +1,5 @@
-import { MainLayout } from "@repo/ui/MainLayout"
-import { Spinner } from "@repo/ui/design/Spinner"
+import { Spinner } from "@repo/ui/Design/Spinner"
+import { MainLayout } from "@repo/ui/Layout/MainLayout"
 
 const Loading: React.FC = () => {
   return (

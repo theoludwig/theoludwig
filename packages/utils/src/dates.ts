@@ -12,6 +12,7 @@ export const getISODate = (date: Date): string => {
 /**
  * Calculates the age of a person based on their birth date.
  * @param birthDate
+ * @returns
  */
 export const getAge = (birthDate: Date): number => {
   const today = new Date()

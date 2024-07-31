@@ -1,6 +1,6 @@
 import { Link } from "@repo/i18n/navigation"
-import { Section, SectionContent } from "@repo/ui/design/Section"
-import { Typography } from "@repo/ui/design/Typography"
+import { Typography } from "@repo/ui/Design/Typography"
+import { Section, SectionContent } from "@repo/ui/Layout/Section"
 import { getISODate } from "@repo/utils/dates"
 import type { BlogPost } from "./BlogPost"
 

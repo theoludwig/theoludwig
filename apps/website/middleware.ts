@@ -14,6 +14,8 @@ export const config = {
 
     // Set a cookie to remember the previous locale for
     // all requests that have a locale prefix
+    // Next.js issue, middleware matcher should support template literals:
+    // https://github.com/vercel/next.js/issues/56398
     "/(en-US|fr-FR)/:path*",
 
     // Enable redirects that add missing locales

@@ -1,12 +1,12 @@
 import { getBlogPosts } from "@repo/blog"
 import { BlogPosts } from "@repo/blog/BlogPosts"
 import { LOCALE_DEFAULT, type LocaleProps } from "@repo/i18n/config"
+import { MainLayout } from "@repo/ui/Layout/MainLayout"
 import {
   Section,
   SectionDescription,
   SectionTitle,
-} from "@repo/ui/design/Section"
-import { MainLayout } from "@repo/ui/MainLayout"
+} from "@repo/ui/Layout/Section"
 import type { Metadata } from "next"
 import { unstable_setRequestLocale } from "next-intl/server"
 

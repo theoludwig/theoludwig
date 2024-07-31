@@ -1,7 +1,7 @@
 "use client"
 
 import Giscus from "@giscus/react"
-import { useTheme } from "@repo/ui/Header/SwitchTheme"
+import { useTheme } from "@repo/ui/Layout/Header/SwitchTheme"
 
 interface BlogPostCommentsProps {}
 

@@ -4,7 +4,7 @@ import { BLOG_POST_MOCK } from "../BlogPost"
 import { BlogPosts as BlogPostsComponent } from "../BlogPosts"
 
 const meta = {
-  title: "Feature/Blog/BlogPosts",
+  title: "Blog/BlogPosts",
   component: BlogPostsComponent,
 } satisfies Meta<typeof BlogPostsComponent>
 

@@ -1,8 +1,8 @@
 import { getISODate } from "@repo/utils/dates"
 import "katex/dist/katex.min.css"
 
-import { Typography } from "@repo/ui/design/Typography"
-import { MainLayout } from "@repo/ui/MainLayout"
+import { Typography } from "@repo/ui/Design/Typography"
+import { MainLayout } from "@repo/ui/Layout/MainLayout"
 import type { BlogPost } from "./BlogPost"
 import { BlogPostContent } from "./BlogPostContent"
 

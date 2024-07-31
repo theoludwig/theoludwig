@@ -4,7 +4,7 @@ import { BLOG_POST_MOCK } from "../BlogPost"
 import { BlogPostUI as BlogPostUIComponent } from "../BlogPostUI"
 
 const meta = {
-  title: "Feature/Blog/BlogPostUI",
+  title: "Blog/BlogPostUI",
   component: BlogPostUIComponent,
 } satisfies Meta<typeof BlogPostUIComponent>
 
