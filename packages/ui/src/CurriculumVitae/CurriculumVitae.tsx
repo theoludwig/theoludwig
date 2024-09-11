@@ -1,9 +1,9 @@
-import { CurriculumVitaeAbout } from "./CurriculumVitaeAbout"
-import { CurriculumVitaeEducation } from "./CurriculumVitaeEducation"
-import { CurriculumVitaeInterests } from "./CurriculumVitaeInterests"
-import { CurriculumVitaeProfile } from "./CurriculumVitaeProfile"
-import { CurriculumVitaeSkills } from "./CurriculumVitaeSkills"
-import { CurriculumVitaeWork } from "./CurriculumVitaeWork"
+import { CurriculumVitaeAbout } from "./CurriculumVitaeAbout.tsx"
+import { CurriculumVitaeEducation } from "./CurriculumVitaeEducation.tsx"
+import { CurriculumVitaeInterests } from "./CurriculumVitaeInterests.tsx"
+import { CurriculumVitaeProfile } from "./CurriculumVitaeProfile.tsx"
+import { CurriculumVitaeSkills } from "./CurriculumVitaeSkills.tsx"
+import { CurriculumVitaeWork } from "./CurriculumVitaeWork.tsx"
 
 export interface CurriculumVitaeProps {}
 

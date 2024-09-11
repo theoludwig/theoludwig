@@ -2,10 +2,10 @@
 
 import { useTranslations } from "next-intl"
 import { useEffect } from "react"
-import { Button } from "../../Design/Button/Button"
-import { Typography } from "../../Design/Typography/Typography"
-import { MainLayout } from "../../Layout/MainLayout/MainLayout"
-import { Section } from "../../Layout/Section/Section"
+import { Button } from "../../Design/Button/Button.tsx"
+import { Typography } from "../../Design/Typography/Typography.tsx"
+import { MainLayout } from "../../Layout/MainLayout/MainLayout.tsx"
+import { Section } from "../../Layout/Section/Section.tsx"
 
 export interface ErrorServerProps {
   error: Error & { digest?: string }

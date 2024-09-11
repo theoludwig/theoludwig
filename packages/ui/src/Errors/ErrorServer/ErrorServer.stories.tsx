@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react"
 import { expect, fn, userEvent, within } from "@storybook/test"
 
-import { ErrorServer as ErrorServerComponent } from "./ErrorServer"
+import { ErrorServer as ErrorServerComponent } from "./ErrorServer.tsx"
 
 const meta = {
   title: "Errors/ErrorServer",

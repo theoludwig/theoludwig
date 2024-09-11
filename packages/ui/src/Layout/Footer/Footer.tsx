@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl"
 
 import { GIT_REPO_LINK } from "@repo/utils/constants"
-import { Link } from "../../Design/Link/Link"
+import { Link } from "../../Design/Link/Link.tsx"
 
 export interface FooterProps {
   version: string

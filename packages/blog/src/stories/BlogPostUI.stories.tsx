@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react"
 
-import { BLOG_POST_MOCK } from "../BlogPost"
-import { BlogPostUI as BlogPostUIComponent } from "../BlogPostUI"
+import { BLOG_POST_MOCK } from "../BlogPost.ts"
+import { BlogPostUI as BlogPostUIComponent } from "../BlogPostUI.tsx"
 
 const meta = {
   title: "Blog/BlogPostUI",

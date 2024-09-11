@@ -2,7 +2,7 @@ import fs from "node:fs"
 import path from "node:path"
 
 import matter from "gray-matter"
-import type { BlogPost, FrontMatter } from "./BlogPost"
+import type { BlogPost, FrontMatter } from "./BlogPost.tsx"
 
 export const BLOG_POSTS_PATH = path.join(
   process.cwd(),

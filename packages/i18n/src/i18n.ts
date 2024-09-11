@@ -3,8 +3,9 @@ import type { AbstractIntlMessages } from "next-intl"
 import { getRequestConfig } from "next-intl/server"
 import { notFound } from "next/navigation"
 
-import type { Locale } from "./config"
-import { defaultTranslationValues, LOCALE_DEFAULT, LOCALES } from "./config"
+import type { Locale } from "@repo/utils/constants"
+import { LOCALE_DEFAULT, LOCALES } from "@repo/utils/constants"
+import { defaultTranslationValues } from "./config.tsx"
 
 export default getRequestConfig(async ({ locale }) => {
   if (!LOCALES.includes(locale as Locale)) {

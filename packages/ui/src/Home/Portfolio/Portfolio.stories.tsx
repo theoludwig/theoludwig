@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react"
 
-import { Portfolio as PortfolioComponent } from "./Portfolio"
+import { Portfolio as PortfolioComponent } from "./Portfolio.tsx"
 
 const meta = {
   title: "Home/Portfolio",

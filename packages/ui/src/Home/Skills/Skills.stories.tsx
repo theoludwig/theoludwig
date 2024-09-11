@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react"
 
-import { Skills as SkillsComponent } from "./Skills"
+import { Skills as SkillsComponent } from "./Skills.tsx"
 
 const meta = {
   title: "Home/Skills",

@@ -3,8 +3,8 @@ import "katex/dist/katex.min.css"
 
 import { Typography } from "@repo/ui/Design/Typography"
 import { MainLayout } from "@repo/ui/Layout/MainLayout"
-import type { BlogPost } from "./BlogPost"
-import { BlogPostContent } from "./BlogPostContent"
+import type { BlogPost } from "./BlogPost.tsx"
+import { BlogPostContent } from "./BlogPostContent.tsx"
 
 export interface BlogPostUIProps {
   blogPost: BlogPost

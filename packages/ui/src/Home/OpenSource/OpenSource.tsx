@@ -3,8 +3,8 @@ import {
   Section,
   SectionDescription,
   SectionTitle,
-} from "../../Layout/Section/Section"
-import { Repository } from "./Repository"
+} from "../../Layout/Section/Section.tsx"
+import { Repository } from "./Repository.tsx"
 
 export interface OpenSourceProps {}
 

@@ -1,8 +1,8 @@
 import { useTranslations } from "next-intl"
-import { Section, SectionTitle } from "../../Layout/Section/Section"
-import { SkillItem } from "./SkillItem"
-import { SkillsSection } from "./SkillsSection"
-import { SKILL_CATEGORIES, SKILL_NAMES_BY_CATEGORY } from "./skills"
+import { Section, SectionTitle } from "../../Layout/Section/Section.tsx"
+import { SkillItem } from "./SkillItem.tsx"
+import { SkillsSection } from "./SkillsSection.tsx"
+import { SKILL_CATEGORIES, SKILL_NAMES_BY_CATEGORY } from "./skills.ts"
 
 export interface SkillsProps {}
 

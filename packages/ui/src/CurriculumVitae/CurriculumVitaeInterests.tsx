@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl"
 import { FaHeart } from "react-icons/fa"
-import { CurriculumVitaeSection } from "./CurriculumVitaeSection"
+import { CurriculumVitaeSection } from "./CurriculumVitaeSection.tsx"
 
 export interface CurriculumVitaeInterestsProps {}
 

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react"
 
-import type { TypographyProps } from "./Typography"
-import { Typography } from "./Typography"
+import type { TypographyProps } from "./Typography.tsx"
+import { Typography } from "./Typography.tsx"
 
 const meta = {
   title: "Design System/Typography",

@@ -1,6 +1,6 @@
-import { Typography } from "../../Design/Typography/Typography"
-import { SectionContent } from "../../Layout/Section/Section"
-import { GitHubIcon } from "../About/SocialMediaList/SocialMediaIcons/GitHubIcon"
+import { Typography } from "../../Design/Typography/Typography.tsx"
+import { SectionContent } from "../../Layout/Section/Section.tsx"
+import { GitHubIcon } from "../About/SocialMediaList/SocialMediaIcons/GitHubIcon.tsx"
 
 export interface RepositoryProps {
   name: string

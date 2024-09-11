@@ -1,7 +1,7 @@
 import { act, renderHook } from "@testing-library/react"
 
 import { describe, expect, it } from "vitest"
-import { useBoolean } from "../useBoolean"
+import { useBoolean } from "../useBoolean.ts"
 
 describe("useBoolean", () => {
   const initialValues = [true, false]

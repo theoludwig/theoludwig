@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl"
-import { Typography } from "../../Design/Typography/Typography"
+import { Typography } from "../../Design/Typography/Typography.tsx"
 
 export interface AboutIntroductionProps {}
 

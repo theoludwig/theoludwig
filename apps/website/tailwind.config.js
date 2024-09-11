@@ -2,7 +2,7 @@ import sharedConfig from "@repo/config-tailwind"
 
 /** @type {Pick<import('tailwindcss').Config, "presets" | "content">} */
 const config = {
-  content: ["./**/*.tsx", "../../packages/**/*.tsx"],
+  content: ["./app/**/*.tsx", "../../packages/*/src/**/*.tsx"],
   presets: [sharedConfig],
 }
 

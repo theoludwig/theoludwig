@@ -1,4 +1,4 @@
-import { Typography } from "../../Design/Typography/Typography"
+import { Typography } from "../../Design/Typography/Typography.tsx"
 
 export interface InterestItemProps {
   title: string

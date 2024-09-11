@@ -2,11 +2,13 @@ FROM node:22.4.1-slim AS node-pnpm
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 RUN corepack enable
+ENV TURBO_TELEMETRY_DISABLED=1
+ENV DO_NOT_TRACK=1
 WORKDIR /usr/src/app
 
 FROM node-pnpm AS builder
-RUN pnpm install --global turbo@2.0.10
 COPY ./ ./
+RUN pnpm install --global turbo@2.1.1
 RUN turbo prune @repo/website --docker
 
 FROM node-pnpm AS installer

@@ -1,6 +1,7 @@
 import "@repo/config-tailwind/styles.css"
-import type { Locale, LocaleProps } from "@repo/i18n/config"
-import { LOCALES } from "@repo/i18n/config"
+import type { LocaleProps } from "@repo/i18n/config"
+import type { Locale } from "@repo/utils/constants"
+import { LOCALES } from "@repo/utils/constants"
 import type { Metadata } from "next"
 import { NextIntlClientProvider } from "next-intl"
 import {

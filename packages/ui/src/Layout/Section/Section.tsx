@@ -1,8 +1,8 @@
 import { classNames } from "@repo/config-tailwind/classNames"
-import type { TypographyProps } from "../../Design/Typography/Typography"
-import { Typography } from "../../Design/Typography/Typography"
+import type { TypographyProps } from "../../Design/Typography/Typography.tsx"
+import { Typography } from "../../Design/Typography/Typography.tsx"
 
-export * from "./RevealFade"
+export * from "./RevealFade.tsx"
 
 export interface SectionProps
   extends React.ComponentPropsWithoutRef<"section"> {

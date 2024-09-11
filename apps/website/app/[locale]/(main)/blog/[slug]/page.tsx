@@ -3,7 +3,7 @@ import { notFound } from "next/navigation"
 
 import { getBlogPostBySlug, getBlogPosts } from "@repo/blog"
 import { BlogPostUI } from "@repo/blog/BlogPostUI"
-import type { Locale } from "@repo/i18n/config"
+import type { Locale } from "@repo/utils/constants"
 import { unstable_setRequestLocale } from "next-intl/server"
 
 interface BlogPostPageProps {

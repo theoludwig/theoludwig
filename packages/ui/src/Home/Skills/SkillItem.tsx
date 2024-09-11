@@ -2,10 +2,10 @@
 
 import Image from "next/image"
 import { useMemo } from "react"
-import { Link } from "../../Design/Link/Link"
-import { useTheme } from "../../Layout/Header/SwitchTheme"
-import type { SkillName } from "./skills"
-import { SKILLS } from "./skills"
+import { Link } from "../../Design/Link/Link.tsx"
+import { useTheme } from "../../Layout/Header/SwitchTheme.tsx"
+import type { SkillName } from "./skills.ts"
+import { SKILLS } from "./skills.ts"
 
 export interface SkillItemProps {
   skillName: SkillName

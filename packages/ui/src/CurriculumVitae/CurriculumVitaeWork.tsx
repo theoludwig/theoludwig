@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl"
 import { MdWork } from "react-icons/md"
-import { CurriculumVitaeSection } from "./CurriculumVitaeSection"
+import { CurriculumVitaeSection } from "./CurriculumVitaeSection.tsx"
 
 export interface CurriculumVitaeWorkProps {}
 

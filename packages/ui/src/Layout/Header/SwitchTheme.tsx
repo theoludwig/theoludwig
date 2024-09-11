@@ -2,14 +2,12 @@
 
 import { classNames } from "@repo/config-tailwind/classNames"
 import { useIsMounted } from "@repo/react-hooks/useIsMounted"
+import type { Theme } from "@repo/utils/constants"
+import { THEME_DEFAULT } from "@repo/utils/constants"
 import {
   ThemeProvider as NextThemeProvider,
   useTheme as useNextTheme,
 } from "next-themes"
-
-export const THEMES = ["light", "dark"] as const
-export type Theme = (typeof THEMES)[number]
-export const THEME_DEFAULT = "dark" as Theme
 
 export interface ThemeProviderProps extends React.PropsWithChildren {
   forcedTheme?: Theme

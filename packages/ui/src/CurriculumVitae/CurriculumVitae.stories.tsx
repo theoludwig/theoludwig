@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react"
 
-import { CurriculumVitae as CurriculumVitaeComponent } from "./CurriculumVitae"
+import { CurriculumVitae as CurriculumVitaeComponent } from "./CurriculumVitae.tsx"
 
 const meta = {
   title: "Curriculum Vitae/CurriculumVitae",

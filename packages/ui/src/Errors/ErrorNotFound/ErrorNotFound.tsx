@@ -1,8 +1,8 @@
 import { useTranslations } from "next-intl"
-import { Link } from "../../Design/Link/Link"
-import { Typography } from "../../Design/Typography/Typography"
-import { MainLayout } from "../../Layout/MainLayout/MainLayout"
-import { Section } from "../../Layout/Section/Section"
+import { Link } from "../../Design/Link/Link.tsx"
+import { Typography } from "../../Design/Typography/Typography.tsx"
+import { MainLayout } from "../../Layout/MainLayout/MainLayout.tsx"
+import { Section } from "../../Layout/Section/Section.tsx"
 
 export interface ErrorNotFoundProps {}
 

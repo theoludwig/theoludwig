@@ -1,15 +1,15 @@
 "use client"
 
 import { classNames } from "@repo/config-tailwind/classNames"
-import type { Locale } from "@repo/i18n/config"
-import { LOCALES } from "@repo/i18n/config"
 import { usePathname, useRouter } from "@repo/i18n/navigation"
+import type { Locale } from "@repo/utils/constants"
+import { LOCALES } from "@repo/utils/constants"
 import { useLocale } from "next-intl"
 import { useEffect, useRef } from "react"
 
 import { useBoolean } from "@repo/react-hooks/useBoolean"
-import { Arrow } from "./Arrow"
-import { LocaleFlag } from "./LocaleFlag"
+import { Arrow } from "./Arrow.tsx"
+import { LocaleFlag } from "./LocaleFlag.tsx"
 
 export interface LocalesProps {}
 

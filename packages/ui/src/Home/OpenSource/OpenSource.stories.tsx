@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react"
 
-import { OpenSource as OpenSourceComponent } from "./OpenSource"
+import { OpenSource as OpenSourceComponent } from "./OpenSource.tsx"
 
 const meta = {
   title: "Home/OpenSource",

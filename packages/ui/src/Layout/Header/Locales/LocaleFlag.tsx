@@ -1,4 +1,4 @@
-import type { Locale } from "@repo/i18n/config"
+import type { Locale } from "@repo/utils/constants"
 import { useTranslations } from "next-intl"
 import Image from "next/image"
 

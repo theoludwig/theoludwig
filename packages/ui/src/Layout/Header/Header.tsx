@@ -1,8 +1,8 @@
 import { useTranslations } from "next-intl"
 import Image from "next/image"
-import { Link } from "../../Design/Link/Link"
-import { Locales } from "./Locales/Locales"
-import { SwitchTheme } from "./SwitchTheme"
+import { Link } from "../../Design/Link/Link.tsx"
+import { Locales } from "./Locales/Locales.tsx"
+import { SwitchTheme } from "./SwitchTheme.tsx"
 
 export interface HeaderProps {}
 

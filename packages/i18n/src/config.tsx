@@ -1,9 +1,5 @@
+import type { Locale } from "@repo/utils/constants"
 import type { RichTranslationValues } from "next-intl"
-
-export const LOCALES = ["en-US", "fr-FR"] as const
-export type Locale = (typeof LOCALES)[number]
-export const LOCALE_DEFAULT = "en-US" satisfies Locale
-export const LOCALE_PREFIX = "never"
 
 export interface LocaleProps {
   params: {

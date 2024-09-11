@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react"
 
-import { ErrorNotFound as ErrorNotFoundComponent } from "./ErrorNotFound"
+import { ErrorNotFound as ErrorNotFoundComponent } from "./ErrorNotFound.tsx"
 
 const meta = {
   title: "Errors/ErrorNotFound",

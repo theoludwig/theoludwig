@@ -1,8 +1,8 @@
 import { Link } from "@repo/i18n/navigation"
 import { useTranslations } from "next-intl"
 import Image from "next/image"
-import { BirthDate } from "../Home/About/AboutList/BirthDate"
-import { Locales } from "../Layout/Header/Locales/Locales"
+import { BirthDate } from "../Home/About/AboutList/BirthDate.tsx"
+import { Locales } from "../Layout/Header/Locales/Locales.tsx"
 
 export interface CurriculumVitaeProfileProps {}
 

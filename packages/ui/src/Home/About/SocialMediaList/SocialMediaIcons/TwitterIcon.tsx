@@ -1,4 +1,4 @@
-import { Icon } from "./Icon"
+import { Icon } from "./Icon.tsx"
 
 export const TwitterIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
   return (

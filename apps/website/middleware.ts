@@ -1,4 +1,4 @@
-import { LOCALES, LOCALE_DEFAULT, LOCALE_PREFIX } from "@repo/i18n/config"
+import { LOCALES, LOCALE_DEFAULT, LOCALE_PREFIX } from "@repo/utils/constants"
 import createMiddleware from "next-intl/middleware"
 
 export default createMiddleware({

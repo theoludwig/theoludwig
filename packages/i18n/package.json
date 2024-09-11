@@ -16,6 +16,7 @@
     "test": "vitest run"
   },
   "dependencies": {
+    "@repo/utils": "workspace:*",
     "deepmerge": "catalog:",
     "next": "catalog:",
     "next-intl": "catalog:",

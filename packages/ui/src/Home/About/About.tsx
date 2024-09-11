@@ -1,9 +1,9 @@
-import { Section, SectionContent } from "../../Layout/Section/Section"
-import { AboutDescription } from "./AboutDescription"
-import { AboutIntroduction } from "./AboutIntroduction"
-import { AboutList } from "./AboutList/AboutList"
-import { AboutLogo } from "./AboutLogo"
-import { SocialMediaList } from "./SocialMediaList/SocialMediaList"
+import { Section, SectionContent } from "../../Layout/Section/Section.tsx"
+import { AboutDescription } from "./AboutDescription.tsx"
+import { AboutIntroduction } from "./AboutIntroduction.tsx"
+import { AboutList } from "./AboutList/AboutList.tsx"
+import { AboutLogo } from "./AboutLogo.tsx"
+import { SocialMediaList } from "./SocialMediaList/SocialMediaList.tsx"
 
 export interface AboutProps {}
 

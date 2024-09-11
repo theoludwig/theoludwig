@@ -1,6 +1,7 @@
 import "@repo/config-tailwind/styles.css"
-import { defaultTranslationValues, Locale } from "@repo/i18n/config"
+import { defaultTranslationValues } from "@repo/i18n/config"
 import i18nMessagesEnglish from "@repo/i18n/translations/en-US.json"
+import type { Locale } from "@repo/utils/constants"
 import type { Preview } from "@storybook/react"
 import { NextIntlClientProvider } from "next-intl"
 import { ThemeProvider as NextThemeProvider } from "next-themes"

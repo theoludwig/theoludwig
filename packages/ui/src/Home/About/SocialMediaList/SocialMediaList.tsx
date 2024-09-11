@@ -1,11 +1,11 @@
-import { EmailIcon } from "./SocialMediaIcons/EmailIcon"
-import { GitHubIcon } from "./SocialMediaIcons/GitHubIcon"
-import { GitLabIcon } from "./SocialMediaIcons/GitLabIcon"
-import { NPMIcon } from "./SocialMediaIcons/NPMIcon"
-import { TwitchIcon } from "./SocialMediaIcons/TwitchIcon"
-import { TwitterIcon } from "./SocialMediaIcons/TwitterIcon"
-import { YouTubeIcon } from "./SocialMediaIcons/YouTubeIcon"
-import { SocialMediaItem } from "./SocialMediaItem"
+import { EmailIcon } from "./SocialMediaIcons/EmailIcon.tsx"
+import { GitHubIcon } from "./SocialMediaIcons/GitHubIcon.tsx"
+import { GitLabIcon } from "./SocialMediaIcons/GitLabIcon.tsx"
+import { NPMIcon } from "./SocialMediaIcons/NPMIcon.tsx"
+import { TwitchIcon } from "./SocialMediaIcons/TwitchIcon.tsx"
+import { TwitterIcon } from "./SocialMediaIcons/TwitterIcon.tsx"
+import { YouTubeIcon } from "./SocialMediaIcons/YouTubeIcon.tsx"
+import { SocialMediaItem } from "./SocialMediaItem.tsx"
 
 export interface SocialMediaListProps {}
 

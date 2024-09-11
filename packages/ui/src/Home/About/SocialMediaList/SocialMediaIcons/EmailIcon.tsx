@@ -1,4 +1,4 @@
-import { Icon } from "./Icon"
+import { Icon } from "./Icon.tsx"
 
 export const EmailIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
   return (

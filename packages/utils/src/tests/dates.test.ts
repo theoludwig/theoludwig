@@ -1,6 +1,6 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest"
 
-import { getAge, getISODate } from "../dates.js"
+import { getAge, getISODate } from "../dates.ts"
 
 describe("getISODate", () => {
   it("should return the correct date in ISO format (e.g: 2012-05-23)", () => {

@@ -16,6 +16,7 @@
     "@repo/config-tailwind": "workspace:*",
     "@repo/i18n": "workspace:*",
     "@repo/ui": "workspace:*",
+    "@repo/utils": "workspace:*",
     "@repo/blog": "workspace:*",
     "next": "catalog:",
     "next-intl": "catalog:",

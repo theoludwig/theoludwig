@@ -1,14 +1,7 @@
 {
   "extends": "@repo/config-typescript/tsconfig.json",
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "resolveJsonModule": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "types": ["@total-typescript/ts-reset", "@repo/i18n/messages.d.ts"],
-    "jsx": "preserve",
-
-    "noEmit": true
+    "types": ["@total-typescript/ts-reset", "@repo/i18n/messages.d.ts"]
   }
 }

@@ -2,8 +2,8 @@ import type { Meta, StoryObj } from "@storybook/react"
 import { expect, fn, userEvent, within } from "@storybook/test"
 import { FaCheck } from "react-icons/fa"
 
-import type { ButtonLinkProps } from "./Button"
-import { Button } from "./Button"
+import type { ButtonLinkProps } from "./Button.tsx"
+import { Button } from "./Button.tsx"
 
 const meta = {
   title: "Design System/Button",

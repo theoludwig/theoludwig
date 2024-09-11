@@ -12,7 +12,7 @@ describe("VERSION", () => {
     vi.stubEnv("NODE_ENV", "development")
 
     // Act - When
-    const { VERSION } = await import("../constants.js")
+    const { VERSION } = await import("../constants.ts")
 
     // Assert - Then
     const expected = "0.0.0-development"
@@ -27,7 +27,7 @@ describe("VERSION", () => {
     })
 
     // Act - When
-    const { VERSION } = await import("../constants.js")
+    const { VERSION } = await import("../constants.ts")
 
     // Assert - Then
     const expected = "1.0.0"

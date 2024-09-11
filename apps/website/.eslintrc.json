@@ -1,7 +1,6 @@
 {
   "root": true,
   "extends": ["@repo/eslint-config/nextjs/.eslintrc.json"],
-  "ignorePatterns": ["public/"],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx"],

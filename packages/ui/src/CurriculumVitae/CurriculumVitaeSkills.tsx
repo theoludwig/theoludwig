@@ -3,8 +3,8 @@ import { FaToolbox } from "react-icons/fa"
 import {
   SKILL_CATEGORIES,
   SKILL_NAMES_BY_CATEGORY,
-} from "../Home/Skills/skills"
-import { CurriculumVitaeSection } from "./CurriculumVitaeSection"
+} from "../Home/Skills/skills.ts"
+import { CurriculumVitaeSection } from "./CurriculumVitaeSection.tsx"
 
 export interface CurriculumVitaeSkillsProps {}
 

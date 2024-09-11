@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react"
 
-import { Interests as InterestsComponent } from "./Interests"
+import { Interests as InterestsComponent } from "./Interests.tsx"
 
 const meta = {
   title: "Home/Interests",

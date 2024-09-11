@@ -1,6 +1,6 @@
 import Image from "next/image"
-import { Typography } from "../../Design/Typography/Typography"
-import { SectionContent } from "../../Layout/Section/Section"
+import { Typography } from "../../Design/Typography/Typography.tsx"
+import { SectionContent } from "../../Layout/Section/Section.tsx"
 
 export interface PortfolioProject {
   id: string

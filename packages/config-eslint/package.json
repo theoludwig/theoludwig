@@ -17,6 +17,7 @@
     "eslint-config-next": "catalog:",
     "eslint-plugin-storybook": "catalog:",
     "eslint-plugin-tailwindcss": "catalog:",
+    "eslint-plugin-import-x": "catalog:",
     "typescript": "catalog:"
   }
 }

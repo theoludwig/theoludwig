@@ -7,6 +7,15 @@ export const VERSION =
 
 export const GIT_REPO_LINK = "https://github.com/theoludwig/theoludwig"
 
+export const LOCALES = ["en-US", "fr-FR"] as const
+export type Locale = (typeof LOCALES)[number]
+export const LOCALE_DEFAULT = "en-US" satisfies Locale
+export const LOCALE_PREFIX = "never"
+
+export const THEMES = ["light", "dark"] as const
+export type Theme = (typeof THEMES)[number]
+export const THEME_DEFAULT = "light" as Theme
+
 export const BIRTH_DATE_DAY = "31"
 export const BIRTH_DATE_MONTH = "03"
 export const BIRTH_DATE_YEAR = "2003"

@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl"
-import { AboutItem } from "./AboutItem"
-import { BirthDate } from "./BirthDate"
+import { AboutItem } from "./AboutItem.tsx"
+import { BirthDate } from "./BirthDate.tsx"
 
 export interface AboutListProps {}
 

@@ -1,13 +1,13 @@
 import { GIT_REPO_LINK } from "@repo/utils/constants"
 import { useTranslations } from "next-intl"
 import { FaGit, FaMicrochip } from "react-icons/fa"
-import { Link } from "../../Design/Link/Link"
+import { Link } from "../../Design/Link/Link.tsx"
 import {
   Section,
   SectionContent,
   SectionTitle,
-} from "../../Layout/Section/Section"
-import { InterestItem } from "./InterestItem"
+} from "../../Layout/Section/Section.tsx"
+import { InterestItem } from "./InterestItem.tsx"
 
 export interface InterestsProps {}
 

@@ -1,6 +1,6 @@
 {
   "extends": [
-    "conventions",
+    "../.eslintrc.json",
     "next/core-web-vitals",
     "plugin:tailwindcss/recommended",
     "plugin:storybook/recommended"

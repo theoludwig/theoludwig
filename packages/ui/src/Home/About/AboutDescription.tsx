@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl"
-import { Button } from "../../Design/Button/Button"
-import { Typography } from "../../Design/Typography/Typography"
+import { Button } from "../../Design/Button/Button.tsx"
+import { Typography } from "../../Design/Typography/Typography.tsx"
 
 export interface AboutDescriptionProps {}
 

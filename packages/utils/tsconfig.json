@@ -1,13 +1,7 @@
 {
   "extends": "@repo/config-typescript/tsconfig.json",
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "resolveJsonModule": true,
     "lib": ["ESNext"],
-    "types": ["@types/node", "@total-typescript/ts-reset"],
-
-    "noEmit": true
+    "types": ["@types/node", "@total-typescript/ts-reset"]
   }
 }

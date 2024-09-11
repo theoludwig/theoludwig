@@ -11,7 +11,7 @@ import remarkMath from "remark-math"
 
 import { Link } from "@repo/i18n/navigation"
 import "katex/dist/katex.min.css"
-import { BlogPostComments } from "./BlogPostComments"
+import { BlogPostComments } from "./BlogPostComments.tsx"
 
 const Heading: React.FC<
   React.DetailedHTMLProps<
