@@ -11,6 +11,13 @@ export const CurriculumVitaeEducation: React.FC<
 
   const educations = [
     {
+      years: t("curriculum-vitae.education.cnam.years.2024-2025.title"),
+      studyType: t("curriculum-vitae.education.cnam.study-type"),
+      institution: t("curriculum-vitae.education.cnam.institution"),
+      score: t("curriculum-vitae.education.cnam.years.2024-2025.description"),
+      courses: [],
+    },
+    {
       years: t("curriculum-vitae.education.iut.years.2023-2024.title"),
       studyType: t("curriculum-vitae.education.iut.study-type"),
       institution: t("curriculum-vitae.education.iut.institution"),

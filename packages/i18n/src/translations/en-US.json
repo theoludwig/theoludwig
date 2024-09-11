@@ -82,6 +82,17 @@
     },
     "education": {
       "title": "Studies",
+      "cnam": {
+        "study-type": "Engineer in Computer Science and Information Systems (IS)",
+        "institution": "Conservatoire National des Arts et Métiers (CNAM), in Eckbolsheim - UIMM Alsace - ITII Alsace",
+        "years": {
+          "2024-2025": {
+            "title": "2024 - 2025",
+            "description": "1st year",
+            "courses": {}
+          }
+        }
+      },
       "iut": {
         "study-type": "University Bachelor of Technology (BUT) Computer Science",
         "institution": "IUT Robert Schuman in Illkirch-Graffenstaden",
@@ -135,7 +146,7 @@
       "ircad": {
         "summary": "Development of WebSurg, a virtual university dedicated to medical-surgical training, in React.js/Next.js and API Platform with Symfony.",
         "position": "Full Stack Web Developer Apprentice",
-        "duration": "1 year"
+        "duration": "4 ans"
       },
       "numerize": {
         "summary": "Development of an DMS (Document Management System) tool in React.js, Laravel and GraphQL.",

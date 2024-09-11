@@ -14,7 +14,7 @@ export const CurriculumVitaeWork: React.FC<CurriculumVitaeWorkProps> = () => {
       name: "IRCAD",
       location: "1 Place de l'Hôpital, FR-67000 Strasbourg",
       position: t("curriculum-vitae.work.ircad.position"),
-      dates: "28/08/2023 - 02/09/2024",
+      dates: "28/08/2023 - 31/08/2027",
       duration: t("curriculum-vitae.work.ircad.duration"),
     },
     {
