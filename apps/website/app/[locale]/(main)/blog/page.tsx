@@ -1,6 +1,6 @@
 import { getBlogPosts } from "@repo/blog"
 import { BlogPosts } from "@repo/blog/BlogPosts"
-import { type LocaleProps } from "@repo/i18n/config"
+import type { LocaleProps } from "@repo/i18n/config"
 import { MainLayout } from "@repo/ui/Layout/MainLayout"
 import {
   Section,
