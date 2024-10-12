@@ -1,7 +1,7 @@
 import "@repo/config-tailwind/styles.css"
 import { defaultTranslationValues } from "@repo/i18n/config"
 import i18nMessagesEnglish from "@repo/i18n/translations/en-US.json"
-import type { Locale } from "@repo/utils/constants"
+import { LOCALE_DEFAULT } from "@repo/utils/constants"
 import type { Preview } from "@storybook/react"
 import { NextIntlClientProvider } from "next-intl"
 import { ThemeProvider as NextThemeProvider } from "next-themes"
@@ -25,6 +25,7 @@ const preview: Preview = {
       stylePreview: true,
     },
     controls: {
+      disableSaveFromUI: true,
       matchers: {
         color: /(background|color)$/i,
         date: /Date$/i,
@@ -33,14 +34,13 @@ const preview: Preview = {
   },
   decorators: [
     (Story) => {
-      const locale = "en-US" satisfies Locale
-
       return (
         <NextThemeProvider enableColorScheme={false}>
           <NextIntlClientProvider
             messages={i18nMessagesEnglish}
-            locale={locale}
+            locale={LOCALE_DEFAULT}
             defaultTranslationValues={defaultTranslationValues}
+            timeZone={process.env["TZ"] ?? "UTC"}
           >
             <Story />
           </NextIntlClientProvider>

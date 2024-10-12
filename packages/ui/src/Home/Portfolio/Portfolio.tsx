@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl"
 import { Section, SectionTitle } from "../../Layout/Section/Section.tsx"
-import { PortfolioItem, type PortfolioProject } from "./PortfolioItem.tsx"
+import type { PortfolioProject } from "./PortfolioItem.tsx"
+import { PortfolioItem } from "./PortfolioItem.tsx"
 
 export interface PortfolioProps {}
 

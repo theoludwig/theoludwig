@@ -17,11 +17,17 @@
       "dependsOn": ["^test"],
       "outputs": ["coverage/**"]
     },
+    "lint:eslint-transit-node": {
+      "dependsOn": ["^lint:eslint-transit-node"]
+    },
     "lint:eslint": {
-      "dependsOn": ["^lint:eslint"]
+      "dependsOn": ["lint:eslint-transit-node"]
+    },
+    "lint:typescript-transit-node": {
+      "dependsOn": ["^lint:typescript-transit-node"]
     },
     "lint:typescript": {
-      "dependsOn": ["^lint:typescript"]
+      "dependsOn": ["lint:typescript-transit-node"]
     },
     "dev": {
       "cache": false,

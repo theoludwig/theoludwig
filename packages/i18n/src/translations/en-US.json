@@ -1,162 +1,162 @@
 {
-  "meta": {
-    "title": "Théo LUDWIG",
-    "description": "Developer Full Stack • Open-Source Enthusiast"
-  },
-  "locales": {
-    "en-US": "English",
-    "fr-FR": "French"
-  },
-  "footer": {
-    "all-rights-reserved": "All rights reserved"
-  },
-  "errors": {
-    "error": "Error",
-    "page-doesnt-exist": "This page doesn't exist!",
-    "not-found": "Not Found",
-    "server-error": "Internal Server Error!",
-    "return-to-home-page": "Return to the home page?",
-    "try-again": "Try again?"
-  },
-  "home": {
-    "about": {
-      "pronouns": {
-        "label": "Pronouns",
-        "value": "He/Him"
-      },
-      "birth-date": {
-        "label": "Birth date",
-        "value": "{birthDate} ({age} years old)"
-      },
-      "nationality": {
-        "label": "Nationality",
-        "value": "Alsace, France"
-      },
-      "email": {
-        "label": "Email",
-        "value": "{email}"
-      },
-      "description": "I constantly wonder how to <strong>improve our present, to make our future better</strong>, particularly thanks to the advancements in <strong>computer science</strong>."
-    },
-    "interests": {
-      "title": "Interests",
-      "code": {
-        "title": "Developer Full Stack",
-        "description": "My priority is to craft <strong>intuitive user experiences (<abbr-ux>UX</abbr-ux>)</strong>, that meet the needs of the users <strong>in the most efficient way possible</strong>. <br></br> Mainly focused on the development of <strong>Web solutions</strong>. <br></br> I am also interested in mobile and desktop application development, among other areas within the field of computer science."
-      },
-      "open-source": {
-        "title": "Open-Source Enthusiast",
-        "description": "I value the <strong>sharing of knowledge and collaboration</strong> to collectively resolve problems. <br></br> The source code of the website is available on <github-link>GitHub</github-link>."
-      }
-    },
-    "skills": {
-      "title": "Skills",
-      "programming-languages": "Programming languages",
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "software-tools": "Software and tools",
-      "others": "Others",
-      "driving-license": "Driving license"
-    },
-    "portfolio": {
-      "title": "Portfolio",
-      "carolo": {
-        "title": "Carolo",
-        "description": "Strategy board game similar to chess which allows grandiose moves (only available in French)."
-      },
-      "leon": {
-        "title": "Leon",
-        "description": "Leon is your open-source personal assistant."
-      }
-    },
-    "open-source": {
-      "title": "Open-Source",
-      "description": "Most famous open source projects I contributed to."
-    }
-  },
   "curriculum-vitae": {
-    "description": "Developer Full Stack • Student",
     "about": {
-      "title": "About",
-      "description": "I constantly wonder how to improve our present, to make our future better, particularly thanks to the advancements in computer science. <br></br> My priority is to craft intuitive user experiences (UX), that meet the needs of the users in the most efficient way possible."
+      "description": "I constantly wonder how to improve our present, to make our future better, particularly thanks to the advancements in computer science. <br></br> My priority is to craft intuitive user experiences (UX), that meet the needs of the users in the most efficient way possible.",
+      "title": "About"
     },
+    "description": "Developer Full Stack • Student",
     "education": {
-      "title": "Studies",
       "cnam": {
-        "study-type": "Engineer in Computer Science and Information Systems (IS)",
         "institution": "Conservatoire National des Arts et Métiers (CNAM), in Eckbolsheim - UIMM Alsace - ITII Alsace",
+        "study-type": "Engineer in Computer Science and Information Systems (IS)",
         "years": {
           "2024-2025": {
-            "title": "2024 - 2025",
+            "courses": {},
             "description": "1st year",
-            "courses": {}
+            "title": "2024 - 2025"
           }
         }
       },
       "iut": {
-        "study-type": "University Bachelor of Technology (BUT) Computer Science",
         "institution": "IUT Robert Schuman in Illkirch-Graffenstaden",
+        "study-type": "University Bachelor of Technology (BUT) Computer Science",
         "years": {
-          "2023-2024": {
-            "title": "2023 - 2024",
-            "description": "3rd year",
-            "courses": {
-              "web": "Web development in Node.js and React.js",
-              "ci-cd": "Continuous Integration/Deployment (CI/CD) and Docker",
-              "complexity-algorithms": "Theoretical and Practical Algorithmic Complexity in C++",
-              "no-sql": "NoSQL database (Redis, MongoDB, Cassandra)"
-            }
-          },
-          "2022-2023": {
-            "title": "2022 - 2023",
-            "description": "2nd year",
-            "courses": {
-              "web": "Web development with the Laravel framework in PHP",
-              "tests": "Development Quality and Automated Testing",
-              "clean-code": "Design Patterns and Principles (Maintainable and Reusable Code) in UML",
-              "systems-c": "Systems programming in C (Multi-Thread, Server/Client UDP/TCP)",
-              "sql-security": "Securing database access and PL/SQL"
-            }
-          },
           "2021-2022": {
-            "title": "2021 - 2022",
-            "description": "1st year",
             "courses": {
               "java": "Object Oriented Development in Java",
+              "sql": "Relational database and SQL language",
               "systems-c": "Systems programming in C (Memory allocation, Pointers, Structures)",
-              "windows-forms": "Windows Forms (.NET Framework) Application Development in C#",
-              "sql": "Relational database and SQL language"
-            }
+              "windows-forms": "Windows Forms (.NET Framework) Application Development in C#"
+            },
+            "description": "1st year",
+            "title": "2021 - 2022"
+          },
+          "2022-2023": {
+            "courses": {
+              "clean-code": "Design Patterns and Principles (Maintainable and Reusable Code) in UML",
+              "sql-security": "Securing database access and PL/SQL",
+              "systems-c": "Systems programming in C (Multi-Thread, Server/Client UDP/TCP)",
+              "tests": "Development Quality and Automated Testing",
+              "web": "Web development with the Laravel framework in PHP"
+            },
+            "description": "2nd year",
+            "title": "2022 - 2023"
+          },
+          "2023-2024": {
+            "courses": {
+              "ci-cd": "Continuous Integration/Deployment (CI/CD) and Docker",
+              "complexity-algorithms": "Theoretical and Practical Algorithmic Complexity in C++",
+              "no-sql": "NoSQL database (Redis, MongoDB, Cassandra)",
+              "web": "Web development in Node.js and React.js"
+            },
+            "description": "3rd year",
+            "title": "2023 - 2024"
           }
         }
       },
       "lycee": {
-        "study-type": "General Baccalaureate (Mathematics and Computer Science)",
         "institution": "Heinrich Nessel High School in Haguenau",
         "score": "Mention Quite Good",
+        "study-type": "General Baccalaureate (Mathematics and Computer Science)",
         "years": {
           "2019-2021": {
             "title": "2019 - 2021"
           }
         }
-      }
+      },
+      "title": "Studies"
+    },
+    "interests": {
+      "high-tech": "Passionate about High-Tech",
+      "open-source": "Open-Source Enthusiast"
     },
     "work": {
-      "title": "Work experiences",
       "ircad": {
-        "summary": "Development of WebSurg, a virtual university dedicated to medical-surgical training, in React.js/Next.js and API Platform with Symfony.",
+        "duration": "4 ans",
         "position": "Full Stack Web Developer Apprentice",
-        "duration": "4 ans"
+        "summary": "Development of WebSurg, a virtual university dedicated to medical-surgical training, in React.js/Next.js and API Platform with Symfony."
       },
       "numerize": {
-        "summary": "Development of an DMS (Document Management System) tool in React.js, Laravel and GraphQL.",
+        "duration": "4 months",
         "position": "Full Stack Web Developer Intern",
-        "duration": "4 months"
+        "summary": "Development of an DMS (Document Management System) tool in React.js, Laravel and GraphQL."
+      },
+      "title": "Work experiences"
+    }
+  },
+  "errors": {
+    "error": "Error",
+    "not-found": "Not Found",
+    "page-doesnt-exist": "This page doesn't exist!",
+    "return-to-home-page": "Return to the home page?",
+    "server-error": "Internal Server Error!",
+    "try-again": "Try again?"
+  },
+  "footer": {
+    "all-rights-reserved": "All rights reserved"
+  },
+  "home": {
+    "about": {
+      "birth-date": {
+        "label": "Birth date",
+        "value": "{birthDate} ({age} years old)"
+      },
+      "description": "I constantly wonder how to <strong>improve our present, to make our future better</strong>, particularly thanks to the advancements in <strong>computer science</strong>.",
+      "email": {
+        "label": "Email",
+        "value": "{email}"
+      },
+      "nationality": {
+        "label": "Nationality",
+        "value": "Alsace, France"
+      },
+      "pronouns": {
+        "label": "Pronouns",
+        "value": "He/Him"
       }
     },
     "interests": {
-      "open-source": "Open-Source Enthusiast",
-      "high-tech": "Passionate about High-Tech"
+      "code": {
+        "description": "My priority is to craft <strong>intuitive user experiences (<abbr-ux>UX</abbr-ux>)</strong>, that meet the needs of the users <strong>in the most efficient way possible</strong>. <br></br> Mainly focused on the development of <strong>Web solutions</strong>. <br></br> I am also interested in mobile and desktop application development, among other areas within the field of computer science.",
+        "title": "Developer Full Stack"
+      },
+      "open-source": {
+        "description": "I value the <strong>sharing of knowledge and collaboration</strong> to collectively resolve problems. <br></br> The source code of the website is available on <github-link>GitHub</github-link>.",
+        "title": "Open-Source Enthusiast"
+      },
+      "title": "Interests"
+    },
+    "open-source": {
+      "description": "Most famous open source projects I contributed to.",
+      "title": "Open-Source"
+    },
+    "portfolio": {
+      "carolo": {
+        "description": "Strategy board game similar to chess which allows grandiose moves (only available in French).",
+        "title": "Carolo"
+      },
+      "leon": {
+        "description": "Leon is your open-source personal assistant.",
+        "title": "Leon"
+      },
+      "title": "Portfolio"
+    },
+    "skills": {
+      "backend": "Backend",
+      "driving-license": "Driving license",
+      "frontend": "Frontend",
+      "others": "Others",
+      "programming-languages": "Programming languages",
+      "software-tools": "Software and tools",
+      "title": "Skills"
     }
+  },
+  "locales": {
+    "en-US": "English",
+    "fr-FR": "French"
+  },
+  "meta": {
+    "description": "Developer Full Stack • Open-Source Enthusiast",
+    "title": "Théo LUDWIG"
   }
 }

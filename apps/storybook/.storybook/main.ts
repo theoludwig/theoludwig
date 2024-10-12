@@ -7,7 +7,11 @@ const config: StorybookConfig = {
   docs: {
     defaultName: "Documentation",
   },
-  stories: ["../../../packages/**/*.stories.tsx", "../stories/*.mdx"],
+  stories: [
+    "../../../packages/ui/src/**/*.stories.tsx",
+    "../../../packages/blog/src/**/*.stories.tsx",
+    "../stories/*.mdx",
+  ],
   addons: [
     "@storybook/addon-essentials",
     "@storybook/addon-storysource",

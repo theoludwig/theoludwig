@@ -3,9 +3,11 @@
     "editorconfig.editorconfig",
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
+    "davidanson.vscode-markdownlint",
     "bradlc.vscode-tailwindcss",
     "mikestead.dotenv",
-    "davidanson.vscode-markdownlint",
-    "ms-azuretools.vscode-docker"
+    "ms-azuretools.vscode-docker",
+    "antfu.pnpm-catalog-lens",
+    "Lokalise.i18n-ally"
   ]
 }

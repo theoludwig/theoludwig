@@ -7,9 +7,9 @@
     "build": "storybook build",
     "dev": "storybook dev --port 6006 --no-open",
     "start": "http-server \"storybook-static\" --port 6006 --silent",
-    "test": "start-server-and-test \"dev\" http://127.0.0.1:6006 \"test:storybook\"",
-    "test:storybook": "test-storybook",
-    "test:storybook-coverage": "test-storybook --coverage",
+    "test": "start-server-and-test \"start\" http://127.0.0.1:6006 \"test:storybook\"",
+    "test:dev": "start-server-and-test \"dev\" http://127.0.0.1:6006 \"test:storybook\"",
+    "test:storybook": "test-storybook --testTimeout=60000 --maxWorkers=2",
     "chromatic": "chromatic"
   },
   "dependencies": {

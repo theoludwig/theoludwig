@@ -1,7 +1,8 @@
 "use client"
 
+import { useRouter } from "@repo/i18n/navigation"
 import { useTranslations } from "next-intl"
-import { useEffect } from "react"
+import { useEffect, useTransition } from "react"
 import { Button } from "../../Design/Button/Button.tsx"
 import { Typography } from "../../Design/Typography/Typography.tsx"
 import { MainLayout } from "../../Layout/MainLayout/MainLayout.tsx"
@@ -14,6 +15,9 @@ export interface ErrorServerProps {
 
 export const ErrorServer: React.FC<ErrorServerProps> = (props) => {
   const { error, reset } = props
+
+  const [isPending, startTransition] = useTransition()
+  const router = useRouter()
 
   const t = useTranslations()
 
@@ -29,7 +33,17 @@ export const ErrorServer: React.FC<ErrorServerProps> = (props) => {
         </Typography>
 
         <Typography variant="text1" as="p" className="mt-4">
-          <Button onClick={reset}>{t("errors.try-again")}</Button>
+          <Button
+            isLoading={isPending}
+            onClick={() => {
+              startTransition(() => {
+                router.refresh()
+                reset()
+              })
+            }}
+          >
+            {t("errors.try-again")}
+          </Button>
         </Typography>
       </Section>
     </MainLayout>

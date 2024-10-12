@@ -1,162 +1,162 @@
 {
-  "meta": {
-    "title": "Théo LUDWIG",
-    "description": "Développeur Full Stack • Enthousiaste de l'Open-Source"
-  },
-  "locales": {
-    "en-US": "Anglais",
-    "fr-FR": "Français"
-  },
-  "footer": {
-    "all-rights-reserved": "Tous droits réservés"
-  },
-  "errors": {
-    "error": "Erreur",
-    "page-doesnt-exist": "Cette page n'existe pas !",
-    "not-found": "Introuvable",
-    "server-error": "Erreur interne du serveur !",
-    "return-to-home-page": "Retour à la page d'accueil ?",
-    "try-again": "Réessayer ?"
-  },
-  "home": {
-    "about": {
-      "pronouns": {
-        "label": "Pronoms",
-        "value": "Il/Lui"
-      },
-      "birth-date": {
-        "label": "Date de naissance",
-        "value": "{birthDate} ({age} ans)"
-      },
-      "nationality": {
-        "label": "Nationalité",
-        "value": "Alsace, France"
-      },
-      "email": {
-        "label": "Email",
-        "value": "{email}"
-      },
-      "description": "Je me demande constamment comment <strong>améliorer notre présent, afin de rendre notre futur meilleur</strong>, particulièrement grâce aux progrès de <strong>l'informatique</strong>."
-    },
-    "interests": {
-      "title": "Intérêts",
-      "code": {
-        "title": "Développeur Full Stack",
-        "description": "Ma priorité réside dans la création <strong>d'expériences utilisateurs (<abbr-ux>UX</abbr-ux>) intuitives</strong>, répondant aux besoins des utilisateurs de la <strong>manière la plus efficace que possible</strong>. <br></br> Principalement axé sur l'élaboration de <strong>solutions en Développement Web</strong>. <br></br> Je suis également intéressé par le développement d'applications mobiles parmis d'autres domaines de l'informatique."
-      },
-      "open-source": {
-        "title": "Enthousiaste de l'Open-Source",
-        "description": "J'apprécie le <strong>partage des connaissances et la collaboration</strong> pour résoudre des défis collectivement. <br></br> Le code source du site est accessible sur <github-link>GitHub</github-link>."
-      }
-    },
-    "skills": {
-      "title": "Compétences",
-      "programming-languages": "Langages de programmation",
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "software-tools": "Logiciels et outils",
-      "others": "Autres",
-      "driving-license": "Permis B"
-    },
-    "portfolio": {
-      "title": "Portfolio",
-      "carolo": {
-        "title": "Carolo",
-        "description": "Jeu de plateau stratégique similaire aux échecs qui permet des coups grandioses, reposant sur des enchaînements remarquables."
-      },
-      "leon": {
-        "title": "Leon",
-        "description": "Leon est votre assistant personnel open source."
-      }
-    },
-    "open-source": {
-      "title": "Open-Source",
-      "description": "Projets open source les plus célèbres auxquels j'ai contribué."
-    }
-  },
   "curriculum-vitae": {
-    "description": "Développeur Full Stack • Étudiant",
     "about": {
-      "title": "À propos",
-      "description": "Je me demande constamment comment améliorer notre présent, afin de rendre notre futur meilleur, particulièrement grâce aux progrès de l'informatique. <br></br> Ma priorité réside dans la création d'expériences utilisateurs (UX) intuitives, répondant aux besoins des utilisateurs de la manière la plus efficace que possible."
+      "description": "Je me demande constamment comment améliorer notre présent, afin de rendre notre futur meilleur, particulièrement grâce aux progrès de l'informatique. <br></br> Ma priorité réside dans la création d'expériences utilisateurs (UX) intuitives, répondant aux besoins des utilisateurs de la manière la plus efficace que possible.",
+      "title": "À propos"
     },
+    "description": "Développeur Full Stack • Étudiant",
     "education": {
-      "title": "Études",
       "cnam": {
-        "study-type": "Ingénieur en Informatique et Systèmes d'Information (SI)",
         "institution": "Conservatoire National des Arts et Métiers (CNAM) à Eckbolsheim - UIMM Alsace - ITII Alsace",
+        "study-type": "Ingénieur en Informatique et Systèmes d'Information (SI)",
         "years": {
           "2024-2025": {
-            "title": "2024 - 2025",
+            "courses": {},
             "description": "1ère année",
-            "courses": {}
+            "title": "2024 - 2025"
           }
         }
       },
       "iut": {
-        "study-type": "Bachelor Universitaire de Technologie (BUT) Informatique",
         "institution": "IUT Robert Schuman à Illkirch-Graffenstaden",
+        "study-type": "Bachelor Universitaire de Technologie (BUT) Informatique",
         "years": {
-          "2023-2024": {
-            "title": "2023 - 2024",
-            "description": "3ème année",
-            "courses": {
-              "web": "Développement Web en Node.js et React.js",
-              "ci-cd": "Intégration/Déploiement Continue et Docker",
-              "complexity-algorithms": "Complexité Algorithmique Théorique et Pratique en C++",
-              "no-sql": "Base de données NoSQL (Redis, MongoDB, Cassandra)"
-            }
-          },
-          "2022-2023": {
-            "title": "2022 - 2023",
-            "description": "2ème année",
-            "courses": {
-              "web": "Développement Web avec le framework Laravel en PHP",
-              "tests": "Qualité de développement et Tests automatisés",
-              "clean-code": "Patrons et Principes de conceptions (Code maintenable et réutilisable) en UML",
-              "systems-c": "Programmation systèmes en C (Multi-Thread, Serveur/Client UDP/TCP)",
-              "sql-security": "Sécurisation des accès à la base de données et PL/SQL"
-            }
-          },
           "2021-2022": {
-            "title": "2021 - 2022",
-            "description": "1ère année",
             "courses": {
               "java": "Développement Orientée Objet en Java",
+              "sql": "Base de données relationnelles et langage SQL",
               "systems-c": "Programmation systèmes en C (Allocation mémoire, Pointeurs, Structures)",
-              "windows-forms": "Développement d'application Windows Forms (.NET Framework) en C#",
-              "sql": "Base de données relationnelles et langage SQL"
-            }
+              "windows-forms": "Développement d'application Windows Forms (.NET Framework) en C#"
+            },
+            "description": "1ère année",
+            "title": "2021 - 2022"
+          },
+          "2022-2023": {
+            "courses": {
+              "clean-code": "Patrons et Principes de conceptions (Code maintenable et réutilisable) en UML",
+              "sql-security": "Sécurisation des accès à la base de données et PL/SQL",
+              "systems-c": "Programmation systèmes en C (Multi-Thread, Serveur/Client UDP/TCP)",
+              "tests": "Qualité de développement et Tests automatisés",
+              "web": "Développement Web avec le framework Laravel en PHP"
+            },
+            "description": "2ème année",
+            "title": "2022 - 2023"
+          },
+          "2023-2024": {
+            "courses": {
+              "ci-cd": "Intégration/Déploiement Continue et Docker",
+              "complexity-algorithms": "Complexité Algorithmique Théorique et Pratique en C++",
+              "no-sql": "Base de données NoSQL (Redis, MongoDB, Cassandra)",
+              "web": "Développement Web en Node.js et React.js"
+            },
+            "description": "3ème année",
+            "title": "2023 - 2024"
           }
         }
       },
       "lycee": {
-        "study-type": "Baccalauréat Général (Mathématiques et Numériques Sciences Informatiques)",
         "institution": "Lycée Heinrich Nessel à Haguenau",
         "score": "Mention Assez Bien",
+        "study-type": "Baccalauréat Général (Mathématiques et Numériques Sciences Informatiques)",
         "years": {
           "2019-2021": {
             "title": "2019 - 2021"
           }
         }
-      }
+      },
+      "title": "Études"
+    },
+    "interests": {
+      "high-tech": "Passionné de High-Tech",
+      "open-source": "Enthousiaste de l'Open-Source"
     },
     "work": {
-      "title": "Expériences professionnelles",
       "ircad": {
-        "summary": "Développement de WebSurg, une université virtuelle consacrée à la formation médico-chirurgicale, en React.js/Next.js et API Platform avec Symfony.",
+        "duration": "4 ans",
         "position": "Apprenti Développeur Web Full Stack",
-        "duration": "4 ans"
+        "summary": "Développement de WebSurg, une université virtuelle consacrée à la formation médico-chirurgicale, en React.js/Next.js et API Platform avec Symfony."
       },
       "numerize": {
-        "summary": "Développement d'un outil GED (Gestion Électronique de Documents) en React.js, Laravel et GraphQL.",
+        "duration": "4 mois",
         "position": "Stagiaire Développeur Web Full Stack",
-        "duration": "4 mois"
+        "summary": "Développement d'un outil GED (Gestion Électronique de Documents) en React.js, Laravel et GraphQL."
+      },
+      "title": "Expériences professionnelles"
+    }
+  },
+  "errors": {
+    "error": "Erreur",
+    "not-found": "Introuvable",
+    "page-doesnt-exist": "Cette page n'existe pas !",
+    "return-to-home-page": "Retour à la page d'accueil ?",
+    "server-error": "Erreur interne du serveur !",
+    "try-again": "Réessayer ?"
+  },
+  "footer": {
+    "all-rights-reserved": "Tous droits réservés"
+  },
+  "home": {
+    "about": {
+      "birth-date": {
+        "label": "Date de naissance",
+        "value": "{birthDate} ({age} ans)"
+      },
+      "description": "Je me demande constamment comment <strong>améliorer notre présent, afin de rendre notre futur meilleur</strong>, particulièrement grâce aux progrès de <strong>l'informatique</strong>.",
+      "email": {
+        "label": "Email",
+        "value": "{email}"
+      },
+      "nationality": {
+        "label": "Nationalité",
+        "value": "Alsace, France"
+      },
+      "pronouns": {
+        "label": "Pronoms",
+        "value": "Il/Lui"
       }
     },
     "interests": {
-      "open-source": "Enthousiaste de l'Open-Source",
-      "high-tech": "Passionné de High-Tech"
+      "code": {
+        "description": "Ma priorité réside dans la création <strong>d'expériences utilisateurs (<abbr-ux>UX</abbr-ux>) intuitives</strong>, répondant aux besoins des utilisateurs de la <strong>manière la plus efficace que possible</strong>. <br></br> Principalement axé sur l'élaboration de <strong>solutions en Développement Web</strong>. <br></br> Je suis également intéressé par le développement d'applications mobiles parmis d'autres domaines de l'informatique.",
+        "title": "Développeur Full Stack"
+      },
+      "open-source": {
+        "description": "J'apprécie le <strong>partage des connaissances et la collaboration</strong> pour résoudre des défis collectivement. <br></br> Le code source du site est accessible sur <github-link>GitHub</github-link>.",
+        "title": "Enthousiaste de l'Open-Source"
+      },
+      "title": "Intérêts"
+    },
+    "open-source": {
+      "description": "Projets open source les plus célèbres auxquels j'ai contribué.",
+      "title": "Open-Source"
+    },
+    "portfolio": {
+      "carolo": {
+        "description": "Jeu de plateau stratégique similaire aux échecs qui permet des coups grandioses, reposant sur des enchaînements remarquables.",
+        "title": "Carolo"
+      },
+      "leon": {
+        "description": "Leon est votre assistant personnel open source.",
+        "title": "Leon"
+      },
+      "title": "Portfolio"
+    },
+    "skills": {
+      "backend": "Backend",
+      "driving-license": "Permis B",
+      "frontend": "Frontend",
+      "others": "Autres",
+      "programming-languages": "Langages de programmation",
+      "software-tools": "Logiciels et outils",
+      "title": "Compétences"
     }
+  },
+  "locales": {
+    "en-US": "Anglais",
+    "fr-FR": "Français"
+  },
+  "meta": {
+    "description": "Développeur Full Stack • Enthousiaste de l'Open-Source",
+    "title": "Théo LUDWIG"
   }
 }

@@ -32,7 +32,8 @@ The commit message guidelines adheres to [Conventional Commits](https://www.conv
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) >= 22.0.0
-- [pnpm](https://pnpm.io/) >= 9.10.0
+- [pnpm](https://pnpm.io/) >= 9.12.1 [(`corepack enable`)](https://nodejs.org/docs/latest-v22.x/api/corepack.html)
+- [Docker](https://www.docker.com/)
 
 ### Installation
 
@@ -63,15 +64,19 @@ node --run dev
 # Lint
 node --run lint:editorconfig
 node --run lint:markdown
-node --run lint:prettier
-node --run lint:eslint
 node --run lint:typescript
+node --run lint:eslint
+node --run lint:prettier
 
 # Tests
 node --run test
 
 # Build
 node --run build
+
+# To execute a command in a specific package (e.g: packages/utils)
+cd packages/utils
+node --run test
 ```
 
 ### Production environment with [Docker](https://www.docker.com/)
