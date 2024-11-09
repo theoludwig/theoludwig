@@ -6,7 +6,7 @@ import tailwindConfig from "@repo/config-tailwind"
 <Title>Colors</Title>
 
 <ColorPalette>
-  {Object.entries(tailwindConfig.theme.colors).map(
+  {Object.entries(tailwindConfig.theme.extend.colors).map(
     ([colorName, colorValue]) => {
       const colors = {}
 

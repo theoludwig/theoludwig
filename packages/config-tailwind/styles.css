@@ -9,6 +9,10 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    min-width: 0;
+  }
+
   b,
   strong {
     @apply font-semibold;
@@ -36,11 +40,11 @@
     @apply italic tracking-wider;
   }
   blockquote {
-    @apply border-gray border-l-4 pl-3 italic;
+    @apply border-gray-lighter border-l-4 pl-3 italic;
   }
 
   kbd {
-    @apply bg-gray rounded-md px-2 dark:text-black;
+    @apply bg-gray-lighter rounded-md px-2 dark:text-black;
   }
 
   mark {
@@ -82,7 +86,7 @@ body {
 }
 
 .prose {
-  @apply dark:text-gray !max-w-5xl scroll-smooth text-black;
+  @apply dark:text-gray-lighter !max-w-5xl scroll-smooth text-black;
 }
 
 .prose p {
@@ -107,7 +111,7 @@ body {
 }
 
 .prose strong {
-  @apply dark:text-gray text-black;
+  @apply dark:text-gray-lighter text-black;
 }
 
 .prose h2,
