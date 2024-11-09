@@ -1,5 +1,5 @@
 import { classNames } from "@repo/config-tailwind/classNames"
-import { Link as NextLink } from "@repo/i18n/navigation"
+import { Link as NextLink } from "@repo/i18n/routing"
 import type { VariantProps } from "cva"
 import { cva } from "cva"
 

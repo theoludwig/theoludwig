@@ -7,10 +7,10 @@
     "#*": "./*"
   },
   "scripts": {
-    "dev": "next dev --port 3000 --turbo",
+    "dev": "next dev --port 3000 --turbopack",
     "build": "next build",
     "start": "next start --port 3000",
-    "lint:eslint": "eslint . --max-warnings 0 --report-unused-disable-directives",
+    "lint:eslint": "eslint . --max-warnings 0",
     "lint:typescript": "tsc --noEmit"
   },
   "dependencies": {
@@ -34,6 +34,7 @@
     "eslint": "catalog:",
     "postcss": "catalog:",
     "tailwindcss": "catalog:",
+    "typescript-eslint": "catalog:",
     "typescript": "catalog:"
   }
 }

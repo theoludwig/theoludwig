@@ -1,6 +1,6 @@
 "use client"
 
-import { useRouter } from "@repo/i18n/navigation"
+import { useRouter } from "@repo/i18n/routing"
 import { useTranslations } from "next-intl"
 import { useEffect, useTransition } from "react"
 import { Button } from "../../Design/Button/Button.tsx"

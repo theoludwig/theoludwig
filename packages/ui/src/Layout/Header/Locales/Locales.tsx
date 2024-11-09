@@ -1,7 +1,7 @@
 "use client"
 
 import { classNames } from "@repo/config-tailwind/classNames"
-import { usePathname, useRouter } from "@repo/i18n/navigation"
+import { usePathname, useRouter } from "@repo/i18n/routing"
 import type { Locale } from "@repo/utils/constants"
 import { LOCALES } from "@repo/utils/constants"
 import { useLocale } from "next-intl"

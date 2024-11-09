@@ -1,4 +1,4 @@
-import { Link } from "@repo/i18n/navigation"
+import { Link } from "@repo/i18n/routing"
 import { Typography } from "@repo/ui/Design/Typography"
 import { Section, SectionContent } from "@repo/ui/Layout/Section"
 import { getISODate } from "@repo/utils/dates"

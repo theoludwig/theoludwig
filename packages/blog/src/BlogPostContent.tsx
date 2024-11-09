@@ -9,7 +9,7 @@ import rehypeSlug from "rehype-slug"
 import remarkGfm from "remark-gfm"
 import remarkMath from "remark-math"
 
-import { Link } from "@repo/i18n/navigation"
+import { Link } from "@repo/i18n/routing"
 import "katex/dist/katex.min.css"
 import { BlogPostComments } from "./BlogPostComments.tsx"
 

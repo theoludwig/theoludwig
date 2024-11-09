@@ -24,6 +24,7 @@
     "@repo/eslint-config": "workspace:*",
     "@repo/config-typescript": "workspace:*",
     "@tailwindcss/typography": "catalog:",
+    "typescript-eslint": "catalog:",
     "eslint": "catalog:",
     "postcss": "catalog:",
     "tailwindcss": "catalog:"

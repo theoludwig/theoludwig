@@ -1,14 +1,15 @@
-import type { LocaleProps } from "@repo/i18n/config"
+import type { LocaleProps } from "@repo/i18n/routing"
 import { CurriculumVitae } from "@repo/ui/CurriculumVitae"
-import { unstable_setRequestLocale } from "next-intl/server"
+import { setRequestLocale } from "next-intl/server"
 
 interface CurriculumVitaeProps extends LocaleProps {}
 
-const CurriculumVitaePage: React.FC<CurriculumVitaeProps> = (props) => {
+const CurriculumVitaePage: React.FC<CurriculumVitaeProps> = async (props) => {
   const { params } = props
 
+  const { locale } = await params
   // Enable static rendering
-  unstable_setRequestLocale(params.locale)
+  setRequestLocale(locale)
 
   return <CurriculumVitae />
 }

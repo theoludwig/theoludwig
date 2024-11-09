@@ -1,5 +1,5 @@
 import "@repo/config-tailwind/styles.css"
-import type { LocaleProps } from "@repo/i18n/config"
+import type { LocaleProps } from "@repo/i18n/routing"
 import type { Locale } from "@repo/utils/constants"
 import { LOCALES } from "@repo/utils/constants"
 import type { Metadata } from "next"
@@ -7,18 +7,19 @@ import { NextIntlClientProvider } from "next-intl"
 import {
   getMessages,
   getTranslations,
-  unstable_setRequestLocale,
+  setRequestLocale,
 } from "next-intl/server"
 
 export const generateMetadata = async ({
   params,
 }: LocaleProps): Promise<Metadata> => {
-  const t = await getTranslations({ locale: params.locale })
+  const { locale } = await params
+  const t = await getTranslations({ locale })
   const title = t("meta.title")
   const description = `${title} - ${t("meta.description")}`
   const image = "/images/logo.webp"
   const url = new URL("https://theoludwig.fr")
-  const locale = LOCALES.join(", ")
+  const locales = LOCALES.join(", ")
 
   return {
     title,
@@ -36,7 +37,7 @@ export const generateMetadata = async ({
           height: 96,
         },
       ],
-      locale,
+      locale: locales,
       type: "website",
     },
     twitter: {
@@ -61,13 +62,14 @@ interface LocaleLayoutProps extends React.PropsWithChildren, LocaleProps {}
 const LocaleLayout: React.FC<LocaleLayoutProps> = async (props) => {
   const { children, params } = props
 
+  const { locale } = await params
   // Enable static rendering
-  unstable_setRequestLocale(params.locale)
+  setRequestLocale(locale)
 
   const messages = await getMessages()
 
   return (
-    <html lang={params.locale} suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <body>
         <NextIntlClientProvider messages={messages}>
           {children}

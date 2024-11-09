@@ -1,7 +1,7 @@
 import "@repo/config-tailwind/styles.css"
-import type { LocaleProps } from "@repo/i18n/config"
+import type { LocaleProps } from "@repo/i18n/routing"
 import { ThemeProvider } from "@repo/ui/Layout/Header/SwitchTheme"
-import { unstable_setRequestLocale } from "next-intl/server"
+import { setRequestLocale } from "next-intl/server"
 
 interface CurriculumVitaeLayoutProps
   extends React.PropsWithChildren,
@@ -12,8 +12,9 @@ const CurriculumVitaeLayout: React.FC<CurriculumVitaeLayoutProps> = async (
 ) => {
   const { children, params } = props
 
+  const { locale } = await params
   // Enable static rendering
-  unstable_setRequestLocale(params.locale)
+  setRequestLocale(locale)
 
   return <ThemeProvider forcedTheme="light">{children}</ThemeProvider>
 }

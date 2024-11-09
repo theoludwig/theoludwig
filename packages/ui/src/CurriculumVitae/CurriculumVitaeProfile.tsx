@@ -1,4 +1,4 @@
-import { Link } from "@repo/i18n/navigation"
+import { Link } from "@repo/i18n/routing"
 import { useTranslations } from "next-intl"
 import Image from "next/image"
 import { BirthDate } from "../Home/About/AboutList/BirthDate.tsx"

@@ -26,13 +26,13 @@
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
+    "@repo/config-typescript": "workspace:*",
     "@chromatic-com/storybook": "catalog:",
     "@playwright/test": "catalog:",
-    "@storybook/addon-a11y": "catalog:",
     "@storybook/addon-essentials": "catalog:",
-    "@storybook/addon-interactions": "catalog:",
-    "@storybook/addon-links": "catalog:",
     "@storybook/addon-storysource": "catalog:",
+    "@storybook/addon-a11y": "catalog:",
+    "@storybook/addon-interactions": "catalog:",
     "@storybook/addon-themes": "catalog:",
     "@storybook/blocks": "catalog:",
     "@storybook/nextjs": "catalog:",
@@ -51,6 +51,7 @@
     "storybook-dark-mode": "catalog:",
     "postcss": "catalog:",
     "tailwindcss": "catalog:",
+    "typescript-eslint": "catalog:",
     "typescript": "catalog:"
   }
 }

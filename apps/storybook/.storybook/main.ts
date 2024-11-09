@@ -13,11 +13,10 @@ const config: StorybookConfig = {
     "../stories/*.mdx",
   ],
   addons: [
+    "@chromatic-com/storybook",
     "@storybook/addon-essentials",
     "@storybook/addon-storysource",
     "@storybook/addon-a11y",
-    "@storybook/addon-links",
-    "@chromatic-com/storybook",
     "@storybook/addon-interactions",
     "storybook-dark-mode",
   ],

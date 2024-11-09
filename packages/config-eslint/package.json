@@ -2,14 +2,24 @@
   "name": "@repo/eslint-config",
   "version": "4.0.0",
   "private": true,
-  "main": ".eslintrc.json",
-  "files": [
-    ".eslintrc.json",
-    "nextjs/.eslintrc.json"
-  ],
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./eslint.config.js",
+      "require": "./eslint.config.js",
+      "default": "./eslint.config.js"
+    },
+    "./nextjs": {
+      "types": "./index.d.ts",
+      "import": "./nextjs/eslint.config.js",
+      "require": "./nextjs/eslint.config.js",
+      "default": "./nextjs/eslint.config.js"
+    }
+  },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "catalog:",
-    "@typescript-eslint/parser": "catalog:",
+    "@eslint/eslintrc": "catalog:",
+    "typescript-eslint": "catalog:",
     "eslint": "catalog:",
     "eslint-config-conventions": "catalog:",
     "eslint-plugin-promise": "catalog:",
@@ -18,6 +28,7 @@
     "eslint-plugin-storybook": "catalog:",
     "eslint-plugin-tailwindcss": "catalog:",
     "eslint-plugin-import-x": "catalog:",
-    "typescript": "catalog:"
+    "typescript": "catalog:",
+    "globals": "catalog:"
   }
 }

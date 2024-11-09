@@ -1,6 +1,6 @@
 import { getBlogPosts } from "@repo/blog"
 import { BlogPosts } from "@repo/blog/BlogPosts"
-import type { LocaleProps } from "@repo/i18n/config"
+import type { LocaleProps } from "@repo/i18n/routing"
 import { MainLayout } from "@repo/ui/Layout/MainLayout"
 import {
   Section,
@@ -9,7 +9,7 @@ import {
 } from "@repo/ui/Layout/Section"
 import { LOCALE_DEFAULT } from "@repo/utils/constants"
 import type { Metadata } from "next"
-import { unstable_setRequestLocale } from "next-intl/server"
+import { setRequestLocale } from "next-intl/server"
 
 const title = "Blog | Théo LUDWIG"
 const description =
@@ -36,8 +36,9 @@ interface BlogPageProps extends LocaleProps {}
 const BlogPage: React.FC<BlogPageProps> = async (props) => {
   const { params } = props
 
+  const { locale } = await params
   // Enable static rendering
-  unstable_setRequestLocale(params.locale)
+  setRequestLocale(locale)
 
   const posts = await getBlogPosts()
 

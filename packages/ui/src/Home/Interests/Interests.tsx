@@ -19,6 +19,12 @@ export const Interests: React.FC<InterestsProps> = () => {
       id: "code",
       title: t("home.interests.code.title"),
       description: t.rich("home.interests.code.description", {
+        br: () => {
+          return <br />
+        },
+        strong: (children) => {
+          return <strong>{children}</strong>
+        },
         "abbr-ux": (children) => {
           return <abbr title="User Experience">{children}</abbr>
         },
@@ -29,6 +35,12 @@ export const Interests: React.FC<InterestsProps> = () => {
       id: "open-source",
       title: t("home.interests.open-source.title"),
       description: t.rich("home.interests.open-source.description", {
+        br: () => {
+          return <br />
+        },
+        strong: (children) => {
+          return <strong>{children}</strong>
+        },
         "github-link": (children) => {
           return (
             <Link href={GIT_REPO_LINK} target="_blank">

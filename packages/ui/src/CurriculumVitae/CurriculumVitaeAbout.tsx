@@ -13,7 +13,13 @@ export const CurriculumVitaeAbout: React.FC<CurriculumVitaeAboutProps> = () => {
       title={t("curriculum-vitae.about.title")}
       icon={<FaUser size={24} />}
     >
-      <p>{t.rich("curriculum-vitae.about.description")}</p>
+      <p>
+        {t.rich("curriculum-vitae.about.description", {
+          br: () => {
+            return <br />
+          },
+        })}
+      </p>
     </CurriculumVitaeSection>
   )
 }

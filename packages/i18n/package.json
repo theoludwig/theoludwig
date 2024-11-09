@@ -5,13 +5,12 @@
   "type": "module",
   "exports": {
     "./translations/*.json": "./src/translations/*.json",
-    "./config": "./src/config.tsx",
-    "./i18n": "./src/i18n.ts",
     "./messages.d.ts": "./src/messages.d.ts",
-    "./navigation": "./src/navigation.ts"
+    "./request": "./src/request.ts",
+    "./routing": "./src/routing.ts"
   },
   "scripts": {
-    "lint:eslint": "eslint src --max-warnings 0 --report-unused-disable-directives",
+    "lint:eslint": "eslint src --max-warnings 0",
     "lint:typescript": "tsc --noEmit",
     "test": "vitest run"
   },
@@ -30,6 +29,7 @@
     "@types/react-dom": "catalog:",
     "@total-typescript/ts-reset": "catalog:",
     "eslint": "catalog:",
+    "typescript-eslint": "catalog:",
     "typescript": "catalog:",
     "vitest": "catalog:"
   }

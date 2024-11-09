@@ -10,7 +10,11 @@ export const AboutDescription: React.FC<AboutDescriptionProps> = () => {
   return (
     <div className="dark:text-gray my-6 max-w-md text-center text-black">
       <Typography as="p" variant="text1" className="my-6">
-        {t.rich("home.about.description")}
+        {t.rich("home.about.description", {
+          strong: (children) => {
+            return <strong>{children}</strong>
+          },
+        })}
       </Typography>
 
       <Button href="/curriculum-vitae" variant="outline">

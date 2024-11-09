@@ -9,7 +9,7 @@
     "./BlogPostUI": "./src/BlogPostUI.tsx"
   },
   "scripts": {
-    "lint:eslint": "eslint src --max-warnings 0 --report-unused-disable-directives",
+    "lint:eslint": "eslint src --max-warnings 0",
     "lint:typescript": "tsc --noEmit"
   },
   "dependencies": {
@@ -49,6 +49,7 @@
     "eslint": "catalog:",
     "postcss": "catalog:",
     "tailwindcss": "catalog:",
+    "typescript-eslint": "catalog:",
     "typescript": "catalog:"
   }
 }

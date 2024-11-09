@@ -1,15 +1,14 @@
 import deepmerge from "deepmerge"
 import type { AbstractIntlMessages } from "next-intl"
 import { getRequestConfig } from "next-intl/server"
-import { notFound } from "next/navigation"
 
 import type { Locale } from "@repo/utils/constants"
 import { LOCALE_DEFAULT, LOCALES } from "@repo/utils/constants"
-import { defaultTranslationValues } from "./config.tsx"
 
-export default getRequestConfig(async ({ locale }) => {
+export default getRequestConfig(async ({ requestLocale }) => {
+  let locale = await requestLocale
   if (!LOCALES.includes(locale as Locale)) {
-    return notFound()
+    locale = LOCALE_DEFAULT
   }
 
   const userMessages = (await import(`./translations/${locale}.json`)).default
@@ -22,7 +21,7 @@ export default getRequestConfig(async ({ locale }) => {
   )
 
   return {
+    locale,
     messages,
-    defaultTranslationValues,
   }
 })

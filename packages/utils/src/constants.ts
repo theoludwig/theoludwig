@@ -1,10 +1,7 @@
-import packageJSON from "../package.json"
+import packageJSON from "../package.json" with { type: "json" }
 
-export const VERSION =
-  process.env["NODE_ENV"] === "development"
-    ? "0.0.0-development"
-    : packageJSON.version
-
+export const IS_PRODUCTION = process.env["NODE_ENV"] === "production"
+export const VERSION = IS_PRODUCTION ? packageJSON.version : "0.0.0-development"
 export const GIT_REPO_LINK = "https://github.com/theoludwig/theoludwig"
 
 export const LOCALES = ["en-US", "fr-FR"] as const
@@ -15,6 +12,8 @@ export const LOCALE_PREFIX = "never"
 export const THEMES = ["light", "dark"] as const
 export type Theme = (typeof THEMES)[number]
 export const THEME_DEFAULT = "light" as Theme
+
+export const TIMEZONE = process.env["TZ"] ?? "UTC"
 
 export const BIRTH_DATE_DAY = "31"
 export const BIRTH_DATE_MONTH = "03"
