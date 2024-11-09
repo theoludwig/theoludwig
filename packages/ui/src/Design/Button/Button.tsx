@@ -12,7 +12,7 @@ const buttonVariants = cva({
     variant: {
       solid: "bg-primary hover:bg-primary/80 text-white",
       outline:
-        "dark:border-primary-dark/60 dark:text-primary-dark dark:hover:border-primary-dark border-primary/60 text-primary hover:border-primary hover:bg-gray-lighter border bg-transparent dark:hover:bg-transparent",
+        "dark:border-primary-dark/60 dark:text-primary-dark dark:hover:border-primary-dark border-primary/60 text-primary hover:border-primary hover:bg-primary border bg-transparent hover:text-white",
     },
     size: {
       small: "h-9 rounded-md px-3",
