@@ -9,10 +9,6 @@ const nextConfig = {
     unoptimized: true,
   },
   compress: false,
-
-  // https://github.com/hashicorp/next-mdx-remote/issues/436#issuecomment-2066971842
-  transpilePackages: ["next-mdx-remote", "shiki"],
-
   eslint: {
     ignoreDuringBuilds: true,
   },

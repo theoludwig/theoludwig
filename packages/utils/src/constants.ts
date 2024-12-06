@@ -11,7 +11,7 @@ export const LOCALE_PREFIX = "never"
 
 export const THEMES = ["light", "dark"] as const
 export type Theme = (typeof THEMES)[number]
-export const THEME_DEFAULT = "light" as Theme
+export const THEME_DEFAULT = "light" satisfies Theme
 
 export const TIMEZONE = process.env["TZ"] ?? "UTC"
 

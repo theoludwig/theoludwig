@@ -1,7 +1,6 @@
 import typescriptESLint from "typescript-eslint"
 import configConventions from "eslint-config-conventions"
 import importX from "eslint-plugin-import-x"
-import unicorn from "eslint-plugin-unicorn"
 
 export default typescriptESLint.config(
   {
@@ -20,7 +19,6 @@ export default typescriptESLint.config(
     name: "config-eslint",
     plugins: {
       "import-x": importX,
-      unicorn,
     },
     rules: {
       "import-x/extensions": [
@@ -33,8 +31,6 @@ export default typescriptESLint.config(
           jsx: "never",
         },
       ],
-      "unicorn/explicit-length-check": "error",
-      "unicorn/consistent-destructuring": "off",
     },
   },
 )

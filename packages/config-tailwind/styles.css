@@ -155,10 +155,6 @@ code .line::before {
   word-break: normal;
 }
 
-code .line:last-child {
-  display: none;
-}
-
 .katex .base {
   display: inline !important;
   white-space: normal !important;

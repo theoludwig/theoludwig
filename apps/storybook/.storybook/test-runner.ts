@@ -13,7 +13,8 @@ const config: TestRunnerConfig = {
   async postVisit(page, context) {
     const storyContext = await getStoryContext(page, context)
 
-    if (storyContext.parameters?.a11y?.disable) {
+    const isA11yDisabled = storyContext.parameters?.a11y?.disable as boolean
+    if (isA11yDisabled) {
       return
     }
 

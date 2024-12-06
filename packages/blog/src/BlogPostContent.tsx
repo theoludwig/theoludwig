@@ -103,13 +103,14 @@ export const BlogPostContent: React.FC<BlogPostContentProps> = async (
             },
             a: (props) => {
               const { href = "", ...rest } = props
-              if (href.startsWith("#")) {
+              const hrefString = href as string
+              if (hrefString.startsWith("#")) {
                 return <a {...props} />
               }
-              if (href.startsWith("../posts/")) {
+              if (hrefString.startsWith("../posts/")) {
                 return (
                   <Link
-                    href={href
+                    href={hrefString
                       .replace("../posts/", "/blog/")
                       .replace(".md", "")}
                     {...rest}
