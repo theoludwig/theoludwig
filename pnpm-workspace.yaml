@@ -21,8 +21,8 @@ catalog:
   "react": "19.0.0"
   "react-dom": "19.0.0"
   "react-icons": "5.4.0"
-  "@types/react": "19.0.0"
-  "@types/react-dom": "19.0.0"
+  "@types/react": "19.0.1"
+  "@types/react-dom": "19.0.1"
 
   # Blog
   "@giscus/react": "3.0.0"

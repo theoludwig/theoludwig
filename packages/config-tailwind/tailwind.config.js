@@ -1,5 +1,4 @@
 import typographyPlugin from "@tailwindcss/typography"
-import { fontFamily } from "tailwindcss/defaultTheme"
 
 /** @type {Omit<import('tailwindcss').Config, "content">} */
 const config = {
@@ -29,7 +28,7 @@ const config = {
         lightFlag: "0px 1px 10px rgba(0, 0, 0, 0.25)",
       },
       fontFamily: {
-        sans: ["'Montserrat'", ...fontFamily.sans],
+        sans: ["Montserrat", "sans-serif"],
       },
       typography: {
         DEFAULT: {

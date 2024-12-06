@@ -32,7 +32,7 @@ The commit message guidelines adheres to [Conventional Commits](https://www.conv
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) >= 22.0.0
-- [pnpm](https://pnpm.io/) >= 9.14.4 [(`corepack enable`)](https://nodejs.org/docs/latest-v22.x/api/corepack.html)
+- [pnpm](https://pnpm.io/) >= 9.15.0 [(`corepack enable`)](https://nodejs.org/docs/latest-v22.x/api/corepack.html)
 - [Docker](https://www.docker.com/)
 
 ### Installation
