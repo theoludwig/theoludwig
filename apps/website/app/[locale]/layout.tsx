@@ -9,6 +9,9 @@ import {
   getTranslations,
   setRequestLocale,
 } from "next-intl/server"
+import Script from "next/script"
+
+const DOMAIN = "theoludwig.fr"
 
 export const generateMetadata = async ({
   params,
@@ -18,7 +21,7 @@ export const generateMetadata = async ({
   const title = t("meta.title")
   const description = `${title} - ${t("meta.description")}`
   const image = "/images/logo.webp"
-  const url = new URL("https://theoludwig.fr")
+  const url = new URL(`https://${DOMAIN}`)
   const locales = LOCALES.join(", ")
 
   return {
@@ -74,6 +77,12 @@ const LocaleLayout: React.FC<LocaleLayoutProps> = async (props) => {
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
+
+        <Script
+          defer
+          data-domain={DOMAIN}
+          src="https://plausible.theoludwig.fr/js/script.js"
+        />
       </body>
     </html>
   )
