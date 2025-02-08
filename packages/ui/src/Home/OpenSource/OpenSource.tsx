@@ -26,9 +26,9 @@ export const OpenSource: React.FC<OpenSourceProps> = () => {
             href="https://github.com/nodejs/node/commits?author=theoludwig"
           />
           <Repository
-            name="standard/standard"
-            description="🌟 JavaScript Style Guide, with linter & automatic code fixer"
-            href="https://github.com/standard/standard/commits?author=theoludwig"
+            name="nodejs/nodejs.org"
+            description="The Node.js® Website"
+            href="https://github.com/nodejs/nodejs.org/commits/main/?author=theoludwig"
           />
           <Repository
             name="DefinitelyTyped/DefinitelyTyped"
