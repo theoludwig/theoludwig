@@ -2,7 +2,7 @@ import "@repo/config-tailwind/styles.css"
 import type { LocaleProps } from "@repo/i18n/routing"
 import type { Locale } from "@repo/utils/constants"
 import { LOCALES } from "@repo/utils/constants"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { NextIntlClientProvider } from "next-intl"
 import {
   getMessages,
@@ -12,6 +12,10 @@ import {
 import Script from "next/script"
 
 const DOMAIN = "theoludwig.fr"
+
+export const viewport: Viewport = {
+  themeColor: "#00aeff",
+}
 
 export const generateMetadata = async ({
   params,
