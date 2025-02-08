@@ -1,4 +1,24 @@
 {
+  "meta": {
+    "description": "Developer Full Stack • Open-Source Enthusiast",
+    "title": "Théo LUDWIG"
+  },
+  "locales": {
+    "en-US": "English",
+    "fr-FR": "French"
+  },
+  "loading": "Loading...",
+  "errors": {
+    "error": "Error",
+    "not-found": "Not Found",
+    "page-doesnt-exist": "This page doesn't exist!",
+    "return-to-home-page": "Return to the home page?",
+    "server-error": "Internal Server Error!",
+    "try-again": "Try again?"
+  },
+  "footer": {
+    "all-rights-reserved": "All rights reserved"
+  },
   "curriculum-vitae": {
     "about": {
       "description": "I constantly wonder how to improve our present, to make our future better, particularly thanks to the advancements in computer science. <br></br> My priority is to craft intuitive user experiences (UX), that meet the needs of the users in the most efficient way possible.",
@@ -84,17 +104,6 @@
       "title": "Work experiences"
     }
   },
-  "errors": {
-    "error": "Error",
-    "not-found": "Not Found",
-    "page-doesnt-exist": "This page doesn't exist!",
-    "return-to-home-page": "Return to the home page?",
-    "server-error": "Internal Server Error!",
-    "try-again": "Try again?"
-  },
-  "footer": {
-    "all-rights-reserved": "All rights reserved"
-  },
   "home": {
     "about": {
       "birth-date": {
@@ -150,13 +159,5 @@
       "software-tools": "Software and tools",
       "title": "Skills"
     }
-  },
-  "locales": {
-    "en-US": "English",
-    "fr-FR": "French"
-  },
-  "meta": {
-    "description": "Developer Full Stack • Open-Source Enthusiast",
-    "title": "Théo LUDWIG"
   }
 }

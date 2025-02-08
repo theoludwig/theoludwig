@@ -31,8 +31,8 @@ The commit message guidelines adheres to [Conventional Commits](https://www.conv
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) >= 22.0.0
-- [pnpm](https://pnpm.io/) >= 9.15.0 [(`corepack enable`)](https://nodejs.org/docs/latest-v22.x/api/corepack.html)
+- [Node.js](https://nodejs.org/) >= 22.12.0 [(`nvm install 22`)](https://nvm.sh)
+- [pnpm](https://pnpm.io/) >= 10.2.1 [(`corepack enable`)](https://nodejs.org/docs/latest-v22.x/api/corepack.html)
 - [Docker](https://www.docker.com/)
 
 ### Installation
@@ -83,9 +83,9 @@ node --run test
 
 ```sh
 # Setup and run all the services for you
-docker compose up --build
+VERSION=$(git describe --tags) docker compose up --build --detach
 ```
 
 #### Services started
 
-`theoludwig`: <http://127.0.0.1:3000>
+`theoludwig`: <http://localhost:3000>

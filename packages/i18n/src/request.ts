@@ -1,9 +1,9 @@
-import deepmerge from "deepmerge"
 import type { AbstractIntlMessages } from "next-intl"
 import { getRequestConfig } from "next-intl/server"
 
 import type { Locale } from "@repo/utils/constants"
 import { LOCALE_DEFAULT, LOCALES } from "@repo/utils/constants"
+import { deepMerge } from "@repo/utils/objects"
 
 export default getRequestConfig(async ({ requestLocale }) => {
   let locale = await requestLocale
@@ -15,7 +15,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
   const defaultMessages = (
     await import(`./translations/${LOCALE_DEFAULT}.json`)
   ).default
-  const messages = deepmerge<AbstractIntlMessages>(
+  const messages = deepMerge<AbstractIntlMessages>(
     defaultMessages,
     userMessages,
   )

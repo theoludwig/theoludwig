@@ -1,6 +1,6 @@
 {
   "name": "@repo/i18n",
-  "version": "4.1.3",
+  "version": "0.0.0-develop",
   "private": true,
   "type": "module",
   "exports": {
@@ -11,26 +11,23 @@
   },
   "scripts": {
     "lint:eslint": "eslint src --max-warnings 0",
-    "lint:typescript": "tsc --noEmit",
-    "test": "vitest run"
+    "lint:typescript": "tsc --noEmit"
   },
   "dependencies": {
     "@repo/utils": "workspace:*",
-    "deepmerge": "catalog:",
     "next": "catalog:",
     "next-intl": "catalog:",
     "react": "catalog:",
     "react-dom": "catalog:"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
+    "@repo/config-eslint": "workspace:*",
     "@repo/config-typescript": "workspace:*",
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
     "@total-typescript/ts-reset": "catalog:",
     "eslint": "catalog:",
     "typescript-eslint": "catalog:",
-    "typescript": "catalog:",
-    "vitest": "catalog:"
+    "typescript": "catalog:"
   }
 }

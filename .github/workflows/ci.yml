@@ -10,13 +10,17 @@ jobs:
   ci:
     timeout-minutes: 30
     runs-on: "ubuntu-latest"
+    env:
+      DO_NOT_TRACK: "1"
+      TURBO_TELEMETRY_DISABLED: "1"
+      NEXT_TELEMETRY_DISABLED: "1"
     steps:
       - uses: "actions/checkout@v4.2.2"
 
-      - uses: "pnpm/action-setup@v4.0.0"
+      - uses: "pnpm/action-setup@v4.1.0"
 
       - name: "Setup Node.js"
-        uses: "actions/setup-node@v4.1.0"
+        uses: "actions/setup-node@v4.2.0"
         with:
           node-version: "22.x"
           cache: "pnpm"

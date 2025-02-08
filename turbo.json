@@ -1,5 +1,5 @@
 {
-  "$schema": "https://turbo.build/schema.json",
+  "$schema": "./node_modules/turbo/schema.json",
   "ui": "tui",
   "tasks": {
     "build": {
@@ -15,7 +15,7 @@
     },
     "test": {
       "dependsOn": ["^test"],
-      "outputs": ["coverage/**"]
+      "outputs": []
     },
     "lint:eslint-transit-node": {
       "dependsOn": ["^lint:eslint-transit-node"]

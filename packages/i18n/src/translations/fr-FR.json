@@ -1,4 +1,24 @@
 {
+  "meta": {
+    "description": "Développeur Full Stack • Enthousiaste de l'Open-Source",
+    "title": "Théo LUDWIG"
+  },
+  "locales": {
+    "en-US": "Anglais",
+    "fr-FR": "Français"
+  },
+  "loading": "Chargement...",
+  "errors": {
+    "error": "Erreur",
+    "not-found": "Introuvable",
+    "page-doesnt-exist": "Cette page n'existe pas !",
+    "return-to-home-page": "Retour à la page d'accueil ?",
+    "server-error": "Erreur interne du serveur !",
+    "try-again": "Réessayer ?"
+  },
+  "footer": {
+    "all-rights-reserved": "Tous droits réservés"
+  },
   "curriculum-vitae": {
     "about": {
       "description": "Je me demande constamment comment améliorer notre présent, afin de rendre notre futur meilleur, particulièrement grâce aux progrès de l'informatique. <br></br> Ma priorité réside dans la création d'expériences utilisateurs (UX) intuitives, répondant aux besoins des utilisateurs de la manière la plus efficace que possible.",
@@ -84,17 +104,6 @@
       "title": "Expériences professionnelles"
     }
   },
-  "errors": {
-    "error": "Erreur",
-    "not-found": "Introuvable",
-    "page-doesnt-exist": "Cette page n'existe pas !",
-    "return-to-home-page": "Retour à la page d'accueil ?",
-    "server-error": "Erreur interne du serveur !",
-    "try-again": "Réessayer ?"
-  },
-  "footer": {
-    "all-rights-reserved": "Tous droits réservés"
-  },
   "home": {
     "about": {
       "birth-date": {
@@ -150,13 +159,5 @@
       "software-tools": "Logiciels et outils",
       "title": "Compétences"
     }
-  },
-  "locales": {
-    "en-US": "Anglais",
-    "fr-FR": "Français"
-  },
-  "meta": {
-    "description": "Développeur Full Stack • Enthousiaste de l'Open-Source",
-    "title": "Théo LUDWIG"
   }
 }

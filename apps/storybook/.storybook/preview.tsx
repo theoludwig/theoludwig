@@ -1,4 +1,5 @@
 import "@repo/config-tailwind/styles.css"
+import "./storybook-css-overrides.css"
 import i18nMessages from "@repo/i18n/translations/en-US.json"
 import { LOCALE_DEFAULT, TIMEZONE } from "@repo/utils/constants"
 import type { Preview } from "@storybook/react"
@@ -7,6 +8,11 @@ import { ThemeProvider as NextThemeProvider } from "next-themes"
 import React from "react"
 
 const preview: Preview = {
+  globals: {
+    a11y: {
+      manual: true,
+    },
+  },
   parameters: {
     nextjs: {
       appDirectory: true,

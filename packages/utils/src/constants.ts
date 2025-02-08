@@ -13,7 +13,7 @@ export const THEMES = ["light", "dark"] as const
 export type Theme = (typeof THEMES)[number]
 export const THEME_DEFAULT = "light" satisfies Theme
 
-export const TIMEZONE = process.env["TZ"] ?? "UTC"
+export const TIMEZONE = process.env["TZ"] ?? "Europe/Paris"
 
 export const BIRTH_DATE_DAY = "31"
 export const BIRTH_DATE_MONTH = "03"

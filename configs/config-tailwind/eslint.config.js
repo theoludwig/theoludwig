@@ -1,5 +1,5 @@
 import typescriptESLint from "typescript-eslint"
-import config from "@repo/eslint-config"
+import config from "@repo/config-eslint"
 
 export default typescriptESLint.config(...config, {
   files: ["**/*.ts", "**/*.tsx"],

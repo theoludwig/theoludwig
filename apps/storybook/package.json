@@ -1,14 +1,14 @@
 {
   "name": "@repo/storybook",
-  "version": "4.1.3",
+  "version": "0.0.0-develop",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "storybook build",
     "dev": "storybook dev --port 6006 --no-open",
-    "start": "http-server \"storybook-static\" --port 6006 --silent",
-    "test": "start-server-and-test \"start\" http://127.0.0.1:6006 \"test:storybook\"",
-    "test:dev": "start-server-and-test \"dev\" http://127.0.0.1:6006 \"test:storybook\"",
+    "start": "node --experimental-strip-types http-server.ts --path=storybook-static --port=6006",
+    "test": "start-server-and-test \"start\" http://localhost:6006 \"test:storybook\"",
+    "test:dev": "start-server-and-test \"dev\" http://localhost:6006 \"test:storybook\"",
     "test:storybook": "test-storybook --testTimeout=60000 --maxWorkers=2",
     "chromatic": "chromatic"
   },
@@ -22,10 +22,11 @@
     "next-intl": "catalog:",
     "next-themes": "catalog:",
     "react": "catalog:",
-    "react-dom": "catalog:"
+    "react-dom": "catalog:",
+    "mime": "catalog:"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
+    "@repo/config-eslint": "workspace:*",
     "@repo/config-typescript": "workspace:*",
     "@chromatic-com/storybook": "catalog:",
     "@playwright/test": "catalog:",
@@ -45,7 +46,6 @@
     "axe-playwright": "catalog:",
     "chromatic": "catalog:",
     "eslint": "catalog:",
-    "http-server": "catalog:",
     "start-server-and-test": "catalog:",
     "storybook": "catalog:",
     "storybook-dark-mode": "catalog:",

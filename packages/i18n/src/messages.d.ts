@@ -1,6 +1,6 @@
-import type en from "./translations/en-US.json"
+import type fr from "./translations/fr-FR.json"
 
-type Messages = typeof en
+type Messages = typeof fr
 
 declare global {
   /**

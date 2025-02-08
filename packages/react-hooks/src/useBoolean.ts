@@ -18,11 +18,11 @@ export interface UseBooleanInput {
 
 /**
  * Hook to manage a boolean state.
- * @param options
+ * @param input
  * @returns
  */
-export const useBoolean = (options: UseBooleanInput = {}): UseBooleanOutput => {
-  const { initialValue = false } = options
+export const useBoolean = (input: UseBooleanInput = {}): UseBooleanOutput => {
+  const { initialValue = false } = input
 
   const [value, setValue] = useState(initialValue)
 

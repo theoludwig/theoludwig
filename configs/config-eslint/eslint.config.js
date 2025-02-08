@@ -10,7 +10,6 @@ export default typescriptESLint.config(
       "**/eslint.config.js",
       "**/tailwind.config.js",
       "**/postcss.config.js",
-      "**/vitest.config.ts",
       "**/kysely.config.ts",
     ],
   },
