@@ -3,5 +3,5 @@
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ESNext"]
   },
-  "include": ["./.storybook/**/*.ts", "./.storybook/**/*.tsx"]
+  "include": ["http-server.ts", "./.storybook/**/*.ts", "./.storybook/**/*.tsx"]
 }
