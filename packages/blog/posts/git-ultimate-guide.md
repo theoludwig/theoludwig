@@ -88,6 +88,8 @@ git commit -m "Commit message"
 
 # Commit changes in the past
 git commit --date "10 day ago" -m "Commit message"
+# Also update the committer date for the last commit
+git filter-branch --env-filter 'export GIT_COMMITTER_DATE="$GIT_AUTHOR_DATE"' HEAD^..HEAD
 
 # Add remote repository
 git remote add <remote> <url>
