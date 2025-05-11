@@ -140,6 +140,10 @@
       "title": "Open-Source"
     },
     "portfolio": {
+      "fusey": {
+        "description": "ARK: Survival Ascended Wiki and Player stats tracker.",
+        "title": "Fusey"
+      },
       "carolo": {
         "description": "Strategy board game similar to chess which allows grandiose moves (only available in French).",
         "title": "Carolo"

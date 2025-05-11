@@ -40,8 +40,8 @@ These configurations are stored in the `.gitconfig` file in your home directory 
 
 ```sh
 [user]
-  name = Username
-  email = email@example.com
+    name = Username
+    email = email@example.com
 ```
 
 You can find more information and useful `git` configurations in the [official documentation](https://git-scm.com/docs/git-config).
@@ -268,7 +268,7 @@ Sometimes, you want to compare what commits have been made between two branches,
 
 ```sh
 [alias]
-  diff-commits = !sh -c 'echo -n "Commits in $2 not in $1 \\(" && printf "%d" $(git cherry -v $1 $2 | wc -l) && echo "\\)" && git cherry -v $1 $2 && echo "" && echo -n "Commits in $1 not in $2 \\(" && printf "%d" $(git cherry -v $2 $1 | wc -l) && echo "\\)" && git cherry -v $2 $1' -
+    diff-commits = !sh -c 'echo -n "Commits in $2 not in $1 \\(" && printf "%d" $(git cherry -v $1 $2 | wc -l) && echo "\\)" && git cherry -v $1 $2 && echo "" && echo -n "Commits in $1 not in $2 \\(" && printf "%d" $(git cherry -v $2 $1 | wc -l) && echo "\\)" && git cherry -v $2 $1' -
 ```
 
 With this alias, we can compare the commits between `main` and `develop` branches for example:

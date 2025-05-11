@@ -2,7 +2,6 @@
 
 import { classNames } from "@repo/config-tailwind/classNames"
 import { usePathname, useRouter } from "@repo/i18n/routing"
-import type { Locale } from "@repo/utils/constants"
 import { LOCALES } from "@repo/utils/constants"
 import { useLocale } from "next-intl"
 import { useEffect, useRef } from "react"
@@ -16,7 +15,7 @@ export interface LocalesProps {}
 export const Locales: React.FC<LocalesProps> = () => {
   const router = useRouter()
   const pathname = usePathname()
-  const localeCurrent = useLocale() as Locale
+  const localeCurrent = useLocale()
 
   const {
     value: isVisibleMenu,

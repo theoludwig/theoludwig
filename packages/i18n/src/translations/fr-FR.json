@@ -140,6 +140,10 @@
       "title": "Open-Source"
     },
     "portfolio": {
+      "fusey": {
+        "description": "ARK: Survival Ascended Wiki et suivi des statistiques des joueurs.",
+        "title": "Fusey"
+      },
       "carolo": {
         "description": "Jeu de plateau stratégique similaire aux échecs qui permet des coups grandioses, reposant sur des enchaînements remarquables.",
         "title": "Carolo"

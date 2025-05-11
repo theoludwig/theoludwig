@@ -10,17 +10,24 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
 
   const items: PortfolioProject[] = [
     {
+      id: "fusey",
+      title: t("home.portfolio.fusey.title"),
+      description: t("home.portfolio.fusey.description"),
+      link: "https://fusey.gg",
+      image: "/images/portfolio/Fusey.webp",
+    },
+    {
       id: "carolo",
       title: t("home.portfolio.carolo.title"),
       description: t("home.portfolio.carolo.description"),
-      link: "https://carolo.theoludwig.fr/",
+      link: "https://carolo.theoludwig.fr",
       image: "/images/portfolio/Carolo.webp",
     },
     {
       id: "leon",
       title: t("home.portfolio.leon.title"),
       description: t("home.portfolio.leon.description"),
-      link: "https://getleon.ai/",
+      link: "https://getleon.ai",
       image: "/images/portfolio/Leon.webp",
     },
   ]
