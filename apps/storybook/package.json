@@ -6,7 +6,7 @@
   "scripts": {
     "build": "storybook build",
     "dev": "storybook dev --port 6006 --no-open",
-    "start": "node --experimental-strip-types http-server.ts --path=storybook-static --port=6006",
+    "start": "node http-server.ts --path=storybook-static --port=6006",
     "test": "start-server-and-test \"start\" http://localhost:6006 \"test:storybook\"",
     "test:dev": "start-server-and-test \"dev\" http://localhost:6006 \"test:storybook\"",
     "test:storybook": "test-storybook --testTimeout=60000 --maxWorkers=2",

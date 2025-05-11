@@ -14,7 +14,7 @@
   "scripts": {
     "lint:eslint": "eslint src --max-warnings 0",
     "lint:typescript": "tsc --noEmit",
-    "test": "node --experimental-strip-types --test"
+    "test": "node --test"
   },
   "devDependencies": {
     "@repo/config-eslint": "workspace:*",
