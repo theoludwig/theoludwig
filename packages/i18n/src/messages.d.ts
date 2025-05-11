@@ -1,10 +1,9 @@
-import type fr from "./translations/fr-FR.json"
+import type { routing } from "./routing.ts"
+import type messages from "./translations/en-US.json"
 
-type Messages = typeof fr
-
-declare global {
-  /**
-   * Use type safe message keys with `next-intl`.
-   */
-  interface IntlMessages extends Messages {}
+declare module "next-intl" {
+  interface AppConfig {
+    Locale: (typeof routing.locales)[number]
+    Messages: typeof messages
+  }
 }

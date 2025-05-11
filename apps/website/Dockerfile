@@ -1,7 +1,7 @@
-FROM node:22.13.1-slim AS node-pnpm
+FROM node:24.0.0-slim AS node-pnpm
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
-RUN npm install --global corepack@0.31.0 && corepack enable
+RUN npm install --global corepack@0.32.0 && corepack enable
 ENV TURBO_TELEMETRY_DISABLED=1
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV DO_NOT_TRACK=1
@@ -9,7 +9,7 @@ WORKDIR /usr/src/app
 
 FROM node-pnpm AS builder
 COPY ./ ./
-RUN pnpm install --global turbo@2.4.0
+RUN pnpm install --global turbo@2.5.3
 RUN turbo prune @repo/website --docker
 
 FROM node-pnpm AS installer

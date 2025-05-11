@@ -1,17 +1,26 @@
-@import "@fontsource/montserrat/400.css";
-@import "@fontsource/montserrat/500.css";
-@import "@fontsource/montserrat/600.css";
-@import "@fontsource/montserrat/700.css";
-@import "@fontsource/montserrat/800.css";
+@import "tailwindcss";
+@config "./tailwind.config.js";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@source "../../packages/ui";
+@source "../../packages/blog";
+@source "../../apps/website";
+@source "../../apps/storybook/.storybook";
+
+@import "@fontsource/montserrat/400.css" layer(base);
+@import "@fontsource/montserrat/500.css" layer(base);
+@import "@fontsource/montserrat/600.css" layer(base);
+@import "@fontsource/montserrat/700.css" layer(base);
+@import "@fontsource/montserrat/800.css" layer(base);
 
 @layer base {
   [type="search"]::-webkit-search-decoration,
   [type="search"]::-webkit-search-cancel-button {
     appearance: none;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
   }
 
   b,

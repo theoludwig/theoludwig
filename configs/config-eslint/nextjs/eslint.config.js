@@ -1,16 +1,14 @@
 import { FlatCompat } from "@eslint/eslintrc"
-import storybook from "eslint-plugin-storybook"
-import tailwind from "eslint-plugin-tailwindcss"
 import typescriptESLint from "typescript-eslint"
 import config from "../eslint.config.js"
 
-const flatCompat = new FlatCompat()
+const flatCompat = new FlatCompat({
+  baseDirectory: import.meta.dirname,
+})
 
 export default typescriptESLint.config(
   ...config,
   ...flatCompat.extends("next/core-web-vitals"),
-  ...tailwind.configs["flat/recommended"],
-  ...storybook.configs["flat/recommended"],
   {
     name: "config-eslint/nextjs",
     settings: {
@@ -22,8 +20,6 @@ export default typescriptESLint.config(
       },
     },
     rules: {
-      "tailwindcss/classnames-order": "off",
-      "tailwindcss/no-custom-classname": "off",
       "@next/next/no-html-link-for-pages": "off",
       "@next/next/no-img-element": "off",
       "react/self-closing-comp": [

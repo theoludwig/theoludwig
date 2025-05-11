@@ -21,17 +21,28 @@
 
 ```json
 {
-  "name": "Théo LUDWIG",
-  "pronouns": "He/Him",
-  "birthDate": "2003-03-31",
-  "nationality": "Alsace, France",
-  "interests": ["Developer Full Stack", "Open-Source Enthusiast"],
-  "skills": {
-    "programmingLanguages": ["JavaScript/TypeScript", "Python", "C/C++", "PHP"],
-    "frontend": ["HTML/CSS", "Tailwind CSS", "React.js/Next.js"],
-    "backend": ["Laravel", "Node.js", "Fastify", "PostgreSQL"],
-    "tools": ["GNU/Linux", "Arch Linux", "Visual Studio Code", "Git", "Docker"]
-  }
+    "name": "Théo LUDWIG",
+    "pronouns": "He/Him",
+    "birthDate": "2003-03-31",
+    "nationality": "Alsace, France",
+    "interests": ["Developer Full Stack", "Open-Source Enthusiast"],
+    "skills": {
+        "programmingLanguages": [
+            "JavaScript/TypeScript",
+            "Python",
+            "C/C++",
+            "PHP"
+        ],
+        "frontend": ["HTML/CSS", "Tailwind CSS", "React.js/Next.js"],
+        "backend": ["Laravel", "Node.js", "Fastify", "PostgreSQL"],
+        "tools": [
+            "GNU/Linux",
+            "Arch Linux",
+            "Visual Studio Code",
+            "Git",
+            "Docker"
+        ]
+    }
 }
 ```
 

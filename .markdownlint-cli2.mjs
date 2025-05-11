@@ -1,4 +1,4 @@
-import relativeLinksRule from "markdownlint-rule-relative-links"
+import relativeLinksRule, { markdownIt } from "markdownlint-rule-relative-links"
 
 const config = {
   config: {
@@ -11,6 +11,9 @@ const config = {
   globs: ["**/*.md"],
   ignores: ["**/node_modules"],
   customRules: [relativeLinksRule],
+  markdownItFactory: () => {
+    return markdownIt
+  },
 }
 
 export default config

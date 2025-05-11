@@ -25,8 +25,6 @@
     "eslint-plugin-promise": "catalog:",
     "eslint-plugin-unicorn": "catalog:",
     "eslint-config-next": "catalog:",
-    "eslint-plugin-storybook": "catalog:",
-    "eslint-plugin-tailwindcss": "catalog:",
     "eslint-plugin-import-x": "catalog:",
     "typescript": "catalog:",
     "globals": "catalog:"

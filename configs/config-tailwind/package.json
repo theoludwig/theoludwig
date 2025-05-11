@@ -27,6 +27,7 @@
     "typescript-eslint": "catalog:",
     "eslint": "catalog:",
     "postcss": "catalog:",
-    "tailwindcss": "catalog:"
+    "tailwindcss": "catalog:",
+    "@tailwindcss/postcss": "catalog:"
   }
 }

@@ -51,6 +51,7 @@
     "storybook-dark-mode": "catalog:",
     "postcss": "catalog:",
     "tailwindcss": "catalog:",
+    "@tailwindcss/postcss": "catalog:",
     "typescript-eslint": "catalog:",
     "typescript": "catalog:"
   }

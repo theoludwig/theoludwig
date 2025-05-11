@@ -39,23 +39,23 @@ The code of this website is open source on [GitHub](https://github.com/theoludwi
 
 - [Next.js](https://nextjs.org/)
 
-  It allows to have a server-side rendered website, that means that it is faster and easier to have a good <abbr title="Search Engine Optimization">SEO</abbr> than a <abbr title="Single Page Application">SPA</abbr>.
+    It allows to have a server-side rendered website, that means that it is faster and easier to have a good <abbr title="Search Engine Optimization">SEO</abbr> than a <abbr title="Single Page Application">SPA</abbr>.
 
 - [MDX](https://mdxjs.com/)
 
-  MDX is an extension of Markdown that allows you to use custom React components.
+    MDX is an extension of Markdown that allows you to use custom React components.
 
-  Here's what Markdown looks like:
+    Here's what Markdown looks like:
 
-  ```md
-  A simple paragraph, with some **bold** text and some `inline code`.
-  ```
+    ```md
+    A simple paragraph, with some **bold** text and some `inline code`.
+    ```
 
-  When using Markdown in a web application, there's a "compile" step; the Markdown needs to be transformed into HTML, so that it can be understood by the browser. Those asterisks get turned into a `<strong>` tag, and each paragraph gets a `<p>` tag etc.
+    When using Markdown in a web application, there's a "compile" step; the Markdown needs to be transformed into HTML, so that it can be understood by the browser. Those asterisks get turned into a `<strong>` tag, and each paragraph gets a `<p>` tag etc.
 
 - [Tailwind CSS](https://tailwindcss.com/)
 
-  Tailwind is a CSS framework to rapidly build modern websites without ever leaving HTML.
+    Tailwind is a CSS framework to rapidly build modern websites without ever leaving HTML.
 
 ## Conclusion
 

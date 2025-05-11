@@ -109,11 +109,11 @@ const transaction = charge(user, subscription)
 
 ```typescript
 interface Car {
-  carModel: string
-  carColor: "red" | "blue" | "yellow"
+    carModel: string
+    carColor: "red" | "blue" | "yellow"
 }
 const printCar = (car: Car): void => {
-  console.log(`${car.carModel} (${car.carColor})`)
+    console.log(`${car.carModel} (${car.carColor})`)
 }
 ```
 
@@ -121,11 +121,11 @@ const printCar = (car: Car): void => {
 
 ```typescript
 interface Car {
-  model: string
-  color: "red" | "blue" | "yellow"
+    model: string
+    color: "red" | "blue" | "yellow"
 }
 const printCar = (car: Car): void => {
-  console.log(`${car.model} (${car.color})`)
+    console.log(`${car.model} (${car.color})`)
 }
 ```
 
@@ -174,13 +174,13 @@ import fs from "node:fs"
 import path from "node:path"
 
 const createFile = async (
-  name: string,
-  isTemporary: boolean = false,
+    name: string,
+    isTemporary: boolean = false,
 ): Promise<void> => {
-  if (isTemporary) {
-    return await fs.promises.writeFile(path.join("temporary", name), "")
-  }
-  return await fs.promises.writeFile(name, "")
+    if (isTemporary) {
+        return await fs.promises.writeFile(path.join("temporary", name), "")
+    }
+    return await fs.promises.writeFile(name, "")
 }
 ```
 
@@ -193,11 +193,11 @@ import fs from "node:fs"
 import path from "node:path"
 
 const createFile = async (name: string): Promise<void> => {
-  await fs.promises.writeFile(name, "")
+    await fs.promises.writeFile(name, "")
 }
 
 const createTemporaryFile = async (name: string): Promise<void> => {
-  await createFile(path.join("temporary", name))
+    await createFile(path.join("temporary", name))
 }
 ```
 

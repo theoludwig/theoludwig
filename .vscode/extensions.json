@@ -6,7 +6,6 @@
     "davidanson.vscode-markdownlint",
     "bradlc.vscode-tailwindcss",
     "mikestead.dotenv",
-    "ms-azuretools.vscode-docker",
     "antfu.pnpm-catalog-lens",
     "Lokalise.i18n-ally"
   ]
