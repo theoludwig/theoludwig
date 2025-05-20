@@ -1,4 +1,4 @@
-FROM node:24.0.0-slim AS node-pnpm
+FROM node:24.0.2-slim AS node-pnpm
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 RUN npm install --global corepack@0.32.0 && corepack enable

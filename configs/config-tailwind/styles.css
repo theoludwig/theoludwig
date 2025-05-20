@@ -1,10 +1,11 @@
 @import "tailwindcss";
 @config "./tailwind.config.js";
 
-@source "../../packages/ui";
-@source "../../packages/blog";
-@source "../../apps/website";
+@source "../../apps/website/app";
+@source "../../apps/website/components";
 @source "../../apps/storybook/.storybook";
+@source "../../packages/ui/src";
+@source "../../packages/blog/src";
 
 @import "@fontsource/montserrat/400.css" layer(base);
 @import "@fontsource/montserrat/500.css" layer(base);

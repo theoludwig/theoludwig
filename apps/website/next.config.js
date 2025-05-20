@@ -8,7 +8,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  compress: false,
   eslint: {
     ignoreDuringBuilds: true,
   },

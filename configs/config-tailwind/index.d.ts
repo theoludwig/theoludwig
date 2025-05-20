@@ -1,3 +1,5 @@
 import type { Config } from "tailwindcss"
 
-export default Config
+declare const config: Config
+
+export default config

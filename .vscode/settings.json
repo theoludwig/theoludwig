@@ -9,6 +9,7 @@
     "source.fixAll": "explicit",
     "source.organizeImports": "never"
   },
+  "tailwindCSS.experimental.configFile": "./configs/config-tailwind/styles.css",
   "tailwindCSS.experimental.classRegex": [
     ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
     ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]

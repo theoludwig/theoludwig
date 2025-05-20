@@ -12,9 +12,6 @@ export default typescriptESLint.config(
   {
     name: "config-eslint/nextjs",
     settings: {
-      tailwindcss: {
-        callees: ["classNames", "cva"],
-      },
       react: {
         version: "detect",
       },
