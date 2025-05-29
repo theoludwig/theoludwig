@@ -20,7 +20,7 @@
     "scope": "typescriptreact",
     "prefix": "rfcs",
     "body": [
-      "import type { Meta, StoryObj } from \"@storybook/react\"",
+      "import type { Meta, StoryObj } from \"@storybook/nextjs\"",
       "",
       "import { ${1:ComponentName} as ${1:ComponentName}Component } from \"./${1:ComponentName}.tsx\"",
       "",

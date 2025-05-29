@@ -17,7 +17,7 @@ catalog:
   "react": "19.1.0"
   "react-dom": "19.1.0"
   "react-icons": "5.5.0"
-  "@types/react": "19.1.4"
+  "@types/react": "19.1.6"
   "@types/react-dom": "19.1.5"
 
   # Blog
@@ -37,23 +37,23 @@ catalog:
   # Markdown Lint
   "markdownlint-cli2": "0.18.1"
   "markdownlint": "0.38.0"
-  "markdownlint-rule-relative-links": "4.1.0"
+  "markdownlint-rule-relative-links": "4.2.0"
 
   # TypeScript
   "typescript": "5.8.3"
   "@total-typescript/ts-reset": "0.6.1"
-  "@types/node": "22.15.20"
+  "@types/node": "22.15.24"
 
   # ESLint
-  "globals": "16.1.0"
-  "typescript-eslint": "8.32.1"
+  "globals": "16.2.0"
+  "typescript-eslint": "8.33.0"
   "@eslint/eslintrc": "3.3.1"
   "eslint": "9.27.0"
   "eslint-config-conventions": "19.2.0"
   "eslint-plugin-promise": "7.2.1"
   "eslint-plugin-unicorn": "59.0.1"
   "eslint-config-next": *next
-  "eslint-plugin-import-x": "4.12.2"
+  "eslint-plugin-import-x": "4.13.3"
 
   # Prettier
   "prettier": "3.5.3"
@@ -61,20 +61,14 @@ catalog:
   "editorconfig-checker": "6.0.1"
 
   # Storybook
-  "storybook": &storybook "8.6.14"
-  "@storybook/addon-essentials": *storybook
-  "@storybook/addon-storysource": *storybook
+  "storybook": &storybook "9.0.0"
+  "@storybook/addon-docs": *storybook
   "@storybook/addon-a11y": *storybook
-  "@storybook/addon-interactions": *storybook
-  "@storybook/blocks": *storybook
   "@storybook/nextjs": *storybook
-  "@storybook/react": *storybook
-  "@storybook/test": *storybook
   "@storybook/addon-themes": *storybook
   "@storybook/test-runner": "0.22.0"
-  "@chromatic-com/storybook": "3.2.6"
-  "chromatic": "11.28.2"
-  "storybook-dark-mode": "4.0.2"
+  "@chromatic-com/storybook": "4.0.0"
+  "chromatic": "12.0.0"
 
   # Testing
   "playwright": &playwright "1.52.0"
@@ -83,10 +77,10 @@ catalog:
   "start-server-and-test": "2.0.12"
 
   # CSS
-  "postcss": "8.5.3"
-  "@tailwindcss/postcss": "4.1.7"
+  "postcss": "8.5.4"
+  "@tailwindcss/postcss": "4.1.8"
   "@tailwindcss/typography": "0.5.16"
-  "tailwindcss": "4.1.7"
+  "tailwindcss": "4.1.8"
   "tailwind-merge": "3.3.0"
   "clsx": "2.1.1"
   "cva": "1.0.0-beta.4"

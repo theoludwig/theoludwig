@@ -14,11 +14,8 @@ const config: StorybookConfig = {
   ],
   addons: [
     "@chromatic-com/storybook",
-    "@storybook/addon-essentials",
-    "@storybook/addon-storysource",
+    "@storybook/addon-docs",
     "@storybook/addon-a11y",
-    "@storybook/addon-interactions",
-    "storybook-dark-mode",
   ],
   framework: {
     name: "@storybook/nextjs",
