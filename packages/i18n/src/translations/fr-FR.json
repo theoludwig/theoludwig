@@ -87,7 +87,7 @@
       "title": "Études"
     },
     "interests": {
-      "high-tech": "Passionné de High-Tech",
+      "fusey": "<link>Fusey (fusey.gg)</link> : site web que je développe pour le jeu ARK: Survival Ascended qui permet de suivre en temps réel le nombre de joueurs connectés sur les serveurs et a plus de ~5 000 visiteurs chaque mois, ~100 000 membres sur Discord et ~120 000 followers sur X/Twitter.",
       "open-source": "Enthousiaste de l'Open-Source"
     },
     "work": {
@@ -97,7 +97,7 @@
         "summary": "Développement de WebSurg, une université virtuelle consacrée à la formation médico-chirurgicale, en React.js/Next.js et API Platform avec Symfony."
       },
       "numerize": {
-        "duration": "4 mois",
+        "duration": "3 mois",
         "position": "Stagiaire Développeur Web Full Stack",
         "summary": "Développement d'un outil GED (Gestion Électronique de Documents) en React.js, Laravel et GraphQL."
       },

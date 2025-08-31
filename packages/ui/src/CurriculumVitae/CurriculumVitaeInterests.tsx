@@ -11,7 +11,15 @@ export const CurriculumVitaeInterests: React.FC<
 
   const interests = [
     t("curriculum-vitae.interests.open-source"),
-    t("curriculum-vitae.interests.high-tech"),
+    t.rich("curriculum-vitae.interests.fusey", {
+      link: (children) => {
+        return (
+          <a href="https://fusey.gg" target="_blank">
+            {children}
+          </a>
+        )
+      },
+    }),
   ]
 
   return (
@@ -21,9 +29,9 @@ export const CurriculumVitaeInterests: React.FC<
       icon={<FaHeart size={24} />}
     >
       <ul className="list-unstyled m-0">
-        {interests.map((interest) => {
+        {interests.map((interest, index) => {
           return (
-            <li key={interest} className="card card-nested">
+            <li key={index} className="card card-nested">
               <p>
                 <strong>{interest}</strong>
               </p>

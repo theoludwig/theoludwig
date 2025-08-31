@@ -22,12 +22,12 @@ export const CurriculumVitaeProfile: React.FC<
             className="mx-auto block"
             alt={t("meta.title")}
             src="/images/logo_background.webp"
-            width={800}
-            height={800}
+            width={400}
+            height={400}
           />
         </div>
         <div className="name-and-profession text-center">
-          <h1 className="h3">
+          <h1 className="h3 my-1!">
             <strong>{t("meta.title")}</strong>
           </h1>
           <h2 className="text-muted h5">{t("curriculum-vitae.description")}</h2>
@@ -39,18 +39,18 @@ export const CurriculumVitaeProfile: React.FC<
       </div>
       <div className="flex justify-center">
         <div className="relative px-3">
-          <span className="info">
-            <a className="link-disguise" href="mailto:contact@theoludwig.fr">
+          <strong className="info">
+            <a className="" href="mailto:contact@theoludwig.fr">
               contact@theoludwig.fr
             </a>
-          </span>
+          </strong>
         </div>
         <div className="detail">
-          <span className="info">
-            <Link className="link-disguise" href="/">
-              https://theoludwig.fr/
+          <strong className="info">
+            <Link className="" href="/">
+              https://theoludwig.fr
             </Link>
-          </span>
+          </strong>
         </div>
       </div>
       <hr />

@@ -1,4 +1,3 @@
-import { CurriculumVitaeAbout } from "./CurriculumVitaeAbout.tsx"
 import { CurriculumVitaeEducation } from "./CurriculumVitaeEducation.tsx"
 import { CurriculumVitaeInterests } from "./CurriculumVitaeInterests.tsx"
 import { CurriculumVitaeProfile } from "./CurriculumVitaeProfile.tsx"
@@ -16,18 +15,14 @@ export const CurriculumVitae: React.FC<CurriculumVitaeProps> = () => {
 
           <div className="card background-card">
             <div className="background-details">
-              <CurriculumVitaeAbout />
-
-              <hr />
-
-              <section className="flex">
+              <section className="flex justify-between">
                 <CurriculumVitaeEducation />
                 <CurriculumVitaeSkills />
               </section>
 
               <hr />
 
-              <section className="flex">
+              <section className="flex justify-between">
                 <CurriculumVitaeWork />
                 <CurriculumVitaeInterests />
               </section>

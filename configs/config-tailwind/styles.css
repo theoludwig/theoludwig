@@ -173,9 +173,8 @@ code .line::before {
 }
 
 .curriculum-vitae {
-  background: #f0f0f0;
   color: #333;
-  font-family: Arial, sans-serif;
+  font-family: Montserrat, sans-serif;
 
   hr {
     margin-top: 15px;
@@ -251,8 +250,8 @@ code .line::before {
     padding: 10px 0;
   }
   .profile-pic img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     vertical-align: middle;
     border: 0;
