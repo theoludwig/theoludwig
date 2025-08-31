@@ -19,7 +19,7 @@
     "allowImportingTsExtensions": true,
     "skipLibCheck": true,
     "jsx": "preserve",
-    "incremental": true,
+    "incremental": false,
     "noEmit": true,
 
     "target": "ESNext",

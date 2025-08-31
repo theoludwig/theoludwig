@@ -9,23 +9,18 @@
       "import": "./eslint.config.js",
       "require": "./eslint.config.js",
       "default": "./eslint.config.js"
-    },
-    "./nextjs": {
-      "types": "./index.d.ts",
-      "import": "./nextjs/eslint.config.js",
-      "require": "./nextjs/eslint.config.js",
-      "default": "./nextjs/eslint.config.js"
     }
   },
   "devDependencies": {
-    "@eslint/eslintrc": "catalog:",
     "typescript-eslint": "catalog:",
     "eslint": "catalog:",
     "eslint-config-conventions": "catalog:",
     "eslint-plugin-promise": "catalog:",
     "eslint-plugin-unicorn": "catalog:",
-    "eslint-config-next": "catalog:",
     "eslint-plugin-import-x": "catalog:",
+    "@next/eslint-plugin-next": "catalog:",
+    "eslint-plugin-react": "catalog:",
+    "eslint-plugin-react-hooks": "catalog:",
     "typescript": "catalog:",
     "globals": "catalog:"
   }

@@ -17,7 +17,7 @@
 
 <hr />
 
-## 📜 About
+## About
 
 ```json
 {
@@ -48,7 +48,7 @@
 
 <hr />
 
-## 📈 Statistics
+## Statistics
 
 <p align=center>
     <img height=175 align="center" src="https://github-readme-stats.vercel.app/api?username=theoludwig&show_icons=true&theme=dark" alt="Théo LUDWIG's GitHub Stats" />

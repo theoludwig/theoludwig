@@ -1,7 +1,7 @@
 import typescriptESLint from "typescript-eslint"
-import configNextjs from "@repo/config-eslint/nextjs"
+import config from "@repo/config-eslint"
 
-export default typescriptESLint.config(...configNextjs, {
+export default typescriptESLint.config(...config, {
   files: ["**/*.ts", "**/*.tsx"],
   languageOptions: {
     parser: typescriptESLint.parser,

@@ -27,7 +27,11 @@
       "dependsOn": ["^lint:typescript-transit-node"]
     },
     "lint:typescript": {
-      "dependsOn": ["lint:typescript-transit-node"]
+      "dependsOn": ["typegen", "lint:typescript-transit-node"]
+    },
+    "typegen": {
+      "dependsOn": ["^typegen"],
+      "outputs": []
     },
     "dev": {
       "cache": false,

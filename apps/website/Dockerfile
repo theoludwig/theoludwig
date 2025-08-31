@@ -1,7 +1,7 @@
-FROM node:24.1.0-slim AS node-pnpm
+FROM node:24.7.0-slim AS node-pnpm
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
-RUN npm install --global corepack@0.32.0 && corepack enable
+RUN npm install --global corepack@0.34.0 && corepack enable
 ENV TURBO_TELEMETRY_DISABLED=1
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV DO_NOT_TRACK=1
@@ -9,7 +9,7 @@ WORKDIR /usr/src/app
 
 FROM node-pnpm AS builder
 COPY ./ ./
-RUN pnpm install --global turbo@2.5.3
+RUN pnpm install --global turbo@2.5.6
 RUN turbo prune @repo/website --docker
 
 FROM node-pnpm AS installer
@@ -34,7 +34,7 @@ ENV IS_STANDALONE=true
 
 RUN addgroup --system --gid 1001 nodejs && adduser --system --uid 1001 applicationrunner
 USER applicationrunner
-COPY --from=installer /usr/src/app/apps/website/next.config.js ./
+COPY --from=installer /usr/src/app/apps/website/next.config.ts ./
 COPY --from=installer /usr/src/app/apps/website/package.json ./
 COPY --from=installer --chown=applicationrunner:nodejs /usr/src/app/apps/website/.next/standalone ./
 COPY --from=installer --chown=applicationrunner:nodejs /usr/src/app/apps/website/.next/static ./apps/website/.next/static

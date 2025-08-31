@@ -9,11 +9,19 @@
     "source.fixAll": "explicit",
     "source.organizeImports": "never"
   },
-  "tailwindCSS.experimental.configFile": "./configs/config-tailwind/styles.css",
-  "tailwindCSS.experimental.classRegex": [
-    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
-    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
   ],
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "tailwindCSS.classFunctions": ["classNames", "cva"],
+  "tailwindCSS.experimental.configFile": "./configs/config-tailwind/styles.css",
   "i18n-ally.localesPaths": ["./packages/i18n/src/translations/"],
   "i18n-ally.keystyle": "nested",
   "i18n-ally.sortKeys": false,

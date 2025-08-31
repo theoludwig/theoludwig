@@ -1,5 +1,4 @@
 import "@repo/config-tailwind/styles.css"
-import type { LocaleProps } from "@repo/i18n/routing"
 import type { Locale } from "@repo/utils/constants"
 import { LOCALES } from "@repo/utils/constants"
 import type { Metadata, Viewport } from "next"
@@ -19,9 +18,13 @@ export const viewport: Viewport = {
 
 export const generateMetadata = async ({
   params,
-}: LocaleProps): Promise<Metadata> => {
+}: {
+  params: Promise<{
+    locale: string
+  }>
+}): Promise<Metadata> => {
   const { locale } = await params
-  const t = await getTranslations({ locale })
+  const t = await getTranslations({ locale: locale as Locale })
   const title = t("meta.title")
   const description = `${title} - ${t("meta.description")}`
   const image = "/images/logo.webp"
@@ -64,14 +67,18 @@ export const generateStaticParams = (): Array<{ locale: Locale }> => {
   })
 }
 
-interface LocaleLayoutProps extends React.PropsWithChildren, LocaleProps {}
+interface LocaleLayoutProps extends React.PropsWithChildren {
+  params: Promise<{
+    locale: string
+  }>
+}
 
 const LocaleLayout: React.FC<LocaleLayoutProps> = async (props) => {
   const { children, params } = props
 
   const { locale } = await params
   // Enable static rendering
-  setRequestLocale(locale)
+  setRequestLocale(locale as Locale)
 
   const messages = await getMessages()
 

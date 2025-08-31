@@ -1,10 +1,6 @@
-# 💡 Contributing
+# Contributing
 
-Thanks a lot for your interest in contributing to **theoludwig.fr**! 🎉
-
-## Code of Conduct
-
-**theoludwig.fr** adopted the [Contributor Covenant](https://www.contributor-covenant.org/) as its Code of Conduct, and we expect project participants to adhere to it. Please read [the full text](./CODE_OF_CONDUCT.md) so that you can understand what actions will and will not be tolerated.
+Thanks a lot for your interest in contributing to **theoludwig.fr**!
 
 ## Types of contributions
 
@@ -32,7 +28,7 @@ The commit message guidelines adheres to [Conventional Commits](https://www.conv
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) >= v24.0.0 [(`nvm install 24`)](https://nvm.sh)
-- [pnpm](https://pnpm.io/) v10.11.0 [(`npm install --global corepack@0.32.0 && corepack enable`)](https://github.com/nodejs/corepack)
+- [pnpm](https://pnpm.io/) v10.15.0 [(`npm install --global corepack@0.34.0 && corepack enable`)](https://github.com/nodejs/corepack)
 - [Docker](https://www.docker.com/)
 
 ### Installation

@@ -16,8 +16,9 @@ jobs:
       DO_NOT_TRACK: "1"
       TURBO_TELEMETRY_DISABLED: "1"
       NEXT_TELEMETRY_DISABLED: "1"
+      STORYBOOK_DISABLE_TELEMETRY: "1"
     steps:
-      - uses: "actions/checkout@v4.2.2"
+      - uses: "actions/checkout@v5.0.0"
 
       - uses: "pnpm/action-setup@v4.1.0"
 
@@ -40,10 +41,3 @@ jobs:
       - run: "node --run lint:prettier"
       - run: "node --run test"
       - run: "node --run build"
-
-  commitlint:
-    runs-on: "ubuntu-latest"
-    steps:
-      - uses: "actions/checkout@v4.2.2"
-
-      - uses: "wagoid/commitlint-github-action@v6.1.2"

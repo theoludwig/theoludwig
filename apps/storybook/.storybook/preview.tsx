@@ -5,7 +5,6 @@ import { LOCALE_DEFAULT, TIMEZONE } from "@repo/utils/constants"
 import type { Preview } from "@storybook/nextjs"
 import { NextIntlClientProvider } from "next-intl"
 import { ThemeProvider as NextThemeProvider } from "next-themes"
-import React from "react"
 
 const preview: Preview = {
   initialGlobals: {
@@ -14,6 +13,9 @@ const preview: Preview = {
     },
   },
   parameters: {
+    a11y: {
+      test: "error",
+    },
     docs: {
       codePanel: true,
     },

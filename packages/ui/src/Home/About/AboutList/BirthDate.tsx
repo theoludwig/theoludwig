@@ -15,7 +15,7 @@ export const BirthDate: React.FC<BirthDateProps> = () => {
   }, [])
 
   return t("home.about.birth-date.value", {
-    age,
+    age: age.toString(),
     birthDate: BIRTH_DATE_STRING,
   })
 }

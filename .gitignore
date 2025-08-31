@@ -1,8 +1,10 @@
 # dependencies
 node_modules
 .npm
+.cache
 package-lock.json
 .pnpm-store
+.apt
 .pnp
 .pnp.js
 .yarn/install-state.gz
@@ -15,12 +17,16 @@ coverage
 out/
 dist/
 build/
+.swc/
+.react-email/
 
 # misc
 .DS_Store
 *.pem
+*.bak
 .turbo
 bin/
+dump_*
 
 # debug
 npm-debug.log*
@@ -30,6 +36,7 @@ yarn-error.log*
 # Storybook
 *storybook.log
 storybook-static
+/public
 
 # IDEs and editors
 .idea
@@ -42,6 +49,7 @@ storybook-static
 
 # local env files
 .env
+.env.dev
 .env.production
 .env*.local
 
@@ -50,4 +58,5 @@ storybook-static
 
 # typescript
 *.tsbuildinfo
-# next-env.d.ts
+next-env.d.ts
+packages/i18n/src/translations/*.d.json.ts
