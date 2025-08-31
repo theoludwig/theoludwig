@@ -22,19 +22,19 @@ const HomePage: React.FC<HomePageProps> = async (props) => {
       <About />
 
       <RevealFade>
-        <Interests />
-      </RevealFade>
-
-      <RevealFade>
-        <Skills />
-      </RevealFade>
-
-      <RevealFade>
         <Portfolio />
       </RevealFade>
 
       <RevealFade>
+        <Interests />
+      </RevealFade>
+
+      <RevealFade>
         <OpenSource />
+      </RevealFade>
+
+      <RevealFade>
+        <Skills />
       </RevealFade>
     </MainLayout>
   )

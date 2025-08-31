@@ -87,7 +87,7 @@
       "title": "Studies"
     },
     "interests": {
-      "fusey": "<link>Fusey (fusey.gg)</link>: website I'm developing for the game ARK: Survival Ascended that tracks the number of players connected to the servers in real time and has over ~5,000 visitors each month, ~100,000 members on Discord, and ~120,000 followers on X/Twitter.",
+      "fusey": "<link>Fusey (fusey.gg)</link>: website I'm developing for the game ARK that tracks the number of players connected to the servers in real time and has over ~5,000 visitors each month, ~100,000 members on Discord, and ~120,000 followers on X/Twitter.",
       "open-source": "Open-Source Enthusiast"
     },
     "work": {
@@ -141,7 +141,7 @@
     },
     "portfolio": {
       "fusey": {
-        "description": "ARK: Survival Ascended Wiki and Player stats tracker.",
+        "description": "Website I'm developing for the game ARK that tracks the number of players connected to the servers in real time and has over ~5,000 visitors each month, ~100,000 members on Discord, and ~120,000 followers on X/Twitter.",
         "title": "Fusey"
       },
       "carolo": {
@@ -152,7 +152,7 @@
         "description": "Leon is your open-source personal assistant.",
         "title": "Leon"
       },
-      "title": "Portfolio"
+      "title": "Projects"
     },
     "skills": {
       "backend": "Backend",
