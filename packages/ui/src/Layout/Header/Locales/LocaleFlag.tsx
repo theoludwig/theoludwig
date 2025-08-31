@@ -14,7 +14,6 @@ export const LocaleFlag: React.FC<LocaleFlagProps> = (props) => {
   return (
     <>
       <Image
-        quality={100}
         width={35}
         height={35}
         src={`/images/locales/${locale}.svg`}

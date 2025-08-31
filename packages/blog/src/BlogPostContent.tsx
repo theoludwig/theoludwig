@@ -95,7 +95,6 @@ export const BlogPostContent: React.FC<BlogPostContentProps> = async (
                     alt={alt}
                     width={1000}
                     height={1000}
-                    quality={100}
                     className="size-auto"
                   />
                 </span>

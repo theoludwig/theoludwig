@@ -14,7 +14,6 @@ export const Header: React.FC<HeaderProps> = () => {
       <h1>
         <Link href="/" className="flex items-center justify-center">
           <Image
-            quality={100}
             className="w-16"
             src="/images/logo.webp"
             width={800}

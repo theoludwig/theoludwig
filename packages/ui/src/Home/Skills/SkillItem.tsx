@@ -38,7 +38,6 @@ export const SkillItem: React.FC<SkillItemProps> = (props) => {
       >
         <Image
           className="inline size-16"
-          quality={100}
           width={64}
           height={64}
           alt={`Logo of ${skillName}`}

@@ -32,7 +32,6 @@ export const PortfolioItem: React.FC<PortfolioItemProps> = (props) => {
         >
           <div className="flex justify-center">
             <Image
-              quality={100}
               className="size-[300px] rounded-xl transition-opacity duration-500 group-hover:opacity-20 dark:group-hover:opacity-5"
               width={300}
               height={300}
