@@ -10,14 +10,19 @@ export const CurriculumVitaeInterests: React.FC<
   const t = useTranslations()
 
   const interests = [
-    t("curriculum-vitae.interests.open-source"),
+    <strong key="open-source">
+      {t("curriculum-vitae.interests.open-source")}
+    </strong>,
     t.rich("curriculum-vitae.interests.fusey", {
       link: (children) => {
         return (
-          <a href="https://fusey.gg" target="_blank">
+          <a href="https://fusey.gg" target="_blank" className="font-semibold">
             {children}
           </a>
         )
+      },
+      strong: (children) => {
+        return <strong>{children}</strong>
       },
     }),
   ]
@@ -25,16 +30,14 @@ export const CurriculumVitaeInterests: React.FC<
   return (
     <CurriculumVitaeSection
       id="interests"
-      title={t("home.interests.title")}
+      title={t("curriculum-vitae.interests.title")}
       icon={<FaHeart size={24} />}
     >
       <ul className="list-unstyled m-0">
         {interests.map((interest, index) => {
           return (
-            <li key={index} className="card card-nested">
-              <p>
-                <strong>{interest}</strong>
-              </p>
+            <li key={index} className="card card-nested max-w-2xl">
+              <p>{interest}</p>
             </li>
           )
         })}

@@ -9,13 +9,21 @@ export const CurriculumVitaeWork: React.FC<CurriculumVitaeWorkProps> = () => {
 
   const workExperiences = [
     {
-      summary: t("curriculum-vitae.work.ircad.summary"),
       website: "https://ircad.fr/",
       name: "IRCAD",
       location: "1 Place de l'Hôpital, FR-67000 Strasbourg",
       position: t("curriculum-vitae.work.ircad.position"),
       dates: "28/08/2023 - 31/08/2027",
       duration: t("curriculum-vitae.work.ircad.duration"),
+      tasks: [
+        // t("curriculum-vitae.work.ircad.tasks.WebSurg"),
+        t("curriculum-vitae.work.ircad.tasks.Figma"),
+        t("curriculum-vitae.work.ircad.tasks.IRCAD-Core"),
+        t("curriculum-vitae.work.ircad.tasks.feature-logs"),
+        t("curriculum-vitae.work.ircad.tasks.feature-permissions"),
+        t("curriculum-vitae.work.ircad.tasks.feature-search"),
+        t("curriculum-vitae.work.ircad.tasks.feature-architecture"),
+      ],
     },
     {
       summary: t("curriculum-vitae.work.numerize.summary"),
@@ -25,6 +33,7 @@ export const CurriculumVitaeWork: React.FC<CurriculumVitaeWorkProps> = () => {
       position: t("curriculum-vitae.work.numerize.position"),
       dates: "11/04/2023 - 26/07/2023",
       duration: t("curriculum-vitae.work.numerize.duration"),
+      tasks: [],
     },
   ]
 
@@ -50,16 +59,36 @@ export const CurriculumVitaeWork: React.FC<CurriculumVitaeWorkProps> = () => {
                 <strong>{workExperience.position}</strong>
               </p>
 
-              <p className="text-muted">
+              <p className="text-muted m-0">
                 <small>
                   <span className="space-right">
                     {workExperience.dates} ({workExperience.duration})
                   </span>
                 </small>
               </p>
-              <div className="mt-2">
-                <p>{workExperience.summary}</p>
-              </div>
+
+              {workExperience.tasks.length > 0 ? (
+                <ul
+                  style={{
+                    paddingInlineStart: 20,
+                  }}
+                  className="space-y-1"
+                >
+                  {workExperience.tasks.map((task) => {
+                    return <li key={task}>{task}</li>
+                  })}
+                </ul>
+              ) : (
+                <></>
+              )}
+
+              {workExperience.summary != null ? (
+                <div className="mt-2">
+                  <p>{workExperience.summary}</p>
+                </div>
+              ) : (
+                <></>
+              )}
             </li>
           )
         })}

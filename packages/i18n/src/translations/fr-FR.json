@@ -87,14 +87,23 @@
       "title": "Études"
     },
     "interests": {
-      "fusey": "<link>Fusey (fusey.gg)</link> : site web que je développe pour le jeu ARK qui permet de suivre en temps réel le nombre de joueurs connectés sur les serveurs et a plus de ~5 000 visiteurs chaque mois, ~100 000 membres sur Discord et ~120 000 followers sur X/Twitter.",
+      "title": "Intérêts & loisirs",
+      "fusey": "<link>Fusey (fusey.gg)</link> : site web que je développe pour le jeu ARK qui permet de suivre en temps réel le nombre de joueurs connectés sur les serveurs et a plus de <strong>~5 000 visiteurs chaque mois, ~100 000 membres sur Discord et ~120 000 followers sur X/Twitter</strong>.",
       "open-source": "Enthousiaste de l'Open-Source"
     },
     "work": {
       "ircad": {
         "duration": "4 ans",
         "position": "Apprenti Développeur Web Full Stack",
-        "summary": "Développement de WebSurg, une université virtuelle consacrée à la formation médico-chirurgicale, en React.js/Next.js et API Platform avec Symfony."
+        "tasks": {
+          "WebSurg": "Développement de WebSurg, une université virtuelle consacrée à la formation médico-chirurgicale, en React.js/Next.js et API Platform avec Symfony.",
+          "Figma": "Intégration des maquettes Figma pour WebSurg, site web consacrée à la formation médico-chirurgicale.",
+          "IRCAD-Core": "IRCAD Core, outil interne de gestion des formations médicales et leurs besoins (modèles anatomiques, médicaments, formations du personnel, etc.).",
+          "feature-logs": "Historique et traçabilité des modifications des données (quoi? qui? quand?) dans IRCAD Core.",
+          "feature-permissions": "Système de permissions avancé et authentification OAuth2, avec accès en lecture, écriture et suppression restreint pour des utilisateurs spécifiques de l'application IRCAD Core.",
+          "feature-search": "Moteur de recherche avec filtres, tris et ordre d'affichage personnalisable pour IRCAD Core.",
+          "feature-architecture": "Architecture du projet IRCAD Core en Monorepo TypeScript avec Turborepo, et déploiement automatique (CI/CD) avec Docker Compose, auto-hébergé en interne."
+        }
       },
       "numerize": {
         "duration": "3 mois",

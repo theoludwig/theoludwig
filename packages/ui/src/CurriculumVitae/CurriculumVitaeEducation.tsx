@@ -41,9 +41,9 @@ export const CurriculumVitaeEducation: React.FC<
         t("curriculum-vitae.education.iut.years.2022-2023.courses.tests"),
         t("curriculum-vitae.education.iut.years.2022-2023.courses.clean-code"),
         t("curriculum-vitae.education.iut.years.2022-2023.courses.systems-c"),
-        t(
-          "curriculum-vitae.education.iut.years.2022-2023.courses.sql-security",
-        ),
+        // t(
+        //   "curriculum-vitae.education.iut.years.2022-2023.courses.sql-security",
+        // ),
       ],
     },
     {
@@ -54,19 +54,19 @@ export const CurriculumVitaeEducation: React.FC<
       courses: [
         t("curriculum-vitae.education.iut.years.2021-2022.courses.java"),
         t("curriculum-vitae.education.iut.years.2021-2022.courses.systems-c"),
-        t(
-          "curriculum-vitae.education.iut.years.2021-2022.courses.windows-forms",
-        ),
+        // t(
+        //   "curriculum-vitae.education.iut.years.2021-2022.courses.windows-forms",
+        // ),
         t("curriculum-vitae.education.iut.years.2021-2022.courses.sql"),
       ],
     },
-    {
-      years: t("curriculum-vitae.education.lycee.years.2019-2021.title"),
-      studyType: t("curriculum-vitae.education.lycee.study-type"),
-      institution: t("curriculum-vitae.education.lycee.institution"),
-      score: t("curriculum-vitae.education.lycee.score"),
-      courses: [],
-    },
+    // {
+    //   years: t("curriculum-vitae.education.lycee.years.2019-2021.title"),
+    //   studyType: t("curriculum-vitae.education.lycee.study-type"),
+    //   institution: t("curriculum-vitae.education.lycee.institution"),
+    //   score: t("curriculum-vitae.education.lycee.score"),
+    //   courses: [],
+    // },
   ]
 
   return (
@@ -79,35 +79,33 @@ export const CurriculumVitaeEducation: React.FC<
         {educations.map((education) => {
           return (
             <li key={education.years} className="card card-nested">
-              <div className="content">
-                <p className="relative m-0">
-                  <strong>{education.studyType}</strong>
-                </p>
+              <p className="relative m-0">
+                <strong>{education.studyType}</strong>
+              </p>
 
-                <p className="relative m-0">
-                  <strong>{education.score}</strong>
-                </p>
+              <p className="relative m-0">
+                <strong>{education.score}</strong>
+              </p>
 
-                <p className="text-muted m-0">{education.institution}</p>
+              <p className="text-muted m-0">{education.institution}</p>
 
-                <p className="text-muted m-0">
-                  <small>{education.years}</small>
-                </p>
+              <p className="text-muted m-0">
+                <small>{education.years}</small>
+              </p>
 
-                {education.courses.length > 0 ? (
-                  <ul
-                    style={{
-                      paddingInlineStart: 20,
-                    }}
-                  >
-                    {education.courses.map((course) => {
-                      return <li key={course}>{course}</li>
-                    })}
-                  </ul>
-                ) : (
-                  <></>
-                )}
-              </div>
+              {education.courses.length > 0 ? (
+                <ul
+                  style={{
+                    paddingInlineStart: 20,
+                  }}
+                >
+                  {education.courses.map((course) => {
+                    return <li key={course}>{course}</li>
+                  })}
+                </ul>
+              ) : (
+                <></>
+              )}
             </li>
           )
         })}
