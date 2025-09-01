@@ -110,29 +110,64 @@ export const SKILLS = {
     link: "https://www.docker.com/",
     image: "/images/skills/Docker.webp",
   },
+  "tRPC/oRPC": {
+    link: "https://trpc.io/",
+    image: "/images/skills/tRPC.webp",
+  },
+  Rust: {
+    link: "https://www.rust-lang.org/",
+    image: "/images/skills/Rust.webp",
+  },
+  Caddy: {
+    link: "https://caddyserver.com/",
+    image: "/images/skills/Caddy.webp",
+  },
+  Proxmox: {
+    link: "https://www.proxmox.com/",
+    image: {
+      light: "/images/skills/Proxmox-light.webp",
+      dark: "/images/skills/Proxmox-dark.webp",
+    },
+  },
+  "GitHub Actions": {
+    link: "https://github.com/features/actions",
+    image: {
+      light: "/images/skills/GitHub-light.webp",
+      dark: "/images/skills/GitHub-dark.webp",
+    },
+  },
+  "GitLab CI/CD": {
+    link: "https://docs.gitlab.com/ci",
+    image: "/images/skills/GitLab.webp",
+  },
+  Go: {
+    link: "https://go.dev/",
+    image: "/images/skills/Go.webp",
+  },
 } as const
 
 export type SkillName = keyof typeof SKILLS
 
 export const SKILL_CATEGORIES = [
-  "programming-languages",
-  "frontend",
-  "backend",
+  "software-development",
+  "sys-admin",
+  "systems-programming",
   "software-tools",
 ] as const
 export type SkillCategory = (typeof SKILL_CATEGORIES)[number]
 
 export const SKILL_NAMES_BY_CATEGORY = {
-  "programming-languages": ["TypeScript", "Python", "C/C++", "PHP"],
-  frontend: ["HTML", "CSS", "Tailwind CSS", "React.js (+ Next.js)"],
-  backend: ["Laravel", "Node.js", "Fastify", "PostgreSQL"],
-  "software-tools": [
-    "GNU/Linux",
-    "Arch Linux",
-    "Visual Studio Code",
-    "Git",
-    "Docker",
+  "software-development": [
+    "TypeScript",
+    "React.js (+ Next.js)",
+    "Tailwind CSS",
+    "Node.js",
+    "tRPC/oRPC",
+    "PostgreSQL",
   ],
+  "sys-admin": ["Docker", "Proxmox", "Caddy", "GitHub Actions", "GitLab CI/CD"],
+  "software-tools": ["GNU/Linux", "Arch Linux", "Visual Studio Code", "Git"],
+  "systems-programming": ["C/C++", "Rust", "Go"],
 } as const satisfies {
   [key in SkillCategory]: SkillName[]
 }

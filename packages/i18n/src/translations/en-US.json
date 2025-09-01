@@ -155,6 +155,10 @@
       "title": "Projects"
     },
     "skills": {
+      "software-development": "Software Development",
+      "sys-admin": "SysAdmin",
+      "systems-programming": "Systems Programming",
+
       "backend": "Backend",
       "driving-license": "Driving license",
       "frontend": "Frontend",

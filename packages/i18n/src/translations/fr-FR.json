@@ -155,6 +155,10 @@
       "title": "Projets"
     },
     "skills": {
+      "software-development": "Développement informatique",
+      "sys-admin": "SysAdmin",
+      "systems-programming": "Programmation Système",
+
       "backend": "Backend",
       "driving-license": "Permis B",
       "frontend": "Frontend",

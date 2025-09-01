@@ -27,21 +27,28 @@
     "nationality": "Alsace, France",
     "interests": ["Developer Full Stack", "Open-Source Enthusiast"],
     "skills": {
-        "programmingLanguages": [
-            "JavaScript/TypeScript",
-            "Python",
-            "C/C++",
-            "PHP"
+        "software-development": [
+            "TypeScript",
+            "React.js (+ Next.js)",
+            "Tailwind CSS",
+            "Node.js",
+            "tRPC/oRPC",
+            "PostgreSQL"
         ],
-        "frontend": ["HTML/CSS", "Tailwind CSS", "React.js/Next.js"],
-        "backend": ["Laravel", "Node.js", "Fastify", "PostgreSQL"],
-        "tools": [
+        "sys-admin": [
+            "Docker",
+            "Proxmox",
+            "Caddy",
+            "GitHub Actions",
+            "GitLab CI/CD"
+        ],
+        "software-tools": [
             "GNU/Linux",
             "Arch Linux",
             "Visual Studio Code",
-            "Git",
-            "Docker"
-        ]
+            "Git"
+        ],
+        "systems-programming": ["C/C++", "Rust", "Go"]
     }
 }
 ```
