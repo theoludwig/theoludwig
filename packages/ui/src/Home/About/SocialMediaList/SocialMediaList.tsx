@@ -26,7 +26,7 @@ export const SocialMediaList: React.FC<SocialMediaListProps> = () => {
 
       <SocialMediaItem
         link="https://twitter.com/theoludwig_"
-        ariaLabel="Twitter"
+        ariaLabel="X/Twitter"
       >
         <TwitterIcon />
       </SocialMediaItem>

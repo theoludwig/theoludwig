@@ -17,7 +17,7 @@ Keep in mind that I will not translate the posts in French, all the posts will b
 
 I plan to publish new posts when I have something new to share. There's no schedule, so stay tuned!
 
-To stay informed of new blog post and to ask questions, feel free to follow me on Twitter: [@theoludwig\_](https://twitter.com/theoludwig_).
+To stay informed of new blog post and to ask questions, feel free to follow me on X/Twitter: [@theoludwig\_](https://twitter.com/theoludwig_).
 
 ## Project based learning
 

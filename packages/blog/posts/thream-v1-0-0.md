@@ -37,7 +37,7 @@ The idea is that a user can create an account to authenticate with an email addr
 
 ## History
 
-The idea for the project has existed since May 13, 2020, symbolized by a [publication on Twitter](https://twitter.com/theoludwig_/status/1260638175246135296) by the creator: Théo LUDWIG.
+The idea for the project has existed since May 13, 2020, symbolized by a [publication on X/Twitter](https://twitter.com/theoludwig_/status/1260638175246135296) by the creator: Théo LUDWIG.
 
 The main goal is to put into **practice knowledge in web development** and computer science in general on a concrete project that can **easily evolve over time** where you can add many features.
 
