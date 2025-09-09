@@ -41,6 +41,7 @@
         "institution": "IUT Robert Schuman in Illkirch-Graffenstaden",
         "study-type": "University Bachelor of Technology (BUT) Computer Science",
         "years": {
+          "title": "2021 - 2024",
           "2021-2022": {
             "courses": {
               "java": "Object Oriented Development in Java",
@@ -98,17 +99,17 @@
         "tasks": {
           "WebSurg": "Development of WebSurg, a virtual university dedicated to medical-surgical training, built with React.js/Next.js and API Platform with Symfony.",
           "Figma": "Integration of Figma mockups for WebSurg, website dedicated to medical-surgical training.",
-          "IRCAD-Core": "IRCAD Core, an internal tool for managing medical training sessions and their requirements (anatomicals models, medications, staff training, etc.).",
+          "IRCAD-Core": "IRCAD Core, an internal tool for managing medical training sessions and their requirements (anatomical models, medications, staff training, etc.).",
           "feature-logs": "History and traceability of data modifications (what? who? when?) in IRCAD Core.",
           "feature-permissions": "Advanced permissions system and OAuth2 authentication, with read, write, and delete access restricted for specific users of the IRCAD Core application.",
           "feature-search": "Search engine with filters, sorting, and customizable display for each user of IRCAD Core.",
-          "feature-architecture": "IRCAD Core project architecture in TypeScript Monorepo with Turborepo, and automatic deployment (CI/CD) with Docker Compose, self-hosted internally."
+          "feature-architecture": "IRCAD Core project architecture in TypeScript Monorepo with Turborepo, automatic deployment (CI/CD) and self-hosted internally with Docker Compose."
         }
       },
       "numerize": {
         "duration": "3 months",
         "position": "Full Stack Web Developer Intern",
-        "summary": "Development of an DMS (Document Management System) tool in React.js, Laravel and GraphQL."
+        "summary": "Development of a DMS (Document Management System) tool in React.js, Laravel and GraphQL."
       },
       "title": "Work experiences"
     }

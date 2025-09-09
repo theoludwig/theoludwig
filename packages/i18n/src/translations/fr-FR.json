@@ -41,6 +41,7 @@
         "institution": "IUT Robert Schuman à Illkirch-Graffenstaden",
         "study-type": "Bachelor Universitaire de Technologie (BUT) Informatique",
         "years": {
+          "title": "2021 - 2024",
           "2021-2022": {
             "courses": {
               "java": "Développement Orientée Objet en Java",
@@ -102,7 +103,7 @@
           "feature-logs": "Historique et traçabilité des modifications des données (quoi? qui? quand?) dans IRCAD Core.",
           "feature-permissions": "Système de permissions avancé et authentification OAuth2, avec accès en lecture, écriture et suppression restreint pour des utilisateurs spécifiques de l'application IRCAD Core.",
           "feature-search": "Moteur de recherche avec filtres, tris et ordre d'affichage personnalisable pour IRCAD Core.",
-          "feature-architecture": "Architecture du projet IRCAD Core en Monorepo TypeScript avec Turborepo, et déploiement automatique (CI/CD) avec Docker Compose, auto-hébergé en interne."
+          "feature-architecture": "Architecture du projet IRCAD Core en Monorepo TypeScript avec Turborepo, déploiement automatique (CI/CD) et hébergé en interne avec Docker Compose."
         }
       },
       "numerize": {
