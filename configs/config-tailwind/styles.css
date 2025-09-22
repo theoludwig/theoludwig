@@ -74,6 +74,10 @@
     @apply font-semibold italic;
     cursor: help;
   }
+
+  small {
+    font-size: 87%;
+  }
 }
 
 body {

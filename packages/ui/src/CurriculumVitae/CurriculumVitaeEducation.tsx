@@ -33,7 +33,14 @@ export const CurriculumVitaeEducation: React.FC<
             // t(
             //   "curriculum-vitae.education.iut.years.2021-2022.courses.windows-forms",
             // ),
-            t("curriculum-vitae.education.iut.years.2021-2022.courses.sql"),
+            t.rich(
+              "curriculum-vitae.education.iut.years.2021-2022.courses.sql",
+              {
+                strong: (children) => {
+                  return <strong>{children}</strong>
+                },
+              },
+            ),
           ],
         },
         {
@@ -41,13 +48,30 @@ export const CurriculumVitaeEducation: React.FC<
           title: t("curriculum-vitae.education.iut.years.2022-2023.title"),
           courses: [
             t("curriculum-vitae.education.iut.years.2022-2023.courses.web"),
-            t("curriculum-vitae.education.iut.years.2022-2023.courses.tests"),
-            t(
+            t.rich(
+              "curriculum-vitae.education.iut.years.2022-2023.courses.tests",
+              {
+                strong: (children) => {
+                  return <strong>{children}</strong>
+                },
+              },
+            ),
+            t.rich(
               "curriculum-vitae.education.iut.years.2022-2023.courses.clean-code",
+              {
+                strong: (children) => {
+                  return <strong>{children}</strong>
+                },
+              },
             ),
             // t("curriculum-vitae.education.iut.years.2022-2023.courses.sql-security"),
-            t(
+            t.rich(
               "curriculum-vitae.education.iut.years.2022-2023.courses.systems-c",
+              {
+                strong: (children) => {
+                  return <strong>{children}</strong>
+                },
+              },
             ),
           ],
         },
@@ -55,7 +79,14 @@ export const CurriculumVitaeEducation: React.FC<
           year: t("curriculum-vitae.education.iut.years.2023-2024.description"),
           title: t("curriculum-vitae.education.iut.years.2023-2024.title"),
           courses: [
-            t("curriculum-vitae.education.iut.years.2023-2024.courses.web"),
+            t.rich(
+              "curriculum-vitae.education.iut.years.2023-2024.courses.web",
+              {
+                strong: (children) => {
+                  return <strong>{children}</strong>
+                },
+              },
+            ),
             t("curriculum-vitae.education.iut.years.2023-2024.courses.ci-cd"),
             t(
               "curriculum-vitae.education.iut.years.2023-2024.courses.complexity-algorithms",
@@ -114,8 +145,8 @@ export const CurriculumVitaeEducation: React.FC<
                             paddingInlineStart: 20,
                           }}
                         >
-                          {courses.map((course) => {
-                            return <li key={course}>{course}</li>
+                          {courses.map((course, index) => {
+                            return <li key={index}>{course}</li>
                           })}
                         </ul>
                       </li>

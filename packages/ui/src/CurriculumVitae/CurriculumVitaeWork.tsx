@@ -17,12 +17,28 @@ export const CurriculumVitaeWork: React.FC<CurriculumVitaeWorkProps> = () => {
       duration: t("curriculum-vitae.work.ircad.duration"),
       tasks: [
         // t("curriculum-vitae.work.ircad.tasks.WebSurg"),
-        t("curriculum-vitae.work.ircad.tasks.Figma"),
+        t.rich("curriculum-vitae.work.ircad.tasks.Figma", {
+          strong: (children) => {
+            return <strong>{children}</strong>
+          },
+        }),
         t("curriculum-vitae.work.ircad.tasks.IRCAD-Core"),
         t("curriculum-vitae.work.ircad.tasks.feature-logs"),
-        t("curriculum-vitae.work.ircad.tasks.feature-permissions"),
-        t("curriculum-vitae.work.ircad.tasks.feature-search"),
-        t("curriculum-vitae.work.ircad.tasks.feature-architecture"),
+        t.rich("curriculum-vitae.work.ircad.tasks.feature-permissions", {
+          strong: (children) => {
+            return <strong>{children}</strong>
+          },
+        }),
+        t.rich("curriculum-vitae.work.ircad.tasks.feature-search", {
+          strong: (children) => {
+            return <strong>{children}</strong>
+          },
+        }),
+        t.rich("curriculum-vitae.work.ircad.tasks.feature-architecture", {
+          strong: (children) => {
+            return <strong>{children}</strong>
+          },
+        }),
       ],
     },
     {
@@ -74,8 +90,8 @@ export const CurriculumVitaeWork: React.FC<CurriculumVitaeWorkProps> = () => {
                   }}
                   className="space-y-1"
                 >
-                  {workExperience.tasks.map((task) => {
-                    return <li key={task}>{task}</li>
+                  {workExperience.tasks.map((task, index) => {
+                    return <li key={index}>{task}</li>
                   })}
                 </ul>
               ) : (

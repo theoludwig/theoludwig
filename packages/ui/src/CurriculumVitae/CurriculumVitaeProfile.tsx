@@ -30,7 +30,9 @@ export const CurriculumVitaeProfile: React.FC<
           <h1 className="h3 my-1!">
             <strong>{t("meta.title")}</strong>
           </h1>
-          <h2 className="text-muted h5">{t("curriculum-vitae.description")}</h2>
+          <h2 className="text-muted h5 font-semibold">
+            {t("curriculum-vitae.description")}
+          </h2>
           <h2 className="text-muted h5">
             <BirthDate />
           </h2>
@@ -39,17 +41,13 @@ export const CurriculumVitaeProfile: React.FC<
       </div>
       <div className="flex justify-center">
         <div className="relative px-3">
-          <strong className="info">
-            <a className="" href="mailto:contact@theoludwig.fr">
-              contact@theoludwig.fr
-            </a>
+          <strong className="info font-bold">
+            <a href="mailto:contact@theoludwig.fr">contact@theoludwig.fr</a>
           </strong>
         </div>
         <div className="detail">
-          <strong className="info">
-            <Link className="" href="/">
-              https://theoludwig.fr
-            </Link>
+          <strong className="info font-bold">
+            <Link href="/">https://theoludwig.fr</Link>
           </strong>
         </div>
       </div>

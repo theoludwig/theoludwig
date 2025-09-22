@@ -7,6 +7,7 @@
     "en-US": "Anglais",
     "fr-FR": "Français"
   },
+  "fr-FR-main": "Français (langue principale)",
   "loading": "Chargement...",
   "errors": {
     "error": "Erreur",
@@ -45,7 +46,7 @@
           "2021-2022": {
             "courses": {
               "java": "Développement Orientée Objet en Java",
-              "sql": "Base de données relationnelles et langage SQL",
+              "sql": "<strong>Base de données relationnelles et langage SQL</strong>",
               "systems-c": "Programmation systèmes en C (Allocation mémoire, Pointeurs, Structures)",
               "windows-forms": "Développement d'application Windows Forms (.NET Framework) en C#"
             },
@@ -54,10 +55,10 @@
           },
           "2022-2023": {
             "courses": {
-              "clean-code": "Patrons et Principes de conceptions (Code maintenable et réutilisable) en UML",
+              "clean-code": "Patrons et Principes de conceptions (<strong>Code maintenable et réutilisable</strong>) en UML",
               "sql-security": "Sécurisation des accès à la base de données et PL/SQL",
-              "systems-c": "Programmation systèmes en C (Multi-Thread, Serveur/Client UDP/TCP)",
-              "tests": "Qualité de développement et Tests automatisés",
+              "systems-c": "Programmation systèmes en <strong>C (Multi-Thread, Serveur/Client UDP/TCP)</strong>",
+              "tests": "<strong>Qualité de développement et Tests automatisés</strong>",
               "web": "Développement Web avec le framework Laravel en PHP"
             },
             "description": "2ème année",
@@ -68,7 +69,7 @@
               "ci-cd": "Intégration/Déploiement Continue et Docker",
               "complexity-algorithms": "Complexité Algorithmique Théorique et Pratique en C++",
               "no-sql": "Base de données NoSQL (Redis, MongoDB, Cassandra)",
-              "web": "Développement Web en Node.js et React.js"
+              "web": "<strong>Développement Web en Node.js et React.js</strong>"
             },
             "description": "3ème année",
             "title": "2023 - 2024"
@@ -90,7 +91,7 @@
     "interests": {
       "title": "Intérêts & loisirs",
       "fusey": "<link>Fusey (fusey.gg)</link> : site web que je développe pour le jeu ARK qui permet de suivre en temps réel le nombre de joueurs connectés sur les serveurs et a plus de <strong>~5 000 visiteurs chaque mois, ~100 000 membres sur Discord et ~120 000 followers sur X/Twitter</strong>.",
-      "open-source": "Enthousiaste de l'Open-Source"
+      "open-source": "<strong>Contributeur de l'Open-Source</strong> : publications et <strong>contributions sur npm</strong> et <link-github>GitHub</link-github> avec notamment <link-markdownlint>markdownlint-rule-relative-links</link-markdownlint> avec ~20 000 téléchargements par semaine, contributions à <link-leon>Leon</link-leon>, un assistant personnel open source, parmis d'autres projets."
     },
     "work": {
       "ircad": {
@@ -98,12 +99,12 @@
         "position": "Apprenti Développeur Web Full Stack",
         "tasks": {
           "WebSurg": "Développement de WebSurg, une université virtuelle consacrée à la formation médico-chirurgicale, en React.js/Next.js et API Platform avec Symfony.",
-          "Figma": "Intégration des maquettes Figma pour WebSurg, site web consacrée à la formation médico-chirurgicale.",
+          "Figma": "<strong>Intégration des maquettes Figma</strong> pour WebSurg, site web consacrée à la formation médico-chirurgicale.",
           "IRCAD-Core": "IRCAD Core, outil interne de gestion des formations médicales et leurs besoins (modèles anatomiques, médicaments, formations du personnel, etc.).",
           "feature-logs": "Historique et traçabilité des modifications des données (quoi? qui? quand?) dans IRCAD Core.",
-          "feature-permissions": "Système de permissions avancé et authentification OAuth2, avec accès en lecture, écriture et suppression restreint pour des utilisateurs spécifiques de l'application IRCAD Core.",
-          "feature-search": "Moteur de recherche avec filtres, tris et ordre d'affichage personnalisable pour IRCAD Core.",
-          "feature-architecture": "Architecture du projet IRCAD Core en Monorepo TypeScript avec Turborepo, déploiement automatique (CI/CD) et hébergé en interne avec Docker Compose."
+          "feature-permissions": "<strong>Système de permissions avancé</strong> et authentification OAuth2, avec accès en lecture, écriture et suppression restreint pour des utilisateurs spécifiques de l'application IRCAD Core.",
+          "feature-search": "<strong>Moteur de recherche avec filtres, tris et ordre d'affichage personnalisable</strong> pour IRCAD Core.",
+          "feature-architecture": "Architecture du projet IRCAD Core en <strong>Monorepo TypeScript</strong> avec Turborepo, <strong>déploiement automatique (CI/CD)</strong> et <strong>hébergé en interne avec Docker Compose</strong>."
         }
       },
       "numerize": {
@@ -175,7 +176,10 @@
       "others": "Autres",
       "programming-languages": "Langages de programmation",
       "software-tools": "Logiciels et outils",
-      "title": "Compétences"
+      "title": "Compétences",
+
+      "rust-advent-of-code": " (pendant temps libre et <link-aoc>Advent Of Code</link-aoc>)",
+      "go-basics": " (bases et fondamentaux)"
     }
   }
 }

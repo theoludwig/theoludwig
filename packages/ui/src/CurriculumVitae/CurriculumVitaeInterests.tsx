@@ -10,9 +10,44 @@ export const CurriculumVitaeInterests: React.FC<
   const t = useTranslations()
 
   const interests = [
-    <strong key="open-source">
-      {t("curriculum-vitae.interests.open-source")}
-    </strong>,
+    t.rich("curriculum-vitae.interests.open-source", {
+      strong: (children) => {
+        return <strong>{children}</strong>
+      },
+      "link-github": (children) => {
+        return (
+          <a
+            href="https://github.com/theoludwig"
+            target="_blank"
+            className="font-semibold"
+          >
+            {children}
+          </a>
+        )
+      },
+      "link-leon": (children) => {
+        return (
+          <a
+            href="https://github.com/leon-ai/leon"
+            target="_blank"
+            className="font-semibold"
+          >
+            {children}
+          </a>
+        )
+      },
+      "link-markdownlint": (children) => {
+        return (
+          <a
+            href="https://www.npmjs.com/package/markdownlint-rule-relative-links"
+            target="_blank"
+            className="font-semibold"
+          >
+            {children}
+          </a>
+        )
+      },
+    }),
     t.rich("curriculum-vitae.interests.fusey", {
       link: (children) => {
         return (

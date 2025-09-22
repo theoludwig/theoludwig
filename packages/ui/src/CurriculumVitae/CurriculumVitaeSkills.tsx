@@ -23,7 +23,11 @@ export const CurriculumVitaeSkills: React.FC<
     }),
     {
       category: "others",
-      skillNames: [t("locales.en-US"), t("home.skills.driving-license")],
+      skillNames: [
+        t("fr-FR-main"),
+        t("locales.en-US"),
+        t("home.skills.driving-license"),
+      ],
     },
   ] as const
 
@@ -45,6 +49,23 @@ export const CurriculumVitaeSkills: React.FC<
                     return (
                       <p key={skillName} className="label label-keyword">
                         {skillName}
+                        {skillName === "Rust"
+                          ? t.rich("home.skills.rust-advent-of-code", {
+                              "link-aoc": (children) => {
+                                return (
+                                  <a
+                                    href="https://github.com/theoludwig/advent_of_code"
+                                    target="_blank"
+                                    className="no-underline"
+                                  >
+                                    {children}
+                                  </a>
+                                )
+                              },
+                            })
+                          : skillName === "Go"
+                            ? t("home.skills.go-basics")
+                            : ""}
                       </p>
                     )
                   })}

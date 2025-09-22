@@ -7,6 +7,7 @@
     "en-US": "English",
     "fr-FR": "French"
   },
+  "fr-FR-main": "French (primary language)",
   "loading": "Loading...",
   "errors": {
     "error": "Error",
@@ -24,7 +25,7 @@
       "description": "I constantly wonder how to improve our present, to make our future better, particularly thanks to the advancements in computer science. <br></br> My priority is to craft intuitive user experiences (UX), that meet the needs of the users in the most efficient way possible.",
       "title": "About"
     },
-    "description": "Developer Full Stack • Student",
+    "description": "Developer Full Stack • French Student",
     "education": {
       "cnam": {
         "institution": "Conservatoire National des Arts et Métiers (CNAM), in Eckbolsheim - UIMM Alsace - ITII Alsace",
@@ -45,7 +46,7 @@
           "2021-2022": {
             "courses": {
               "java": "Object Oriented Development in Java",
-              "sql": "Relational database and SQL language",
+              "sql": "<strong>Relational database and SQL language</strong>",
               "systems-c": "Systems programming in C (Memory allocation, Pointers, Structures)",
               "windows-forms": "Windows Forms (.NET Framework) Application Development in C#"
             },
@@ -54,10 +55,10 @@
           },
           "2022-2023": {
             "courses": {
-              "clean-code": "Design Patterns and Principles (Maintainable and Reusable Code) in UML",
+              "clean-code": "Design Patterns and Principles (<strong>Maintainable and Reusable Code</strong>) in UML",
               "sql-security": "Securing database access and PL/SQL",
-              "systems-c": "Systems programming in C (Multi-Thread, Server/Client UDP/TCP)",
-              "tests": "Development Quality and Automated Testing",
+              "systems-c": "Systems programming in <strong>C (Multi-Thread, Server/Client UDP/TCP)</strong>",
+              "tests": "<strong>Development Quality and Automated Testing</strong>",
               "web": "Web development with the Laravel framework in PHP"
             },
             "description": "2nd year",
@@ -68,7 +69,7 @@
               "ci-cd": "Continuous Integration/Deployment (CI/CD) and Docker",
               "complexity-algorithms": "Theoretical and Practical Algorithmic Complexity in C++",
               "no-sql": "NoSQL database (Redis, MongoDB, Cassandra)",
-              "web": "Web development in Node.js and React.js"
+              "web": "<strong>Web development in Node.js and React.js</strong>"
             },
             "description": "3rd year",
             "title": "2023 - 2024"
@@ -90,7 +91,7 @@
     "interests": {
       "title": "Interests & hobbies",
       "fusey": "<link>Fusey (fusey.gg)</link>: website I'm developing for the game ARK that tracks the number of players connected to the servers in real time and has <strong>over ~5,000 visitors each month, ~100,000 members on Discord, and ~120,000 followers on X/Twitter</strong>.",
-      "open-source": "Open-Source Enthusiast"
+      "open-source": "<strong>Open-Source Contributor</strong>: publishing and <strong>contributing to npm packages</strong> and <link-github>GitHub</link-github> repositories, notably with <link-markdownlint>markdownlint-rule-relative-links</link-markdownlint> (around 20,000 downloads per week), contributions to <link-leon>Leon</link-leon>, an open-source personal assistant, among other projects."
     },
     "work": {
       "ircad": {
@@ -98,12 +99,12 @@
         "position": "Full Stack Web Developer Apprentice",
         "tasks": {
           "WebSurg": "Development of WebSurg, a virtual university dedicated to medical-surgical training, built with React.js/Next.js and API Platform with Symfony.",
-          "Figma": "Integration of Figma mockups for WebSurg, website dedicated to medical-surgical training.",
+          "Figma": "<strong>Integration of Figma mockups</strong> for WebSurg, website dedicated to medical-surgical training.",
           "IRCAD-Core": "IRCAD Core, an internal tool for managing medical training sessions and their requirements (anatomical models, medications, staff training, etc.).",
           "feature-logs": "History and traceability of data modifications (what? who? when?) in IRCAD Core.",
-          "feature-permissions": "Advanced permissions system and OAuth2 authentication, with read, write, and delete access restricted for specific users of the IRCAD Core application.",
-          "feature-search": "Search engine with filters, sorting, and customizable display for each user of IRCAD Core.",
-          "feature-architecture": "IRCAD Core project architecture in TypeScript Monorepo with Turborepo, automatic deployment (CI/CD) and self-hosted internally with Docker Compose."
+          "feature-permissions": "<strong>Advanced permissions system and OAuth2 authentication</strong>, with read, write, and delete access restricted for specific users of the IRCAD Core application.",
+          "feature-search": "<strong>Search engine with filters, sorting, and customizable display</strong> for each user of IRCAD Core.",
+          "feature-architecture": "IRCAD Core project architecture in <strong>TypeScript Monorepo</strong> with Turborepo, <strong>automatic deployment (CI/CD)</strong> and <strong>self-hosted internally with Docker Compose</strong>."
         }
       },
       "numerize": {
@@ -175,7 +176,10 @@
       "others": "Others",
       "programming-languages": "Programming languages",
       "software-tools": "Software and tools",
-      "title": "Skills"
+      "title": "Skills",
+
+      "rust-advent-of-code": " (as hobby and <link-aoc>Advent Of Code</link-aoc>)",
+      "go-basics": " (basics and fundamentals)"
     }
   }
 }
