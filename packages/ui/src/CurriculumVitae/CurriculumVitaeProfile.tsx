@@ -21,9 +21,9 @@ export const CurriculumVitaeProfile: React.FC<
           <Image
             className="mx-auto block"
             alt={t("meta.title")}
-            src="/images/logo_background.webp"
-            width={400}
-            height={400}
+            src="/images/logo.webp"
+            width={450}
+            height={450}
           />
         </div>
         <div className="name-and-profession text-center">
