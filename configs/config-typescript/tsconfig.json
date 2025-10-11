@@ -17,6 +17,7 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "allowImportingTsExtensions": true,
+    "allowArbitraryExtensions": true,
     "skipLibCheck": true,
     "jsx": "preserve",
     "incremental": false,

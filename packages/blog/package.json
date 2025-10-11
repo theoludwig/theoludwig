@@ -17,7 +17,6 @@
     "@repo/utils": "workspace:*",
     "@repo/i18n": "workspace:*",
     "@repo/ui": "workspace:*",
-    "@repo/react-hooks": "workspace:*",
     "@giscus/react": "catalog:",
     "@shikijs/rehype": "catalog:",
     "@mdx-js/mdx": "catalog:",

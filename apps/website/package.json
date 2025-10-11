@@ -11,7 +11,7 @@
     "build": "next build --turbopack",
     "start": "next start --port 3000",
     "typegen": "next typegen",
-    "lint:eslint": "eslint . --max-warnings 0",
+    "lint:eslint": "eslint app --max-warnings 0",
     "lint:typescript": "next typegen && tsc --noEmit"
   },
   "dependencies": {

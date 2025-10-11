@@ -6,9 +6,9 @@ import { LOCALES } from "@repo/utils/constants"
 import { useLocale } from "next-intl"
 import { useEffect, useRef } from "react"
 
-import { useBoolean } from "@repo/react-hooks/useBoolean"
 import { Arrow } from "./Arrow.tsx"
 import { LocaleFlag } from "./LocaleFlag.tsx"
+import { useBoolean } from "../../../hooks/useBoolean.ts"
 
 export interface LocalesProps {}
 

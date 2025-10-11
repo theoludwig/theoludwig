@@ -4,9 +4,6 @@
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "types": ["@total-typescript/ts-reset", "@repo/i18n/messages.d.ts"],
     "allowJs": true,
-    "paths": {
-      "#*": ["./*"]
-    },
     "plugins": [
       {
         "name": "next"

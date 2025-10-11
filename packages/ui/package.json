@@ -30,7 +30,6 @@
     "@repo/config-tailwind": "workspace:*",
     "@repo/utils": "workspace:*",
     "@repo/i18n": "workspace:*",
-    "@repo/react-hooks": "workspace:*",
     "cva": "catalog:",
     "next": "catalog:",
     "next-intl": "catalog:",

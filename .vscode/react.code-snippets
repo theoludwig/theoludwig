@@ -4,7 +4,6 @@
     "prefix": "rfc",
     "body": [
       "export interface ${1:ComponentName}Props {}",
-      "",
       "export const ${1:ComponentName}: React.FC<${1:ComponentName}Props> = () => {",
       "  return (",
       "    <div>",

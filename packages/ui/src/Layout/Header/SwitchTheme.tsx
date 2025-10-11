@@ -1,13 +1,13 @@
 "use client"
 
 import { classNames } from "@repo/config-tailwind/classNames"
-import { useIsMounted } from "@repo/react-hooks/useIsMounted"
 import type { Theme } from "@repo/utils/constants"
 import { THEME_DEFAULT } from "@repo/utils/constants"
 import {
   ThemeProvider as NextThemeProvider,
   useTheme as useNextTheme,
 } from "next-themes"
+import { useEffect, useState } from "react"
 
 export interface ThemeProviderProps extends React.PropsWithChildren {
   forcedTheme?: Theme
@@ -35,7 +35,12 @@ export interface UseThemeOutput {
 
 export const useTheme = (): UseThemeOutput => {
   const { setTheme, theme: themeData } = useNextTheme()
-  const { isMounted } = useIsMounted()
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setIsMounted(true)
+  }, [])
 
   const theme = isMounted ? (themeData as Theme) : THEME_DEFAULT
 

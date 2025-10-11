@@ -1,4 +1,4 @@
-FROM node:24.7.0-slim AS node-pnpm
+FROM node:24.10.0-slim AS node-pnpm
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 RUN npm install --global corepack@0.34.0 && corepack enable
@@ -9,7 +9,7 @@ WORKDIR /usr/src/app
 
 FROM node-pnpm AS builder
 COPY ./ ./
-RUN pnpm install --global turbo@2.5.6
+RUN pnpm install --global turbo@2.5.8
 RUN turbo prune @repo/website --docker
 
 FROM node-pnpm AS installer
@@ -23,7 +23,7 @@ COPY --from=builder /usr/src/app/out/full/ ./
 COPY turbo.json turbo.json
 
 ARG VERSION="0.0.0-develop"
-RUN pnpm install --global replace-in-files-cli@3.0.0
+RUN pnpm install --global replace-in-files-cli@4.0.0
 RUN VERSION_STRIPPED=${VERSION#v} && replace-in-files --regex='version": *"[^"]*' --replacement='"version": "'"$VERSION_STRIPPED"'"' '**/package.json' '!**/node_modules/**'
 RUN pnpm --filter=@repo/website... exec turbo run build
 
