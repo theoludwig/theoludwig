@@ -7,30 +7,30 @@ catalogMode: "strict"
 
 catalog:
   # Turborepo
-  "turbo": "2.5.8"
+  "turbo": "2.6.0"
 
   # TypeScript
   "typescript": "5.9.3"
   "@total-typescript/ts-reset": "0.6.1"
-  "@types/node": "24.7.2"
+  "@types/node": "24.9.2"
 
   # Utils
   "mime": "4.1.0"
 
   # React.js/Next.js
-  "next": &next "15.5.4"
-  "next-intl": "4.3.12"
+  "next": &next "16.0.1"
+  "next-intl": "4.4.0"
   "next-themes": "0.4.6"
   "react": "19.2.0"
   "react-dom": "19.2.0"
   "@types/react": "19.2.2"
-  "@types/react-dom": "19.2.1"
+  "@types/react-dom": "19.2.2"
   "react-icons": "5.5.0"
 
   # Blog
   "@giscus/react": "3.1.0"
   "gray-matter": "4.0.3"
-  "katex": "0.16.23"
+  "katex": "0.16.25"
   "next-mdx-remote": "5.0.0"
   "@mdx-js/mdx": "3.1.1"
   "rehype-katex": "7.0.1"
@@ -48,41 +48,41 @@ catalog:
 
   # ESLint
   "globals": "16.4.0"
-  "typescript-eslint": "8.46.0"
-  "eslint": "9.37.0"
-  "eslint-config-conventions": "21.0.3"
+  "typescript-eslint": "8.46.2"
+  "eslint": "9.39.0"
+  "eslint-config-conventions": "21.1.0"
   "eslint-plugin-promise": "7.2.1"
-  "eslint-plugin-unicorn": "61.0.2"
+  "eslint-plugin-unicorn": "62.0.0"
   "eslint-plugin-import-x": "4.16.1"
   "@next/eslint-plugin-next": *next
   "eslint-plugin-react": "7.37.5"
-  "eslint-plugin-react-hooks": "7.0.0"
+  "eslint-plugin-react-hooks": "7.0.1"
 
   # Prettier
   "prettier": "3.6.2"
-  "prettier-plugin-tailwindcss": "0.6.14"
-  "editorconfig-checker": "6.1.0"
+  "prettier-plugin-tailwindcss": "0.7.1"
+  "editorconfig-checker": "6.1.1"
 
   # Storybook
-  "storybook": &storybook "9.1.10"
+  "storybook": &storybook "10.0.2"
   "@storybook/addon-docs": *storybook
   "@storybook/addon-a11y": *storybook
   "@storybook/nextjs": *storybook
   "@storybook/addon-themes": *storybook
-  "@storybook/test-runner": "0.23.0"
-  "@chromatic-com/storybook": "4.1.1"
-  "chromatic": "13.3.0"
+  "@storybook/test-runner": "0.24.1"
+  "@chromatic-com/storybook": "4.1.2"
+  "chromatic": "13.3.3"
 
   # Testing
-  "playwright": &playwright "1.56.0"
+  "playwright": &playwright "1.56.1"
   "@playwright/test": *playwright
   "start-server-and-test": "2.1.2"
 
   # CSS
   "postcss": "8.5.6"
-  "@tailwindcss/postcss": "4.1.14"
+  "@tailwindcss/postcss": "4.1.16"
   "@tailwindcss/typography": "0.5.19"
-  "tailwindcss": "4.1.14"
+  "tailwindcss": "4.1.16"
   "tailwind-merge": "3.3.1"
   "clsx": "2.1.1"
   "cva": "1.0.0-beta.4"

@@ -48,7 +48,7 @@
 
   q,
   blockquote {
-    @apply italic tracking-wider;
+    @apply tracking-wider italic;
   }
   blockquote {
     @apply border-gray-lighter border-l-4 pl-3 italic;

@@ -75,7 +75,7 @@ export const SectionContent: React.FC<SectionContentProps> = (props) => {
   return (
     <div
       className={classNames(
-        "size-full max-w-full break-words px-6 py-4 sm:px-16",
+        "size-full max-w-full px-6 py-4 break-words sm:px-16",
         {
           "shadow-light dark:shadow-dark max-w-full rounded-2xl border border-solid border-black":
             shadowContainer,

@@ -62,7 +62,7 @@ export const SwitchTheme: React.FC<SwitchThemeProps> = () => {
 
   return (
     <div className="flex items-center justify-center" onClick={toggleTheme}>
-      <div className="relative inline-block cursor-pointer touch-pan-x select-none border-0 bg-transparent p-0">
+      <div className="relative inline-block cursor-pointer touch-pan-x border-0 bg-transparent p-0 select-none">
         <div className="h-[24px] w-[50px] rounded-[30px] bg-[#4d4d4d] p-0 text-white transition-all duration-200 ease-in-out">
           <div
             className={classNames(

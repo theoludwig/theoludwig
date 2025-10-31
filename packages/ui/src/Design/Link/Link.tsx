@@ -17,7 +17,7 @@ export const Link: React.FC<LinkProps> = (props) => {
   return (
     <NextLink
       className={classNames(
-        "text-primary dark:text-primary-dark inline-flex items-center gap-1 font-semibold hover:underline focus:rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2",
+        "text-primary dark:text-primary-dark inline-flex items-center gap-1 font-semibold hover:underline focus:rounded-md focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none",
         className,
       )}
       target={target}

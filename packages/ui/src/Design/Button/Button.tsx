@@ -7,7 +7,7 @@ import { Spinner } from "../Spinner/Spinner.tsx"
 import { Ripple } from "./Ripple.tsx"
 
 const buttonVariants = cva({
-  base: "relative inline-flex items-center justify-center overflow-hidden rounded-md text-base font-semibold transition duration-150 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
+  base: "relative inline-flex items-center justify-center overflow-hidden rounded-md text-base font-semibold transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50",
   variants: {
     variant: {
       solid: "bg-primary hover:bg-primary/80 text-white",

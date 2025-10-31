@@ -11,8 +11,8 @@ const typographyVariants = cva({
       h4: "text-primary dark:text-primary-dark text-xl font-semibold",
       h5: "text-primary dark:text-primary-dark text-xl font-medium",
       h6: "text-primary dark:text-primary-dark text-lg font-medium",
-      text1: "break-words text-base",
-      text2: "break-words text-sm",
+      text1: "text-base break-words",
+      text2: "text-sm break-words",
     },
   },
 })
