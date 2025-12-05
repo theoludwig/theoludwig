@@ -1,7 +1,6 @@
 import { classNames } from "@repo/config-tailwind/classNames"
 
-export interface MainLayoutProps
-  extends React.ComponentPropsWithoutRef<"main"> {
+export interface MainLayoutProps extends React.ComponentPropsWithoutRef<"main"> {
   className?: string
   center?: boolean
 }

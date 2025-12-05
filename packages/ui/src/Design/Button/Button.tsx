@@ -34,8 +34,9 @@ interface ButtonBaseProps extends VariantProps<typeof buttonVariants> {
 }
 
 interface ButtonElementProps extends React.ComponentPropsWithoutRef<"button"> {}
-interface LinkElementProps
-  extends React.ComponentPropsWithoutRef<typeof NextLink> {}
+interface LinkElementProps extends React.ComponentPropsWithoutRef<
+  typeof NextLink
+> {}
 
 export type ButtonLinkProps = ButtonBaseProps &
   LinkElementProps & { href: string }

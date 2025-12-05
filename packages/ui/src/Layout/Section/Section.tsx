@@ -4,8 +4,7 @@ import { Typography } from "../../Design/Typography/Typography.tsx"
 
 export * from "./RevealFade.tsx"
 
-export interface SectionProps
-  extends React.ComponentPropsWithoutRef<"section"> {
+export interface SectionProps extends React.ComponentPropsWithoutRef<"section"> {
   verticalSpacing?: boolean
   horizontalSpacing?: boolean
 }
@@ -64,8 +63,7 @@ export const SectionDescription: React.FC<SectionDescriptionProps> = (
   )
 }
 
-export interface SectionContentProps
-  extends React.ComponentPropsWithoutRef<"div"> {
+export interface SectionContentProps extends React.ComponentPropsWithoutRef<"div"> {
   shadowContainer?: boolean
 }
 
