@@ -28,7 +28,7 @@ The commit message guidelines adheres to [Conventional Commits](https://www.conv
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) >= v24.0.0 [(`nvm install 24`)](https://nvm.sh)
-- [pnpm](https://pnpm.io/) v10.24.0 [(`npm install --global corepack@0.34.5 && corepack enable`)](https://github.com/nodejs/corepack)
+- [pnpm](https://pnpm.io/) v10.25.0 [(`npm install --global corepack@0.34.5 && corepack enable`)](https://github.com/nodejs/corepack)
 - [Docker](https://www.docker.com/)
 
 ### Installation
