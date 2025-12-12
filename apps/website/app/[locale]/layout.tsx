@@ -90,10 +90,14 @@ const LocaleLayout: React.FC<LocaleLayoutProps> = async (props) => {
         </NextIntlClientProvider>
 
         <Script
-          defer
-          data-domain={DOMAIN}
-          src="https://plausible.theoludwig.fr/js/script.js"
+          async
+          src="https://analytics.theoludwig.fr/js/pa-MToGPBn2iXgorPLkh6f_s.js"
         />
+        <Script id="analytics-init">
+          {`
+window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+plausible.init()`}
+        </Script>
       </body>
     </html>
   )
