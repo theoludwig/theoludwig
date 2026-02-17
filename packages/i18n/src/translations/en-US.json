@@ -152,16 +152,16 @@
     },
     "portfolio": {
       "fusey": {
-        "description": "Website I'm developing for the game ARK that tracks the number of players connected to the servers in real time and has over ~5,000 visitors each month, ~100,000 members on Discord, and ~120,000 followers on X/Twitter.",
+        "description": "A platform connecting creators and game server owners through automated, safe, and verifiable paid promotions.",
         "title": "Fusey"
+      },
+      "fusey-ark": {
+        "description": "Website I'm developing for the game ARK that tracks the number of players connected to the servers in real time.",
+        "title": "Fusey ARK"
       },
       "carolo": {
         "description": "Strategy board game similar to chess which allows grandiose moves (only available in French).",
         "title": "Carolo"
-      },
-      "leon": {
-        "description": "Leon is your open-source personal assistant.",
-        "title": "Leon"
       },
       "title": "Projects"
     },

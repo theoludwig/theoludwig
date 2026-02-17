@@ -152,16 +152,16 @@
     },
     "portfolio": {
       "fusey": {
-        "description": "Site web que je développe pour le jeu ARK qui permet de suivre en temps réel le nombre de joueurs connectés sur les serveurs et a plus de ~5 000 visiteurs chaque mois, ~100 000 membres sur Discord et ~120 000 followers sur X/Twitter.",
+        "description": "Une plateforme mettant en relation les créateurs de contenu (e.g: YouTube) et les propriétaires de serveurs de jeux pour des promotions sécurisées et fiables.",
         "title": "Fusey"
+      },
+      "fusey-ark": {
+        "description": "Site web que je développe pour le jeu ARK qui permet de suivre en temps réel le nombre de joueurs connectés sur les serveurs.",
+        "title": "Fusey ARK"
       },
       "carolo": {
         "description": "Jeu de plateau stratégique similaire aux échecs qui permet des coups grandioses, reposant sur des enchaînements remarquables.",
         "title": "Carolo"
-      },
-      "leon": {
-        "description": "Leon est votre assistant personnel open source.",
-        "title": "Leon"
       },
       "title": "Projets"
     },

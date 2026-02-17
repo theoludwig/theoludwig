@@ -17,18 +17,18 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
       image: "/images/portfolio/Fusey.webp",
     },
     {
+      id: "fusey-ark",
+      title: t("home.portfolio.fusey-ark.title"),
+      description: t("home.portfolio.fusey-ark.description"),
+      link: "https://ark.fusey.gg",
+      image: "/images/portfolio/Fusey-ARK.webp",
+    },
+    {
       id: "carolo",
       title: t("home.portfolio.carolo.title"),
       description: t("home.portfolio.carolo.description"),
       link: "https://carolo.theoludwig.fr",
       image: "/images/portfolio/Carolo.webp",
-    },
-    {
-      id: "leon",
-      title: t("home.portfolio.leon.title"),
-      description: t("home.portfolio.leon.description"),
-      link: "https://getleon.ai",
-      image: "/images/portfolio/Leon.webp",
     },
   ]
 
