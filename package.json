@@ -17,6 +17,7 @@
     "build": "turbo run build"
   },
   "devDependencies": {
+    "editorconfig-checker": "catalog:",
     "eslint-config-conventions": "catalog:",
     "markdownlint": "catalog:",
     "markdownlint-cli2": "catalog:",
