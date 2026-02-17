@@ -14,9 +14,7 @@ export const BlogPosts: React.FC<BlogPostsProps> = (props) => {
   return (
     <ul className="list-none">
       {posts.map((post) => {
-        const postPublishedOn = getISODate(
-          new Date(post.frontmatter.publishedOn),
-        )
+        const postPublishedOn = getISODate(new Date(post.frontmatter.publishedOn))
 
         return (
           <li key={post.slug}>

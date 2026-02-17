@@ -9,10 +9,8 @@ export const AboutItem: React.FC<AboutItemProps> = (props) => {
 
   return (
     <li className="flex items-center justify-between sm:justify-start">
-      <strong className="w-24 text-sm text-black lg:w-32 dark:text-white">
-        {label}
-      </strong>
-      <span className="dark:text-gray-lighter block text-sm font-normal text-black">
+      <strong className="w-24 text-sm text-black lg:w-32 dark:text-white">{label}</strong>
+      <span className="block text-sm font-normal text-black dark:text-gray-lighter">
         {link != null ? (
           <a className="hover:underline" href={link}>
             {value}

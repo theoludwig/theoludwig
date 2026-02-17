@@ -14,10 +14,9 @@ import "katex/dist/katex.min.css"
 import { BlogPostComments } from "./BlogPostComments.tsx"
 
 const Heading: React.FC<
-  React.DetailedHTMLProps<
-    React.HTMLAttributes<HTMLHeadingElement>,
-    HTMLHeadingElement
-  > & { as: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" }
+  React.DetailedHTMLProps<React.HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement> & {
+    as: "h1" | "h2" | "h3" | "h4" | "h5" | "h6"
+  }
 > = (props) => {
   const { children, as, id = "", ...rest } = props
 
@@ -37,9 +36,7 @@ export interface BlogPostContentProps {
   content: string
 }
 
-export const BlogPostContent: React.FC<BlogPostContentProps> = async (
-  props,
-) => {
+export const BlogPostContent: React.FC<BlogPostContentProps> = async (props) => {
   const { content } = props
 
   return (
@@ -90,13 +87,7 @@ export const BlogPostContent: React.FC<BlogPostContentProps> = async (
               const source = src.replace("../../../apps/website/public/", "/")
               return (
                 <span className="flex flex-col items-center justify-center">
-                  <Image
-                    src={source}
-                    alt={alt}
-                    width={1000}
-                    height={1000}
-                    className="size-auto"
-                  />
+                  <Image src={source} alt={alt} width={1000} height={1000} className="size-auto" />
                 </span>
               )
             },
@@ -109,9 +100,7 @@ export const BlogPostContent: React.FC<BlogPostContentProps> = async (
               if (hrefString.startsWith("../posts/")) {
                 return (
                   <Link
-                    href={hrefString
-                      .replace("../posts/", "/blog/")
-                      .replace(".md", "")}
+                    href={hrefString.replace("../posts/", "/blog/").replace(".md", "")}
                     {...rest}
                   />
                 )

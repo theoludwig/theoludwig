@@ -14,11 +14,7 @@ export const InterestItem: React.FC<InterestItemProps> = (props) => {
         {title}
       </Typography>
 
-      <Typography
-        as="p"
-        variant="text1"
-        className="dark:text-gray-lighter my-2 text-black"
-      >
+      <Typography as="p" variant="text1" className="my-2 text-black dark:text-gray-lighter">
         {description}
       </Typography>
     </div>

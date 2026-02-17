@@ -2,11 +2,7 @@ import { GIT_REPO_LINK } from "@repo/utils/constants"
 import { useTranslations } from "next-intl"
 import { FaGit, FaMicrochip } from "react-icons/fa"
 import { Link } from "../../Design/Link/Link.tsx"
-import {
-  Section,
-  SectionContent,
-  SectionTitle,
-} from "../../Layout/Section/Section.tsx"
+import { Section, SectionContent, SectionTitle } from "../../Layout/Section/Section.tsx"
 import { InterestItem } from "./InterestItem.tsx"
 
 export interface InterestsProps {}
@@ -59,13 +55,7 @@ export const Interests: React.FC<InterestsProps> = () => {
       <SectionContent shadowContainer>
         <div className="max-w-full">
           {items.map((item) => {
-            return (
-              <InterestItem
-                key={item.id}
-                title={item.title}
-                description={item.description}
-              />
-            )
+            return <InterestItem key={item.id} title={item.title} description={item.description} />
           })}
         </div>
 
@@ -74,7 +64,7 @@ export const Interests: React.FC<InterestsProps> = () => {
             {items.map((item) => {
               return (
                 <li className="m-2 size-8" key={item.id} title={item.title}>
-                  <item.Icon className="text-primary dark:text-primary-dark block size-full" />
+                  <item.Icon className="block size-full text-primary dark:text-primary-dark" />
                 </li>
               )
             })}

@@ -19,9 +19,7 @@ export const BlogPostUI: React.FC<BlogPostUIProps> = (props) => {
         <Typography variant="h2" as="h1">
           {blogPost.frontmatter.title}
         </Typography>
-        <p className="mt-2">
-          {getISODate(new Date(blogPost.frontmatter.publishedOn))}
-        </p>
+        <p className="mt-2">{getISODate(new Date(blogPost.frontmatter.publishedOn))}</p>
       </div>
       <BlogPostContent content={blogPost.content} />
     </MainLayout>

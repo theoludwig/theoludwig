@@ -11,35 +11,31 @@
     "build": "next build",
     "start": "next start --port 3000",
     "typegen": "next typegen",
-    "lint:eslint": "eslint app --max-warnings 0",
     "lint:typescript": "next typegen && tsc --noEmit"
   },
   "dependencies": {
+    "@mdx-js/mdx": "catalog:",
     "@repo/blog": "workspace:*",
     "@repo/config-tailwind": "workspace:*",
-    "@repo/utils": "workspace:*",
     "@repo/i18n": "workspace:*",
     "@repo/ui": "workspace:*",
-    "@mdx-js/mdx": "catalog:",
-    "next-mdx-remote": "catalog:",
-    "shiki": "catalog:",
+    "@repo/utils": "workspace:*",
     "next": "catalog:",
     "next-intl": "catalog:",
+    "next-mdx-remote": "catalog:",
     "react": "catalog:",
-    "react-dom": "catalog:"
+    "react-dom": "catalog:",
+    "shiki": "catalog:"
   },
   "devDependencies": {
-    "@repo/config-eslint": "workspace:*",
     "@repo/config-typescript": "workspace:*",
+    "@tailwindcss/postcss": "catalog:",
+    "@total-typescript/ts-reset": "catalog:",
     "@types/node": "catalog:",
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
-    "@total-typescript/ts-reset": "catalog:",
-    "eslint": "catalog:",
     "postcss": "catalog:",
     "tailwindcss": "catalog:",
-    "@tailwindcss/postcss": "catalog:",
-    "typescript-eslint": "catalog:",
     "typescript": "catalog:"
   }
 }

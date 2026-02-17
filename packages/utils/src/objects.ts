@@ -1,7 +1,4 @@
-export const deepMerge = <
-  Object1 extends object,
-  Object2 extends object = Object1,
->(
+export const deepMerge = <Object1 extends object, Object2 extends object = Object1>(
   object1: Object1,
   object2: Object2,
 ): Object1 & Object2 => {

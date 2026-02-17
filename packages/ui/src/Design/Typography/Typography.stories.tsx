@@ -67,8 +67,7 @@ export const Variants: Story = {
         </Typography>
 
         <Typography as="p" variant="text1">
-          <abbr title="Cascading Style Sheets">CSS</abbr> (Abbreviation or
-          Acronym)
+          <abbr title="Cascading Style Sheets">CSS</abbr> (Abbreviation or Acronym)
         </Typography>
 
         <Typography as="p" variant="text1">
@@ -76,8 +75,8 @@ export const Variants: Story = {
         </Typography>
 
         <Typography as="p" variant="text1">
-          A <dfn id="def-validator">validator</dfn> is a program that checks for
-          syntax errors in code or documents. (Definition)
+          A <dfn id="def-validator">validator</dfn> is a program that checks for syntax errors in
+          code or documents. (Definition)
         </Typography>
 
         <Typography as="blockquote" variant="text1">

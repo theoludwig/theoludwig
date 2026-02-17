@@ -164,13 +164,7 @@
       "name": "Backend",
     },
     {
-      "keywords": [
-        "GNU/Linux",
-        "Arch Linux",
-        "Visual Studio Code",
-        "Git",
-        "Docker",
-      ],
+      "keywords": ["GNU/Linux", "Arch Linux", "Visual Studio Code", "Git", "Docker"],
       "name": "Logiciels et outils",
     },
     {

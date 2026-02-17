@@ -3,30 +3,33 @@
   "version": "0.0.0-develop",
   "private": true,
   "type": "module",
-  "packageManager": "pnpm@10.25.0+sha512.5e82639027af37cf832061bcc6d639c219634488e0f2baebe785028a793de7b525ffcd3f7ff574f5e9860654e098fe852ba8ac5dd5cefe1767d23a020a92f501",
-  "engines": {
-    "node": ">=24.0.0"
-  },
   "scripts": {
     "dev": "turbo run dev --parallel",
     "start": "turbo run start --parallel",
-    "build": "turbo run build",
-    "test": "turbo run test",
     "lint:editorconfig": "editorconfig-checker",
     "lint:markdown": "markdownlint-cli2",
+    "lint:turbo": "turbo boundaries",
     "lint:typescript": "turbo run lint:typescript",
-    "lint:eslint": "turbo run lint:eslint",
-    "lint:prettier": "prettier . --check"
+    "lint:oxlint": "turbo run typegen && oxlint . --type-aware --type-check --deny-warnings --report-unused-disable-directives",
+    "lint:oxfmt": "oxfmt . --check",
+    "oxfmt": "oxfmt .",
+    "test": "turbo run test",
+    "build": "turbo run build"
   },
   "devDependencies": {
-    "editorconfig-checker": "catalog:",
-    "playwright": "catalog:",
-    "prettier": "catalog:",
-    "prettier-plugin-tailwindcss": "catalog:",
-    "markdownlint-cli2": "catalog:",
+    "eslint-config-conventions": "catalog:",
     "markdownlint": "catalog:",
+    "markdownlint-cli2": "catalog:",
     "markdownlint-rule-relative-links": "catalog:",
+    "oxfmt": "catalog:",
+    "oxlint": "catalog:",
+    "oxlint-tsgolint": "catalog:",
+    "playwright": "catalog:",
     "turbo": "catalog:",
     "typescript": "catalog:"
-  }
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "packageManager": "pnpm@10.29.3+sha512.498e1fb4cca5aa06c1dcf2611e6fafc50972ffe7189998c409e90de74566444298ffe43e6cd2acdc775ba1aa7cc5e092a8b7054c811ba8c5770f84693d33d2dc"
 }

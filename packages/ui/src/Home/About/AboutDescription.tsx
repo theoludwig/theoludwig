@@ -8,7 +8,7 @@ export const AboutDescription: React.FC<AboutDescriptionProps> = () => {
   const t = useTranslations()
 
   return (
-    <div className="dark:text-gray-lighter my-6 max-w-md text-center text-black">
+    <div className="my-6 max-w-md text-center text-black dark:text-gray-lighter">
       <Typography as="p" variant="text1" className="my-6">
         {t.rich("home.about.description", {
           strong: (children) => {

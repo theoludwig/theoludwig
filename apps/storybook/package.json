@@ -13,39 +13,36 @@
     "chromatic": "chromatic"
   },
   "dependencies": {
+    "@repo/blog": "workspace:*",
     "@repo/config-tailwind": "workspace:*",
     "@repo/i18n": "workspace:*",
     "@repo/ui": "workspace:*",
     "@repo/utils": "workspace:*",
-    "@repo/blog": "workspace:*",
+    "mime": "catalog:",
     "next": "catalog:",
     "next-intl": "catalog:",
     "next-themes": "catalog:",
     "react": "catalog:",
-    "react-dom": "catalog:",
-    "mime": "catalog:"
+    "react-dom": "catalog:"
   },
   "devDependencies": {
-    "@repo/config-eslint": "workspace:*",
-    "@repo/config-typescript": "workspace:*",
     "@chromatic-com/storybook": "catalog:",
     "@playwright/test": "catalog:",
-    "@storybook/addon-docs": "catalog:",
+    "@repo/config-typescript": "workspace:*",
     "@storybook/addon-a11y": "catalog:",
+    "@storybook/addon-docs": "catalog:",
     "@storybook/addon-themes": "catalog:",
     "@storybook/nextjs": "catalog:",
     "@storybook/test-runner": "catalog:",
+    "@tailwindcss/postcss": "catalog:",
     "@types/node": "catalog:",
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
     "chromatic": "catalog:",
-    "eslint": "catalog:",
+    "postcss": "catalog:",
     "start-server-and-test": "catalog:",
     "storybook": "catalog:",
-    "postcss": "catalog:",
     "tailwindcss": "catalog:",
-    "@tailwindcss/postcss": "catalog:",
-    "typescript-eslint": "catalog:",
     "typescript": "catalog:"
   }
 }

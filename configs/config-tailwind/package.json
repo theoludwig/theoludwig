@@ -21,13 +21,10 @@
     "tailwind-merge": "catalog:"
   },
   "devDependencies": {
-    "@repo/config-eslint": "workspace:*",
     "@repo/config-typescript": "workspace:*",
+    "@tailwindcss/postcss": "catalog:",
     "@tailwindcss/typography": "catalog:",
-    "typescript-eslint": "catalog:",
-    "eslint": "catalog:",
     "postcss": "catalog:",
-    "tailwindcss": "catalog:",
-    "@tailwindcss/postcss": "catalog:"
+    "tailwindcss": "catalog:"
   }
 }

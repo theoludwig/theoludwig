@@ -2,10 +2,6 @@
   "extends": "@repo/config-typescript/tsconfig.json",
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "types": [
-      "@total-typescript/ts-reset",
-      "@types/node",
-      "@repo/i18n/messages.d.ts"
-    ]
+    "types": ["@total-typescript/ts-reset", "@types/node", "@repo/i18n/messages.d.ts"]
   }
 }

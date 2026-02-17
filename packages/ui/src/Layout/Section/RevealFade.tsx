@@ -9,8 +9,7 @@ export const RevealFade: React.FC<RevealFadeProps> = (props) => {
 
   const htmlElement = useRef<HTMLDivElement | null>(null)
 
-  const className =
-    "opacity-100 visible translate-y-0 transition-all duration-700 ease-in-out"
+  const className = "opacity-100 visible translate-y-0 transition-all duration-700 ease-in-out"
 
   useEffect(() => {
     const observer = new window.IntersectionObserver(

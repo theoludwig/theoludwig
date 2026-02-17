@@ -17,11 +17,7 @@ export const Locales: React.FC<LocalesProps> = () => {
   const pathname = usePathname()
   const localeCurrent = useLocale()
 
-  const {
-    value: isVisibleMenu,
-    toggle: toggleMenu,
-    setFalse: hideMenu,
-  } = useBoolean()
+  const { value: isVisibleMenu, toggle: toggleMenu, setFalse: hideMenu } = useBoolean()
   const languageClickRef = useRef<HTMLButtonElement | null>(null)
 
   useEffect(() => {
@@ -47,18 +43,14 @@ export const Locales: React.FC<LocalesProps> = () => {
 
   return (
     <div className="flex flex-col items-center justify-center">
-      <button
-        ref={languageClickRef}
-        className="flex items-center"
-        onClick={toggleMenu}
-      >
+      <button ref={languageClickRef} className="flex items-center" onClick={toggleMenu}>
         <LocaleFlag locale={localeCurrent} />
         <Arrow />
       </button>
 
       <ul
         className={classNames(
-          "shadow-lightFlag dark:shadow-darkFlag bg-background dark:bg-background-dark absolute top-14 z-10 mt-2 flex w-32 list-none flex-col items-center justify-center rounded-lg p-0",
+          "absolute top-14 z-10 mt-2 flex w-32 list-none flex-col items-center justify-center rounded-lg bg-background p-0 shadow-lightFlag dark:bg-background-dark dark:shadow-darkFlag",
           { hidden: !isVisibleMenu },
         )}
       >

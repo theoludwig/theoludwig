@@ -7,22 +7,11 @@
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
       "env": ["IS_STANDALONE"],
       "dependsOn": ["^build"],
-      "outputs": [
-        "build/**",
-        "storybook-static/**",
-        ".next/**",
-        "!.next/cache/**"
-      ]
+      "outputs": ["build/**", "storybook-static/**", ".next/**", "!.next/cache/**"]
     },
     "test": {
       "dependsOn": ["^test"],
       "outputs": []
-    },
-    "lint:eslint-transit-node": {
-      "dependsOn": ["^lint:eslint-transit-node"]
-    },
-    "lint:eslint": {
-      "dependsOn": ["lint:eslint-transit-node"]
     },
     "lint:typescript-transit-node": {
       "dependsOn": ["^lint:typescript-transit-node"]
@@ -32,7 +21,8 @@
     },
     "typegen": {
       "dependsOn": ["^typegen"],
-      "outputs": []
+      "outputs": [],
+      "cache": false
     },
     "dev": {
       "cache": false,

@@ -17,8 +17,7 @@ export const ErrorNotFound: React.FC<ErrorNotFoundProps> = () => {
         </Typography>
 
         <Typography variant="text1" as="p" className="mt-4">
-          {t("errors.page-doesnt-exist")}{" "}
-          <Link href="/">{t("errors.return-to-home-page")}</Link>
+          {t("errors.page-doesnt-exist")} <Link href="/">{t("errors.return-to-home-page")}</Link>
         </Typography>
       </Section>
     </MainLayout>

@@ -4,9 +4,7 @@ export interface CurriculumVitaeSectionProps extends React.PropsWithChildren {
   title: string
 }
 
-export const CurriculumVitaeSection: React.FC<CurriculumVitaeSectionProps> = (
-  props,
-) => {
+export const CurriculumVitaeSection: React.FC<CurriculumVitaeSectionProps> = (props) => {
   const { id, icon, title, children } = props
 
   return (

@@ -10,7 +10,7 @@ export const Header: React.FC<HeaderProps> = () => {
   const t = useTranslations()
 
   return (
-    <header className="bg-background dark:bg-background-dark border-gray-darker dark:border-gray-darker-dark sticky top-0 z-50 flex w-full justify-between gap-4 border-b-2 px-6 py-2">
+    <header className="sticky top-0 z-50 flex w-full justify-between gap-4 border-b-2 border-gray-darker bg-background px-6 py-2 dark:border-gray-darker-dark dark:bg-background-dark">
       <h1>
         <Link href="/" className="flex items-center justify-center">
           <Image
@@ -21,9 +21,7 @@ export const Header: React.FC<HeaderProps> = () => {
             alt={`${t("meta.title")} Logo`}
             priority
           />
-          <strong className="ml-1 hidden sm:block sm:text-xl">
-            {t("meta.title")}
-          </strong>
+          <strong className="ml-1 hidden sm:block sm:text-xl">{t("meta.title")}</strong>
         </Link>
       </h1>
 

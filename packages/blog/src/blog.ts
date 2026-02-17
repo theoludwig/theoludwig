@@ -4,14 +4,7 @@ import path from "node:path"
 import matter from "gray-matter"
 import type { BlogPost, FrontMatter } from "./BlogPost.tsx"
 
-export const BLOG_POSTS_PATH = path.join(
-  process.cwd(),
-  "..",
-  "..",
-  "packages",
-  "blog",
-  "posts",
-)
+export const BLOG_POSTS_PATH = path.join(process.cwd(), "..", "..", "packages", "blog", "posts")
 
 export const getBlogPosts = async (): Promise<BlogPost[]> => {
   const blogPosts = await fs.promises.readdir(BLOG_POSTS_PATH)
@@ -48,9 +41,7 @@ export const getBlogPosts = async (): Promise<BlogPost[]> => {
   return blogPostsSortedByPublicationDate
 }
 
-export const getBlogPostBySlug = async (
-  slug: string,
-): Promise<BlogPost | undefined> => {
+export const getBlogPostBySlug = async (slug: string): Promise<BlogPost | undefined> => {
   const blogPosts = await getBlogPosts()
   const blogPost = blogPosts.find((blogPost) => {
     return blogPost.slug === slug

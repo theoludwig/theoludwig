@@ -28,7 +28,7 @@ The commit message guidelines adheres to [Conventional Commits](https://www.conv
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) >= v24.0.0 [(`nvm install 24`)](https://nvm.sh)
-- [pnpm](https://pnpm.io/) v10.25.0 [(`npm install --global corepack@0.34.5 && corepack enable`)](https://github.com/nodejs/corepack)
+- [pnpm](https://pnpm.io/) [(`npm install --global corepack@0.34.6 && corepack enable`)](https://github.com/nodejs/corepack)
 - [Docker](https://www.docker.com/)
 
 ### Installation
@@ -60,9 +60,10 @@ node --run dev
 # Lint
 node --run lint:editorconfig
 node --run lint:markdown
-node --run lint:typescript
-node --run lint:eslint
-node --run lint:prettier
+node --run lint:turbo
+# node --run lint:typescript # already covered by oxlint
+node --run lint:oxlint
+node --run lint:oxfmt
 
 # Tests
 node --run test

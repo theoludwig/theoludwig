@@ -20,7 +20,7 @@ export const Spinner: React.FC<SpinnerProps> = (props) => {
         height: size,
       }}
       className={classNames(
-        "text-primary dark:text-primary-dark flex animate-spin rounded-full border-2 border-current border-t-transparent",
+        "flex animate-spin rounded-full border-2 border-current border-t-transparent text-primary dark:text-primary-dark",
         className,
       )}
       role="status"

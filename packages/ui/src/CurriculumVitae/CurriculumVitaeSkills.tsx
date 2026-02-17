@@ -1,16 +1,11 @@
 import { useTranslations } from "next-intl"
 import { FaToolbox } from "react-icons/fa"
-import {
-  SKILL_CATEGORIES,
-  SKILL_NAMES_BY_CATEGORY,
-} from "../Home/Skills/skills.ts"
+import { SKILL_CATEGORIES, SKILL_NAMES_BY_CATEGORY } from "../Home/Skills/skills.ts"
 import { CurriculumVitaeSection } from "./CurriculumVitaeSection.tsx"
 
 export interface CurriculumVitaeSkillsProps {}
 
-export const CurriculumVitaeSkills: React.FC<
-  CurriculumVitaeSkillsProps
-> = () => {
+export const CurriculumVitaeSkills: React.FC<CurriculumVitaeSkillsProps> = () => {
   const t = useTranslations()
 
   const skills = [
@@ -23,11 +18,7 @@ export const CurriculumVitaeSkills: React.FC<
     }),
     {
       category: "others",
-      skillNames: [
-        t("fr-FR-main"),
-        t("locales.en-US"),
-        t("home.skills.driving-license"),
-      ],
+      skillNames: [t("fr-FR-main"), t("locales.en-US"), t("home.skills.driving-license")],
     },
   ] as const
 

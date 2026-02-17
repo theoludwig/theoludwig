@@ -26,10 +26,7 @@ export const PortfolioItem: React.FC<PortfolioItemProps> = (props) => {
         href={link}
         aria-label={title}
       >
-        <SectionContent
-          className="relative cursor-pointer items-center p-0 sm:p-0"
-          shadowContainer
-        >
+        <SectionContent className="relative cursor-pointer items-center p-0 sm:p-0" shadowContainer>
           <div className="flex justify-center">
             <Image
               className="size-[300px] rounded-xl transition-opacity duration-500 group-hover:opacity-15 dark:group-hover:opacity-5"

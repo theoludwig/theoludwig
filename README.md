@@ -35,29 +35,9 @@
             "tRPC/oRPC",
             "PostgreSQL"
         ],
-        "sys-admin": [
-            "Docker",
-            "Proxmox",
-            "Caddy",
-            "GitHub Actions",
-            "GitLab CI/CD"
-        ],
-        "software-tools": [
-            "GNU/Linux",
-            "Arch Linux",
-            "Visual Studio Code",
-            "Git"
-        ],
+        "sys-admin": ["Docker", "Proxmox", "Caddy", "GitHub Actions", "GitLab CI/CD"],
+        "software-tools": ["GNU/Linux", "Arch Linux", "Visual Studio Code", "Git"],
         "systems-programming": ["C/C++", "Rust", "Go"]
     }
 }
 ```
-
-<hr />
-
-## Statistics
-
-<p align=center>
-    <img height=175 align="center" src="https://github-readme-stats.vercel.app/api?username=theoludwig&show_icons=true&theme=dark" alt="Théo LUDWIG's GitHub Stats" />
-    <img height=175 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=theoludwig&hide=html,css,javascript&langs_count=8&layout=compact&theme=dark" alt="Théo LUDWIG's Programming Languages" />
-</p>

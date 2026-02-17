@@ -1,0 +1,9 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "ignorePatterns": ["pnpm-lock.yaml"],
+  "semi": false,
+  "experimentalTailwindcss": {
+    "stylesheet": "./configs/config-tailwind/styles.css",
+    "functions": ["classNames"]
+  }
+}

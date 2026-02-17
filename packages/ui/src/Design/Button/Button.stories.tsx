@@ -136,10 +136,7 @@ export const LinkWithIcons: Story = {
         <Button leftIcon={<FaCheck size={18} />} {...(args as ButtonLinkProps)}>
           Link Left Icon
         </Button>
-        <Button
-          rightIcon={<FaCheck size={18} />}
-          {...(args as ButtonLinkProps)}
-        >
+        <Button rightIcon={<FaCheck size={18} />} {...(args as ButtonLinkProps)}>
           Link Right Icon
         </Button>
       </ButtonContainer>

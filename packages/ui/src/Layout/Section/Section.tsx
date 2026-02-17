@@ -10,12 +10,7 @@ export interface SectionProps extends React.ComponentPropsWithoutRef<"section"> 
 }
 
 export const Section: React.FC<SectionProps> = (props) => {
-  const {
-    className,
-    verticalSpacing = false,
-    horizontalSpacing = false,
-    ...rest
-  } = props
+  const { className, verticalSpacing = false, horizontalSpacing = false, ...rest } = props
 
   return (
     <section
@@ -48,9 +43,7 @@ export const SectionTitle: React.FC<SectionTitleProps> = (props) => {
 
 export interface SectionDescriptionProps extends TypographyProps<"p"> {}
 
-export const SectionDescription: React.FC<SectionDescriptionProps> = (
-  props,
-) => {
+export const SectionDescription: React.FC<SectionDescriptionProps> = (props) => {
   const { className, ...rest } = props
 
   return (
@@ -75,7 +68,7 @@ export const SectionContent: React.FC<SectionContentProps> = (props) => {
       className={classNames(
         "size-full max-w-full px-6 py-4 break-words sm:px-16",
         {
-          "shadow-light dark:shadow-dark max-w-full rounded-2xl border border-solid border-black":
+          "max-w-full rounded-2xl border border-solid border-black shadow-light dark:shadow-dark":
             shadowContainer,
         },
         className,

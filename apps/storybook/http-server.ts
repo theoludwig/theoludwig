@@ -76,9 +76,7 @@ server.listen(
     port,
   },
   () => {
-    console.log(
-      `HTTP Server is listening at ${util.styleText("cyan", serverURL)}`,
-    )
+    console.log(`HTTP Server is listening at ${util.styleText("cyan", serverURL)}`)
     console.log(`Serving files from: \`${basePath}\``)
   },
 )

@@ -4,9 +4,7 @@ import { CurriculumVitaeSection } from "./CurriculumVitaeSection.tsx"
 
 export interface CurriculumVitaeInterestsProps {}
 
-export const CurriculumVitaeInterests: React.FC<
-  CurriculumVitaeInterestsProps
-> = () => {
+export const CurriculumVitaeInterests: React.FC<CurriculumVitaeInterestsProps> = () => {
   const t = useTranslations()
 
   const interests = [
@@ -16,22 +14,14 @@ export const CurriculumVitaeInterests: React.FC<
       },
       "link-github": (children) => {
         return (
-          <a
-            href="https://github.com/theoludwig"
-            target="_blank"
-            className="font-semibold"
-          >
+          <a href="https://github.com/theoludwig" target="_blank" className="font-semibold">
             {children}
           </a>
         )
       },
       "link-leon": (children) => {
         return (
-          <a
-            href="https://github.com/leon-ai/leon"
-            target="_blank"
-            className="font-semibold"
-          >
+          <a href="https://github.com/leon-ai/leon" target="_blank" className="font-semibold">
             {children}
           </a>
         )

@@ -1,9 +1,5 @@
 import { useTranslations } from "next-intl"
-import {
-  Section,
-  SectionDescription,
-  SectionTitle,
-} from "../../Layout/Section/Section.tsx"
+import { Section, SectionDescription, SectionTitle } from "../../Layout/Section/Section.tsx"
 import { Repository } from "./Repository.tsx"
 
 export interface OpenSourceProps {}
@@ -14,9 +10,7 @@ export const OpenSource: React.FC<OpenSourceProps> = () => {
   return (
     <Section verticalSpacing horizontalSpacing id="open-source">
       <SectionTitle>{t("home.open-source.title")}</SectionTitle>
-      <SectionDescription>
-        {t("home.open-source.description")}
-      </SectionDescription>
+      <SectionDescription>{t("home.open-source.description")}</SectionDescription>
 
       <div className="flex max-w-full flex-col items-center">
         <ul className="grid list-none grid-cols-1 gap-6 md:w-10/12 md:grid-cols-2">

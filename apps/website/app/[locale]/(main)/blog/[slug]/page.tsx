@@ -13,9 +13,7 @@ interface BlogPostPageProps {
   }>
 }
 
-export const generateMetadata = async (
-  props: BlogPostPageProps,
-): Promise<Metadata> => {
+export const generateMetadata = async (props: BlogPostPageProps): Promise<Metadata> => {
   const { slug } = await props.params
   const blogPost = await getBlogPostBySlug(slug)
   if (blogPost == null) {
@@ -37,9 +35,7 @@ export const generateMetadata = async (
   }
 }
 
-export const generateStaticParams = async (): Promise<
-  Array<{ slug: string }>
-> => {
+export const generateStaticParams = async (): Promise<Array<{ slug: string }>> => {
   const posts = await getBlogPosts()
   return posts.map((post) => {
     return {

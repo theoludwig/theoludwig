@@ -6,9 +6,7 @@ import { Locales } from "../Layout/Header/Locales/Locales.tsx"
 
 export interface CurriculumVitaeProfileProps {}
 
-export const CurriculumVitaeProfile: React.FC<
-  CurriculumVitaeProfileProps
-> = () => {
+export const CurriculumVitaeProfile: React.FC<CurriculumVitaeProfileProps> = () => {
   const t = useTranslations()
 
   return (
@@ -30,9 +28,7 @@ export const CurriculumVitaeProfile: React.FC<
           <h1 className="h3 my-1!">
             <strong>{t("meta.title")}</strong>
           </h1>
-          <h2 className="text-muted h5 font-semibold">
-            {t("curriculum-vitae.description")}
-          </h2>
+          <h2 className="text-muted h5 font-semibold">{t("curriculum-vitae.description")}</h2>
           <h2 className="text-muted h5">
             <BirthDate />
           </h2>

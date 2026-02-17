@@ -173,10 +173,7 @@ We have to keep it as simple as possible, not to implement features that are not
 import fs from "node:fs"
 import path from "node:path"
 
-const createFile = async (
-    name: string,
-    isTemporary: boolean = false,
-): Promise<void> => {
+const createFile = async (name: string, isTemporary: boolean = false): Promise<void> => {
     if (isTemporary) {
         return await fs.promises.writeFile(path.join("temporary", name), "")
     }

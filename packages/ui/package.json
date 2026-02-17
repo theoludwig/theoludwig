@@ -23,14 +23,12 @@
     "./Layout/Section": "./src/Layout/Section/Section.tsx"
   },
   "scripts": {
-    "lint:eslint": "eslint src --max-warnings 0",
     "lint:typescript": "tsc --noEmit"
   },
   "dependencies": {
     "@repo/config-tailwind": "workspace:*",
-    "@repo/utils": "workspace:*",
     "@repo/i18n": "workspace:*",
-    "cva": "catalog:",
+    "@repo/utils": "workspace:*",
     "next": "catalog:",
     "next-intl": "catalog:",
     "next-themes": "catalog:",
@@ -39,18 +37,15 @@
     "react-icons": "catalog:"
   },
   "devDependencies": {
-    "@repo/config-eslint": "workspace:*",
     "@repo/config-typescript": "workspace:*",
+    "@storybook/nextjs": "catalog:",
+    "@tailwindcss/postcss": "catalog:",
+    "@total-typescript/ts-reset": "catalog:",
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
-    "@total-typescript/ts-reset": "catalog:",
-    "storybook": "catalog:",
-    "@storybook/nextjs": "catalog:",
-    "eslint": "catalog:",
     "postcss": "catalog:",
+    "storybook": "catalog:",
     "tailwindcss": "catalog:",
-    "@tailwindcss/postcss": "catalog:",
-    "typescript-eslint": "catalog:",
     "typescript": "catalog:"
   }
 }

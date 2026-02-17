@@ -20,9 +20,7 @@ export const Repository: React.FC<RepositoryProps> = (props) => {
         >
           <Typography as="h3" variant="text1" className="flex items-center">
             <GitHubIcon className="mr-2 h-6" />
-            <span className="text-primary dark:text-primary-dark font-semibold">
-              {name}
-            </span>
+            <span className="font-semibold text-primary dark:text-primary-dark">{name}</span>
           </Typography>
           <p className="mt-4">{description}</p>
         </SectionContent>

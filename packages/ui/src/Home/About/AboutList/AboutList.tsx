@@ -9,14 +9,8 @@ export const AboutList: React.FC<AboutListProps> = () => {
 
   return (
     <ul className="my-6 list-none space-y-3">
-      <AboutItem
-        label={t("home.about.pronouns.label")}
-        value={t("home.about.pronouns.value")}
-      />
-      <AboutItem
-        label={t("home.about.birth-date.label")}
-        value={<BirthDate />}
-      />
+      <AboutItem label={t("home.about.pronouns.label")} value={t("home.about.pronouns.value")} />
+      <AboutItem label={t("home.about.birth-date.label")} value={<BirthDate />} />
       <AboutItem
         label={t("home.about.nationality.label")}
         value={t("home.about.nationality.value")}

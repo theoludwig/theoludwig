@@ -2,31 +2,29 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   "editor.bracketPairColorization.enabled": true,
   "editor.wordWrap": "on",
-  "prettier.configPath": ".prettierrc.json",
-  "editor.defaultFormatter": "prettier.prettier-vscode",
-  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit",
+    "source.fixAll": "never",
     "source.organizeImports": "never"
   },
-  "eslint.workingDirectories": [
-    {
-      "mode": "auto"
-    }
-  ],
-  "files.associations": {
-    "*.css": "tailwindcss"
-  },
+  "oxc.enable": true,
+  "oxc.typeAware": true,
+  "oxc.unusedDisableDirectives": "deny",
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "editor.formatOnSave": true,
+  "typescript.experimental.useTsgo": false,
   "editor.quickSuggestions": {
     "strings": "on"
   },
-  "tailwindCSS.classFunctions": ["classNames", "cva"],
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "tailwindCSS.classFunctions": ["classNames"],
   "tailwindCSS.experimental.configFile": "./configs/config-tailwind/styles.css",
   "i18n-ally.localesPaths": ["./packages/i18n/src/translations/"],
   "i18n-ally.keystyle": "nested",
   "i18n-ally.sortKeys": false,
-  "i18n-ally.sourceLanguage": "en-US",
-  "i18n-ally.displayLanguage": "en-US",
+  "i18n-ally.sourceLanguage": "fr-FR",
+  "i18n-ally.displayLanguage": "fr-FR",
   "i18n-ally.enabledFrameworks": ["next-intl", "general"],
   "i18n-ally.extract.autoDetect": true
 }

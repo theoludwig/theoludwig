@@ -12,17 +12,13 @@
     "./urls": "./src/urls.ts"
   },
   "scripts": {
-    "lint:eslint": "eslint src --max-warnings 0",
     "lint:typescript": "tsc --noEmit",
     "test": "node --test"
   },
   "devDependencies": {
-    "@repo/config-eslint": "workspace:*",
     "@repo/config-typescript": "workspace:*",
-    "@types/node": "catalog:",
     "@total-typescript/ts-reset": "catalog:",
-    "eslint": "catalog:",
-    "typescript-eslint": "catalog:",
+    "@types/node": "catalog:",
     "typescript": "catalog:"
   }
 }

@@ -9,9 +9,7 @@ interface CurriculumVitaeLayoutProps extends React.PropsWithChildren {
   }>
 }
 
-const CurriculumVitaeLayout: React.FC<CurriculumVitaeLayoutProps> = async (
-  props,
-) => {
+const CurriculumVitaeLayout: React.FC<CurriculumVitaeLayoutProps> = async (props) => {
   const { children, params } = props
 
   const { locale } = await params

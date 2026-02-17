@@ -3,11 +3,7 @@ import type { Locale } from "@repo/utils/constants"
 import { LOCALES } from "@repo/utils/constants"
 import type { Metadata, Viewport } from "next"
 import { NextIntlClientProvider } from "next-intl"
-import {
-  getMessages,
-  getTranslations,
-  setRequestLocale,
-} from "next-intl/server"
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server"
 import Script from "next/script"
 
 const DOMAIN = "theoludwig.fr"
@@ -85,14 +81,9 @@ const LocaleLayout: React.FC<LocaleLayoutProps> = async (props) => {
   return (
     <html lang={locale} suppressHydrationWarning>
       <body>
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
 
-        <Script
-          async
-          src="https://analytics.theoludwig.fr/js/pa-MToGPBn2iXgorPLkh6f_s.js"
-        />
+        <Script async src="https://analytics.theoludwig.fr/js/pa-MToGPBn2iXgorPLkh6f_s.js" />
         <Script id="analytics-init">
           {`
 window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};

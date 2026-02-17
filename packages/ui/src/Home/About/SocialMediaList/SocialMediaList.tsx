@@ -24,24 +24,15 @@ export const SocialMediaList: React.FC<SocialMediaListProps> = () => {
         <NPMIcon />
       </SocialMediaItem>
 
-      <SocialMediaItem
-        link="https://twitter.com/theoludwig_"
-        ariaLabel="X/Twitter"
-      >
+      <SocialMediaItem link="https://twitter.com/theoludwig_" ariaLabel="X/Twitter">
         <TwitterIcon />
       </SocialMediaItem>
 
-      <SocialMediaItem
-        link="https://www.youtube.com/@theo_ludwig"
-        ariaLabel="YouTube"
-      >
+      <SocialMediaItem link="https://www.youtube.com/@theo_ludwig" ariaLabel="YouTube">
         <YouTubeIcon />
       </SocialMediaItem>
 
-      <SocialMediaItem
-        link="https://www.twitch.tv/theoludwig"
-        ariaLabel="Twitch"
-      >
+      <SocialMediaItem link="https://www.twitch.tv/theoludwig" ariaLabel="Twitch">
         <TwitchIcon />
       </SocialMediaItem>
 

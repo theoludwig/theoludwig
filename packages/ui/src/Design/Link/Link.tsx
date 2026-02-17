@@ -17,7 +17,7 @@ export const Link: React.FC<LinkProps> = (props) => {
   return (
     <NextLink
       className={classNames(
-        "text-primary dark:text-primary-dark inline-flex items-center gap-1 font-semibold hover:underline focus:rounded-md focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none",
+        "inline-flex items-center gap-1 font-semibold text-primary hover:underline focus:rounded-md focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none dark:text-primary-dark",
         className,
       )}
       target={target}
@@ -25,11 +25,7 @@ export const Link: React.FC<LinkProps> = (props) => {
     >
       {children}
 
-      {target === "_blank" && isExternal ? (
-        <FiExternalLink size={16} strokeWidth={2.5} />
-      ) : (
-        <></>
-      )}
+      {target === "_blank" && isExternal ? <FiExternalLink size={16} strokeWidth={2.5} /> : <></>}
     </NextLink>
   )
 }
