@@ -20,6 +20,7 @@ const typographyVariants = (options?: { variant?: TypographyVariant }): string =
 export type TypographyProps<Component extends React.ElementType = "p"> = {
   as?: Component
 } & React.ComponentPropsWithoutRef<Component> & {
+    className?: string
     variant?: TypographyVariant
   }
 

@@ -84,7 +84,7 @@ export const BlogPostContent: React.FC<BlogPostContentProps> = async (props) => 
             },
             img: (properties) => {
               const { src = "", alt = "Blog Image" } = properties
-              const source = src.replace("../../../apps/website/public/", "/")
+              const source = (src as string).replace("../../../apps/website/public/", "/")
               return (
                 <span className="flex flex-col items-center justify-center">
                   <Image src={source} alt={alt} width={1000} height={1000} className="size-auto" />
