@@ -11,12 +11,12 @@ export const AboutItem: React.FC<AboutItemProps> = (props) => {
     <li className="flex items-center justify-between sm:justify-start">
       <strong className="w-24 text-sm text-black lg:w-32 dark:text-white">{label}</strong>
       <span className="block text-sm font-normal text-black dark:text-gray-lighter">
-        {link != null ? (
+        {link == null ? (
+          value
+        ) : (
           <a className="hover:underline" href={link}>
             {value}
           </a>
-        ) : (
-          value
         )}
       </span>
     </li>

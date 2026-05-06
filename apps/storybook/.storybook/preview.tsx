@@ -37,8 +37,8 @@ const preview: Preview = {
     controls: {
       disableSaveFromUI: true,
       matchers: {
-        color: /(background|color)$/i,
-        date: /date$/i,
+        color: /(background|color)$/iu,
+        date: /date$/iu,
       },
     },
   },

@@ -28,7 +28,7 @@ The commit message guidelines adheres to [Conventional Commits](https://www.conv
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) >= v24.0.0 [(`nvm install 24`)](https://nvm.sh)
-- [pnpm](https://pnpm.io/) [(`npm install --global corepack@0.34.6 && corepack enable`)](https://github.com/nodejs/corepack)
+- [pnpm](https://pnpm.io/) [(`npm install --global corepack@0.34.7 && corepack enable`)](https://github.com/nodejs/corepack)
 - [Docker](https://www.docker.com/)
 
 ### Installation
@@ -45,7 +45,7 @@ cp .env.example .env
 cp apps/website/.env.example apps/website/.env
 
 # Install dependencies
-pnpm install --frozen-lockfile
+pnpm clean-install
 
 # Install Playwright browser binaries and their dependencies (tests)
 pnpm exec playwright install --with-deps

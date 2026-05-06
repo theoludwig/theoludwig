@@ -59,9 +59,9 @@ export const Button: React.FC<ButtonProps> = (props) => {
 
     return (
       <NextLink className={classNames(buttonVariants({ variant, size }), className)} {...rest}>
-        {leftIcon != null ? <span className="mr-2">{leftIcon}</span> : null}
+        {leftIcon == null ? null : <span className="mr-2">{leftIcon}</span>}
         <span>{children}</span>
-        {rightIcon != null ? <span className="ml-2">{rightIcon}</span> : null}
+        {rightIcon == null ? null : <span className="ml-2">{rightIcon}</span>}
 
         <Ripple color={rippleColor} />
       </NextLink>
@@ -94,7 +94,7 @@ export const Button: React.FC<ButtonProps> = (props) => {
       disabled={isDisabled}
       {...rest}
     >
-      {leftIconElement != null ? <span className="mr-2">{leftIconElement}</span> : null}
+      {leftIconElement == null ? null : <span className="mr-2">{leftIconElement}</span>}
       <span>{children}</span>
       {rightIcon != null && !isLoading ? <span className="ml-2">{rightIcon}</span> : null}
 

@@ -51,15 +51,15 @@
     @apply tracking-wider italic;
   }
   blockquote {
-    @apply border-gray-lighter border-l-4 pl-3 italic;
+    @apply border-l-4 border-gray-lighter pl-3 italic;
   }
 
   kbd {
-    @apply bg-gray-lighter rounded-md px-2 dark:text-black;
+    @apply rounded-md bg-gray-lighter px-2 dark:text-black;
   }
 
   mark {
-    @apply bg-yellow rounded-md px-2;
+    @apply rounded-md bg-yellow px-2;
   }
 
   ol {
@@ -81,7 +81,7 @@
 }
 
 body {
-  @apply bg-background dark:bg-background-dark font-sans text-black dark:text-white;
+  @apply bg-background font-sans text-black dark:bg-background-dark dark:text-white;
 }
 
 @keyframes ripple {
@@ -101,7 +101,7 @@ body {
 }
 
 .prose {
-  @apply dark:text-gray-lighter !max-w-5xl scroll-smooth text-black;
+  @apply !max-w-5xl scroll-smooth text-black dark:text-gray-lighter;
 }
 
 .prose p {
@@ -122,11 +122,11 @@ body {
 }
 
 .prose a {
-  @apply text-primary dark:text-primary-dark !font-semibold;
+  @apply !font-semibold text-primary dark:text-primary-dark;
 }
 
 .prose strong {
-  @apply dark:text-gray-lighter text-black;
+  @apply text-black dark:text-gray-lighter;
 }
 
 .prose h2,

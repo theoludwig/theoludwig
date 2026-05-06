@@ -1,7 +1,7 @@
-FROM docker.io/node:24.14.0-slim@sha256:e8e2e91b1378f83c5b2dd15f0247f34110e2fe895f6ca7719dbb780f929368eb AS node-pnpm
+FROM docker.io/node:24.15.0-slim@sha256:879b21aec4a1ad820c27ccd565e7c7ed955f24b92e6694556154f251e4bdb240 AS node-pnpm
 ENV PNPM_HOME="/pnpm"
-ENV PATH="$PNPM_HOME:$PATH"
-RUN npm install --global corepack@0.34.6 && corepack enable
+ENV PATH="$PNPM_HOME/bin:$PATH"
+RUN npm install --global corepack@0.34.7 && corepack enable
 ENV TURBO_TELEMETRY_DISABLED=1
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV DO_NOT_TRACK=1
@@ -9,7 +9,7 @@ WORKDIR /usr/src/app
 
 FROM node-pnpm AS builder
 COPY ./ ./
-RUN pnpm install --global turbo@2.8.11
+RUN pnpm install --global turbo@2.9.9
 RUN turbo prune @repo/website --docker
 
 FROM node-pnpm AS installer
@@ -18,7 +18,7 @@ ENV IS_STANDALONE=true
 COPY .gitignore .gitignore
 COPY --from=builder /usr/src/app/out/json/ ./
 COPY --from=builder /usr/src/app/out/pnpm-lock.yaml ./pnpm-lock.yaml
-RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm clean-install
 COPY --from=builder /usr/src/app/out/full/ ./
 COPY turbo.json turbo.json
 

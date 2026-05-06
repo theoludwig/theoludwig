@@ -10,7 +10,7 @@ export const getPathnameWithoutLocale = (input: string): string => {
   const locale = LOCALES.find((locale) => {
     return input.startsWith(`/${locale}`)
   })
-  const pathname = locale != null ? input.slice(locale.length + 1) : input
+  const pathname = locale == null ? input : input.slice(locale.length + 1)
   if (pathname.length <= 0) {
     return `/${pathname}`
   }

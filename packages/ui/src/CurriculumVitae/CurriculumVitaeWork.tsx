@@ -98,12 +98,12 @@ export const CurriculumVitaeWork: React.FC<CurriculumVitaeWorkProps> = () => {
                 <></>
               )}
 
-              {workExperience.summary != null ? (
+              {workExperience.summary == null ? (
+                <></>
+              ) : (
                 <div className="mt-2">
                   <p>{workExperience.summary}</p>
                 </div>
-              ) : (
-                <></>
               )}
             </li>
           )
