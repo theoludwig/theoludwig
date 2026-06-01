@@ -1,13 +1,167 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "extends": ["node_modules/eslint-config-conventions/.oxlintrc.json"],
+  "options": {
+    "typeAware": true,
+    "typeCheck": true,
+    "denyWarnings": true,
+    "reportUnusedDisableDirectives": "error"
+  },
   "env": {
     "builtin": true,
     "browser": true,
     "node": true,
     "shared-node-browser": true
   },
+  "plugins": ["eslint", "typescript", "unicorn", "react", "oxc", "import", "promise"],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "error",
+    "pedantic": "error",
+    "perf": "error"
+  },
   "rules": {
+    "no-await-in-loop": "off",
+    "no-loop-func": "off",
+    "no-negated-condition": "off",
+    "no-inline-comments": "off",
+    "max-lines": "off",
+    "max-depth": "off",
+    "max-classes-per-file": "off",
+    "max-lines-per-function": "off",
+    "require-await": "off",
+    "no-lonely-if": "off",
+    "array-callback-return": "off",
+    "no-shadow": "off",
+    "no-throw-literal": "off",
+    "consistent-return": "off",
+
+    "getter-return": "error",
+    "no-undef": "error",
+    "no-unreachable": "error",
+    "use-isnan": [
+      "error",
+      {
+        "enforceForSwitchCase": true,
+        "enforceForIndexOf": true
+      }
+    ],
+    "valid-typeof": [
+      "error",
+      {
+        "requireStringLiterals": true
+      }
+    ],
+    "default-param-last": "error",
+    "default-case-last": "error",
+    "eqeqeq": [
+      "error",
+      "always",
+      {
+        "null": "ignore"
+      }
+    ],
+    "grouped-accessor-pairs": "error",
+    "new-cap": [
+      "error",
+      {
+        "newIsCap": true,
+        "capIsNew": false,
+        "properties": true
+      }
+    ],
+    "no-implicit-coercion": "error",
+    "no-extra-boolean-cast": [
+      "error",
+      {
+        "enforceForInnerExpressions": true
+      }
+    ],
+    "no-empty": [
+      "error",
+      {
+        "allowEmptyCatch": true
+      }
+    ],
+    "no-multi-str": "error",
+    "no-new-func": "error",
+    "no-proto": "error",
+    "no-regex-spaces": "error",
+    "no-useless-computed-key": "error",
+    "no-else-return": [
+      "error",
+      {
+        "allowElseIf": false
+      }
+    ],
+    "no-var": "error",
+    "no-void": [
+      "error",
+      {
+        "allowAsStatement": true
+      }
+    ],
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "all"
+      }
+    ],
+    "prefer-object-has-own": "error",
+    "yoda": "error",
+    "curly": "error",
+    "func-style": "error",
+    "arrow-body-style": ["error", "always"],
+    "object-shorthand": ["error", "properties"],
+
+    "promise/param-names": "error",
+    "promise/no-nesting": "error",
+
+    "unicorn/catch-error-name": "error",
+    "unicorn/consistent-date-clone": "error",
+    "unicorn/error-message": "error",
+    "unicorn/no-array-for-each": "error",
+    "unicorn/no-array-method-this-argument": "error",
+    "unicorn/no-document-cookie": "error",
+    "unicorn/no-zero-fractions": "error",
+    "unicorn/number-literal-case": "error",
+    "unicorn/prefer-node-protocol": "error",
+    "unicorn/throw-new-error": "error",
+    "unicorn/require-array-join-separator": "error",
+    "unicorn/prefer-number-properties": "error",
+    "unicorn/prefer-modern-math-apis": "error",
+    "unicorn/prefer-structured-clone": "error",
+    "unicorn/consistent-existence-index-check": "error",
+    "unicorn/no-array-reverse": "off",
+    "unicorn/no-array-sort": "off",
+    "unicorn/no-lonely-if": "off",
+    "unicorn/prefer-string-replace-all": "off",
+    "unicorn/prefer-at": "off",
+    "unicorn/prefer-query-selector": "off",
+    "unicorn/prefer-top-level-await": "off",
+    "unicorn/prefer-string-slice": "off",
+    "unicorn/no-immediate-mutation": "off",
+    "unicorn/no-useless-undefined": "off",
+    "unicorn/no-object-as-default-parameter": "off",
+
+    "react/no-array-index-key": "off",
+    "react/no-unknown-property": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/iframe-missing-sandbox": "off",
+    "react/self-closing-comp": "error",
+    "react/jsx-boolean-value": "error",
+    "react/jsx-no-target-blank": "off",
+    "react/jsx-no-useless-fragment": "off",
+    "react/no-unstable-nested-components": "off",
+
+    "import/no-webpack-loader-syntax": "error",
+    "import/export": "error",
+    "import/no-duplicates": "error",
+    "import/no-named-default": "error",
+    "import/no-anonymous-default-export": "error",
+    "import/consistent-type-specifier-style": "error",
+    "import/no-unassigned-import": "off",
+    "import/no-named-as-default-member": "off",
+    "import/max-dependencies": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -16,6 +170,118 @@
         "tsx": "always",
         "js": "never",
         "jsx": "never"
+      }
+    ],
+
+    "typescript/ban-types": "off",
+    "typescript/no-unnecessary-type-arguments": "off",
+    "typescript/no-unsafe-type-assertion": "off",
+    "typescript/no-unsafe-member-access": "off",
+    "typescript/no-confusing-void-expression": "off",
+    "typescript/no-unsafe-assignment": "off",
+    "typescript/no-misused-promises": "off",
+    "typescript/return-await": ["error", "always"],
+    "typescript/require-await": "off",
+    "typescript/switch-exhaustiveness-check": "off",
+    "typescript/ban-ts-comment": "off",
+    "typescript/prefer-readonly-parameter-types": "off",
+    "typescript/strict-void-return": "off",
+    "no-unused-vars": [
+      "error",
+      {
+        "args": "all",
+        "argsIgnorePattern": "^_",
+        "caughtErrors": "all",
+        "caughtErrorsIgnorePattern": "^_",
+        "destructuredArrayIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
+        "ignoreRestSiblings": true
+      }
+    ],
+    "no-use-before-define": [
+      "error",
+      {
+        "functions": false,
+        "classes": false,
+        "enums": false,
+        "variables": false,
+        "typedefs": false
+      }
+    ],
+    "no-redeclare": [
+      "error",
+      {
+        "builtinGlobals": false
+      }
+    ],
+    "typescript/only-throw-error": "off",
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowShortCircuit": true,
+        "allowTernary": true,
+        "allowTaggedTemplates": true
+      }
+    ],
+    "typescript/adjacent-overload-signatures": "error",
+    "typescript/consistent-type-definitions": "error",
+    "typescript/consistent-type-imports": "error",
+    "typescript/explicit-member-accessibility": "error",
+    "typescript/explicit-function-return-type": [
+      "error",
+      {
+        "allowExpressions": true,
+        "allowHigherOrderFunctions": true,
+        "allowTypedFunctionExpressions": true,
+        "allowDirectConstAssertionInArrowFunctions": true
+      }
+    ],
+    "typescript/no-extraneous-class": [
+      "error",
+      {
+        "allowWithDecorator": true
+      }
+    ],
+    "typescript/no-floating-promises": [
+      "error",
+      {
+        "allowForKnownSafeCalls": [
+          {
+            "from": "package",
+            "name": ["test", "it", "suite", "describe"],
+            "package": "node:test"
+          }
+        ]
+      }
+    ],
+    "typescript/no-non-null-assertion": "error",
+    "typescript/no-this-alias": "error",
+    "typescript/no-require-imports": "error",
+    "typescript/prefer-function-type": "error",
+    "typescript/prefer-find": "error",
+    "typescript/prefer-nullish-coalescing": "off",
+    "typescript/prefer-readonly": "error",
+    "typescript/prefer-reduce-type-parameter": "error",
+    "typescript/prefer-return-this-type": "error",
+    "typescript/promise-function-async": "error",
+    "typescript/require-array-sort-compare": "error",
+    "typescript/restrict-plus-operands": [
+      "error",
+      {
+        "skipCompoundAssignments": true
+      }
+    ],
+    "typescript/restrict-template-expressions": "error",
+    "typescript/strict-boolean-expressions": [
+      "error",
+      {
+        "allowString": false,
+        "allowNumber": false,
+        "allowNullableObject": false,
+        "allowNullableBoolean": false,
+        "allowNullableString": false,
+        "allowNullableNumber": false,
+        "allowAny": false
       }
     ]
   }

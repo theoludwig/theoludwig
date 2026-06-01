@@ -3,39 +3,46 @@ packages:
   - "configs/*"
   - "packages/*"
 
+allowBuilds:
+  "@swc/core": true
+  "@parcel/watcher": true
+  "sharp": true
+  "unrs-resolver": true
+  "core-js-pure": true
+  "esbuild": true
+
+minimumReleaseAge: 1440
+minimumReleaseAgeStrict: true
+minimumReleaseAgeIgnoreMissingTime: false
+
 catalogMode: "strict"
-
 catalog:
-  # Turborepo
-  "turbo": "2.9.9"
-
   # TypeScript/Linting
+  "turbo": "2.9.16"
   "typescript": "6.0.3"
-  "@types/node": "25.6.0"
+  "@types/node": "25.9.1"
   "@total-typescript/ts-reset": "0.6.1"
-  "oxlint": "1.63.0"
-  "oxlint-tsgolint": "0.22.1"
-  "oxfmt": "0.48.0"
-  "eslint-config-conventions": "21.4.0"
-  "editorconfig-checker": "6.1.1"
+  "oxlint": "1.67.0"
+  "oxlint-tsgolint": "0.23.0"
+  "oxfmt": "0.52.0"
 
   # Utils
   "mime": "4.1.0"
 
   # React.js/Next.js
-  "next": "16.2.4"
-  "next-intl": "4.11.0"
+  "next": "16.2.6"
+  "next-intl": "4.13.0"
   "next-themes": "0.4.6"
-  "react": "19.2.5"
-  "react-dom": "19.2.5"
-  "@types/react": "19.2.14"
+  "react": "19.2.6"
+  "react-dom": "19.2.6"
+  "@types/react": "19.2.15"
   "@types/react-dom": "19.2.3"
   "react-icons": "5.6.0"
 
   # Blog
   "@giscus/react": "3.1.0"
   "gray-matter": "4.0.3"
-  "katex": "0.16.45"
+  "katex": "0.17.0"
   "next-mdx-remote": "5.0.0"
   "@mdx-js/mdx": "3.1.1"
   "rehype-katex": "7.0.1"
@@ -52,33 +59,24 @@ catalog:
   "markdownlint-rule-relative-links": "5.1.0"
 
   # Storybook
-  "storybook": &storybook "10.3.6"
+  "storybook": &storybook "10.4.1"
   "@storybook/addon-docs": *storybook
   "@storybook/addon-a11y": *storybook
   "@storybook/nextjs": *storybook
   "@storybook/addon-themes": *storybook
-  "@storybook/test-runner": "0.24.3"
-  "@chromatic-com/storybook": "5.1.2"
-  "chromatic": "16.8.0"
+  "@storybook/test-runner": "0.24.4"
+  "@chromatic-com/storybook": "5.2.1"
+  "chromatic": "16.10.0"
 
   # Testing
-  "playwright": &playwright "1.59.1"
+  "playwright": &playwright "1.60.0"
   "@playwright/test": *playwright
-  "start-server-and-test": "3.0.2"
+  "start-server-and-test": "3.0.5"
 
   # CSS
-  "postcss": "8.5.14"
-  "tailwindcss": &tailwindcss "4.2.4"
+  "postcss": "8.5.15"
+  "tailwindcss": &tailwindcss "4.3.0"
   "@tailwindcss/postcss": *tailwindcss
   "@tailwindcss/typography": "0.5.19"
-  "tailwind-merge": "3.5.0"
-  "clsx": "2.1.1"
+  "tailwind-merge": "3.6.0"
   "@fontsource/montserrat": "5.2.8"
-
-allowBuilds:
-  "@swc/core": true
-  "@parcel/watcher": true
-  "sharp": true
-  "unrs-resolver": true
-  "core-js-pure": true
-  "esbuild": true

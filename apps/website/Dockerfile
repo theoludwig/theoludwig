@@ -1,7 +1,7 @@
 FROM docker.io/node:24.15.0-slim@sha256:879b21aec4a1ad820c27ccd565e7c7ed955f24b92e6694556154f251e4bdb240 AS node-pnpm
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME/bin:$PATH"
-RUN npm install --global corepack@0.34.7 && corepack enable
+RUN npm install --global corepack@0.35.0 && corepack enable
 ENV TURBO_TELEMETRY_DISABLED=1
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV DO_NOT_TRACK=1
@@ -9,7 +9,7 @@ WORKDIR /usr/src/app
 
 FROM node-pnpm AS builder
 COPY ./ ./
-RUN pnpm install --global turbo@2.9.9
+RUN pnpm install --global turbo@2.9.16
 RUN turbo prune @repo/website --docker
 
 FROM node-pnpm AS installer

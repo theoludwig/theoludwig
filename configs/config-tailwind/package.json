@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@fontsource/montserrat": "catalog:",
-    "clsx": "catalog:",
+    "@repo/utils": "workspace:*",
     "tailwind-merge": "catalog:"
   },
   "devDependencies": {

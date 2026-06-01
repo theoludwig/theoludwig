@@ -5,6 +5,7 @@
   "type": "module",
   "exports": {
     "./constants": "./src/constants.ts",
+    "./clsx": "./src/clsx.ts",
     "./dates": "./src/dates.ts",
     "./objects": "./src/objects.ts",
     "./strings": "./src/strings.ts",
