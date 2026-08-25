@@ -1,5 +1,5 @@
 import { classNames } from "@repo/config-tailwind/classNames"
-import { Link as NextLink } from "@repo/i18n/routing"
+import { Link as NextLink } from "@repo/i18n/navigation"
 import { FiExternalLink } from "react-icons/fi"
 
 export interface LinkProps extends React.ComponentProps<typeof NextLink> {

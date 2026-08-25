@@ -17,7 +17,7 @@ const args = util.parseArgs({
 const host = args.values.host
 const basePath = args.values.path
 
-const port = Number.parseInt(args.values.port, 10)
+const port = Math.trunc(Number(args.values.port))
 if (Number.isNaN(port)) {
   console.error("Error: Invalid port number.")
   process.exit(1)

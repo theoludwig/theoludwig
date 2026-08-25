@@ -13,3 +13,8 @@ services:
     environment:
       PORT: ${WEBSITE_PORT-3000}
     env_file: "./apps/website/.env"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10M"
+        max-file: "3"

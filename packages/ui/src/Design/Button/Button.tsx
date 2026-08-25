@@ -1,5 +1,5 @@
 import { classNames } from "@repo/config-tailwind/classNames"
-import { Link as NextLink } from "@repo/i18n/routing"
+import { Link as NextLink } from "@repo/i18n/navigation"
 
 import { Spinner } from "../Spinner/Spinner.tsx"
 import { Ripple } from "./Ripple.tsx"

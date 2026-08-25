@@ -18,31 +18,31 @@ minimumReleaseAgeIgnoreMissingTime: false
 catalogMode: "strict"
 catalog:
   # TypeScript/Linting
-  "turbo": "2.9.16"
-  "typescript": "6.0.3"
-  "@types/node": "25.9.1"
+  "turbo": "2.10.11"
+  "typescript": "7.0.2"
+  "@types/node": "26.2.0"
   "@total-typescript/ts-reset": "0.6.1"
-  "oxlint": "1.67.0"
-  "oxlint-tsgolint": "0.23.0"
-  "oxfmt": "0.52.0"
+  "oxlint": "1.79.0"
+  "oxlint-tsgolint": "7.0.2001"
+  "oxfmt": "0.64.0"
 
   # Utils
   "mime": "4.1.0"
 
   # React.js/Next.js
-  "next": "16.2.6"
-  "next-intl": "4.13.0"
+  "next": "16.3.2"
+  "next-intl": "4.13.7"
   "next-themes": "0.4.6"
-  "react": "19.2.6"
-  "react-dom": "19.2.6"
-  "@types/react": "19.2.15"
-  "@types/react-dom": "19.2.3"
-  "react-icons": "5.6.0"
+  "react": "19.2.8"
+  "react-dom": "19.2.8"
+  "@types/react": "19.2.18"
+  "@types/react-dom": "19.2.5"
+  "react-icons": "5.7.0"
 
   # Blog
   "@giscus/react": "3.1.0"
   "gray-matter": "4.0.3"
-  "katex": "0.17.0"
+  "katex": "0.18.4"
   "next-mdx-remote": "5.0.0"
   "@mdx-js/mdx": "3.1.1"
   "rehype-katex": "7.0.1"
@@ -54,29 +54,29 @@ catalog:
   "@shikijs/rehype": "1.24.0"
 
   # Markdown Lint
-  "markdownlint-cli2": "0.22.1"
-  "markdownlint": "0.40.0"
-  "markdownlint-rule-relative-links": "5.1.0"
+  "markdownlint-cli2": "0.23.2"
+  "markdownlint": "0.41.1"
+  "markdownlint-rule-relative-links": "5.1.2"
 
   # Storybook
-  "storybook": &storybook "10.4.1"
+  "storybook": &storybook "10.5.10"
   "@storybook/addon-docs": *storybook
   "@storybook/addon-a11y": *storybook
   "@storybook/nextjs": *storybook
   "@storybook/addon-themes": *storybook
   "@storybook/test-runner": "0.24.4"
-  "@chromatic-com/storybook": "5.2.1"
-  "chromatic": "16.10.0"
+  "@chromatic-com/storybook": "5.3.0"
+  "chromatic": "18.5.0"
 
   # Testing
-  "playwright": &playwright "1.60.0"
+  "playwright": &playwright "1.62.1"
   "@playwright/test": *playwright
-  "start-server-and-test": "3.0.5"
+  "start-server-and-test": "3.0.12"
 
   # CSS
-  "postcss": "8.5.15"
-  "tailwindcss": &tailwindcss "4.3.0"
+  "postcss": "8.5.26"
+  "tailwindcss": &tailwindcss "4.3.3"
   "@tailwindcss/postcss": *tailwindcss
-  "@tailwindcss/typography": "0.5.19"
+  "@tailwindcss/typography": "0.5.20"
   "tailwind-merge": "3.6.0"
-  "@fontsource/montserrat": "5.2.8"
+  "@fontsource/montserrat": "5.3.0"

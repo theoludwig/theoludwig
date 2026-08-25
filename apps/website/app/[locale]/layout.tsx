@@ -3,7 +3,7 @@ import type { Locale } from "@repo/utils/constants"
 import { LOCALES } from "@repo/utils/constants"
 import type { Metadata, Viewport } from "next"
 import { NextIntlClientProvider } from "next-intl"
-import { getMessages, getTranslations, setRequestLocale } from "next-intl/server"
+import { getLocale, getMessages, getTranslations } from "next-intl/server"
 import Script from "next/script"
 
 const DOMAIN = "theoludwig.fr"
@@ -12,15 +12,8 @@ export const viewport: Viewport = {
   themeColor: "#00aeff",
 }
 
-export const generateMetadata = async ({
-  params,
-}: {
-  params: Promise<{
-    locale: string
-  }>
-}): Promise<Metadata> => {
-  const { locale } = await params
-  const t = await getTranslations({ locale: locale as Locale })
+export const generateMetadata = async (): Promise<Metadata> => {
+  const t = await getTranslations()
   const title = t("meta.title")
   const description = `${title} - ${t("meta.description")}`
   const image = "/images/logo.webp"
@@ -63,19 +56,12 @@ export const generateStaticParams = (): Array<{ locale: Locale }> => {
   })
 }
 
-interface LocaleLayoutProps extends React.PropsWithChildren {
-  params: Promise<{
-    locale: string
-  }>
-}
+interface LocaleLayoutProps extends React.PropsWithChildren {}
 
 const LocaleLayout: React.FC<LocaleLayoutProps> = async (props) => {
-  const { children, params } = props
+  const { children } = props
 
-  const { locale } = await params
-  // Enable static rendering
-  setRequestLocale(locale as Locale)
-
+  const locale = await getLocale()
   const messages = await getMessages()
 
   return (

@@ -3,13 +3,10 @@ import { notFound } from "next/navigation"
 
 import { getBlogPostBySlug, getBlogPosts } from "@repo/blog"
 import { BlogPostUI } from "@repo/blog/BlogPostUI"
-import type { Locale } from "@repo/utils/constants"
-import { setRequestLocale } from "next-intl/server"
 
 interface BlogPostPageProps {
   params: Promise<{
     slug: string
-    locale: Locale
   }>
 }
 
@@ -47,9 +44,7 @@ export const generateStaticParams = async (): Promise<Array<{ slug: string }>> =
 const BlogPostPage: React.FC<BlogPostPageProps> = async (props) => {
   const { params } = props
 
-  const { locale, slug } = await params
-  // Enable static rendering
-  setRequestLocale(locale)
+  const { slug } = await params
 
   const blogPost = await getBlogPostBySlug(slug)
   if (blogPost == null) {

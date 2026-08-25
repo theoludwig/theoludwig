@@ -4,7 +4,7 @@ import { classNames } from "@repo/config-tailwind/classNames"
 import type { Theme } from "@repo/utils/constants"
 import { THEME_DEFAULT } from "@repo/utils/constants"
 import { ThemeProvider as NextThemeProvider, useTheme as useNextTheme } from "next-themes"
-import { useEffect, useState } from "react"
+import { useSyncExternalStore } from "react"
 
 export interface ThemeProviderProps extends React.PropsWithChildren {
   forcedTheme?: Theme
@@ -30,13 +30,19 @@ export interface UseThemeOutput {
   toggleTheme: () => void
 }
 
+const subscribeToNothing = (): (() => void) => {
+  return () => {}
+}
+const getClientSnapshot = (): boolean => {
+  return true
+}
+const getServerSnapshot = (): boolean => {
+  return false
+}
+
 export const useTheme = (): UseThemeOutput => {
   const { setTheme, theme: themeData } = useNextTheme()
-  const [isMounted, setIsMounted] = useState(false)
-
-  useEffect(() => {
-    setIsMounted(true)
-  }, [])
+  const isMounted = useSyncExternalStore(subscribeToNothing, getClientSnapshot, getServerSnapshot)
 
   const theme = isMounted ? (themeData as Theme) : THEME_DEFAULT
 

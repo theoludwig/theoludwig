@@ -2,7 +2,6 @@ import type { Meta, StoryObj } from "@storybook/nextjs"
 import { expect, fn, userEvent, within } from "storybook/test"
 import { FaCheck } from "react-icons/fa"
 
-import type { ButtonLinkProps } from "./Button.tsx"
 import { Button } from "./Button.tsx"
 
 const meta = {
@@ -133,10 +132,10 @@ export const LinkWithIcons: Story = {
   render: (args) => {
     return (
       <ButtonContainer>
-        <Button leftIcon={<FaCheck size={18} />} {...(args as ButtonLinkProps)}>
+        <Button leftIcon={<FaCheck size={18} />} {...args}>
           Link Left Icon
         </Button>
-        <Button rightIcon={<FaCheck size={18} />} {...(args as ButtonLinkProps)}>
+        <Button rightIcon={<FaCheck size={18} />} {...args}>
           Link Right Icon
         </Button>
       </ButtonContainer>

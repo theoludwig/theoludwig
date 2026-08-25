@@ -6,6 +6,7 @@
   "exports": {
     "./translations/*.json": "./src/translations/*.json",
     "./messages.d.ts": "./src/messages.d.ts",
+    "./navigation": "./src/navigation.ts",
     "./request": "./src/request.ts",
     "./routing": "./src/routing.ts"
   },

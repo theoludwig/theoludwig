@@ -2,6 +2,9 @@
   "extends": "@repo/config-typescript/tsconfig.json",
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "types": ["@total-typescript/ts-reset"]
+    "types": ["@total-typescript/ts-reset"],
+    "paths": {
+      "next/root-params": ["./src/root-params.d.ts"]
+    }
   }
 }
