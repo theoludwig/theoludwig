@@ -42,6 +42,16 @@ export const CurriculumVitaeWork: React.FC<CurriculumVitaeWorkProps> = () => {
       ],
     },
     {
+      summary: t("curriculum-vitae.work.ircad-taiwan.summary"),
+      website: "https://ircadtaiwan.com.tw",
+      name: "IRCAD Taiwan",
+      location: "Taiwan",
+      position: t("curriculum-vitae.work.ircad-taiwan.position"),
+      dates: "20/07/2026 - 21/09/2026",
+      duration: t("curriculum-vitae.work.ircad-taiwan.duration"),
+      tasks: [],
+    },
+    {
       summary: t("curriculum-vitae.work.numerize.summary"),
       website: "https://numerize.com/",
       name: "Numerize",

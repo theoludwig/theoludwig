@@ -90,8 +90,8 @@
     },
     "interests": {
       "title": "Interests & hobbies",
-      "fusey": "<link>Fusey (fusey.gg)</link>: website I'm developing for the game ARK that tracks the number of players connected to the servers in real time and has <strong>over ~5,000 visitors each month, ~100,000 members on Discord, and ~120,000 followers on X/Twitter</strong>.",
-      "open-source": "<strong>Open-Source Contributor</strong>: publishing and <strong>contributing to npm packages</strong> and <link-github>GitHub</link-github> repositories, notably with <link-markdownlint>markdownlint-rule-relative-links</link-markdownlint> (around 20,000 downloads per week), contributions to <link-leon>Leon</link-leon>, an open-source personal assistant, among other projects."
+      "fusey": "<link>Fusey (fusey.gg)</link>: company I co-founded with two partners. <strong>Find creators. Fill your community.</strong> A platform to find and book creators to promote a gaming community.",
+      "open-source": "<strong>Open-Source Contributor</strong>: publishing and <strong>contributing to npm packages</strong> and <link-github>GitHub</link-github> repositories, notably with <link-markdownlint>markdownlint-rule-relative-links</link-markdownlint> (around 20,000 downloads per week) among other projects."
     },
     "work": {
       "ircad": {
@@ -106,6 +106,11 @@
           "feature-search": "<strong>Search engine with filters, sorting, and customizable display</strong> for each user of IRCAD Core.",
           "feature-architecture": "IRCAD Core project architecture in <strong>TypeScript Monorepo</strong> with Turborepo, <strong>automatic deployment (CI/CD)</strong> and <strong>self-hosted internally with Docker Compose</strong>."
         }
+      },
+      "ircad-taiwan": {
+        "duration": "2 months",
+        "position": "Full Stack Web Developer Intern",
+        "summary": "Development of a participants management application and their hotel reservations."
       },
       "numerize": {
         "duration": "3 months",

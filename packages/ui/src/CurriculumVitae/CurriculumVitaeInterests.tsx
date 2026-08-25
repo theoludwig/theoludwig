@@ -19,13 +19,6 @@ export const CurriculumVitaeInterests: React.FC<CurriculumVitaeInterestsProps> =
           </a>
         )
       },
-      "link-leon": (children) => {
-        return (
-          <a href="https://github.com/leon-ai/leon" target="_blank" className="font-semibold">
-            {children}
-          </a>
-        )
-      },
       "link-markdownlint": (children) => {
         return (
           <a
