@@ -1,4 +1,4 @@
-FROM docker.io/node:26.7.0-slim@sha256:4ebb5ace66f15a24c14c492e01a8beeed4fddf970a856109f5126e703e5fe503 AS node-pnpm
+FROM docker.io/node:26.12.1-slim@sha256:36793bcbb160a6a16cede1e62b93f84e26b78a972a8a4c0b879c1c12f22761ec AS node-pnpm
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME/bin:$PATH"
 RUN npm install --global corepack@0.35.0 && corepack enable
@@ -9,7 +9,7 @@ WORKDIR /usr/src/app
 
 FROM node-pnpm AS builder
 COPY ./ ./
-RUN pnpm install --global turbo@2.10.11
+RUN pnpm install --global turbo@2.11.10
 RUN turbo prune @repo/website --docker
 
 FROM node-pnpm AS installer
